@@ -1,0 +1,312 @@
+{
+  "schema": "cybr-full-head-surface-embedding-v1",
+  "parts": [
+    {
+      "index": 0,
+      "vertex_count": 307477,
+      "embedding": {
+        "offset": 0,
+        "count": 307477
+      },
+      "active_vertex_count": 307477
+    },
+    {
+      "index": 1,
+      "vertex_count": 2160,
+      "embedding": {
+        "offset": 307477,
+        "count": 2160
+      },
+      "active_vertex_count": 2160
+    },
+    {
+      "index": 2,
+      "vertex_count": 773,
+      "embedding": {
+        "offset": 309637,
+        "count": 773
+      },
+      "active_vertex_count": 773
+    },
+    {
+      "index": 3,
+      "vertex_count": 2578,
+      "embedding": {
+        "offset": 310410,
+        "count": 2578
+      },
+      "active_vertex_count": 2578
+    },
+    {
+      "index": 4,
+      "vertex_count": 3201,
+      "embedding": {
+        "offset": 312988,
+        "count": 3201
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 5,
+      "vertex_count": 3201,
+      "embedding": {
+        "offset": 316189,
+        "count": 3201
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 6,
+      "vertex_count": 6305,
+      "embedding": {
+        "offset": 319390,
+        "count": 6305
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 7,
+      "vertex_count": 6176,
+      "embedding": {
+        "offset": 325695,
+        "count": 6176
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 8,
+      "vertex_count": 2316,
+      "embedding": {
+        "offset": 331871,
+        "count": 2316
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 9,
+      "vertex_count": 1542,
+      "embedding": {
+        "offset": 334187,
+        "count": 1542
+      },
+      "active_vertex_count": 1542
+    },
+    {
+      "index": 10,
+      "vertex_count": 30330,
+      "embedding": {
+        "offset": 335729,
+        "count": 30330
+      },
+      "active_vertex_count": 30330
+    },
+    {
+      "index": 11,
+      "vertex_count": 773,
+      "embedding": {
+        "offset": 366059,
+        "count": 773
+      },
+      "active_vertex_count": 773
+    },
+    {
+      "index": 12,
+      "vertex_count": 2578,
+      "embedding": {
+        "offset": 366832,
+        "count": 2578
+      },
+      "active_vertex_count": 2578
+    },
+    {
+      "index": 13,
+      "vertex_count": 3201,
+      "embedding": {
+        "offset": 369410,
+        "count": 3201
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 14,
+      "vertex_count": 3201,
+      "embedding": {
+        "offset": 372611,
+        "count": 3201
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 15,
+      "vertex_count": 6305,
+      "embedding": {
+        "offset": 375812,
+        "count": 6305
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 16,
+      "vertex_count": 6176,
+      "embedding": {
+        "offset": 382117,
+        "count": 6176
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 17,
+      "vertex_count": 2316,
+      "embedding": {
+        "offset": 388293,
+        "count": 2316
+      },
+      "active_vertex_count": 0
+    },
+    {
+      "index": 18,
+      "vertex_count": 1542,
+      "embedding": {
+        "offset": 390609,
+        "count": 1542
+      },
+      "active_vertex_count": 1542
+    },
+    {
+      "index": 19,
+      "vertex_count": 30330,
+      "embedding": {
+        "offset": 392151,
+        "count": 30330
+      },
+      "active_vertex_count": 30330
+    }
+  ],
+  "faces": {
+    "byte_offset": 0,
+    "byte_length": 72900,
+    "length": 18225,
+    "sha256": "930b0098115814e691f6a7c7688262742d7abc5174bb81728c7d4720955b7b71"
+  },
+  "vertex_faces": {
+    "byte_offset": 72900,
+    "byte_length": 1689924,
+    "length": 422481,
+    "sha256": "7749fa0d29753efe64b9b2e1c74a4b5033553cc397ef6e3b0a3fcf3cce347115"
+  },
+  "barycentric2": {
+    "byte_offset": 1762824,
+    "byte_length": 3379848,
+    "length": 844962,
+    "sha256": "218079e094b0aaabb95bc2d2ffee818d1e730c402cb1eb68e2ffa1442b1831d2"
+  },
+  "reports": [
+    {
+      "part": 0,
+      "node": "Continuous_anatomical_skin",
+      "maximum_offset_mm": 4.068755687563486
+    },
+    {
+      "part": 1,
+      "node": "Recessed_closed_mouth_cavity",
+      "maximum_offset_mm": 4.629337339844632
+    },
+    {
+      "part": 2,
+      "node": "Right_nasal_vestibule_rim",
+      "maximum_offset_mm": 1.3984148936741847
+    },
+    {
+      "part": 3,
+      "node": "Right_nasal_vestibule_interior",
+      "maximum_offset_mm": 3.113124806154696
+    },
+    {
+      "part": 4,
+      "node": "Right_medial_conjunctival_sleeve",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 5,
+      "node": "Right_lateral_conjunctival_sleeve",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 6,
+      "node": "Right_sclera",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 7,
+      "node": "Right_iris",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 8,
+      "node": "Right_pupil",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 9,
+      "node": "Right_lid_margin",
+      "maximum_offset_mm": 2.7035464950997032
+    },
+    {
+      "part": 10,
+      "node": "Right_individual_brow_hairs_and_lashes",
+      "maximum_offset_mm": 4.096918756402556
+    },
+    {
+      "part": 11,
+      "node": "Left_nasal_vestibule_rim",
+      "maximum_offset_mm": 1.6660341079564098
+    },
+    {
+      "part": 12,
+      "node": "Left_nasal_vestibule_interior",
+      "maximum_offset_mm": 3.458345869766028
+    },
+    {
+      "part": 13,
+      "node": "Left_medial_conjunctival_sleeve",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 14,
+      "node": "Left_lateral_conjunctival_sleeve",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 15,
+      "node": "Left_sclera",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 16,
+      "node": "Left_iris",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 17,
+      "node": "Left_pupil",
+      "maximum_offset_mm": 0
+    },
+    {
+      "part": 18,
+      "node": "Left_lid_margin",
+      "maximum_offset_mm": 2.791509379975368
+    },
+    {
+      "part": 19,
+      "node": "Left_individual_brow_hairs_and_lashes",
+      "maximum_offset_mm": 3.9713484304887907
+    }
+  ],
+  "smooth_transfer": {
+    "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/smooth-transfer.bin",
+    "sha256": "4967df9410db3e87ddc320e84119fb3fe20e1c732c6a0b2619dc38a1b6eeb5d3",
+    "nodes_per_vertex": 8,
+    "stride_floats": 16,
+    "description": "Normalized compact Wendland affine fields with surface-graph shortcut rejection; no contact guarantee"
+  }
+}

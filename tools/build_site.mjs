@@ -9,18 +9,20 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const source=JSON.parse(fs.readFileSync(path.join(root,'provenance/public-source.json')));
 const runtime=JSON.parse(fs.readFileSync(path.join(root,'output/runtime-current.json')));
+const rollback=JSON.parse(fs.readFileSync(path.join(root,'output/runtime-rollback.json')));
 const candidateMode=process.argv.includes('--candidate');
 const candidate=candidateMode?JSON.parse(fs.readFileSync(path.join(root,'output/runtime-candidate.json'))):null;
-assert.equal(runtime.build,'4bc8b53a8f15b8b62cf6a86e','Deployment must preserve the selected runtime');
-let files=source.files.filter(f=>f.path.startsWith(`output/runtime/${runtime.build}/`)||f.path.startsWith('vendor/')||['neutral-tissue.html','src/boot.js','src/runtime_transport.js','output/runtime-current.json'].includes(f.path));
+const selected=candidate??runtime;
+assert.equal(rollback.build,'4bc8b53a8f15b8b62cf6a86e','Deployment must preserve the exact rollback runtime');
+let files=source.files.filter(f=>f.path.startsWith(`output/runtime/${rollback.build}/`)||f.path.startsWith('vendor/')||['neutral-tissue.html','src/boot.js','src/runtime_transport.js','output/runtime-current.json'].includes(f.path));
 assert.equal(files.length,70,'Reviewed baseline closure changed');
 const contentOverrides=new Map();
-if(candidateMode){
+if(selected.build!==rollback.build){
  const walk=(dir)=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
- const additional=walk(path.join(root,'output/runtime',candidate.build)).map(p=>path.relative(root,p).replaceAll('\\','/'));
+ const additional=walk(path.join(root,'output/runtime',selected.build)).map(p=>path.relative(root,p).replaceAll('\\','/'));
  const bootstrap=['neutral-tissue.html','rollback.html','src/boot.js','output/runtime-rollback.json'];
  const names=[...new Set([...files.map(f=>f.path),...additional,...bootstrap])].sort();
- contentOverrides.set('output/runtime-current.json',Buffer.from(JSON.stringify(candidate,null,2)+'\n'));
+ contentOverrides.set('output/runtime-current.json',Buffer.from(JSON.stringify(selected,null,2)+'\n'));
  files=names.map(rel=>({path:rel,sha256:createHash('sha256').update(contentOverrides.get(rel)??fs.readFileSync(path.join(root,rel))).digest('hex')}));
 }
 const extra=['index.html','ASSET-LICENSES.md','LICENSING.md','LICENSES/GPL-2.0.txt','assets/anatomy/LICENSE.txt','assets/anatomy/UPSTREAM-LICENSE.txt','anatomy-source/License.txt','anatomy-source/Readme.md'];
@@ -59,5 +61,5 @@ const headers=[
  ...compressed.map(rel=>`/${rel}\n  Content-Encoding: gzip`),
 ];
 fs.writeFileSync(path.join(dist,'_headers'),headers.join('\n\n')+'\n');
-fs.writeFileSync(path.join(dist,'deployment.json'),JSON.stringify({selected_runtime:candidate?.build??runtime.build,rollback_runtime:runtime.build,candidate_only:candidateMode,application_files:files.length,application_hash_contract:candidateMode?'Candidate closure; acceptance pending':source.hash_contract,application_tree_sha256:hash(files.map(f=>f.path+'\0'+f.sha256+'\n').join('')),lossless_transport_compression:compressed,files:records},null,2)+'\n');
-console.log(JSON.stringify({output:path.basename(dist),application_files:files.length,selected_runtime:candidate?.build??runtime.build,rollback_runtime:runtime.build,candidate_only:candidateMode,losslessly_compressed:compressed,max_transport_bytes:Math.max(...records.map(f=>f.transport_bytes))}));
+fs.writeFileSync(path.join(dist,'deployment.json'),JSON.stringify({selected_runtime:selected.build,rollback_runtime:rollback.build,candidate_only:candidateMode,application_files:files.length,application_hash_contract:'Exact decoded file hashes; preserved baseline plus selected immutable closure',application_tree_sha256:hash(files.map(f=>f.path+'\0'+f.sha256+'\n').join('')),lossless_transport_compression:compressed,files:records},null,2)+'\n');
+console.log(JSON.stringify({output:path.basename(dist),application_files:files.length,selected_runtime:selected.build,rollback_runtime:rollback.build,candidate_only:candidateMode,losslessly_compressed:compressed,max_transport_bytes:Math.max(...records.map(f=>f.transport_bytes))}));

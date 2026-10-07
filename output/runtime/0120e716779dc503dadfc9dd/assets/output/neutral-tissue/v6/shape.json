@@ -1,0 +1,124 @@
+{
+  "parts": [
+    {
+      "node": "Continuous_anatomical_skin",
+      "part": 0,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/0-delta.f32",
+      "sha256": "e9abb11c0e65be5451684703c63a4ac1609fcbec39ce253cf1f2cdd395ea102e"
+    },
+    {
+      "node": "Recessed_closed_mouth_cavity",
+      "part": 1,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/1-delta.f32",
+      "sha256": "995e983254bdca99f6cfce2b5716dfbb2ac48f301e4ba7f52b950055811d6c82"
+    },
+    {
+      "node": "Right_nasal_vestibule_rim",
+      "part": 2,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/2-delta.f32",
+      "sha256": "ad7ba24657e84944f47c7e541cf6d3965ef224645eee0c05130e219815b9e595"
+    },
+    {
+      "node": "Right_nasal_vestibule_interior",
+      "part": 3,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/3-delta.f32",
+      "sha256": "2cf6e3d59e1d17e5ddad8c6c1adde59c01bdf54aaf834a6b1c6029a233493d32"
+    },
+    {
+      "node": "Right_medial_conjunctival_sleeve",
+      "part": 4,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/4-delta.f32",
+      "sha256": "d649d9a276e21bf31863fbf210873082b4f55b4061fc5312236578d6ca44fdcf"
+    },
+    {
+      "node": "Right_lateral_conjunctival_sleeve",
+      "part": 5,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/5-delta.f32",
+      "sha256": "d649d9a276e21bf31863fbf210873082b4f55b4061fc5312236578d6ca44fdcf"
+    },
+    {
+      "node": "Right_sclera",
+      "part": 6,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/6-delta.f32",
+      "sha256": "a6f8c99efd024dbbaf97281843b82accd130c6b216dce1df26d46ffe727876de"
+    },
+    {
+      "node": "Right_iris",
+      "part": 7,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/7-delta.f32",
+      "sha256": "1b3a28345bc957207073fcacc0dc82e8d1258acdbddc371d47a073afc06e9304"
+    },
+    {
+      "node": "Right_pupil",
+      "part": 8,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/8-delta.f32",
+      "sha256": "e3960120b89c56c700a93e8c63b55248d23cf14e0e6bb1a0a1058e15139aded9"
+    },
+    {
+      "node": "Right_lid_margin",
+      "part": 9,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/9-delta.f32",
+      "sha256": "4d6ede480fec4f945e98ebe968790a3feac8550a09fad9a71d1bcedf084566ca"
+    },
+    {
+      "node": "Right_individual_brow_hairs_and_lashes",
+      "part": 10,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/10-delta.f32",
+      "sha256": "deaa151a72564d83a0006865f917b91e756d0e62cf74a98f08cfd25cb5b7d153"
+    },
+    {
+      "node": "Left_nasal_vestibule_rim",
+      "part": 11,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/11-delta.f32",
+      "sha256": "ad7ba24657e84944f47c7e541cf6d3965ef224645eee0c05130e219815b9e595"
+    },
+    {
+      "node": "Left_nasal_vestibule_interior",
+      "part": 12,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/12-delta.f32",
+      "sha256": "2cf6e3d59e1d17e5ddad8c6c1adde59c01bdf54aaf834a6b1c6029a233493d32"
+    },
+    {
+      "node": "Left_medial_conjunctival_sleeve",
+      "part": 13,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/13-delta.f32",
+      "sha256": "d649d9a276e21bf31863fbf210873082b4f55b4061fc5312236578d6ca44fdcf"
+    },
+    {
+      "node": "Left_lateral_conjunctival_sleeve",
+      "part": 14,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/14-delta.f32",
+      "sha256": "d649d9a276e21bf31863fbf210873082b4f55b4061fc5312236578d6ca44fdcf"
+    },
+    {
+      "node": "Left_sclera",
+      "part": 15,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/15-delta.f32",
+      "sha256": "a6f8c99efd024dbbaf97281843b82accd130c6b216dce1df26d46ffe727876de"
+    },
+    {
+      "node": "Left_iris",
+      "part": 16,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/16-delta.f32",
+      "sha256": "1b3a28345bc957207073fcacc0dc82e8d1258acdbddc371d47a073afc06e9304"
+    },
+    {
+      "node": "Left_pupil",
+      "part": 17,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/17-delta.f32",
+      "sha256": "e3960120b89c56c700a93e8c63b55248d23cf14e0e6bb1a0a1058e15139aded9"
+    },
+    {
+      "node": "Left_lid_margin",
+      "part": 18,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/18-delta.f32",
+      "sha256": "4d6ede480fec4f945e98ebe968790a3feac8550a09fad9a71d1bcedf084566ca"
+    },
+    {
+      "node": "Left_individual_brow_hairs_and_lashes",
+      "part": 19,
+      "url": "/output/runtime/0120e716779dc503dadfc9dd/assets/output/neutral-tissue/v6/19-delta.f32",
+      "sha256": "deaa151a72564d83a0006865f917b91e756d0e62cf74a98f08cfd25cb5b7d153"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 # Combined HUMAN release candidate
 
-Proposed runtime: `0120e716779dc503dadfc9dd`. Selected runtime and public Site are
-unchanged until combined acceptance and parent-controlled promotion.
+Accepted runtime: `0120e716779dc503dadfc9dd`. The final source selects this exact
+immutable runtime. The public Site remains unchanged until parent-controlled
+publication; the previous runtime remains an exact rollback.
 
 The default Refined appearance combines transferred smooth normals, authored
 regional skin/lip response, refractive corneal shells, existing diffuse transport
@@ -20,10 +21,9 @@ choices explain that switching reloads the face. Query overrides remain availabl
 bytes against the original staged provenance. The new bootstrap retains headerless
 gzip normalization and visible startup error/retry. Hidden anatomy remains lazy.
 
-`node tools/build_site.mjs --candidate` stages `dist-candidate` without changing
-the selected source pointer. Its current pointer selects the candidate **inside
-the package only**, and it includes the prior runtime and rollback pointer. This
-is a proposed package, not a published or accepted release. HTTP checks verify
+`node tools/build_site.mjs` stages the accepted selected runtime in `dist`, including
+the prior runtime and rollback pointer. The optional `--candidate` mode stages a
+future candidate in `dist-candidate` without changing source selection. HTTP checks verify
 decoded hashes, MIME, both module/worker closures, headerless gzip, rollback and
 exclusion of private/inactive paths. Its largest transport asset is under 25 MiB.
 
@@ -50,7 +50,14 @@ photorealism or physiological accuracy.
 
 Six CPU contracts, offline runtime/privacy/hash/geometry/worker checks, calibration
 fixtures and source syntax are checked independently. The combined defaults and
-new package still need browser acceptance. In an exclusive GPU slot serve
+new package passed the prepared combined browser regression at 1280x900 and
+390x844: startup, controls, actual pointer grab/release, queued reset, two actual
+device losses, accepted actual-velocity checkpoint recovery, valid recovered CPU
+controls, public Classic/Serial selectors and exact previous-version rollback.
+Page/application errors were absent. Post-recovery controls attest a valid new
+solve, not final settlement; the immediate reset receipt includes stale diagnostic
+summary fields until the next acceptance. This does not invalidate the tested
+checkpoint restoration. The accepted regression can be reproduced by serving
 `dist-candidate` on 8783 and run `node tests/combined-release-browser.mjs` from this
 checkout. One owned browser has a 360-second close watchdog; request at most eight
 minutes including launch/closure. It checks default packaged startup, lazy anatomy,

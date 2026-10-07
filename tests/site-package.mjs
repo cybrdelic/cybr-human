@@ -30,7 +30,7 @@ try{
   assert.equal(response.headers.get('content-encoding')??'identity',file.content_encoding);
  }
  const pointer=await (await fetch(origin+'/output/runtime-current.json')).json();assert.equal(pointer.build,manifest.selected_runtime);
- if(manifest.candidate_only){
+ if(manifest.rollback_runtime!==manifest.selected_runtime){
   const rollback=await (await fetch(origin+'/output/runtime-rollback.json')).json();assert.equal(rollback.build,manifest.rollback_runtime);
   assert.equal((await fetch(origin+'/rollback.html')).status,200);
   assert(manifest.files.some(f=>f.path===rollback.entry.slice(1)));

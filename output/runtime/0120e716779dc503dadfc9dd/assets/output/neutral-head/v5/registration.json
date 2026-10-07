@@ -1,0 +1,1389 @@
+{
+  "frame": "workspace atlas millimetres; +X subject left / -Y anterior / Z superior",
+  "transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "external_skin_input": false,
+  "validation_z_range_mm": [
+    -180.0001,
+    147
+  ],
+  "parts": [
+    {
+      "part": "Anterior belly of digastric muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 198,
+      "minimum_chart_clearance_mm": 25.623321254952828,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Anterior belly of digastric muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 198,
+      "minimum_chart_clearance_mm": 25.623324438558512,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Ary-epiglottic part of oblique arytenoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 513,
+      "minimum_chart_clearance_mm": 47.913237555145024,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Ary-epiglottic part of oblique arytenoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 513,
+      "minimum_chart_clearance_mm": 47.913223702414925,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Atlas (C1)",
+      "kind": "bone",
+      "sampled_vertices": 1093,
+      "minimum_chart_clearance_mm": 22.001772506912033,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Axis (C2)",
+      "kind": "bone",
+      "sampled_vertices": 1163,
+      "minimum_chart_clearance_mm": 21.871105593350066,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Bucinator.l",
+      "kind": "muscle",
+      "sampled_vertices": 444,
+      "minimum_chart_clearance_mm": 16.331071674121475,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Bucinator.r",
+      "kind": "muscle",
+      "sampled_vertices": 444,
+      "minimum_chart_clearance_mm": 16.33106341480267,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Corrugator supercilii.l",
+      "kind": "muscle",
+      "sampled_vertices": 141,
+      "minimum_chart_clearance_mm": 5.445153067562089,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Corrugator supercilii.r",
+      "kind": "muscle",
+      "sampled_vertices": 141,
+      "minimum_chart_clearance_mm": 5.44514710529964,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Deep part of masseter.l",
+      "kind": "muscle",
+      "sampled_vertices": 497,
+      "minimum_chart_clearance_mm": 11.235424812399472,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Deep part of masseter.r",
+      "kind": "muscle",
+      "sampled_vertices": 497,
+      "minimum_chart_clearance_mm": 11.23545461472186,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Depressor anguli oris.l",
+      "kind": "muscle",
+      "sampled_vertices": 299,
+      "minimum_chart_clearance_mm": 16.26682101529903,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Depressor anguli oris.r",
+      "kind": "muscle",
+      "sampled_vertices": 299,
+      "minimum_chart_clearance_mm": 16.266812573025405,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Depressor labii inferioris.l",
+      "kind": "muscle",
+      "sampled_vertices": 418,
+      "minimum_chart_clearance_mm": 11.320619877325996,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Depressor labii inferioris.r",
+      "kind": "muscle",
+      "sampled_vertices": 418,
+      "minimum_chart_clearance_mm": 11.320613789126753,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Depressor septi nasi.l",
+      "kind": "muscle",
+      "sampled_vertices": 140,
+      "minimum_chart_clearance_mm": 14.362177886524336,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Depressor septi nasi.r",
+      "kind": "muscle",
+      "sampled_vertices": 140,
+      "minimum_chart_clearance_mm": 14.362163557484251,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Ethmoid bone",
+      "kind": "bone",
+      "sampled_vertices": 2108,
+      "minimum_chart_clearance_mm": 26.500960253549877,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Frontal bone",
+      "kind": "bone",
+      "sampled_vertices": 3902,
+      "minimum_chart_clearance_mm": 4.0804240692590525,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Frontalis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 2933,
+      "minimum_chart_clearance_mm": 1.3509231214324586,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Frontalis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 2933,
+      "minimum_chart_clearance_mm": 1.3509165544669912,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Genioglossus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 1875,
+      "minimum_chart_clearance_mm": 19.437339977708092,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Genioglossus muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 1875,
+      "minimum_chart_clearance_mm": 19.437339977708092,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Geniohyoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 267,
+      "minimum_chart_clearance_mm": 28.53210799930409,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Geniohyoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 267,
+      "minimum_chart_clearance_mm": 28.532109250365366,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Hyoglossus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 714,
+      "minimum_chart_clearance_mm": 33.29539883646186,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Hyoglossus muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 714,
+      "minimum_chart_clearance_mm": 33.29539883646186,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Hyoid bone",
+      "kind": "bone",
+      "sampled_vertices": 664,
+      "minimum_chart_clearance_mm": 36.066852063310535,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior head of lateral pterygoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 164,
+      "minimum_chart_clearance_mm": 30.197018828276626,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior head of lateral pterygoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 164,
+      "minimum_chart_clearance_mm": 30.197048630599014,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior nasal concha bone.l",
+      "kind": "bone",
+      "sampled_vertices": 238,
+      "minimum_chart_clearance_mm": 31.257472868632803,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior nasal concha bone.r",
+      "kind": "bone",
+      "sampled_vertices": 238,
+      "minimum_chart_clearance_mm": 31.257472868632803,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior oblique muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 576,
+      "minimum_chart_clearance_mm": 14.930531329629844,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior oblique muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 576,
+      "minimum_chart_clearance_mm": 14.930535265530686,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior rectus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 870,
+      "minimum_chart_clearance_mm": 16.200192522476442,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Inferior rectus muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 870,
+      "minimum_chart_clearance_mm": 16.20018871007646,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Interspinales colli muscles.l",
+      "kind": "muscle",
+      "sampled_vertices": 234,
+      "minimum_chart_clearance_mm": 20.018289194485845,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Interspinales colli muscles.r",
+      "kind": "muscle",
+      "sampled_vertices": 234,
+      "minimum_chart_clearance_mm": 20.01828919626064,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lacrimal bone.l",
+      "kind": "bone",
+      "sampled_vertices": 296,
+      "minimum_chart_clearance_mm": 19.33657424372049,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lacrimal bone.r",
+      "kind": "bone",
+      "sampled_vertices": 296,
+      "minimum_chart_clearance_mm": 19.33657424372049,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lateral process of nasal septal cartilage.l",
+      "kind": "cartilage",
+      "sampled_vertices": 174,
+      "minimum_chart_clearance_mm": 2.5774043181444313,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lateral process of nasal septal cartilage.r",
+      "kind": "cartilage",
+      "sampled_vertices": 174,
+      "minimum_chart_clearance_mm": 2.5774043181444313,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lateral rectus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 802,
+      "minimum_chart_clearance_mm": 6.883734340206438,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lateral rectus muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 802,
+      "minimum_chart_clearance_mm": 6.8837362407755265,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator anguli oris.l",
+      "kind": "muscle",
+      "sampled_vertices": 165,
+      "minimum_chart_clearance_mm": 15.004943675386485,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator anguli oris.r",
+      "kind": "muscle",
+      "sampled_vertices": 165,
+      "minimum_chart_clearance_mm": 15.00492805426569,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator labii superioris.l",
+      "kind": "muscle",
+      "sampled_vertices": 272,
+      "minimum_chart_clearance_mm": 14.714282602196107,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator labii superioris.r",
+      "kind": "muscle",
+      "sampled_vertices": 272,
+      "minimum_chart_clearance_mm": 14.71427132077011,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator nasolabialis.l",
+      "kind": "muscle",
+      "sampled_vertices": 88,
+      "minimum_chart_clearance_mm": 15.22904247568269,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator nasolabialis.r",
+      "kind": "muscle",
+      "sampled_vertices": 88,
+      "minimum_chart_clearance_mm": 15.22902819228841,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator palpebrae superioris.l",
+      "kind": "muscle",
+      "sampled_vertices": 1078,
+      "minimum_chart_clearance_mm": 4.613622990513498,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator palpebrae superioris.r",
+      "kind": "muscle",
+      "sampled_vertices": 1078,
+      "minimum_chart_clearance_mm": 4.613626435878096,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator scapulae.l",
+      "kind": "muscle",
+      "sampled_vertices": 1543,
+      "minimum_chart_clearance_mm": 4.759507963245312,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Levator scapulae.r",
+      "kind": "muscle",
+      "sampled_vertices": 1543,
+      "minimum_chart_clearance_mm": 4.759507963245312,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longissimus capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 785,
+      "minimum_chart_clearance_mm": 11.65098108206017,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longissimus capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 785,
+      "minimum_chart_clearance_mm": 11.650973631479573,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longissimus colli muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 814,
+      "minimum_chart_clearance_mm": 17.32952512115351,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longissimus colli muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 814,
+      "minimum_chart_clearance_mm": 17.329517670572912,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longus capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 988,
+      "minimum_chart_clearance_mm": 28.86635781218679,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longus capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 988,
+      "minimum_chart_clearance_mm": 28.86640106039188,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longus colli muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 3153,
+      "minimum_chart_clearance_mm": 30.968774471539447,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Longus colli muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 3153,
+      "minimum_chart_clearance_mm": 30.968794197227574,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower canine.l",
+      "kind": "bone",
+      "sampled_vertices": 640,
+      "minimum_chart_clearance_mm": 11.370834477007975,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower canine.r",
+      "kind": "bone",
+      "sampled_vertices": 640,
+      "minimum_chart_clearance_mm": 11.370834477007975,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower first molar tooth.l",
+      "kind": "bone",
+      "sampled_vertices": 2260,
+      "minimum_chart_clearance_mm": 25.987400667728508,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower first molar tooth.r",
+      "kind": "bone",
+      "sampled_vertices": 2260,
+      "minimum_chart_clearance_mm": 25.987400667728508,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower first premolar.l",
+      "kind": "bone",
+      "sampled_vertices": 613,
+      "minimum_chart_clearance_mm": 15.8128001264961,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower first premolar.r",
+      "kind": "bone",
+      "sampled_vertices": 613,
+      "minimum_chart_clearance_mm": 15.8128001264961,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower lateral incisor.l",
+      "kind": "bone",
+      "sampled_vertices": 522,
+      "minimum_chart_clearance_mm": 9.439337190166725,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower lateral incisor.r",
+      "kind": "bone",
+      "sampled_vertices": 522,
+      "minimum_chart_clearance_mm": 9.439337190166725,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower medial incisor.l",
+      "kind": "bone",
+      "sampled_vertices": 494,
+      "minimum_chart_clearance_mm": 9.576321589112155,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower medial incisor.r",
+      "kind": "bone",
+      "sampled_vertices": 494,
+      "minimum_chart_clearance_mm": 9.576321589112155,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower second molar tooth.l",
+      "kind": "bone",
+      "sampled_vertices": 840,
+      "minimum_chart_clearance_mm": 30.22645630040362,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower second molar tooth.r",
+      "kind": "bone",
+      "sampled_vertices": 840,
+      "minimum_chart_clearance_mm": 30.22645630040362,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower second premolar.l",
+      "kind": "bone",
+      "sampled_vertices": 592,
+      "minimum_chart_clearance_mm": 20.97586090292019,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Lower second premolar.r",
+      "kind": "bone",
+      "sampled_vertices": 592,
+      "minimum_chart_clearance_mm": 20.97586090292019,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Major alar cartilage.l",
+      "kind": "cartilage",
+      "sampled_vertices": 174,
+      "minimum_chart_clearance_mm": 4.090805781095682,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Major alar cartilage.r",
+      "kind": "cartilage",
+      "sampled_vertices": 174,
+      "minimum_chart_clearance_mm": 4.090805781095682,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Mandible",
+      "kind": "bone",
+      "sampled_vertices": 9388,
+      "minimum_chart_clearance_mm": 14.108857024427294,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Maxilla.l",
+      "kind": "bone",
+      "sampled_vertices": 2399,
+      "minimum_chart_clearance_mm": 9.967729519398901,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Maxilla.r",
+      "kind": "bone",
+      "sampled_vertices": 2399,
+      "minimum_chart_clearance_mm": 9.967729519398901,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Medial pterygoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 249,
+      "minimum_chart_clearance_mm": 26.907842798192227,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Medial pterygoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 249,
+      "minimum_chart_clearance_mm": 26.907872600514615,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Medial rectus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 628,
+      "minimum_chart_clearance_mm": 5.820453406154513,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Medial rectus muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 628,
+      "minimum_chart_clearance_mm": 5.82044876405223,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Mentalis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 85,
+      "minimum_chart_clearance_mm": 13.43893315073582,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Mentalis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 85,
+      "minimum_chart_clearance_mm": 13.438931863933334,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Multifidus colli muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 696,
+      "minimum_chart_clearance_mm": 27.77550262411603,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Multifidus colli muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 696,
+      "minimum_chart_clearance_mm": 27.775502841832036,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Mylohyoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 561,
+      "minimum_chart_clearance_mm": 21.920571098538034,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Mylohyoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 561,
+      "minimum_chart_clearance_mm": 21.920571364725134,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Nasal bone.l",
+      "kind": "bone",
+      "sampled_vertices": 148,
+      "minimum_chart_clearance_mm": 6.011084529932447,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Nasal bone.r",
+      "kind": "bone",
+      "sampled_vertices": 148,
+      "minimum_chart_clearance_mm": 6.011084529932447,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Nasal septal cartilage",
+      "kind": "cartilage",
+      "sampled_vertices": 182,
+      "minimum_chart_clearance_mm": 1.976296937325003,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Nasalis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 352,
+      "minimum_chart_clearance_mm": 4.6599568114671115,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Nasalis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 352,
+      "minimum_chart_clearance_mm": 4.659942138704082,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Obliquus inferior capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 272,
+      "minimum_chart_clearance_mm": 22.533621621752985,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Obliquus inferior capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 272,
+      "minimum_chart_clearance_mm": 22.533621621752985,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Obliquus superior capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 325,
+      "minimum_chart_clearance_mm": 15.623223224682576,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Obliquus superior capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 325,
+      "minimum_chart_clearance_mm": 15.623223224682576,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Occipital bone",
+      "kind": "bone",
+      "sampled_vertices": 3753,
+      "minimum_chart_clearance_mm": 5.555055345653756,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Occipitalis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 1297,
+      "minimum_chart_clearance_mm": 3.811515772627729,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Occipitalis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 1297,
+      "minimum_chart_clearance_mm": 3.811506978050147,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Orbicularis oris muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 940,
+      "minimum_chart_clearance_mm": 2.24218658113638,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Orbicularis oris muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 940,
+      "minimum_chart_clearance_mm": 2.2421807352676097,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Orbital part of orbicularis oculi.l",
+      "kind": "muscle",
+      "sampled_vertices": 1195,
+      "minimum_chart_clearance_mm": 2.5720584223748517,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Orbital part of orbicularis oculi.r",
+      "kind": "muscle",
+      "sampled_vertices": 1195,
+      "minimum_chart_clearance_mm": 2.5720519090677527,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Palatine bone.l",
+      "kind": "bone",
+      "sampled_vertices": 732,
+      "minimum_chart_clearance_mm": 40.96148566947609,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Palatine bone.r",
+      "kind": "bone",
+      "sampled_vertices": 732,
+      "minimum_chart_clearance_mm": 40.96148566947609,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Palpebral part of orbicularis oculi.l",
+      "kind": "muscle",
+      "sampled_vertices": 415,
+      "minimum_chart_clearance_mm": 0.3875360657312399,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Palpebral part of orbicularis oculi.r",
+      "kind": "muscle",
+      "sampled_vertices": 415,
+      "minimum_chart_clearance_mm": 0.38763419059984017,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Parietal bone.l",
+      "kind": "bone",
+      "sampled_vertices": 3443,
+      "minimum_chart_clearance_mm": 5.691586435914914,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Parietal bone.r",
+      "kind": "bone",
+      "sampled_vertices": 3386,
+      "minimum_chart_clearance_mm": 6.598929640935552,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Posterior belly of digastric muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 638,
+      "minimum_chart_clearance_mm": 13.023048390958138,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Posterior belly of digastric muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 638,
+      "minimum_chart_clearance_mm": 13.02309309444172,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Procerus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 273,
+      "minimum_chart_clearance_mm": 3.912252244811725,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Procerus muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 273,
+      "minimum_chart_clearance_mm": 3.9122512414918305,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus anterior capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 200,
+      "minimum_chart_clearance_mm": 38.961369005452724,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus anterior capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 200,
+      "minimum_chart_clearance_mm": 38.96143047274265,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus lateralis capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 182,
+      "minimum_chart_clearance_mm": 23.673432884147175,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus lateralis capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 182,
+      "minimum_chart_clearance_mm": 23.67349248879195,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus posterior major capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 396,
+      "minimum_chart_clearance_mm": 13.002177433935728,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus posterior major capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 396,
+      "minimum_chart_clearance_mm": 13.002177433935728,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus posterior minor capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 214,
+      "minimum_chart_clearance_mm": 17.818764463568172,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rectus posterior minor capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 214,
+      "minimum_chart_clearance_mm": 17.818764977252258,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Risorius muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 296,
+      "minimum_chart_clearance_mm": 16.01594659774699,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Risorius muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 296,
+      "minimum_chart_clearance_mm": 16.015931696585795,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rotatores.l",
+      "kind": "muscle",
+      "sampled_vertices": 1048,
+      "minimum_chart_clearance_mm": 23.011247933182702,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Rotatores.r",
+      "kind": "muscle",
+      "sampled_vertices": 1048,
+      "minimum_chart_clearance_mm": 23.011247933182702,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Scalenus anterior muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 699,
+      "minimum_chart_clearance_mm": 18.198485560461044,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Scalenus anterior muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 699,
+      "minimum_chart_clearance_mm": 18.1985710961713,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Scalenus medius muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 1037,
+      "minimum_chart_clearance_mm": 12.608881271151148,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Scalenus medius muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 1037,
+      "minimum_chart_clearance_mm": 12.608948980119116,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Semispinalis colli muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 1307,
+      "minimum_chart_clearance_mm": 22.721481954335147,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Semispinalis colli muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 1307,
+      "minimum_chart_clearance_mm": 22.72153765657623,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Sphenoid bone",
+      "kind": "bone",
+      "sampled_vertices": 3650,
+      "minimum_chart_clearance_mm": 24.025432121927537,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Spinalis capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 1275,
+      "minimum_chart_clearance_mm": 11.77193842311398,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Spinalis capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 1275,
+      "minimum_chart_clearance_mm": 11.77193842311398,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Spinalis colli muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 298,
+      "minimum_chart_clearance_mm": 14.857714699234592,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Spinalis colli muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 298,
+      "minimum_chart_clearance_mm": 14.857714700106072,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Splenius capitis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 2610,
+      "minimum_chart_clearance_mm": 4.99975715113591,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Splenius capitis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 2610,
+      "minimum_chart_clearance_mm": 4.999719939460036,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Splenius colli muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 1172,
+      "minimum_chart_clearance_mm": 7.092762734503523,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Splenius colli muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 1172,
+      "minimum_chart_clearance_mm": 7.092650994164572,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Sternocleidomastoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 2516,
+      "minimum_chart_clearance_mm": 4.9442311364079075,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Sternocleidomastoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 2516,
+      "minimum_chart_clearance_mm": 4.944271565744401,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Sternohyoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 697,
+      "minimum_chart_clearance_mm": 17.288463838860793,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Sternohyoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 697,
+      "minimum_chart_clearance_mm": 17.288469006659156,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Stylohyoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 349,
+      "minimum_chart_clearance_mm": 27.68069934736411,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Stylohyoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 349,
+      "minimum_chart_clearance_mm": 27.68077385317008,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Stylopharyngeus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 4740,
+      "minimum_chart_clearance_mm": 27.895486901583766,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superficial part of masseter.l",
+      "kind": "muscle",
+      "sampled_vertices": 702,
+      "minimum_chart_clearance_mm": 10.173868417871844,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superficial part of masseter.r",
+      "kind": "muscle",
+      "sampled_vertices": 702,
+      "minimum_chart_clearance_mm": 10.173898220194232,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superior head of lateral pterygoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 115,
+      "minimum_chart_clearance_mm": 30.471633546970878,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superior head of lateral pterygoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 115,
+      "minimum_chart_clearance_mm": 30.471663349293266,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superior oblique muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 877,
+      "minimum_chart_clearance_mm": 15.106307630807734,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superior oblique muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 877,
+      "minimum_chart_clearance_mm": 15.10630591661365,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superior rectus muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 644,
+      "minimum_chart_clearance_mm": 12.383153917445782,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Superior rectus muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 644,
+      "minimum_chart_clearance_mm": 12.383149580129128,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Temporal bone.l",
+      "kind": "bone",
+      "sampled_vertices": 7051,
+      "minimum_chart_clearance_mm": 8.6893711460732,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Temporal bone.r",
+      "kind": "bone",
+      "sampled_vertices": 7051,
+      "minimum_chart_clearance_mm": 8.6893711460732,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Temporalis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 5126,
+      "minimum_chart_clearance_mm": 6.659533304686818,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Temporalis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 5126,
+      "minimum_chart_clearance_mm": 6.659563107009205,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Temporoparietalis muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 5974,
+      "minimum_chart_clearance_mm": 2.7961592260483314,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Temporoparietalis muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 5974,
+      "minimum_chart_clearance_mm": 2.7961443248871376,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Thyro-epiglottic part of thyro-arytenoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 1557,
+      "minimum_chart_clearance_mm": 36.867175863259284,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Thyro-epiglottic part of thyro-arytenoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 1557,
+      "minimum_chart_clearance_mm": 36.86704945513299,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Thyrohyoid muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 352,
+      "minimum_chart_clearance_mm": 28.329248680977486,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Thyrohyoid muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 352,
+      "minimum_chart_clearance_mm": 28.329258027896984,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper canine.l",
+      "kind": "bone",
+      "sampled_vertices": 737,
+      "minimum_chart_clearance_mm": 5.6507823165346736,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper canine.r",
+      "kind": "bone",
+      "sampled_vertices": 737,
+      "minimum_chart_clearance_mm": 5.6507823165346736,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper first molar tooth.l",
+      "kind": "bone",
+      "sampled_vertices": 1090,
+      "minimum_chart_clearance_mm": 24.714260174303377,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper first molar tooth.r",
+      "kind": "bone",
+      "sampled_vertices": 1090,
+      "minimum_chart_clearance_mm": 24.714260174303377,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper first premolar.l",
+      "kind": "bone",
+      "sampled_vertices": 844,
+      "minimum_chart_clearance_mm": 12.893626801996206,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper first premolar.r",
+      "kind": "bone",
+      "sampled_vertices": 844,
+      "minimum_chart_clearance_mm": 12.893626801996206,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper lateral incisor.l",
+      "kind": "bone",
+      "sampled_vertices": 729,
+      "minimum_chart_clearance_mm": 3.6964278285478542,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper lateral incisor.r",
+      "kind": "bone",
+      "sampled_vertices": 729,
+      "minimum_chart_clearance_mm": 3.6964278285478542,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper medial incisor.l",
+      "kind": "bone",
+      "sampled_vertices": 686,
+      "minimum_chart_clearance_mm": 2.345102509271939,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper medial incisor.r",
+      "kind": "bone",
+      "sampled_vertices": 686,
+      "minimum_chart_clearance_mm": 2.345102509271939,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper second molar tooth.l",
+      "kind": "bone",
+      "sampled_vertices": 924,
+      "minimum_chart_clearance_mm": 34.153604812309226,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper second molar tooth.r",
+      "kind": "bone",
+      "sampled_vertices": 924,
+      "minimum_chart_clearance_mm": 34.153604812309226,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper second premolar.l",
+      "kind": "bone",
+      "sampled_vertices": 779,
+      "minimum_chart_clearance_mm": 18.606480852747097,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Upper second premolar.r",
+      "kind": "bone",
+      "sampled_vertices": 779,
+      "minimum_chart_clearance_mm": 18.606480852747097,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Vertebra C3",
+      "kind": "bone",
+      "sampled_vertices": 1216,
+      "minimum_chart_clearance_mm": 21.939442940719573,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Vertebra C4",
+      "kind": "bone",
+      "sampled_vertices": 966,
+      "minimum_chart_clearance_mm": 25.996477817780374,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Vomer",
+      "kind": "bone",
+      "sampled_vertices": 513,
+      "minimum_chart_clearance_mm": 35.798036521336485,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Zygomatic bone.l",
+      "kind": "bone",
+      "sampled_vertices": 666,
+      "minimum_chart_clearance_mm": 10.386403392873355,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Zygomatic bone.r",
+      "kind": "bone",
+      "sampled_vertices": 666,
+      "minimum_chart_clearance_mm": 10.386403392873355,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Zygomaticus major muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 397,
+      "minimum_chart_clearance_mm": 11.332970540233724,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Zygomaticus major muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 397,
+      "minimum_chart_clearance_mm": 11.332948669775078,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Zygomaticus minor muscle.l",
+      "kind": "muscle",
+      "sampled_vertices": 218,
+      "minimum_chart_clearance_mm": 9.750315436762229,
+      "outside_vertices": 0
+    },
+    {
+      "part": "Zygomaticus minor muscle.r",
+      "kind": "muscle",
+      "sampled_vertices": 218,
+      "minimum_chart_clearance_mm": 9.750296759119962,
+      "outside_vertices": 0
+    }
+  ],
+  "method": "native-coordinate chart containment; not triangle collision or a biomechanics calibration",
+  "sha256": "c6f1e057beb5e189aa00a9d0c2e839d1c07f7beb4d4ba65ca1bdb6adca79b7de"
+}
