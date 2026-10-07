@@ -23,7 +23,6 @@ export class GPUHeadFEM {
     };
     engine.boundedSubmissions = intel;
     engine.cgBatchSize = engine.boundedSubmissions ? 16 : 8;
-    engine.boundedEarlyExit = true;
     try {
       await engine.initialize();
       return engine;
@@ -385,10 +384,6 @@ export class GPUHeadFEM {
       size: this.outputBytes + 80,
       usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ,
     });
-    this.cgControlReadback = d.createBuffer({
-      size: 16,
-      usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ,
-    });
     if (this.timestamp) {
       this.queries = d.createQuerySet({ type: "timestamp", count: 2 });
       this.queryBuffer = d.createBuffer({
@@ -417,7 +412,7 @@ export class GPUHeadFEM {
     const begin = performance.now(),
       d = this.device,
       bounded = this.boundedSubmissions;
-    let submissionChunks = 1, cgIterationsScheduled = 0, cgIterationsSkipped = 0;
+    let submissionChunks = 1;
     this.paramF.set(
       [dt, gravity, fatPercent * 0.01, Math.pow(10, -1.7 * sagPercent * 0.01)],
       4,
@@ -451,20 +446,12 @@ export class GPUHeadFEM {
     beginPass(true);
     const flush = async () => {
       pass.end();
-      if (this.boundedEarlyExit)
-        encoder.copyBufferToBuffer(this.buffers[4], 0, this.cgControlReadback, 0, 16);
       d.queue.submit([encoder.finish()]);
-      let active = true;
-      if (this.boundedEarlyExit) {
-        await this.cgControlReadback.mapAsync(GPUMapMode.READ);
-        active = new Float32Array(this.cgControlReadback.getMappedRange())[3] > .5;
-        this.cgControlReadback.unmap();
-      } else await d.queue.onSubmittedWorkDone();
+      await d.queue.onSubmittedWorkDone();
       if (this.lost) throw Error("GPU device lost: " + this.lost.message);
       encoder = d.createCommandEncoder();
       beginPass();
       submissionChunks++;
-      return active;
     };
     const nodeGroups = Math.ceil(this.N / 128),
       tetGroups = Math.ceil(this.T / 128),
@@ -497,18 +484,12 @@ export class GPUHeadFEM {
         run("cgStart", 1);
         work("assembleBlocks", 3, edgeGroups);
         for (let k = 0; k < cg; k++) {
-          cgIterationsScheduled++;
           work("multiplyReduce", 0);
           work("cgAlpha", 2, 1);
           work("updateReduce", 0);
           run("cgBeta", 1);
           work("cgDirection", 0);
-          if (bounded && (k + 1) % (this.cgBatchSize || 8) === 0) {
-            if (!(await flush())) {
-              cgIterationsSkipped += cg - k - 1;
-              break;
-            }
-          }
+          if (bounded && (k + 1) % (this.cgBatchSize || 8) === 0) await flush();
         }
         work("currentPartial", 10, this.groups);
         run("currentEnergy", 1);
@@ -557,8 +538,11 @@ export class GPUHeadFEM {
         16,
       );
     }
+    const finalSubmitBegin = performance.now();
     d.queue.submit([encoder.finish()]);
+    const mapBegin = performance.now();
     await this.readback.mapAsync(GPUMapMode.READ);
+    const mappedAt = performance.now();
     const bytes = this.readback.getMappedRange(),
       packed = new Float32Array(bytes, 0, this.outputBytes / 4).slice(),
       stats = new Float32Array(bytes, this.outputBytes, 16).slice();
@@ -573,6 +557,11 @@ export class GPUHeadFEM {
     const sample = {
       elapsedMs,
       gpuMs,
+      hostBeforeFinalSubmitMs: finalSubmitBegin - begin,
+      finalSubmitCpuMs: mapBegin - finalSubmitBegin,
+      readbackWaitMs: mappedAt - mapBegin,
+      mappedCopyCpuMs: performance.now() - mappedAt,
+      readbackBytes: this.outputBytes + 64 + (this.timestamp && !bounded ? 16 : 0),
       minJ: stats[9],
       residualN: stats[10],
       staticResidualN: stats[13],
@@ -585,8 +574,6 @@ export class GPUHeadFEM {
       grabSupportNodes: grab ? this.grabSupportNodes : 0,
       indirect,
       submissionChunks,
-      cgIterationsScheduled,
-      cgIterationsSkipped,
       integration: quasiStatic ? "quasistatic" : "dynamic",
       simulatedSeconds: quasiStatic ? 0 : dt * substeps,
       frame: this.frames,
@@ -642,7 +629,6 @@ export class GPUHeadFEM {
     this.indirectArgs?.destroy();
     this.params?.destroy();
     this.readback?.destroy();
-    this.cgControlReadback?.destroy();
     this.queryBuffer?.destroy();
     this.queries?.destroy();
     this.device.destroy();

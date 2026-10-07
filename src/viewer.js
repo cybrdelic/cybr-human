@@ -21,6 +21,8 @@ import { createSkinDiffusion } from "./skin_diffusion.js";
 import { improveAuthoredMaterials } from "./authored_skin_material.js";
 
 import { guardGPUPage } from "./gpu_page_lifecycle.js";
+import { createLazyAnatomy } from "./lazy_anatomy.js";
+import { createFrameMetrics } from "./frame_metrics.js";
 
 const stage = document.querySelector("#stage"),
   message = document.querySelector("#message"),
@@ -34,6 +36,10 @@ const debug = {
   engine: "initializing",
 };
 window.__fullHeadFEM = debug;
+const startupBegin = performance.now();
+debug.startup = { startedAtMs: startupBegin };
+const frameMetrics = createFrameMetrics();
+debug.measurement = () => frameMetrics.snapshot(debug.clock);
 
 let renderer;
 try {
@@ -53,10 +59,8 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 stage.append(renderer.domElement);
 const gl = renderer.getContext();
-const graphicsInfo = gl.getExtension("WEBGL_debug_renderer_info");
 status.dataset.graphics = JSON.stringify({
   renderer: gl.getParameter(gl.RENDERER),
-  device: graphicsInfo ? gl.getParameter(graphicsInfo.UNMASKED_RENDERER_WEBGL) : null,
   floatLinear: !!gl.getExtension("OES_texture_float_linear"),
   precision: gl.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.HIGH_FLOAT)
     .precision,
@@ -100,6 +104,23 @@ for (const [x, y, z, power] of [
   }
 }
 
+// Repeatable inspection lights; normal application lighting remains the default.
+const inspectionLights = scene.children.filter(item => item.isDirectionalLight);
+debug.setInspectionLighting = (preset = "studio") => {
+  const setups = {
+    studio: [[-0.3, 0.4, 0.5, 3], [0.3, 0.1, 0.2, .7], [0, -.12, .42, .8]],
+    side: [[-.45, .08, .2, 3], [.3, .1, .2, .2], [0, -.12, .42, .3]],
+    overhead: [[-.1, .5, .15, 3], [.3, .1, .2, .4], [0, -.12, .42, .2]],
+  };
+  if (!setups[preset]) throw Error("Unknown inspection lighting: " + preset);
+  inspectionLights.forEach((light, index) => {
+    const [x, y, z, intensity] = setups[preset][index];
+    light.position.set(x, y, z); light.intensity = intensity;
+  });
+  debug.inspectionLighting = preset;
+  requestRender();
+};
+
 const skinDiffusion = createSkinDiffusion(renderer, scene, camera);
 debug.skinDiffusion = skinDiffusion.state;
 const scatteringControl = document.querySelector("#scattering");
@@ -114,7 +135,6 @@ let activeSolver = null,
   finePatch = null,
   surfacePool = null;
 function disposeSceneResources() {
-  for (const cache of surfacePool?.caches || []) cache.dispose();
   const textures = new Set(),
     materials = new Set(),
     geometries = new Set();
@@ -151,7 +171,6 @@ const lifecycle = guardGPUPage({
     message.textContent = status.textContent;
   },
   onContextRestored: () => {
-    for (const cache of surfacePool?.caches || []) cache.invalidate();
     debug.graphicsSuspended = false;
     debug.contextRestorations = (debug.contextRestorations || 0) + 1;
     message.hidden = true;
@@ -183,12 +202,15 @@ const lifecycle = guardGPUPage({
 let pending = false;
 function render() {
   if (lifecycle.canSubmit) {
-    for (const cache of surfacePool?.caches || []) cache.update();
+    const begin = performance.now();
     skinDiffusion.render(
       document.querySelector("#heatmap").checked ||
         document.querySelector("#fineHeatmap").checked ||
         document.querySelector("#cage").checked,
     );
+    frameMetrics.submitted(begin);
+    if (debug.startup.firstFaceSubmittedMs === undefined && debug.facePrepared)
+      debug.startup.firstFaceSubmittedMs = performance.now() - startupBegin;
   }
 }
 function requestRender() {
@@ -202,6 +224,7 @@ function requestRender() {
 controls.addEventListener("change", requestRender);
 
 document.addEventListener("visibilitychange", () => {
+  frameMetrics.suspend();
   if (!document.hidden) requestRender();
 });
 
@@ -254,18 +277,32 @@ async function start() {
   const skin = await loadSkin(model);
   scene.add(skin.scene);
   skin.scene.updateMatrixWorld(true);
-  const internal = await loadInternalAnatomy(model);
   const anatomyControl = document.querySelector("#anatomy");
-  anatomyControl.disabled = !internal;
-  if (internal) {
-    internal.scene.visible = false;
-    scene.add(internal.scene);
-    anatomyControl.onchange = () => {
-      internal.scene.visible = anatomyControl.checked;
-      skin.scene.visible = !anatomyControl.checked;
+  anatomyControl.disabled = !model.internal_anatomy_url;
+  const anatomy = createLazyAnatomy({
+    load: () => loadInternalAnatomy(model),
+    attach: internal => scene.add(internal.scene),
+    show: (internal, visible) => {
+      if (internal) internal.scene.visible = visible;
+      skin.scene.visible = !visible;
       requestRender();
-    };
-  }
+    },
+    discard: internal => internal.scene.traverse(item => {
+      item.geometry?.dispose();
+      for (const material of [item.material].flat()) material?.dispose();
+    }),
+    isDisposed: () => lifecycle.disposed,
+    onState: state => {
+      debug.anatomyLoading = state;
+      if (state.phase === "failed") {
+        anatomyControl.checked = false;
+        anatomyControl.title = "Anatomy could not load. Select again to retry: " + state.error;
+        status.textContent = "Anatomy could not load. Select anatomy again to retry.";
+      } else anatomyControl.title = state.phase === "loading" ? "Loading registered anatomy" : "Show registered anatomy";
+    },
+  });
+  debug.anatomyLoading = { ...anatomy.state };
+  anatomyControl.onchange = () => anatomy.setVisible(anatomyControl.checked);
 
   const authoredMeshes = [];
   skin.scene.traverse((item) => {
@@ -339,13 +376,7 @@ async function start() {
         requestRender();
       };
   }
-  const pool = (surfacePool = {
-      fine: finePatch,
-      renderer,
-      caches: [],
-      cacheEnabled: renderer.extensions.has("EXT_color_buffer_float") &&
-        new URLSearchParams(location.search).get("surfaceCache") !== "0",
-    }),
+  const pool = (surfacePool = { fine: finePatch, geometricNormals: query.get("normals") === "geometric" }),
     transfers = [];
   for (const part of bundle.parts)
     if (part.active_vertex_count) {
@@ -375,8 +406,6 @@ async function start() {
     ],
     thinFeatureCellsHomogenized: true,
   };
-  debug.surfaceCache = { enabled: pool.cacheEnabled, parts: pool.caches.map(c => c.state) };
-  debug.readCachedSurface = () => pool.caches[0]?.readPositions();
   debug.sampleSurface = (ids) => {
     const mesh = skin.scene.getObjectByName(model.skin_main_node),
       p = mesh.geometry.attributes.position,
@@ -450,6 +479,7 @@ async function start() {
   status.dataset.capabilities = JSON.stringify(debug.capabilities);
   status.dataset.build = window.__tissueRuntime?.build || "legacy";
   message.hidden = true;
+  debug.facePrepared = true;
   debug.setView("front");
   requestRender();
   status.textContent = "Starting the tissue solver…";
@@ -465,7 +495,6 @@ async function start() {
   }
   if (engine.boundedSubmissions && ["8", "16"].includes(query.get("gpuBatch")))
     engine.cgBatchSize = Number(query.get("gpuBatch"));
-  if (engine.device && query.get("cgEarlyExit") === "0") engine.boundedEarlyExit = false;
   activeSolver = engine;
   if (lifecycle.disposed) {
     engine.dispose();
@@ -484,6 +513,7 @@ async function start() {
   status.dataset.compute = JSON.stringify(engine.adapterInfo);
   debug.timestampQueries = engine.timestamp && !engine.boundedSubmissions;
   debug.ready = true;
+  debug.startup.solverReadyMs = performance.now() - startupBegin;
   debug.solver = engine;
 
   for (const name of [
@@ -501,7 +531,6 @@ async function start() {
   let controlUpdates = 0,
     settling = false,
     settleSteps = 0,
-    settleIterations = 0,
     quietSteps = 0,
     settleStart = 0,
     timeAccumulator = 0,
@@ -519,7 +548,6 @@ async function start() {
     controlUpdates = Math.max(controlUpdates, 12);
     if (!settling) {
       settleSteps = 0;
-      settleIterations = 0;
       quietSteps = 0;
       settleStart = performance.now();
     }
@@ -819,10 +847,6 @@ async function start() {
       debug.samples.at(-1)?.residualN > 0.01;
     const high =
       unsettled || document.querySelector("#quality").value === "reference";
-    const reference = document.querySelector("#quality").value === "reference";
-    // Interactive static solves display each Newton update. This changes
-    // scheduling, not the equilibrium threshold or total nonlinear budget.
-    const nonlinearIterations = !running && !reference ? 1 : high ? 4 : 2;
     let result;
 
     const solveParameters = {
@@ -836,7 +860,7 @@ async function start() {
         dt: frameDt,
         quasiStatic: !running,
         substeps: 1,
-        newton: nonlinearIterations,
+        newton: high ? 4 : 2,
         cg: !running ? (high ? 256 : 64) : high ? 64 : 24,
         block: true,
       });
@@ -951,7 +975,6 @@ async function start() {
         gravity: solveParameters.gravity,
       },
       grabbed: !!solveParameters.grab,
-      nonlinearIterations,
     };
     const atTarget = ["fatPercent", "sagPercent"].every(
       (k) => Math.abs(requested[k] - applied[k]) < 0.001,
@@ -969,7 +992,6 @@ async function start() {
         converged: true,
         capped: false,
         steps: settleSteps,
-        nonlinearIterations: settleIterations,
         maxSurfaceStepM,
         residualN: sample.residualN,
         staticResidualN: sample.staticResidualN,
@@ -980,9 +1002,8 @@ async function start() {
     }
     if (settling) {
       settleSteps++;
-      settleIterations += nonlinearIterations;
       const capped =
-        settleIterations >= 480 || performance.now() - settleStart > 45000;
+        settleSteps >= 120 || performance.now() - settleStart > 45000;
       if (quietSteps >= 3 || capped) {
         settling = false;
         if (quietSteps >= 3) controlUpdates = 0;
@@ -990,7 +1011,6 @@ async function start() {
           converged: quietSteps >= 3,
           capped,
           steps: settleSteps,
-          nonlinearIterations: settleIterations,
           maxSurfaceStepM,
           residualN: sample.residualN,
           staticResidualN: sample.staticResidualN,

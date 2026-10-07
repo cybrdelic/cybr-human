@@ -17,13 +17,7 @@ export function improveAuthoredMaterials(mesh) {
         line = /anatomical/.test(mesh.name)
           ? -35.5 + 0.5 * q * q
           : -42 - 0.65 * Math.exp(0 - (x / 5) ** 2) + 0.65 * q * q;
-      const upperLip = (4 + 1.3 * Math.exp(0 - ((Math.abs(x) - 7) / 4) ** 2)) * span ** .7;
-      const lowerLip = 5.5 * span ** .7;
-      const lipHeight = z >= line ? upperLip : lowerLip;
-      const lipEdge = Math.max(0, Math.min(1, (lipHeight - Math.abs(z - line)) / .65));
-      const lip = /anatomical/.test(mesh.name)
-        ? front * lipEdge * lipEdge * (3 - 2 * lipEdge)
-        : front * Math.exp(0 - ((z - line) / 4.3) ** 4) * span ** 0.45;
+      const lip = front * Math.exp(0 - ((z - line) / 4.3) ** 4) * span ** 0.45;
       const cheek =
           front *
           Math.exp(0 - ((Math.abs(x) - 40) / 20) ** 2 - ((z - 1) / 22) ** 2),
