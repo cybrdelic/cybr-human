@@ -17,7 +17,24 @@ async function capture(page, label) {
 try {
   for (const variant of ["baseline", "candidate-geometric", "candidate-smooth"]) {
     const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, deviceScaleFactor: 1 });
+    await context.addInitScript(() => {
+      window.__readbackObservations = [];
+      if (!globalThis.GPUBuffer) return;
+      const original = GPUBuffer.prototype.mapAsync;
+      GPUBuffer.prototype.mapAsync = function(...args) {
+        const started = performance.now(), size = this.size;
+        const promise = original.apply(this, args);
+        // Preserve the exact native promise and original mapping dependency.
+        promise.then(() => {
+          window.__readbackObservations.push({ started, waitMs: performance.now() - started, size });
+          if (window.__readbackObservations.length > 2000) window.__readbackObservations.shift();
+        }, () => {});
+        return promise;
+      };
+    });
     const page = await context.newPage(), errors = [], requests = [];
+    const cdp = await context.newCDPSession(page);
+    await cdp.send("Network.enable"); await cdp.send("Network.setCacheDisabled", { cacheDisabled: true });
     page.on("pageerror", error => errors.push(error.message));
     page.on("request", request => requests.push(new URL(request.url()).pathname));
     const url = new URL("/neutral-tissue.html", origin);
@@ -64,15 +81,18 @@ try {
         simulationSeconds: d.clock.simulationSeconds - start.simulation,
         solverUpdates: d.solver.frames - start.samples, clock: d.clock,
         measurement: d.measurement?.(), samples: d.samples.slice(-240), startup: d.startup,
+        readbackObservations: window.__readbackObservations.filter(sample => sample.started >= start.time),
         adapter: d.adapter, errors: d.errors };
     }, start);
     await page.locator("#running").uncheck();
     if (isCandidate) {
-      await page.route(anatomyURL, route => route.abort());
-      await page.locator("#anatomy").check();
+      const anatomyRoute = new URL(anatomyURL, origin).href;
+      await page.route(anatomyRoute, route => route.abort());
+      // An aborted request can uncheck before Playwright's check() postcondition.
+      await page.locator("#anatomy").click();
       await page.waitForFunction(() => window.__fullHeadFEM.anatomyLoading.phase === "failed");
       assert.equal(await page.locator("#anatomy").isChecked(), false);
-      await page.unroute(anatomyURL);
+      await page.unroute(anatomyRoute);
       await page.locator("#anatomy").check();
       await page.waitForFunction(() => window.__fullHeadFEM.anatomyLoading.phase === "ready", {}, { timeout: 45000 });
       pictures.push(await capture(page, `${variant}-anatomy-retry`));
@@ -81,6 +101,7 @@ try {
     assert.deepEqual(errors, []); assert.deepEqual(dynamic.errors, []);
     assert(dynamic.samples.every(sample => sample.minJ > 0 && Number.isFinite(sample.residualN)));
     results.push({ variant, build: isCandidate ? candidate : baseline, readyMs, settled, dynamic, pictures });
+    fs.writeFileSync(`${output}/partial-results.json`, JSON.stringify({baseline,candidate,results},null,2));
     await context.close();
     console.log(JSON.stringify({ variant, readyMs, simulationSeconds: dynamic.simulationSeconds, wallSeconds: dynamic.wallSeconds }));
   }
