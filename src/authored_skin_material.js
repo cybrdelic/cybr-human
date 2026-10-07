@@ -1,12 +1,15 @@
 import * as THREE from "three";
+import { regionalSkinOptics } from "./regional_skin_optics.js";
 /** Code-authored pigmentation and micron-scale relief. No skin image inputs.
  * Diffuse radiance is separated for screen-space transport; fine relief is not a mechanical wrinkle model.
  */
-export function improveAuthoredMaterials(mesh) {
+export function improveAuthoredMaterials(mesh, options = {}) {
+  const regional = options.regional === true;
   const g = mesh.geometry,
     p = g.attributes.position;
   if (/Continuous_(neutral|anatomical)_skin/.test(mesh.name)) {
     const colors = new Float32Array(p.count * 3),
+      roughnessField = regional ? new Float32Array(p.count) : null,
       color = new THREE.Color();
     for (let i = 0; i < p.count; i++) {
       const x = p.getX(i) * 1000,
@@ -17,7 +20,9 @@ export function improveAuthoredMaterials(mesh) {
         line = /anatomical/.test(mesh.name)
           ? -35.5 + 0.5 * q * q
           : -42 - 0.65 * Math.exp(0 - (x / 5) ** 2) + 0.65 * q * q;
-      const lip = front * Math.exp(0 - ((z - line) / 4.3) ** 4) * span ** 0.45;
+      const optics = regional ? regionalSkinOptics(x, z, p.getZ(i) * 1000) : null;
+      const lip = optics ? optics.lip : front * Math.exp(0 - ((z - line) / 4.3) ** 4) * span ** 0.45;
+      if (roughnessField) roughnessField[i] = optics.roughness;
       const cheek =
           front *
           Math.exp(0 - ((Math.abs(x) - 40) / 20) ** 2 - ((z - 1) / 22) ** 2),
@@ -33,6 +38,7 @@ export function improveAuthoredMaterials(mesh) {
       color.toArray(colors, i * 3);
     }
     g.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+    if (roughnessField) g.setAttribute("authoredRoughness", new THREE.BufferAttribute(roughnessField, 1));
     const noise = new Uint8Array(256 * 256);
     let seed = 271828;
     for (let i = 0; i < noise.length; i++) {
@@ -49,17 +55,23 @@ export function improveAuthoredMaterials(mesh) {
     micro.wrapS = micro.wrapT = THREE.RepeatWrapping;
     micro.minFilter = micro.magFilter = THREE.LinearFilter;
     micro.needsUpdate = true;
-    const m = new THREE.MeshStandardMaterial({
+    const Material = regional ? THREE.MeshPhysicalMaterial : THREE.MeshStandardMaterial;
+    const m = new Material({
       color: 0xffffff,
       vertexColors: true,
       roughness: 0.55,
       metalness: 0,
     });
+    if (regional) { m.ior = 1.4; m.specularIntensity = 1; }
     mesh.userData.authoredMicroTexture = micro;
     const diffusePass = (mesh.userData.skinDiffusePass = { value: 0 });
     m.onBeforeCompile = (shader) => {
       shader.uniforms.authoredMicroTexture = { value: micro };
       shader.uniforms.skinDiffusePass = diffusePass;
+      if (regional) {
+        shader.vertexShader = shader.vertexShader.replace("#include <common>", "#include <common>\nattribute float authoredRoughness;\nvarying float vAuthoredRoughness;").replace("#include <begin_vertex>", "#include <begin_vertex>\nvAuthoredRoughness=authoredRoughness;");
+        shader.fragmentShader = shader.fragmentShader.replace("#include <common>", "#include <common>\nvarying float vAuthoredRoughness;").replace("#include <roughnessmap_fragment>", "#include <roughnessmap_fragment>\nroughnessFactor=clamp(vAuthoredRoughness,.2,.8);");
+      }
       shader.vertexShader = shader.vertexShader
         .replace(
           "#include <common>",
@@ -94,7 +106,7 @@ if(abs(skinDet)>1e-5 && dot(skinPerturbed,skinPerturbed)>1e-8)normal=normalize(s
         "if(skinDiffusePass>.5)outgoingLight=reflectedLight.directDiffuse+reflectedLight.indirectDiffuse;\n#include <opaque_fragment>",
       );
     };
-    m.customProgramCacheKey = () => "authored-diffuse-transport-v3";
+    m.customProgramCacheKey = () => regional ? "authored-regional-optics-v1" : "authored-diffuse-transport-v3";
     mesh.material = m;
   } else if (/nasal_vestibule_rim/.test(mesh.name)) {
     mesh.material = new THREE.MeshPhysicalMaterial({
@@ -167,11 +179,13 @@ if(abs(skinDet)>1e-5 && dot(skinPerturbed,skinPerturbed)>1e-8)normal=normalize(s
       cg,
       new THREE.MeshPhysicalMaterial({
         color: 0xffffff,
-        transparent: true,
-        opacity: 0.025,
-        depthWrite: false,
+        transparent: options.refractiveEyes !== true,
+        opacity: options.refractiveEyes === true ? 1 : 0.025,
+        depthWrite: options.refractiveEyes === true,
+        transmission: options.refractiveEyes === true ? 1 : 0,
+        thickness: options.refractiveEyes === true ? 0.00055 : 0,
         roughness: 0.035,
-        clearcoat: 1,
+        clearcoat: options.refractiveEyes === true ? 0 : 1,
         clearcoatRoughness: 0.02,
         ior: 1.376,
         specularIntensity: 1,

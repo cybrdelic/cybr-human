@@ -38,7 +38,9 @@ monitor = setInterval(() => {
 try {
   const { createRuntimeFetch } = await import("./runtime_transport.js");
   const response = await fetch(
-    new URLSearchParams(location.search).get("candidate") === "1"
+    new URLSearchParams(location.search).get("rollback") === "1"
+      ? "/output/runtime-rollback.json"
+      : new URLSearchParams(location.search).get("candidate") === "1"
       ? "/output/runtime-candidate.json"
       : "/output/runtime-current.json",
     {

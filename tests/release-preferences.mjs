@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { releasePreferences, releaseChoiceURL } from '../src/release_preferences.js';
+assert.deepEqual(releasePreferences(), {regional:true,refractiveEyes:true,coverageSamples:4,bridge:'pipeline'});
+const classic=releaseChoiceURL('https://example.test/neutral-tissue.html?candidate=1&expectedBuild=fixture&bridge=versioned','appearance','classic');
+assert.deepEqual(releasePreferences(new URL(classic).search),{regional:false,refractiveEyes:false,coverageSamples:0,bridge:'versioned'});
+assert.equal(new URL(classic).searchParams.get('expectedBuild'),'fixture');
+const serial=releaseChoiceURL(classic,'simulation','serial');
+assert.equal(releasePreferences(new URL(serial).search).bridge,'versioned');
+assert.throws(()=>releaseChoiceURL(classic,'unknown','unknown'),/Unknown/);
+console.log('Release defaults, complete classic optics, serial choice and runtime selection preservation passed');

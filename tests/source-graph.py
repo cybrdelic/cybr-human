@@ -45,14 +45,18 @@ for record in provenance['files']:
     if p.is_file() and sha(p)==record['sha256']:unchanged+=1
     else:changed.append(record['path'])
     if record['path'].startswith('output/runtime/') or record['path'] in {'neutral-tissue.html','output/runtime-current.json'}:
-        assert p.is_file() and sha(p)==record['sha256'],'Selected application changed'
+        preserved=ROOT/({'neutral-tissue.html':'rollback.html','output/runtime-current.json':'output/runtime-rollback.json'}.get(record['path'],record['path']))
+        assert preserved.is_file() and sha(preserved)==record['sha256'],'Preserved rollback application changed'
+current=json.loads((ROOT/'output/runtime-current.json').read_text())
+rollback=json.loads((ROOT/'output/runtime-rollback.json').read_text())
+assert current['build'] in {rollback['build'],runtime['build']},'Unexpected selected runtime'
 for rel in ['assets/anatomy/geometry.npz','assets/anatomy/manifest.json','assets/anatomy/LICENSE.txt','assets/anatomy/UPSTREAM-LICENSE.txt','vendor/three-0.169.0/LICENSE']:
     assert (ROOT/rel).is_file(),rel
 for current,dirs,names in os.walk(ROOT):
     dirs[:]=[d for d in dirs if d not in {'node_modules','.venv','__pycache__'}]
     assert not any('profile' in d.lower() or d.lower() in {'.npm-cache','.ruff_cache','cache','cookies'} for d in dirs),'Private/cache directory in stage'
     assert not any(n.startswith('.env') or any(x in n.lower() for x in ['cookie','auth-state','storage-state','credential']) for n in names),'Private file in stage'
-report={'build':runtime['build'],'runtime_files':len(checked),'resolved_reference_count':len(references),'unchanged_copied_files':unchanged,'changes_from_staged_baseline':changed,'selected_runtime_and_html_bytes_match_original':True,'privacy_check':'passed; dependencies and generated test outputs excluded from source scan'}
+report={'build':runtime['build'],'runtime_files':len(checked),'resolved_reference_count':len(references),'unchanged_copied_files':unchanged,'changes_from_staged_baseline':changed,'baseline_runtime_and_rollback_html_match_original':True,'candidate_entry_html_updated':True,'privacy_check':'passed; dependencies and generated test outputs excluded from source scan'}
 (ROOT/'output/verification').mkdir(parents=True,exist_ok=True)
 (ROOT/'output/verification/source-graph.json').write_text(json.dumps(report,indent=2))
 print(json.dumps(report))

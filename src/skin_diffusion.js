@@ -5,18 +5,33 @@ import * as THREE from "three";
  * This is a screen-space approximation, not a layered spectral BSSRDF.
  * Specular radiance is excluded. Radius is measured in metres, not pixels.
  */
-export function createSkinDiffusion(renderer, scene, camera) {
+export function createSkinDiffusion(renderer, scene, camera, options = {}) {
+  // Canvas MSAA does not apply to the offscreen beauty/diffuse targets. Query
+  // samples supported by BOTH actual attachment formats, not just MAX_SAMPLES.
+  const gl = renderer.getContext();
+  const requestedSamples = options.coverageSamples === 4 ? 4 : 0;
+  const supportedSamples = requestedSamples
+    ? [gl.RGBA16F, gl.DEPTH_COMPONENT24].map(format =>
+      Array.from(gl.getInternalformatParameter(gl.RENDERBUFFER, format, gl.SAMPLES) ?? []))
+    : [];
+  const coverageSamples = requestedSamples
+    ? [4, 2].find(n => supportedSamples.every(counts => counts.includes(n))) ?? 0
+    : 0;
   const state = {
     enabled: true,
     supported: renderer.extensions.has("EXT_color_buffer_float"),
     radiusMm: 1.2,
     renders: 0,
     cpuSubmitMs: 0,
+    requestedCoverageSamples: requestedSamples,
+    coverageSamples,
   };
   const target = (depth = false) => {
     const rt = new THREE.WebGLRenderTarget(1, 1, {
       type: THREE.HalfFloatType,
       depthBuffer: depth,
+      samples: depth ? coverageSamples : 0,
+      resolveDepthBuffer: true,
     });
     if (depth)
       rt.depthTexture = new THREE.DepthTexture(1, 1, THREE.UnsignedIntType);

@@ -25,6 +25,8 @@ import { createLazyAnatomy } from "./lazy_anatomy.js";
 import { createFrameMetrics } from "./frame_metrics.js";
 import { SynchronousGPUBridge } from "./synchronous_gpu_bridge.js";
 import { OrderedGPUPipeline } from "./ordered_gpu_pipeline.js";
+import { releasePreferences, releaseChoiceURL } from "./release_preferences.js";
+const preferences = releasePreferences(location.search);
 
 const stage = document.querySelector("#stage"),
   message = document.querySelector("#message"),
@@ -123,7 +125,9 @@ debug.setInspectionLighting = (preset = "studio") => {
   requestRender();
 };
 
-const skinDiffusion = createSkinDiffusion(renderer, scene, camera);
+const skinDiffusion = createSkinDiffusion(renderer, scene, camera, {
+  coverageSamples: preferences.coverageSamples,
+});
 debug.skinDiffusion = skinDiffusion.state;
 const scatteringControl = document.querySelector("#scattering");
 scatteringControl.checked = skinDiffusion.state.supported;
@@ -332,7 +336,9 @@ async function start() {
         });
       });
   for (const item of authoredMeshes) {
-    improveAuthoredMaterials(item);
+    // Regional fields use the final authored rest shape below, before FEM binding.
+    if (!(preferences.regional && /Continuous_(neutral|anatomical)_skin/.test(item.name)))
+      improveAuthoredMaterials(item, { refractiveEyes: preferences.refractiveEyes });
     item.castShadow = !/corneal|tear|iris|pupil/i.test(item.name);
     item.receiveShadow = true;
     prepareSkinNormals(item);
@@ -367,6 +373,11 @@ async function start() {
       item.geometry.computeBoundingSphere();
     }
   }
+
+  if (preferences.regional)
+    for (const item of authoredMeshes)
+      if (/Continuous_(neutral|anatomical)_skin/.test(item.name))
+        improveAuthoredMaterials(item, { regional: true });
 
   if (bundle.smoothData) {
     finePatch = createFineSkinPatch(model, arrays, requestRender, (reason) => {
@@ -494,7 +505,7 @@ async function start() {
   try {
     if (query.get("backend") === "cpu")
       throw Error("CPU backend explicitly selected");
-    engine = await GPUHeadFEM.create(model, arrays, null, { checkpointState: ["versioned", "pipeline"].includes(query.get("bridge")) });
+    engine = await GPUHeadFEM.create(model, arrays, null, { checkpointState: true });
   } catch (error) {
     debug.gpuBootFailure = error.message;
     engine = await CPUHeadFEM.create(model, arrays, error.message);
@@ -502,9 +513,20 @@ async function start() {
   if (engine.boundedSubmissions && ["8", "16"].includes(query.get("gpuBatch")))
     engine.cgBatchSize = Number(query.get("gpuBatch"));
   activeSolver = engine;
-  if (["versioned", "pipeline"].includes(query.get("bridge"))) activeBridge = new SynchronousGPUBridge(model);
-  const pipelineRequested = query.get("bridge") === "pipeline";
+  activeBridge = new SynchronousGPUBridge(model);
+  const pipelineRequested = preferences.bridge === "pipeline";
   debug.pipelineReferenceFallback = pipelineRequested && (!engine.device || engine.boundedSubmissions);
+  debug.releaseConfiguration = { ...preferences, pipelineEligible: !!engine.device && !engine.boundedSubmissions };
+  for (const [id, kind, selected] of [
+    ['renderProfile', 'appearance', preferences.regional && preferences.refractiveEyes && preferences.coverageSamples ? 'refined' : 'classic'],
+    ['computeProfile', 'simulation', pipelineRequested ? 'balanced' : 'serial'],
+  ]) {
+    const choice = document.querySelector('#' + id);
+    if (!choice) continue;
+    choice.value = selected;
+    choice.disabled = false;
+    choice.onchange = () => location.assign(releaseChoiceURL(location.href, kind, choice.value));
+  }
   if (lifecycle.disposed) {
     engine.dispose();
     return;

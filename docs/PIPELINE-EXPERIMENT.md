@@ -18,8 +18,11 @@ the last fully validated CPU checkpoint. Late results cannot advance a new epoch
 CPU contracts cover dispatch equivalence to the original step, separate uniforms,
 full readback, two-bank reuse, out-of-order mapping, acceptance backpressure,
 validation failure, map/copy failures and cancellation across reset generations.
-They are not driver or browser validation. The pipeline candidate has not yet had
-a coordinated GPU review and has no established speedup.
+They are not driver or browser validation. An isolated coordinated GPU review
+subsequently passed 30 matched full-state steps exactly and actual loss/restore.
+One bounded ABBA workload measured about 1.67x aggregate simulation advancement;
+both paths still lagged wall time and long stalls persisted. Combined-default
+browser acceptance remains pending; see COMBINED-RELEASE.md for exact limits.
 
 ## Requested bounded GPU review
 
