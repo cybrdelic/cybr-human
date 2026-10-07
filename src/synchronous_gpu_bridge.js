@@ -10,7 +10,7 @@ export class SynchronousGPUBridge {
     if (this.nodes > this.surfaceNodes * 6) throw Error('Model exceeds packed-state position capacity');
     this.state = new GPUBridgeState({ nodes: this.nodes, surfaceNodes: this.surfaceNodes });
   }
-  accept(result) {
+  validate(result) {
     const { packed, velocities, stats } = result;
     if (!(packed instanceof Float32Array) || packed.length !== this.surfaceNodes * 24 ||
         !(velocities instanceof Float32Array || velocities instanceof Float64Array) || velocities.length !== this.nodes * 3 ||
@@ -20,6 +20,11 @@ export class SynchronousGPUBridge {
         !Number.isFinite(stats.maxNodeSpeedMps) || !Number.isFinite(stats.kineticEnergyJ) ||
         !Number.isFinite(stats.simulatedSeconds) || stats.simulatedSeconds < 0)
       throw Error('Invalid full synchronous bridge state');
+    return true;
+  }
+  accept(result) {
+    this.validate(result);
+    const { packed, velocities, stats } = result;
     const positions = new Float64Array(this.nodes * 3);
     for (let n = 0; n < this.nodes; n++) for (let d = 0; d < 3; d++) positions[n * 3 + d] = packed[n * 4 + d];
     const old = this.state.version;

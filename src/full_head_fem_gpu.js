@@ -40,11 +40,18 @@ export class GPUHeadFEM {
     this.errors = [];
     this.frames = 0;
     this.samples = [];
+    this.submissionEpoch = 0;
+    this.submissionSequence = 0;
+    this.acceptedSubmissionSequence = 0;
+    this.submissionSlots = new Set();
+    this.submissionBanks = [];
+    this.peakSubmissionSlotBytes = 0;
     device.addEventListener("uncapturederror", (e) =>
       this.errors.push(e.error.message),
     );
     device.lost.then((info) => {
       this.lost = info;
+      this.cancelSubmittedSteps();
     });
   }
   async initialize() {
@@ -274,6 +281,7 @@ export class GPUHeadFEM {
         },
       ],
     });
+    this.submissionLayout = layout;
     this.bindGroup = d.createBindGroup({
       layout,
       entries: [
@@ -312,6 +320,7 @@ export class GPUHeadFEM {
           },
         ]),
     });
+    this.submissionControlLayout = controlLayout;
     this.controlBindGroup = d.createBindGroup({
       layout: controlLayout,
       entries: [0, 3, 4]
@@ -397,10 +406,17 @@ export class GPUHeadFEM {
     }
   }
   reset() {
+    this.cancelSubmittedSteps();
+    this.submissionNeedsRecovery = false;
     this.device.queue.writeBuffer(this.buffers[0], 0, this.initialNodeData);
     this.device.queue.writeBuffer(this.buffers[4], 0, new Float32Array(16));
   }
-  async step(
+  async step(parameters = {}, options = {}) {
+    if (this.submissionNeedsRecovery) throw Error("GPU submission requires recovery");
+    if (this.submissionSlots.size) throw Error("Pending speculative GPU steps");
+    return this._runStep(parameters, options);
+  }
+  async _runStep(
     { fatPercent = 0, sagPercent = 0, gravity = 1, grab = null } = {},
     {
       dt = 1 / 120,
@@ -411,7 +427,9 @@ export class GPUHeadFEM {
       indirect = true,
       quasiStatic = false,
     } = {},
+    slot = null,
   ) {
+    if (this.disposed) throw Error("GPU solver disposed");
     if (this.lost) throw Error("GPU device lost: " + this.lost.message);
     const begin = performance.now(),
       d = this.device,
@@ -430,14 +448,20 @@ export class GPUHeadFEM {
       grab ? [...grab.target, grab.stiffness ?? 100] : [0, 0, 0, 0],
       8,
     );
-    d.queue.writeBuffer(this.params, 0, this.paramBytes);
+    d.queue.writeBuffer(slot?.params ?? this.params, 0, this.paramBytes);
+    const readback = slot?.readback ?? this.readback,
+      queries = slot?.queries ?? this.queries,
+      queryBuffer = slot?.queryBuffer ?? this.queryBuffer,
+      bindGroup = slot?.bindGroup ?? this.bindGroup,
+      controlBindGroup = slot?.controlBindGroup ?? this.controlBindGroup,
+      grabSupportNodes = grab ? this.grabSupportNodes : 0;
     let encoder = d.createCommandEncoder(),
       pass;
     const beginPass = (first = false, last = false) => {
       const timestampWrites =
         this.timestamp && !bounded && (first || last)
           ? {
-              querySet: this.queries,
+              querySet: queries,
               ...(first ? { beginningOfPassWriteIndex: 0 } : {}),
               ...(last ? { endOfPassWriteIndex: 1 } : {}),
             }
@@ -445,7 +469,7 @@ export class GPUHeadFEM {
       pass = encoder.beginComputePass(
         timestampWrites ? { timestampWrites } : {},
       );
-      pass.setBindGroup(0, this.bindGroup);
+      pass.setBindGroup(0, bindGroup);
     };
     beginPass(true);
     const flush = async () => {
@@ -464,7 +488,7 @@ export class GPUHeadFEM {
       pass.setPipeline(this.pipelines[name]);
       pass.setBindGroup(
         0,
-        this.controlNames.has(name) ? this.controlBindGroup : this.bindGroup,
+        this.controlNames.has(name) ? controlBindGroup : bindGroup,
       );
       pass.dispatchWorkgroups(count);
     };
@@ -474,7 +498,7 @@ export class GPUHeadFEM {
         return;
       }
       pass.setPipeline(this.pipelines[name]);
-      pass.setBindGroup(0, this.bindGroup);
+      pass.setBindGroup(0, bindGroup);
       pass.dispatchWorkgroupsIndirect(this.indirectArgs, slot * 16);
     };
     run("updateMaterials", tetGroups);
@@ -522,23 +546,23 @@ export class GPUHeadFEM {
     encoder.copyBufferToBuffer(
       this.buffers[5],
       0,
-      this.readback,
+      readback,
       0,
       this.statsOffset,
     );
     encoder.copyBufferToBuffer(
       this.buffers[4],
       0,
-      this.readback,
+      readback,
       this.statsOffset,
       64,
     );
     if (this.timestamp && !bounded) {
-      encoder.resolveQuerySet(this.queries, 0, 2, this.queryBuffer, 0);
+      encoder.resolveQuerySet(queries, 0, 2, queryBuffer, 0);
       encoder.copyBufferToBuffer(
-        this.queryBuffer,
+        queryBuffer,
         0,
-        this.readback,
+        readback,
         this.statsOffset + 64,
         16,
       );
@@ -546,54 +570,220 @@ export class GPUHeadFEM {
     const finalSubmitBegin = performance.now();
     d.queue.submit([encoder.finish()]);
     const mapBegin = performance.now();
-    await this.readback.mapAsync(GPUMapMode.READ);
-    const mappedAt = performance.now();
-    const bytes = this.readback.getMappedRange(),
-      packed = new Float32Array(bytes, 0, this.outputBytes / 4).slice(),
-      stats = new Float32Array(bytes, this.statsOffset, 16).slice();
-    let velocities;
-    if (this.checkpointState) {
-      const packedVelocity = new Float32Array(bytes, this.outputBytes, this.N * 4);
-      velocities = new Float32Array(this.N * 3);
-      for (let n = 0; n < this.N; n++) for (let d = 0; d < 3; d++) velocities[n * 3 + d] = packedVelocity[n * 4 + d];
-    }
-    let gpuMs = null;
-    if (this.timestamp && !bounded) {
-      const stamps = new BigUint64Array(bytes, this.statsOffset + 64, 2);
-      gpuMs = Number(stamps[1] - stamps[0]) / 1e6;
-    }
-    this.readback.unmap();
-    const elapsedMs = performance.now() - begin;
-    this.frames++;
-    const sample = {
-      elapsedMs,
-      gpuMs,
-      hostBeforeFinalSubmitMs: finalSubmitBegin - begin,
-      finalSubmitCpuMs: mapBegin - finalSubmitBegin,
-      readbackWaitMs: mappedAt - mapBegin,
-      mappedCopyCpuMs: performance.now() - mappedAt,
-      readbackBytes: this.statsOffset + 64 + (this.timestamp && !bounded ? 16 : 0),
-      minJ: stats[9],
-      residualN: stats[10],
-      staticResidualN: stats[13],
-      maxNodeSpeedMps: stats[14],
-      kineticEnergyJ: stats[15],
-      lineAccepted: stats[8] > 0.5,
-      directionalDerivativeJ: stats[6],
-      lastStepFraction: stats[7],
-      cgIterationsExecuted: stats[11],
-      grabSupportNodes: grab ? this.grabSupportNodes : 0,
-      indirect,
-      submissionChunks,
-      integration: quasiStatic ? "quasistatic" : "dynamic",
-      simulatedSeconds: quasiStatic ? 0 : dt * substeps,
-      frame: this.frames,
+    const complete = async () => {
+      await readback.mapAsync(GPUMapMode.READ);
+      if (slot) slot.mapped = true;
+      if (slot && (slot.cancelled || slot.epoch !== this.submissionEpoch)) throw Error("Stale GPU submission");
+      const mappedAt = performance.now();
+      const bytes = readback.getMappedRange(),
+        packed = new Float32Array(bytes, 0, this.outputBytes / 4).slice(),
+        stats = new Float32Array(bytes, this.statsOffset, 16).slice();
+      let velocities;
+      if (this.checkpointState) {
+        const packedVelocity = new Float32Array(bytes, this.outputBytes, this.N * 4);
+        velocities = new Float32Array(this.N * 3);
+        for (let n = 0; n < this.N; n++) for (let d = 0; d < 3; d++) velocities[n * 3 + d] = packedVelocity[n * 4 + d];
+      }
+      let gpuMs = null;
+      if (this.timestamp && !bounded) {
+        const stamps = new BigUint64Array(bytes, this.statsOffset + 64, 2);
+        gpuMs = Number(stamps[1] - stamps[0]) / 1e6;
+      }
+      readback.unmap();
+      if (slot) slot.mapped = false;
+      const elapsedMs = performance.now() - begin;
+      if (!slot) this.frames++;
+      const sample = {
+        elapsedMs,
+        gpuMs,
+        hostBeforeFinalSubmitMs: finalSubmitBegin - begin,
+        finalSubmitCpuMs: mapBegin - finalSubmitBegin,
+        readbackWaitMs: mappedAt - mapBegin,
+        mappedCopyCpuMs: performance.now() - mappedAt,
+        readbackBytes: this.statsOffset + 64 + (this.timestamp && !bounded ? 16 : 0),
+        minJ: stats[9],
+        residualN: stats[10],
+        staticResidualN: stats[13],
+        maxNodeSpeedMps: stats[14],
+        kineticEnergyJ: stats[15],
+        lineAccepted: stats[8] > 0.5,
+        directionalDerivativeJ: stats[6],
+        lastStepFraction: stats[7],
+        cgIterationsExecuted: stats[11],
+        grabSupportNodes,
+        indirect,
+        submissionChunks,
+        integration: quasiStatic ? "quasistatic" : "dynamic",
+        simulatedSeconds: quasiStatic ? 0 : dt * substeps,
+        frame: slot?.sequence ?? this.frames,
+      };
+      if (!slot) {
+        this.samples.push(sample);
+        if (this.samples.length > 240) this.samples.shift();
+      }
+      if (this.errors.length) throw Error(this.errors.at(-1));
+      if (!slot) this.latestPacked = packed;
+      if (slot) {
+        sample.inputVersion = slot.inputVersion;
+        sample.inputAgeAtSubmitMs = slot.inputAgeAtSubmitMs;
+        sample.inputAgeAtCompletionMs = performance.now() - slot.inputAt;
+        sample.submissionSlotBytes = slot.bytes;
+        sample.peakSubmissionSlotBytes = this.peakSubmissionSlotBytes;
+        sample.allocatedReusableBankBytes = this.allocatedReusableBankBytes;
+        sample.solverOwnedBufferBytes = this.bufferMemory.ownedBufferBytes;
+        sample.peakSolverOwnedBufferBytes = this.bufferMemory.peakOwnedBufferBytes;
+      }
+      const result = { packed, stats: sample, ...(velocities ? { velocities } : {}) };
+      if (slot) slot.result = result;
+      return result;
     };
-    this.samples.push(sample);
+    if (!slot) return complete();
+    slot.completion = complete().catch(error => {
+      slot.failed = true;
+      if (slot.epoch === this.submissionEpoch && !slot.cancelled) this.cancelSubmittedSteps();
+      else slot.cancel();
+      throw error;
+    }).finally(() => slot.release());
+    // Cancel/reset can reject before the ordered consumer reaches this ticket.
+    slot.completion.catch(() => {});
+    return slot;
+  }
+  /** Serial queue solves with private per-step parameters/readback/timestamps.
+   * Does not accept/present a result: the ordered host coordinator owns that gate.
+   * Bounded Intel submissions retain their original awaited reference path.
+   */
+  async submitStep(parameters = {}, options = {}, metadata = {}) {
+    if (this.boundedSubmissions) throw Error("Speculation unavailable for bounded submissions");
+    if (!this.checkpointState) throw Error("Speculation requires actual checkpoint velocities");
+    if (this.disposed || this.lost || this.submissionNeedsRecovery) throw Error("GPU submission requires recovery");
+    if (this.submissionSlots.size >= 2) throw Error("GPU submission backpressure");
+    const d = this.device, inputAt = metadata.inputAt ?? performance.now();
+    if (!Number.isFinite(inputAt) || !Number.isSafeInteger(metadata.inputVersion ?? 0))
+      throw Error("Invalid submission input metadata");
+    const slot = { epoch: this.submissionEpoch, sequence: ++this.submissionSequence,
+      inputVersion: metadata.inputVersion ?? 0, inputAt,
+      inputAgeAtSubmitMs: performance.now() - inputAt, cancelled: false,
+      bytes: 80 + this.statsOffset + 80 + (this.timestamp ? 16 : 0) };
+    // Banks persist across accepted frames. A copied result still reserves its
+    // bank until ordered acceptance; no frame allocation churn in steady state.
+    slot.release = () => {
+      if (slot.mapped) {
+        try { slot.readback.unmap(); } finally { slot.mapped = false; }
+      }
+      slot.released = true;
+    };
+    slot.cancel = () => {
+      slot.cancelled = true;
+      try { slot.release(); } finally {
+        if (slot.bank?.owner === slot) slot.bank.destroy();
+      }
+    };
+    this.submissionSlots.add(slot);
+    try {
+      let bank = this.submissionBanks.find(b => !b.destroyed && !b.inUse);
+      if (!bank) {
+        if (this.submissionBanks.filter(b => !b.destroyed).length >= 2)
+          throw Error("GPU staging bank backpressure");
+        bank = { bytes: slot.bytes, inUse: false, destroyed: false };
+        bank.destroy = () => {
+          if (bank.destroyed) return;
+          bank.destroyed = true;
+          bank.params?.destroy(); bank.readback?.destroy();
+          bank.queryBuffer?.destroy(); bank.queries?.destroy();
+        };
+        // Associate before allocation, so partial allocation failure cleans up.
+        slot.bank = bank;
+        bank.owner = slot;
+        this.submissionBanks = this.submissionBanks.filter(b => !b.destroyed);
+        this.submissionBanks.push(bank);
+        bank.params = d.createBuffer({ size: 80, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST });
+        bank.readback = d.createBuffer({ size: this.statsOffset + 80,
+          usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ });
+        bank.bindGroup = d.createBindGroup({ layout: this.submissionLayout,
+          entries: [...this.buffers.map((buffer, binding) => ({ binding, resource: { buffer } })),
+            { binding: 8, resource: { buffer: bank.params } }] });
+        bank.controlBindGroup = d.createBindGroup({ layout: this.submissionControlLayout,
+          entries: [0, 3, 4].map(binding => ({ binding, resource: { buffer: this.buffers[binding] } }))
+            .concat([{ binding: 8, resource: { buffer: bank.params } },
+              { binding: 9, resource: { buffer: this.indirectArgs } }]) });
+        if (this.timestamp) {
+          bank.queries = d.createQuerySet({ type: "timestamp", count: 2 });
+          bank.queryBuffer = d.createBuffer({ size: 16,
+            usage: GPUBufferUsage.QUERY_RESOLVE | GPUBufferUsage.COPY_SRC });
+        }
+      }
+      bank.inUse = true;
+      bank.owner = slot;
+      slot.bank = bank;
+      for (const key of ['params', 'readback', 'bindGroup', 'controlBindGroup', 'queries', 'queryBuffer'])
+        slot[key] = bank[key];
+      // Count allocated GPU buffer bytes, including free reusable banks. Excludes
+      // querySet driver memory and immutable copied CPU result arrays.
+      this.peakSubmissionSlotBytes = Math.max(this.peakSubmissionSlotBytes,
+        this.submissionBanks.filter(b => !b.destroyed).reduce((n, b) => n + b.bytes, 0));
+      return await this._runStep(parameters, options, slot);
+    } catch (error) {
+      if (slot.epoch === this.submissionEpoch && !slot.cancelled) this.cancelSubmittedSteps();
+      else slot.cancel();
+      throw error;
+    }
+  }
+  acceptSubmittedStep(slot, result) {
+    if (this.disposed || this.lost || this.submissionNeedsRecovery || slot.cancelled ||
+        slot.epoch !== this.submissionEpoch || slot.sequence !== this.acceptedSubmissionSequence + 1 ||
+        !this.submissionSlots.has(slot) || slot.result !== result ||
+        !slot.released || slot.mapped || slot.bank.destroyed)
+      throw Error("GPU submission acceptance order rejected");
+    this.acceptedSubmissionSequence = slot.sequence;
+    this.submissionSlots.delete(slot);
+    slot.bank.inUse = false;
+    this.frames++;
+    result.stats.frame = this.frames;
+    this.samples.push(result.stats);
     if (this.samples.length > 240) this.samples.shift();
-    if (this.errors.length) throw Error(this.errors.at(-1));
-    this.latestPacked = packed;
-    return { packed, stats: sample, ...(velocities ? { velocities } : {}) };
+    this.latestPacked = result.packed;
+  }
+  /** GPU may already have advanced speculatively. Cancellation does not claim
+   * rollback: further submissions require reset or a validated checkpoint restore.
+   */
+  cancelSubmittedSteps() {
+    this.submissionNeedsRecovery = true;
+    for (const slot of this.submissionSlots) slot.cancel();
+    this.submissionSlots.clear();
+    for (const bank of this.submissionBanks) bank.destroy();
+    this.submissionBanks = [];
+    this.submissionEpoch++;
+    this.acceptedSubmissionSequence = this.submissionSequence;
+  }
+  get reusableBankAllocations() {
+    return this.submissionBanks.flatMap((bank, bankIndex) => bank.destroyed ? [] :
+      ['params', 'readback', 'queryBuffer'].filter(key => bank[key]).map(key => ({
+        label: `submission-bank-${bankIndex}-${key}`, bytes: bank[key].size,
+        bankIndex, reserved: bank.inUse,
+      })));
+  }
+  get allocatedReusableBankBytes() {
+    return this.reusableBankAllocations.reduce((bytes, allocation) => bytes + allocation.bytes, 0);
+  }
+  /** Actual owned GPUBuffer sizes, not whole-process/renderer/driver memory.
+   * QuerySets and copied CPU arrays have no measured size and are excluded.
+   * Temporary readState() diagnostic readbacks are not part of this pool.
+   */
+  get bufferMemory() {
+    const base = [
+      ...(this.buffers ?? []).map((buffer, index) => ({ label: `solver-storage-${index}`, bytes: buffer.size })),
+      ...['params', 'readback', 'queryBuffer', 'indirectArgs'].filter(key => this[key])
+        .map(key => ({ label: `solver-${key}`, bytes: this[key].size })),
+    ];
+    const historicalBaseBytes = base.reduce((bytes, allocation) => bytes + allocation.bytes, 0);
+    const baseBytes = this.disposed ? 0 : historicalBaseBytes;
+    const banks = this.reusableBankAllocations;
+    return { allocations: [...(this.disposed ? [] : base), ...banks], baseBufferBytes: baseBytes,
+      allocatedReusableBankBytes: this.allocatedReusableBankBytes,
+      peakSubmissionSlotBytes: this.peakSubmissionSlotBytes,
+      ownedBufferBytes: baseBytes + this.allocatedReusableBankBytes,
+      peakOwnedBufferBytes: historicalBaseBytes + this.peakSubmissionSlotBytes,
+      excludes: ['querySets', 'CPU snapshots', 'renderer', 'driver', 'temporary readState diagnostic buffer'] };
   }
   grabNormalization(node) {
     if (this.patchNode === node) return this.patchScale;
@@ -636,6 +826,7 @@ export class GPUHeadFEM {
   dispose() {
     if (this.disposed) return;
     this.disposed = true;
+    this.cancelSubmittedSteps();
     for (const b of this.buffers ?? []) b.destroy();
     this.indirectArgs?.destroy();
     this.params?.destroy();

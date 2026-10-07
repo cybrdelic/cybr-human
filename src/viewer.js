@@ -24,6 +24,7 @@ import { guardGPUPage } from "./gpu_page_lifecycle.js";
 import { createLazyAnatomy } from "./lazy_anatomy.js";
 import { createFrameMetrics } from "./frame_metrics.js";
 import { SynchronousGPUBridge } from "./synchronous_gpu_bridge.js";
+import { OrderedGPUPipeline } from "./ordered_gpu_pipeline.js";
 
 const stage = document.querySelector("#stage"),
   message = document.querySelector("#message"),
@@ -134,6 +135,7 @@ scatteringControl.onchange = () => {
 
 let activeSolver = null,
   activeBridge = null,
+  activePipeline = null,
   finePatch = null,
   surfacePool = null;
 function disposeSceneResources() {
@@ -192,6 +194,7 @@ const lifecycle = guardGPUPage({
     message.style.background = "#111d21e8";
   },
   onDispose: () => {
+    activePipeline?.dispose();
     activeBridge?.dispose();
     skinDiffusion.dispose();
     activeSolver?.dispose();
@@ -491,7 +494,7 @@ async function start() {
   try {
     if (query.get("backend") === "cpu")
       throw Error("CPU backend explicitly selected");
-    engine = await GPUHeadFEM.create(model, arrays, null, { checkpointState: query.get("bridge") === "versioned" });
+    engine = await GPUHeadFEM.create(model, arrays, null, { checkpointState: ["versioned", "pipeline"].includes(query.get("bridge")) });
   } catch (error) {
     debug.gpuBootFailure = error.message;
     engine = await CPUHeadFEM.create(model, arrays, error.message);
@@ -499,7 +502,9 @@ async function start() {
   if (engine.boundedSubmissions && ["8", "16"].includes(query.get("gpuBatch")))
     engine.cgBatchSize = Number(query.get("gpuBatch"));
   activeSolver = engine;
-  if (query.get("bridge") === "versioned") activeBridge = new SynchronousGPUBridge(model);
+  if (["versioned", "pipeline"].includes(query.get("bridge"))) activeBridge = new SynchronousGPUBridge(model);
+  const pipelineRequested = query.get("bridge") === "pipeline";
+  debug.pipelineReferenceFallback = pipelineRequested && (!engine.device || engine.boundedSubmissions);
   if (lifecycle.disposed) {
     engine.dispose();
     return;
@@ -507,6 +512,7 @@ async function start() {
   engine.device?.lost.then((info) => {
     if (!lifecycle.disposed && activeSolver === engine) {
       debug.gpuDeviceLoss = info.message || info.reason;
+      activePipeline?.stop(Error("GPU device lost"));
       activeBridge?.lost();
       requestControlUpdate();
     }
@@ -542,6 +548,13 @@ async function start() {
     timeAccumulator = 0,
     resetPending = false;
   const fixedDt = 1 / 60;
+  let inputVersion = 0, inputChangedAtMs = performance.now(), lastRespondedInputVersion = -1;
+  const markInput = () => {
+    inputVersion++;
+    inputChangedAtMs = performance.now();
+    debug.input = { version: inputVersion, changedAtMs: inputChangedAtMs };
+  };
+  debug.inputLatency = [];
   debug.clock = {
     simulationSeconds: 0,
     activeWallSeconds: 0,
@@ -582,6 +595,7 @@ async function start() {
       " bending hinges.\nOn-demand static FEM equilibrium; Run simulation uses fixed-time dynamics. Rest anatomy shares the frame; full anatomical coupling remains pending.";
 
   const update = () => {
+    markInput();
     requested = {
       fatPercent: Number(document.querySelector("#fat").value),
       sagPercent: Number(document.querySelector("#sag").value),
@@ -599,6 +613,7 @@ async function start() {
 
   if (document.querySelector("#grabStiffness"))
     document.querySelector("#grabStiffness").oninput = (e) => {
+      markInput();
       document.querySelector("#grabStiffnessValue").textContent =
         e.target.value + " N/m";
       requestControlUpdate();
@@ -617,6 +632,7 @@ async function start() {
   scene.add(marker);
 
   document.querySelector("#release").onclick = () => {
+    markInput();
     grab = null;
     currentGrab = null;
     marker.visible = false;
@@ -633,15 +649,18 @@ async function start() {
     timeAccumulator = 0;
   });
   document.querySelector("#running").onchange = (e) => {
+    markInput();
     running = e.target.checked;
     timeAccumulator = 0;
     lastTime = performance.now();
   };
   debug.pause = () => {
+    markInput();
     running = false;
     document.querySelector("#running").checked = false;
   };
   debug.resume = () => {
+    markInput();
     timeAccumulator = 0;
     running = true;
     document.querySelector("#running").checked = true;
@@ -702,6 +721,7 @@ async function start() {
     if (!hit) return;
     dragNode = closest(hit.point, proxy);
     if (dragNode < 0) { dragNode = null; return; }
+    markInput();
     const p = layers[0].geometry.attributes.position;
     grab = {
       node: dragNode,
@@ -727,6 +747,7 @@ async function start() {
         delta = point.clone().sub(origin);
       if (delta.length() > 0.02) delta.setLength(0.02);
       grab.target = origin.add(delta).toArray();
+      markInput();
       marker.position.fromArray(grab.target);
       if (!running) {
         requestControlUpdate();
@@ -747,6 +768,7 @@ async function start() {
     if (activeBridge && !proxy) return -1;
     const node = closest(new THREE.Vector3(...position), proxy);
     if (node < 0) return -1;
+    markInput();
     if (proxy) debug.grabVersion = proxy.version;
     grab = {
       node,
@@ -772,6 +794,7 @@ async function start() {
     return node;
   };
   debug.release = () => {
+    markInput();
     grab = null;
     currentGrab = null;
     marker.visible = false;
@@ -787,11 +810,67 @@ async function start() {
     };
   };
 
+  async function recoverSolveFailure(e) {
+    debug.solveInFlight = false;
+    activePipeline?.dispose();
+    activePipeline = null;
+    if (engine.device && model.skin_url && !lifecycle.disposed) {
+      const failed = engine;
+      status.textContent =
+        "Restoring the last solved tissue state on the CPU…";
+      try {
+        const checkpoint = activeBridge?.lost();
+        if (activeBridge && !checkpoint) throw Error("No completed validated checkpoint; reload to retry");
+        const replacement = await CPUHeadFEM.create(model, arrays, e.message);
+        try {
+          const receipt = await replacement.restore(checkpoint?.positions ?? positions,
+            checkpoint?.velocities ?? checkpointVelocity, !!activeBridge);
+          if (activeBridge) {
+            const recovered = activeBridge.recovered(checkpoint, receipt);
+            positions.set(checkpoint.positions);
+            checkpointVelocity.set(checkpoint.velocities);
+            debug.clock.simulationSeconds = recovered.simulationSeconds;
+            debug.bridge = activeBridge.summary;
+            grab = currentGrab = null;
+            dragNode = null;
+            marker.visible = false;
+          }
+        } catch (restoreError) { replacement.dispose(); throw restoreError; }
+        engine = replacement;
+        activeSolver = replacement;
+        debug.solver = replacement;
+        debug.engine = "CPU worker implicit FEM";
+        debug.adapter = replacement.adapterInfo;
+        status.dataset.compute = JSON.stringify(replacement.adapterInfo);
+        debug.recovery = {
+          reason: e.message,
+          positionsPreserved: true,
+          frame: debug.samples.length,
+          ...(checkpoint ? { checkpointVersion: checkpoint.version, actualSolverVelocity: true } : {}),
+        };
+        failed.dispose();
+        lastTime = performance.now();
+        requestControlUpdate();
+        requestAnimationFrame(tick);
+        return;
+      } catch (recoveryError) {
+        running = false;
+        lifecycle.fail("Tissue recovery failed: " + recoveryError.message);
+        return;
+      }
+    }
+    running = false;
+    lifecycle.fail("Tissue FEM stopped: " + e.message);
+    return;
+  }
+
   async function tick() {
     if (lifecycle.disposed || debug.graphicsStopped) return;
 
     if (resetPending) {
       resetPending = false;
+      activePipeline?.dispose();
+      activePipeline = null;
       await engine.reset();
       if (activeBridge) {
         activeBridge.dispose();
@@ -813,7 +892,7 @@ async function start() {
       debug.resetCount = (debug.resetCount || 0) + 1;
     }
     const now = performance.now();
-    if ((!running && controlUpdates === 0) || !lifecycle.canSubmit) {
+    if ((!running && controlUpdates === 0 && !activePipeline?.summary.outstanding) || !lifecycle.canSubmit) {
       lastTime = now;
       requestAnimationFrame(tick);
       return;
@@ -870,7 +949,7 @@ async function start() {
       debug.samples.at(-1)?.residualN > 0.01;
     const high =
       unsettled || document.querySelector("#quality").value === "reference";
-    let result;
+    let result, pipelineLease = null;
 
     const solveParameters = {
       ...applied,
@@ -878,72 +957,43 @@ async function start() {
         ? { ...currentGrab, target: [...currentGrab.target] }
         : null,
     };
+    let acceptedSolveParameters = solveParameters;
+    const solveOptions = {
+      dt: frameDt, quasiStatic: !running, substeps: 1,
+      newton: high ? 4 : 2, cg: !running ? (high ? 256 : 64) : high ? 64 : 24,
+      block: true, checkpointState: !!activeBridge,
+    };
+    debug.solveInFlight = true;
     try {
-      result = await engine.step(solveParameters, {
-        dt: frameDt,
-        quasiStatic: !running,
-        substeps: 1,
-        newton: high ? 4 : 2,
-        cg: !running ? (high ? 256 : 64) : high ? 64 : 24,
-        block: true,
-        checkpointState: !!activeBridge,
-      });
+      if (pipelineRequested && engine.device && !engine.boundedSubmissions) {
+        activePipeline ??= new OrderedGPUPipeline({ backend: engine,
+          validate: (value) => activeBridge.validate(value),
+          onFailure: (error) => { debug.pipelineFailure = error.message; activeBridge.lost(); },
+        });
+        if (activePipeline.summary.stopped) throw Error("Ordered GPU pipeline requires checkpoint recovery");
+        const enqueue = () => activePipeline.enqueue(solveParameters, solveOptions, {
+          inputVersion, inputAt: performance.now(), userInputAt: inputChangedAtMs,
+          parameters: structuredClone(solveParameters),
+        });
+        if (activePipeline.summary.outstanding === 0) enqueue();
+        // Only compute ahead while dynamics are already behind real time. The
+        // next tick still consumes one fixedDt before accepting that result.
+        if (running && timeAccumulator >= fixedDt && activePipeline.summary.outstanding < 2) enqueue();
+        pipelineLease = await activePipeline.takeNext();
+        result = pipelineLease.result;
+        acceptedSolveParameters = pipelineLease.metadata.parameters;
+      } else result = await engine.step(solveParameters, solveOptions);
     } catch (e) {
-      if (engine.device && model.skin_url && !lifecycle.disposed) {
-        const failed = engine;
-        status.textContent =
-          "Restoring the last solved tissue state on the CPU…";
-        try {
-          const checkpoint = activeBridge?.lost();
-          if (activeBridge && !checkpoint) throw Error("No completed validated checkpoint; reload to retry");
-          const replacement = await CPUHeadFEM.create(model, arrays, e.message);
-          try {
-            const receipt = await replacement.restore(checkpoint?.positions ?? positions,
-              checkpoint?.velocities ?? checkpointVelocity, !!activeBridge);
-            if (activeBridge) {
-              const recovered = activeBridge.recovered(checkpoint, receipt);
-              positions.set(checkpoint.positions);
-              checkpointVelocity.set(checkpoint.velocities);
-              debug.clock.simulationSeconds = recovered.simulationSeconds;
-              debug.bridge = activeBridge.summary;
-              grab = currentGrab = null;
-              dragNode = null;
-              marker.visible = false;
-            }
-          } catch (restoreError) { replacement.dispose(); throw restoreError; }
-          engine = replacement;
-          activeSolver = replacement;
-          debug.solver = replacement;
-          debug.engine = "CPU worker implicit FEM";
-          debug.adapter = replacement.adapterInfo;
-          status.dataset.compute = JSON.stringify(replacement.adapterInfo);
-          debug.recovery = {
-            reason: e.message,
-            positionsPreserved: true,
-            frame: debug.samples.length,
-            ...(checkpoint ? { checkpointVersion: checkpoint.version, actualSolverVelocity: true } : {}),
-          };
-          failed.dispose();
-          lastTime = performance.now();
-          requestControlUpdate();
-          requestAnimationFrame(tick);
-          return;
-        } catch (recoveryError) {
-          running = false;
-          lifecycle.fail("Tissue recovery failed: " + recoveryError.message);
-          return;
-        }
-      }
-      running = false;
-      lifecycle.fail("Tissue FEM stopped: " + e.message);
+      await recoverSolveFailure(e);
       return;
     }
 
-    if (lifecycle.disposed || debug.graphicsStopped) return;
+    if (lifecycle.disposed || debug.graphicsStopped) { debug.solveInFlight = false; return; }
 
     // Loss can arrive after a map resolves but before presentation. Ignore that
     // late result; the next serialized tick enters the existing CPU recovery.
     if (activeBridge?.summary.status === "lost") {
+      debug.solveInFlight = false;
       requestAnimationFrame(tick);
       return;
     }
@@ -954,6 +1004,7 @@ async function start() {
       !Number.isFinite(result.stats.residualN)
     ) {
       running = false;
+      debug.solveInFlight = false;
       lifecycle.fail(
         "The tissue solve became invalid. Reload this page before continuing.",
       );
@@ -967,6 +1018,7 @@ async function start() {
         debug.bridge = activeBridge.summary;
       } catch (error) {
         running = false;
+        debug.solveInFlight = false;
         lifecycle.fail("Tissue bridge stopped: " + error.message);
         return;
       }
@@ -1007,18 +1059,30 @@ async function start() {
     }
     document.querySelector("#fatValue").textContent =
       "+" +
-      applied.fatPercent.toFixed(0) +
+      acceptedSolveParameters.fatPercent.toFixed(0) +
       "%" +
-      (Math.abs(requested.fatPercent - applied.fatPercent) > 0.5
+      (Math.abs(requested.fatPercent - acceptedSolveParameters.fatPercent) > 0.5
         ? " / target " + requested.fatPercent + "%"
         : "");
     document.querySelector("#sagValue").textContent =
-      applied.sagPercent.toFixed(0) +
+      acceptedSolveParameters.sagPercent.toFixed(0) +
       "%" +
-      (Math.abs(requested.sagPercent - applied.sagPercent) > 0.5
+      (Math.abs(requested.sagPercent - acceptedSolveParameters.sagPercent) > 0.5
         ? " / target " + requested.sagPercent + "%"
         : "");
     render();
+    if (pipelineLease) {
+      result.stats.inputAgeAtRenderSubmissionMs = performance.now() - pipelineLease.ticket.inputAt;
+      try { activePipeline.acknowledge(pipelineLease); }
+      catch (error) { await recoverSolveFailure(error); return; }
+      debug.pipeline = activePipeline.summary;
+      if (pipelineLease.metadata.inputVersion === inputVersion && inputVersion !== lastRespondedInputVersion) {
+        lastRespondedInputVersion = inputVersion;
+        debug.inputLatency.push({ inputVersion, responseMs: performance.now() - pipelineLease.metadata.userInputAt, phase: "accepted-render-submission" });
+        if (debug.inputLatency.length > 100) debug.inputLatency.shift();
+      }
+    }
+    debug.solveInFlight = false;
     controlUpdates = Math.max(0, controlUpdates - 1);
     const sample = {
       ...result.stats,
@@ -1027,14 +1091,14 @@ async function start() {
       uploadAndSubmitMs: performance.now() - uploadBegin,
       frameIntervalMs: now - debug.lastFrameTime || null,
       applied: {
-        fatPercent: solveParameters.fatPercent,
-        sagPercent: solveParameters.sagPercent,
-        gravity: solveParameters.gravity,
+        fatPercent: acceptedSolveParameters.fatPercent,
+        sagPercent: acceptedSolveParameters.sagPercent,
+        gravity: acceptedSolveParameters.gravity,
       },
-      grabbed: !!solveParameters.grab,
+      grabbed: !!acceptedSolveParameters.grab,
     };
     const atTarget = ["fatPercent", "sagPercent"].every(
-      (k) => Math.abs(requested[k] - applied[k]) < 0.001,
+      (k) => Math.abs(requested[k] - acceptedSolveParameters[k]) < 0.001,
     );
     quietSteps =
       atTarget &&
@@ -1096,7 +1160,7 @@ async function start() {
           .filter(Number.isFinite)
           .sort((a, b) => a - b),
         gpuMedian = gpu[Math.floor(gpu.length / 2)];
-      status.textContent = `${median ? (1000 / median).toFixed(1000 / median < 10 ? 1 : 0) + " measured updates/s" : "Measuring…"} · ${engine.adapterInfo.vendor}${engine.device ? " GPU" : ""}\n${model.nodes.toLocaleString()} nodes · ${model.tetrahedra.toLocaleString()} cells\n${bundle.parts[0].active_vertex_count.toLocaleString()} main skin vertices · full head\n${engine.device && Number.isFinite(gpuMedian) ? "GPU timestamp " + gpuMedian.toFixed(1) : "Solver elapsed " + sample.elapsedMs.toFixed(1)} ms\nMinimum J ${sample.minJ.toFixed(3)} · residual ${sample.residualN.toExponential(1)} N\nStatic force ${sample.staticResidualN.toExponential(1)} N · speed ${(sample.maxNodeSpeedMps * 1000).toFixed(3)} mm/s\nApplied fat +${applied.fatPercent.toFixed(0)}% · softness ${applied.sagPercent.toFixed(0)}%\n${settling ? "Settling tissue…" : debug.settlement?.capped ? "Solve budget reached; tissue is not settled" : "Last solve complete"} · surface step ${(maxSurfaceStepM * 1000).toFixed(3)} mm`;
+      status.textContent = `${median ? (1000 / median).toFixed(1000 / median < 10 ? 1 : 0) + " measured updates/s" : "Measuring…"} · ${engine.adapterInfo.vendor}${engine.device ? " GPU" : ""}\n${model.nodes.toLocaleString()} nodes · ${model.tetrahedra.toLocaleString()} cells\n${bundle.parts[0].active_vertex_count.toLocaleString()} main skin vertices · full head\n${engine.device && Number.isFinite(gpuMedian) ? "GPU timestamp " + gpuMedian.toFixed(1) : "Solver elapsed " + sample.elapsedMs.toFixed(1)} ms\nMinimum J ${sample.minJ.toFixed(3)} · residual ${sample.residualN.toExponential(1)} N\nStatic force ${sample.staticResidualN.toExponential(1)} N · speed ${(sample.maxNodeSpeedMps * 1000).toFixed(3)} mm/s\nApplied fat +${sample.applied.fatPercent.toFixed(0)}% · softness ${sample.applied.sagPercent.toFixed(0)}%\n${settling ? "Settling tissue…" : debug.settlement?.capped ? "Solve budget reached; tissue is not settled" : "Last solve complete"} · surface step ${(maxSurfaceStepM * 1000).toFixed(3)} mm`;
       if (debug.fineSkinFailure)
         status.textContent +=
           "\nFine skin detail unavailable: " + debug.fineSkinFailure;
@@ -1129,6 +1193,7 @@ async function start() {
 
 start().catch((e) => {
   activeSolver?.dispose();
+  activePipeline?.dispose();
   activeBridge?.dispose();
   debug.errors.push(e.message);
   status.textContent = "Controls unavailable: " + e.message + ".";
