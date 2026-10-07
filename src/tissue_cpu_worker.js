@@ -133,6 +133,7 @@ function step(parameters, options) {
         packed[N * 4 + c * S * 4 + n * 4 + d] = F[n * 9 + d * 3 + c];
   return {
     packed,
+    ...(options.checkpointState ? { velocities: solver.velocity.slice() } : {}),
     stats: {
       elapsedMs: performance.now() - started,
       gpuMs: null,
@@ -177,10 +178,17 @@ self.onmessage = ({ data }) => {
             solver.x[j] = solver.target[j];
             solver.velocity[j] = 0;
           }
-      self.postMessage({ id: data.id, ready: true });
+      if (data.verifyCheckpoint) {
+        const state = solver.evaluate(solver.x, Infinity, false);
+        if (!Number.isFinite(state.energy) || !Number.isFinite(state.residual) || !Number.isFinite(state.minJ) || state.minJ <= 0.2)
+          throw Error("Restored tissue checkpoint failed numerical validation");
+        const positions = solver.x.slice(), velocities = solver.velocity.slice();
+        self.postMessage({ id: data.id, ready: true, positions, velocities,
+          minJ: state.minJ, energyJ: state.energy, residualN: state.residual }, [positions.buffer, velocities.buffer]);
+      } else self.postMessage({ id: data.id, ready: true });
     } else {
       const result = step(data.parameters, data.options);
-      self.postMessage({ id: data.id, ...result }, [result.packed.buffer]);
+      self.postMessage({ id: data.id, ...result }, [result.packed.buffer, ...(result.velocities ? [result.velocities.buffer] : [])]);
     }
   } catch (e) {
     self.postMessage({ id: data.id, error: e.message });

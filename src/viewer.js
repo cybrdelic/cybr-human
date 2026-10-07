@@ -23,6 +23,7 @@ import { improveAuthoredMaterials } from "./authored_skin_material.js";
 import { guardGPUPage } from "./gpu_page_lifecycle.js";
 import { createLazyAnatomy } from "./lazy_anatomy.js";
 import { createFrameMetrics } from "./frame_metrics.js";
+import { SynchronousGPUBridge } from "./synchronous_gpu_bridge.js";
 
 const stage = document.querySelector("#stage"),
   message = document.querySelector("#message"),
@@ -132,6 +133,7 @@ scatteringControl.onchange = () => {
 };
 
 let activeSolver = null,
+  activeBridge = null,
   finePatch = null,
   surfacePool = null;
 function disposeSceneResources() {
@@ -190,6 +192,7 @@ const lifecycle = guardGPUPage({
     message.style.background = "#111d21e8";
   },
   onDispose: () => {
+    activeBridge?.dispose();
     skinDiffusion.dispose();
     activeSolver?.dispose();
     finePatch?.dispose();
@@ -488,7 +491,7 @@ async function start() {
   try {
     if (query.get("backend") === "cpu")
       throw Error("CPU backend explicitly selected");
-    engine = await GPUHeadFEM.create(model, arrays);
+    engine = await GPUHeadFEM.create(model, arrays, null, { checkpointState: query.get("bridge") === "versioned" });
   } catch (error) {
     debug.gpuBootFailure = error.message;
     engine = await CPUHeadFEM.create(model, arrays, error.message);
@@ -496,6 +499,7 @@ async function start() {
   if (engine.boundedSubmissions && ["8", "16"].includes(query.get("gpuBatch")))
     engine.cgBatchSize = Number(query.get("gpuBatch"));
   activeSolver = engine;
+  if (query.get("bridge") === "versioned") activeBridge = new SynchronousGPUBridge(model);
   if (lifecycle.disposed) {
     engine.dispose();
     return;
@@ -503,6 +507,7 @@ async function start() {
   engine.device?.lost.then((info) => {
     if (!lifecycle.disposed && activeSolver === engine) {
       debug.gpuDeviceLoss = info.message || info.reason;
+      activeBridge?.lost();
       requestControlUpdate();
     }
   });
@@ -528,7 +533,8 @@ async function start() {
   ])
     document.querySelector("#" + name).disabled = false;
 
-  let controlUpdates = 0,
+  // Versioned picking/recovery need one numerically checked initial preload.
+  let controlUpdates = activeBridge ? 1 : 0,
     settling = false,
     settleSteps = 0,
     quietSteps = 0,
@@ -666,15 +672,17 @@ async function start() {
     renderer.domElement.style.cursor = e.target.checked ? "grab" : "";
   };
 
-  const closest = (world) => {
+  const closest = (world, proxy = null) => {
     const p = layers[0].geometry.attributes.position;
+    const coordinates = proxy?.positions ?? p.array;
     let best = -1,
       distance = Infinity;
     for (let n = 0; n < p.count; n++) {
+      if (proxy && arrays.fixedNodes?.[n] > 0.5) continue;
       const d =
-        (p.array[n * 3] - world.x) ** 2 +
-        (p.array[n * 3 + 1] - world.y) ** 2 +
-        (p.array[n * 3 + 2] - world.z) ** 2;
+        (coordinates[n * 3] - world.x) ** 2 +
+        (coordinates[n * 3 + 1] - world.y) ** 2 +
+        (coordinates[n * 3 + 2] - world.z) ** 2;
       if (d < distance) {
         best = n;
         distance = d;
@@ -685,16 +693,22 @@ async function start() {
 
   renderer.domElement.addEventListener("pointerdown", (e) => {
     if (!document.querySelector("#grab").checked) return;
+    const proxy = activeBridge?.picking();
+    if (activeBridge && !proxy) return;
+    // Synchronous stage: raycast and target initialization use one owned proxy.
+    if (proxy) layers[0].geometry.attributes.position.array.set(proxy.positions);
     pointerRay(e);
     const hit = ray.intersectObject(layers[0])[0];
     if (!hit) return;
-    dragNode = closest(hit.point);
+    dragNode = closest(hit.point, proxy);
+    if (dragNode < 0) { dragNode = null; return; }
     const p = layers[0].geometry.attributes.position;
     grab = {
       node: dragNode,
       target: Array.from(p.array.subarray(dragNode * 3, dragNode * 3 + 3)),
     };
     currentGrab = { node: dragNode, target: [...grab.target] };
+    if (proxy) debug.grabVersion = proxy.version;
     marker.position.copy(hit.point);
     marker.visible = true;
     plane.setFromNormalAndCoplanarPoint(
@@ -729,7 +743,11 @@ async function start() {
   });
 
   debug.grabPoint = (position, offset) => {
-    const node = closest(new THREE.Vector3(...position));
+    const proxy = activeBridge?.picking();
+    if (activeBridge && !proxy) return -1;
+    const node = closest(new THREE.Vector3(...position), proxy);
+    if (node < 0) return -1;
+    if (proxy) debug.grabVersion = proxy.version;
     grab = {
       node,
       target: Array.from(
@@ -775,6 +793,11 @@ async function start() {
     if (resetPending) {
       resetPending = false;
       await engine.reset();
+      if (activeBridge) {
+        activeBridge.dispose();
+        activeBridge = new SynchronousGPUBridge(model);
+        debug.clock.simulationSeconds = 0;
+      }
       positions.set(arrays.rest);
       checkpointVelocity.fill(0);
       timeAccumulator = 0;
@@ -863,6 +886,7 @@ async function start() {
         newton: high ? 4 : 2,
         cg: !running ? (high ? 256 : 64) : high ? 64 : 24,
         block: true,
+        checkpointState: !!activeBridge,
       });
     } catch (e) {
       if (engine.device && model.skin_url && !lifecycle.disposed) {
@@ -870,8 +894,23 @@ async function start() {
         status.textContent =
           "Restoring the last solved tissue state on the CPU…";
         try {
+          const checkpoint = activeBridge?.lost();
+          if (activeBridge && !checkpoint) throw Error("No completed validated checkpoint; reload to retry");
           const replacement = await CPUHeadFEM.create(model, arrays, e.message);
-          await replacement.restore(positions, checkpointVelocity);
+          try {
+            const receipt = await replacement.restore(checkpoint?.positions ?? positions,
+              checkpoint?.velocities ?? checkpointVelocity, !!activeBridge);
+            if (activeBridge) {
+              const recovered = activeBridge.recovered(checkpoint, receipt);
+              positions.set(checkpoint.positions);
+              checkpointVelocity.set(checkpoint.velocities);
+              debug.clock.simulationSeconds = recovered.simulationSeconds;
+              debug.bridge = activeBridge.summary;
+              grab = currentGrab = null;
+              dragNode = null;
+              marker.visible = false;
+            }
+          } catch (restoreError) { replacement.dispose(); throw restoreError; }
           engine = replacement;
           activeSolver = replacement;
           debug.solver = replacement;
@@ -882,6 +921,7 @@ async function start() {
             reason: e.message,
             positionsPreserved: true,
             frame: debug.samples.length,
+            ...(checkpoint ? { checkpointVersion: checkpoint.version, actualSolverVelocity: true } : {}),
           };
           failed.dispose();
           lastTime = performance.now();
@@ -901,6 +941,13 @@ async function start() {
 
     if (lifecycle.disposed || debug.graphicsStopped) return;
 
+    // Loss can arrive after a map resolves but before presentation. Ignore that
+    // late result; the next serialized tick enters the existing CPU recovery.
+    if (activeBridge?.summary.status === "lost") {
+      requestAnimationFrame(tick);
+      return;
+    }
+
     if (
       !Number.isFinite(result.stats.minJ) ||
       result.stats.minJ <= 0 ||
@@ -913,7 +960,17 @@ async function start() {
       return;
     }
 
-    debug.clock.simulationSeconds += result.stats.simulatedSeconds ?? frameDt;
+    if (activeBridge) {
+      try {
+        const version = activeBridge.accept(result);
+        debug.clock.simulationSeconds = version.simulationSeconds;
+        debug.bridge = activeBridge.summary;
+      } catch (error) {
+        running = false;
+        lifecycle.fail("Tissue bridge stopped: " + error.message);
+        return;
+      }
+    } else debug.clock.simulationSeconds += result.stats.simulatedSeconds ?? frameDt;
     const uploadBegin = performance.now();
     transfers[0].updatePacked(result.packed);
     finePatch?.update(result.packed);
@@ -930,7 +987,7 @@ async function start() {
       );
     for (let n = 0; n < model.nodes; n++) {
       for (let d = 0; d < 3; d++)
-        checkpointVelocity[n * 3 + d] =
+        checkpointVelocity[n * 3 + d] = activeBridge ? result.velocities[n * 3 + d] :
           ((result.packed[n * 4 + d] - positions[n * 3 + d]) / frameDt) *
           Math.exp(Math.log(0.98) * 60 * frameDt);
       positions[n * 3] = result.packed[n * 4];
@@ -1072,6 +1129,7 @@ async function start() {
 
 start().catch((e) => {
   activeSolver?.dispose();
+  activeBridge?.dispose();
   debug.errors.push(e.message);
   status.textContent = "Controls unavailable: " + e.message + ".";
   message.hidden = true;

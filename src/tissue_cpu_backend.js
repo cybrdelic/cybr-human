@@ -70,8 +70,8 @@ export class CPUHeadFEM {
   reset() {
     return this.call({ type: "reset" });
   }
-  restore(positions, velocity) {
-    return this.call({ type: "restore", positions, velocity });
+  restore(positions, velocity, verifyCheckpoint = false) {
+    return this.call({ type: "restore", positions, velocity, verifyCheckpoint });
   }
   dispose() {
     this.fail(Error("Tissue worker disposed"));

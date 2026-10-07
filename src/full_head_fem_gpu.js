@@ -1,5 +1,5 @@
 export class GPUHeadFEM {
-  static async create(model, arrays, adapter = null) {
+  static async create(model, arrays, adapter = null, { checkpointState = false } = {}) {
     if (!navigator.gpu) throw Error("WebGPU is unavailable");
     adapter ??= await navigator.gpu.requestAdapter({
       powerPreference: "high-performance",
@@ -16,6 +16,7 @@ export class GPUHeadFEM {
         requiredFeatures: timestamp ? ["timestamp-query"] : [],
       }),
       engine = new GPUHeadFEM(device, model, arrays, timestamp);
+    engine.checkpointState = checkpointState;
     engine.adapterInfo = {
       vendor: adapter.info.vendor,
       architecture: adapter.info.architecture,
@@ -243,7 +244,7 @@ export class GPUHeadFEM {
       buffer("Node-to-cell incidence", adjacency),
       buffer("Parallel reductions", new Float32Array(this.groups * 4)),
       buffer("Solver scalars", new Float32Array(16)),
-      buffer("GPU position/gradient transfer", new Float32Array(S * 24)),
+      buffer("GPU position/gradient transfer", new Float32Array(S * 24 + (this.checkpointState ? N * 4 : 0))),
       buffer("Sparse stiffness blocks", new Uint8Array(edgeData)),
       buffer("Block cell incidence", edgeStorage),
     ];
@@ -371,6 +372,7 @@ export class GPUHeadFEM {
       "validationPartial",
       "validationFinish",
     ];
+    if (this.checkpointState) names.push("packCheckpointVelocity");
     for (const name of names)
       this.pipelines[name] = await d.createComputePipelineAsync({
         layout: this.controlNames.has(name)
@@ -380,8 +382,10 @@ export class GPUHeadFEM {
         label: name,
       });
     this.outputBytes = S * 24 * 4;
+    this.velocityBytes = this.checkpointState ? N * 16 : 0;
+    this.statsOffset = this.outputBytes + this.velocityBytes;
     this.readback = d.createBuffer({
-      size: this.outputBytes + 80,
+      size: this.statsOffset + 80,
       usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ,
     });
     if (this.timestamp) {
@@ -513,19 +517,20 @@ export class GPUHeadFEM {
     run("validationPartial");
     run("validationFinish", 1);
     run("pack");
+    if (this.checkpointState) run("packCheckpointVelocity");
     pass.end();
     encoder.copyBufferToBuffer(
       this.buffers[5],
       0,
       this.readback,
       0,
-      this.outputBytes,
+      this.statsOffset,
     );
     encoder.copyBufferToBuffer(
       this.buffers[4],
       0,
       this.readback,
-      this.outputBytes,
+      this.statsOffset,
       64,
     );
     if (this.timestamp && !bounded) {
@@ -534,7 +539,7 @@ export class GPUHeadFEM {
         this.queryBuffer,
         0,
         this.readback,
-        this.outputBytes + 64,
+        this.statsOffset + 64,
         16,
       );
     }
@@ -545,10 +550,16 @@ export class GPUHeadFEM {
     const mappedAt = performance.now();
     const bytes = this.readback.getMappedRange(),
       packed = new Float32Array(bytes, 0, this.outputBytes / 4).slice(),
-      stats = new Float32Array(bytes, this.outputBytes, 16).slice();
+      stats = new Float32Array(bytes, this.statsOffset, 16).slice();
+    let velocities;
+    if (this.checkpointState) {
+      const packedVelocity = new Float32Array(bytes, this.outputBytes, this.N * 4);
+      velocities = new Float32Array(this.N * 3);
+      for (let n = 0; n < this.N; n++) for (let d = 0; d < 3; d++) velocities[n * 3 + d] = packedVelocity[n * 4 + d];
+    }
     let gpuMs = null;
     if (this.timestamp && !bounded) {
-      const stamps = new BigUint64Array(bytes, this.outputBytes + 64, 2);
+      const stamps = new BigUint64Array(bytes, this.statsOffset + 64, 2);
       gpuMs = Number(stamps[1] - stamps[0]) / 1e6;
     }
     this.readback.unmap();
@@ -561,7 +572,7 @@ export class GPUHeadFEM {
       finalSubmitCpuMs: mapBegin - finalSubmitBegin,
       readbackWaitMs: mappedAt - mapBegin,
       mappedCopyCpuMs: performance.now() - mappedAt,
-      readbackBytes: this.outputBytes + 64 + (this.timestamp && !bounded ? 16 : 0),
+      readbackBytes: this.statsOffset + 64 + (this.timestamp && !bounded ? 16 : 0),
       minJ: stats[9],
       residualN: stats[10],
       staticResidualN: stats[13],
@@ -582,7 +593,7 @@ export class GPUHeadFEM {
     if (this.samples.length > 240) this.samples.shift();
     if (this.errors.length) throw Error(this.errors.at(-1));
     this.latestPacked = packed;
-    return { packed, stats: sample };
+    return { packed, stats: sample, ...(velocities ? { velocities } : {}) };
   }
   grabNormalization(node) {
     if (this.patchNode === node) return this.patchScale;
