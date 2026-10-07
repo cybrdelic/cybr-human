@@ -27,5 +27,6 @@ output/runtime-candidate.json
 
 # Public hosting build output and temporary Sites preparation.
 dist/
+dist-candidate/
 .sites-runtime/
 .sites-checkout*/

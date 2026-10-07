@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CYBR / Layered head tissue FEM</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three-0.169.0/build/three.module.js",
+          "three/addons/": "./vendor/three-0.169.0/examples/jsm/"
+        }
+      }
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #111d21;
+        color: #e8e0d5;
+        font: 14px system-ui;
+        display: grid;
+        grid-template-columns: 300px minmax(0, 1fr);
+        height: 100dvh;
+      }
+      aside {
+        padding: 24px;
+        background: #142328;
+        border-right: 1px solid #42606a;
+        overflow: auto;
+      }
+      h1 {
+        font-size: 22px;
+        margin: 14px 0;
+      }
+      p {
+        line-height: 1.5;
+      }
+      a {
+        color: #a8ddd0;
+      }
+      button {
+        padding: 9px 12px;
+        border: 1px solid #42606a;
+        border-radius: 6px;
+        background: #24483e;
+        color: white;
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.45;
+      }
+      label {
+        display: block;
+        margin: 18px 0;
+      }
+      input[type="range"] {
+        width: 100%;
+        accent-color: #a8ddd0;
+        cursor: pointer;
+        margin-top: 12px;
+      }
+      label span {
+        float: right;
+        font-variant-numeric: tabular-nums;
+      }
+      output {
+        display: block;
+        white-space: pre-line;
+        font: 12px monospace;
+        line-height: 1.7;
+      }
+      small {
+        color: #b7c1be;
+        line-height: 1.5;
+      }
+      details {
+        margin-top: 24px;
+      }
+      summary {
+        cursor: pointer;
+        color: #a8ddd0;
+      }
+      #stage {
+        position: relative;
+        min-width: 0;
+        min-height: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      #message {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        padding: 30px;
+        text-align: center;
+        pointer-events: none;
+        background: #111d21;
+      }
+      #message[hidden] {
+        display: none;
+      }
+      #views {
+        position: absolute;
+        bottom: 16px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+      }
+      #views button {
+        background: #142328dd;
+      }
+      @media (max-width: 850px) {
+        body {
+          height: auto;
+          min-height: 100dvh;
+          grid-template-columns: 1fr;
+        }
+        #stage {
+          grid-row: 1;
+          height: 55dvh;
+          min-height: 280px;
+          position: sticky;
+          top: 0;
+          z-index: 2;
+          background: #111d21;
+        }
+        aside {
+          border-right: 0;
+          border-top: 1px solid #42606a;
+          padding: 18px 24px;
+        }
+        h1 {
+          margin-top: 8px;
+        }
+        label {
+          max-width: 520px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <a href="README.md">Project notes</a>
+      <h1>Layered head tissue FEM</h1>
+      <label for="fat"
+        >Fat volume growth <span id="fatValue">+0%</span
+        ><input
+          id="fat"
+          type="range"
+          min="0"
+          max="200"
+          step="1"
+          value="0"
+          disabled /></label
+      ><label for="sag"
+        >Sag / tissue softness <span id="sagValue">0%</span
+        ><input
+          id="sag"
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="0"
+          disabled /></label
+      ><button id="resetShape" disabled>Reset tissue</button
+      ><label
+        ><input id="running" type="checkbox" checked disabled /> Run
+        simulation</label
+      ><label
+        >Solver quality
+        <select id="quality" disabled>
+          <option value="interactive">Interactive</option>
+          <option value="reference">More iterations</option>
+        </select></label
+      ><label
+        ><input id="gravity" type="checkbox" checked disabled /> Gravity</label
+      ><label
+        ><input id="grab" type="checkbox" disabled /> Drag tissue anywhere on
+        the head</label
+      ><label
+        >Drag stiffness <span id="grabStiffnessValue">1000 N/m</span
+        ><input
+          id="grabStiffness"
+          type="range"
+          min="100"
+          max="3000"
+          step="100"
+          value="1000" /></label
+      ><button id="release" disabled>Release tissue</button
+      ><label
+        ><input id="heatmap" type="checkbox" /> Skin volume change
+        heatmap</label
+      ><small>Blue: −5% · grey: rest volume · red: +5%</small
+      ><label
+        ><input id="fineHeatmap" type="checkbox" /> Wrinkle displacement map
+        (±0.1 mm)</label
+      ><label
+        ><input id="scattering" type="checkbox" checked /> Skin light
+        diffusion</label
+      ><label
+        ><input id="anatomy" type="checkbox" disabled /> View rest
+        anatomy</label
+      ><output id="tissueStatus">Preparing skin and adipose FEM…</output>
+      <p>
+        <small
+          >This candidate couples a regional adipose volume and thin dermal
+          solid to rest-dihedral skin bending. Fat growth changes adipose volume
+          and mass; gravity and skin bending act during each solve. The detailed
+          skin follows it on the GPU. On-demand controls solve static
+          equilibrium; Run simulation uses fixed-time dynamics. Depths and
+          material values are estimates. A local forehead membrane/foundation
+          FEM adds mechanical wrinkle detail from solved strain. Its coupling is
+          one-way; full-face shell mechanics remain pending. Rest anatomy shares
+          the skin's native coordinate frame; it is not an activated muscle or
+          jaw simulation.</small
+        >
+      </p>
+      <details>
+        <summary>Tissue layers and limitations</summary>
+        <label
+          ><input type="checkbox" id="cage" /> Show solved tissue layers</label
+        ><small
+          >Iterative dynamic FEM with energy and positive-volume checks. The
+          simulation mesh is repaired to maintain positive cells and finite
+          layer thickness. Thin features still use approximate tissue layers.
+          The fixed inner substrate is an approximation. Bone/cartilage contact
+          uses fixed nearest-triangle tangents; global moving contact, fascia,
+          activated muscles and self-contact are pending.</small
+        >
+      </details>
+    </aside>
+    <main id="stage">
+      <div id="message">Loading the authored head…</div>
+      <div id="views">
+        <button data-view="front">Front</button
+        ><button data-view="three-quarter">¾ view</button
+        ><button data-view="profile">Profile</button
+        ><button data-view="back">Back</button
+        ><button id="foreheadDetail">Forehead detail</button>
+      </div>
+    </main>
+    <script type="module" src="src/boot.js"></script>
+  </body>
+</html>

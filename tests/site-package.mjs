@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {createRuntimeFetch} from '../src/runtime_transport.js';
-const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),dist=path.join(root,'dist');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),dist=path.join(root,process.env.SITE_PACKAGE_DIR||'dist');
 const manifest=JSON.parse(fs.readFileSync(path.join(dist,'deployment.json')));
 const blocks=fs.readFileSync(path.join(dist,'_headers'),'utf8').trim().split(/\n\s*\n/).map(block=>{const [pattern,...lines]=block.split('\n');return {pattern,headers:Object.fromEntries(lines.map(line=>{const at=line.indexOf(':');return [line.slice(0,at).trim(),line.slice(at+1).trim()];}))};});
 const matches=(pattern,url)=>new RegExp('^'+pattern.split('*').map(p=>p.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('.*')+'$').test(url);
@@ -30,6 +30,12 @@ try{
   assert.equal(response.headers.get('content-encoding')??'identity',file.content_encoding);
  }
  const pointer=await (await fetch(origin+'/output/runtime-current.json')).json();assert.equal(pointer.build,manifest.selected_runtime);
+ if(manifest.rollback_runtime!==manifest.selected_runtime){
+  const rollback=await (await fetch(origin+'/output/runtime-rollback.json')).json();assert.equal(rollback.build,manifest.rollback_runtime);
+  assert.equal((await fetch(origin+'/rollback.html')).status,200);
+  assert(manifest.files.some(f=>f.path===rollback.entry.slice(1)));
+  assert(manifest.files.some(f=>f.path===pointer.entry.slice(1)));
+ }
  assert(manifest.files.some(f=>f.path.endsWith('/src/tissue_cpu_worker.js')));
  assert(manifest.files.some(f=>f.path.endsWith('/src/wrinkle_worker.js')));
  assert.equal((await fetch(origin+'/output/runtime-candidate.json')).status,404);
