@@ -4,6 +4,10 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const origin = process.env.TISSUE_BASE_URL || 'http://127.0.0.1:8781';
 const browser = await chromium.launch({ channel:'msedge', headless:true, args:['--enable-unsafe-webgpu'] });
+const watchdog = setTimeout(() => {
+  console.error('Bridge 200-second review budget reached'); process.exitCode = 1;
+  void browser.close();
+}, 200000);
 try {
   const page = await browser.newPage(), errors = [];
   page.on('pageerror', error => errors.push(error.message));
@@ -71,4 +75,4 @@ try {
   fs.writeFileSync('output/verification/bridge/results.json', JSON.stringify({packing,beforeLoss,recovery,
     limits:'Versioned synchronous bridge only; no resident production renderer or throughput claim.'},null,2));
   console.log(JSON.stringify({build:runtime,packing:packing.states.map(s=>({velocityError:s.maxVelocityError,positionError:s.maxPositionError})),recovery:recovery.recovery}));
-} finally {await browser.close();}
+} finally {clearTimeout(watchdog); await browser.close();}
