@@ -52,7 +52,7 @@ for current,dirs,names in os.walk(ROOT):
     dirs[:]=[d for d in dirs if d not in {'node_modules','.venv','__pycache__'}]
     assert not any('profile' in d.lower() or d.lower() in {'.npm-cache','.ruff_cache','cache','cookies'} for d in dirs),'Private/cache directory in stage'
     assert not any(n.startswith('.env') or any(x in n.lower() for x in ['cookie','auth-state','storage-state','credential']) for n in names),'Private file in stage'
-report={'build':runtime['build'],'runtime_files':len(checked),'resolved_reference_count':len(references),'unchanged_copied_files':unchanged,'tooling_changes':changed,'runtime_and_entry_bytes_match_original':True,'privacy_check':'passed; dependencies and generated test outputs excluded from source scan'}
+report={'build':runtime['build'],'runtime_files':len(checked),'resolved_reference_count':len(references),'unchanged_copied_files':unchanged,'changes_from_staged_baseline':changed,'selected_runtime_and_html_bytes_match_original':True,'privacy_check':'passed; dependencies and generated test outputs excluded from source scan'}
 (ROOT/'output/verification').mkdir(parents=True,exist_ok=True)
 (ROOT/'output/verification/source-graph.json').write_text(json.dumps(report,indent=2))
 print(json.dumps(report))

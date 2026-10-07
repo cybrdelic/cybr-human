@@ -1,10 +1,10 @@
 {
   "selected_runtime": "4bc8b53a8f15b8b62cf6a86e",
-  "source_files": 81,
-  "source_sha256": "df747139d4f5ee16afd534055cdc1345dd9bf62f964771f348783fedb0ce62ba",
-  "canonical_files_excluding_this_manifest": 207,
-  "canonical_bytes_excluding_this_manifest": 175270637,
-  "canonical_tree_sha256": "46faf6fc5f70a0486c66835c23737bad49f2e587d78d54f63e222b8703c9e3df",
+  "source_files": 82,
+  "source_sha256": "9478db382ec379b454409ee5bddee1a7aeac2a81e0080cb98dcb51709e23f5de",
+  "canonical_files_excluding_this_manifest": 208,
+  "canonical_bytes_excluding_this_manifest": 175275153,
+  "canonical_tree_sha256": "9d7a9eb047d966fb3ea026b1d101464932cf53411f4f556d3ca13925d807475a",
   "hash_contract": "SHA256(sorted relative path + NUL + file SHA256 + LF)",
   "excluded": "Private backups, local comparison/QA reports, credentials, profiles/auth state, captures, caches and installed dependencies.",
   "files": [
@@ -115,8 +115,8 @@
     },
     {
       "path": "docs/HOSTING.md",
-      "bytes": 2907,
-      "sha256": "1e276fd55b9ddc77b6989890534db3adb4759dcd82aa58a56b1206afda6b983a"
+      "bytes": 3428,
+      "sha256": "ea6089e888df9289c5f63368b5d539426f59478dc3e9cce95e393c743aa66d40"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
@@ -755,8 +755,8 @@
     },
     {
       "path": "src/boot.js",
-      "bytes": 879,
-      "sha256": "7666b51717c85b0cb60320dc358bbffbba782a0796676e87a8ab134e7d6255f8"
+      "bytes": 2376,
+      "sha256": "b074d09fe067ff887037f435d1916d537e252525af88b0068895d65a08e4ef44"
     },
     {
       "path": "src/fem_surface_cache.js",
@@ -802,6 +802,11 @@
       "path": "src/model.js",
       "bytes": 3704,
       "sha256": "a7071a805e31453f64bd65e263066f3b4b6f1bfcb4cee6071f88a72bfb49c031"
+    },
+    {
+      "path": "src/runtime_transport.js",
+      "bytes": 1564,
+      "sha256": "8f22fcfd5bcadafb378f103c0b3d5b40c406bcd2322d9ac7351847611b04b9c0"
     },
     {
       "path": "src/shell_bending.js",
@@ -925,8 +930,8 @@
     },
     {
       "path": "tests/site-package.mjs",
-      "bytes": 2894,
-      "sha256": "4936a3b14c9d03b1954eea31d8781e87d98eb1646a49a041bbb9f9fcf9ccaf88"
+      "bytes": 3780,
+      "sha256": "33f16838b2ad3634e2b9b0c93f46ed7f67814499332dbb84dbace055db9aca79"
     },
     {
       "path": "tests/slider-range.mjs",
@@ -940,8 +945,8 @@
     },
     {
       "path": "tests/source-graph.py",
-      "bytes": 3963,
-      "sha256": "227f5f59c651c953213602e5cd24bd749eff2be8df1a14daeb15655cfc7cc7c9"
+      "bytes": 3984,
+      "sha256": "315701ae8c1d7a177305e4b8bf81a190256fc6f08e460d2ea716ee7bf46046c0"
     },
     {
       "path": "tests/surface-cache.mjs",
@@ -975,8 +980,8 @@
     },
     {
       "path": "tools/build_site.mjs",
-      "bytes": 3801,
-      "sha256": "a9d0243ecd8ba9c349077ea09e68a39f647b0b1fa2194f6eda1ab87e4f1fd0cb"
+      "bytes": 3828,
+      "sha256": "cd6f4489d3f73ff04883a84ee9b2d605967cded29bc79e48b6c740142772e3aa"
     },
     {
       "path": "tools/build_tissue_runtime.py",
