@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import { createFEMSurfaceCache } from "./fem_surface_cache.js";
 /** Continuous nodal deformation-gradient transfer. The FEM worker solves the
  * volume; CPU gradient recovery is linear in its cells; dense skin stays GPU. */
 export function installFEMSurface(
@@ -145,54 +144,10 @@ export function installFEMSurface(
      : ""
  }
  `;
-  const transferUniforms = {
-    femHeatmap: heatmap,
-    femCurrent: { value: posed },
-    femRest: { value: initial },
-    femF0: { value: frames[0] },
-    femF1: { value: frames[1] },
-    femF2: { value: frames[2] },
-    femWorld: { value: world },
-    femInverse: { value: inverse },
-    femNormalWorld: { value: nw },
-    femNormalLocal: { value: nl },
-    femSize: { value: new THREE.Vector2(width, height) },
-    femFrameSize: { value: new THREE.Vector2(width, frameHeight) },
-    ...(fine ? {
-      femFineHeight: { value: fine.texture },
-      femFineDomain: { value: fine.domain },
-      femFineHeatmap: fine.heatmap,
-    } : {}),
-  };
-  const cache = pool?.renderer && pool.cacheEnabled
-    ? createFEMSurfaceCache(pool.renderer, mesh, common, transferUniforms, fine)
-    : null;
-  if (cache) pool.caches.push(cache);
   const hook = (shader) => {
-    if (cache) {
-      Object.assign(shader.uniforms, transferUniforms, cache.uniforms);
-      shader.vertexShader = shader.vertexShader.replace(
-        "#include <common>",
-        `#include <common>
-        attribute float femVertexId;attribute float femActive;
-        uniform sampler2D femCachedPosition,femCachedNormal;uniform vec2 femCacheSize;
-        varying float vFEMJ;varying float vFEMActive;
-        ${fine ? "varying float vFineHeight;" : ""}
-        vec4 femCached(sampler2D tex){return texture2D(tex,(vec2(mod(femVertexId,femCacheSize.x),floor(femVertexId/femCacheSize.x))+.5)/femCacheSize);}`,
-      );
-      shader.vertexShader = shader.vertexShader.replace(
-        "#include <beginnormal_vertex>",
-        "#include <beginnormal_vertex>\nobjectNormal=femCached(femCachedNormal).xyz;",
-      );
-      shader.vertexShader = shader.vertexShader.replace(
-        "#include <begin_vertex>",
-        `#include <begin_vertex>
-        vec4 cached=femCached(femCachedPosition);transformed=cached.xyz;
-        vFEMJ=cached.w;vFEMActive=femActive;
-        ${fine ? "vFineHeight=femCached(femCachedNormal).w;" : ""}`,
-      );
-      return;
-    }
+    const hasVertexNormal = shader.vertexShader.includes(
+      "#include <beginnormal_vertex>",
+    );
     Object.assign(shader.uniforms, {
       femHeatmap: heatmap,
       femCurrent: { value: posed },
@@ -227,7 +182,7 @@ export function installFEMSurface(
  vFEMJ=1.;vFEMActive=femActive;${fine ? "vFineHeight=femFine((femWorld*vec4(position,1.)).xyz);" : ""}if(femActive>.5){mat3 f=femF(femW());vFEMJ=dot(f[0],cross(f[1],f[2]));}
  if(femActive>.5){
    vec3 p=femSmoothPosition((femWorld*vec4(position,1.)).xyz);
-   ${fine ? `vec3 n=normalize(femNormal(femSmoothF(),femNormalWorld*normal));p+=n*femFine((femWorld*vec4(position,1.)).xyz);` : ""}
+   ${fine ? `vec3 n=normalize(${hasVertexNormal ? "femTransferredNormal" : "femNormal(femSmoothF(),femNormalWorld*normal)"});p+=n*femFine((femWorld*vec4(position,1.)).xyz);` : ""}
    transformed=(femInverse*vec4(p,1.)).xyz;
  }
 `,
@@ -235,7 +190,9 @@ export function installFEMSurface(
   };
   const shadingHook = (shader) => {
     hook(shader);
-    shader.fragmentShader = shader.fragmentShader.replace(
+    // Preserve the inverse-transpose transported authored smooth normal and
+    // fine-patch normal. Keep the geometric override for paired visual QA.
+    if (pool?.geometricNormals) shader.fragmentShader = shader.fragmentShader.replace(
       "#include <normal_fragment_begin>",
       `#include <normal_fragment_begin>
 if(vFEMActive>.5){vec3 geometricNormal=cross(dFdx(-vViewPosition),dFdy(-vViewPosition));float lengthSquared=dot(geometricNormal,geometricNormal);if(lengthSquared>1e-24)normal=(gl_FrontFacing?1.:-1.)*geometricNormal*inversesqrt(lengthSquared);}
@@ -259,7 +216,7 @@ if(vFEMActive>.5){vec3 geometricNormal=cross(dFdx(-vViewPosition),dFdy(-vViewPos
     shadingHook(shader);
   };
   material.customProgramCacheKey = () =>
-    "layered-fem-affine-surface" + (cache ? mesh.name : "") + !!fine + authoredKey;
+    "layered-fem-affine-surface" + !!fine + !!pool?.geometricNormals + authoredKey;
   mesh.material = material;
   mesh.frustumCulled = false;
   mesh.customDepthMaterial = new THREE.MeshDepthMaterial({
@@ -267,7 +224,7 @@ if(vFEMActive>.5){vec3 geometricNormal=cross(dFdx(-vViewPosition),dFdy(-vViewPos
   });
   mesh.customDepthMaterial.onBeforeCompile = hook;
   mesh.customDepthMaterial.customProgramCacheKey = () =>
-    "layered-fem-affine-depth" + (cache ? mesh.name : "") + !!fine;
+    "layered-fem-affine-depth" + !!fine;
   return {
     setHeatmap: (value) => {
       heatmap.value = value ? 1 : 0;
