@@ -45,7 +45,7 @@ try {
   for(const state of packing.states) { assert.equal(state.maxVelocityError,0); assert(state.maxPositionError<5e-8); }
   assert.deepEqual(packing.errors,[]);
   const runtime = await page.evaluate(async()=> (await (await fetch('/output/runtime-candidate.json')).json()).build);
-  await page.goto(origin + '/neutral-tissue.html?runtime=' + runtime + '&bridge=versioned');
+  await page.goto(origin + '/neutral-tissue.html?candidate=1&expectedBuild=' + runtime + '&bridge=versioned');
   await page.waitForFunction(()=>window.__fullHeadFEM?.ready, {}, {timeout:60000});
   await page.evaluate(()=>window.__fullHeadFEM.setParameters({gravity:1,fatPercent:5,sagPercent:5}));
   await page.waitForFunction(()=>window.__fullHeadFEM?.bridge?.version.sequence>=2, {}, {timeout:60000});
