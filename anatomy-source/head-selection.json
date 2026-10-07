@@ -1,0 +1,5291 @@
+[
+  {
+    "name": "Anterior belly of digastric muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trigeminal nerve (V)",
+      "Trunk"
+    ],
+    "vertices": 198,
+    "polygons": 392,
+    "min": [
+      0.003282424993813038,
+      -0.06955372542142868,
+      1.4991726875305176
+    ],
+    "max": [
+      0.015260347165167332,
+      -0.03375498205423355,
+      1.5055060386657715
+    ]
+  },
+  {
+    "name": "Anterior belly of digastric muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trigeminal nerve (V)",
+      "Trunk"
+    ],
+    "vertices": 198,
+    "polygons": 392,
+    "min": [
+      -0.01526030246168375,
+      -0.06955372542142868,
+      1.4991726875305176
+    ],
+    "max": [
+      -0.0032823802903294563,
+      -0.03375498205423355,
+      1.5055060386657715
+    ]
+  },
+  {
+    "name": "Ary-epiglottic part of oblique arytenoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 513,
+    "polygons": 1022,
+    "min": [
+      0.004799393471330404,
+      -0.019419506192207336,
+      1.4813565015792847
+    ],
+    "max": [
+      0.009041992947459221,
+      -0.00678735738620162,
+      1.5047855377197266
+    ]
+  },
+  {
+    "name": "Ary-epiglottic part of oblique arytenoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 513,
+    "polygons": 1022,
+    "min": [
+      -0.009041978046298027,
+      -0.019419506192207336,
+      1.4813563823699951
+    ],
+    "max": [
+      -0.0047993785701692104,
+      -0.00678735738620162,
+      1.504785418510437
+    ]
+  },
+  {
+    "name": "Ascending part of trapezius muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Accessory nerve (XI)",
+      "Back",
+      "Hypaxial muscles of back",
+      "Muscles",
+      "Neck",
+      "Superficial muscles",
+      "Trapezius muscle",
+      "Trunk"
+    ],
+    "vertices": 2298,
+    "polygons": 4596,
+    "min": [
+      -0.00397052988409996,
+      -0.0003779679536819458,
+      1.4154925346374512
+    ],
+    "max": [
+      0.13113383948802948,
+      0.09171459823846817,
+      1.5747380256652832
+    ]
+  },
+  {
+    "name": "Ascending part of trapezius muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Accessory nerve (XI)",
+      "Back",
+      "Hypaxial muscles of back",
+      "Muscles",
+      "Neck",
+      "Superficial muscles",
+      "Trapezius muscle",
+      "Trunk"
+    ],
+    "vertices": 2298,
+    "polygons": 4596,
+    "min": [
+      -0.13113383948802948,
+      -0.0003779679536819458,
+      1.4154925346374512
+    ],
+    "max": [
+      0.00397052988409996,
+      0.09171459823846817,
+      1.5747380256652832
+    ]
+  },
+  {
+    "name": "Atlas (C1)",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Back",
+      "Cervical vertebrae",
+      "Neck",
+      "Trunk",
+      "Vertebral column"
+    ],
+    "vertices": 1106,
+    "polygons": 2146,
+    "min": [
+      -0.043027929961681366,
+      -0.0031142346560955048,
+      1.5331083536148071
+    ],
+    "max": [
+      0.04303619638085365,
+      0.04595327377319336,
+      1.5527560710906982
+    ]
+  },
+  {
+    "name": "Axis (C2)",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Back",
+      "Cervical vertebrae",
+      "Neck",
+      "Trunk",
+      "Vertebral column"
+    ],
+    "vertices": 1168,
+    "polygons": 2244,
+    "min": [
+      -0.026784639805555344,
+      -0.0003565475344657898,
+      1.5085251331329346
+    ],
+    "max": [
+      0.02681589685380459,
+      0.052382390946149826,
+      1.5514352321624756
+    ]
+  },
+  {
+    "name": "Bucinator.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 444,
+    "polygons": 884,
+    "min": [
+      0.02087891846895218,
+      -0.07101129740476608,
+      1.5147165060043335
+    ],
+    "max": [
+      0.03585632145404816,
+      -0.04210115224123001,
+      1.5510274171829224
+    ]
+  },
+  {
+    "name": "Bucinator.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 444,
+    "polygons": 884,
+    "min": [
+      -0.03585633635520935,
+      -0.07101129740476608,
+      1.5147165060043335
+    ],
+    "max": [
+      -0.020878933370113373,
+      -0.04210115224123001,
+      1.5510274171829224
+    ]
+  },
+  {
+    "name": "Common tendinous ring.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 181,
+    "polygons": 362,
+    "min": [
+      0.013132989406585693,
+      -0.03697585687041283,
+      1.5962849855422974
+    ],
+    "max": [
+      0.019393784925341606,
+      -0.030869940295815468,
+      1.6031092405319214
+    ]
+  },
+  {
+    "name": "Common tendinous ring.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 181,
+    "polygons": 362,
+    "min": [
+      -0.019393792375922203,
+      -0.03697585687041283,
+      1.5962849855422974
+    ],
+    "max": [
+      -0.01313299685716629,
+      -0.030869940295815468,
+      1.6031092405319214
+    ]
+  },
+  {
+    "name": "Corrugator supercilii.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 141,
+    "polygons": 278,
+    "min": [
+      0.008907073177397251,
+      -0.08401253819465637,
+      1.6020619869232178
+    ],
+    "max": [
+      0.031557414680719376,
+      -0.07698103785514832,
+      1.6210402250289917
+    ]
+  },
+  {
+    "name": "Corrugator supercilii.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 141,
+    "polygons": 278,
+    "min": [
+      -0.03155742958188057,
+      -0.08401253819465637,
+      1.6020619869232178
+    ],
+    "max": [
+      -0.008907088078558445,
+      -0.07698103785514832,
+      1.6210402250289917
+    ]
+  },
+  {
+    "name": "Deep part of masseter.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 497,
+    "polygons": 994,
+    "min": [
+      0.0347752720117569,
+      -0.044109322130680084,
+      1.5134063959121704
+    ],
+    "max": [
+      0.06181010976433754,
+      -0.009496609680354595,
+      1.5788918733596802
+    ]
+  },
+  {
+    "name": "Deep part of masseter.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 497,
+    "polygons": 994,
+    "min": [
+      -0.06181007996201515,
+      -0.044109322130680084,
+      1.5134063959121704
+    ],
+    "max": [
+      -0.03477524220943451,
+      -0.009496609680354595,
+      1.5788918733596802
+    ]
+  },
+  {
+    "name": "Depressor anguli oris.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 299,
+    "polygons": 594,
+    "min": [
+      0.011715523898601532,
+      -0.07468757033348083,
+      1.4979957342147827
+    ],
+    "max": [
+      0.0360509417951107,
+      -0.05071168392896652,
+      1.5396463871002197
+    ]
+  },
+  {
+    "name": "Depressor anguli oris.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 299,
+    "polygons": 594,
+    "min": [
+      -0.036050956696271896,
+      -0.07468757033348083,
+      1.4979957342147827
+    ],
+    "max": [
+      -0.011715538799762726,
+      -0.05071168392896652,
+      1.5396463871002197
+    ]
+  },
+  {
+    "name": "Depressor labii inferioris.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 418,
+    "polygons": 832,
+    "min": [
+      0.0005619432777166367,
+      -0.08563116192817688,
+      1.5003416538238525
+    ],
+    "max": [
+      0.03115975856781006,
+      -0.05836459994316101,
+      1.529845118522644
+    ]
+  },
+  {
+    "name": "Depressor labii inferioris.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 418,
+    "polygons": 832,
+    "min": [
+      -0.031159773468971252,
+      -0.08563116192817688,
+      1.5003416538238525
+    ],
+    "max": [
+      -0.0005619581788778305,
+      -0.05836459994316101,
+      1.529845118522644
+    ]
+  },
+  {
+    "name": "Depressor septi nasi.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 140,
+    "polygons": 276,
+    "min": [
+      4.860479384660721e-05,
+      -0.08924543857574463,
+      1.5417115688323975
+    ],
+    "max": [
+      0.0166959036141634,
+      -0.08167172223329544,
+      1.5578426122665405
+    ]
+  },
+  {
+    "name": "Depressor septi nasi.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 140,
+    "polygons": 276,
+    "min": [
+      -0.016695918515324593,
+      -0.08924543857574463,
+      1.5417115688323975
+    ],
+    "max": [
+      -4.8619695007801056e-05,
+      -0.08167172223329544,
+      1.5578426122665405
+    ]
+  },
+  {
+    "name": "Epicranial aponeurosis.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 10055,
+    "polygons": 20118,
+    "min": [
+      9.864568710327148e-06,
+      -0.08331423997879028,
+      1.59852135181427
+    ],
+    "max": [
+      0.06689388304948807,
+      0.10519097745418549,
+      1.7075750827789307
+    ]
+  },
+  {
+    "name": "Epicranial aponeurosis.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 10055,
+    "polygons": 20118,
+    "min": [
+      -0.06689389795064926,
+      -0.08331423997879028,
+      1.59852135181427
+    ],
+    "max": [
+      -9.879469871520996e-06,
+      0.10519097745418549,
+      1.7075750827789307
+    ]
+  },
+  {
+    "name": "Ethmoid bone",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 2108,
+    "polygons": 3775,
+    "min": [
+      -0.01874006725847721,
+      -0.07594645768404007,
+      1.5658774375915527
+    ],
+    "max": [
+      0.018740063533186913,
+      -0.031408779323101044,
+      1.6053110361099243
+    ]
+  },
+  {
+    "name": "Frontal bone",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 3902,
+    "polygons": 7754,
+    "min": [
+      -0.061189014464616776,
+      -0.08711200207471848,
+      1.5926116704940796
+    ],
+    "max": [
+      0.06118898466229439,
+      -0.01801314577460289,
+      1.6991924047470093
+    ]
+  },
+  {
+    "name": "Frontalis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 2933,
+    "polygons": 5874,
+    "min": [
+      4.1930004954338074e-05,
+      -0.08951129764318466,
+      1.6042183637619019
+    ],
+    "max": [
+      0.058486249297857285,
+      -0.04262733459472656,
+      1.6743444204330444
+    ]
+  },
+  {
+    "name": "Frontalis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 2933,
+    "polygons": 5874,
+    "min": [
+      -0.05848626419901848,
+      -0.08951129764318466,
+      1.6042183637619019
+    ],
+    "max": [
+      -4.194490611553192e-05,
+      -0.04262733459472656,
+      1.6743444204330444
+    ]
+  },
+  {
+    "name": "Genioglossus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Hypoglossal nerve (XII)",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 1875,
+    "polygons": 3746,
+    "min": [
+      0.001232632203027606,
+      -0.07885310053825378,
+      1.4995324611663818
+    ],
+    "max": [
+      0.008840961381793022,
+      -0.0312826931476593,
+      1.5356767177581787
+    ]
+  },
+  {
+    "name": "Genioglossus muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Hypoglossal nerve (XII)",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 1875,
+    "polygons": 3746,
+    "min": [
+      -0.008840961381793022,
+      -0.07885310053825378,
+      1.4995324611663818
+    ],
+    "max": [
+      -0.001232632203027606,
+      -0.0312826931476593,
+      1.5356767177581787
+    ]
+  },
+  {
+    "name": "Geniohyoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 267,
+    "polygons": 530,
+    "min": [
+      6.809597834944725e-05,
+      -0.06982535123825073,
+      1.5006808042526245
+    ],
+    "max": [
+      0.011311352252960205,
+      -0.02976643294095993,
+      1.5108181238174438
+    ]
+  },
+  {
+    "name": "Geniohyoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 267,
+    "polygons": 530,
+    "min": [
+      -0.011311277747154236,
+      -0.06982535123825073,
+      1.5006808042526245
+    ],
+    "max": [
+      -6.802147254347801e-05,
+      -0.02976643294095993,
+      1.5108181238174438
+    ]
+  },
+  {
+    "name": "Hyoglossus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Hypoglossal nerve (XII)",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 714,
+    "polygons": 1424,
+    "min": [
+      0.005147512536495924,
+      -0.0642533227801323,
+      1.4985250234603882
+    ],
+    "max": [
+      0.01302250474691391,
+      -0.03354009613394737,
+      1.5238590240478516
+    ]
+  },
+  {
+    "name": "Hyoglossus muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Hypoglossal nerve (XII)",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 714,
+    "polygons": 1424,
+    "min": [
+      -0.01302250474691391,
+      -0.0642533227801323,
+      1.4985250234603882
+    ],
+    "max": [
+      -0.005147512536495924,
+      -0.03354009613394737,
+      1.5238590240478516
+    ]
+  },
+  {
+    "name": "Hyoid bone",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Extracranial bones of head",
+      "Head",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 664,
+    "polygons": 1310,
+    "min": [
+      -0.02274441532790661,
+      -0.03899828717112541,
+      1.4915179014205933
+    ],
+    "max": [
+      0.02274441532790661,
+      -0.0030274714808911085,
+      1.511031150817871
+    ]
+  },
+  {
+    "name": "Iliocostalis colli muscle",
+    "collections": [
+      "4: Muscular system",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1027,
+    "polygons": 2050,
+    "min": [
+      0.02449534833431244,
+      0.009998321533203125,
+      1.3155404329299927
+    ],
+    "max": [
+      0.07494421303272247,
+      0.09694801270961761,
+      1.4919352531433105
+    ]
+  },
+  {
+    "name": "Iliocostalis colli muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1027,
+    "polygons": 2050,
+    "min": [
+      -0.07494423538446426,
+      0.00999826192855835,
+      1.3155403137207031
+    ],
+    "max": [
+      -0.024495355784893036,
+      0.09694796800613403,
+      1.491935133934021
+    ]
+  },
+  {
+    "name": "Incus.l",
+    "collections": [
+      "1: Skeletal system",
+      "Auditory ossicles",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 1268,
+    "polygons": 1277,
+    "min": [
+      0.04497437924146652,
+      0.00475875660777092,
+      1.5795691013336182
+    ],
+    "max": [
+      0.04919545724987984,
+      0.009651119820773602,
+      1.585801124572754
+    ]
+  },
+  {
+    "name": "Incus.r",
+    "collections": [
+      "1: Skeletal system",
+      "Auditory ossicles",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 1268,
+    "polygons": 1277,
+    "min": [
+      -0.04919545724987984,
+      0.00475875660777092,
+      1.5795691013336182
+    ],
+    "max": [
+      -0.04497437924146652,
+      0.009651119820773602,
+      1.585801124572754
+    ]
+  },
+  {
+    "name": "Inferior head of lateral pterygoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 164,
+    "polygons": 326,
+    "min": [
+      0.025448407977819443,
+      -0.030625764280557632,
+      1.5550776720046997
+    ],
+    "max": [
+      0.04310125112533569,
+      -0.007776076905429363,
+      1.57760488986969
+    ]
+  },
+  {
+    "name": "Inferior head of lateral pterygoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 164,
+    "polygons": 326,
+    "min": [
+      -0.043101221323013306,
+      -0.030625764280557632,
+      1.5550776720046997
+    ],
+    "max": [
+      -0.025448378175497055,
+      -0.007776076905429363,
+      1.57760488986969
+    ]
+  },
+  {
+    "name": "Inferior nasal concha bone.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 238,
+    "polygons": 476,
+    "min": [
+      0.004423435311764479,
+      -0.07542936503887177,
+      1.5521032810211182
+    ],
+    "max": [
+      0.014880185015499592,
+      -0.0407877154648304,
+      1.574622631072998
+    ]
+  },
+  {
+    "name": "Inferior nasal concha bone.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 238,
+    "polygons": 476,
+    "min": [
+      -0.014880185015499592,
+      -0.07542936503887177,
+      1.5521032810211182
+    ],
+    "max": [
+      -0.004423435311764479,
+      -0.0407877154648304,
+      1.574622631072998
+    ]
+  },
+  {
+    "name": "Inferior oblique muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 576,
+    "polygons": 1148,
+    "min": [
+      0.013868361711502075,
+      -0.07882007211446762,
+      1.5751389265060425
+    ],
+    "max": [
+      0.043256066739559174,
+      -0.052521977573633194,
+      1.592234492301941
+    ]
+  },
+  {
+    "name": "Inferior oblique muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 576,
+    "polygons": 1148,
+    "min": [
+      -0.04325607419013977,
+      -0.07882007211446762,
+      1.5751389265060425
+    ],
+    "max": [
+      -0.013868369162082672,
+      -0.052521977573633194,
+      1.592234492301941
+    ]
+  },
+  {
+    "name": "Inferior rectus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 870,
+    "polygons": 1736,
+    "min": [
+      0.013395206071436405,
+      -0.07250180840492249,
+      1.5756126642227173
+    ],
+    "max": [
+      0.03560870885848999,
+      -0.030891982838511467,
+      1.599470615386963
+    ]
+  },
+  {
+    "name": "Inferior rectus muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 870,
+    "polygons": 1736,
+    "min": [
+      -0.03560871630907059,
+      -0.07250180840492249,
+      1.5756126642227173
+    ],
+    "max": [
+      -0.013395213522017002,
+      -0.030891982838511467,
+      1.599470615386963
+    ]
+  },
+  {
+    "name": "Inferior tarsus.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 56,
+    "polygons": 106,
+    "min": [
+      0.019497893750667572,
+      -0.07699476927518845,
+      1.5796291828155518
+    ],
+    "max": [
+      0.04324588179588318,
+      -0.06827723234891891,
+      1.587742805480957
+    ]
+  },
+  {
+    "name": "Inferior tarsus.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 56,
+    "polygons": 106,
+    "min": [
+      -0.043245889246463776,
+      -0.07699476927518845,
+      1.5796291828155518
+    ],
+    "max": [
+      -0.01949790120124817,
+      -0.06827723234891891,
+      1.587742805480957
+    ]
+  },
+  {
+    "name": "Intermediate tendon of digastric muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 116,
+    "polygons": 228,
+    "min": [
+      0.009397021494805813,
+      -0.03905965015292168,
+      1.4990755319595337
+    ],
+    "max": [
+      0.017296992242336273,
+      -0.031944260001182556,
+      1.5065655708312988
+    ]
+  },
+  {
+    "name": "Intermediate tendon of digastric muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 116,
+    "polygons": 228,
+    "min": [
+      -0.01729694753885269,
+      -0.03905965015292168,
+      1.4990755319595337
+    ],
+    "max": [
+      -0.009396976791322231,
+      -0.031944260001182556,
+      1.5065655708312988
+    ]
+  },
+  {
+    "name": "Interspinales colli muscles.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 234,
+    "polygons": 444,
+    "min": [
+      0.0005098707042634487,
+      0.04280232638120651,
+      1.4483321905136108
+    ],
+    "max": [
+      0.007323088590055704,
+      0.07032737880945206,
+      1.5386556386947632
+    ]
+  },
+  {
+    "name": "Interspinales colli muscles.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 234,
+    "polygons": 444,
+    "min": [
+      -0.007323088124394417,
+      0.04280232638120651,
+      1.4483321905136108
+    ],
+    "max": [
+      -0.0005098702386021614,
+      0.07032737880945206,
+      1.5386556386947632
+    ]
+  },
+  {
+    "name": "Lacrimal bone.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 296,
+    "polygons": 588,
+    "min": [
+      0.006468209903687239,
+      -0.07622788101434708,
+      1.5731173753738403
+    ],
+    "max": [
+      0.017119670286774635,
+      -0.06151899695396423,
+      1.598219394683838
+    ]
+  },
+  {
+    "name": "Lacrimal bone.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 296,
+    "polygons": 588,
+    "min": [
+      -0.017119670286774635,
+      -0.07622788101434708,
+      1.5731173753738403
+    ],
+    "max": [
+      -0.006468209903687239,
+      -0.06151899695396423,
+      1.598219394683838
+    ]
+  },
+  {
+    "name": "Lateral crico-arytenoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 815,
+    "polygons": 1624,
+    "min": [
+      0.007296538911759853,
+      -0.009103144519031048,
+      1.4692680835723877
+    ],
+    "max": [
+      0.011739191599190235,
+      0.0008419929072260857,
+      1.4800143241882324
+    ]
+  },
+  {
+    "name": "Lateral crico-arytenoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 815,
+    "polygons": 1624,
+    "min": [
+      -0.011739176698029041,
+      -0.009103144519031048,
+      1.4692679643630981
+    ],
+    "max": [
+      -0.0072965240105986595,
+      0.0008419929072260857,
+      1.4800142049789429
+    ]
+  },
+  {
+    "name": "Lateral process of nasal septal cartilage.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cartilages",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 174,
+    "polygons": 347,
+    "min": [
+      -1.2484844774007797e-05,
+      -0.11565844714641571,
+      1.5537625551223755
+    ],
+    "max": [
+      0.013153081759810448,
+      -0.08208388835191727,
+      1.5867419242858887
+    ]
+  },
+  {
+    "name": "Lateral process of nasal septal cartilage.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cartilages",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 174,
+    "polygons": 347,
+    "min": [
+      -0.013153081759810448,
+      -0.11565844714641571,
+      1.5537625551223755
+    ],
+    "max": [
+      1.2484844774007797e-05,
+      -0.08208388835191727,
+      1.5867419242858887
+    ]
+  },
+  {
+    "name": "Lateral rectus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 802,
+    "polygons": 1600,
+    "min": [
+      0.017668910324573517,
+      -0.07095151394605637,
+      1.5845645666122437
+    ],
+    "max": [
+      0.04411374405026436,
+      -0.030836107209324837,
+      1.6032214164733887
+    ]
+  },
+  {
+    "name": "Lateral rectus muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 802,
+    "polygons": 1600,
+    "min": [
+      -0.044113751500844955,
+      -0.07095151394605637,
+      1.5845645666122437
+    ],
+    "max": [
+      -0.017668917775154114,
+      -0.030836107209324837,
+      1.6032214164733887
+    ]
+  },
+  {
+    "name": "Levator anguli oris.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 165,
+    "polygons": 330,
+    "min": [
+      0.012008951045572758,
+      -0.08343905210494995,
+      1.5424469709396362
+    ],
+    "max": [
+      0.029055342078208923,
+      -0.06786010414361954,
+      1.5624967813491821
+    ]
+  },
+  {
+    "name": "Levator anguli oris.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 165,
+    "polygons": 330,
+    "min": [
+      -0.029055356979370117,
+      -0.08343905210494995,
+      1.5424469709396362
+    ],
+    "max": [
+      -0.012008965946733952,
+      -0.06786010414361954,
+      1.5624967813491821
+    ]
+  },
+  {
+    "name": "Levator labii superioris.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 272,
+    "polygons": 540,
+    "min": [
+      0.011838656850159168,
+      -0.08388175815343857,
+      1.5473109483718872
+    ],
+    "max": [
+      0.038828108459711075,
+      -0.06900649517774582,
+      1.5762476921081543
+    ]
+  },
+  {
+    "name": "Levator labii superioris.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 272,
+    "polygons": 540,
+    "min": [
+      -0.03882812336087227,
+      -0.08388175815343857,
+      1.5473109483718872
+    ],
+    "max": [
+      -0.011838671751320362,
+      -0.06900649517774582,
+      1.5762476921081543
+    ]
+  },
+  {
+    "name": "Levator nasolabialis.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 88,
+    "polygons": 172,
+    "min": [
+      0.01063710916787386,
+      -0.084378182888031,
+      1.5575616359710693
+    ],
+    "max": [
+      0.016088755801320076,
+      -0.07715029269456863,
+      1.5866674184799194
+    ]
+  },
+  {
+    "name": "Levator nasolabialis.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 88,
+    "polygons": 172,
+    "min": [
+      -0.01608877070248127,
+      -0.084378182888031,
+      1.5575616359710693
+    ],
+    "max": [
+      -0.010637124069035053,
+      -0.07715029269456863,
+      1.5866674184799194
+    ]
+  },
+  {
+    "name": "Levator palpebrae superioris.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 1079,
+    "polygons": 2152,
+    "min": [
+      0.013157982379198074,
+      -0.07738926261663437,
+      1.5922738313674927
+    ],
+    "max": [
+      0.04329956695437431,
+      -0.031125085428357124,
+      1.6096793413162231
+    ]
+  },
+  {
+    "name": "Levator palpebrae superioris.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 1079,
+    "polygons": 2152,
+    "min": [
+      -0.04329957440495491,
+      -0.07738926261663437,
+      1.5922738313674927
+    ],
+    "max": [
+      -0.013157989829778671,
+      -0.031125085428357124,
+      1.6096793413162231
+    ]
+  },
+  {
+    "name": "Levator scapulae.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Dorsal scapular nerve",
+      "Hypaxial muscles of back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1543,
+    "polygons": 3082,
+    "min": [
+      0.025238795205950737,
+      0.00945284590125084,
+      1.3865593671798706
+    ],
+    "max": [
+      0.08668529242277145,
+      0.09532259404659271,
+      1.5394262075424194
+    ]
+  },
+  {
+    "name": "Levator scapulae.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Dorsal scapular nerve",
+      "Hypaxial muscles of back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1543,
+    "polygons": 3082,
+    "min": [
+      -0.08668529242277145,
+      0.00945284590125084,
+      1.3865593671798706
+    ],
+    "max": [
+      -0.025238795205950737,
+      0.09532259404659271,
+      1.5394262075424194
+    ]
+  },
+  {
+    "name": "Longissimus capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 785,
+    "polygons": 1574,
+    "min": [
+      0.025183849036693573,
+      0.015260573476552963,
+      1.412851095199585
+    ],
+    "max": [
+      0.060436882078647614,
+      0.06747496128082275,
+      1.570054292678833
+    ]
+  },
+  {
+    "name": "Longissimus capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 785,
+    "polygons": 1574,
+    "min": [
+      -0.06043688952922821,
+      0.015260573476552963,
+      1.412851095199585
+    ],
+    "max": [
+      -0.02518385648727417,
+      0.06747496128082275,
+      1.570054292678833
+    ]
+  },
+  {
+    "name": "Longissimus colli muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 915,
+    "polygons": 1826,
+    "min": [
+      0.023097876459360123,
+      0.011189479380846024,
+      1.3301475048065186
+    ],
+    "max": [
+      0.04223022982478142,
+      0.09243395924568176,
+      1.5195873975753784
+    ]
+  },
+  {
+    "name": "Longissimus colli muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 915,
+    "polygons": 1826,
+    "min": [
+      -0.042230237275362015,
+      0.011189479380846024,
+      1.3301475048065186
+    ],
+    "max": [
+      -0.02309788390994072,
+      0.09243395924568176,
+      1.5195873975753784
+    ]
+  },
+  {
+    "name": "Longus capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 988,
+    "polygons": 1980,
+    "min": [
+      0.002265388146042824,
+      -0.006663373205810785,
+      1.4590091705322266
+    ],
+    "max": [
+      0.026592139154672623,
+      0.0109650744125247,
+      1.5690629482269287
+    ]
+  },
+  {
+    "name": "Longus capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 988,
+    "polygons": 1980,
+    "min": [
+      -0.02659209445118904,
+      -0.006663373205810785,
+      1.459009051322937
+    ],
+    "max": [
+      -0.0022653434425592422,
+      0.0109650744125247,
+      1.5690628290176392
+    ]
+  },
+  {
+    "name": "Longus colli muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 3154,
+    "polygons": 6294,
+    "min": [
+      0.001283613033592701,
+      -0.004748732782900333,
+      1.3875194787979126
+    ],
+    "max": [
+      0.026069585233926773,
+      0.0293703842908144,
+      1.5449367761611938
+    ]
+  },
+  {
+    "name": "Longus colli muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 3154,
+    "polygons": 6294,
+    "min": [
+      -0.02606954053044319,
+      -0.004748732782900333,
+      1.387519359588623
+    ],
+    "max": [
+      -0.0012835683301091194,
+      0.0293703842908144,
+      1.5449366569519043
+    ]
+  },
+  {
+    "name": "Major alar cartilage.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cartilages",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 174,
+    "polygons": 344,
+    "min": [
+      6.979051977396011e-05,
+      -0.11441265791654587,
+      1.5481327772140503
+    ],
+    "max": [
+      0.014849269762635231,
+      -0.0870371162891388,
+      1.562315821647644
+    ]
+  },
+  {
+    "name": "Major alar cartilage.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cartilages",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 174,
+    "polygons": 344,
+    "min": [
+      -0.014849269762635231,
+      -0.11441265791654587,
+      1.5481327772140503
+    ],
+    "max": [
+      -6.979051977396011e-05,
+      -0.0870371162891388,
+      1.562315821647644
+    ]
+  },
+  {
+    "name": "Malleus.l",
+    "collections": [
+      "1: Skeletal system",
+      "Auditory ossicles",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 1993,
+    "polygons": 1998,
+    "min": [
+      0.04637119546532631,
+      0.0024904832243919373,
+      1.5780489444732666
+    ],
+    "max": [
+      0.05000809207558632,
+      0.005365878343582153,
+      1.5862277746200562
+    ]
+  },
+  {
+    "name": "Malleus.r",
+    "collections": [
+      "1: Skeletal system",
+      "Auditory ossicles",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 1993,
+    "polygons": 1998,
+    "min": [
+      -0.05000809207558632,
+      0.0024904832243919373,
+      1.5780489444732666
+    ],
+    "max": [
+      -0.04637119546532631,
+      0.005365878343582153,
+      1.5862277746200562
+    ]
+  },
+  {
+    "name": "Mandible",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Extracranial bones of head",
+      "Head",
+      "Mandible"
+    ],
+    "vertices": 9388,
+    "polygons": 18838,
+    "min": [
+      -0.05166403576731682,
+      -0.0837099552154541,
+      1.4962966442108154
+    ],
+    "max": [
+      0.05166403576731682,
+      -0.0017979941330850124,
+      1.5786473751068115
+    ]
+  },
+  {
+    "name": "Masseteric fascia.l",
+    "collections": [
+      "4: Muscular system",
+      "Fascia",
+      "Head",
+      "Superficial muscles"
+    ],
+    "vertices": 226,
+    "polygons": 205,
+    "min": [
+      0.03490884229540825,
+      -0.05623498931527138,
+      1.5114030838012695
+    ],
+    "max": [
+      0.06321459263563156,
+      -0.008972990326583385,
+      1.5803673267364502
+    ]
+  },
+  {
+    "name": "Masseteric fascia.r",
+    "collections": [
+      "4: Muscular system",
+      "Fascia",
+      "Head",
+      "Superficial muscles"
+    ],
+    "vertices": 226,
+    "polygons": 205,
+    "min": [
+      -0.06321456283330917,
+      -0.05623498931527138,
+      1.5114030838012695
+    ],
+    "max": [
+      -0.03490881249308586,
+      -0.008972990326583385,
+      1.5803673267364502
+    ]
+  },
+  {
+    "name": "Maxilla.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head",
+      "Right maxilla"
+    ],
+    "vertices": 2399,
+    "polygons": 4798,
+    "min": [
+      -0.00021110475063323975,
+      -0.0938725546002388,
+      1.537443995475769
+    ],
+    "max": [
+      0.04603412002325058,
+      -0.04006047919392586,
+      1.6052191257476807
+    ]
+  },
+  {
+    "name": "Maxilla.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head",
+      "Right maxilla"
+    ],
+    "vertices": 2399,
+    "polygons": 4798,
+    "min": [
+      -0.04603412002325058,
+      -0.0938725546002388,
+      1.537443995475769
+    ],
+    "max": [
+      0.00021110475063323975,
+      -0.04006047919392586,
+      1.6052191257476807
+    ]
+  },
+  {
+    "name": "Medial pterygoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 249,
+    "polygons": 496,
+    "min": [
+      0.014517534524202347,
+      -0.04193144291639328,
+      1.5268501043319702
+    ],
+    "max": [
+      0.03700000047683716,
+      -0.011267287656664848,
+      1.576066493988037
+    ]
+  },
+  {
+    "name": "Medial pterygoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 249,
+    "polygons": 496,
+    "min": [
+      -0.03699997067451477,
+      -0.04193144291639328,
+      1.5268501043319702
+    ],
+    "max": [
+      -0.014517504721879959,
+      -0.011267287656664848,
+      1.576066493988037
+    ]
+  },
+  {
+    "name": "Medial rectus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 628,
+    "polygons": 1252,
+    "min": [
+      0.0125356987118721,
+      -0.07343045622110367,
+      1.583839774131775
+    ],
+    "max": [
+      0.022546257823705673,
+      -0.032714661210775375,
+      1.602623701095581
+    ]
+  },
+  {
+    "name": "Medial rectus muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 628,
+    "polygons": 1252,
+    "min": [
+      -0.02254626527428627,
+      -0.07343045622110367,
+      1.583839774131775
+    ],
+    "max": [
+      -0.012535706162452698,
+      -0.032714661210775375,
+      1.602623701095581
+    ]
+  },
+  {
+    "name": "Mentalis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 85,
+    "polygons": 166,
+    "min": [
+      0.0007851514965295792,
+      -0.08243205398321152,
+      1.4980944395065308
+    ],
+    "max": [
+      0.014478083699941635,
+      -0.07534904032945633,
+      1.5128507614135742
+    ]
+  },
+  {
+    "name": "Mentalis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 85,
+    "polygons": 166,
+    "min": [
+      -0.014478098601102829,
+      -0.08243205398321152,
+      1.4980944395065308
+    ],
+    "max": [
+      -0.000785166397690773,
+      -0.07534904032945633,
+      1.5128507614135742
+    ]
+  },
+  {
+    "name": "Multifidus colli muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Transversospinal muscles",
+      "Trunk"
+    ],
+    "vertices": 696,
+    "polygons": 1390,
+    "min": [
+      0.002095412462949753,
+      0.023996081203222275,
+      1.440744400024414
+    ],
+    "max": [
+      0.026067255064845085,
+      0.04664058983325958,
+      1.5388325452804565
+    ]
+  },
+  {
+    "name": "Multifidus colli muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Transversospinal muscles",
+      "Trunk"
+    ],
+    "vertices": 696,
+    "polygons": 1390,
+    "min": [
+      -0.026067253202199936,
+      0.023996081203222275,
+      1.440744400024414
+    ],
+    "max": [
+      -0.0020954106003046036,
+      0.04664058983325958,
+      1.5388325452804565
+    ]
+  },
+  {
+    "name": "Mylohyoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trigeminal nerve (V)",
+      "Trunk"
+    ],
+    "vertices": 561,
+    "polygons": 1122,
+    "min": [
+      3.664707764983177e-05,
+      -0.0724044218659401,
+      1.4981966018676758
+    ],
+    "max": [
+      0.026952439919114113,
+      -0.03462023288011551,
+      1.5261794328689575
+    ]
+  },
+  {
+    "name": "Mylohyoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trigeminal nerve (V)",
+      "Trunk"
+    ],
+    "vertices": 561,
+    "polygons": 1122,
+    "min": [
+      -0.026952365413308144,
+      -0.0724044218659401,
+      1.4981966018676758
+    ],
+    "max": [
+      -3.6572571843862534e-05,
+      -0.03462023288011551,
+      1.5261794328689575
+    ]
+  },
+  {
+    "name": "Nasal bone.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 148,
+    "polygons": 292,
+    "min": [
+      1.7462298274040222e-08,
+      -0.10027167201042175,
+      1.5737073421478271
+    ],
+    "max": [
+      0.008399778045713902,
+      -0.07933586835861206,
+      1.6050796508789062
+    ]
+  },
+  {
+    "name": "Nasal bone.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 148,
+    "polygons": 292,
+    "min": [
+      -0.008399778045713902,
+      -0.10027167201042175,
+      1.5737073421478271
+    ],
+    "max": [
+      -1.7462298274040222e-08,
+      -0.07933586835861206,
+      1.6050796508789062
+    ]
+  },
+  {
+    "name": "Nasal septal cartilage",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cartilages",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 182,
+    "polygons": 360,
+    "min": [
+      -0.0025010944809764624,
+      -0.11576693505048752,
+      1.551066517829895
+    ],
+    "max": [
+      0.002422896446660161,
+      -0.07350070029497147,
+      1.5854545831680298
+    ]
+  },
+  {
+    "name": "Nasalis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 352,
+    "polygons": 704,
+    "min": [
+      0.001604998018592596,
+      -0.10009046643972397,
+      1.56318199634552
+    ],
+    "max": [
+      0.014857457019388676,
+      -0.07829104363918304,
+      1.6035006046295166
+    ]
+  },
+  {
+    "name": "Nasalis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 352,
+    "polygons": 704,
+    "min": [
+      -0.01485747192054987,
+      -0.10009046643972397,
+      1.56318199634552
+    ],
+    "max": [
+      -0.00160501291975379,
+      -0.07829104363918304,
+      1.6035006046295166
+    ]
+  },
+  {
+    "name": "Obliquus inferior capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 272,
+    "polygons": 540,
+    "min": [
+      0.002917477861046791,
+      0.013937702402472496,
+      1.5103243589401245
+    ],
+    "max": [
+      0.04159214347600937,
+      0.05170952156186104,
+      1.541807770729065
+    ]
+  },
+  {
+    "name": "Obliquus inferior capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 272,
+    "polygons": 540,
+    "min": [
+      -0.04159214347600937,
+      0.013937702402472496,
+      1.5103243589401245
+    ],
+    "max": [
+      -0.002917477861046791,
+      0.05170952156186104,
+      1.541807770729065
+    ]
+  },
+  {
+    "name": "Obliquus superior capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 325,
+    "polygons": 654,
+    "min": [
+      0.028440892696380615,
+      0.015659714117646217,
+      1.5411614179611206
+    ],
+    "max": [
+      0.042770832777023315,
+      0.06548953056335449,
+      1.5641001462936401
+    ]
+  },
+  {
+    "name": "Obliquus superior capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 325,
+    "polygons": 654,
+    "min": [
+      -0.042770832777023315,
+      0.015659714117646217,
+      1.5411614179611206
+    ],
+    "max": [
+      -0.028440892696380615,
+      0.06548953056335449,
+      1.5641001462936401
+    ]
+  },
+  {
+    "name": "Occipital bone",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 3757,
+    "polygons": 7493,
+    "min": [
+      -0.05963081866502762,
+      -0.012472253292798996,
+      1.5507360696792603
+    ],
+    "max": [
+      0.059630781412124634,
+      0.10337518900632858,
+      1.6551929712295532
+    ]
+  },
+  {
+    "name": "Occipitalis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 1297,
+    "polygons": 2602,
+    "min": [
+      0.014848500490188599,
+      0.058132342994213104,
+      1.5851560831069946
+    ],
+    "max": [
+      0.06143605336546898,
+      0.10470566898584366,
+      1.6182012557983398
+    ]
+  },
+  {
+    "name": "Occipitalis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 1297,
+    "polygons": 2602,
+    "min": [
+      -0.06143606826663017,
+      0.058132342994213104,
+      1.5851560831069946
+    ],
+    "max": [
+      -0.014848515391349792,
+      0.10470566898584366,
+      1.6182012557983398
+    ]
+  },
+  {
+    "name": "Omohyoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1355,
+    "polygons": 2706,
+    "min": [
+      0.012366916984319687,
+      -0.033705782145261765,
+      1.39141845703125
+    ],
+    "max": [
+      0.10315844416618347,
+      0.0597759485244751,
+      1.497978925704956
+    ]
+  },
+  {
+    "name": "Omohyoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1355,
+    "polygons": 2706,
+    "min": [
+      -0.1031583696603775,
+      -0.033705782145261765,
+      1.39141845703125
+    ],
+    "max": [
+      -0.012366842478513718,
+      0.0597759485244751,
+      1.497978925704956
+    ]
+  },
+  {
+    "name": "Orbicularis oris muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 940,
+    "polygons": 1880,
+    "min": [
+      3.791879862546921e-05,
+      -0.09512050449848175,
+      1.5086880922317505
+    ],
+    "max": [
+      0.03214254230260849,
+      -0.06751629710197449,
+      1.5540815591812134
+    ]
+  },
+  {
+    "name": "Orbicularis oris muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 940,
+    "polygons": 1880,
+    "min": [
+      -0.032142557203769684,
+      -0.09512050449848175,
+      1.5086880922317505
+    ],
+    "max": [
+      -3.7933699786663055e-05,
+      -0.06751629710197449,
+      1.5540815591812134
+    ]
+  },
+  {
+    "name": "Palatine bone.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 732,
+    "polygons": 1460,
+    "min": [
+      0.0007838830351829529,
+      -0.05999695509672165,
+      1.5439777374267578
+    ],
+    "max": [
+      0.02703838422894478,
+      -0.024777857586741447,
+      1.5841305255889893
+    ]
+  },
+  {
+    "name": "Palatine bone.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 732,
+    "polygons": 1460,
+    "min": [
+      -0.02703838422894478,
+      -0.05999695509672165,
+      1.5439777374267578
+    ],
+    "max": [
+      -0.0007838830351829529,
+      -0.024777857586741447,
+      1.5841305255889893
+    ]
+  },
+  {
+    "name": "Parietal bone.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 3443,
+    "polygons": 6886,
+    "min": [
+      -0.007425185292959213,
+      -0.042743049561977386,
+      1.589692234992981
+    ],
+    "max": [
+      0.0742856115102768,
+      0.10056015849113464,
+      1.7053675651550293
+    ]
+  },
+  {
+    "name": "Parietal bone.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 3386,
+    "polygons": 6713,
+    "min": [
+      -0.07439018785953522,
+      -0.03906109184026718,
+      1.589820146560669
+    ],
+    "max": [
+      0.0056159887462854385,
+      0.10030511766672134,
+      1.7054541110992432
+    ]
+  },
+  {
+    "name": "Posterior crico-arytenoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 908,
+    "polygons": 1812,
+    "min": [
+      0.002289538737386465,
+      -0.00024088891223073006,
+      1.465312123298645
+    ],
+    "max": [
+      0.01137521117925644,
+      0.005494107026606798,
+      1.4796727895736694
+    ]
+  },
+  {
+    "name": "Posterior crico-arytenoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 908,
+    "polygons": 1812,
+    "min": [
+      -0.011375196278095245,
+      -0.00024088891223073006,
+      1.4653120040893555
+    ],
+    "max": [
+      -0.0022895238362252712,
+      0.005494107026606798,
+      1.4796726703643799
+    ]
+  },
+  {
+    "name": "Procerus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 273,
+    "polygons": 546,
+    "min": [
+      4.233606159687042e-05,
+      -0.08945010602474213,
+      1.5937745571136475
+    ],
+    "max": [
+      0.023252855986356735,
+      -0.08336269110441208,
+      1.6303153038024902
+    ]
+  },
+  {
+    "name": "Procerus muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 273,
+    "polygons": 546,
+    "min": [
+      -0.02325287088751793,
+      -0.08945010602474213,
+      1.5937745571136475
+    ],
+    "max": [
+      -4.235096275806427e-05,
+      -0.08336269110441208,
+      1.6303153038024902
+    ]
+  },
+  {
+    "name": "Rectus posterior major capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 396,
+    "polygons": 788,
+    "min": [
+      0.0002578720450401306,
+      0.03624993935227394,
+      1.514465570449829
+    ],
+    "max": [
+      0.03555352985858917,
+      0.061547838151454926,
+      1.561080813407898
+    ]
+  },
+  {
+    "name": "Rectus posterior major capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 396,
+    "polygons": 788,
+    "min": [
+      -0.03555352985858917,
+      0.03624993935227394,
+      1.514465570449829
+    ],
+    "max": [
+      -0.0002578720450401306,
+      0.061547838151454926,
+      1.561080813407898
+    ]
+  },
+  {
+    "name": "Rectus posterior minor capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 214,
+    "polygons": 432,
+    "min": [
+      4.05777245759964e-05,
+      0.043278325349092484,
+      1.5385160446166992
+    ],
+    "max": [
+      0.023679513484239578,
+      0.06857308000326157,
+      1.5644986629486084
+    ]
+  },
+  {
+    "name": "Rectus posterior minor capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Suboccipital muscles",
+      "Trunk"
+    ],
+    "vertices": 214,
+    "polygons": 432,
+    "min": [
+      -0.02367951162159443,
+      0.043278325349092484,
+      1.5385160446166992
+    ],
+    "max": [
+      -4.057586193084717e-05,
+      0.06857308000326157,
+      1.5644986629486084
+    ]
+  },
+  {
+    "name": "Risorius muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 296,
+    "polygons": 592,
+    "min": [
+      0.02869376912713051,
+      -0.07136745750904083,
+      1.5150467157363892
+    ],
+    "max": [
+      0.04841918498277664,
+      -0.043844714760780334,
+      1.5422104597091675
+    ]
+  },
+  {
+    "name": "Risorius muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 296,
+    "polygons": 592,
+    "min": [
+      -0.048419199883937836,
+      -0.07136745750904083,
+      1.5150467157363892
+    ],
+    "max": [
+      -0.028693784028291702,
+      -0.043844714760780334,
+      1.5422104597091675
+    ]
+  },
+  {
+    "name": "Rotatores.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Rotatores",
+      "Transversospinal muscles",
+      "Trunk"
+    ],
+    "vertices": 3254,
+    "polygons": 6518,
+    "min": [
+      0.00041294004768133163,
+      0.02901514247059822,
+      0.8849911093711853
+    ],
+    "max": [
+      0.038583699613809586,
+      0.09552454203367233,
+      1.520412564277649
+    ]
+  },
+  {
+    "name": "Rotatores.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Rotatores",
+      "Transversospinal muscles",
+      "Trunk"
+    ],
+    "vertices": 3254,
+    "polygons": 6518,
+    "min": [
+      -0.038583699613809586,
+      0.02901514247059822,
+      0.8849911093711853
+    ],
+    "max": [
+      -0.00041294004768133163,
+      0.09552454203367233,
+      1.520412564277649
+    ]
+  },
+  {
+    "name": "Scalenus anterior muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 700,
+    "polygons": 1386,
+    "min": [
+      0.0206130500882864,
+      -0.008441806770861149,
+      1.4107511043548584
+    ],
+    "max": [
+      0.054935283958911896,
+      0.010389716364443302,
+      1.493575096130371
+    ]
+  },
+  {
+    "name": "Scalenus anterior muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 700,
+    "polygons": 1386,
+    "min": [
+      -0.054935239255428314,
+      -0.008441806770861149,
+      1.4107509851455688
+    ],
+    "max": [
+      -0.02061300538480282,
+      0.010389716364443302,
+      1.4935749769210815
+    ]
+  },
+  {
+    "name": "Scalenus medius muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1037,
+    "polygons": 2078,
+    "min": [
+      0.023969905450940132,
+      0.001645146869122982,
+      1.419477939605713
+    ],
+    "max": [
+      0.05418994277715683,
+      0.026666373014450073,
+      1.5186556577682495
+    ]
+  },
+  {
+    "name": "Scalenus medius muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1037,
+    "polygons": 2078,
+    "min": [
+      -0.05418989807367325,
+      0.001645146869122982,
+      1.4194778203964233
+    ],
+    "max": [
+      -0.02396986074745655,
+      0.026666373014450073,
+      1.51865553855896
+    ]
+  },
+  {
+    "name": "Scalenus posterior muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 665,
+    "polygons": 1326,
+    "min": [
+      0.02560964785516262,
+      0.01227028202265501,
+      1.423789143562317
+    ],
+    "max": [
+      0.06981727480888367,
+      0.0397578589618206,
+      1.4773787260055542
+    ]
+  },
+  {
+    "name": "Scalenus posterior muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 665,
+    "polygons": 1326,
+    "min": [
+      -0.06981723010540009,
+      0.01227028202265501,
+      1.4237890243530273
+    ],
+    "max": [
+      -0.02560960315167904,
+      0.0397578589618206,
+      1.4773786067962646
+    ]
+  },
+  {
+    "name": "Semispinalis colli muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Transversospinal muscles",
+      "Trunk"
+    ],
+    "vertices": 1292,
+    "polygons": 2584,
+    "min": [
+      0.00010109506547451019,
+      0.0310208722949028,
+      1.3606411218643188
+    ],
+    "max": [
+      0.03405752032995224,
+      0.08372907340526581,
+      1.503099799156189
+    ]
+  },
+  {
+    "name": "Semispinalis colli muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Transversospinal muscles",
+      "Trunk"
+    ],
+    "vertices": 1292,
+    "polygons": 2584,
+    "min": [
+      -0.034057531505823135,
+      0.03102082386612892,
+      1.3606410026550293
+    ],
+    "max": [
+      -0.00010109506547451019,
+      0.08372903615236282,
+      1.5030996799468994
+    ]
+  },
+  {
+    "name": "Sphenoid bone",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 3650,
+    "polygons": 7308,
+    "min": [
+      -0.05441933497786522,
+      -0.05545402318239212,
+      1.5503122806549072
+    ],
+    "max": [
+      0.054419297724962234,
+      -0.0022515379823744297,
+      1.6202486753463745
+    ]
+  },
+  {
+    "name": "External part of thyro-arytenoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1120,
+    "polygons": 2236,
+    "min": [
+      0.002394322073087096,
+      -0.02562621980905533,
+      1.4711360931396484
+    ],
+    "max": [
+      0.008365325629711151,
+      -0.004843998700380325,
+      1.4803467988967896
+    ]
+  },
+  {
+    "name": "External part of thyro-arytenoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1120,
+    "polygons": 2236,
+    "min": [
+      -0.008365295827388763,
+      -0.02562621980905533,
+      1.4711360931396484
+    ],
+    "max": [
+      -0.0023942922707647085,
+      -0.004843998700380325,
+      1.4803467988967896
+    ]
+  },
+  {
+    "name": "Oblique part of cricothyroid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1032,
+    "polygons": 2060,
+    "min": [
+      0.004891935735940933,
+      -0.020424526184797287,
+      1.4588693380355835
+    ],
+    "max": [
+      0.013733521103858948,
+      -0.004580209497362375,
+      1.468163251876831
+    ]
+  },
+  {
+    "name": "Oblique part of cricothyroid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1032,
+    "polygons": 2060,
+    "min": [
+      -0.013733506202697754,
+      -0.020424526184797287,
+      1.458869218826294
+    ],
+    "max": [
+      -0.004891920834779739,
+      -0.004580209497362375,
+      1.4681631326675415
+    ]
+  },
+  {
+    "name": "Orbital part of orbicularis oculi.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 1195,
+    "polygons": 2390,
+    "min": [
+      0.009088963270187378,
+      -0.08697524666786194,
+      1.5673691034317017
+    ],
+    "max": [
+      0.05336572974920273,
+      -0.055430762469768524,
+      1.6171395778656006
+    ]
+  },
+  {
+    "name": "Orbital part of orbicularis oculi.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 1195,
+    "polygons": 2390,
+    "min": [
+      -0.05336574465036392,
+      -0.08697524666786194,
+      1.5673691034317017
+    ],
+    "max": [
+      -0.009088978171348572,
+      -0.055430762469768524,
+      1.6171395778656006
+    ]
+  },
+  {
+    "name": "Palpebral part of orbicularis oculi.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 415,
+    "polygons": 830,
+    "min": [
+      0.012750910595059395,
+      -0.0812651738524437,
+      1.5790115594863892
+    ],
+    "max": [
+      0.046371810138225555,
+      -0.06339706480503082,
+      1.603507399559021
+    ]
+  },
+  {
+    "name": "Palpebral part of orbicularis oculi.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 415,
+    "polygons": 830,
+    "min": [
+      -0.04637182503938675,
+      -0.0812651738524437,
+      1.5790115594863892
+    ],
+    "max": [
+      -0.012750925496220589,
+      -0.06339706480503082,
+      1.603507399559021
+    ]
+  },
+  {
+    "name": "Platysma.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Superficial muscles",
+      "Trunk"
+    ],
+    "vertices": 3276,
+    "polygons": 6548,
+    "min": [
+      -0.0026792287826538086,
+      -0.08366025984287262,
+      1.399263858795166
+    ],
+    "max": [
+      0.1412031501531601,
+      0.0408475287258625,
+      1.5413920879364014
+    ]
+  },
+  {
+    "name": "Platysma.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Superficial muscles",
+      "Trunk"
+    ],
+    "vertices": 3276,
+    "polygons": 6548,
+    "min": [
+      -0.1412031054496765,
+      -0.08366025984287262,
+      1.3992637395858765
+    ],
+    "max": [
+      0.00267927348613739,
+      0.0408475287258625,
+      1.5413919687271118
+    ]
+  },
+  {
+    "name": "Posterior belly of digastric muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 638,
+    "polygons": 1276,
+    "min": [
+      0.011945782229304314,
+      -0.03714936226606369,
+      1.502625584602356
+    ],
+    "max": [
+      0.058887068182229996,
+      0.02594047598540783,
+      1.5667465925216675
+    ]
+  },
+  {
+    "name": "Posterior belly of digastric muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 638,
+    "polygons": 1276,
+    "min": [
+      -0.058887023478746414,
+      -0.03714936226606369,
+      1.502625584602356
+    ],
+    "max": [
+      -0.011945737525820732,
+      0.02594047598540783,
+      1.5667465925216675
+    ]
+  },
+  {
+    "name": "Rectus anterior capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 200,
+    "polygons": 396,
+    "min": [
+      0.003202885389328003,
+      -0.0005003074184060097,
+      1.5455429553985596
+    ],
+    "max": [
+      0.02817760966718197,
+      0.006187951657921076,
+      1.5658987760543823
+    ]
+  },
+  {
+    "name": "Rectus anterior capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 200,
+    "polygons": 396,
+    "min": [
+      -0.028177550062537193,
+      -0.0005003074184060097,
+      1.5455429553985596
+    ],
+    "max": [
+      -0.0032028257846832275,
+      0.006187951657921076,
+      1.5658987760543823
+    ]
+  },
+  {
+    "name": "Rectus lateralis capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 182,
+    "polygons": 360,
+    "min": [
+      0.02951773814857006,
+      0.007973436266183853,
+      1.5409314632415771
+    ],
+    "max": [
+      0.041772063821554184,
+      0.02536197192966938,
+      1.562232494354248
+    ]
+  },
+  {
+    "name": "Rectus lateralis capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 182,
+    "polygons": 360,
+    "min": [
+      -0.04177200421690941,
+      0.007973436266183853,
+      1.5409314632415771
+    ],
+    "max": [
+      -0.029517678543925285,
+      0.02536197192966938,
+      1.562232494354248
+    ]
+  },
+  {
+    "name": "Sinus of frontal bone",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 770,
+    "polygons": 752,
+    "min": [
+      -0.025192933157086372,
+      -0.08605808764696121,
+      1.601379632949829
+    ],
+    "max": [
+      0.025192929431796074,
+      -0.07443621754646301,
+      1.6326141357421875
+    ]
+  },
+  {
+    "name": "Sinus of sphenoid bone",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 210,
+    "polygons": 384,
+    "min": [
+      -0.014118671417236328,
+      -0.03970877081155777,
+      1.5833040475845337
+    ],
+    "max": [
+      0.01411866769194603,
+      -0.022104348987340927,
+      1.6049859523773193
+    ]
+  },
+  {
+    "name": "Spinalis capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1275,
+    "polygons": 2560,
+    "min": [
+      0.002813545987010002,
+      0.024739626795053482,
+      1.4490549564361572
+    ],
+    "max": [
+      0.044311363250017166,
+      0.07938190549612045,
+      1.573155403137207
+    ]
+  },
+  {
+    "name": "Spinalis capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1275,
+    "polygons": 2560,
+    "min": [
+      -0.044311363250017166,
+      0.024739626795053482,
+      1.4490549564361572
+    ],
+    "max": [
+      -0.002813545987010002,
+      0.07938190549612045,
+      1.573155403137207
+    ]
+  },
+  {
+    "name": "Spinalis colli muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 298,
+    "polygons": 596,
+    "min": [
+      0.00129634328186512,
+      0.043948668986558914,
+      1.4066524505615234
+    ],
+    "max": [
+      0.009217844344675541,
+      0.0877622589468956,
+      1.5124200582504272
+    ]
+  },
+  {
+    "name": "Spinalis colli muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Erector spinae",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 298,
+    "polygons": 596,
+    "min": [
+      -0.009217842482030392,
+      0.043948668986558914,
+      1.4066524505615234
+    ],
+    "max": [
+      -0.0012963414192199707,
+      0.0877622589468956,
+      1.5124200582504272
+    ]
+  },
+  {
+    "name": "Splenius capitis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 2629,
+    "polygons": 5262,
+    "min": [
+      -0.000721026211977005,
+      0.018954280763864517,
+      1.3577871322631836
+    ],
+    "max": [
+      0.06062081456184387,
+      0.10326544940471649,
+      1.573431134223938
+    ]
+  },
+  {
+    "name": "Splenius capitis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 2629,
+    "polygons": 5262,
+    "min": [
+      -0.06062081456184387,
+      0.018954280763864517,
+      1.3577872514724731
+    ],
+    "max": [
+      0.000721026211977005,
+      0.10326544940471649,
+      1.5734312534332275
+    ]
+  },
+  {
+    "name": "Splenius colli muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 2158,
+    "polygons": 4314,
+    "min": [
+      -0.00108429417014122,
+      0.012140274047851562,
+      1.2853764295578003
+    ],
+    "max": [
+      0.042629897594451904,
+      0.10438889265060425,
+      1.5429543256759644
+    ]
+  },
+  {
+    "name": "Splenius colli muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Back",
+      "Muscles",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 2158,
+    "polygons": 4314,
+    "min": [
+      -0.042629897594451904,
+      0.012140274047851562,
+      1.2853765487670898
+    ],
+    "max": [
+      0.00108429417014122,
+      0.10438889265060425,
+      1.542954444885254
+    ]
+  },
+  {
+    "name": "Stapes.l",
+    "collections": [
+      "1: Skeletal system",
+      "Auditory ossicles",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 2171,
+    "polygons": 2180,
+    "min": [
+      0.040953781455755234,
+      0.002910811686888337,
+      1.5798341035842896
+    ],
+    "max": [
+      0.04500776529312134,
+      0.005962501745671034,
+      1.5822651386260986
+    ]
+  },
+  {
+    "name": "Stapes.r",
+    "collections": [
+      "1: Skeletal system",
+      "Auditory ossicles",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 2171,
+    "polygons": 2180,
+    "min": [
+      -0.04500776529312134,
+      0.002910811686888337,
+      1.5798341035842896
+    ],
+    "max": [
+      -0.040953781455755234,
+      0.005962501745671034,
+      1.5822651386260986
+    ]
+  },
+  {
+    "name": "Sternocleidomastoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Accessory nerve (XI)",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 2472,
+    "polygons": 4952,
+    "min": [
+      0.0036842674016952515,
+      -0.06437481939792633,
+      1.381715178489685
+    ],
+    "max": [
+      0.061432406306266785,
+      0.049296990036964417,
+      1.5754348039627075
+    ]
+  },
+  {
+    "name": "Sternocleidomastoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Accessory nerve (XI)",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 2472,
+    "polygons": 4952,
+    "min": [
+      -0.0614323616027832,
+      -0.06437481939792633,
+      1.3817150592803955
+    ],
+    "max": [
+      -0.00368422269821167,
+      0.049296990036964417,
+      1.575434684753418
+    ]
+  },
+  {
+    "name": "Sternohyoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 697,
+    "polygons": 1394,
+    "min": [
+      0.0036156661808490753,
+      -0.03679919242858887,
+      1.3894377946853638
+    ],
+    "max": [
+      0.027413388714194298,
+      -0.01816064678132534,
+      1.4975427389144897
+    ]
+  },
+  {
+    "name": "Sternohyoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 697,
+    "polygons": 1394,
+    "min": [
+      -0.02741331420838833,
+      -0.03679919242858887,
+      1.3894377946853638
+    ],
+    "max": [
+      -0.003615591675043106,
+      -0.01816064678132534,
+      1.4975427389144897
+    ]
+  },
+  {
+    "name": "Sternothyroid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 546,
+    "polygons": 1088,
+    "min": [
+      0.004182592965662479,
+      -0.03816938400268555,
+      1.38128662109375
+    ],
+    "max": [
+      0.022451890632510185,
+      -0.008228970691561699,
+      1.4800660610198975
+    ]
+  },
+  {
+    "name": "Sternothyroid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 546,
+    "polygons": 1088,
+    "min": [
+      -0.022451816126704216,
+      -0.03816938400268555,
+      1.38128662109375
+    ],
+    "max": [
+      -0.00418251845985651,
+      -0.008228970691561699,
+      1.4800660610198975
+    ]
+  },
+  {
+    "name": "Straight part of cricothyroid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 592,
+    "polygons": 1180,
+    "min": [
+      0.0022862995974719524,
+      -0.013347201980650425,
+      1.4630414247512817
+    ],
+    "max": [
+      0.012013890780508518,
+      -0.00649977894499898,
+      1.47333562374115
+    ]
+  },
+  {
+    "name": "Straight part of cricothyroid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 592,
+    "polygons": 1180,
+    "min": [
+      -0.012013875879347324,
+      -0.013347201980650425,
+      1.4630413055419922
+    ],
+    "max": [
+      -0.0022862846963107586,
+      -0.00649977894499898,
+      1.4733355045318604
+    ]
+  },
+  {
+    "name": "Stylohyoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 349,
+    "polygons": 694,
+    "min": [
+      0.009794160723686218,
+      -0.034177955240011215,
+      1.4989585876464844
+    ],
+    "max": [
+      0.0414065383374691,
+      0.006608743220567703,
+      1.5617315769195557
+    ]
+  },
+  {
+    "name": "Stylohyoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 349,
+    "polygons": 694,
+    "min": [
+      -0.04140646383166313,
+      -0.034177955240011215,
+      1.4989585876464844
+    ],
+    "max": [
+      -0.009794086217880249,
+      0.006608743220567703,
+      1.5617315769195557
+    ]
+  },
+  {
+    "name": "Stylopharyngeus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Pharyngeal muscles",
+      "Trunk"
+    ],
+    "vertices": 4740,
+    "polygons": 9478,
+    "min": [
+      0.01263467874377966,
+      -0.0191346462816,
+      1.4907011985778809
+    ],
+    "max": [
+      0.04038248956203461,
+      0.0051655396819114685,
+      1.5573939085006714
+    ]
+  },
+  {
+    "name": "Superficial investing cervical fascia.l",
+    "collections": [
+      "4: Muscular system",
+      "Fascia",
+      "Neck",
+      "Superficial muscles",
+      "Trunk"
+    ],
+    "vertices": 1770,
+    "polygons": 1715,
+    "min": [
+      -0.001952528953552246,
+      -0.07423532009124756,
+      1.3710343837738037
+    ],
+    "max": [
+      0.17429445683956146,
+      0.11953828483819962,
+      1.586591362953186
+    ]
+  },
+  {
+    "name": "Superficial investing cervical fascia.r",
+    "collections": [
+      "4: Muscular system",
+      "Fascia",
+      "Neck",
+      "Superficial muscles",
+      "Trunk"
+    ],
+    "vertices": 1770,
+    "polygons": 1715,
+    "min": [
+      -0.17429442703723907,
+      -0.07423532009124756,
+      1.3710343837738037
+    ],
+    "max": [
+      0.0019525587558746338,
+      0.11953828483819962,
+      1.586591362953186
+    ]
+  },
+  {
+    "name": "Superficial layer of temporal fascia.l",
+    "collections": [
+      "4: Muscular system",
+      "Fascia",
+      "Head",
+      "Superficial muscles"
+    ],
+    "vertices": 378,
+    "polygons": 359,
+    "min": [
+      0.04859016090631485,
+      -0.06228971108794212,
+      1.5786505937576294
+    ],
+    "max": [
+      0.07705853879451752,
+      0.051521699875593185,
+      1.6631340980529785
+    ]
+  },
+  {
+    "name": "Superficial layer of temporal fascia.r",
+    "collections": [
+      "4: Muscular system",
+      "Fascia",
+      "Head",
+      "Superficial muscles"
+    ],
+    "vertices": 378,
+    "polygons": 359,
+    "min": [
+      -0.07705850899219513,
+      -0.06228971108794212,
+      1.5786505937576294
+    ],
+    "max": [
+      -0.04859013110399246,
+      0.051521699875593185,
+      1.6631340980529785
+    ]
+  },
+  {
+    "name": "Superficial part of masseter.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 702,
+    "polygons": 1402,
+    "min": [
+      0.03612629324197769,
+      -0.05667736381292343,
+      1.512200951576233
+    ],
+    "max": [
+      0.06270062178373337,
+      -0.017181361094117165,
+      1.574326515197754
+    ]
+  },
+  {
+    "name": "Superficial part of masseter.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 702,
+    "polygons": 1402,
+    "min": [
+      -0.06270059198141098,
+      -0.05667736381292343,
+      1.512200951576233
+    ],
+    "max": [
+      -0.036126263439655304,
+      -0.017181361094117165,
+      1.574326515197754
+    ]
+  },
+  {
+    "name": "Superior head of lateral pterygoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 115,
+    "polygons": 226,
+    "min": [
+      0.021714702248573303,
+      -0.03243439272046089,
+      1.5693237781524658
+    ],
+    "max": [
+      0.0429510623216629,
+      -0.01006061490625143,
+      1.5840648412704468
+    ]
+  },
+  {
+    "name": "Superior head of lateral pterygoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 115,
+    "polygons": 226,
+    "min": [
+      -0.042951032519340515,
+      -0.03243439272046089,
+      1.5693237781524658
+    ],
+    "max": [
+      -0.021714672446250916,
+      -0.01006061490625143,
+      1.5840648412704468
+    ]
+  },
+  {
+    "name": "Superior oblique muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 877,
+    "polygons": 1750,
+    "min": [
+      0.012636750005185604,
+      -0.07745660841464996,
+      1.5947892665863037
+    ],
+    "max": [
+      0.04056814685463905,
+      -0.03368504345417023,
+      1.6074047088623047
+    ]
+  },
+  {
+    "name": "Superior oblique muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 877,
+    "polygons": 1750,
+    "min": [
+      -0.04056815430521965,
+      -0.07745660841464996,
+      1.5947892665863037
+    ],
+    "max": [
+      -0.012636757455766201,
+      -0.03368504345417023,
+      1.6074047088623047
+    ]
+  },
+  {
+    "name": "Superior rectus muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 644,
+    "polygons": 1284,
+    "min": [
+      0.013909360393881798,
+      -0.07347530871629715,
+      1.5972298383712769
+    ],
+    "max": [
+      0.036804985255002975,
+      -0.03279709070920944,
+      1.6052221059799194
+    ]
+  },
+  {
+    "name": "Superior rectus muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 644,
+    "polygons": 1284,
+    "min": [
+      -0.03680499270558357,
+      -0.07347530871629715,
+      1.5972298383712769
+    ],
+    "max": [
+      -0.013909367844462395,
+      -0.03279709070920944,
+      1.6052221059799194
+    ]
+  },
+  {
+    "name": "Superior tarsus.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 91,
+    "polygons": 178,
+    "min": [
+      0.018415294587612152,
+      -0.07778958231210709,
+      1.591660499572754
+    ],
+    "max": [
+      0.043958425521850586,
+      -0.06751998513936996,
+      1.6035300493240356
+    ]
+  },
+  {
+    "name": "Superior tarsus.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Oculomotor nerve (III)"
+    ],
+    "vertices": 91,
+    "polygons": 178,
+    "min": [
+      -0.04395843297243118,
+      -0.07778958231210709,
+      1.591660499572754
+    ],
+    "max": [
+      -0.01841530203819275,
+      -0.06751998513936996,
+      1.6035300493240356
+    ]
+  },
+  {
+    "name": "Temporal bone.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 7051,
+    "polygons": 14094,
+    "min": [
+      0.009648576378822327,
+      -0.0447830855846405,
+      1.5487265586853027
+    ],
+    "max": [
+      0.07242035865783691,
+      0.05156397819519043,
+      1.623145580291748
+    ]
+  },
+  {
+    "name": "Temporal bone.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 7051,
+    "polygons": 14094,
+    "min": [
+      -0.07242035865783691,
+      -0.0447830855846405,
+      1.5487265586853027
+    ],
+    "max": [
+      -0.009648576378822327,
+      0.05156397819519043,
+      1.623145580291748
+    ]
+  },
+  {
+    "name": "Temporalis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 5126,
+    "polygons": 10260,
+    "min": [
+      0.03776046633720398,
+      -0.06337818503379822,
+      1.5460234880447388
+    ],
+    "max": [
+      0.07683270424604416,
+      0.05053059384226799,
+      1.6619880199432373
+    ]
+  },
+  {
+    "name": "Temporalis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles",
+      "Trigeminal nerve (V)"
+    ],
+    "vertices": 5126,
+    "polygons": 10260,
+    "min": [
+      -0.07683267444372177,
+      -0.06337818503379822,
+      1.5460234880447388
+    ],
+    "max": [
+      -0.03776043653488159,
+      0.05053059384226799,
+      1.6619880199432373
+    ]
+  },
+  {
+    "name": "Temporoparietalis muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 5974,
+    "polygons": 11972,
+    "min": [
+      0.04220317304134369,
+      -0.04492449760437012,
+      1.574838638305664
+    ],
+    "max": [
+      0.08040960878133774,
+      0.07189983874559402,
+      1.6777032613754272
+    ]
+  },
+  {
+    "name": "Temporoparietalis muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 5974,
+    "polygons": 11972,
+    "min": [
+      -0.08040962368249893,
+      -0.04492449760437012,
+      1.574838638305664
+    ],
+    "max": [
+      -0.04220318794250488,
+      0.07189983874559402,
+      1.6777032613754272
+    ]
+  },
+  {
+    "name": "Thyro-epiglottic part of thyro-arytenoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1557,
+    "polygons": 3110,
+    "min": [
+      0.0002937573008239269,
+      -0.028255358338356018,
+      1.4778876304626465
+    ],
+    "max": [
+      0.008774783462285995,
+      -0.00947610568255186,
+      1.502791166305542
+    ]
+  },
+  {
+    "name": "Thyro-epiglottic part of thyro-arytenoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 1557,
+    "polygons": 3110,
+    "min": [
+      -0.008774768561124802,
+      -0.028255358338356018,
+      1.477887511253357
+    ],
+    "max": [
+      -0.0002937423996627331,
+      -0.00947610568255186,
+      1.5027910470962524
+    ]
+  },
+  {
+    "name": "Thyrohyoid muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 352,
+    "polygons": 692,
+    "min": [
+      0.007528689224272966,
+      -0.03212724253535271,
+      1.4665290117263794
+    ],
+    "max": [
+      0.019808456301689148,
+      -0.007100055925548077,
+      1.497372031211853
+    ]
+  },
+  {
+    "name": "Thyrohyoid muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 352,
+    "polygons": 692,
+    "min": [
+      -0.01980838179588318,
+      -0.03212724253535271,
+      1.4665290117263794
+    ],
+    "max": [
+      -0.007528614718466997,
+      -0.007100055925548077,
+      1.497372031211853
+    ]
+  },
+  {
+    "name": "Transverse arytenoid muscle",
+    "collections": [
+      "4: Muscular system",
+      "Laryngeal muscles",
+      "Muscles",
+      "Muscles of neck",
+      "Neck",
+      "Trunk"
+    ],
+    "vertices": 913,
+    "polygons": 1822,
+    "min": [
+      -0.00800411868840456,
+      -0.007318577729165554,
+      1.4732221364974976
+    ],
+    "max": [
+      0.006676956079900265,
+      -0.004262207541614771,
+      1.4794479608535767
+    ]
+  },
+  {
+    "name": "Trochlea of superior oblique muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 98,
+    "polygons": 192,
+    "min": [
+      0.01247921958565712,
+      -0.0770108699798584,
+      1.60506272315979
+    ],
+    "max": [
+      0.016702700406312943,
+      -0.07392090559005737,
+      1.6087623834609985
+    ]
+  },
+  {
+    "name": "Trochlea of superior oblique muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Head",
+      "Muscles",
+      "Muscles of head"
+    ],
+    "vertices": 98,
+    "polygons": 192,
+    "min": [
+      -0.01670270785689354,
+      -0.0770108699798584,
+      1.60506272315979
+    ],
+    "max": [
+      -0.012479227036237717,
+      -0.07392090559005737,
+      1.6087623834609985
+    ]
+  },
+  {
+    "name": "Upper canine.l",
+    "collections": [
+      "1: Skeletal system",
+      "Anterior teeth",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 737,
+    "polygons": 1434,
+    "min": [
+      0.01254756934940815,
+      -0.0859634131193161,
+      1.5271074771881104
+    ],
+    "max": [
+      0.0216037780046463,
+      -0.07686164975166321,
+      1.5577152967453003
+    ]
+  },
+  {
+    "name": "Upper canine.r",
+    "collections": [
+      "1: Skeletal system",
+      "Anterior teeth",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 737,
+    "polygons": 1434,
+    "min": [
+      -0.0216037780046463,
+      -0.0859634131193161,
+      1.5271074771881104
+    ],
+    "max": [
+      -0.01254756934940815,
+      -0.07686164975166321,
+      1.5577152967453003
+    ]
+  },
+  {
+    "name": "Upper first molar tooth.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 1090,
+    "polygons": 2168,
+    "min": [
+      0.01849355734884739,
+      -0.06477218866348267,
+      1.5317078828811646
+    ],
+    "max": [
+      0.029819782823324203,
+      -0.05351351946592331,
+      1.5556734800338745
+    ]
+  },
+  {
+    "name": "Upper first molar tooth.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 1090,
+    "polygons": 2168,
+    "min": [
+      -0.029819782823324203,
+      -0.06477218866348267,
+      1.5317078828811646
+    ],
+    "max": [
+      -0.01849355734884739,
+      -0.05351351946592331,
+      1.5556734800338745
+    ]
+  },
+  {
+    "name": "Upper first premolar.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 844,
+    "polygons": 1651,
+    "min": [
+      0.015402333810925484,
+      -0.07777169346809387,
+      1.5287156105041504
+    ],
+    "max": [
+      0.02471141889691353,
+      -0.0699084997177124,
+      1.556451678276062
+    ]
+  },
+  {
+    "name": "Upper first premolar.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 844,
+    "polygons": 1651,
+    "min": [
+      -0.02471141889691353,
+      -0.07777169346809387,
+      1.5287156105041504
+    ],
+    "max": [
+      -0.015402333810925484,
+      -0.0699084997177124,
+      1.556451678276062
+    ]
+  },
+  {
+    "name": "Upper lateral incisor.l",
+    "collections": [
+      "1: Skeletal system",
+      "Anterior teeth",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 729,
+    "polygons": 1412,
+    "min": [
+      0.006503517739474773,
+      -0.09015235304832458,
+      1.5255939960479736
+    ],
+    "max": [
+      0.01587347686290741,
+      -0.07910855114459991,
+      1.5537948608398438
+    ]
+  },
+  {
+    "name": "Upper lateral incisor.r",
+    "collections": [
+      "1: Skeletal system",
+      "Anterior teeth",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 729,
+    "polygons": 1412,
+    "min": [
+      -0.01587347686290741,
+      -0.09015235304832458,
+      1.5255939960479736
+    ],
+    "max": [
+      -0.006503517739474773,
+      -0.07910855114459991,
+      1.5537948608398438
+    ]
+  },
+  {
+    "name": "Upper medial incisor.l",
+    "collections": [
+      "1: Skeletal system",
+      "Anterior teeth",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 686,
+    "polygons": 1368,
+    "min": [
+      6.178067997097969e-05,
+      -0.09320314228534698,
+      1.5262928009033203
+    ],
+    "max": [
+      0.008846853859722614,
+      -0.08061191439628601,
+      1.552045464515686
+    ]
+  },
+  {
+    "name": "Upper medial incisor.r",
+    "collections": [
+      "1: Skeletal system",
+      "Anterior teeth",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 686,
+    "polygons": 1368,
+    "min": [
+      -0.008846853859722614,
+      -0.09320314228534698,
+      1.5262928009033203
+    ],
+    "max": [
+      -6.178067997097969e-05,
+      -0.08061191439628601,
+      1.552045464515686
+    ]
+  },
+  {
+    "name": "Upper second molar tooth.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 924,
+    "polygons": 1843,
+    "min": [
+      0.01786145381629467,
+      -0.055487148463726044,
+      1.5351909399032593
+    ],
+    "max": [
+      0.02950119413435459,
+      -0.04588128626346588,
+      1.557317852973938
+    ]
+  },
+  {
+    "name": "Upper second molar tooth.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 924,
+    "polygons": 1843,
+    "min": [
+      -0.02950119413435459,
+      -0.055487148463726044,
+      1.5351909399032593
+    ],
+    "max": [
+      -0.01786145381629467,
+      -0.04588128626346588,
+      1.557317852973938
+    ]
+  },
+  {
+    "name": "Upper second premolar.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 779,
+    "polygons": 1511,
+    "min": [
+      0.018529731780290604,
+      -0.07156220823526382,
+      1.529687523841858
+    ],
+    "max": [
+      0.027620336040854454,
+      -0.06413286924362183,
+      1.554996132850647
+    ]
+  },
+  {
+    "name": "Upper second premolar.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Digestive system",
+      "Head",
+      "Posterior teeth",
+      "Right maxilla",
+      "Superior teeth",
+      "Teeth"
+    ],
+    "vertices": 779,
+    "polygons": 1511,
+    "min": [
+      -0.027620336040854454,
+      -0.07156220823526382,
+      1.529687523841858
+    ],
+    "max": [
+      -0.018529731780290604,
+      -0.06413286924362183,
+      1.554996132850647
+    ]
+  },
+  {
+    "name": "Vertebra C3",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Back",
+      "Cervical vertebrae",
+      "Neck",
+      "Trunk",
+      "Vertebral column"
+    ],
+    "vertices": 1216,
+    "polygons": 2374,
+    "min": [
+      -0.02826078236103058,
+      -0.00020100960682611912,
+      1.493054747581482
+    ],
+    "max": [
+      0.02826077863574028,
+      0.053980503231287,
+      1.519705891609192
+    ]
+  },
+  {
+    "name": "Vertebra C4",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Back",
+      "Cervical vertebrae",
+      "Neck",
+      "Trunk",
+      "Vertebral column"
+    ],
+    "vertices": 972,
+    "polygons": 1938,
+    "min": [
+      -0.028904492035508156,
+      0.00029172003269195557,
+      1.4805545806884766
+    ],
+    "max": [
+      0.029055321589112282,
+      0.05264841392636299,
+      1.5055946111679077
+    ]
+  },
+  {
+    "name": "Vertebra C5",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Back",
+      "Cervical vertebrae",
+      "Neck",
+      "Trunk",
+      "Vertebral column"
+    ],
+    "vertices": 1164,
+    "polygons": 2256,
+    "min": [
+      -0.03071589022874832,
+      0.00155625119805336,
+      1.4688951969146729
+    ],
+    "max": [
+      0.030715882778167725,
+      0.057996828109025955,
+      1.49139404296875
+    ]
+  },
+  {
+    "name": "Vertebra C6",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Back",
+      "Cervical vertebrae",
+      "Neck",
+      "Trunk",
+      "Vertebral column"
+    ],
+    "vertices": 1148,
+    "polygons": 2224,
+    "min": [
+      -0.03063075803220272,
+      0.0031452272087335587,
+      1.4537261724472046
+    ],
+    "max": [
+      0.03063075803220272,
+      0.06676751375198364,
+      1.4783262014389038
+    ]
+  },
+  {
+    "name": "Vertebra C7",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Back",
+      "Cervical vertebrae",
+      "Neck",
+      "Trunk",
+      "Vertebral column"
+    ],
+    "vertices": 1078,
+    "polygons": 2090,
+    "min": [
+      -0.03561040759086609,
+      0.006920285522937775,
+      1.438514232635498
+    ],
+    "max": [
+      0.03561040014028549,
+      0.0772264376282692,
+      1.4655271768569946
+    ]
+  },
+  {
+    "name": "Vomer",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 514,
+    "polygons": 946,
+    "min": [
+      -0.00511865084990859,
+      -0.08210162818431854,
+      1.5574067831039429
+    ],
+    "max": [
+      0.005118680652230978,
+      -0.020958365872502327,
+      1.5803581476211548
+    ]
+  },
+  {
+    "name": "Zygomatic bone.l",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 666,
+    "polygons": 1328,
+    "min": [
+      0.031617116183042526,
+      -0.07167743891477585,
+      1.5537165403366089
+    ],
+    "max": [
+      0.06232469528913498,
+      -0.0327085480093956,
+      1.608465552330017
+    ]
+  },
+  {
+    "name": "Zygomatic bone.r",
+    "collections": [
+      "1: Skeletal system",
+      "Axial skeleton",
+      "Bonus collection",
+      "Cranium",
+      "Head"
+    ],
+    "vertices": 666,
+    "polygons": 1328,
+    "min": [
+      -0.06232469528913498,
+      -0.07167743891477585,
+      1.5537165403366089
+    ],
+    "max": [
+      -0.031617116183042526,
+      -0.0327085480093956,
+      1.608465552330017
+    ]
+  },
+  {
+    "name": "Zygomaticus major muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 397,
+    "polygons": 798,
+    "min": [
+      0.0260942243039608,
+      -0.07599446922540665,
+      1.524329423904419
+    ],
+    "max": [
+      0.05547741800546646,
+      -0.05034952238202095,
+      1.5788588523864746
+    ]
+  },
+  {
+    "name": "Zygomaticus major muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 397,
+    "polygons": 798,
+    "min": [
+      -0.055477432906627655,
+      -0.07599446922540665,
+      1.524329423904419
+    ],
+    "max": [
+      -0.026094239205121994,
+      -0.05034952238202095,
+      1.5788588523864746
+    ]
+  },
+  {
+    "name": "Zygomaticus minor muscle.l",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 218,
+    "polygons": 432,
+    "min": [
+      0.012736843898892403,
+      -0.08466287702322006,
+      1.5466758012771606
+    ],
+    "max": [
+      0.050343506038188934,
+      -0.06004743650555611,
+      1.5773146152496338
+    ]
+  },
+  {
+    "name": "Zygomaticus minor muscle.r",
+    "collections": [
+      "4: Muscular system",
+      "Facial muscles",
+      "Facial nerve (VII)",
+      "Head",
+      "Muscles",
+      "Muscles of head",
+      "Superficial muscles"
+    ],
+    "vertices": 218,
+    "polygons": 432,
+    "min": [
+      -0.05034352093935013,
+      -0.08466287702322006,
+      1.5466758012771606
+    ],
+    "max": [
+      -0.012736858800053596,
+      -0.06004743650555611,
+      1.5773146152496338
+    ]
+  }
+]

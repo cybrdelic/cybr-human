@@ -1,0 +1,9 @@
+Derived anatomical meshes, registration and previews: Creative Commons Attribution-ShareAlike 4.0 International.
+https://creativecommons.org/licenses/by-sa/4.0/
+
+BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan
+Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0
+
+Modifications: selected and cropped internal bust anatomy; uniform shared-frame registration; kinematic rig and source-derived support constraints for a separately code-authored exterior.
+Imported exterior, ocular and hair meshes are excluded. The active skin geometry and maps are generated in code around the permitted bone, muscle and cartilage scaffold.
+Original upstream notices are preserved in UPSTREAM-LICENSE.txt. No inner ear, kidney or brain assets are included.

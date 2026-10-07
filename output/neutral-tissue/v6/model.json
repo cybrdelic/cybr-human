@@ -1,0 +1,313 @@
+{
+  "schema": "cybr-layered-fem-v1",
+  "surface_nodes": 3076,
+  "nodes": 9228,
+  "tetrahedra": 36450,
+  "assets": {
+    "rest": {
+      "url": "output/neutral-tissue/v6/rest.bin",
+      "sha256": "0680e4fe138d7094891a64fb8d060feca110cff63e66c0614169ab85c6c6bd5a",
+      "count": 27684
+    },
+    "nodes": {
+      "url": "output/neutral-tissue/v6/nodes.bin",
+      "sha256": "8aa524845bb308e6f3f608aecaf4617de2edd0cb2bb4b27a69b88864c5136070",
+      "count": 145800
+    },
+    "gradients": {
+      "url": "output/neutral-tissue/v6/gradients.bin",
+      "sha256": "43c87ad907fb3a65f27a7e6dc38bab1cce4d32d8f69f354f883b5c80fa30221e",
+      "count": 437400
+    },
+    "material": {
+      "url": "output/neutral-tissue/v6/material.bin",
+      "sha256": "3c7ebb49561548350aff98ebcc0bbb9058d29881d6891c58249a71b7c1c36dd6",
+      "count": 109350
+    },
+    "mass": {
+      "url": "output/neutral-tissue/v6/mass.bin",
+      "sha256": "300ba5a1dd582b59406be634c9bf71f5053749c3abfc43d95174f46e93657f34",
+      "count": 9228
+    },
+    "faces": {
+      "url": "output/neutral-tissue/v6/faces.bin",
+      "sha256": "930b0098115814e691f6a7c7688262742d7abc5174bb81728c7d4720955b7b71",
+      "count": 18225
+    },
+    "layers": {
+      "url": "output/neutral-tissue/v6/layers.bin",
+      "sha256": "e09b906e515b3a24a4aefceb258fb5c09ca0ca5c75990eb8a6956b2628ff374e",
+      "count": 36450
+    },
+    "groups": {
+      "url": "output/neutral-tissue/v6/groups.bin",
+      "sha256": "10b59009e443f821af64965158bd8228e6ba6babd916b00e3d262b86d66ef1f4",
+      "count": 3076
+    },
+    "normals": {
+      "url": "output/neutral-tissue/v6/normals.bin",
+      "sha256": "d2151f55ef7c25ffae6267150138271c82961e20f44d50853a677978ce71053c",
+      "count": 9228
+    },
+    "hinges": {
+      "url": "output/neutral-tissue/v6/hinges.bin",
+      "sha256": "0e14271b7c845517bc4c8bbd51bfb2e0286aeddcaf7970182dbdfb5d375e68bb",
+      "count": 54420
+    },
+    "fatWeights": {
+      "url": "output/neutral-tissue/v6/fatWeights.bin",
+      "sha256": "43928e24fe6a33fd0418fe4def64eb75ce32e99b9c7de4ed17720067d0ffd447",
+      "count": 36450
+    },
+    "fixedNodes": {
+      "url": "output/neutral-tissue/v6/fixedNodes.bin",
+      "sha256": "d09e3ff34e83c14f36e06cfb44625c399baa97176e13705fe4a95c331bcd1a42",
+      "count": 9228
+    },
+    "contactPlanes": {
+      "url": "output/neutral-tissue/v6/contactPlanes.bin",
+      "sha256": "833beb8e4e8a1a62fe68377b8e782ca42141427bca7d8c5522636d8ab2706092",
+      "count": 64596
+    }
+  },
+  "units": "meters",
+  "coordinate_frame": "gltf",
+  "source_skin_sha256": "4d14ae2b8151ba7417e297811877be972b09e71c35a1ac4e183c0a43e3222d19",
+  "skin_shape_url": "output/neutral-tissue/v6/shape.json",
+  "full_head": true,
+  "construction": {
+    "components": [
+      {
+        "component": 0,
+        "nodes": 3076,
+        "faces": 6075,
+        "authored_vertex_distance_mm": 0.04150943747388452
+      }
+    ],
+    "bounds_m": [
+      [
+        -0.17097710989643355,
+        -0.1800000119916622,
+        -0.13264040047761236
+      ],
+      [
+        0.17063387920289483,
+        0.15399999978415463,
+        0.1065537386118886
+      ]
+    ],
+    "positive_cells": true,
+    "minimum_rest_volume_m3": 2.299089615302495e-11,
+    "maximum_condition": 890.1871190106372,
+    "effective_depth_mm": [
+      0.5225602014627198,
+      0.7514804172502911,
+      2.993852642632393,
+      8.188982532777318,
+      9.851326231313465
+    ],
+    "curvature_reduced_nodes": 2457,
+    "reduction_history": [],
+    "cage_wedge_repairs": [
+      26,
+      22,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "quality_repairs": [
+      {
+        "stage": 0,
+        "eps": 0.1,
+        "iterations": 180,
+        "energy": 3.334844597966405,
+        "minimum_J": -0.09983242991438421,
+        "negative_cells": 30,
+        "max_condition": 18460.979569610525,
+        "minimum_layer_gap_mm": 0.1351151966726836
+      },
+      {
+        "stage": 1,
+        "eps": 0.03,
+        "iterations": 180,
+        "energy": 3.3645629687800507,
+        "minimum_J": -0.02479583447541573,
+        "negative_cells": 9,
+        "max_condition": 1884.9974803308387,
+        "minimum_layer_gap_mm": 0.13553773151492066
+      },
+      {
+        "stage": 2,
+        "eps": 0.01,
+        "iterations": 180,
+        "energy": 3.3781298379951994,
+        "minimum_J": -0.0031403470105772742,
+        "negative_cells": 2,
+        "max_condition": 1459.208810416307,
+        "minimum_layer_gap_mm": 0.1347603582929381
+      },
+      {
+        "stage": 3,
+        "eps": 0.003,
+        "iterations": 180,
+        "energy": 3.378646034472304,
+        "minimum_J": 0.009220263323013468,
+        "negative_cells": 0,
+        "max_condition": 916.2217929306963,
+        "minimum_layer_gap_mm": 0.13731753071272057
+      },
+      {
+        "stage": 4,
+        "eps": 0.001,
+        "iterations": 180,
+        "energy": 3.3781462661613415,
+        "minimum_J": 0.009142175903194284,
+        "negative_cells": 0,
+        "max_condition": 894.3717484941093,
+        "minimum_layer_gap_mm": 0.13484288036232772
+      },
+      {
+        "stage": 5,
+        "eps": 0.0003,
+        "iterations": 180,
+        "energy": 3.3780238144640924,
+        "minimum_J": 0.009318726521107127,
+        "negative_cells": 0,
+        "max_condition": 897.5291293772592,
+        "minimum_layer_gap_mm": 0.1348890193365101
+      },
+      {
+        "stage": 6,
+        "eps": 0.0001,
+        "iterations": 180,
+        "energy": 3.3779762042253174,
+        "minimum_J": 0.00918555167062428,
+        "negative_cells": 0,
+        "max_condition": 892.734117086125,
+        "minimum_layer_gap_mm": 0.13494512428787153
+      },
+      {
+        "stage": 7,
+        "eps": 3e-05,
+        "iterations": 180,
+        "energy": 3.377881627967165,
+        "minimum_J": 0.009420091808637942,
+        "negative_cells": 0,
+        "max_condition": 896.0612018011782,
+        "minimum_layer_gap_mm": 0.13516058782823337
+      },
+      {
+        "stage": 8,
+        "eps": 1e-05,
+        "iterations": 180,
+        "energy": 3.377856908888725,
+        "minimum_J": 0.009112843878533006,
+        "negative_cells": 0,
+        "max_condition": 890.1871190107473,
+        "minimum_layer_gap_mm": 0.13498444583445868
+      }
+    ],
+    "maximum_cage_shift_mm": 6.588293718309905,
+    "full_head_surface_reduction": true,
+    "anatomical_contact_accepted": false,
+    "elapsed_s": 64.12434470001608
+  },
+  "limitations": [
+    "Full outer scalp/face/pinna coverage; oral/ocular linings follow the cage but have no dedicated thin-feature tetrahedral cells.",
+    "Prescribed inner substrate, not accepted anatomical skull/muscle contact.",
+    "Experimental homogenized skin and fat parameters.",
+    "Tissue depths are authored estimates, not segmented fat compartments.",
+    "Native-coordinate registration does not establish moving contact or activated muscle mechanics."
+  ],
+  "skin_url": "output/neutral-head/v5/head.glb",
+  "skin_glb_sha256": "896d4e03d679d7b4b677c725b03e399a24929d268540a88a2b5a8f2a1f54a0f1",
+  "internal_anatomy_url": "output/neutral-head/v5/internal-anatomy.glb",
+  "internal_anatomy_sha256": "c6f1e057beb5e189aa00a9d0c2e839d1c07f7beb4d4ba65ca1bdb6adca79b7de",
+  "registration_url": "output/neutral-head/v5/registration.json",
+  "internal_anatomy_license_url": "output/neutral-head/v5/LICENSE.txt",
+  "internal_anatomy_upstream_notice_url": "output/neutral-head/v5/UPSTREAM-LICENSE.txt",
+  "registration_mode": "shared native atlas coordinates; independently checked chart containment",
+  "layer_description": {
+    "skin": "0.1 mm epidermis plus regional dermis",
+    "adipose": "continuous authored tissue-depth lattice, thin eyelids/pinnae",
+    "inner_boundary": "repaired prescribed substrate; not fascia or a segmented muscle volume"
+  },
+  "skin_main_node": "Continuous_anatomical_skin",
+  "shell_hinges": 9070,
+  "shell_description": {
+    "stretching": "Existing outer dermal solid FEM",
+    "bending": "Rest-dihedral energy with exact forces and SPD Gauss-Newton search metric",
+    "effective_thickness_m": 0.0012,
+    "modulus_pa": 120000,
+    "poisson_ratio": 0.45,
+    "micro_wrinkles_resolved": false
+  },
+  "adipose_growth_scope": "Authored adipose label: excludes pinnae, nasal support, vermilion and eyelid thin features; not segmented anatomical fat compartments.",
+  "boundary_description": "Prescribed head substrate and neck base; connected auricular inner nodes remain free. No activated muscles or reciprocal jaw.",
+  "anatomical_contact": {
+    "method": "nearest permitted bone/cartilage triangle; fixed local Euclidean-distance tangent",
+    "frame": "gltf metres, native atlas registration",
+    "triangles": 165252,
+    "queries": 9228,
+    "minimum_anchor_distance_mm": 0.06063248516248591,
+    "signed_inside_test": false,
+    "part_count": 42,
+    "global_collision": false,
+    "moving_contact": false
+  }
+}

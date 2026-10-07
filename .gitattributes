@@ -1,0 +1,2 @@
+# Keep content-hashed runtime and asset bytes exact across platforms.
+* -text
