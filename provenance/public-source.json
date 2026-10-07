@@ -1,10 +1,10 @@
 {
   "selected_runtime": "4bc8b53a8f15b8b62cf6a86e",
-  "source_files": 78,
-  "source_sha256": "43aea10ab935be776186632831041aec6ee97d0e3311e95871eeac88b8d65908",
-  "canonical_files_excluding_this_manifest": 203,
-  "canonical_bytes_excluding_this_manifest": 175257571,
-  "canonical_tree_sha256": "de648ae1d0cca8d9be577f01d9aafc2d07a38334728fd2825987aefc844629d7",
+  "source_files": 81,
+  "source_sha256": "df747139d4f5ee16afd534055cdc1345dd9bf62f964771f348783fedb0ce62ba",
+  "canonical_files_excluding_this_manifest": 207,
+  "canonical_bytes_excluding_this_manifest": 175270637,
+  "canonical_tree_sha256": "46faf6fc5f70a0486c66835c23737bad49f2e587d78d54f63e222b8703c9e3df",
   "hash_contract": "SHA256(sorted relative path + NUL + file SHA256 + LF)",
   "excluded": "Private backups, local comparison/QA reports, credentials, profiles/auth state, captures, caches and installed dependencies.",
   "files": [
@@ -15,8 +15,33 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 340,
-      "sha256": "9ec73d52ac109766b2e9199ab90e6f67465e5a44fb41855ebb5eb9892f7a46ed"
+      "bytes": 449,
+      "sha256": "f576a7e9e4d2caa8e8527c436e26054e035eedffd4427991f9f21ff5d80eda8d"
+    },
+    {
+      "path": ".openai/hosting.json",
+      "bytes": 147,
+      "sha256": "be68e48c726f104c248dab6e48b8efabad96c96b24e80ac8cf1e7a1db5588a54"
+    },
+    {
+      "path": "ASSET-LICENSES.md",
+      "bytes": 2434,
+      "sha256": "5f86aee850a7cee5ba07c8282055443e0c3241bf22544dfce12b8025ce264cfe"
+    },
+    {
+      "path": "LICENSES/GPL-2.0.txt",
+      "bytes": 18431,
+      "sha256": "189b1af95d661151e054cea10c91b3d754e4de4d3fecfb074c1fb29476f7167b"
+    },
+    {
+      "path": "LICENSING.md",
+      "bytes": 3065,
+      "sha256": "b635c58a7ae93bf509d57ff2c681e7902b6bbb76fd08549e278fb98f9738a5d3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6696,
+      "sha256": "96277e2170658226f6b0e8ea8d787c5c1d5e6c93ac20ec9750d6c6dc5219d382"
     },
     {
       "path": "anatomy-feature-review.html",
@@ -34,11 +59,6 @@
       "sha256": "38a83f1a05cff2e0bea8384199f3bbaf90728657eb0ccfc14e6532d74338634a"
     },
     {
-      "path": "anatomy-source/head-selection.json",
-      "bytes": 108653,
-      "sha256": "26514795f1bdefc3b5c846fc505e5f96fa8831fc55b2fab4139d82eab182ba9a"
-    },
-    {
       "path": "anatomy-source/License.txt",
       "bytes": 2754,
       "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
@@ -47,6 +67,11 @@
       "path": "anatomy-source/Readme.md",
       "bytes": 4243,
       "sha256": "2439e8ccea759c644bbaf2f6fd48551fe054bfda30fd3d97d8384f75273466b3"
+    },
+    {
+      "path": "anatomy-source/head-selection.json",
+      "bytes": 108653,
+      "sha256": "26514795f1bdefc3b5c846fc505e5f96fa8831fc55b2fab4139d82eab182ba9a"
     },
     {
       "path": "anatomy-source/source.json",
@@ -59,9 +84,14 @@
       "sha256": "38a83f1a05cff2e0bea8384199f3bbaf90728657eb0ccfc14e6532d74338634a"
     },
     {
-      "path": "ASSET-LICENSES.md",
-      "bytes": 2434,
-      "sha256": "5f86aee850a7cee5ba07c8282055443e0c3241bf22544dfce12b8025ce264cfe"
+      "path": "assets/anatomy/LICENSE.txt",
+      "bytes": 773,
+      "sha256": "96e00d6132bbcbf67bae942ab692465de608421984797f115d9f82916e00b65e"
+    },
+    {
+      "path": "assets/anatomy/UPSTREAM-LICENSE.txt",
+      "bytes": 2754,
+      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
     },
     {
       "path": "assets/anatomy/geometry.npz",
@@ -69,19 +99,9 @@
       "sha256": "6e135947b2d3933938b435d95347fe4077130ab478a8e4094b5cad7d29b02835"
     },
     {
-      "path": "assets/anatomy/LICENSE.txt",
-      "bytes": 773,
-      "sha256": "96e00d6132bbcbf67bae942ab692465de608421984797f115d9f82916e00b65e"
-    },
-    {
       "path": "assets/anatomy/manifest.json",
       "bytes": 264268,
       "sha256": "28acad445d2a2f2b2205814ab7c6070a2bcfd63c7567a413eb67c140df3e0a4c"
-    },
-    {
-      "path": "assets/anatomy/UPSTREAM-LICENSE.txt",
-      "bytes": 2754,
-      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -94,14 +114,19 @@
       "sha256": "2d1aeb004470f0d75d972fb130360645e20c458ee062692a42358b6b50216183"
     },
     {
+      "path": "docs/HOSTING.md",
+      "bytes": 2907,
+      "sha256": "1e276fd55b9ddc77b6989890534db3adb4759dcd82aa58a56b1206afda6b983a"
+    },
+    {
       "path": "docs/REPRODUCIBILITY.md",
       "bytes": 3921,
       "sha256": "0c1572b8e7e776240ab498f4e3c2cb9743a6263b88146d22a19361ff25c151ad"
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 6132,
-      "sha256": "7df193d0ea51345b960774384bfa7a04425454400e7542a15120f334ee57874b"
+      "bytes": 8880,
+      "sha256": "efdecaca7737f25a32233bab9b163049d4de4153f872c3188aa7dea850a2eb8b"
     },
     {
       "path": "epidermis.html",
@@ -134,16 +159,6 @@
       "sha256": "38a83f1a05cff2e0bea8384199f3bbaf90728657eb0ccfc14e6532d74338634a"
     },
     {
-      "path": "LICENSES/GPL-2.0.txt",
-      "bytes": 18431,
-      "sha256": "189b1af95d661151e054cea10c91b3d754e4de4d3fecfb074c1fb29476f7167b"
-    },
-    {
-      "path": "LICENSING.md",
-      "bytes": 3065,
-      "sha256": "b635c58a7ae93bf509d57ff2c681e7902b6bbb76fd08549e278fb98f9738a5d3"
-    },
-    {
       "path": "manage.py",
       "bytes": 3802,
       "sha256": "74ce2cba3ef1da88933144bbf2252a9cd9ceea3313fd416a853ddd8fd850c141"
@@ -157,6 +172,16 @@
       "path": "neutral-tissue.html",
       "bytes": 7241,
       "sha256": "defce54afef5adaec9c5bc67f7fc20737ecb8439dba8e0bb7081e36b4620fb02"
+    },
+    {
+      "path": "output/neutral-head/v5/LICENSE.txt",
+      "bytes": 773,
+      "sha256": "96e00d6132bbcbf67bae942ab692465de608421984797f115d9f82916e00b65e"
+    },
+    {
+      "path": "output/neutral-head/v5/UPSTREAM-LICENSE.txt",
+      "bytes": 2754,
+      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
     },
     {
       "path": "output/neutral-head/v5/geometry.npz",
@@ -174,11 +199,6 @@
       "sha256": "c6f1e057beb5e189aa00a9d0c2e839d1c07f7beb4d4ba65ca1bdb6adca79b7de"
     },
     {
-      "path": "output/neutral-head/v5/LICENSE.txt",
-      "bytes": 773,
-      "sha256": "96e00d6132bbcbf67bae942ab692465de608421984797f115d9f82916e00b65e"
-    },
-    {
       "path": "output/neutral-head/v5/registration.json",
       "bytes": 39268,
       "sha256": "e7fba860631b79176a71a62108506300443b3f9176f24c9e1c506ff8acefe1c1"
@@ -187,11 +207,6 @@
       "path": "output/neutral-head/v5/report.json",
       "bytes": 26598,
       "sha256": "28d96f67dbb3d761a9b7b0304bb3b4bf60e502b3cf3e4ca56171d13bb18f1a06"
-    },
-    {
-      "path": "output/neutral-head/v5/UPSTREAM-LICENSE.txt",
-      "bytes": 2754,
-      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
     },
     {
       "path": "output/neutral-tissue/v6/0-delta.f32",
@@ -399,6 +414,21 @@
       "sha256": "1fb43e5302d8f77fe40ae9b1394e2f6912be76edae9b4a4440702ca6e53149a7"
     },
     {
+      "path": "output/runtime-current.json",
+      "bytes": 207,
+      "sha256": "212b2f4dd55ce7d5403b18d0912dd032b4415baf0ebbfe6a26c6ec836cbdd9aa"
+    },
+    {
+      "path": "output/runtime/4bc8b53a8f15b8b62cf6a86e/assets/output/neutral-head/v5/LICENSE.txt",
+      "bytes": 773,
+      "sha256": "96e00d6132bbcbf67bae942ab692465de608421984797f115d9f82916e00b65e"
+    },
+    {
+      "path": "output/runtime/4bc8b53a8f15b8b62cf6a86e/assets/output/neutral-head/v5/UPSTREAM-LICENSE.txt",
+      "bytes": 2754,
+      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
+    },
+    {
       "path": "output/runtime/4bc8b53a8f15b8b62cf6a86e/assets/output/neutral-head/v5/head.glb",
       "bytes": 18812400,
       "sha256": "896d4e03d679d7b4b677c725b03e399a24929d268540a88a2b5a8f2a1f54a0f1"
@@ -409,19 +439,9 @@
       "sha256": "c6f1e057beb5e189aa00a9d0c2e839d1c07f7beb4d4ba65ca1bdb6adca79b7de"
     },
     {
-      "path": "output/runtime/4bc8b53a8f15b8b62cf6a86e/assets/output/neutral-head/v5/LICENSE.txt",
-      "bytes": 773,
-      "sha256": "96e00d6132bbcbf67bae942ab692465de608421984797f115d9f82916e00b65e"
-    },
-    {
       "path": "output/runtime/4bc8b53a8f15b8b62cf6a86e/assets/output/neutral-head/v5/registration.json",
       "bytes": 37880,
       "sha256": "03bd4e82cc4313f15e241de77a3ccc3743cc6df8f9d6b9b6d3dc16304fa01806"
-    },
-    {
-      "path": "output/runtime/4bc8b53a8f15b8b62cf6a86e/assets/output/neutral-head/v5/UPSTREAM-LICENSE.txt",
-      "bytes": 2754,
-      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
     },
     {
       "path": "output/runtime/4bc8b53a8f15b8b62cf6a86e/assets/output/neutral-tissue/v6/0-delta.f32",
@@ -704,29 +724,19 @@
       "sha256": "66242e1a5f9ef9e8b5485538c055386c709c57cf885abe8c93b5280d638ca6be"
     },
     {
-      "path": "output/runtime-current.json",
-      "bytes": 207,
-      "sha256": "212b2f4dd55ce7d5403b18d0912dd032b4415baf0ebbfe6a26c6ec836cbdd9aa"
-    },
-    {
       "path": "package-lock.json",
       "bytes": 2031,
       "sha256": "82df07cdb2308243c532a075841359a750836b8f779e2cb28ab00506d0093d56"
     },
     {
       "path": "package.json",
-      "bytes": 383,
-      "sha256": "388e9222b297eba19948cd7cd75bd507e3a4f683df9c1d5f3653586ab320b214"
+      "bytes": 478,
+      "sha256": "022d757e19624a329693ea8f7b527cc1d2ac03eff5dd2ae43097b7ecfd585573"
     },
     {
       "path": "provenance/staged-source.json",
       "bytes": 36015,
       "sha256": "4bca49f68e346331ca0413637cd2e8f8042bb7e3ea3fbe3b57ae3cfaa26d323b"
-    },
-    {
-      "path": "README.md",
-      "bytes": 6331,
-      "sha256": "ce8ad4ffb393b72a4e2a5d7f5910b49ada94a963bfe673c14786101c085433e6"
     },
     {
       "path": "requirements.txt",
@@ -914,6 +924,11 @@
       "sha256": "0ad887f24bd578cb931b410c32cddbfb3cc65a242cbdbf67315379fd0cfed5db"
     },
     {
+      "path": "tests/site-package.mjs",
+      "bytes": 2894,
+      "sha256": "4936a3b14c9d03b1954eea31d8781e87d98eb1646a49a041bbb9f9fcf9ccaf88"
+    },
+    {
       "path": "tests/slider-range.mjs",
       "bytes": 2494,
       "sha256": "e2c23f7bf2a4ffe5c3ddb4df4211d83ab4c808a9defd9dca5f5af3898aed4c01"
@@ -959,6 +974,11 @@
       "sha256": "3c37e04e3dc19f6731d19eadda97572d7f9bd1053ddeef4040abf60d2704bb2f"
     },
     {
+      "path": "tools/build_site.mjs",
+      "bytes": 3801,
+      "sha256": "a9d0243ecd8ba9c349077ea09e68a39f647b0b1fa2194f6eda1ab87e4f1fd0cb"
+    },
+    {
       "path": "tools/build_tissue_runtime.py",
       "bytes": 7572,
       "sha256": "8db369cac3503da22f09d1c6c40e8844a40e3652653f3b8e3d1856156f3716fa"
@@ -999,6 +1019,11 @@
       "sha256": "36387c56e858fc57ca82af45675a92e02d3ee21bc39e6355541821bd0f81715f"
     },
     {
+      "path": "vendor/three-0.169.0/LICENSE",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
       "path": "vendor/three-0.169.0/build/three.module.js",
       "bytes": 1304820,
       "sha256": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416"
@@ -1017,11 +1042,6 @@
       "path": "vendor/three-0.169.0/examples/jsm/utils/BufferGeometryUtils.js",
       "bytes": 31768,
       "sha256": "c25b7930e570e9ec56173cd3b866ec8d2e10016630db3937efb439daf1cedbf6"
-    },
-    {
-      "path": "vendor/three-0.169.0/LICENSE",
-      "bytes": 1081,
-      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
     }
   ]
 }

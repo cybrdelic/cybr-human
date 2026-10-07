@@ -14,6 +14,10 @@ python manage.py serve --port 8841
 
 Open `http://127.0.0.1:8841/neutral-tissue.html`. The index and legacy page names redirect here. Use a browser with WebGL2; WebGPU enables the GPU solver. `?backend=cpu` explicitly uses the worker fallback; rendering still requires WebGL2. Controls include adipose growth, softness, gravity, skin pull/release, reset, rest anatomy, camera views and optional forehead detail. On-demand controls solve static equilibrium. **Run simulation** uses fixed-time dynamic integration; measured speed depends on hardware.
 
+## Public deployment
+
+The hosted application uses the same selected runtime, model assets and CPU worker. See [hosting instructions](docs/HOSTING.md). `npm run build:site` packages the reviewed browser closure without rebuilding or promoting a solver.
+
 ## Install development dependencies
 
 Node 20+ and Python are required for tooling. Package versions are pinned in `package-lock.json` and `requirements.txt`. The browser imports the small pinned Three.js distribution from `vendor/`, independently of npm.
@@ -42,7 +46,7 @@ Supplemental `tests/bounded-cg.mjs` and `tests/surface-cache.mjs` concern newer 
 
 ## Measured correctness and performance
 
-The selected runtime passed offline verification and all ten retained hardware browser regressions on an NVIDIA RTX 4060 Laptop GPU. Actual original/staged control and settled scene pixels matched. **Performance acceptance remains incomplete:** short matched-setting runs measured about 30-34 scene/solver updates per second in the consolidated stage versus 40-45 in the original, and both simulations lagged wall time. Extra wall-time stalls were observed; their cause is unresolved. These measurements do not establish realtime, photorealistic or anatomical acceptance. See [validation and limits](docs/VALIDATION.md).
+The selected runtime passed offline verification and all ten retained hardware browser regressions on an NVIDIA RTX 4060 Laptop GPU. Actual original/staged control and settled scene pixels matched. **Performance acceptance remains incomplete:** earlier short runs showed an approximately 25% staged timing gap. A four-run matched-origin/cache follow-up did not reproduce that gap (baseline mean 35.29 scene updates/s; staged 36.58/s), but settled states differed slightly and long asynchronous GPU readback waits remained. Every run lagged wall time; the initiating stall cause is unresolved. These measurements do not establish realtime, photorealistic or anatomical acceptance. See [validation and limits](docs/VALIDATION.md).
 
 ## Construction and promotion
 

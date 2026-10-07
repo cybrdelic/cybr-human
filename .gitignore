@@ -24,3 +24,8 @@ output/runtime-candidate.json
 **/*credential*
 *.pem
 *.key
+
+# Public hosting build output and temporary Sites preparation.
+dist/
+.sites-runtime/
+.sites-checkout*/
