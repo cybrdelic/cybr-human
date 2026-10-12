@@ -1,0 +1,18 @@
+name: Experimental qualified search
+on:
+  push:
+    paths: ["experiments/human-qualified-search-v3/**", ".github/workflows/qualified-search.yml"]
+  pull_request:
+    paths: ["experiments/human-qualified-search-v3/**", ".github/workflows/qualified-search.yml"]
+permissions:
+  contents: read
+jobs:
+  admission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node experiments/human-qualified-search-v3/tests/test_qualified_secant_admission_v3.mjs
