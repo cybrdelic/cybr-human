@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "tested_external_python_imports": [
+    "numpy",
+    "scipy"
+  ],
+  "observed_package_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "blender": "4.3.2 (tested appearance runtime)",
+  "scope": "Observed tested environment, not a claim of minimum compatible versions"
+}

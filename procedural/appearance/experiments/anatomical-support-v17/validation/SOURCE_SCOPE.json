@@ -1,0 +1,10 @@
+{
+  "candidate_status": "Optional original procedural geometry milestone; not selected as default",
+  "construction": "Curved two-dimensional subdivision control cage with independent XYZ anatomical handles, bounded bending-energy fit, and shared lateral jaw support constraints",
+  "source_policy": "Original procedural v53-derived geometry only; no scan, stock head, external head mesh, real-face texture or image projection",
+  "guide": "AI-generated fictional full-face guide used for qualitative proportions and shape judgment",
+  "retained_upper_face": "Exact to the inspected v7 orbital, nasal and finite-lip candidate above Y=-66",
+  "preferred_baseline": "Original preferred v53 remains unchanged and independently selectable",
+  "mechanics": "Not silently substituted for mechanical rest; requires an explicit separately validated binding",
+  "visual_limits": "Overall head remains stylized. Topology and geometric validity do not imply realism acceptance."
+}

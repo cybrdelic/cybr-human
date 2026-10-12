@@ -1,0 +1,11 @@
+{
+  "profile": "anatomical-support-v17",
+  "head_sha256": "5fb99ed9a5e113cd77188339f851c1db40ba952aacf5afbecf5484cd583a4a9c",
+  "semantics_sha256": "b099caa51e62bfc88878f2d7e1c6dcae34e5931b29c279efbaa8f1242f22ed74",
+  "preferred_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "geometry_scope": "Optional original procedural anatomical support candidate; actual visual status is in VALIDATION.json. Not a mechanical rest replacement.",
+  "mechanical_rest_default": false,
+  "selected": false,
+  "generation": "Exact preferred -> published optional finite orbital/margin construction -> original coherent nasal volume -> shared anatomical support and finite section construction",
+  "assets": "No dense generated heads, real-face textures, scans, stock heads or rejected-iteration history are shipped"
+}

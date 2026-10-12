@@ -1,0 +1,18 @@
+name: Opt-in anatomical support contract
+on:
+  push:
+    paths: ['procedural/appearance/**', '.github/workflows/anatomical-support-v17.yml']
+  pull_request:
+    paths: ['procedural/appearance/**', '.github/workflows/anatomical-support-v17.yml']
+permissions:
+  contents: read
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 procedural/appearance/experiments/anatomical-support-v17/tests/test_control_contract.py --appearance-root procedural/appearance

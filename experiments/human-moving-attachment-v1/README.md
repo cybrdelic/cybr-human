@@ -54,4 +54,4 @@ Larger authored-domain neutral admissions and support-sensitivity studies are re
 
 ## Licensing
 
-The existing recovered FEM and contact dependencies remain under their repository licensing. Preserve `procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/LICENSING.md` and `reference-source/LICENSES/GPL-2.0.txt` when redistributing the corresponding source. This patch does not replace those notices.
+The existing recovered FEM and contact dependencies remain under their repository licensing. Preserve `procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/reference-source/LICENSING.md` and `procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/reference-source/LICENSES/GPL-2.0.txt` when redistributing the corresponding source. This patch does not replace those notices.
