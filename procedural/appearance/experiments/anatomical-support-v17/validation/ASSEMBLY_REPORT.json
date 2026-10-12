@@ -1,0 +1,197 @@
+{
+  "head_sha256": "5fb99ed9a5e113cd77188339f851c1db40ba952aacf5afbecf5484cd583a4a9c",
+  "base_head_sha256": "c47053b8b521a6d85f62f9c38a1bbe1b2243daa228d93d59911fb9ba544e2d34",
+  "vertices": 742924,
+  "triangles": 1485840,
+  "same_topology": false,
+  "same_vertex_count": true,
+  "globes_bitwise_exact": true,
+  "retained_baseline": "Exact preferred v53 remains available and unchanged",
+  "selected": false,
+  "orbital_sections": {
+    "right": {
+      "original_central_upper_half_height": 4.65,
+      "new_central_upper_half_height": 5.8,
+      "original_central_lower_half_height": 4.35,
+      "new_central_lower_half_height": 4.35,
+      "wetline_cornea_support": "Smooth extra radial support up to 0.25 authored units, fading into posterior socket",
+      "nasal_canthal_anterior_lift": 2.6,
+      "hidden_return": "Continuous transition from actual wetline radial distance to the original closed socket radius",
+      "outer_attachment_exact": false,
+      "same_topology": false,
+      "attachment": "Whole finite patch regenerated on the new coarse host boundary; tangents use retained exterior host area-weighted normals, excluding the provisional old patch"
+    },
+    "left": {
+      "original_central_upper_half_height": 4.65,
+      "new_central_upper_half_height": 5.8,
+      "original_central_lower_half_height": 4.35,
+      "new_central_lower_half_height": 4.35,
+      "wetline_cornea_support": "Smooth extra radial support up to 0.25 authored units, fading into posterior socket",
+      "nasal_canthal_anterior_lift": 2.6,
+      "hidden_return": "Continuous transition from actual wetline radial distance to the original closed socket radius",
+      "outer_attachment_exact": false,
+      "same_topology": false,
+      "attachment": "Whole finite patch regenerated on the new coarse host boundary; tangents use retained exterior host area-weighted normals, excluding the provisional old patch"
+    }
+  },
+  "changed_vertices": 500271,
+  "modified_skin_faces": 1003617,
+  "coarse_midface": {
+    "representation": "Editable 12 by 9 cubic cross-section surface with common finite-feature support carrier and residual-preserving oral/nasal attachments",
+    "control_file": "$WORKSPACE/human-anatomy-revision-20261012/integration-v17-replay/surface/MIDFACE_CONTROLS.json",
+    "interior_full_replacement_vertices": 52038,
+    "modified_vertices": 246091,
+    "maximum_abs_depth_change": 27.10674098545782,
+    "minimum_parameterized_surface_area_factor": 1.0000392400179101,
+    "limitations": [
+      "This is the exterior front support chart only, not a full volumetric mechanics rest map",
+      "Existing host triangles carry the tessellation; boundary blending still requires explicit crossing and appearance checks",
+      "The guide is artistic and generated multiview is not metrically guaranteed"
+    ]
+  },
+  "oral_support": {
+    "construction": "Shared C2-volume oral support translation and smoothly varying upper/lower finite-section height controls",
+    "inferior_translation": 3.5,
+    "upper_height_scale": 0.7,
+    "lower_height_scale": 0.9,
+    "mouth_width_unchanged": true,
+    "sampled_minimum_y_jacobian": 0.6800507306056183,
+    "sampled_maximum_y_jacobian": 2.2036166364641776,
+    "maximum_motion": 5.8374148443054015,
+    "finite_oral_and_host_share_map": true,
+    "nasal_base_protected_above_y": -35.0,
+    "full_oral_support_below_y": -45.0
+  },
+  "medial_orbital_support": {
+    "representation": "Symmetric editable 6 by 7 shape-preserving medial nasal-root/orbital control surface, terminated below the existing forehead and with finite orbital reconstruction on its actual boundary",
+    "x_controls": [
+      0.0,
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      20.0,
+      26.0
+    ],
+    "y_controls": [
+      -12.0,
+      0.0,
+      12.0,
+      24.0,
+      36.0,
+      52.0
+    ],
+    "anterior_z_controls": [
+      [
+        131.5,
+        130.5,
+        127.0,
+        121.0,
+        117.0,
+        114.0,
+        110.0
+      ],
+      [
+        124.5,
+        123.5,
+        121.0,
+        117.0,
+        113.8,
+        111.7,
+        109.5
+      ],
+      [
+        117.4,
+        116.8,
+        114.8,
+        111.0,
+        106.8,
+        104.2,
+        105.5
+      ],
+      [
+        117.0,
+        116.8,
+        116.1,
+        115.0,
+        113.2,
+        111.3,
+        108.9
+      ],
+      [
+        116.6,
+        116.2,
+        115.7,
+        114.9,
+        114.1,
+        112.9,
+        111.4
+      ],
+      [
+        112.9,
+        112.8,
+        112.6,
+        112.4,
+        111.9,
+        111.2,
+        109.8
+      ]
+    ],
+    "modified_vertices": 88188,
+    "maximum_abs_depth_change": 8.427342673553653,
+    "source_eye_height_bridge_to_medial_canthus_depth_drop": 21.0,
+    "design": "Reduce the deep medial valley through both bridge recession and anterior canthal support; outer globes remain exact",
+    "limits": [
+      "Artist-authored relative depths, not anatomical measurement",
+      "Full changed surface, optical cap, finite return and visual tests required"
+    ]
+  },
+  "mandibular_support": {
+    "representation": "Absolute two-dimensional triangular Loop-subdivision lower-face surface, with independent anatomical XYZ handles and a broad curved pinned perimeter",
+    "fit_regularization": {
+      "bending_weight": 20,
+      "source_depth_bounds": [
+        -8,
+        12
+      ],
+      "support_refinement_bounds": [
+        -8,
+        16
+      ],
+      "minimum_lateral_support_allowance": -1.25,
+      "support_constraints": 32,
+      "converged": true
+    },
+    "coarse_vertices": 43,
+    "coarse_triangles": 68,
+    "subdivision_levels": 5,
+    "limit_approximation_triangles": 69632,
+    "positive_neck_support": "No authored neck-carve handle; positive soft submental and throat bearing controls",
+    "maximum_motion": 10.237827647385753,
+    "modified_vertices": 7225,
+    "finite_lips_and_upper_face_exact_above_y": -66.0,
+    "sampled_xyz_jacobian": {
+      "points": 19375,
+      "minimum_determinant": 0.7116143425489231,
+      "minimum_singular_value": 0.21497711202937805
+    },
+    "limits": [
+      "Original procedural source only; generated target is qualitative",
+      "Finite subdivision approximation and sampled Jacobians do not prove global injectivity",
+      "The dense attachment topology samples the new absolute limit surface; no mechanical rest replacement"
+    ]
+  },
+  "maximum_motion": 11.157829050075039,
+  "minimum_triangle_area": 6.513097400232372e-11,
+  "broad_map_sampled_jacobian": {
+    "points": 40145,
+    "minimum_determinant": 0.5766303431336264,
+    "minimum_singular_value": 0.5681248351928689,
+    "scope": "Cranial/temporal volumetric map only. Midface is a separately regular parameterized support surface; no global injectivity claim"
+  },
+  "limitations": [
+    "New whole-form candidate; retained host is intentionally no longer bitwise exact",
+    "Geometry, optics and groom need fresh exact fit and intersection checks",
+    "Qualitative fictional reference; no scanned or imported head and no image texture"
+  ]
+}

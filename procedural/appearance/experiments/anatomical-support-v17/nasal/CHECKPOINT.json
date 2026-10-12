@@ -1,0 +1,14 @@
+{
+  "status": "Unselected original coherent volume; selection requires visual review",
+  "baseline_head_sha256": "aebd6fbc8d3067e2dccfd6cdedcc126b4934e151aed17dac33125542f7e8d274",
+  "baseline_library_dependency": "libfile_4ef25db835d0819181fe5557b3aff053 v0",
+  "preferred_original_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "variants": {
+    "22": {
+      "head_sha256": "c47053b8b521a6d85f62f9c38a1bbe1b2243daa228d93d59911fb9ba544e2d34",
+      "nasal_patch_sha256": "f2254dbbe86c84606eaab03d9d5d5b5735f8280ea5cbaa30f1d0dc5025fc86e7"
+    }
+  },
+  "selection": "Exact preferred original v53 is unchanged and remains selected",
+  "inputs": "Only original procedural source and numerical controls. No scans, stock/preauthored heads or real-face textures."
+}

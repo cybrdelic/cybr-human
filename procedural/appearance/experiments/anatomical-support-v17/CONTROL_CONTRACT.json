@@ -1,0 +1,681 @@
+{
+  "source_npz_headers": {
+    "nasal/assembly_contract.npz": {
+      "boundary_base_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          1220
+        ],
+        "fortran_order": false
+      },
+      "removed_base_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          32298
+        ],
+        "fortran_order": false
+      }
+    },
+    "nasal/geometry-source/dependencies/nasal_cut.npz": {
+      "boundary_head_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          1220
+        ],
+        "fortran_order": false
+      },
+      "boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          1220,
+          3
+        ],
+        "fortran_order": false
+      },
+      "removed_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          32298
+        ],
+        "fortran_order": false
+      }
+    },
+    "nasal/project/output/coordinated-cervical-v31/controls/cheek_cage.npz": {
+      "coefficients.npy": {
+        "dtype": "<f8",
+        "shape": [
+          15225,
+          3
+        ],
+        "fortran_order": false
+      }
+    },
+    "nasal/project/output/coordinated-cervical-v31/controls/midface_cage.npz": {
+      "coefficients.npy": {
+        "dtype": "<f8",
+        "shape": [
+          16675,
+          3
+        ],
+        "fortran_order": false
+      }
+    },
+    "nasal/project/output/coordinated-cervical-v31/controls/oral_cage.npz": {
+      "coefficients.npy": {
+        "dtype": "<f8",
+        "shape": [
+          11875,
+          3
+        ],
+        "fortran_order": false
+      }
+    },
+    "nasal/project/output/coordinated-cervical-v31/controls/support_cage.npz": {
+      "coefficients.npy": {
+        "dtype": "<f8",
+        "shape": [
+          6480,
+          3
+        ],
+        "fortran_order": false
+      }
+    },
+    "nasal/project/output/nasal-fresh-basal-control-net-study/tangent-and-finite-inlets-v2/attachment_control_fit.npz": {
+      "coefficients.npy": {
+        "dtype": "<f8",
+        "shape": [
+          225
+        ],
+        "fortran_order": false
+      },
+      "free_indices.npy": {
+        "dtype": "<i8",
+        "shape": [
+          225,
+          2
+        ],
+        "fortran_order": false
+      }
+    },
+    "nasal/project/output/nasal-v8-shared-insertion-study/exact_v8_cut_contract.npz": {
+      "boundary_global_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          1220
+        ],
+        "fortran_order": false
+      },
+      "boundary_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          1220,
+          3
+        ],
+        "fortran_order": false
+      },
+      "boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          1220,
+          3
+        ],
+        "fortran_order": false
+      }
+    },
+    "surface/anatomy_contract.npz": {
+      "left_local_to_v22_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          24652
+        ],
+        "fortran_order": false
+      },
+      "left_v22_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          48459
+        ],
+        "fortran_order": false
+      },
+      "right_local_to_v22_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          24642
+        ],
+        "fortran_order": false
+      },
+      "right_v22_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          48449
+        ],
+        "fortran_order": false
+      }
+    },
+    "surface/dependencies/margin-v3/interfaces/left_cut.npz": {
+      "added_cut_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          843,
+          3
+        ],
+        "fortran_order": false
+      },
+      "boundary_combined_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          843
+        ],
+        "fortran_order": false
+      },
+      "boundary_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          843,
+          3
+        ],
+        "fortran_order": false
+      },
+      "boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          843,
+          3
+        ],
+        "fortran_order": false
+      },
+      "removed_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          52786
+        ],
+        "fortran_order": false
+      },
+      "source_edge_new_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          843
+        ],
+        "fortran_order": false
+      },
+      "source_edge_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          843,
+          2
+        ],
+        "fortran_order": false
+      },
+      "split_retained_faces.npy": {
+        "dtype": "<i8",
+        "shape": [
+          1283,
+          3
+        ],
+        "fortran_order": false
+      },
+      "split_source_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          1283
+        ],
+        "fortran_order": false
+      }
+    },
+    "surface/dependencies/margin-v3/interfaces/right_cut.npz": {
+      "added_cut_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          833,
+          3
+        ],
+        "fortran_order": false
+      },
+      "boundary_combined_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          833
+        ],
+        "fortran_order": false
+      },
+      "boundary_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          833,
+          3
+        ],
+        "fortran_order": false
+      },
+      "boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          833,
+          3
+        ],
+        "fortran_order": false
+      },
+      "removed_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          52809
+        ],
+        "fortran_order": false
+      },
+      "source_edge_new_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          833
+        ],
+        "fortran_order": false
+      },
+      "source_edge_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          833,
+          2
+        ],
+        "fortran_order": false
+      },
+      "split_retained_faces.npy": {
+        "dtype": "<i8",
+        "shape": [
+          1266,
+          3
+        ],
+        "fortran_order": false
+      },
+      "split_source_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          1266
+        ],
+        "fortran_order": false
+      }
+    },
+    "surface/dependencies/v22/anatomical_semantics/authored_lip_lid_semantics.npz": {
+      "inner_labial_return_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          13,
+          384,
+          3
+        ],
+        "fortran_order": false
+      },
+      "inner_labial_return_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          13,
+          384
+        ],
+        "fortran_order": false
+      },
+      "left_external_margin_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_external_margin_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_external_margin_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "left_external_margin_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "left_host_boundary_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          843,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_host_boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          843,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_host_boundary_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          843
+        ],
+        "fortran_order": false
+      },
+      "left_inner_wetline_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_inner_wetline_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_inner_wetline_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "left_inner_wetline_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "left_lash_support_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_lash_support_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_lash_support_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "left_lash_support_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "left_plate_inner_boundary_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_plate_inner_boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "left_plate_inner_boundary_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "left_plate_inner_boundary_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "oral_aperture_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          384,
+          3
+        ],
+        "fortran_order": false
+      },
+      "oral_aperture_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          384
+        ],
+        "fortran_order": false
+      },
+      "right_external_margin_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_external_margin_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_external_margin_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "right_external_margin_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "right_host_boundary_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          833,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_host_boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          833,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_host_boundary_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          833
+        ],
+        "fortran_order": false
+      },
+      "right_inner_wetline_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_inner_wetline_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_inner_wetline_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "right_inner_wetline_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "right_lash_support_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_lash_support_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_lash_support_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "right_lash_support_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "right_plate_inner_boundary_normals.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_plate_inner_boundary_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          256,
+          3
+        ],
+        "fortran_order": false
+      },
+      "right_plate_inner_boundary_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "right_plate_inner_boundary_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          256
+        ],
+        "fortran_order": false
+      },
+      "vermilion_face_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          23040
+        ],
+        "fortran_order": false
+      },
+      "vermilion_outer_border_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          384
+        ],
+        "fortran_order": false
+      },
+      "vermilion_points.npy": {
+        "dtype": "<f8",
+        "shape": [
+          31,
+          384,
+          3
+        ],
+        "fortran_order": false
+      },
+      "vermilion_t.npy": {
+        "dtype": "<f8",
+        "shape": [
+          31
+        ],
+        "fortran_order": false
+      },
+      "vermilion_upper_half.npy": {
+        "dtype": "|b1",
+        "shape": [
+          384
+        ],
+        "fortran_order": false
+      },
+      "vermilion_vertex_ids.npy": {
+        "dtype": "<i8",
+        "shape": [
+          31,
+          384
+        ],
+        "fortran_order": false
+      }
+    }
+  },
+  "required_functions": {
+    "surface/source/mandibular_support.py": {
+      "subdivide": 2,
+      "rebuild_mandibular_support": 2
+    },
+    "surface/source/orbital_surface.py": {
+      "build": 2
+    },
+    "surface/source/oral_support.py": {
+      "reshape_oral_support": 1
+    },
+    "surface/source/medial_orbital_support.py": {
+      "rebuild_medial_support": 1
+    }
+  },
+  "expected_output": {
+    "vertices": 742924,
+    "triangles": 1485840,
+    "head_sha256": "5fb99ed9a5e113cd77188339f851c1db40ba952aacf5afbecf5484cd583a4a9c"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "head_front": {
+    "size": true,
+    "samples": true,
+    "denoised": true,
+    "color_management": true,
+    "lighting": true,
+    "sss": true,
+    "optical_transport": true,
+    "camera_control": true,
+    "camera_authored_scale": true,
+    "uniform_numerical_conditioning": true
+  },
+  "head": {
+    "size": true,
+    "samples": true,
+    "denoised": true,
+    "color_management": true,
+    "lighting": true,
+    "sss": true,
+    "optical_transport": true,
+    "camera_control": true,
+    "camera_authored_scale": true,
+    "uniform_numerical_conditioning": true
+  }
+}

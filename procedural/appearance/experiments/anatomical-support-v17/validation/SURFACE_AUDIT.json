@@ -1,0 +1,26 @@
+{
+  "head_sha256": "5fb99ed9a5e113cd77188339f851c1db40ba952aacf5afbecf5484cd583a4a9c",
+  "minimum_all_head_triangle_area": 6.513097400232372e-11,
+  "modified_skin_faces_tested": 1003617,
+  "relevant_full_skin_faces": 1278375,
+  "nonincident_pair_tests": 675903,
+  "nonincident_intersections": 0,
+  "examples": [],
+  "ocular_sphere": {
+    "right": {
+      "tested_skin_triangles": 36363,
+      "minimum_continuous_triangle_sphere_clearance": 0.2642024243352523,
+      "sphere_crossings": 0
+    },
+    "left": {
+      "tested_skin_triangles": 36363,
+      "minimum_continuous_triangle_sphere_clearance": 0.2641939482453566,
+      "sphere_crossings": 0
+    }
+  },
+  "passed": true,
+  "limits": [
+    "Modified-versus-entire-relevant-skin triangle SAT. Incident pairs sharing any vertex are excluded.",
+    "No claim for unchanged-versus-unchanged or exact full optical cap/contact/groom validation."
+  ]
+}

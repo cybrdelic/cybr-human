@@ -1,0 +1,37 @@
+{
+  "visual": {
+    "selected": false,
+    "status": "Reproducible opt-in structural experiment; not judged an overall improvement over preferred v53",
+    "improvements": [
+      "Rounded frontal chin instead of the prior straight pad",
+      "Shared mandibular attachment support softens the localized notch",
+      "No earlier three-lobe or horizontal-shelf failure"
+    ],
+    "remaining_limits": [
+      "Upper lid openness gives a startled expression",
+      "Nasal tip and alar shadow read bulbous and pinched",
+      "Broad diagonal side-cheek/jaw hollow remains conspicuous",
+      "Not judged an overall improvement over preferred v53; no default or mechanical-rest promotion"
+    ],
+    "actual_views": [
+      "wholehead/head_front_raw.png",
+      "wholehead/head_raw.png",
+      "wholehead/head_profile_raw.png"
+    ],
+    "appearance_rendered": true,
+    "overall_preferred_profile": "v53",
+    "reusable_gains": [
+      "Rounded chin",
+      "Coherent closed nasal construction"
+    ]
+  },
+  "fresh_exact_full_chain_replay": true,
+  "head_sha256": "5fb99ed9a5e113cd77188339f851c1db40ba952aacf5afbecf5484cd583a4a9c",
+  "semantics_sha256": "b099caa51e62bfc88878f2d7e1c6dcae34e5931b29c279efbaa8f1242f22ed74",
+  "source_policy": "Original procedural construction; no external head, scan or real-face texture",
+  "actual_appearance": "Matched frontal and three-quarter, 560 px / 256 samples, common published runtime, raw and not denoised",
+  "contact_fit": "Exact current skin/eye/groom checks passed; see EXACT_FIT_RECEIPT.json for scoped guarantees",
+  "default_preferred_v53_changed": false,
+  "mechanical_rest_or_binding_replaced": false,
+  "composite_pixels_verified_exact": true
+}

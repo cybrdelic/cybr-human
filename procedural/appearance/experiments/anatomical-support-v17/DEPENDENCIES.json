@@ -1,0 +1,199 @@
+{
+  "repository": "cybrdelic/cybr-human",
+  "verified_main_commit": "9218e8696a471018b5c711bd9f167d4af27fd2cb",
+  "verified_remote_tree_truncated": false,
+  "appearance_merge_commit": "31fde2fc2afeb6fd3e1209d7ac873a4dbf3f34f0",
+  "verification": "Local tested bytes match the exact Git blob IDs in the remote main tree; no repository writes performed",
+  "appearance_root": "procedural/appearance",
+  "files": [
+    {
+      "appearance_relative_path": "geometry/margin-v3/CHECKPOINT.json",
+      "repository_path": "procedural/appearance/geometry/margin-v3/CHECKPOINT.json",
+      "sha256": "503c169ef1a80a109d24bfac41172f70d32ee5bb98f1566629fee0bc9ecbfa67",
+      "git_blob_sha": "4ac445137b53d26bba3befbe790aa33f13a3a78b",
+      "bytes": 573
+    },
+    {
+      "appearance_relative_path": "geometry/margin-v3/anatomical_semantics/authored_lip_lid_semantics.npz",
+      "repository_path": "procedural/appearance/geometry/margin-v3/anatomical_semantics/authored_lip_lid_semantics.npz",
+      "sha256": "0bb3fe9eb70b0013f36aa26685097c550ae79d71c0b6d8cdeb6a5b6ae9974586",
+      "git_blob_sha": "2b658eb25d4bc8b4341ed69957c6dd8504ffdb39",
+      "bytes": 640269
+    },
+    {
+      "appearance_relative_path": "geometry/margin-v3/exact_coordinate_delta.npz",
+      "repository_path": "procedural/appearance/geometry/margin-v3/exact_coordinate_delta.npz",
+      "sha256": "8b89cb8758f69cb6f6f11e02fde957777335063318126d382f467db4e997fb17",
+      "git_blob_sha": "ea5d74bfe49fcb45d1c181f380611b1b420cee68",
+      "bytes": 247757
+    },
+    {
+      "appearance_relative_path": "geometry/margin-v3/restore.py",
+      "repository_path": "procedural/appearance/geometry/margin-v3/restore.py",
+      "sha256": "9f02738ef50e2167febfe27d0cb2fc75dc47e84d90951e240888b1b87cbb3b38",
+      "git_blob_sha": "449c592cff7271027f0d70747ccb9c72d98a9a25",
+      "bytes": 746
+    },
+    {
+      "appearance_relative_path": "geometry/orbital-v2/CHECKPOINT.json",
+      "repository_path": "procedural/appearance/geometry/orbital-v2/CHECKPOINT.json",
+      "sha256": "0ff130558165240370bfa0471a937df2159a69a944c52c0fb8db473ad309fdf6",
+      "git_blob_sha": "715ce372ea357bbfe2cf2ee5c8427a5c94bcce7f",
+      "bytes": 1020
+    },
+    {
+      "appearance_relative_path": "geometry/orbital-v2/numerical_delta.npz",
+      "repository_path": "procedural/appearance/geometry/orbital-v2/numerical_delta.npz",
+      "sha256": "b3af055d494221a53b04920034b734bb65baf4a6fbaaed8d9e26fb2688fc71a1",
+      "git_blob_sha": "2a321b63481bf7af35a4d0a67c60da03b7a5caae",
+      "bytes": 1622836
+    },
+    {
+      "appearance_relative_path": "geometry/orbital-v2/restore.py",
+      "repository_path": "procedural/appearance/geometry/orbital-v2/restore.py",
+      "sha256": "d9e2eb281d83abfd58a232382e3204b4018ede34587393a74653d3b26562c83d",
+      "git_blob_sha": "074c64b0d26f039bd65507bde8b1f38ec7211cbd",
+      "bytes": 1874
+    },
+    {
+      "appearance_relative_path": "geometry/orbital-v2/retained_source_maps.npz",
+      "repository_path": "procedural/appearance/geometry/orbital-v2/retained_source_maps.npz",
+      "sha256": "07f8f329d0d164d1ebf12529f7673a3d372f6dcbc104fdc14dad70103df34d5f",
+      "git_blob_sha": "b1ac89e14e29cdda4b32ae4344ca3390f253b4a7",
+      "bytes": 4446756
+    },
+    {
+      "appearance_relative_path": "geometry/replay.py",
+      "repository_path": "procedural/appearance/geometry/replay.py",
+      "sha256": "d7f045bcc924646ccdfe41a95dde259d555c684f969270b8c59e1485dba802a0",
+      "git_blob_sha": "75e9a7967190847b7415d0c6ad01437a28898a42",
+      "bytes": 2124
+    },
+    {
+      "appearance_relative_path": "inputs/reference_eye_frame.json",
+      "repository_path": "procedural/appearance/inputs/reference_eye_frame.json",
+      "sha256": "e76ec7bbf2c4a128460322f1451ea0d9e206f8886804243c0ff62d23d063cfaa",
+      "git_blob_sha": "2bef81f7878dc2020998e00b047df2afbb5bf302",
+      "bytes": 3759
+    },
+    {
+      "appearance_relative_path": "profiles.json",
+      "repository_path": "procedural/appearance/profiles.json",
+      "sha256": "2255fd411b9607e58ae29487bd2ba53f0fe6a065911c26924f8dd154f1dd750d",
+      "git_blob_sha": "270e5c58bf798ed6a2791c76d9f92d612c4b3f08",
+      "bytes": 1204
+    },
+    {
+      "appearance_relative_path": "runtime/render.py",
+      "repository_path": "procedural/appearance/runtime/render.py",
+      "sha256": "ff425b803d0aa94e03f5a933e4529cb01447af51a9e8bbd32839164c28c4a4c6",
+      "git_blob_sha": "1a4e1d17eca362901f2e86d3d5a9f3ac3f421383",
+      "bytes": 2047
+    },
+    {
+      "appearance_relative_path": "runtime/scene/coordinated_tissue.py",
+      "repository_path": "procedural/appearance/runtime/scene/coordinated_tissue.py",
+      "sha256": "02a0fa1cf773dbaf78e3eab0b2a6305ffbfc604a677c9f45b093f21f9bd2ef6b",
+      "git_blob_sha": "143f171f712e16b3e3ffe633e0a1f998b44d6a8b",
+      "bytes": 3829
+    },
+    {
+      "appearance_relative_path": "runtime/scene/eye_similarity.py",
+      "repository_path": "procedural/appearance/runtime/scene/eye_similarity.py",
+      "sha256": "902cc361a7f7aff3354a093b7e84b7787209e2996fe2d218c247729ea9d39061",
+      "git_blob_sha": "b0a72784782e4eaa7726110486898a7ca92aa9df",
+      "bytes": 2300
+    },
+    {
+      "appearance_relative_path": "runtime/scene/fixed_frontal_camera.json",
+      "repository_path": "procedural/appearance/runtime/scene/fixed_frontal_camera.json",
+      "sha256": "22cd7d828c8efe9ef870d09243760f08253381b9b3b8a4f61255972a51866dec",
+      "git_blob_sha": "6dcdc7c6cd4ef8cabfb2bbc62a75168853e7e8f6",
+      "bytes": 381
+    },
+    {
+      "appearance_relative_path": "runtime/scene/frozen_eye_camera.json",
+      "repository_path": "procedural/appearance/runtime/scene/frozen_eye_camera.json",
+      "sha256": "ac4bd4c5f2d654e25350000bd0f97c23337bd68ea2ade7fa47a0880d28f62dad",
+      "git_blob_sha": "87739ba0476f83e46f6040b3ea319536dc95b3be",
+      "bytes": 903
+    },
+    {
+      "appearance_relative_path": "runtime/scene/iris_stroma.py",
+      "repository_path": "procedural/appearance/runtime/scene/iris_stroma.py",
+      "sha256": "93e98326145f1a9d1a7ab05ca1d50a4bf9cb2c879d56098c082035831d105054",
+      "git_blob_sha": "58850ddbc2b53af0dc67c1d5e331297d2806cbcc",
+      "bytes": 2956
+    },
+    {
+      "appearance_relative_path": "runtime/scene/physical_interfaces.py",
+      "repository_path": "procedural/appearance/runtime/scene/physical_interfaces.py",
+      "sha256": "d66b925f94ebe10cb7c270c22eaa37af44025f5aa58a5f8e4d31a3e1eb76987c",
+      "git_blob_sha": "2a06d0dac60d3e73e163715afdd47b943be22408",
+      "bytes": 4344
+    },
+    {
+      "appearance_relative_path": "runtime/scene/regional_skin_fields.py",
+      "repository_path": "procedural/appearance/runtime/scene/regional_skin_fields.py",
+      "sha256": "3527ce84225d66542e8f05d4f5eb0fa834708d9c5bcfc4034fcefdd1cb942d24",
+      "git_blob_sha": "612331a1c301a2d58acb38c9e439c9cf5ad8a130",
+      "bytes": 2414
+    },
+    {
+      "appearance_relative_path": "runtime/scene/rooted_groom.py",
+      "repository_path": "procedural/appearance/runtime/scene/rooted_groom.py",
+      "sha256": "eb1b9f27838b7634d9cef765c14c2224d76130a260090c2468fe3718b7d0a882",
+      "git_blob_sha": "c7e534b21e253db27a3fedc140e2b38597c88ca6",
+      "bytes": 12124
+    },
+    {
+      "appearance_relative_path": "runtime/scene/rooted_short_groom.py",
+      "repository_path": "procedural/appearance/runtime/scene/rooted_short_groom.py",
+      "sha256": "bb3d53593b7e7813b6d8e0f9652c1c502153f08a052df62fde08ca2883e2e34c",
+      "git_blob_sha": "768093081216864fe1729fabf1632918d811c55e",
+      "bytes": 4269
+    },
+    {
+      "appearance_relative_path": "runtime/scene/scene_mapped.py",
+      "repository_path": "procedural/appearance/runtime/scene/scene_mapped.py",
+      "sha256": "d1b26917d1aa7c2b16cb2655447cb789cbc16a23ae628ba3a743b397d923dd9d",
+      "git_blob_sha": "85a92ce441cb5d26e77448468afbe2150abef239",
+      "bytes": 31659
+    },
+    {
+      "appearance_relative_path": "runtime/scene/sclera_fields.py",
+      "repository_path": "procedural/appearance/runtime/scene/sclera_fields.py",
+      "sha256": "6875dd5ec2a0923a8ca775ba0d0071d6744bec7c492425d1cf3dda401cb0fa4b",
+      "git_blob_sha": "d171625cb4eb61f61c2e2d0df3826bc7d760e9e4",
+      "bytes": 2408
+    },
+    {
+      "appearance_relative_path": "runtime/scene/surface_response.py",
+      "repository_path": "procedural/appearance/runtime/scene/surface_response.py",
+      "sha256": "684f065c77ddda34c5ad809f99c5936665da4128839a54315f610f67a07a4839",
+      "git_blob_sha": "0f0435155998985ab229e4def0259e5e6493a7b6",
+      "bytes": 3210
+    },
+    {
+      "appearance_relative_path": "runtime/uniform_numerical_scale.py",
+      "repository_path": "procedural/appearance/runtime/uniform_numerical_scale.py",
+      "sha256": "40fc5d41fbeffe797a130451d0b0fa0928eac7df6ab4122d435c5223a15b2137",
+      "git_blob_sha": "1ca7fe007f3150b1c73b777faf99ba898575b8c4",
+      "bytes": 2965
+    },
+    {
+      "appearance_relative_path": "tools/memory_guard.py",
+      "repository_path": "procedural/appearance/tools/memory_guard.py",
+      "sha256": "32ac96b6e646f5640b4f34e01344bddae2a36fff83a4daad6bf9b23cf6a7d36c",
+      "git_blob_sha": "d3f22da5a02c0cab03c152eb57762ea79d3db500",
+      "bytes": 4012
+    }
+  ],
+  "preferred_input": {
+    "repository_builder": "procedural/checkpoints/preferred-v53/build_preferred.py",
+    "output_relative_path": "project/output/coordinated-orbital-scale-v53/head.npz",
+    "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+    "builder_git_blob_sha": "bde84cc7e0531368934a354cab4d9696f12f0c53",
+    "scope": "Preferred input is rebuilt by the existing repository entrypoint or supplied with this exact hash; checkpoint source/array parts are already owned by main"
+  }
+}

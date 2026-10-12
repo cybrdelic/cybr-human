@@ -1,0 +1,390 @@
+{
+  "head_front": {
+    "png_sha256": "6ec8e47e64ed424e92c87a1a104c34e4c047f0df02165276f49938c6ad75cdb1",
+    "metadata_sha256": "23d30cec26fd32e9ef125d9517eb738f8296b78a08062a696c8edfd0d69e7012",
+    "render": {
+      "source": {
+        "path": "$WORKSPACE/human-anatomy-revision-20261012/proportion-lid-v17/head.npz",
+        "sha256": "5fb99ed9a5e113cd77188339f851c1db40ba952aacf5afbecf5484cd583a4a9c",
+        "vertices": 742924,
+        "triangles": 1485840,
+        "skin_vertices_unchanged": false,
+        "skin_topology_unchanged": false,
+        "transformation": "(x,-z,y)*0.001; authored units without physical calibration"
+      },
+      "blender": "4.3.2",
+      "renderer": "Cycles CPU",
+      "size": 560,
+      "samples": 256,
+      "threads": 2,
+      "denoised": false,
+      "path_traced": true,
+      "lighting": {
+        "preset": "studio",
+        "scope": "Original area-light arrangement; neutral RGB whites are not a calibrated daylight spectrum",
+        "world_color": [
+          0.20000000298023224,
+          0.22499999403953552,
+          0.25,
+          1.0
+        ],
+        "world_strength": 0.30000001192092896,
+        "lights": [
+          {
+            "name": "large warm key",
+            "location": [
+              -0.23999999463558197,
+              -0.3499999940395355,
+              0.3100000023841858
+            ],
+            "power_W": 17.0,
+            "size_m": 0.25999999046325684,
+            "color": [
+              1.0,
+              0.9200000166893005,
+              0.8399999737739563
+            ]
+          },
+          {
+            "name": "broad cool fill",
+            "location": [
+              0.30000001192092896,
+              -0.1599999964237213,
+              0.07999999821186066
+            ],
+            "power_W": 8.0,
+            "size_m": 0.30000001192092896,
+            "color": [
+              0.7900000214576721,
+              0.8700000047683716,
+              1.0
+            ]
+          },
+          {
+            "name": "soft shoulder rim",
+            "location": [
+              0.05000000074505806,
+              0.18000000715255737,
+              0.23000000417232513
+            ],
+            "power_W": 22.0,
+            "size_m": 0.2199999988079071,
+            "color": [
+              1.0,
+              0.9399999976158142,
+              0.8799999952316284
+            ]
+          }
+        ]
+      },
+      "camera_authored_scale": {
+        "location": [
+          0.0,
+          -0.656000018119812,
+          -0.03799999877810478
+        ],
+        "rotation": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 0.32499998807907104,
+        "target": [
+          0.0,
+          -0.036,
+          -0.038
+        ]
+      },
+      "uniform_numerical_conditioning": {
+        "factor": 1000.0,
+        "reason": "Cycles 4.3.2 MNEE fixed segment and progress thresholds; 1000x passes the tested actual-eye causal diagnostic",
+        "transform_contract": {
+          "mesh_curve_positions_and_radii": "factor",
+          "camera_ortho_clip_location": "factor; rotation unchanged",
+          "light_location_and_area_dimensions": "factor; transform scale kept 1",
+          "area_light_power": "factor squared",
+          "world_radiance_exposure_color_roughness_IOR": "unchanged",
+          "absolute_geometry_position_fields": "inverse factor before original field calculation",
+          "SSS_and_bump_lengths": "factor",
+          "volumetric_density_nodes": "none present"
+        },
+        "node_counts": {
+          "position_inverse": 5,
+          "linked_subsurface_scale": 1,
+          "constant_lengths": 9
+        },
+        "base_lights": {
+          "large warm key": {
+            "location": [
+              -0.23999999463558197,
+              -0.3499999940395355,
+              0.3100000023841858
+            ],
+            "power": 17.0,
+            "size": 0.25999999046325684,
+            "size_y": 0.25
+          },
+          "broad cool fill": {
+            "location": [
+              0.30000001192092896,
+              -0.1599999964237213,
+              0.07999999821186066
+            ],
+            "power": 8.0,
+            "size": 0.30000001192092896,
+            "size_y": 0.25
+          },
+          "soft shoulder rim": {
+            "location": [
+              0.05000000074505806,
+              0.18000000715255737,
+              0.23000000417232513
+            ],
+            "power": 22.0,
+            "size": 0.2199999988079071,
+            "size_y": 0.25
+          }
+        },
+        "result_lights": {
+          "large warm key": {
+            "location": [
+              -240.0,
+              -350.0,
+              310.0
+            ],
+            "power": 17000000.0,
+            "size": 260.0,
+            "transform_scale": [
+              0.9999999403953552,
+              1.0,
+              1.0
+            ]
+          },
+          "broad cool fill": {
+            "location": [
+              300.0,
+              -160.0,
+              80.0
+            ],
+            "power": 8000000.0,
+            "size": 300.0,
+            "transform_scale": [
+              1.0,
+              1.0,
+              0.9999999403953552
+            ]
+          },
+          "soft shoulder rim": {
+            "location": [
+              50.0,
+              180.0,
+              230.0
+            ],
+            "power": 22000000.0,
+            "size": 220.0,
+            "transform_scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "limitation": "Numerical conditioning, not physical size calibration or complete optical validation"
+      }
+    }
+  },
+  "head": {
+    "png_sha256": "7339074e3910e4ebecf89419a331eea203798fd28cd09efb509277b8380f49de",
+    "metadata_sha256": "3417dec8618d408cd22cb2f4c3676f54e37352a58422f11ca3a61587ce6bef49",
+    "render": {
+      "source": {
+        "path": "$WORKSPACE/human-anatomy-revision-20261012/proportion-lid-v17/head.npz",
+        "sha256": "5fb99ed9a5e113cd77188339f851c1db40ba952aacf5afbecf5484cd583a4a9c",
+        "vertices": 742924,
+        "triangles": 1485840,
+        "skin_vertices_unchanged": false,
+        "skin_topology_unchanged": false,
+        "transformation": "(x,-z,y)*0.001; authored units without physical calibration"
+      },
+      "blender": "4.3.2",
+      "renderer": "Cycles CPU",
+      "size": 560,
+      "samples": 256,
+      "threads": 2,
+      "denoised": false,
+      "path_traced": true,
+      "lighting": {
+        "preset": "studio",
+        "scope": "Original area-light arrangement; neutral RGB whites are not a calibrated daylight spectrum",
+        "world_color": [
+          0.20000000298023224,
+          0.22499999403953552,
+          0.25,
+          1.0
+        ],
+        "world_strength": 0.30000001192092896,
+        "lights": [
+          {
+            "name": "large warm key",
+            "location": [
+              -0.23999999463558197,
+              -0.3499999940395355,
+              0.3100000023841858
+            ],
+            "power_W": 17.0,
+            "size_m": 0.25999999046325684,
+            "color": [
+              1.0,
+              0.9200000166893005,
+              0.8399999737739563
+            ]
+          },
+          {
+            "name": "broad cool fill",
+            "location": [
+              0.30000001192092896,
+              -0.1599999964237213,
+              0.07999999821186066
+            ],
+            "power_W": 8.0,
+            "size_m": 0.30000001192092896,
+            "color": [
+              0.7900000214576721,
+              0.8700000047683716,
+              1.0
+            ]
+          },
+          {
+            "name": "soft shoulder rim",
+            "location": [
+              0.05000000074505806,
+              0.18000000715255737,
+              0.23000000417232513
+            ],
+            "power_W": 22.0,
+            "size_m": 0.2199999988079071,
+            "color": [
+              1.0,
+              0.9399999976158142,
+              0.8799999952316284
+            ]
+          }
+        ]
+      },
+      "camera_authored_scale": {
+        "location": [
+          0.3518800139427185,
+          -0.5437800288200378,
+          -0.02250000089406967
+        ],
+        "rotation": [
+          1.545804500579834,
+          1.4242967694144681e-08,
+          0.6112993955612183
+        ],
+        "ortho_scale": 0.32499998807907104,
+        "target": [
+          -0.004,
+          -0.036,
+          -0.038
+        ]
+      },
+      "uniform_numerical_conditioning": {
+        "factor": 1000.0,
+        "reason": "Cycles 4.3.2 MNEE fixed segment and progress thresholds; 1000x passes the tested actual-eye causal diagnostic",
+        "transform_contract": {
+          "mesh_curve_positions_and_radii": "factor",
+          "camera_ortho_clip_location": "factor; rotation unchanged",
+          "light_location_and_area_dimensions": "factor; transform scale kept 1",
+          "area_light_power": "factor squared",
+          "world_radiance_exposure_color_roughness_IOR": "unchanged",
+          "absolute_geometry_position_fields": "inverse factor before original field calculation",
+          "SSS_and_bump_lengths": "factor",
+          "volumetric_density_nodes": "none present"
+        },
+        "node_counts": {
+          "position_inverse": 5,
+          "linked_subsurface_scale": 1,
+          "constant_lengths": 9
+        },
+        "base_lights": {
+          "large warm key": {
+            "location": [
+              -0.23999999463558197,
+              -0.3499999940395355,
+              0.3100000023841858
+            ],
+            "power": 17.0,
+            "size": 0.25999999046325684,
+            "size_y": 0.25
+          },
+          "broad cool fill": {
+            "location": [
+              0.30000001192092896,
+              -0.1599999964237213,
+              0.07999999821186066
+            ],
+            "power": 8.0,
+            "size": 0.30000001192092896,
+            "size_y": 0.25
+          },
+          "soft shoulder rim": {
+            "location": [
+              0.05000000074505806,
+              0.18000000715255737,
+              0.23000000417232513
+            ],
+            "power": 22.0,
+            "size": 0.2199999988079071,
+            "size_y": 0.25
+          }
+        },
+        "result_lights": {
+          "large warm key": {
+            "location": [
+              -240.0,
+              -350.0,
+              310.0
+            ],
+            "power": 17000000.0,
+            "size": 260.0,
+            "transform_scale": [
+              0.9999999403953552,
+              1.0,
+              1.0
+            ]
+          },
+          "broad cool fill": {
+            "location": [
+              300.0,
+              -160.0,
+              80.0
+            ],
+            "power": 8000000.0,
+            "size": 300.0,
+            "transform_scale": [
+              1.0,
+              1.0,
+              0.9999999403953552
+            ]
+          },
+          "soft shoulder rim": {
+            "location": [
+              50.0,
+              180.0,
+              230.0
+            ],
+            "power": 22000000.0,
+            "size": 220.0,
+            "transform_scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "limitation": "Numerical conditioning, not physical size calibration or complete optical validation"
+      }
+    }
+  }
+}

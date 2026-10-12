@@ -1,0 +1,26 @@
+{
+  "selected": false,
+  "status": "Reproducible opt-in structural experiment; not judged an overall improvement over preferred v53",
+  "improvements": [
+    "Rounded frontal chin instead of the prior straight pad",
+    "Shared mandibular attachment support softens the localized notch",
+    "No earlier three-lobe or horizontal-shelf failure"
+  ],
+  "remaining_limits": [
+    "Upper lid openness gives a startled expression",
+    "Nasal tip and alar shadow read bulbous and pinched",
+    "Broad diagonal side-cheek/jaw hollow remains conspicuous",
+    "Not judged an overall improvement over preferred v53; no default or mechanical-rest promotion"
+  ],
+  "actual_views": [
+    "wholehead/head_front_raw.png",
+    "wholehead/head_raw.png",
+    "wholehead/head_profile_raw.png"
+  ],
+  "appearance_rendered": true,
+  "overall_preferred_profile": "v53",
+  "reusable_gains": [
+    "Rounded chin",
+    "Coherent closed nasal construction"
+  ]
+}
