@@ -1,0 +1,38 @@
+{
+  "schema": "distributed-origin-append-v1",
+  "domain_sha256": "20c6726c8cd18760502c57134adff38ce41188e66ab50c2361ff25539ff74411",
+  "arrays_sha256": "623ffa110a645fdef0fd4a1d34eacb6f3be52cb7daa31b5edd130fb98b1c701a",
+  "parent_domain_sha256": "c26600e2c0fb5ef1775c16f4fb38ea45a9ee1093dfd7ec88b55caae0956c9498",
+  "original_tissue_coordinates_cells_material_exact": true,
+  "nodes": 10196,
+  "tetrahedra": 43961,
+  "boundary": {
+    "boundary_faces": 10658,
+    "open_or_nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "nonmanifold_vertex_links": [],
+    "nonmanifold_vertex_count": 0
+  },
+  "fixed_nodes": 3129,
+  "superseded_offset_origin_pins": [
+    5910,
+    5911,
+    5943,
+    5944,
+    5975,
+    5976,
+    6155,
+    6156,
+    6186,
+    6187,
+    6218,
+    6219
+  ],
+  "old_origin_pins_retained_only_as_other_cut_constraints": [],
+  "removed_shared_interface_springs": [
+    5912,
+    5942
+  ],
+  "appended_min_volume": 8.881773954812891e-14,
+  "appended_max_Dm_condition": 2618.1549205105
+}

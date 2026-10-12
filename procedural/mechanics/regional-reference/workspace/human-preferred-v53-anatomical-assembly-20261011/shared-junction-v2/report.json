@@ -1,0 +1,54 @@
+{
+  "input_parts_sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+  "geometry_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+  "region_names": [
+    "junction",
+    "zygomatic_reference",
+    "superficial_oral",
+    "deep_oral",
+    "buccinator_deep",
+    "mandibular_depressor"
+  ],
+  "history": [
+    {
+      "added_region": "zygomatic_reference",
+      "vertices": 1495,
+      "polygons": 2868
+    },
+    {
+      "added_region": "superficial_oral",
+      "vertices": 3649,
+      "polygons": 6976
+    },
+    {
+      "added_region": "deep_oral",
+      "vertices": 5923,
+      "polygons": 11443
+    },
+    {
+      "added_region": "buccinator_deep",
+      "vertices": 8182,
+      "polygons": 15852
+    },
+    {
+      "added_region": "mandibular_depressor",
+      "vertices": 10090,
+      "polygons": 19243
+    }
+  ],
+  "vertices": 10026,
+  "triangles": 20048,
+  "components": 1,
+  "nonattachment_vertices_merged_below_001": 64,
+  "nonmanifold_edges": 0,
+  "inconsistent_winding_edges": 0,
+  "restored_source_vertices": 9496,
+  "new_boolean_intersection_vertices": 530,
+  "zygomatic_roots_exact": 176,
+  "mandibular_roots_exact": 154,
+  "limits": [
+    "Surface Boolean union only; no tetrahedral domain or coupled solve.",
+    "Region IDs retain exterior input-surface provenance, not complete internal fibre/material ownership.",
+    "The terminal oral and posterior buccinator cuts remain finite unbound boundaries."
+  ]
+}

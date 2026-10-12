@@ -1,0 +1,59 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 6073.328125, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "input_parts_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+  "geometry_sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+  "region_names": [
+    "junction",
+    "zygomatic_reference",
+    "superficial_oral",
+    "deep_oral",
+    "buccinator_deep",
+    "mandibular_depressor"
+  ],
+  "history": [
+    {
+      "added_region": "zygomatic_reference",
+      "vertices": 2768,
+      "polygons": 5267
+    },
+    {
+      "added_region": "superficial_oral",
+      "vertices": 4917,
+      "polygons": 9341
+    },
+    {
+      "added_region": "deep_oral",
+      "vertices": 7198,
+      "polygons": 13796
+    },
+    {
+      "added_region": "buccinator_deep",
+      "vertices": 9457,
+      "polygons": 18206
+    },
+    {
+      "added_region": "mandibular_depressor",
+      "vertices": 11238,
+      "polygons": 21258
+    }
+  ],
+  "vertices": 11238,
+  "triangles": 22472,
+  "components": 1,
+  "nonmanifold_edges": 0,
+  "inconsistent_winding_edges": 0,
+  "restored_source_vertices": 10463,
+  "new_boolean_intersection_vertices": 775,
+  "zygomatic_roots_exact": 176,
+  "mandibular_roots_exact": 154,
+  "limits": [
+    "Surface Boolean union only; no tetrahedral domain or coupled solve.",
+    "Region IDs retain exterior input-surface provenance, not complete internal fibre/material ownership.",
+    "The terminal oral and posterior buccinator cuts remain finite unbound boundaries."
+  ]
+}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 285.87, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 6073.328125, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 2.28, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

@@ -1,0 +1,49 @@
+{
+  "source_surface_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+  "source_tets_sha256": "9454932854a7e2691bb5f790c36318b08e436208bcc52be213f037f3bbd15ccc",
+  "geometry_sha256": "c5e9978825b4073a17a29a91c867fd6fe13260aa64b96128c3236b9f026e31d9",
+  "attachment_faces_sha256": "9544d9c0ea2dd535764dd0b2c2581cefba8cab88e9c40f02e1bce0ec51bc2d61",
+  "nodes": 12023,
+  "tetrahedra": 41027,
+  "boundary_faces": 20048,
+  "minimum_determinant": 7.623162994716958e-07,
+  "positive_cells": true,
+  "internal_oriented_faces_cancel": true,
+  "connected_components": 1,
+  "volume_complex_euler": 1,
+  "surface_coordinates_byte_exact": true,
+  "boundary_roundtrip_restore_maximum": 5.739584601870544e-14,
+  "two_bone_footprints_byte_exact": true,
+  "exact_footprint_face_counts": {
+    "mandibular_origin_face_ids": 176,
+    "zygomatic_origin_face_ids": 301
+  },
+  "quality": {
+    "quality_quantiles": [
+      0.0017539261519359303,
+      0.007043297542132525,
+      0.04073866443212663,
+      0.34187883198926683,
+      0.688845242364204,
+      0.9982764533382245
+    ],
+    "condition_quantiles": [
+      1.1366056145981902,
+      4.442204017365874,
+      10.762367140244075,
+      141.86923832503112,
+      1792.7533713330465,
+      21964.840609480783
+    ],
+    "quality_below_001": 0
+  },
+  "admitted_reference_geometry": true,
+  "solve_ready": false,
+  "limits": [
+    "Thin-sheet quality tail remains: minimum mean-ratio0.00175, maximum local matrix condition about21965. New finite equilibrium/contact/reaction gates are required, no certified model claim.",
+    "Static external surface/contact checks are inherited exactly from pinned shared-junction-v2.",
+    "No new activation/material assignment is implied by boundary display IDs.",
+    "Regional unbound cut ends still require declared support/continuation conditions.",
+    "Exact preferred head is not deformed or mechanically coupled by this reference geometry alone."
+  ]
+}

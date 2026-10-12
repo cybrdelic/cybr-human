@@ -1,0 +1,47 @@
+{
+  "scope": "Local one-way skin rendering transfer from actual new right-cheek FEM. No skin force/contact feedback.",
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "case_sha256": "936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf",
+  "binding_sha256": "e1a3a6aa631a67fd311eb1e6b42c2d93d762e7110b65ed33f56c7f079aa14392",
+  "preferred_skin_vertices": 544473,
+  "covered_vertices": 10070,
+  "uncovered_vertices": 534403,
+  "covered_XYZ_bounds": [
+    [
+      20.052106813592932,
+      -57.30527485013469,
+      79.99691275371792
+    ],
+    [
+      59.67508719970954,
+      1.9732368613797622,
+      112.2620522229283
+    ]
+  ],
+  "distance_quantiles": [
+    0.4835481643676758,
+    4.312173128128052,
+    7.6092774868011475,
+    7.998387813568115
+  ],
+  "signed_normal_offset_quantiles": [
+    0.0021350390798948737,
+    2.2836268309088252,
+    3.5597122395533756,
+    4.592545697944185
+  ],
+  "gain_quantiles": [
+    4.4182766418546147e-16,
+    0.8291010256278191,
+    1.0,
+    1.0
+  ],
+  "full_gain_vertices": 2965,
+  "mapping": "Exact closest triangle and nonnegative barycentric FEM supports; shared area-weighted C2 spatial skin-normal field (radius3.5); carrier orientation retained only as a diagnostic, avoiding radial angular gain stripes; neutral residual transported by volume-weighted nodal deformation gradients. C2 gain distance3..8, orientation measured but not used as a gain, positive exterior-normal offset0..0.75, X20..24 and Y2..minus2; finite oral geometry excluded with1..5 distance fade.",
+  "neutral_identity": "All selected skin points remain exact by construction; explicit zero-displacement path at exact neutral.",
+  "limits": [
+    "This is a regional cheek response, not smile, jaw, blink or neck animation.",
+    "All finite lips, inner oral return, globes, other cheek and uncovered skin remain fixed.",
+    "No anatomical or clinical calibration."
+  ]
+}

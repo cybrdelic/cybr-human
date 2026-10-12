@@ -1,0 +1,68 @@
+{
+  "source": "output/coordinated-lid-body-v8/head.npz",
+  "source_sha256": "dd20de3843df48b43c0ecdf0df91580f78f5f04d5c50802780022d9e5124a7ef",
+  "source_vertex_count": 932313,
+  "source_face_count": 1864618,
+  "polygon": [
+    [
+      -24.0,
+      -40.0
+    ],
+    [
+      24.0,
+      -40.0
+    ],
+    [
+      24.0,
+      -10.0
+    ],
+    [
+      12.0,
+      15.0
+    ],
+    [
+      -12.0,
+      15.0
+    ],
+    [
+      -24.0,
+      -10.0
+    ]
+  ],
+  "zmin": 99.0,
+  "boundary_count": 1220,
+  "boundary_extent": [
+    [
+      -24.0,
+      -40.0,
+      101.36582795710679
+    ],
+    [
+      24.0,
+      15.0,
+      121.53717389779641
+    ]
+  ],
+  "minimum_boundary_front_normal": 0.28978603582421153,
+  "new_cut_vertices": 1840,
+  "removed_source_faces": 167656,
+  "retained_clip_faces": 3070,
+  "source_vertex_ids_preserved": true,
+  "source_positions_unchanged": true,
+  "protected_semantic_incident_vertices_or_faces": {
+    "vermilion_vertex_ids": 0,
+    "vermilion_outer_border_vertex_ids": 0,
+    "oral_aperture_vertex_ids": 0,
+    "vermilion_face_ids": 0,
+    "inner_labial_return_vertex_ids": 0,
+    "right_plate_inner_boundary_vertex_ids": 0,
+    "right_lash_support_vertex_ids": 0,
+    "right_external_margin_vertex_ids": 0,
+    "right_inner_wetline_vertex_ids": 0,
+    "left_plate_inner_boundary_vertex_ids": 0,
+    "left_lash_support_vertex_ids": 0,
+    "left_external_margin_vertex_ids": 0,
+    "left_inner_wetline_vertex_ids": 0
+  },
+  "status": "Exact real boundary contract only; fitted anatomical patch pending."
+}

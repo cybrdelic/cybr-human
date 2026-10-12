@@ -1,0 +1,213 @@
+{
+  "schema": "authored-layered-fibre-mapping-v1",
+  "pins": {
+    "tet": {
+      "path": "human-preferred-v53-anatomical-assembly-20261011/shared-reference-v7/geometry.npz",
+      "sha256": "c5e9978825b4073a17a29a91c867fd6fe13260aa64b96128c3236b9f026e31d9"
+    },
+    "parts": {
+      "path": "human-preferred-v53-anatomical-assembly-20261011/route-layout-v9/parts.npz",
+      "sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8"
+    },
+    "zygomatic": {
+      "path": "human-preferred-v53-mechanics-20261011/cheek-remesh-v9/geometry.npz",
+      "sha256": "5fe664216b7670dfecb37500828becbec29c37ea86e6aa59f1e229606fed976c"
+    },
+    "constraints": {
+      "path": "human-preferred-v53-anatomical-assembly-20261011/ANATOMICAL_SOURCE_CONSTRAINTS.json",
+      "sha256": "ca5ca6b268d9be83d151929373b060f679c0d591de0632f1f4ef5a7a4caa707c"
+    },
+    "mesh_report": {
+      "path": "human-preferred-v53-anatomical-assembly-20261011/shared-reference-v7/report.json",
+      "sha256": "423ef5a7999fe1806d8b94cb0fb597ae94e8a3d34e7a3829ddba314e58caf805"
+    }
+  },
+  "tetrahedra": 41027,
+  "mesh_status": "admitted-geometry",
+  "inherited_mesh_quality": {
+    "quality_quantiles": [
+      0.0017539261519359303,
+      0.007043297542132525,
+      0.04073866443212663,
+      0.34187883198926683,
+      0.688845242364204,
+      0.9982764533382245
+    ],
+    "condition_quantiles": [
+      1.1366056145981902,
+      4.442204017365874,
+      10.762367140244075,
+      141.86923832503112,
+      1792.7533713330465,
+      21964.840609480783
+    ],
+    "quality_below_001": 0
+  },
+  "inherited_mesh_limits": [
+    "Thin-sheet quality tail remains: minimum mean-ratio0.00175, maximum local matrix condition about21965. New finite equilibrium/contact/reaction gates are required, no certified model claim.",
+    "Static external surface/contact checks are inherited exactly from pinned shared-junction-v2.",
+    "No new activation/material assignment is implied by boundary display IDs.",
+    "Regional unbound cut ends still require declared support/continuation conditions.",
+    "Exact preferred head is not deformed or mechanically coupled by this reference geometry alone."
+  ],
+  "families": {
+    "zygomatic_reference": {
+      "tetrahedra": 1721,
+      "weighted_volume_design_units_cubed": 142.1773809114687,
+      "curve_method": "C1 cubic Hermite through original ring centres with original normalized ring tangents",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        0.0009693535805089711,
+        0.999960457729367
+      ]
+    },
+    "superficial_oral": {
+      "tetrahedra": 8214,
+      "weighted_volume_design_units_cubed": 25.0863343756906,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 3.3306690738754696e-16,
+      "parameter_range": [
+        5.16653794653295e-10,
+        0.999999999561195
+      ]
+    },
+    "deep_oral": {
+      "tetrahedra": 8763,
+      "weighted_volume_design_units_cubed": 21.002233311149755,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        5.120910879643883e-10,
+        0.99999999955406
+      ]
+    },
+    "buccinator_deep": {
+      "tetrahedra": 6988,
+      "weighted_volume_design_units_cubed": 50.42630170363959,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        4.796020075032548e-10,
+        0.999999999601822
+      ]
+    },
+    "mandibular_depressor": {
+      "tetrahedra": 6996,
+      "weighted_volume_design_units_cubed": 177.47687410391205,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        0.09395541383299844,
+        0.9999999995990444
+      ]
+    }
+  },
+  "source_volume_checks": {
+    "zygomatic_reference": {
+      "used_vertices": 826,
+      "triangles": 1648,
+      "closed_edges": true,
+      "consistent_edge_winding": true,
+      "candidate_queries": 31542,
+      "winding_fallbacks": 27,
+      "ambiguous_queries": 0,
+      "ray_disagreements": 27,
+      "near_surface_fallback_tolerance_design_units": 1.7614758331447656e-05
+    },
+    "superficial_oral": {
+      "used_vertices": 2242,
+      "triangles": 4480,
+      "closed_edges": true,
+      "consistent_edge_winding": true,
+      "candidate_queries": 46696,
+      "winding_fallbacks": 427,
+      "ambiguous_queries": 0,
+      "ray_disagreements": 423,
+      "near_surface_fallback_tolerance_design_units": 5.942504082807054e-06
+    },
+    "deep_oral": {
+      "used_vertices": 2242,
+      "triangles": 4480,
+      "closed_edges": true,
+      "consistent_edge_winding": true,
+      "candidate_queries": 60727,
+      "winding_fallbacks": 788,
+      "ambiguous_queries": 0,
+      "ray_disagreements": 788,
+      "near_surface_fallback_tolerance_design_units": 5.869542838290055e-06
+    },
+    "buccinator_deep": {
+      "used_vertices": 2242,
+      "triangles": 4480,
+      "closed_edges": true,
+      "consistent_edge_winding": true,
+      "candidate_queries": 28766,
+      "winding_fallbacks": 69,
+      "ambiguous_queries": 0,
+      "ray_disagreements": 65,
+      "near_surface_fallback_tolerance_design_units": 7.594482307961681e-06
+    },
+    "mandibular_depressor": {
+      "used_vertices": 1942,
+      "triangles": 3880,
+      "closed_edges": true,
+      "consistent_edge_winding": true,
+      "candidate_queries": 60775,
+      "winding_fallbacks": 548,
+      "ambiguous_queries": 0,
+      "ray_disagreements": 546,
+      "near_surface_fallback_tolerance_design_units": 9.33860169342917e-06
+    },
+    "junction": {
+      "used_vertices": 642,
+      "triangles": 1280,
+      "closed_edges": true,
+      "consistent_edge_winding": true,
+      "candidate_queries": 46385,
+      "winding_fallbacks": 31,
+      "ambiguous_queries": 0,
+      "ray_disagreements": 30,
+      "near_surface_fallback_tolerance_design_units": 2.684790494619599e-06
+    },
+    "zygomatic_passive_adapter": {
+      "used_vertices": 238,
+      "triangles": 472,
+      "closed_edges": true,
+      "consistent_edge_winding": true,
+      "candidate_queries": 3683,
+      "winding_fallbacks": 13,
+      "ambiguous_queries": 0,
+      "ray_disagreements": 13,
+      "near_surface_fallback_tolerance_design_units": 3.363380188485234e-06
+    }
+  },
+  "quadrature": "Four symmetric interior tetra samples with equal weights; not exact clipped volumes",
+  "overlap_policy": "Central junction and original passive root adapter take precedence; each actual nonpassive muscle overlap sample shares a unit budget equally among its contained families",
+  "missing_samples": 0,
+  "ambiguous_samples": 0,
+  "missing_cells": 0,
+  "ambiguous_cells": 0,
+  "mixed_membership_cells": 2534,
+  "genuine_overlap_cells": 822,
+  "quarantine_cells": 0,
+  "missing_cell_examples": [],
+  "ambiguous_cell_examples": [],
+  "passive_fraction_weighted_volume_design_units_cubed": 75.42788987015719,
+  "unresolved_fraction_weighted_volume_design_units_cubed": 0.0,
+  "maximum_partition_error": 0.0,
+  "mapping_admitted_no_unresolved_samples": true,
+  "solve_ready": false,
+  "mapping_sha256": "764983979ea0dfa04bf667670b392cdaa289c5a11438a9291a53de067799c629",
+  "families_sha256": "49b8912b442450aaf8dbd0de5728c4d0557e47c9c9074877ef6b1f2d82e8adbb",
+  "source_code_sha256": "c371b4ff42fc276ec9d541cc5535c822cf617f1e889325efa3f254ad9939be94",
+  "limitations": [
+    "Authored fibre-direction and overlap estimates; no physiological calibration or validated physical units.",
+    "No geometry, head surface, attachment, constitutive law or solved state is changed.",
+    "Finite samples do not certify exact cell/volume intersection or internal interface conformance.",
+    "Mixed cells carry explicit integration-point occupancy estimates; refine or clip interfaces for resolved material boundaries.",
+    "Any unresolved occupancy is quarantined and blocks mechanics assembly, even if some other samples in that cell are assigned.",
+    "Stiffness, activation schedules, boundary conditions, traction transmission, quality/contact and a new solve remain separate gates.",
+    "Source construction has finite unbound oral/posterior cuts; alveolar and raphe attachments remain absent."
+  ],
+  "anatomical_source_scope": "Primary anatomical studies inform structural relationships only. Every coordinate, shape section, thickness and route width here is an original authored estimate constrained by the selected procedural head. No scan, imported bone/head, segmented cadaver or real-face texture is used."
+}

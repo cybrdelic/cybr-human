@@ -1,0 +1,38 @@
+{
+  "scope": "Primary anatomical studies inform structural relationships only. Every coordinate, shape section, thickness and route width here is an original authored estimate constrained by the selected procedural head. No scan, imported bone/head, segmented cadaver or real-face texture is used.",
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38573505/",
+      "title": "The three layered structure of orbicularis oris and buccinator complex with partial connection at the modiolus and partial direct continuation",
+      "authors": "Ishii et al.",
+      "year": 2024,
+      "read": "Primary study abstract and publication details",
+      "evidence": "Dissection of seventeen cadavers distinguishes perioral layers and both junctional and direct continuations. The deep transverse buccinator route continues into marginal orbicularis portions rather than every fibre terminating at one junction.",
+      "authoring_constraint": "Keep superficial upper-labial and deeper transverse/lower-labial routes distinguishable, with explicit continuations and shared junction regions. The first layout is a simplified regional abstraction, not a reconstruction of all three measured layers."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16547604/",
+      "title": "Anatomic research on the perioral muscles, functional matrix of the maxillary and mandibular bones",
+      "authors": "D\u2019Andrea and Barbaix",
+      "year": 2006,
+      "read": "Primary study abstract",
+      "evidence": "Dissections of forty specimens and MRI comparisons describe a deeper buccinator/inner orbicularis relation and a superficial group including lower depressors, zygomatic muscles and outer orbicularis.",
+      "authoring_constraint": "Do not treat a single passive fan as the full mouth-corner anatomy; retain layered route metadata before remeshing."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36050569/",
+      "title": "The Surgical Anatomy of the Jowl and the Mandibular Ligament Reassessed",
+      "authors": "Minelli et al.",
+      "year": 2023,
+      "read": "Primary study abstract and figure descriptions",
+      "evidence": "A forty-nine-head study locates the combined lower-depressor/platysma mandibular attachment in the deep plane and distinguishes it from mobile subcutaneous tissue.",
+      "authoring_constraint": "Provide a genuine geometric mandibular muscle-origin footprint while keeping the exterior skin separate; do not weld the whole skin directly onto the jaw or invent a superficial rigid ligament."
+    }
+  ],
+  "new_geometry_limits": [
+    "Mandible is an authored outer contact solid, not a resolved cortical/marrow or dentition model.",
+    "No TMJ joint surfaces, disc, dental occlusion or jaw-motion constraint has been built.",
+    "New route layout is not yet a force-coupled continuum; prior regional equilibrium states remain separate.",
+    "The deep buccinator-like route has a declared posterior cut; alveolar and raphe attachments remain missing."
+  ]
+}

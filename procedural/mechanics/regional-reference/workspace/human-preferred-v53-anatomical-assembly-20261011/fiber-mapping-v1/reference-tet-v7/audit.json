@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "mapping_sha256": "764983979ea0dfa04bf667670b392cdaa289c5a11438a9291a53de067799c629",
+  "mesh_status": "admitted-geometry",
+  "family_json_roundtrip_exact": true,
+  "fractions_recomputed_exact": true,
+  "all_five_activation_channels_distinct_and_zero": true,
+  "source_geometry_pins_unchanged": true,
+  "sampled_double_precision_winding_crosscheck": {
+    "zygomatic_reference": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "superficial_oral": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "deep_oral": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "buccinator_deep": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "mandibular_depressor": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "junction": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "zygomatic_passive_adapter": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    }
+  },
+  "audit_source_sha256": "0b8075e42ea01ceef3fc51342cd8c68ccc75ef5ccb46e409475f525d849026f5",
+  "scope": "Mapping invariants and deterministic sampled containment cross-check only; no solve or geometry admission."
+}

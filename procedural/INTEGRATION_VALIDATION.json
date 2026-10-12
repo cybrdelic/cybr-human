@@ -1,0 +1,103 @@
+{
+  "payload_hashes": 468,
+  "python_sources_parsed": 149,
+  "attachment_tests": "{\"sourceParametricCap\":true,\"rigidSubmarginPositiveGap\":true,\"changedTargetRejected\":true,\"changedBoneRejected\":true,\"movingRigidPointRejected\":true,\"actualIntersectionRejected\":true,\"unfixedRootSeamRejected\":true}",
+  "saved_internal_states": {
+    "neutral-0": {
+      "minJ_recomputed": 1.0,
+      "converged": true,
+      "fixed_exact": true
+    },
+    "right-02": {
+      "minJ_recomputed": 0.9742755508016149,
+      "converged": true,
+      "fixed_exact": true
+    },
+    "right-08": {
+      "minJ_recomputed": 0.9065288090858736,
+      "converged": true,
+      "fixed_exact": true
+    },
+    "right-16": {
+      "minJ_recomputed": 0.8228259064694587,
+      "converged": true,
+      "fixed_exact": true
+    },
+    "released-0": {
+      "minJ_recomputed": 0.9883608046572714,
+      "converged": true,
+      "fixed_exact": true
+    }
+  },
+  "new_numerical_solve": false,
+  "fullhead_pose_claim": false,
+  "relocated_baseline_replay": {
+    "preferred_namespace": "original-coordinated-20261010-v53",
+    "outputs": {
+      "v5": {
+        "expected": "ba497c73418c1c4e31db3b0b06c07b36656f67c096fc5ce43ea399523e72ea49",
+        "actual": "ba497c73418c1c4e31db3b0b06c07b36656f67c096fc5ce43ea399523e72ea49",
+        "exact": true
+      },
+      "v6c": {
+        "expected": "f60e447413c791494a8856ee5571cda9574ecca600dfc05427f5c9f7182bfb27",
+        "actual": "f60e447413c791494a8856ee5571cda9574ecca600dfc05427f5c9f7182bfb27",
+        "exact": true
+      },
+      "v8": {
+        "expected": "dd20de3843df48b43c0ecdf0df91580f78f5f04d5c50802780022d9e5124a7ef",
+        "actual": "dd20de3843df48b43c0ecdf0df91580f78f5f04d5c50802780022d9e5124a7ef",
+        "exact": true
+      },
+      "v46": {
+        "expected": "e568bf8763102e8d9479fc75a295e4d6cdf709c1046d2fd33d0e716e2474ddf6",
+        "actual": "e568bf8763102e8d9479fc75a295e4d6cdf709c1046d2fd33d0e716e2474ddf6",
+        "exact": true
+      },
+      "v53": {
+        "expected": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+        "actual": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+        "exact": true
+      },
+      "v53_semantics": {
+        "expected": "d2587be48722543d557a329870f78b29125d1bfa0f0d0aa54d0fc8adc2dce811",
+        "actual": "d2587be48722543d557a329870f78b29125d1bfa0f0d0aa54d0fc8adc2dce811",
+        "exact": true
+      }
+    },
+    "all_exact": true,
+    "v6c_curve_controls_reauthored": true,
+    "starting_input": "Pinned original-generated v5, no claim of all prior stages or r20 recreation"
+  },
+  "baseline_resource_receipt": {
+    "exit_code": 0,
+    "stop_reason": null,
+    "seconds_after_admission": 34.473,
+    "seconds_including_wait": 87.66,
+    "peak_sampled_rss_mib": 587.1,
+    "sampled_stop_margin_mib": 900,
+    "admission_available_mib": 4308.78515625,
+    "admission_required_mib": 2048,
+    "cpu_affinity": [
+      2,
+      3
+    ],
+    "guard_kind": "Sampled user-space owned-tree guard, not a kernel-hard limit",
+    "complete": true
+  },
+  "relocated_mechanics_preparation": {
+    "files": 141,
+    "head_exact": true,
+    "numerical_execution": false
+  },
+  "appearance_validation": "appearance/VALIDATION.json",
+  "scope": "Exact rest replay, focused attachment tests and preserved-state checks; no fresh mechanics solve or appearance render in this integration validation.",
+  "prior_monolithic_replay_preserved_at": "publishable-v1-monolithic (local preservation only)",
+  "split_input_validation": {
+    "parts": 5,
+    "maximum_part_bytes": 6291456,
+    "original_archive_sha256": "353f000ce1bf4989155ac04c693837280a737dc11ee79a1692f3688a338a3a07",
+    "assembled_archive_sha256": "353f000ce1bf4989155ac04c693837280a737dc11ee79a1692f3688a338a3a07",
+    "all_stage_outputs_exact": true
+  }
+}

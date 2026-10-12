@@ -1,0 +1,68 @@
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "binding_sha256": "e1a3a6aa631a67fd311eb1e6b42c2d93d762e7110b65ed33f56c7f079aa14392",
+  "covered_vertices": 10070,
+  "affected_faces": 20778,
+  "regional_faces": 64524,
+  "baseline_crossings": {
+    "nonincident_candidates": 0,
+    "trimmed_incident_candidates": 3359,
+    "nonincident": 0,
+    "trimmed_incident": 0
+  },
+  "states": {
+    "right-02": {
+      "state_sha256": "696c92553c8b41bbced4e95d77a16d6951198e0334dcd242b107fb14aef55aff",
+      "crossings": {
+        "nonincident_candidates": 0,
+        "trimmed_incident_candidates": 3423,
+        "nonincident": 0,
+        "trimmed_incident": 0
+      },
+      "introduced_nonincident_count": 0,
+      "introduced_nonincident_examples": [],
+      "introduced_trimmed_incident_count": 0,
+      "introduced_trimmed_incident_examples": [],
+      "continuous_tissue_skin_separation": {
+        "complete": true,
+        "lower_distance_bound": 0.06575567316750942,
+        "levels": [
+          {
+            "depth": 0,
+            "tested": 1648,
+            "admitted": 1648
+          }
+        ]
+      }
+    },
+    "released-0": {
+      "state_sha256": "a70b4dcc4dd43c654669045eb87f5c2605eab84a4fe5eaf01bf749ef724ff82d",
+      "crossings": {
+        "nonincident_candidates": 0,
+        "trimmed_incident_candidates": 3416,
+        "nonincident": 0,
+        "trimmed_incident": 0
+      },
+      "introduced_nonincident_count": 0,
+      "introduced_nonincident_examples": [],
+      "introduced_trimmed_incident_count": 0,
+      "introduced_trimmed_incident_examples": [],
+      "continuous_tissue_skin_separation": {
+        "complete": true,
+        "lower_distance_bound": 0.04914079875560675,
+        "levels": [
+          {
+            "depth": 0,
+            "tested": 1648,
+            "admitted": 1648
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Static state tests, not a skin-contact force model or between-state swept proof.",
+    "Shared triangle strips excluded by1e-6 centroid trim.",
+    "Baseline defects, if present, remain declared rather than silently repaired."
+  ]
+}

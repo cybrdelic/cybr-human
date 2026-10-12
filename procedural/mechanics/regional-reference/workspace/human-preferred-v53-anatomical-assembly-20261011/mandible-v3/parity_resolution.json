@@ -1,0 +1,57 @@
+{
+  "geometry_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+  "records": [
+    {
+      "vertex": 9236,
+      "position": [
+        4.660847562503926,
+        -89.63992829792024,
+        101.74711182398401
+      ],
+      "original_parity": [
+        1,
+        0,
+        1
+      ],
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_surface_distance": 9.284148216247559,
+      "nearest_outward_normal_signed_offset": -9.284147643949836
+    },
+    {
+      "vertex": 9432,
+      "position": [
+        7.660619534270575,
+        -92.32779949295966,
+        98.85924868178499
+      ],
+      "original_parity": [
+        1,
+        0,
+        1
+      ],
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_surface_distance": 8.766075134277344,
+      "nearest_outward_normal_signed_offset": -8.766075579449534
+    }
+  ],
+  "all_additional_rays_inside": true,
+  "connected_closed_surface_has_zero_triangle_crossings_with_skin": true,
+  "admitted_for_layout": true,
+  "interpretation": "Two original upward oblique rays disagreed with the other two directions; seven independent directions and nearest normal resolve them. Exact skin/mandible triangle bounding trees have no candidate surface intersection, and the closed connected component is interior. Original parity data and report are retained unchanged."
+}

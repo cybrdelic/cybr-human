@@ -1,0 +1,38 @@
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "binding_sha256": "2789c9a6853999116af8b9aaef87416f3a6389be3ec8f925f07eaf869fc12527",
+  "covered_vertices": 221,
+  "affected_faces": 516,
+  "states": {
+    "neutral-0": {
+      "sparse_state_sha256": "9a02123543e2436c1349622aa94075c488cf4671d04805daab9c52a7ec32879d",
+      "source_state_sha256": "18d9acb5765e6d2ca706f486920a2cc1fc2dc921acd6ab11f089ee44e305c399",
+      "maximum_skin_motion": 0.0,
+      "area_ratio_quantiles": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min_normal_cosine": 0.9999999999999998,
+      "neutral_exact": true,
+      "uncovered_exact": true,
+      "nonpositive_normal_count": 0,
+      "zero_area_count": 0
+    },
+    "right-02-secanted": {
+      "sparse_state_sha256": "ff6ed0860767fb67c23c502e3dfb4dcc04879af293502e4223259bb7947a597d",
+      "source_state_sha256": "4649267d9cdafdb0595c454c95a376b5fec840730df6dfa453f80a232407935e",
+      "maximum_skin_motion": 0.016101379299124755,
+      "area_ratio_quantiles": [
+        0.9916669247925657,
+        1.0006557353109917,
+        1.0087872468669983
+      ],
+      "min_normal_cosine": 0.9999906081832003,
+      "neutral_exact": null,
+      "uncovered_exact": true,
+      "nonpositive_normal_count": 0,
+      "zero_area_count": 0
+    }
+  }
+}

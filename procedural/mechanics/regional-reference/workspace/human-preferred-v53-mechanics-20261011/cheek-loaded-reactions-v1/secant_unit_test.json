@@ -1,0 +1,1 @@
+{"pass":true,"objective":"SPD quadratic, exact line search","steps":[{"residual":9.219544457292887,"energy":0.3666666666666665},{"residual":1.3521998537362898,"energy":1.8488927466117464e-32}],"fixed_zero_dof_exact":true,"final_norm":1.2412670766236366e-16}

@@ -1,0 +1,29 @@
+{
+  "status": "Ordered continuous registration candidate; containment/physics pending",
+  "preferred_skin_modified": false,
+  "control_count": 1149,
+  "method": "X unchanged; monotone PCHIP Y map; one common smooth Z(X,Y) depth translation with exact root holdout. Distinct oral charts cannot separate coincident neighbors.",
+  "analytic_ambient_J_minimum_sampled_Y_derivative": 0.8931868672,
+  "relative_discrete_J_range": [
+    -0.10673475640973083,
+    2.9178370906078
+  ],
+  "nonpositive_cells": 15,
+  "below_point15": 125,
+  "rigid_nodes_exact": true,
+  "surface_target_residual_quantiles": [
+    0.010246500266339297,
+    2.242605948635048,
+    5.4750045040194415,
+    7.424693330088696
+  ],
+  "maximum_node_motion": 7.699180590766043,
+  "original_corner_pair_distance": 0.029418227838393835,
+  "mapped_corner_pair_distance": 0.031816605745740904,
+  "bone_minimum_normal_cosine": 0.7593506320514982,
+  "bone_nonpositive_normals": 0,
+  "limits": [
+    "Continuum authoring only; no mechanics state reused.",
+    "Nonlinear-map positivity does not prove positive straight-sided tets, global overlap or exact skin containment."
+  ]
+}

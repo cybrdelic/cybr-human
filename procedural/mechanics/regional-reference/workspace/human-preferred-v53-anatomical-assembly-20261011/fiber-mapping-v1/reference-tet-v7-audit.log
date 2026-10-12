@@ -1,0 +1,66 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 4632.02734375, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+test_actual_containment_rejects_outside_near_route (__main__.MappingTests.test_actual_containment_rejects_outside_near_route) ... ok
+test_exact_source_boundary_is_ambiguous (__main__.MappingTests.test_exact_source_boundary_is_ambiguous) ... ok
+test_hermite_preserves_authored_ring_directions (__main__.MappingTests.test_hermite_preserves_authored_ring_directions) ... ok
+test_independent_families_and_passive_precedence (__main__.MappingTests.test_independent_families_and_passive_precedence) ... ok
+test_open_surface_is_rejected (__main__.MappingTests.test_open_surface_is_rejected) ... ok
+test_quadrature_is_interior_and_normalized (__main__.MappingTests.test_quadrature_is_interior_and_normalized) ... ok
+test_straight_curve_unit_tangents (__main__.MappingTests.test_straight_curve_unit_tangents) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK
+{"tests": 7, "failures": 0, "errors": 0, "passed": true}
+Blender 4.3.2
+{
+  "passed": true,
+  "mapping_sha256": "764983979ea0dfa04bf667670b392cdaa289c5a11438a9291a53de067799c629",
+  "mesh_status": "admitted-geometry",
+  "family_json_roundtrip_exact": true,
+  "fractions_recomputed_exact": true,
+  "all_five_activation_channels_distinct_and_zero": true,
+  "source_geometry_pins_unchanged": true,
+  "sampled_double_precision_winding_crosscheck": {
+    "zygomatic_reference": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "superficial_oral": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "deep_oral": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "buccinator_deep": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "mandibular_depressor": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "junction": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    },
+    "zygomatic_passive_adapter": {
+      "sample_count": 512,
+      "mismatches": 0,
+      "mismatch_sample_ids": []
+    }
+  },
+  "audit_source_sha256": "0b8075e42ea01ceef3fc51342cd8c68ccc75ef5ccb46e409475f525d849026f5",
+  "scope": "Mapping invariants and deterministic sampled containment cross-check only; no solve or geometry admission."
+}
+Blender 4.3.2
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 267.96, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 4632.02734375, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 4.91, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

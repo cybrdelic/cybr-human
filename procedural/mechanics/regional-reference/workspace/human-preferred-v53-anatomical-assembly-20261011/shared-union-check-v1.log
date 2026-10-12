@@ -1,0 +1,39 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 5825.625, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "geometry_sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+  "nonincident_crossings": 0,
+  "trimmed_incident_crossings": 0,
+  "nonincident_examples": [],
+  "trimmed_incident_examples": [],
+  "exact_root_face_counts": {
+    "maxillary_support": 301,
+    "mandible": 176
+  },
+  "obstacles": {
+    "skin": {
+      "pairs": 0,
+      "excluded_exact_contact_faces": 0,
+      "crossings": 0,
+      "examples": []
+    },
+    "mandible": {
+      "pairs": 169,
+      "excluded_exact_contact_faces": 57,
+      "crossings": 0,
+      "examples": []
+    },
+    "maxillary_support": {
+      "pairs": 186,
+      "excluded_exact_contact_faces": 171,
+      "crossings": 0,
+      "examples": []
+    }
+  },
+  "admitted_shared_surface": true,
+  "scope": "Connected closed surface only. No tetrahedral elements or new equilibrium. Tested attachment-adjacent faces use 1e-6 centroid trim; retained exact bone-contact faces are excluded explicitly."
+}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 710.69, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 5825.625, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 2.74, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

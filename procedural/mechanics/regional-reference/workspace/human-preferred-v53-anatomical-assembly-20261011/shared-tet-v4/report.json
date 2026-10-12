@@ -1,0 +1,15 @@
+{
+  "source_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+  "geometry_sha256": "48ca653c5c638bb5816c4565a6dc7fdf80057fe728a93348044ae44df1e85a2d",
+  "mesher": "Preinstalled Gmsh4.13 system shared library; C API, preserved discrete boundary",
+  "nodes": 12022,
+  "tetrahedra": 41020,
+  "min_determinant_design_units_cubed": 2.0264824270308393e-15,
+  "nonpositive_tets": 0,
+  "source_vertices_max_error": 5.739584601870544e-14,
+  "boundary_faces_exact": true,
+  "missing_original_boundary_faces": 0,
+  "new_boundary_faces": 0,
+  "total_volume": 491.59701427601686,
+  "scope": "Conforming geometry candidate only, pending tissue-quality/region/contact gates; no solve."
+}

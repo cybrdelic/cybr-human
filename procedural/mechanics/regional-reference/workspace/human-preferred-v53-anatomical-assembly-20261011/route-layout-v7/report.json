@@ -1,0 +1,106 @@
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "mandible_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+  "original_cheek_sha256": "5fe664216b7670dfecb37500828becbec29c37ea86e6aa59f1e229606fed976c",
+  "parts_sha256": "2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd",
+  "parts": {
+    "zygomatic_reference": {
+      "description": "Previously checked approximate active right-cheek bundle; its earlier equilibrium is separate from this new layout.",
+      "vertices": 1003,
+      "triangles": 1648,
+      "enclosed_signed_volume": 171.30940635883232,
+      "sampled_outside_vertices": 0,
+      "outside_examples": [],
+      "outside_bounds": null,
+      "minimum_sampled_skin_distance": 0.4672089219093323
+    },
+    "junction": {
+      "description": "Authored lateral fibromuscular junction volume; common geometry interface for layered routes, not a calibrated modiolus.",
+      "vertices": 2114,
+      "triangles": 4224,
+      "enclosed_signed_volume": 48.39321343865854,
+      "sampled_outside_vertices": 1,
+      "outside_examples": [
+        1391
+      ],
+      "outside_bounds": [
+        [
+          29.207344571992298,
+          -53.04314811964643,
+          103.58213984979938
+        ],
+        [
+          29.207344571992298,
+          -53.04314811964643,
+          103.58213984979938
+        ]
+      ],
+      "minimum_sampled_skin_distance": 0.40969669818878174
+    },
+    "superficial_oral": {
+      "description": "Superficial route from the junction into upper outer labial tissue; a finite regional continuation, with medial cut unbound.",
+      "vertices": 2242,
+      "triangles": 4480,
+      "enclosed_signed_volume": 27.68363643882644,
+      "sampled_outside_vertices": 0,
+      "outside_examples": [],
+      "outside_bounds": null,
+      "minimum_sampled_skin_distance": 1.2396577596664429
+    },
+    "deep_oral": {
+      "description": "Deeper lower labial continuation, distinct from the superficial upper route; no universal point-insertion assumption.",
+      "vertices": 2242,
+      "triangles": 4480,
+      "enclosed_signed_volume": 21.47141926833132,
+      "sampled_outside_vertices": 0,
+      "outside_examples": [],
+      "outside_bounds": null,
+      "minimum_sampled_skin_distance": 0.8110718131065369
+    },
+    "buccinator_deep": {
+      "description": "Deep transverse/oblique cheek route into the inner perioral layer. Posterior cut is explicit; alveolar/raphe origins are not yet provided.",
+      "vertices": 2242,
+      "triangles": 4480,
+      "enclosed_signed_volume": 50.58420122338345,
+      "sampled_outside_vertices": 0,
+      "outside_examples": [],
+      "outside_bounds": null,
+      "minimum_sampled_skin_distance": 2.6981360912323
+    },
+    "mandibular_depressor": {
+      "description": "Original continuous DAO-like sheet with finite triangular origin cut directly against the new mandible. Every origin vertex has an exact barycentric bone-surface correspondence; no new dynamics.",
+      "vertices": 1942,
+      "triangles": 3880,
+      "enclosed_signed_volume": 183.88438640153694,
+      "sampled_outside_vertices": 0,
+      "outside_examples": [],
+      "outside_bounds": null,
+      "minimum_sampled_skin_distance": 0.3643990755081177
+    }
+  },
+  "mandibular_footprint_faces": 176,
+  "mandibular_footprint_vertices": 154,
+  "bone_origin_barycentric_reconstruction_error": 0.0,
+  "scope": "Original anatomical construction layout, with explicit source-informed superficial/deep routes and a true geometric mandibular origin footprint. The parts share intended junction space but are not yet a conforming tetrahedral network or force-coupled assembly. No new pose claim.",
+  "pending": [
+    "Local inter-part union/interface construction",
+    "Full static contact validation for all new route surfaces",
+    "Literal geometry cutaway inspection",
+    "New continuum remesh and attachment traction before any new dynamics"
+  ],
+  "source_parts_sha256": "fe173a50716975d12bfbf5e514d97ab8f3742c7f04828e97c2b829df79475d2e",
+  "root_interface_repair": {
+    "edge_flips": [
+      {
+        "old_root_sliver_face": 3745,
+        "old_free_face": 94,
+        "split_vertex": 1900,
+        "old_area": 2.648067396560418e-05
+      }
+    ],
+    "nonbonded_near_root_nodes_lifted": 60,
+    "maximum_outward_lift": 0.004999189633041028,
+    "footprint_positions_and_weights_exact": true,
+    "scope": "Numerical geometry repair at the Boolean/barycentric contact perimeter. No bone coordinate, origin correspondence, route control, material or physical solve changes."
+  }
+}

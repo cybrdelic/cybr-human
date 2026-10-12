@@ -1,0 +1,63 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 5856.5, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "geometry_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+  "records": [
+    {
+      "vertex": 9236,
+      "position": [
+        4.660847562503926,
+        -89.63992829792024,
+        101.74711182398401
+      ],
+      "original_parity": [
+        1,
+        0,
+        1
+      ],
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_surface_distance": 9.284148216247559,
+      "nearest_outward_normal_signed_offset": -9.284147643949836
+    },
+    {
+      "vertex": 9432,
+      "position": [
+        7.660619534270575,
+        -92.32779949295966,
+        98.85924868178499
+      ],
+      "original_parity": [
+        1,
+        0,
+        1
+      ],
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_surface_distance": 8.766075134277344,
+      "nearest_outward_normal_signed_offset": -8.766075579449534
+    }
+  ],
+  "all_additional_rays_inside": true,
+  "connected_closed_surface_has_zero_triangle_crossings_with_skin": true,
+  "admitted_for_layout": true,
+  "interpretation": "Two original upward oblique rays disagreed with the other two directions; seven independent directions and nearest normal resolve them. Exact skin/mandible triangle bounding trees have no candidate surface intersection, and the closed connected component is interior. Original parity data and report are retained unchanged."
+}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 640.64, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 5856.5, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 2.13, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

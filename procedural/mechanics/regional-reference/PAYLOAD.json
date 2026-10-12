@@ -1,0 +1,1412 @@
+{
+  "files": {
+    "human-preferred-v53-mechanics-20261011/compliant-v2-neutral.log": {
+      "sha256": "9e45a81ea055aa2ebaf4076bc3bf6937a887c82811daf9f58a631f79decabddb",
+      "bytes": 4051
+    },
+    "human-preferred-v53-mechanics-20261011/perioral-v3-release-replay.log": {
+      "sha256": "1fcb46611f06f0e450aa94c1cd82bb6670dddae6291def707a6d8bf9b35cbda7",
+      "bytes": 20378
+    },
+    "human-preferred-v53-mechanics-20261011/perioral-v3-release.log": {
+      "sha256": "68fe67947796d7bd5cbd548cf2557796f0c23ab244418378f8bf2b6cfb7b8f86",
+      "bytes": 20372
+    },
+    "human-preferred-v53-mechanics-20261011/PERIORAL_FRESH_REPLAY_RECEIPT.json": {
+      "sha256": "e0da4fd86a267a3128bf60b477e7e87e22df7bf149502531af678f247601ac48",
+      "bytes": 1481
+    },
+    "human-preferred-v53-mechanics-20261011/perioral-v3-fresh-replay.log": {
+      "sha256": "0f0088d64001409ceb9865da1705454c6d612e904790e0eadd374ae1bcaf7234",
+      "bytes": 21094
+    },
+    "human-preferred-v53-mechanics-20261011/perioral-v3-solve.log": {
+      "sha256": "54270d6cfa8fd4714d6f51c51d9dd514afdf8e73f9bc16ab92c8091cfc4baf10",
+      "bytes": 17073
+    },
+    "human-preferred-v53-mechanics-20261011/compliant-v2-build.log": {
+      "sha256": "eeb1cc1ac93a45885295c0adf7369b491c3a54077de9b7ab3cec4dc944d3003d",
+      "bytes": 2229
+    },
+    "human-preferred-v53-mechanics-20261011/perioral-v3-check.log": {
+      "sha256": "bebbd61984c994974242987c476d05fd9b9549c8f73413117b463e1a465077fb",
+      "bytes": 6985
+    },
+    "human-preferred-v53-mechanics-20261011/perioral-v3-release-check.log": {
+      "sha256": "de7b647753af1628b632305448e133ddb9c801f6f157cd0fdfa210def0f2bb94",
+      "bytes": 1933
+    },
+    "human-preferred-v53-mechanics-20261011/compliant-v2-solve.log": {
+      "sha256": "7fb19eba45fc005d18f4752f15ed01d316d5bdd06b9454ef22d7475940bc4409",
+      "bytes": 16244
+    },
+    "human-preferred-v53-mechanics-20261011/perioral-v3-neutral.log": {
+      "sha256": "461c0911cf1f716cefb44d08f430662344b8cd1e4df3fee2d4184072a75d71e5",
+      "bytes": 5922
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-insertion-v2/geometry.npz": {
+      "sha256": "4ac08d308c86fe4644a43ebf0bb82d288d2d38bfe6a7b29d1b1e1a0af9287aa0",
+      "bytes": 959490
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-insertion-v2/report.json": {
+      "sha256": "499d57ebc8d2fd2d3984af4f9fa584793ab6158c6f4cae99af2ba2c702d0e6ba",
+      "bytes": 1203
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-reactions-v2/plot_node_forces.json": {
+      "sha256": "5a8e6306126aaa5b54cc56826e01589ad614525810659a1b3dfe89fa8b17bc0e",
+      "bytes": 139962
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-reactions-v2/report.json": {
+      "sha256": "d809cfc2214c5f10553760c1c4d300a499888a480d7bbad09f4381de501a5c99",
+      "bytes": 8655
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-reactions-v2/audit.mjs": {
+      "sha256": "eafedf574dff7b8ebe4920ccd78779372261eb203e029961ed78b4950a84c823",
+      "bytes": 6527
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-neutral-validity-v3/surface_checks.json": {
+      "sha256": "a7978fdd07548b57a224768e94d070cd36732aa3615b9f44e49076d3de8b28e8",
+      "bytes": 1291
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-loaded-validity-v3/surface_checks.json": {
+      "sha256": "d9eb74748c936ce12ea6d3d529921b8bf092835563f8192dc7c197e1947670c5",
+      "bytes": 1824
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-validity-v2/surface_checks.json": {
+      "sha256": "9d70dc1a8705d9fdc114f74bccbccafab2a054320ef0465035217a9efa4cc60c",
+      "bytes": 1291
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-equilibrium-v3/neutral-0-state.json": {
+      "sha256": "02ee39c25bde52f0cae8abfe0f0615ff93c10082d81ed1f3cc815f776f020e4b",
+      "bytes": 72908
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-equilibrium-v3/released-0-state.json": {
+      "sha256": "753579ae7e4b357af0a9c62c909464b4c32821d9cbf61e3ff5bd5a2427fb2a6b",
+      "bytes": 90367
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-equilibrium-v3/right-02-initial-state.json": {
+      "sha256": "5fc992c324ed1f056147774a841a93ec4c26918a91a5e59667c95a0d31e75438",
+      "bytes": 87143
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-case-v3/bones.bin": {
+      "sha256": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+      "bytes": 1752288
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-case-v3/domain.json": {
+      "sha256": "9b84658bffc6be4ed7fd485d46f9c820d5b7c4cfe7f35ccaf05467fc73be2894",
+      "bytes": 163823
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-case-v3/arrays.bin": {
+      "sha256": "08d0157375075842a6260aef967a9b84ba24bb219ebec17a7191fbba4fa74293",
+      "bytes": 498536
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-case-v3/construction_report.json": {
+      "sha256": "54f5f8cebd0458c871e4ef62cbbfb78dbf735f0b64ca96ac0d3e11806c89dc16",
+      "bytes": 762
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-release-validity-v3/surface_checks.json": {
+      "sha256": "caaeb6739796276303d5b36ba4028359e25e3230e009cafa7ef293ba3dee0155",
+      "bytes": 1291
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-loaded-validity-v2/surface_checks.json": {
+      "sha256": "1063894b807a02dffc64ce31f21c25c5c0440aec564c60a5ad5aaceffd62e42d",
+      "bytes": 1824
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_perioral_release_v3.py": {
+      "sha256": "71b12d8c58a5919c1ff5b6a5fdfd3499555e57b97be41289989c0d6ecffce780",
+      "bytes": 3490
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_compliant_cheek_surfaces_v2.py": {
+      "sha256": "f91396a6a519627833f96a5f68ec2bfade0eed88fece42c35e5ee5a0e7d5ca02",
+      "bytes": 3499
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_perioral_loaded_v3.py": {
+      "sha256": "e9633fc660f46bc719b1a196d909849df6814e26560ef8ee1721b43b02187f07",
+      "bytes": 3495
+    },
+    "human-preferred-v53-mechanics-20261011/src/build_compliant_insertion_v2.py": {
+      "sha256": "728a64c2118cf53a7ca9a3a476b05c97c66899a6be3e151c75aece15555bd9aa",
+      "bytes": 6733
+    },
+    "human-preferred-v53-mechanics-20261011/src/build_perioral_insertion_v3.py": {
+      "sha256": "0a9368670db8452ebb9f86e2d309b9598425e5aea540926bf022a83119de16aa",
+      "bytes": 7401
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_perioral_neutral_v3.py": {
+      "sha256": "f372260e9d5cd97668190cb7dd4ae74fcc86b94f16d4099f2cf2573089ee836a",
+      "bytes": 3489
+    },
+    "human-preferred-v53-mechanics-20261011/src/create_compliant_cheek_case_v2.py": {
+      "sha256": "89b75b37a799e8383b0816fb3ac93ddd4f043e3fa87ce7c1534081bde7bad973",
+      "bytes": 5494
+    },
+    "human-preferred-v53-mechanics-20261011/src/create_perioral_cheek_case_v3.py": {
+      "sha256": "13416fae8d065645bd13caba25120f51a85822011e00e01fccaece23fdfc003d",
+      "bytes": 5786
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-case-v2/bones.bin": {
+      "sha256": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+      "bytes": 1752288
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-case-v2/domain.json": {
+      "sha256": "1a43cbb4240ee0908c382b114c3aa88e47a35e681631556d76572661862c6583",
+      "bytes": 163620
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-case-v2/arrays.bin": {
+      "sha256": "e3887ba5d50905f30be187088ff3bb630c27e2c7c76b77ccdbf00a3595c0a47d",
+      "bytes": 498536
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-case-v2/construction_report.json": {
+      "sha256": "183ee0aa8c6817be69798c6b160d75959a27f4eaf560889136b45dbe0883edd2",
+      "bytes": 762
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-equilibrium-v2/neutral-0-state.json": {
+      "sha256": "154d21e542779ffc4e58da7e7aad8c00b4a89925afbd19b01e92c18ea881d68e",
+      "bytes": 72913
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-compliant-equilibrium-v2/right-02-initial-state.json": {
+      "sha256": "99c34deec208af79c200969e9bfc3fb1abc7c8b7021f33aaee89474e718c8547",
+      "bytes": 86324
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-insertion-v3/geometry.npz": {
+      "sha256": "30a8e5ca8e80f5432190f343d6a636acb87b34a9f2d6173935a67008ed381a1f",
+      "bytes": 960248
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-insertion-v3/report.json": {
+      "sha256": "0e1b8ee2d3ce1b4dbf992780d8850ed42ef2edfc5a9694afe6e87a9fe8fd3a02",
+      "bytes": 1836
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-reactions-v3/plot_node_forces.json": {
+      "sha256": "a56eac9f64cf62711c9b46c30e540db23f02b25aba546223977ac05c329833d0",
+      "bytes": 138307
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-reactions-v3/domain_comparison.json": {
+      "sha256": "5410e7c67621b3ca1173d34e6e5928c87e9857b41c39496a70825eee387aa6a5",
+      "bytes": 5078
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-reactions-v3/report.json": {
+      "sha256": "940577e8fc29f37111da6e3cf2224e6b5cff4d220db4a789cb65877d9f75c81b",
+      "bytes": 8708
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-perioral-reactions-v3/audit.mjs": {
+      "sha256": "8dffcde6323936bd798331397a0e82f65a4e54ac55602a55efd59c898d62cbb5",
+      "bytes": 6587
+    },
+    "human-preferred-v53-mechanics-20261011/skin-check-v1.log": {
+      "sha256": "175f7fabb8dd9bfb70adcecb385a10584424875f41644ab2875c26765c1a5e36",
+      "bytes": 2225
+    },
+    "human-preferred-v53-mechanics-20261011/skin-v5.log": {
+      "sha256": "e3f05123150d9259c7f13299cd15f87959299012670fe0792570e08646323107",
+      "bytes": 6562
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/released-0-checkpoint.json": {
+      "sha256": "ab8eeb42dc487bd4aae03118bbc00a635f1acbcb8f13443de4fd1f825204d9e7",
+      "bytes": 61451
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-02-checkpoint.json": {
+      "sha256": "53928b12cfe1726f7ffff3ccc5d1e8bc9f572cd19b50b3a56f39f95e5514dcb9",
+      "bytes": 61513
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/neutral-0-state.json": {
+      "sha256": "279dde71c09f8919cba6402cf945c2ee8786763d7e01111ada7b3e1041898b7c",
+      "bytes": 65239
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/released-0-state.json": {
+      "sha256": "ecc6585015c0d174626dc25bc37acf5cda28e2b298cbe13fe013f819556a836a",
+      "bytes": 66164
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-16-checkpoint.json": {
+      "sha256": "f50a173160c4942a0dc7c5c7f11adf863ccce5d7202f10810659b077b14749a8",
+      "bytes": 61485
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/neutral-0-checkpoint.json": {
+      "sha256": "8ba0e4777744f08035ec236a0141963d62e3c95727f3c02761f2b0398e2829e4",
+      "bytes": 61436
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-08-state.json": {
+      "sha256": "b681f05f48bcfa66d97712d0ca79f8d71575fa531a80098042dd20dd1724a641",
+      "bytes": 65404
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-02-state.json": {
+      "sha256": "b78d30cda71e5d839f5ffcdeeb588d5998f60feb12f3c456d6efdebaa4d71734",
+      "bytes": 65409
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-08-checkpoint.json": {
+      "sha256": "af6bf16fa63e488f34ccb2e35fc38ca0e42fc8fcaec2fe90b0853dd867207977",
+      "bytes": 61506
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-16-state.json": {
+      "sha256": "27fb92e91f669f7fde9f928bb760945d222efd1a032f456412c08084be7699d2",
+      "bytes": 67032
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-case-v3/bones.bin": {
+      "sha256": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+      "bytes": 1752288
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-case-v3/domain.json": {
+      "sha256": "936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf",
+      "bytes": 152915
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-case-v3/arrays.bin": {
+      "sha256": "a2639e37de4e28c951ce5391c76e076f94b036b6fac0ebdbfad6940edff38de1",
+      "bytes": 445672
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-case-v3/construction_report.json": {
+      "sha256": "0bff9f628862ea24d0a61f7e965766a58b1e90afc1ee16e15be38df155892d9c",
+      "bytes": 762
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-skin-validity-v1/surface_checks.json": {
+      "sha256": "9627c76fb0ccc3b9e80069623295e75aacfd3e238787796e729881a33cb622b3",
+      "bytes": 2146
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-skin-binding-v5/binding_report.json": {
+      "sha256": "f664f8e705aa3e25a77c4ad9fed9fe7233e1f8f6574327816fe4c30b0ffdb264",
+      "bytes": 1940
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-skin-binding-v5/binding.npz": {
+      "sha256": "e1a3a6aa631a67fd311eb1e6b42c2d93d762e7110b65ed33f56c7f079aa14392",
+      "bytes": 978110
+    },
+    "human-preferred-v53-mechanics-20261011/rest-targets-v1/targets.npz": {
+      "sha256": "a3a99cafc3fb6e9a126bab535c9fedc2913afb42d54aeb7f10e9f96a86cb80d9",
+      "bytes": 1903188
+    },
+    "human-preferred-v53-mechanics-20261011/rest-targets-v1/target_report.json": {
+      "sha256": "2b378eb4aaa4cb4a43bf92ee8c36bcae827180367d0ac03dd54d23e89c18db89",
+      "bytes": 2398
+    },
+    "human-preferred-v53-mechanics-20261011/rest-fit-v4/containment_report.json": {
+      "sha256": "831b2436607262849777f09788a0e4fe9559051a0bc93de7f4ff5f68a0a54110",
+      "bytes": 808
+    },
+    "human-preferred-v53-mechanics-20261011/rest-fit-v4/fit_report.json": {
+      "sha256": "86bc1d0790fdb30e3116d9712572e00a5660fe3c9fed1ceb395b8681bde17f0f",
+      "bytes": 1137
+    },
+    "human-preferred-v53-mechanics-20261011/rest-fit-v4/candidate_geometry.npz": {
+      "sha256": "df21770fce51d8b229c4b3b8a479e813c11ad32ced197cdd5383bfcd0631a6b6",
+      "bytes": 1659457
+    },
+    "human-preferred-v53-mechanics-20261011/src/solve_regional_cheek_pcg500.mjs": {
+      "sha256": "1a8546c29e961cc7c5ad860a3a4247d55efcaf2966ad4e2fb75682b543c93133",
+      "bytes": 5544
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_cheek_surfaces.py": {
+      "sha256": "7c79680e1fd759c1b3a26a39147bbb98f4e6e89fd9645f88bf33fffcfca5a625",
+      "bytes": 3488
+    },
+    "human-preferred-v53-mechanics-20261011/src/bind_preferred_cheek_skin_v5.py": {
+      "sha256": "d9fdd5af98aa16efc383a98da318c799d7266e1033de388d9a9c398b64feac4e",
+      "bytes": 5939
+    },
+    "human-preferred-v53-mechanics-20261011/src/triangle_sat.py": {
+      "sha256": "2a468b0ac648bc72eefc659d704efb8c7539ced113f56af1e3b554ac055231b5",
+      "bytes": 917
+    },
+    "human-preferred-v53-mechanics-20261011/src/create_cheek_case_v3.py": {
+      "sha256": "8ba2000de42196b39f1fb1a2fd781314c353a2ad3fa115a70c503ea7f7364606",
+      "bytes": 4780
+    },
+    "human-preferred-v53-mechanics-20261011/src/export_reference_anatomy.py": {
+      "sha256": "1c264e482f2f4a810950b3a09d2f55657308adafd941b417db6b339c7e811252",
+      "bytes": 3591
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_cheek_skin_transfer.py": {
+      "sha256": "1056b1ef363b602ee2c6e2c7a512488d3261e98074cc251403cc2b30c7bbce60",
+      "bytes": 4331
+    },
+    "human-preferred-v53-mechanics-20261011/src/transfer_cheek_states_v4.py": {
+      "sha256": "7283232bf29f407ffdfd7971280fe6d4a0e6fa4e85b51cdfb834944baa76b788",
+      "bytes": 4180
+    },
+    "human-preferred-v53-mechanics-20261011/src/fit_ordered_reference.py": {
+      "sha256": "9bce456d8a94d1d7d26930ea1e2786d6c33482b5d6efb6cb868b9fb5d0fff71b",
+      "bytes": 4026
+    },
+    "human-preferred-v53-mechanics-20261011/src/build_preferred_cheek_volume_v9.py": {
+      "sha256": "ab40b2571ff1e223d3233df5d1e1ac9c95d73b12030c45204b397e564f022780",
+      "bytes": 9559
+    },
+    "human-preferred-v53-mechanics-20261011/src/regional_case_io.mjs": {
+      "sha256": "e57117a2ae3eccbd2120c2dc24ab9c44e3d19cecef5d8ea68709547aecf17d01",
+      "bytes": 3487
+    },
+    "human-preferred-v53-mechanics-20261011/src/author_rest_targets.py": {
+      "sha256": "f43af884d51582b9682d18944f916837065fb93d7161dcc361ae23ba4bc3039c",
+      "bytes": 8517
+    },
+    "human-preferred-v53-mechanics-20261011/src/audit_rest_candidate.py": {
+      "sha256": "e841dbdd97ab2635318c460e2a996b8a5843485abc76ae8e3a96848c47a742bc",
+      "bytes": 3175
+    },
+    "human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/run.log": {
+      "sha256": "214e9e544889dbee8573fb060d3ddf5e59e53b1a5a2de9842122214643871664",
+      "bytes": 1224
+    },
+    "human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/fixed_node_reactions.json": {
+      "sha256": "9be784ec8c85aa67aa4dd0a0f16b13dc19b9b17b807a7f3088cd71c3347fa62a",
+      "bytes": 590244
+    },
+    "human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/extract_reactions.mjs": {
+      "sha256": "a3c3fb9126659ace12c398eb383aec0da8806c985f7d88c2e5ff72d8f95ff223",
+      "bytes": 8390
+    },
+    "human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/reactions.json": {
+      "sha256": "206d4e9669c8f1baaada25295cf625b4a9fb6b3668c0b4d98d82612a232066a2",
+      "bytes": 29268
+    },
+    "human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/AUDIT.md": {
+      "sha256": "af330acf81aca003d241ef92c99f5181c9e06c1e35a5d73473edecb9b8e43479",
+      "bytes": 4630
+    },
+    "human-preferred-v53-mechanics-20261011/reports/cheek-release-v3.log": {
+      "sha256": "7b8021bb8ed8e072d2c84141ae597eef5c42271175c54dd3e4b0ad5d48273e6b",
+      "bytes": 3847
+    },
+    "human-preferred-v53-mechanics-20261011/reports/cheek-transfer-validity-v1.log": {
+      "sha256": "56ffb50cbba9d2af9fa2a19d7d0f318d373417210b2ebadf8223cb4bcd243ee0",
+      "bytes": 8007
+    },
+    "human-preferred-v53-mechanics-20261011/reports/cheek-right08-v3.log": {
+      "sha256": "49395581669cb2b5d7bb6f8670467f57063a3146320441975bc4ad590539a033",
+      "bytes": 3047
+    },
+    "human-preferred-v53-mechanics-20261011/reports/cheek-right02-v3.log": {
+      "sha256": "c36dbe383d717caff0598bd75280e4d5506021d1a3c0d931ab20d0964e2638d3",
+      "bytes": 3049
+    },
+    "human-preferred-v53-mechanics-20261011/reports/cheek-neutral-v3.log": {
+      "sha256": "0807547678d9c231c8253cef034e325e2bdb2eacbb8077608482f30d7ab44ac5",
+      "bytes": 4072
+    },
+    "human-preferred-v53-mechanics-20261011/reports/cheek-right16-v3.log": {
+      "sha256": "e64b4088b4bcae8a4bf142acc4ebf7c24470df1196230fcafd1c65686dc2bb5b",
+      "bytes": 4694
+    },
+    "human-preferred-v53-mechanics-20261011/reference-anatomy/manifest.json": {
+      "sha256": "8fd35f468626cb20826170338d0d6674c8ed08a7ae6ba8ec3582a8bad852c0a6",
+      "bytes": 4513
+    },
+    "human-preferred-v53-mechanics-20261011/reference-anatomy/anatomy.npz": {
+      "sha256": "7ba807d8f93644465a737748124bfb13777bb042875307d263a6767b708341e9",
+      "bytes": 1597208
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-remesh-v9/geometry.npz": {
+      "sha256": "5fe664216b7670dfecb37500828becbec29c37ea86e6aa59f1e229606fed976c",
+      "bytes": 948725
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-remesh-v9/report.json": {
+      "sha256": "4bdd3213c42e017f09b7d024ca31e9373e3e0dae9d9d05ad25f9dd5997c5c346",
+      "bytes": 930
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-validity-v1/surface_checks.json": {
+      "sha256": "3d2bb2f4d2f7b68bf64f0d1a8ce2ce06e263b115e1cfe5ad1b3a5ca64dab6df2",
+      "bytes": 4229
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-skin-states-v4/released-0.npz": {
+      "sha256": "a70b4dcc4dd43c654669045eb87f5c2605eab84a4fe5eaf01bf749ef724ff82d",
+      "bytes": 268410
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-skin-states-v4/transfer_report.json": {
+      "sha256": "e8e48a93c563b7d76792d48ac117ef37c6712f8cb6625d6ef8860dbfbe40cbf6",
+      "bytes": 5161
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-skin-states-v4/neutral-0.npz": {
+      "sha256": "5e62d3f2346c988552069959cea7e54ab26521bc36cb575642f5b92491502f3a",
+      "bytes": 36823
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-skin-states-v4/right-02.npz": {
+      "sha256": "696c92553c8b41bbced4e95d77a16d6951198e0334dcd242b107fb14aef55aff",
+      "bytes": 268987
+    },
+    "human-mechanics-20261010/tests/exact_native_rest_retarget_20261011.test.py": {
+      "sha256": "fd292f7fe9fd815aa42c21e610bbe1045d11c15afb05018eff96e3ad3f624f34",
+      "bytes": 6737
+    },
+    "human-mechanics-20261010/tests/distributed_bonded_patch.test.mjs": {
+      "sha256": "50f86b9be94c5f934bd7345529da89d02937465e6874024c0e573049e977f8ff",
+      "bytes": 9106
+    },
+    "human-mechanics-20261010/tests/bilateral_oral24_binding.test.py": {
+      "sha256": "d65218b831d349b5a33260e8eda025025ab2aa08b08bcbba9ba77ef0fc5f9b87",
+      "bytes": 5907
+    },
+    "human-mechanics-20261010/tests/bilateral_case_rest.mjs": {
+      "sha256": "382c73ec799274bd4a6ddfcfbf84de18150d9fda009869933611870b2e469287",
+      "bytes": 666
+    },
+    "human-mechanics-20261010/tests/affine_surface_transfer.test.mjs": {
+      "sha256": "5dd16c5429866e7b386b0f405c491056675c4c1429d50f413db8ed43ac910f50",
+      "bytes": 1442
+    },
+    "human-mechanics-20261010/tests/nodal_block_jacobi_fem.test.mjs": {
+      "sha256": "410706f4bf2439f30c76ac8ff72d4ed3525dd60cc816203eaf400a94f9def452",
+      "bytes": 18721
+    },
+    "human-mechanics-20261010/tests/volumetric_muscle_fem.test.mjs": {
+      "sha256": "c073f600600ebe05cad2dee9f0e038627d180fc1e24856b6d8f9d7203e7cff74",
+      "bytes": 20361
+    },
+    "human-mechanics-20261010/tests/complete_boundary_contact.test.mjs": {
+      "sha256": "f7c68e4cbcec56f860a9899b610d50955073949209ed8db328ae8ee246d32482",
+      "bytes": 14438
+    },
+    "human-mechanics-20261010/tests/guarded_static_bone_fem.test.mjs": {
+      "sha256": "7f92ee3d60cbe5afbdd8106094a6a258eec076b210ea09c0a073bcca0ec64aa4",
+      "bytes": 15213
+    },
+    "human-mechanics-20261010/src/audit_bilateral_reactions.mjs": {
+      "sha256": "991593c2ede2c4da671ed356615bae8544ce5aef3d1848310aaac6c593fb8412",
+      "bytes": 2778
+    },
+    "human-mechanics-20261010/src/build_bilateral_cavity_case.py": {
+      "sha256": "94eabb2c6996314ff9361a1c46d3fcd9a5a65746f8d4d790e61f498b13671bd3",
+      "bytes": 8469
+    },
+    "human-mechanics-20261010/src/mandibular_support.py": {
+      "sha256": "11b822a328a748db7e6f73d983639b8d6de367ae2c9d68aa80467d65ad58fef9",
+      "bytes": 12511
+    },
+    "human-mechanics-20261010/src/mandibular_collision_audit.py": {
+      "sha256": "d142ebe611cc506db9c9ec96b2b92aee7104b32a5a220fd7532f232f19487139",
+      "bytes": 4339
+    },
+    "human-mechanics-20261010/src/summarize_bilateral_cycle.py": {
+      "sha256": "7fc6e218dc4d06aaf7dc3c850d2a2cdd561beaaa1435fa675f490589c07995b0",
+      "bytes": 2217
+    },
+    "human-mechanics-20261010/src/solve_bilateral_distributed.mjs": {
+      "sha256": "186e4b1f95150b5762a94ebb26754e34d441514c3d23832baed1b75ed93fce4e",
+      "bytes": 5502
+    },
+    "human-mechanics-20261010/src/solve_bilateral_native_v1.mjs": {
+      "sha256": "53b9f12445b989a32fd6148a6d7a5b488aa159a88ffb16682870b1bfe935c427",
+      "bytes": 5063
+    },
+    "human-mechanics-20261010/src/transfer_bilateral_native.mjs": {
+      "sha256": "6fafdbbd3a99d2c4a0855d82e409c45fab02a67704e02562bbc497b6f34ca874",
+      "bytes": 2753
+    },
+    "human-mechanics-20261010/src/solve_bilateral_native.mjs": {
+      "sha256": "1f737992b312056e76857716c1439f8b3c95e99b9aacb88c017ea469c3588074",
+      "bytes": 5051
+    },
+    "human-mechanics-20261010/src/render_distributed_native_motion.py": {
+      "sha256": "f4b92e8e78a4a79228063f94eb81e268c3605c62c907ac817d1f6996dc64fdbd",
+      "bytes": 4720
+    },
+    "human-mechanics-20261010/src/solve_bilateral_distributed_range16.mjs": {
+      "sha256": "47eefe6eb22f35bc57bea90f7bf1aa2332dc63e3f2f6a6d9324353404deee01e",
+      "bytes": 5509
+    },
+    "human-mechanics-20261010/src/solve_bilateral_extended.mjs": {
+      "sha256": "f9644558e3f24938702ce91704f4e6eba32258146f75492684ba74f2cbafd884",
+      "bytes": 5311
+    },
+    "human-mechanics-20261010/src/nodal_block_jacobi_fem.mjs": {
+      "sha256": "c5c68b05667074fdc9a798a65025bec1df52a34191ce6c0e951bbfe72ca43cea",
+      "bytes": 8553
+    },
+    "human-mechanics-20261010/src/affine_surface_transfer.mjs": {
+      "sha256": "84bc14e1e14a1adb777726f669f7e665fd212883b2346f258fae9f61dff73f0a",
+      "bytes": 2020
+    },
+    "human-mechanics-20261010/src/build_bilateral_midface_volume_refined_v1.py": {
+      "sha256": "83805beef45f0fec9f9b18786205ca3ce653583b2cc6fe8e9061110edb00dcc0",
+      "bytes": 9125
+    },
+    "human-mechanics-20261010/src/build_bilateral_mechanics_case.py": {
+      "sha256": "28b0c6baf23818e7ecbb6bff71c9df5fe4cd10abe26dd3f0bf9be89c575736d9",
+      "bytes": 9573
+    },
+    "human-mechanics-20261010/src/interdigitated_muscle_fem.mjs": {
+      "sha256": "734e11cf72c0e54aec2ea1fcbd4bbedfa24d42163bfbafe2b9adb18fdae96158",
+      "bytes": 3338
+    },
+    "human-mechanics-20261010/src/render_bilateral_native_motion.py": {
+      "sha256": "19a50f28837f993b6c194577e9dfded1a879730bca128849d9f2e52c7b31ca6d",
+      "bytes": 4611
+    },
+    "human-mechanics-20261010/src/fit_positive_midface_carrier.py": {
+      "sha256": "3d7041cd8e2e9c7b91f70c7e29fc05808365d71573fb9a99a0465199c367ae6f",
+      "bytes": 7238
+    },
+    "human-mechanics-20261010/src/summarize_distributed_cycle.py": {
+      "sha256": "6f5dfc545a72065d0e2ca6d8d1f5021f78deada387a6d39a02b63489c97c8ffb",
+      "bytes": 3609
+    },
+    "human-mechanics-20261010/src/fit_positive_midface_carrier_v2.py": {
+      "sha256": "6eb2234a57d87c12a017b1f62549fbd53623824199a31bcce00d4d6cee187c48",
+      "bytes": 5648
+    },
+    "human-mechanics-20261010/src/audit_distributed_reactions.mjs": {
+      "sha256": "6da5f68c8ac045b4cc71f2a69d6e4e6e996d6b329eed6eee9b981b79d254858f",
+      "bytes": 3872
+    },
+    "human-mechanics-20261010/src/bilateral_case_io.mjs": {
+      "sha256": "bda33767cded4177ae6ebbbab62e3793c1f8bf4db68718abfa53fe7af1f0cf4c",
+      "bytes": 2685
+    },
+    "human-mechanics-20261010/src/bone_mesh_contact.mjs": {
+      "sha256": "bd42e10c4dde0134b1c44db1e74eea0e945b158c2ca9f10f0ce250b14048e242",
+      "bytes": 15765
+    },
+    "human-mechanics-20261010/src/transfer_bilateral_extended.py": {
+      "sha256": "4e57cefa1e7d1e3321e8d86feca4bd51da653c6da533f31bbe718043163c1974",
+      "bytes": 1883
+    },
+    "human-mechanics-20261010/src/audit_extended_reactions.mjs": {
+      "sha256": "0069a813650374fff1d140c4e436b3c491ba07fdca89fc2074af7759b10ab245",
+      "bytes": 2874
+    },
+    "human-mechanics-20261010/src/distributed_case_io.mjs": {
+      "sha256": "1217fc929693c35f7c3734eb1e5487d3595a81856196c8ba0d4bd9282ece1f31",
+      "bytes": 3344
+    },
+    "human-mechanics-20261010/src/transfer_bilateral_native.py": {
+      "sha256": "b7670c76e1db2178b70e9ec6aa15bbeef9a29e9065e450e30bd64473313fc91f",
+      "bytes": 1749
+    },
+    "human-mechanics-20261010/src/compare_cavity_control.py": {
+      "sha256": "8f2ec77787d44a2965f59c7aaee4e7197730023e8179558086b42d022cbc0a7b",
+      "bytes": 3006
+    },
+    "human-mechanics-20261010/src/active_fibre_fem.mjs": {
+      "sha256": "2d6443d28569f7480c33f150730163b99154a35dbd5b88c5d3b7be671270ac0b",
+      "bytes": 7083
+    },
+    "human-mechanics-20261010/src/embedded_surface_contact_fem.mjs": {
+      "sha256": "c567128d65be45d2103dfe58229d05c62e5219e63e4eac5668c2f94d6cb71652",
+      "bytes": 9580
+    },
+    "human-mechanics-20261010/src/append_native_cavity_continuation.py": {
+      "sha256": "743a7af87bb4615e9ad3fd7347962fd7d2d122d5f799c1b016a1bc387f176a68",
+      "bytes": 6067
+    },
+    "human-mechanics-20261010/src/build_bilateral_midface_volume.py": {
+      "sha256": "9f532f960312a1d04b3622721cd032a05b5fd7d818f744910c0707ec8960b769",
+      "bytes": 9633
+    },
+    "human-mechanics-20261010/src/zygomatic_support_parameters.json": {
+      "sha256": "09cf47bca64ac3072b0e99e10c9114f8803d140f2a8fc64196f017baf0d46f9c",
+      "bytes": 3484
+    },
+    "human-mechanics-20261010/src/volumetric_muscle_fem.mjs": {
+      "sha256": "b5d64d0c279b7933e3a3c06cb5a9eda3277b99862c734bfe483fd0108adbd652",
+      "bytes": 11715
+    },
+    "human-mechanics-20261010/src/zygomatic_support_build.py": {
+      "sha256": "e9c7b3285f2da7dc046099b0668ac4edc9d7b961f0655d720af1d8e740c6401d",
+      "bytes": 11747
+    },
+    "human-mechanics-20261010/src/append_distributed_origin_case.py": {
+      "sha256": "92f201ab05674b2d0c0ce5283c74d9a50e919ab46be2cc6d328a892de805f274",
+      "bytes": 9485
+    },
+    "human-mechanics-20261010/inputs/native_oral_charts_v16_mucosa24.npz": {
+      "sha256": "ef348176e1402a0afb3bd57b178323eb1e48b1a74919212d70ba85364c346e02",
+      "bytes": 610591
+    },
+    "human-mechanics-20261010/reference-source/LICENSING.md": {
+      "sha256": "b635c58a7ae93bf509d57ff2c681e7902b6bbb76fd08549e278fb98f9738a5d3",
+      "bytes": 3065
+    },
+    "human-mechanics-20261010/reference-source/README.md": {
+      "sha256": "96277e2170658226f6b0e8ea8d787c5c1d5e6c93ac20ec9750d6c6dc5219d382",
+      "bytes": 6696
+    },
+    "human-mechanics-20261010/reference-source/ASSET-LICENSES.md": {
+      "sha256": "5f86aee850a7cee5ba07c8282055443e0c3241bf22544dfce12b8025ce264cfe",
+      "bytes": 2434
+    },
+    "human-mechanics-20261010/reference-source/SOURCE_AUDIT.md": {
+      "sha256": "93f0156d86f8c66923d87b96728c16f8600632afe6e09f6a29e350bf9c4b7ea3",
+      "bytes": 10807
+    },
+    "human-mechanics-20261010/reference-source/SOURCE_PROVENANCE.json": {
+      "sha256": "3aa37927eaf828d56705188a39096df991b4e1a9c0c2db668b0f5e352eb5a28d",
+      "bytes": 8435
+    },
+    "human-mechanics-20261010/output/authored-bone-support-v1/manifest.json": {
+      "sha256": "239ebd969da02283578b5d020f41f18f3ab0263632df667af6bfe887068dfbb9",
+      "bytes": 2386
+    },
+    "human-mechanics-20261010/output/authored-bone-support-v1/landmarks.json": {
+      "sha256": "e704a1cb0b2d0586dc87433b8f2ff6eaf99b87c83c0c8abb16d281db45321762",
+      "bytes": 8508
+    },
+    "human-mechanics-20261010/output/authored-bone-support-v1/README.md": {
+      "sha256": "cf1c451206effcc292214cdaa92f4a53caaa4255e8fd0a660715e235deb0d44e",
+      "bytes": 4286
+    },
+    "human-mechanics-20261010/output/authored-bone-support-v1/bone_support.npz": {
+      "sha256": "a156c9b7cc342dec93688b096457633b681caddf3a150da6411b021f28819250",
+      "bytes": 684565
+    },
+    "human-mechanics-20261010/output/authored-bone-support-v1/mechanics_interface.json": {
+      "sha256": "6aa5f834c6e899d0d39bbb90049f9496a8a77b8c3dc2588d9265ab97d6a09755",
+      "bytes": 3771
+    },
+    "human-mechanics-20261010/output/authored-bone-support-v1/audit.json": {
+      "sha256": "e6031a21b9997de0f5e99a8cc1b8f961d029251817db5c9c1c5482048f16b697",
+      "bytes": 1962
+    },
+    "human-mechanics-20261010/output/authored-bone-support-v1/parameters.json": {
+      "sha256": "09cf47bca64ac3072b0e99e10c9114f8803d140f2a8fc64196f017baf0d46f9c",
+      "bytes": 3484
+    },
+    "human-mechanics-20261010/output/bilateral-distributed-mechanics-v1/annulus_attachment_separation.json": {
+      "sha256": "321146bcba91d7ba991dc7021551c08d70c387be19e8269b72165412d58875ab",
+      "bytes": 1895
+    },
+    "human-mechanics-20261010/output/bilateral-distributed-mechanics-v1/bones.bin": {
+      "sha256": "02d82a63c27fb25a586eaeef994de2405393ea4b56cbe8d5c4a4bde408e93d0c",
+      "bytes": 1752288
+    },
+    "human-mechanics-20261010/output/bilateral-distributed-mechanics-v1/domain.json": {
+      "sha256": "20c6726c8cd18760502c57134adff38ce41188e66ab50c2361ff25539ff74411",
+      "bytes": 843722
+    },
+    "human-mechanics-20261010/output/bilateral-distributed-mechanics-v1/arrays.bin": {
+      "sha256": "623ffa110a645fdef0fd4a1d34eacb6f3be52cb7daa31b5edd130fb98b1c701a",
+      "bytes": 6304968
+    },
+    "human-mechanics-20261010/output/bilateral-distributed-mechanics-v1/construction_report.json": {
+      "sha256": "13e5d1a5255174c6dad8e98516aaf13e4a717d8b6df871e054d81dc8c9be380b",
+      "bytes": 1017
+    },
+    "human-mechanics-20261010/output/bilateral-cavity-annulus-v1/native-binding-v1/binding_report.json": {
+      "sha256": "5c24e9dbebb743766ec3bbc6b3eb92bada41e4f24c0f46c1963eba90b18a377f",
+      "bytes": 10386
+    },
+    "human-mechanics-20261010/output/bilateral-cavity-annulus-v1/native-binding-v1/binding_independent_readback.json": {
+      "sha256": "da339c0f8cf1c5068f9c67c26bc0db62d8e8ada0cef4627c2e6721da8913a7f8",
+      "bytes": 1406
+    },
+    "human-mechanics-20261010/output/bilateral-cavity-annulus-v1/native-binding-v1/native_surface_binding.npz": {
+      "sha256": "07a84ba216a9a1f41ef3d1a6dd806ba0041bd01c734a10ba997500b30e4cfd0a",
+      "bytes": 4208424
+    },
+    "human-mechanics-20261010/src/prototypes/exact_native_rest_retarget.py": {
+      "sha256": "dabba6c92da3c75b6524a0806237f2f54785dbe2af149c02bc32d69471b45ca3",
+      "bytes": 23417
+    },
+    "human-mechanics-20261010/src/prototypes/STATIC_BONE_FEASIBILITY.md": {
+      "sha256": "5e165df396274b4c89f4589dd4e403940a19354ef327fcd20674190351e324ff",
+      "bytes": 10120
+    },
+    "human-mechanics-20261010/src/prototypes/static_bone_swept_bvh_distributed.mjs": {
+      "sha256": "9d7c5ce7b72e95df4c2edb522f28d13b05d48c241efeb0ef51641d72214c607c",
+      "bytes": 11863
+    },
+    "human-mechanics-20261010/src/prototypes/refine_oral_midface_interface.py": {
+      "sha256": "84893996d6287c17267b3a6484ce2d0e364a1042bd6d5cefabc7e3060d986cfe",
+      "bytes": 8155
+    },
+    "human-mechanics-20261010/src/prototypes/complete_boundary_contact.mjs": {
+      "sha256": "d0ab91d6d922dde7f084c4dec57d5ed9e32a49a56880a98e6eee539471c73448",
+      "bytes": 15200
+    },
+    "human-mechanics-20261010/src/prototypes/verify_distributed_attachment_replay.py": {
+      "sha256": "371f1df8fbb308ed7b90a3f3150a8ce8b4a636778f32568c2db6c2df5baca870",
+      "bytes": 3808
+    },
+    "human-mechanics-20261010/src/prototypes/freeze_distributed_attachment_candidate.py": {
+      "sha256": "a4b482f9648820dcde6b70718f887fc5daae146561de01ba2432887ddd47c887",
+      "bytes": 6281
+    },
+    "human-mechanics-20261010/src/prototypes/distributed_bonded_patch.mjs": {
+      "sha256": "d2ff45e85bbbb2657441ba8c945ed7c42524898de3d62d98961d7552b1db919f",
+      "bytes": 9184
+    },
+    "human-mechanics-20261010/src/prototypes/redesign_distributed_origin_footprint.py": {
+      "sha256": "078bbb3b3e02e95a41955f9d5060dbc7f85ded0798e34cf889e5b52d953c5989",
+      "bytes": 3787
+    },
+    "human-mechanics-20261010/src/prototypes/guarded_static_bone_fem_distributed.mjs": {
+      "sha256": "b120a970bc35536c35e8fc4efb52686ed95cc2f8477a43ddb6377b8609b4383f",
+      "bytes": 8595
+    },
+    "human-mechanics-20261010/src/prototypes/guarded_static_bone_fem.mjs": {
+      "sha256": "2decfa027a7239dd2e8dab6a729a9cdf8b620fd4aa3548ce2a8cc84f2ca6decd",
+      "bytes": 7993
+    },
+    "human-mechanics-20261010/src/prototypes/build_passive_commissure_proposal.py": {
+      "sha256": "8705c73dc19c8a35de6a36092690944db1a6d7d248ab2b9a80068eec5a85f6c8",
+      "bytes": 15796
+    },
+    "human-mechanics-20261010/src/prototypes/audit_revised_distributed_attachment.py": {
+      "sha256": "469b5da1f64cbabd0686d5533e0d9e0fbdf1e47ea05dcec0f406b3a7e8df5c97",
+      "bytes": 4712
+    },
+    "human-mechanics-20261010/src/prototypes/build_revised_distributed_attachment.py": {
+      "sha256": "071efe4378af7f32f8e69d0bc9ac4de9a4c4f4a05ca96e2a04b4eae7d6ce2212",
+      "bytes": 5950
+    },
+    "human-mechanics-20261010/src/prototypes/exact_triangle_contact_feature.mjs": {
+      "sha256": "47460ee9246ee55549c22f30032f233ab52dd1e45980828ca80b2cfe9a082ebc",
+      "bytes": 4942
+    },
+    "human-mechanics-20261010/src/prototypes/audit_bilateral_existing_bone.py": {
+      "sha256": "818d7a24b57c8fef71479f30acc1e6fb4076c60397f73fa2bfc31956b788ff70",
+      "bytes": 1748
+    },
+    "human-mechanics-20261010/src/prototypes/build_bilateral_native_binding_oral24.py": {
+      "sha256": "9e2caffb66797b48c15a1517cb0b822577ff7a18d19ddd09f1ae67f87f62efdd",
+      "bytes": 34226
+    },
+    "human-mechanics-20261010/src/prototypes/COMPLETE_BOUNDARY_CONTACT.md": {
+      "sha256": "d50dadb6e22ddc8b027bf95186c8ebbeaf7629a54afe8ebe45b97ec9ad0fe416",
+      "bytes": 14273
+    },
+    "human-mechanics-20261010/src/prototypes/design_distributed_origin_attachment.py": {
+      "sha256": "33a04de6d590f0fa460e7bdb9ae589e19f22d6ffc383e5c36c0c88d691ea91fd",
+      "bytes": 8092
+    },
+    "human-mechanics-20261010/src/prototypes/visibility_annulus.py": {
+      "sha256": "e5e3c6a9ecaaf74b81c1f3b4f79e670794b631372295244a1d8cf46850eb343d",
+      "bytes": 1320
+    },
+    "human-mechanics-20261010/src/prototypes/build_bone_clearance_depth_bounds.py": {
+      "sha256": "2ef50c93630a71f5df48e094f42e018605ac8be52f4313dd9e7383faec4660a0",
+      "bytes": 4254
+    },
+    "human-mechanics-20261010/src/prototypes/static_bone_swept_bvh.mjs": {
+      "sha256": "4269a5c5fe6b5420cfbc427e5f518a9c772bd3ad18c700e29e6bc33a652255a8",
+      "bytes": 9980
+    },
+    "human-mechanics-20261010/src/prototypes/build_distributed_fixed_collar.py": {
+      "sha256": "ee2edb2dc4f8052e77d1a827f18b639c5a6cfee7155e1c6d954c95e88dae7659",
+      "bytes": 6941
+    },
+    "human-mechanics-20261010/src/prototypes/design_finite_origin_attachments.py": {
+      "sha256": "d2e0418ce22b7c631c446cea7d0aed2997d88709b0d6a40b5999183a75940e90",
+      "bytes": 15578
+    },
+    "human-mechanics-20261010/src/prototypes/audit_connected_midface_boundary.py": {
+      "sha256": "499dfc0621817ed0de0cadf3fa9bf8263f3e66edf8bd95bb2559eeffb61a7029",
+      "bytes": 14792
+    },
+    "human-mechanics-20261010/src/prototypes/build_bilateral_native_binding.py": {
+      "sha256": "a20fab444a1d158fc2b14aaf1c22c76c15fa9f95998c1474fe844a407b3b5524",
+      "bytes": 18625
+    },
+    "human-mechanics-20261010/reference-source/tests/compression-barrier.mjs": {
+      "sha256": "13506c0910f8dc2a23f7bbff616a5bb3d18ada9d9fd3e35c5992f886828451cf",
+      "bytes": 4579
+    },
+    "human-mechanics-20261010/reference-source/tests/mechanics.mjs": {
+      "sha256": "83ced6153b7580ec39e8678e1269b19529f2cc29441fbbdaa27ae594521b666d",
+      "bytes": 4335
+    },
+    "human-mechanics-20261010/reference-source/tools/build_tissue_transfer.py": {
+      "sha256": "5ca8709d8ea3f0f5ae285b0a7c80077d6fcbd401d0c73e0be665869681d0c623",
+      "bytes": 5540
+    },
+    "human-mechanics-20261010/reference-source/tools/build_volume.py": {
+      "sha256": "55a8c4a63a732b310240cf096904784180b616a70ec6d0ae319de1f93ee8f67b",
+      "bytes": 16790
+    },
+    "human-mechanics-20261010/reference-source/tools/tissue_calibration.py": {
+      "sha256": "defe7bdce1e83f6403c5915bfa3c73940f8eba613f5a3fe75a9419b2944817a0",
+      "bytes": 14444
+    },
+    "human-mechanics-20261010/reference-source/tools/build_neutral_tissue_assets.py": {
+      "sha256": "3c37e04e3dc19f6731d19eadda97572d7f9bd1053ddeef4040abf60d2704bb2f",
+      "bytes": 8641
+    },
+    "human-mechanics-20261010/reference-source/tools/build_tissue_runtime.py": {
+      "sha256": "8db369cac3503da22f09d1c6c40e8844a40e3652653f3b8e3d1856156f3716fa",
+      "bytes": 7572
+    },
+    "human-mechanics-20261010/reference-source/src/shell_bending.js": {
+      "sha256": "a2fa7c637bb8b32cac2811a993c024c99f89ca16166a5d4c1ff6e1335606a906",
+      "bytes": 1337
+    },
+    "human-mechanics-20261010/reference-source/src/layered_fem_surface.js": {
+      "sha256": "2686c61711af966fb8ca2fc7359f6362b6a0db14b6bb0b496c3f9af93df2b294",
+      "bytes": 10999
+    },
+    "human-mechanics-20261010/reference-source/src/tissue_cpu_worker.js": {
+      "sha256": "d6521878a0598d4c440fee1bc32ce4746493af27cfac1efa1e28ea97d9f07e82",
+      "bytes": 7070
+    },
+    "human-mechanics-20261010/reference-source/src/tissue_cpu_backend.js": {
+      "sha256": "4c625aee2d7ea5417846dccd40375f8af40d2893250c589a3562f3ec8e1cc3ed",
+      "bytes": 2311
+    },
+    "human-mechanics-20261010/reference-source/src/layered_fem.js": {
+      "sha256": "8618d5517de196dd3dae905d598a69eaf14555682895c80dcfc994e2501dbc71",
+      "bytes": 20090
+    },
+    "human-mechanics-20261010/reference-source/src/model.js": {
+      "sha256": "a7071a805e31453f64bd65e263066f3b4b6f1bfcb4cee6071f88a72bfb49c031",
+      "bytes": 3704
+    },
+    "human-mechanics-20261010/reference-source/src/layered_fem_transfer_math.js": {
+      "sha256": "9c62b7ff3c36b7d2686d409c0016704b0b63054a9daee4c6262a1ffcae1644b1",
+      "bytes": 1053
+    },
+    "human-mechanics-20261010/reference-source/LICENSES/GPL-2.0.txt": {
+      "sha256": "189b1af95d661151e054cea10c91b3d754e4de4d3fecfb074c1fb29476f7167b",
+      "bytes": 18431
+    },
+    "user-human-preferred/recovery/restored-project/output/coordinated-orbital-scale-v53/anatomical_semantics/authored_lip_lid_semantics.npz": {
+      "sha256": "d2587be48722543d557a329870f78b29125d1bfa0f0d0aa54d0fc8adc2dce811",
+      "bytes": 559964
+    },
+    "user-human-preferred/recovery/restored-project/output/coordinated-orbital-scale-v53/anatomical_semantics/semantics.json": {
+      "sha256": "c51166c3769a9e8aee5ecc1bc5f66a0d644586398b2e7659be55ac08483e43ea",
+      "bytes": 630
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/mandible-v3.log": {
+      "sha256": "5bad51f5962291cec2792f7a26e9e329f316e60e883d2d66f2233ef01b3fb970",
+      "bytes": 2506
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-union-v1.log": {
+      "sha256": "b395838501ebf20a1ef874cbaea5ea60dc8c43eae1f2b18c19b420a3c4adc44e",
+      "bytes": 2464
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/replay_layout.py": {
+      "sha256": "e664a6d5617f754eb9145cf7bac1d751b02adf4a3f42c51c87999119360a4a50",
+      "bytes": 2144
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/replay-extended.log": {
+      "sha256": "f18f8010a2ea09b4acbd7c34974670542993cecf6abffb417b2fc644210d9757",
+      "bytes": 24035
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-union-check-v1.log": {
+      "sha256": "dc0ba4d10d2e9c8458da4f1888e72c79bc0361bc249d58ba3a030b46ac7b05db",
+      "bytes": 1985
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/routes-v8-release.log": {
+      "sha256": "f3662e7d28d85e1a7a25fb19e5e4ba1652c2b6ff400b82adbe22491c27cbf399",
+      "bytes": 2712
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/CLEAN_LAYOUT_REPLAY.json": {
+      "sha256": "1b289b493f12c58af77d36e05ead8f6fb27b6d1ea75c8c18c8e8703663063492",
+      "bytes": 1839
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-reference-v7.log": {
+      "sha256": "5e5ec235badae67f39e7cd926647f3103c8182f42b9d2e63f521c435f32d67d1",
+      "bytes": 2967
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/replay.log": {
+      "sha256": "1c6e348d32d282533ae62286303af655b89a600dcb2d04e91af26758c2e66ffe",
+      "bytes": 14903
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/routes-v8.log": {
+      "sha256": "e8a0791dc99cb824828fa25113dfbb3364835126ab5f8087138b6176d241d3c6",
+      "bytes": 4550
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/mandible-v3-parity.log": {
+      "sha256": "bd0a8ca61a614300fd0f76c39647b6d61aa15192d4e8635eeccb6d2e6e58c44d",
+      "bytes": 2528
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/ANATOMICAL_SOURCE_CONSTRAINTS.json": {
+      "sha256": "ca5ca6b268d9be83d151929373b060f679c0d591de0632f1f4ef5a7a4caa707c",
+      "bytes": 3027
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/CLEAN_REFERENCE_REPLAY.json": {
+      "sha256": "b563edcdf0258adb2eff8bf7a21225d4c940c3dc377301fc3ce809540e42ca18",
+      "bytes": 1748
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v6/surface_checks.json": {
+      "sha256": "101e324544bc94ceb7c3fcf747692694be033eef7d650d302484e1f46f491c30",
+      "bytes": 5449
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v6/report.json": {
+      "sha256": "947039848a269bbce501f5c18a867f3d8fe2e21195727d172b861ebba6b19207",
+      "bytes": 3977
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v9/parts.npz": {
+      "sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+      "bytes": 247831
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v9/report.json": {
+      "sha256": "67d85fa376ad2dcf3b4a98a4db76ca27627bf706a996a128a1952d23b13eded6",
+      "bytes": 529
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-tet-v6/report.json": {
+      "sha256": "e60fbee4cadba873ecff8c9de37625676fb387b464d9992fb8810c45436952b6",
+      "bytes": 1138
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-tet-v6/quality_report.json": {
+      "sha256": "1e6defb0fce610f1318de66f6ab9eee5e756077d58c66dcc5c7e420502bc4599",
+      "bytes": 6403
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v8/RELEASE.json": {
+      "sha256": "c0a8f433fdc5646763cfdd9615aba2c3ca527fe73ef243b994e47ba7ef1b701a",
+      "bytes": 1677
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v8/mandibular_final_parity.npy": {
+      "sha256": "b4093acf4378486404e70718f6e65033baeb1669c4334b490ec7edb8236fde3a",
+      "bytes": 46736
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v8/surface_checks.json": {
+      "sha256": "61903246464dccb8b44f0599c3a98ed8a671bebebe6d898403d16b7d5ea9f2f1",
+      "bytes": 4736
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v8/parts.npz": {
+      "sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+      "bytes": 263344
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v8/report.json": {
+      "sha256": "08a9397691f07b69118f7e8f9e5369073e1c92539bbe2129efe9792600125f28",
+      "bytes": 5089
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-reference-v7/geometry.npz": {
+      "sha256": "c5e9978825b4073a17a29a91c867fd6fe13260aa64b96128c3236b9f026e31d9",
+      "bytes": 569545
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-reference-v7/report.json": {
+      "sha256": "423ef5a7999fe1806d8b94cb0fb597ae94e8a3d34e7a3829ddba314e58caf805",
+      "bytes": 1961
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-reference-v7/attachment_face_ids.npz": {
+      "sha256": "9544d9c0ea2dd535764dd0b2c2581cefba8cab88e9c40f02e1bce0ec51bc2d61",
+      "bytes": 1489
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/build_routes_v6.py": {
+      "sha256": "bd99c251171a0b5123f38ca4177b6267d526882116592e8c065201cbb92fba9b",
+      "bytes": 9221
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/finalize_shared_reference_v7.py": {
+      "sha256": "11f6bba8e4817f2aee342eedd74f9e181ff1cc99dedf590cb25ee88033066329",
+      "bytes": 3953
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/snap_origin_bone_edges_v8.py": {
+      "sha256": "4a85792bc253ec80a4c76873e8e509e8a3b644f157208315d001e81d6dedbdfb",
+      "bytes": 1501
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/check_shared_union_v2.py": {
+      "sha256": "df4f6c4fab98eab9af1a246409dea308aa98ca05c10263c476ed81451454ed31",
+      "bytes": 3450
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/check_routes_v8.py": {
+      "sha256": "d068b54440ef8c04784f4b395832edfcf45bebdea64c0bde38655568ec706f83",
+      "bytes": 3694
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/repair_dao_root_interface_v7.py": {
+      "sha256": "eafe9557ac9fe551d56b1bf539d4bffef8514f649d26760c6d6e3ff41ed9e0de",
+      "bytes": 2786
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/probe_layout.py": {
+      "sha256": "255a89d516e6b2ea0ccc54781b102e0c0e3b53bfd5139e9872db428238185a88",
+      "bytes": 938
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/release_route_layout_v8.py": {
+      "sha256": "9e334f62a618dd69750cb2e9bf5fa4c33452c9a1fb78911bb9b87da999c351cb",
+      "bytes": 3027
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/check_mandible_v3.py": {
+      "sha256": "569b62a5f469456c0b843a7469ab1d34104f3616f8a7ab9ee95a518f83eba680",
+      "bytes": 2294
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/check_shared_union_v1.py": {
+      "sha256": "df00e1974ceed50a7cee4b0098b76576c267d7dd0dd8418d9a7e5d25d1507d5a",
+      "bytes": 3450
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/tetrahedralize_shared_v4.py": {
+      "sha256": "3d5b0876ecab25debd88d5a39c86cc01a7bd211d6060741c080ff585e7377830",
+      "bytes": 3761
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/resolve_mandible_parity_v3.py": {
+      "sha256": "cb062825830e62e0cda0efc42f2f5e50d66b73dee8fb09d574b6682c5fd60609",
+      "bytes": 2210
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/build_mandible_v3.py": {
+      "sha256": "60df148e89bc67d962be91753ab42abdff2fa90c05e07f632b167c0a1f2e6efd",
+      "bytes": 5172
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/resolve_flat_diagonals_v6.py": {
+      "sha256": "02451999dc51b746dccf9f509fbb9cc47a9082bad56810470c5e4ab3e9c855ae",
+      "bytes": 3081
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/report_tet_quality.py": {
+      "sha256": "6e9ef9c615b15d00bd88080603563180caa1220e741d4e8167e0617a56097a6f",
+      "bytes": 840
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/build_shared_union_v1.py": {
+      "sha256": "1d8a379277ea6aebda60fa5b5dbe7862f5d7484a961efa54214dd6bf14718b05",
+      "bytes": 4294
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/build_shared_union_v2.py": {
+      "sha256": "fe5d82c336daf3b36636ba9364cdb9da348062ed2fb9e96a02127e59547c9431",
+      "bytes": 4807
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/src/resample_junction_v9.py": {
+      "sha256": "f320136c03c756b4b2f93823e1b4263d11cdd0e8c3f8287837871bccc4f2d5ba",
+      "bytes": 1261
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v1/surface_checks.json": {
+      "sha256": "66fc79fa06ebd527d9104e172e1b4285f315a02ee207e210bbad933a7fdadf6f",
+      "bytes": 960
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v1/geometry.npz": {
+      "sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+      "bytes": 280362
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v1/report.json": {
+      "sha256": "4fb074f2d27b54685e4062d0784635c1c00ae3d8e635c9622294bf1bd07f8601",
+      "bytes": 1433
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v1/attachment_face_ids.npz": {
+      "sha256": "fa3d416cf685a38bdd7ab4833a331777c9881110a9f5b3626256007ae3779f51",
+      "bytes": 1346
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/reports/selected_head_Z_intervals.json": {
+      "sha256": "b87c2de2af87d56523c05226ee68831b0bb184eccc4ba1bd57c26ae2b1e4ae7c",
+      "bytes": 30868
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/report.json": {
+      "sha256": "6ee254a1de920ec51302cbb39b0016762cedf1bdc9754eebdfbdc43f367dd924",
+      "bytes": 699
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/quality_report.json": {
+      "sha256": "f675245f25b4de3976d1111330d576d8201cbd698778952c103b4a7cecc8e466",
+      "bytes": 6413
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v2/surface_checks.json": {
+      "sha256": "118b00a76ed1ebe2051320550e7c34bbec8f8fb295169294715fc1bdfb04ecfa",
+      "bytes": 960
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v2/geometry.npz": {
+      "sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+      "bytes": 261785
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v2/report.json": {
+      "sha256": "705da8e373933226f96068a82bef0ca0d7dedcaaf4c5f87910bf0043466393bf",
+      "bytes": 1481
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/shared-junction-v2/attachment_face_ids.npz": {
+      "sha256": "bf537c3ecfc5424c8864ec5fa9c1af5aa5b6650ee81a5f4b4372e85b16565851",
+      "bytes": 1340
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v7/surface_checks.json": {
+      "sha256": "d12991fe39e737ec012bd2867ad255b0926b8c60693b278a6355ef3890e7863c",
+      "bytes": 5165
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/route-layout-v7/report.json": {
+      "sha256": "4a514f70e15d201509bb4c03dc83074001faa186563f9f22026bf9021bbbfc90",
+      "bytes": 4612
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/reference-tet-v7-audit.log": {
+      "sha256": "f170490ee7b86aa9f3374f3f8118995c4e8c367265eb68b925faa225ea0f65b1",
+      "bytes": 3394
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/audit_mapping_v1.py": {
+      "sha256": "0b8075e42ea01ceef3fc51342cd8c68ccc75ef5ccb46e409475f525d849026f5",
+      "bytes": 5213
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/reference-tet-v7.log": {
+      "sha256": "1ba6b0b5083049b729ce362dece97290321416828ed0fc7ffb9d6f1645d38cb6",
+      "bytes": 7187
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/test_mapping.py": {
+      "sha256": "f7eeff23f2682e6c845fc59f85083f48cc93fc8509fa8c575ea19777fb45e00f",
+      "bytes": 4404
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/README.md": {
+      "sha256": "cb4c6cacbe17e3e86b272a522b79baa3e03676c65992fb74027fbaf30f8c1421",
+      "bytes": 5196
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/map_layered_fibres_v1.py": {
+      "sha256": "c371b4ff42fc276ec9d541cc5535c822cf617f1e889325efa3f254ad9939be94",
+      "bytes": 22720
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/unit-tests-v2.log": {
+      "sha256": "535f236bd29a2b3ec0cb11f925616b817d4a06af48155e7bdd4fe0e5511a2f3d",
+      "bytes": 1980
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/mandible-v3/parity_resolution.json": {
+      "sha256": "0fae029cf7f83215fd43c916c8719b9c49b5b6b096b4597f036b3c9ae8e9ddcd",
+      "bytes": 1507
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/mandible-v3/geometry.npz": {
+      "sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+      "bytes": 698532
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/mandible-v3/report.json": {
+      "sha256": "c315d613d2b0c5f7791aa034fc2c085e7910aab519eca964c21dd4cc6c5e2eca",
+      "bytes": 1036
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/mandible-v3/surface_check.json": {
+      "sha256": "a76906528b73a904ffa32ddbe63824df10eb20083d77bb8716d6f5c4a73c55f1",
+      "bytes": 407
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/reference-tet-v7/RELEASE.json": {
+      "sha256": "5448e8d45a3445b3ac569f8652be542c8e8eb588782cc0ff54b48ec654eba2fe",
+      "bytes": 3867
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/reference-tet-v7/mapping.npz": {
+      "sha256": "764983979ea0dfa04bf667670b392cdaa289c5a11438a9291a53de067799c629",
+      "bytes": 1393178
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/reference-tet-v7/audit.json": {
+      "sha256": "fd13fcc57ded6b847c1bbe204ca919157c80deda671de136f1c7dc598bb83dc2",
+      "bytes": 1397
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/reference-tet-v7/report.json": {
+      "sha256": "039c23aa2893856c0e6d02bbf4b98a188420e50690f12df4796a2f36e849c4f7",
+      "bytes": 8840
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/fiber-mapping-v1/reference-tet-v7/families.json": {
+      "sha256": "49b8912b442450aaf8dbd0de5728c4d0557e47c9c9074877ef6b1f2d82e8adbb",
+      "bytes": 2219602
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-solve-continue-v1.log": {
+      "sha256": "b884bb731e30bb1ede05bb7cfed926823cc8cf2ba35f232621da78cef1d98fca",
+      "bytes": 28562
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-surfaces-v1.log": {
+      "sha256": "110f8159781c22eacacb23d348a8b699830571a17f06321e43a03e4a0166d843",
+      "bytes": 2721
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-skin-check-v1.log": {
+      "sha256": "cdcfcd11a6491d8b8d7ea92f5849dc56bca7b75e731c12de6653aa4ce6faed66",
+      "bytes": 2754
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-skin-binding-v1.log": {
+      "sha256": "3bceac5cc171eb1a137f7e8f3fa3972c545ba2d9a5240a37f52d843f1936a2ba",
+      "bytes": 2991
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-reaction-v1.log": {
+      "sha256": "687aca84e9c955835bc7224ba26d34d664ca0ec333421594b20e9db534fcc9fc",
+      "bytes": 5400
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-solve-v1.log": {
+      "sha256": "161ecfd736bb8da548b1ea7e6c7b14036317700f00b68dd1936623d17787da22",
+      "bytes": 14103
+    },
+    "human-preferred-v53-mechanics-20261011/passive-insertion-build-v1.log": {
+      "sha256": "c368ba6583e6bb7c4e76887543ec979a617fb428cc5ccedc7682364c202bc903",
+      "bytes": 2548
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-release-v1.log": {
+      "sha256": "d6144bfc614eb61c11c5fa08beb5a1822a74f4391fbbf3c96b17b337b08ec24e",
+      "bytes": 20360
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-release-refine-v1.log": {
+      "sha256": "41fd27690ad9b78f3d0ce7631a9684dc2aad68324dd9021ef95f68b6b0c5c991",
+      "bytes": 7977
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-solve-refine-v1.log": {
+      "sha256": "a45d0bf1e64a89bf11b888c67bf9bb0fce27fbff47b5271c8cf4c5be84d9dd13",
+      "bytes": 18650
+    },
+    "human-preferred-v53-mechanics-20261011/loaded-solve-secant-v1.log": {
+      "sha256": "4f6a45088307f6c6f1f0ea1ea9d9e95fa79cb65c210142da673cfc6764c37a14",
+      "bytes": 8801
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-skin-binding-v1/binding_report.json": {
+      "sha256": "568c69e55a221f3596de73a9cd2d9daefd8d11ccf9e3db030f7d868a3a94cff6",
+      "bytes": 1106
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-skin-binding-v1/binding.npz": {
+      "sha256": "2789c9a6853999116af8b9aaef87416f3a6389be3ec8f925f07eaf869fc12527",
+      "bytes": 14640
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-reactions-v1/plot_node_forces.json": {
+      "sha256": "c86b3b6c914dbed217f1713765c6f295d11a4ab01620828d01a0c8fcc4080205",
+      "bytes": 135424
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-reactions-v1/report.json": {
+      "sha256": "cd873d4d7b28a12b319ab907361ba8f596909eb374599668f148602d12aee6e0",
+      "bytes": 8633
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-reactions-v1/audit.mjs": {
+      "sha256": "13c3ec371c8735cf278a9fe8446e5e3fc65b0512a7cd69c68be9b85b66510df3",
+      "bytes": 6511
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-reactions-v1/secant_unit_test.json": {
+      "sha256": "659c0ec1a933312dc76a34d05816ae702fa86d9bfcef09343a887deeb096f18d",
+      "bytes": 258
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/released-0-checkpoint.json": {
+      "sha256": "043a83c7ce183e374994c981b653aaed421f8b1e6b001e863c97bbaabc45df51",
+      "bytes": 63107
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/released-0-refined-checkpoint.json": {
+      "sha256": "7b81a5b27936e62cb76b43fe3c9f92ebcf43a08a183d001b0be23b7d21c8a7c1",
+      "bytes": 63097
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-checkpoint.json": {
+      "sha256": "f84410e808cc06c1792e468fd31af6db476168a7224a4099ef66415721d2405e",
+      "bytes": 63044
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-secanted-state.json": {
+      "sha256": "4649267d9cdafdb0595c454c95a376b5fec840730df6dfa453f80a232407935e",
+      "bytes": 72946
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-equilibrium-state.json": {
+      "sha256": "dd562616fb1b15106eed5118888e2d6e1ae519cae50c44b2f08e5a7468cb5b3e",
+      "bytes": 92675
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/neutral-0-state.json": {
+      "sha256": "18d9acb5765e6d2ca706f486920a2cc1fc2dc921acd6ab11f089ee44e305c399",
+      "bytes": 66918
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/released-0-state.json": {
+      "sha256": "8e6aeea133e8e63ba343dba1c4d7458baec8db860ecddf952c87304270d1c03a",
+      "bytes": 79574
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/released-0-refined-state.json": {
+      "sha256": "db0eb07d421fab1a9738cd5cef32e0c356a94c55228dfaf261f05a286d6cd98c",
+      "bytes": 72095
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/neutral-0-checkpoint.json": {
+      "sha256": "f0953a4310b5f9cbbe7847e4da30b088404e70cd7e60dee1c79ec5f8e00cd643",
+      "bytes": 63008
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-state.json": {
+      "sha256": "8c19a40a4988039bdc7edacbf53643c95b8d691ddc8743dfb0dd47cfe90e0b50",
+      "bytes": 76112
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-equilibrium-checkpoint.json": {
+      "sha256": "1e410baf612093ce6de5ce1c3672c0d56144840c09e926f86b72b8c14cde5fd7",
+      "bytes": 63167
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-refined-state.json": {
+      "sha256": "0099723a25e9692b3287f1ff2c8585c64a1fe8705118f35791cd529747cf9851",
+      "bytes": 82730
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-secanted-checkpoint.json": {
+      "sha256": "facb96e555f1c62af650d27a0fcd4e1f80c671dfbd98247144b3efe2bfe8117a",
+      "bytes": 63106
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-equilibrium-v1/right-02-refined-checkpoint.json": {
+      "sha256": "0d30e1c95c6c1f6b08702ab9163570f5bfa66f0e87832e902c52e88db13480dc",
+      "bytes": 63134
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-release-validity-v1/surface_checks.json": {
+      "sha256": "4c49e24e2ff40b5abf0517b4766028eee2ad3ed064169a4ab340fe93dc921bfb",
+      "bytes": 1194
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-skin-states-v1/right-02-secanted.npz": {
+      "sha256": "ff6ed0860767fb67c23c502e3dfb4dcc04879af293502e4223259bb7947a597d",
+      "bytes": 28387
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-skin-states-v1/transfer_report.json": {
+      "sha256": "5036eabf0e39ecbbb011f1145b69ed76937b9909b1256ac10a3e79a956902925",
+      "bytes": 1323
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-skin-states-v1/neutral-0.npz": {
+      "sha256": "9a02123543e2436c1349622aa94075c488cf4671d04805daab9c52a7ec32879d",
+      "bytes": 23136
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-insertion-v1/geometry.npz": {
+      "sha256": "9bc6a0def6a383e3eefd02a80966a7a0793549f5f3af06b6c3e29844f861c1ac",
+      "bytes": 952897
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-insertion-v1/report.json": {
+      "sha256": "b4bb7c92078876e2a4d772c22d3fd0ad9cea734673daddf544c61601b88e6349",
+      "bytes": 1379
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-validity-v1/surface_checks.json": {
+      "sha256": "3af1d44b7f3a9f1c8594a97901176b1fa509fdfd24034d52604a0032fbf42d99",
+      "bytes": 2375
+    },
+    "human-preferred-v53-mechanics-20261011/src/create_loaded_cheek_case_v1.py": {
+      "sha256": "9c47eb5e44bb51cf099b52fe119d6e43fb5266972c4417695c3ed5d961a23c5b",
+      "bytes": 5266
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_loaded_cheek_surfaces_v1.py": {
+      "sha256": "9b541f6ad6123e523968d49ded6a8b36f36ea7ebbc87398fbd79e95551d8830f",
+      "bytes": 3493
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_loaded_skin_proxy_v1.py": {
+      "sha256": "50900d83e53ff0962b416e41b8670c95c57cbd9f7d482556c7ae6672526178ee",
+      "bytes": 4365
+    },
+    "human-preferred-v53-mechanics-20261011/src/solve_loaded_cheek_v1.mjs": {
+      "sha256": "32b206f3b8313b02484025edd124106a4f71b559910ef3ce1d007afa244098e0",
+      "bytes": 5550
+    },
+    "human-preferred-v53-mechanics-20261011/src/check_loaded_release_v1.py": {
+      "sha256": "f2093023af0b0c3f3367394df459d1ed262cd393ae574a032c4d8685ae1dbb1f",
+      "bytes": 3490
+    },
+    "human-preferred-v53-mechanics-20261011/src/test_fem_secant_search.mjs": {
+      "sha256": "92ff692acdde790e9da6263cec803c5124f06a2e3e121fec37eba857f305d9f5",
+      "bytes": 1032
+    },
+    "human-preferred-v53-mechanics-20261011/src/solve_loaded_cheek_subspace_v1.mjs": {
+      "sha256": "13fb52781eebaf94b08e669d372ce55a22d5fda7422bca7ccbd8c00d6fe935a9",
+      "bytes": 5576
+    },
+    "human-preferred-v53-mechanics-20261011/src/bind_loaded_skin_proxy_v1.py": {
+      "sha256": "86ab2ab93bc4685d00c3bca516f685191e0721a32472a177ae45c620c9d65598",
+      "bytes": 4912
+    },
+    "human-preferred-v53-mechanics-20261011/src/fem_secant_search.mjs": {
+      "sha256": "d6144a999b43be5f3e45d42c85ba25428860df34f686ec2643e86f6c37b4ff7e",
+      "bytes": 1617
+    },
+    "human-preferred-v53-mechanics-20261011/src/build_passive_insertion_v1.py": {
+      "sha256": "6aaa56ccfd0c78356ff7ee8ddd80fb079f69731445c647a28760dbf438983074",
+      "bytes": 5988
+    },
+    "human-preferred-v53-mechanics-20261011/src/solve_loaded_cheek_secant_v1.mjs": {
+      "sha256": "90e6ad4b4d1628b7e6646c9236abd06292ffcf70545b88036db9891d6eae8803",
+      "bytes": 5673
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-case-v1/bones.bin": {
+      "sha256": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+      "bytes": 1752288
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-case-v1/domain.json": {
+      "sha256": "eba0ed5e194760166fdc5dc7e4c6cff2eb34ebed638e8804ff142ebf76ce8ee0",
+      "bytes": 155288
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-case-v1/arrays.bin": {
+      "sha256": "503ce402f2e2795b61c56c6bfcb05ab3d6e1dbce519a4d5b967295f766ecbe61",
+      "bytes": 456296
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-case-v1/construction_report.json": {
+      "sha256": "51b208a1938444246ba261c9a83d62438f1487d54b378ba8538591c2beb29560",
+      "bytes": 762
+    },
+    "human-preferred-v53-mechanics-20261011/cheek-loaded-skin-validity-v1/surface_checks.json": {
+      "sha256": "c900b39167bccdc5f5c6c5aedf827f1e9ba28837c07ce83272230d0ff2be4568",
+      "bytes": 1828
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/resumed-source/parameterized_bonded_patch.mjs": {
+      "sha256": "7aca51322b29cd51a083400735272c9535894cc70ed218cbb2564564ce0005eb",
+      "bytes": 5902,
+      "status": "new focused-test infrastructure; no integrated pose acceptance"
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/resumed-source/audit_rest_case.mjs": {
+      "sha256": "bdc07bfd23ece87003ad85fa7c63b86fd393347ac13e365a3307286f9592a4c2",
+      "bytes": 2991,
+      "status": "new focused-test infrastructure; no integrated pose acceptance"
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/resumed-source/parametric_triangle_contact.mjs": {
+      "sha256": "4dc676b7da587643f88fbce8b23e3bbc9a80a5f864aa439e288c093fdfa2ef28",
+      "bytes": 5227,
+      "status": "new focused-test infrastructure; no integrated pose acceptance"
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/resumed-source/guarded_static_bone_fem.mjs": {
+      "sha256": "a3a7fbfbb32b9bf3c5c916bcb2a2eb79eeea4596567fb7be144bdb39bf03c947",
+      "bytes": 8610,
+      "status": "new focused-test infrastructure; no integrated pose acceptance"
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/resumed-source/test_parameterized_bonds.mjs": {
+      "sha256": "632cf73f79bbe2da3afd11898affe386b5b7554cbd3af39362a66631166e8f92",
+      "bytes": 2065,
+      "status": "new focused-test infrastructure; no integrated pose acceptance"
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/resumed-source/static_bone_swept_bvh.mjs": {
+      "sha256": "7300308bdebf8d6ba63b5098bbbbb809a87dfbcded9824381a1b286f6b5db242",
+      "bytes": 11909,
+      "status": "new focused-test infrastructure; no integrated pose acceptance"
+    },
+    "human-preferred-v53-anatomical-assembly-20261011/resumed-source/integrated_case_io.mjs": {
+      "sha256": "fb54d7d8dc07978f724bfd2b405c29e3a88b8a696b1f87633f3129c4fb29e04b",
+      "bytes": 2160,
+      "status": "new focused-test infrastructure; no integrated pose acceptance"
+    }
+  },
+  "scope": "Preserved limited regional proofs and unsolved anatomical layout. Dense preferred rest is built by checkpoints/preferred-v53."
+}

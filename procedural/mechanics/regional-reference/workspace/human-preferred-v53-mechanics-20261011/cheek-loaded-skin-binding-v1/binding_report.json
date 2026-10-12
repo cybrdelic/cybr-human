@@ -1,0 +1,19 @@
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "case_sha256": "eba0ed5e194760166fdc5dc7e4c6cff2eb34ebed638e8804ff142ebf76ce8ee0",
+  "binding_sha256": "2789c9a6853999116af8b9aaef87416f3a6389be3ec8f925f07eaf869fc12527",
+  "covered_vertices": 221,
+  "uncovered_skin_vertices": 544252,
+  "rest_offset_quantiles": [
+    0.6020330117749353,
+    0.6148726405769764,
+    0.6434434456360947,
+    0.6573635079701035
+  ],
+  "method": "Barycentric translations of the actual reciprocal passive superficial triangles in a common XY chart; zero gain/amplitude manipulation. Exact original dense neutral positions retained as residuals. The outer12 fixed proxy nodes make boundary displacement zero.",
+  "scope": "Dense visual refinement of a small force-bearing passive skin proxy. The coarse passive volume participates reciprocally in the muscle equilibrium; fine displayed vertices have no separate forces or masses.",
+  "limits": [
+    "Fixed truncated perimeter, rigid origin collar and uncalibrated material remain.",
+    "No full-face skin dynamics or expressions."
+  ]
+}

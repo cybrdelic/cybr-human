@@ -1,0 +1,63 @@
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "source_geometry_sha256": "9bc6a0def6a383e3eefd02a80966a7a0793549f5f3af06b6c3e29844f861c1ac",
+  "geometry_sha256": "30a8e5ca8e80f5432190f343d6a636acb87b34a9f2d6173935a67008ed381a1f",
+  "nodes": 1125,
+  "tetrahedra": 3401,
+  "new_passive_tetrahedra": 288,
+  "shared_inner_side_faces": 24,
+  "released_old_perimeter_nodes": 12,
+  "new_far_perimeter_nodes": 20,
+  "superficial_proxy_nodes": 73,
+  "top_boundary_triangles": 132,
+  "old_positions_exact": true,
+  "old_connectivity_exact": true,
+  "minimum_signed_six_volume": 8.635056776899455e-05,
+  "new_Dm_condition_quantiles": [
+    3.5549283280446593,
+    20.095412720835434,
+    146.53681576474156,
+    540.4573546703334
+  ],
+  "node_outside_ids": [],
+  "cell_center_outside_ids": [],
+  "outer_ellipse_center_radii": [
+    36.1,
+    -49.5,
+    8.9,
+    12.5
+  ],
+  "superficial_depth": 0.6,
+  "outer_bottom_depth_by_angle": [
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.274798523974612,
+    10.156243081726881,
+    13.196209453977072,
+    4.314118940283985,
+    2.0,
+    2.0
+  ],
+  "medial_weight": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.02289987699788431,
+    0.6796869234772401,
+    0.9330174544980894,
+    0.19284324502366543,
+    0.0,
+    0.0
+  ],
+  "far_support_note": "The medial superficial edge is carried by a finite deep perioral volume. Its remote posterior cut approximates omitted deep buccal/perioral tissue; it is not a mandibular attachment. Upper/lower/lateral supported cuts remain explicit.",
+  "material_change": false,
+  "scope": "Perioral passive continuation around the lateral oral wall, with a posterior medial support instead of the close superficial clamp. Same bundle/material and exact original skin rest.",
+  "admitted": true
+}

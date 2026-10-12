@@ -1,0 +1,196 @@
+{
+  "source_sha256": "2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd",
+  "parts": {
+    "zygomatic_reference": {
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "self_nonincident_crossings": 0,
+      "self_trimmed_incident_crossings": 0,
+      "self_examples": [],
+      "self_trimmed_examples": [],
+      "skin": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "mandible": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "maxillary_support": {
+        "candidate_pairs": 186,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      }
+    },
+    "junction": {
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "self_nonincident_crossings": 0,
+      "self_trimmed_incident_crossings": 0,
+      "self_examples": [],
+      "self_trimmed_examples": [],
+      "skin": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "mandible": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "maxillary_support": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      }
+    },
+    "superficial_oral": {
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "self_nonincident_crossings": 0,
+      "self_trimmed_incident_crossings": 0,
+      "self_examples": [],
+      "self_trimmed_examples": [],
+      "skin": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "mandible": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "maxillary_support": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      }
+    },
+    "deep_oral": {
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "self_nonincident_crossings": 0,
+      "self_trimmed_incident_crossings": 0,
+      "self_examples": [],
+      "self_trimmed_examples": [],
+      "skin": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "mandible": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "maxillary_support": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      }
+    },
+    "buccinator_deep": {
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "self_nonincident_crossings": 0,
+      "self_trimmed_incident_crossings": 0,
+      "self_examples": [],
+      "self_trimmed_examples": [],
+      "skin": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "mandible": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "maxillary_support": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      }
+    },
+    "mandibular_depressor": {
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "self_nonincident_crossings": 0,
+      "self_trimmed_incident_crossings": 0,
+      "self_examples": [],
+      "self_trimmed_examples": [],
+      "skin": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      },
+      "mandible": {
+        "candidate_pairs": 216,
+        "crossings": 7,
+        "excluded_declared_cap_pairs": 96,
+        "examples": [
+          [
+            3728,
+            20623
+          ],
+          [
+            3734,
+            20881
+          ],
+          [
+            3734,
+            21008
+          ],
+          [
+            3733,
+            21011
+          ],
+          [
+            82,
+            21141
+          ],
+          [
+            74,
+            20623
+          ],
+          [
+            74,
+            20620
+          ]
+        ]
+      },
+      "maxillary_support": {
+        "candidate_pairs": 0,
+        "crossings": 0,
+        "excluded_declared_cap_pairs": 0,
+        "examples": []
+      }
+    }
+  },
+  "limits": [
+    "Existing unchanged zygomatic contact reuses its earlier distributed-root proof.",
+    "Declared new mandibular root faces excluded from obstacle crossing counts, their exact coordinate correspondence is separately pinned.",
+    "Shared adjacent attachment edges use1e-6 centroid trim; no exact claim in that strip.",
+    "Intentional inter-part junction overlaps remain pending conformal union; these are not independent disjoint tissues."
+  ]
+}

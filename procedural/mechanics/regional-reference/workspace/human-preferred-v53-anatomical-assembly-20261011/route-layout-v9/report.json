@@ -1,0 +1,9 @@
+{
+  "parts_sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+  "source_parts_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+  "junction_vertices": 642,
+  "junction_triangles": 1280,
+  "same_analytic_ellipsoid": true,
+  "all_other_part_coordinates_connectivity_and_attachments_exact": true,
+  "scope": "Replace the polar sampling singularity with uniform geodesic triangulation on the same authored ellipsoid. No anatomy control, root footprint or preferred head change."
+}

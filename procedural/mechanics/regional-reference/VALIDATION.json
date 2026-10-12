@@ -1,0 +1,44 @@
+{
+  "schema": "cheek-checkpoint-safe-validation-v1",
+  "created_utc": "2026-10-11T17:49:52.648108+00:00",
+  "success": true,
+  "manifest": "copied_files_manifest.json",
+  "files_sha256_and_size_verified": 167,
+  "python_files_compiled_in_memory": 56,
+  "javascript_files_syntax_checked": 44,
+  "safe_modules_imported": [
+    "zygomatic_support_build",
+    "build_bilateral_mechanics_case",
+    "build_bilateral_cavity_case",
+    "triangle_sat",
+    "./human-preferred-v53-mechanics-20261011/src/regional_case_io.mjs",
+    "./human-mechanics-20261010/src/interdigitated_muscle_fem.mjs",
+    "./human-mechanics-20261010/src/prototypes/static_bone_swept_bvh_distributed.mjs",
+    "./human-mechanics-20261010/src/prototypes/guarded_static_bone_fem_distributed.mjs"
+  ],
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "node": "v24.19.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "current_case_and_five_state_source_hashes_verified": true,
+  "only_three_admitted_sparse_skin_payloads_present": true,
+  "failed_sparse_skin_outputs_excluded": true,
+  "external_head_status": "not included by design; required only for authoring/binding/skin checks",
+  "original_outputs_modified": false,
+  "not_run": [
+    "FEM solve or numerical replay",
+    "geometry or bone construction",
+    "Blender BVH reconstruction",
+    "reaction energy evaluation",
+    "render",
+    "legacy or current numerical test suites"
+  ],
+  "runtime_check_scope": "Imports execute definitions only. No case loader or solver instance is constructed. Top-level authoring and output-writing modules are syntax checked, never imported.",
+  "subsequent_numerical_replay": {
+    "success": true,
+    "receipt": "CHECKPOINT_REPLAY_RECEIPT.json",
+    "sha256": "c8bb24adcea7b43ccfd2b341d3b712504d44c1039786e53eaeaa5ba885bc6bf6"
+  }
+}

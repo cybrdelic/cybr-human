@@ -1,0 +1,10 @@
+from pathlib import Path
+import sys,json,hashlib,argparse,time
+import bpy
+R=Path(__file__).resolve().parent;S=R/'scene';O=R/'raw';O.mkdir(exist_ok=True)
+p=argparse.ArgumentParser();p.add_argument('--view',choices=['head_front','head'],required=True);a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);view=a.view
+source=S/'scene_mapped.py';sys.argv=['blender','--','--view',view,'--mode','appearance','--size','560','--samples','256','--optics','interfaces_mnee','--surface-profile','pores','--lighting','studio','--groom','1'];g={'__file__':str(source),'__name__':'__main__'};exec(compile(source.read_text().split("path=ROOT/f'{a.view}_")[0],str(source),'exec'),g)
+config=json.loads((R/'RUN_CONFIGURATION.json').read_text())
+sys.path.insert(0,str(R));from uniform_numerical_scale import apply
+report=apply(bpy.context.scene,1000.);m=g['manifest'];m['uniform_numerical_conditioning']=report;m['geometry_revision']=config['geometry_scope'];m['repository_profile']=config['profile'];m['camera_authored_scale']=m['camera'];cam=bpy.context.scene.camera;m['camera']={'location':list(cam.location),'rotation':list(cam.rotation_euler),'ortho_scale':cam.data.ortho_scale,'source_frame_scale_factor':1000};m['conditioning_source_sha256']=hashlib.sha256((R/'uniform_numerical_scale.py').read_bytes()).hexdigest();m['wrapper_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest();m['limits_addendum']=[config['geometry_scope'],'Layered refractive transport now tested at numerical1000x; no shadow transparency override','Anatomy, tissue coefficients and grooming are authored and uncalibrated','Not automatically selected over the user-preferred original']
+path=O/f'{view}_conditioned_transport_raw.png';assert not path.exists();bpy.context.scene.render.filepath=str(path);start=time.time();bpy.ops.render.render(write_still=True);m['render_seconds']=time.time()-start;m['raw_sha256']=hashlib.sha256(path.read_bytes()).hexdigest();path.with_suffix('.json').write_text(json.dumps(m,indent=2)+'\n');print('CONDITIONED_APPEARANCE_TERMINAL',flush=True)

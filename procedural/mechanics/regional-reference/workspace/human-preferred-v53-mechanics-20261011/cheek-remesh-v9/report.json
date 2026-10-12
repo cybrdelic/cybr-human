@@ -1,0 +1,27 @@
+{
+  "status": "New regional cheek rest construction, unaccepted until validity/contact checks",
+  "preferred_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "nodes": 1003,
+  "tetrahedra": 3041,
+  "rings": 50,
+  "active_body_tetrahedra": 1764,
+  "passive_root_adapter_tetrahedra": 1277,
+  "root_nodes": 176,
+  "root_triangles": 301,
+  "bone_footprint_exact": true,
+  "minimum_signed_six_volume": 8.635056776899455e-05,
+  "nonpositive_tets": 0,
+  "Dm_condition_quantiles": [
+    1.6984954649244166,
+    8.654299022896545,
+    120.09641371602163,
+    261.2507963030795,
+    640.6243539543452
+  ],
+  "sampled_outside_skin_nodes": 0,
+  "outside_distance_quantiles": [],
+  "ambiguous_nodes": 0,
+  "path_length": 53.35801280445925,
+  "selected_skin_modified": false,
+  "scope": "New right-cheek approximate active bundle and passive root transition. Oral, eyelid, jaw and neck mechanics are absent."
+}

@@ -1,0 +1,11 @@
+{
+  "target_mesh": "user-human-preferred/recovery/restored-project/output/coordinated-orbital-scale-v53/head.npz",
+  "target_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "source_semantics": "user-human-preferred/recovery/restored-project/output/coordinated-nasal-cervical-v46/anatomical_semantics/authored_lip_lid_semantics.npz",
+  "vertices": 618205,
+  "triangles": 1236402,
+  "vermilion_face_count": 23040,
+  "vertex_loops_retained": true,
+  "points_and_normals_refreshed": true,
+  "scope": "Same-order authored tissue mapping; not an anatomical, collision or optical transport certificate."
+}

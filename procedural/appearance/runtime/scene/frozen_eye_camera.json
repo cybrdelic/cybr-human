@@ -1,0 +1,31 @@
+{
+  "name": "frozen_v8_eye_global_camera",
+  "camera": {
+    "location": [
+      0.12729999423027039,
+      -0.5331000089645386,
+      0.03400000184774399
+    ],
+    "rotation": [
+      1.516350507736206,
+      8.832157227800508e-09,
+      0.21743744611740112
+    ],
+    "ortho_scale": 0.04899999871850014,
+    "target": [
+      0.03229999914765358,
+      -0.1031000018119812,
+      0.009999999776482582
+    ]
+  },
+  "source_geometry": {
+    "path": "historical-v8/head.npz",
+    "sha256": "dd20de3843df48b43c0ecdf0df91580f78f5f04d5c50802780022d9e5124a7ef",
+    "vertices": 932313,
+    "triangles": 1864618,
+    "skin_vertices_unchanged": true,
+    "skin_topology_unchanged": true,
+    "transformation": "(x,-z,y)*0.001; uncalibrated authored design units"
+  },
+  "purpose": "Literal global camera lock for a future matched eye-pose comparison, rather than silently tracking the changed globe center"
+}

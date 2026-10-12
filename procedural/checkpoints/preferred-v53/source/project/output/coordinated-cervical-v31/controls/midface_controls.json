@@ -1,0 +1,2827 @@
+{
+  "method": "3D cubic B-spline control cage with anatomical landmark curves, second-difference regularization and fixed outer layers",
+  "origin": [
+    -98.0,
+    -91.0,
+    -14.0
+  ],
+  "spacing": 7.0,
+  "shape": [
+    29,
+    23,
+    25
+  ],
+  "controls": [
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        20.841638902357595,
+        7.056441268682129,
+        102.80786151660057
+      ],
+      "displacement": [
+        0,
+        0,
+        1.1921384833994324
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -20.694542868641967,
+        7.079398733445543,
+        102.70578259149356
+      ],
+      "displacement": [
+        0,
+        0,
+        1.2942174085064408
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        25.984557756752384,
+        8.560934902203554,
+        106.06932803026017
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.06932803026016643
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -25.955861949770654,
+        8.637618436839263,
+        106.07094092913154
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.07094092913153816
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        30.91012097804535,
+        8.262170052864422,
+        107.14258012086687
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.14258012086686733
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -30.785799336837933,
+        8.256520054734603,
+        107.13671891742767
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.13671891742767173
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        34.12107762872121,
+        8.662060744099847,
+        106.94269013342661
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.9426901334266091
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -34.01266632262834,
+        8.621370305179092,
+        106.96148185644365
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.9614818564436547
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.1179988936749,
+        8.934607094964662,
+        104.65226927292291
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.6522692729229078
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.007266781255694,
+        8.890425674905126,
+        104.7231158179567
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.723115817956696
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.405812255678384,
+        7.406173665487275,
+        99.84672236852343
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.84672236852343
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.227172365221314,
+        7.37893987567154,
+        99.95380980915141
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.9538098091514087
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.344558932185606,
+        7.105525161684677,
+        97.77118739490048
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.77118739490048
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.3547556657591,
+        7.31335954158095,
+        97.65293347939954
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.652933479399536
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.03959215327442,
+        7.092051435471558,
+        93.47865168532131
+      ],
+      "displacement": [
+        0,
+        0,
+        -10.47865168532131
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.07451631711174,
+        7.205386278246239,
+        93.35747377822952
+      ],
+      "displacement": [
+        0,
+        0,
+        -10.357473778229519
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        59.24317151574993,
+        7.033699784492923,
+        84.6029978165817
+      ],
+      "displacement": [
+        0,
+        0,
+        -13.602997816581706
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -59.022395701933654,
+        7.027338266557176,
+        85.25551795611331
+      ],
+      "displacement": [
+        0,
+        0,
+        -14.255517956113309
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        64.13308131798365,
+        7.001354486483235,
+        63.835433053521655
+      ],
+      "displacement": [
+        0,
+        0,
+        -8.835433053521655
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -64.0303304207781,
+        7.159473847460008,
+        64.19878267339782
+      ],
+      "displacement": [
+        0,
+        0,
+        -9.198782673397815
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.115841325136895,
+        -0.7385000981344778,
+        110.29862863567645
+      ],
+      "displacement": [
+        0,
+        0,
+        0.7013713643235491
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.447761729025295,
+        -0.7525247406520758,
+        110.04411350847606
+      ],
+      "displacement": [
+        0,
+        0,
+        0.9558864915239411
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.546800756865363,
+        -0.7612738720670915,
+        109.57326488839576
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.5732648883957552
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.786261338489904,
+        -0.7747178110260322,
+        109.53905324560847
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.5390532456084713
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        29.009903148548197,
+        -0.9979045730655476,
+        109.19155036906245
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.6915503690624547
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -29.612296962407722,
+        -0.9836974841276112,
+        109.11661735688682
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.6166173568868203
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        34.11592598790929,
+        -0.9520778632064109,
+        108.8642455771769
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.364245577176902
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -34.36412449574625,
+        -0.9362760257040044,
+        108.84892276467369
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.348922764673688
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.30030893240071,
+        -0.8106571667469037,
+        108.27424815013347
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.274248150133474
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.16233244264284,
+        -0.8218695409863125,
+        108.34751881946993
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.347518819469926
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.00022814257966,
+        -0.4809139926687801,
+        106.89878631236459
+      ],
+      "displacement": [
+        0,
+        0,
+        -9.898786312364592
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -45.03415380568665,
+        -0.9969365692817497,
+        106.94637170394016
+      ],
+      "displacement": [
+        0,
+        0,
+        -9.946371703940159
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.03612718157631,
+        -0.9118191208012703,
+        105.32093656595013
+      ],
+      "displacement": [
+        0,
+        0,
+        -14.320936565950134
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.0992552107593,
+        -0.9204963181502548,
+        105.36297369008318
+      ],
+      "displacement": [
+        0,
+        0,
+        -14.36297369008318
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.066911212636604,
+        -0.9101273729963644,
+        102.15094899661486
+      ],
+      "displacement": [
+        0,
+        0,
+        -18.150948996614858
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.01156269418513,
+        -0.9316774609060132,
+        102.31224519853635
+      ],
+      "displacement": [
+        0,
+        0,
+        -18.312245198536345
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        59.04162333554184,
+        -0.8947425477078994,
+        95.12588336827673
+      ],
+      "displacement": [
+        0,
+        0,
+        -21.12588336827673
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -59.017850721640855,
+        -0.7931928429961107,
+        95.09488691946969
+      ],
+      "displacement": [
+        0,
+        0,
+        -21.094886919469687
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        64.18131161986267,
+        -0.9862122902148538,
+        78.04411407816237
+      ],
+      "displacement": [
+        0,
+        0,
+        -19.044114078162366
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -64.09102075229904,
+        -0.5686664700925383,
+        77.77006813124527
+      ],
+      "displacement": [
+        0,
+        0,
+        -18.770068131245267
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.063274598547945,
+        -8.869337339660296,
+        112.31084534303197
+      ],
+      "displacement": [
+        0,
+        0,
+        1.6891546569680287
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.016564263177766,
+        -8.901969686603476,
+        112.44494223917297
+      ],
+      "displacement": [
+        0,
+        0,
+        1.555057760827026
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.12244593793073,
+        -7.101186708383475,
+        109.61972271770314
+      ],
+      "displacement": [
+        0,
+        0,
+        1.3802772822968592
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.004634420608,
+        -7.1158536164746735,
+        109.61327206180046
+      ],
+      "displacement": [
+        0,
+        0,
+        1.3867279381995417
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        30.42090375044305,
+        -7.080756274052444,
+        109.62279918021741
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.6227991802174131
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -30.972613972336884,
+        -7.080833063751662,
+        109.640646930474
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.6406469304740057
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        35.723101601572715,
+        -8.956520820209732,
+        109.9256561727483
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.9256561727483046
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -35.83588230584366,
+        -8.918348923197797,
+        109.94762183483525
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.947621834835246
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        40.26551042689684,
+        -8.93423098434283,
+        110.05028363327588
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.050283633275882
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -40.152231340331724,
+        -8.999393896848774,
+        110.0487709507776
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.048770950777595
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.23533954851387,
+        -8.81074204600518,
+        110.01547536746737
+      ],
+      "displacement": [
+        0,
+        0,
+        -11.015475367467374
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.108284538173095,
+        -8.848961671354733,
+        109.97108970924702
+      ],
+      "displacement": [
+        0,
+        0,
+        -10.971089709247025
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.12774024598822,
+        -8.604368911716154,
+        108.7034846114713
+      ],
+      "displacement": [
+        0,
+        0,
+        -15.703484611471296
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.22285240973493,
+        -8.884868402587745,
+        108.61392466449695
+      ],
+      "displacement": [
+        0,
+        0,
+        -15.613924664496949
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.00569987452957,
+        -8.443980160160875,
+        105.61448263981364
+      ],
+      "displacement": [
+        0,
+        0,
+        -20.614482639813644
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.00731918112717,
+        -7.636328741750955,
+        105.55390449283328
+      ],
+      "displacement": [
+        0,
+        0,
+        -20.553904492833283
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        59.01286029154414,
+        -8.52949429244922,
+        99.37673019324397
+      ],
+      "displacement": [
+        0,
+        0,
+        -24.376730193243972
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -59.00743409989836,
+        -8.948468386225038,
+        99.40535597607895
+      ],
+      "displacement": [
+        0,
+        0,
+        -24.40535597607895
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        64.22627525566139,
+        -8.874288696753625,
+        83.31382863628014
+      ],
+      "displacement": [
+        0,
+        0,
+        -22.313828636280135
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -64.0263171703338,
+        -8.506104037231472,
+        83.95048466762653
+      ],
+      "displacement": [
+        0,
+        0,
+        -22.950484667626526
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.299749092989124,
+        -16.6089101921144,
+        114.33094798145342
+      ],
+      "displacement": [
+        0,
+        0,
+        1.66905201854658
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.230928072235024,
+        -16.60426555773281,
+        114.42612197726282
+      ],
+      "displacement": [
+        0,
+        0,
+        1.5738780227371763
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.102512291432557,
+        -16.34563625892134,
+        109.81895868541325
+      ],
+      "displacement": [
+        0,
+        0,
+        2.18104131458675
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.00921322742866,
+        -16.81351234312892,
+        109.852268193518
+      ],
+      "displacement": [
+        0,
+        0,
+        2.1477318064819997
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        29.217219626616853,
+        -15.009681978521769,
+        109.26800214117786
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.2680021411778597
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -29.03964248230999,
+        -15.450884044182555,
+        109.22730819807215
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.2273081980721514
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        35.9732326482388,
+        -15.126080564616766,
+        109.38242567318741
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.382425673187413
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -35.815186471630646,
+        -15.125313800492025,
+        109.35944036219558
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.359440362195585
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.54717317042279,
+        -15.043487196022216,
+        109.48003404580726
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.480034045807258
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.51515269289053,
+        -15.102924680776438,
+        109.41367152275832
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.413671522758321
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.14836576848784,
+        -15.041534927433702,
+        108.86415584986304
+      ],
+      "displacement": [
+        0,
+        0,
+        -10.864155849863039
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.07998359861655,
+        -15.343374348641397,
+        108.6196002002393
+      ],
+      "displacement": [
+        0,
+        0,
+        -10.619600200239304
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.173060975361935,
+        -15.150342606670346,
+        106.92115177162265
+      ],
+      "displacement": [
+        0,
+        0,
+        -15.921151771622647
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.12806970094044,
+        -15.253575369876023,
+        106.73705350851418
+      ],
+      "displacement": [
+        0,
+        0,
+        -15.73705350851418
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.109489683243936,
+        -15.163067898336921,
+        103.19747920323013
+      ],
+      "displacement": [
+        0,
+        0,
+        -21.19747920323013
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.17408625316324,
+        -15.188119332216317,
+        103.0260176265895
+      ],
+      "displacement": [
+        0,
+        0,
+        -21.026017626589507
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        59.05029432366913,
+        -15.375500530152996,
+        96.86753980038048
+      ],
+      "displacement": [
+        0,
+        0,
+        -25.867539800380484
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -59.0093490136175,
+        -15.368457402692346,
+        96.92404649845604
+      ],
+      "displacement": [
+        0,
+        0,
+        -25.924046498456036
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        64.04712399666151,
+        -15.421123419132677,
+        83.05859808245543
+      ],
+      "displacement": [
+        0,
+        0,
+        -26.058598082455433
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -64.01813469459792,
+        -15.343122103266849,
+        83.19499987127206
+      ],
+      "displacement": [
+        0,
+        0,
+        -26.19499987127206
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.02070587212063,
+        -24.44246998734327,
+        119.69732821190905
+      ],
+      "displacement": [
+        0,
+        0,
+        0.3026717880909473
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.016912357912457,
+        -24.406514400497862,
+        119.84920417941761
+      ],
+      "displacement": [
+        0,
+        0,
+        0.15079582058238827
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.038725623202634,
+        -24.714642937479482,
+        110.59297110187259
+      ],
+      "displacement": [
+        0,
+        0,
+        2.4070288981274075
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.01889690737171,
+        -24.970106159459792,
+        110.79873735163933
+      ],
+      "displacement": [
+        0,
+        0,
+        2.201262648360668
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        29.072998544639486,
+        -23.07227050227451,
+        108.68049632782368
+      ],
+      "displacement": [
+        0,
+        0,
+        0.31950367217632447
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -29.178328781774482,
+        -23.168396568730355,
+        108.65037722545743
+      ],
+      "displacement": [
+        0,
+        0,
+        0.34962277454256707
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        34.32611076735951,
+        -23.169589688880006,
+        107.1763081662973
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.1763081662973036
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -34.046551745885324,
+        -23.27029033302271,
+        107.2514782927989
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.2514782927988932
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.378399176094774,
+        -23.177240345956687,
+        105.50241946685995
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.5024194668599478
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.060453664112444,
+        -23.053292166656266,
+        105.70845238600623
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.708452386006229
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.05931604610079,
+        -23.305848188585667,
+        103.07964617158515
+      ],
+      "displacement": [
+        0,
+        0,
+        -7.0796461715851535
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.135155251558714,
+        -23.179357577710242,
+        103.10605285891428
+      ],
+      "displacement": [
+        0,
+        0,
+        -7.106052858914282
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.139828163087785,
+        -23.25404519627552,
+        99.49956066510927
+      ],
+      "displacement": [
+        0,
+        0,
+        -11.499560665109271
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.176841673143315,
+        -23.249644064306427,
+        99.4431220083505
+      ],
+      "displacement": [
+        0,
+        0,
+        -11.4431220083505
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.131281699921594,
+        -23.182551494429894,
+        95.01919448452507
+      ],
+      "displacement": [
+        0,
+        0,
+        -17.019194484525073
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.302755441090504,
+        -23.076223338943954,
+        94.98480736023598
+      ],
+      "displacement": [
+        0,
+        0,
+        -16.984807360235976
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        59.06376594458425,
+        -23.1771132864586,
+        89.0581327740121
+      ],
+      "displacement": [
+        0,
+        0,
+        -23.058132774012094
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -59.08537212955498,
+        -23.19049902708608,
+        89.02637097561498
+      ],
+      "displacement": [
+        0,
+        0,
+        -23.02637097561498
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        64.10240113699925,
+        -23.267712661929696,
+        75.68741215121382
+      ],
+      "displacement": [
+        0,
+        0,
+        -25.68741215121382
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -64.06806863462926,
+        -23.171344405150684,
+        75.97665310183514
+      ],
+      "displacement": [
+        0,
+        0,
+        -25.97665310183514
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.204476749384682,
+        -31.005803143929302,
+        115.82413624531405
+      ],
+      "displacement": [
+        0,
+        0,
+        1.175863754685949
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.164996411788557,
+        -31.153506115653336,
+        115.85155749667909
+      ],
+      "displacement": [
+        0,
+        0,
+        1.1484425033209078
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.011721930989776,
+        -32.08486803123876,
+        109.30185899945813
+      ],
+      "displacement": [
+        0,
+        0,
+        3.6981410005418667
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.00746578412204,
+        -31.187789602388158,
+        109.56798392176168
+      ],
+      "displacement": [
+        0,
+        0,
+        3.43201607823832
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        29.094261445223893,
+        -31.001379848168845,
+        107.16071850017954
+      ],
+      "displacement": [
+        0,
+        0,
+        1.8392814998204585
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -29.084772216083415,
+        -31.210469873747503,
+        107.16782049395007
+      ],
+      "displacement": [
+        0,
+        0,
+        1.8321795060499255
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        34.050880551772,
+        -31.396172367506622,
+        103.97953183681021
+      ],
+      "displacement": [
+        0,
+        0,
+        1.0204681631897898
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -34.168312102189965,
+        -31.21346684323185,
+        104.05467077063828
+      ],
+      "displacement": [
+        0,
+        0,
+        0.9453292293617181
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.08268288242628,
+        -31.189827385958857,
+        99.88023114585711
+      ],
+      "displacement": [
+        0,
+        0,
+        0.11976885414289029
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.12412663592433,
+        -31.052339961752956,
+        100.01321351087596
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.013213510875957013
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.1574042247111,
+        -31.02349410291755,
+        95.08446353514132
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.0844635351413245
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.12451836923687,
+        -31.253301301806363,
+        94.89382909431482
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.8938290943148246
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.21055121920615,
+        -31.02564623447471,
+        90.02974740104258
+      ],
+      "displacement": [
+        0,
+        0,
+        -6.029747401042584
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.13651043130879,
+        -31.1480648612599,
+        89.98876087462381
+      ],
+      "displacement": [
+        0,
+        0,
+        -5.988760874623807
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.214252777491936,
+        -31.12545435678659,
+        85.1436050702148
+      ],
+      "displacement": [
+        0,
+        0,
+        -11.143605070214804
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.07082628251132,
+        -31.188964481512073,
+        85.21498386534026
+      ],
+      "displacement": [
+        0,
+        0,
+        -11.214983865340258
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        59.07148093476594,
+        -31.340635147083354,
+        78.83650485357454
+      ],
+      "displacement": [
+        0,
+        0,
+        -17.83650485357454
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -59.110661334593004,
+        -31.154730905474157,
+        78.98786803926689
+      ],
+      "displacement": [
+        0,
+        0,
+        -17.987868039266885
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.338071987501134,
+        -40.938094542232896,
+        112.93001098290958
+      ],
+      "displacement": [
+        0,
+        0,
+        2.069989017090421
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.27642518908287,
+        -40.93351494220926,
+        112.91444217651734
+      ],
+      "displacement": [
+        0,
+        0,
+        2.0855578234826595
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.010842817949957,
+        -39.969483551981014,
+        109.34298507900778
+      ],
+      "displacement": [
+        0,
+        0,
+        2.657014920992225
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.61276588304086,
+        -40.77213832899008,
+        109.36992617488096
+      ],
+      "displacement": [
+        0,
+        0,
+        2.630073825119041
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        29.5850591081436,
+        -40.827568736891784,
+        105.63830330955756
+      ],
+      "displacement": [
+        0,
+        0,
+        2.361696690442443
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -29.43718590901295,
+        -40.82507654794817,
+        105.69087645596738
+      ],
+      "displacement": [
+        0,
+        0,
+        2.309123544032616
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        34.2658013739947,
+        -40.04761251031267,
+        99.53083403852702
+      ],
+      "displacement": [
+        0,
+        0,
+        3.4691659614729815
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -34.08545710361583,
+        -40.02337656785728,
+        99.96384744609205
+      ],
+      "displacement": [
+        0,
+        0,
+        3.0361525539079537
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.1225434568714,
+        -39.01230376128267,
+        93.08602274995134
+      ],
+      "displacement": [
+        0,
+        0,
+        3.91397725004866
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.01756835537278,
+        -39.00268940786149,
+        93.23187771795186
+      ],
+      "displacement": [
+        0,
+        0,
+        3.7681222820481395
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.07321014186285,
+        -39.20186662199247,
+        86.70916714954862
+      ],
+      "displacement": [
+        0,
+        0,
+        2.2908328504513804
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.01190656854711,
+        -39.122109106489916,
+        86.8688642587892
+      ],
+      "displacement": [
+        0,
+        0,
+        2.131135741210798
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.026856415302426,
+        -39.152571322411596,
+        81.28666322125228
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.286663221252283
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.119487065502874,
+        -39.0943969722289,
+        81.24634738296882
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.246347382968821
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.061575362610874,
+        -39.14242960251511,
+        76.50727925818295
+      ],
+      "displacement": [
+        0,
+        0,
+        -8.507279258182948
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.24374340382631,
+        -39.00067214466866,
+        76.41840913906867
+      ],
+      "displacement": [
+        0,
+        0,
+        -8.418409139068672
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        59.00225741787212,
+        -39.11085234817833,
+        69.70253183577901
+      ],
+      "displacement": [
+        0,
+        0,
+        -15.702531835779013
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -59.01187004653343,
+        -39.148182545367,
+        69.6233373534074
+      ],
+      "displacement": [
+        0,
+        0,
+        -15.623337353407393
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.047999326863852,
+        -48.65782629878257,
+        116.63801202933132
+      ],
+      "displacement": [
+        0,
+        0,
+        0.3619879706686788
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.01461961903743,
+        -48.64480699630604,
+        116.6723591059854
+      ],
+      "displacement": [
+        0,
+        0,
+        0.32764089401460694
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.140568844843333,
+        -48.95468642876289,
+        112.84344284291234
+      ],
+      "displacement": [
+        0,
+        0,
+        1.1565571570876614
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.124308872344784,
+        -48.94272326872592,
+        112.85867740211984
+      ],
+      "displacement": [
+        0,
+        0,
+        1.141322597880162
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        29.24590620825717,
+        -47.892103575149605,
+        109.45624509936489
+      ],
+      "displacement": [
+        0,
+        0,
+        0.5437549006351077
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -29.23244329137478,
+        -47.86330165289321,
+        109.45510285877897
+      ],
+      "displacement": [
+        0,
+        0,
+        0.5448971412210284
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        34.04053619318827,
+        -48.150410102031906,
+        103.73337174932284
+      ],
+      "displacement": [
+        0,
+        0,
+        1.266628250677158
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -34.03846023885882,
+        -48.114675616306485,
+        103.70385864059129
+      ],
+      "displacement": [
+        0,
+        0,
+        1.2961413594087077
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.35554284207383,
+        -47.403198109602336,
+        89.96483159777371
+      ],
+      "displacement": [
+        0,
+        0,
+        9.03516840222629
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.35523541818414,
+        -47.33672136781297,
+        89.9836168708332
+      ],
+      "displacement": [
+        0,
+        0,
+        9.016383129166798
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.03220490182753,
+        -47.16619785183003,
+        82.65163746689667
+      ],
+      "displacement": [
+        0,
+        0,
+        8.348362533103327
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.023110073822515,
+        -47.266872070349805,
+        82.65066243297234
+      ],
+      "displacement": [
+        0,
+        0,
+        8.34933756702766
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.32063190271067,
+        -47.18057090350578,
+        76.17672548621482
+      ],
+      "displacement": [
+        0,
+        0,
+        3.8232745137851794
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.04199967366619,
+        -47.249413270460344,
+        76.46118874534184
+      ],
+      "displacement": [
+        0,
+        0,
+        3.5388112546581567
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.2841825572116,
+        -47.02607296224967,
+        70.39245703267
+      ],
+      "displacement": [
+        0,
+        0,
+        -4.392457032669995
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.02032026758587,
+        -47.0954098958568,
+        70.71012415622548
+      ],
+      "displacement": [
+        0,
+        0,
+        -4.710124156225476
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        19.136142237339175,
+        -55.2193741501341,
+        115.99481628454906
+      ],
+      "displacement": [
+        0,
+        0,
+        0.005183715450939985
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -19.182233452077313,
+        -55.212231066029176,
+        115.98954687015002
+      ],
+      "displacement": [
+        0,
+        0,
+        0.010453129849977927
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        24.00437415053511,
+        -55.22033259688558,
+        112.26485008236632
+      ],
+      "displacement": [
+        0,
+        0,
+        0.7351499176336773
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -24.023842258146527,
+        -55.21049046117287,
+        112.28790206617555
+      ],
+      "displacement": [
+        0,
+        0,
+        0.7120979338244524
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        29.093541942931186,
+        -55.44794108676045,
+        109.21496706800951
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.21496706800951415
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -29.12599499856437,
+        -55.42145216908562,
+        109.24243511969567
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.24243511969567066
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        34.23740688842428,
+        -55.222135704307036,
+        103.14917715285932
+      ],
+      "displacement": [
+        0,
+        0,
+        0.8508228471406767
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -34.24617100223932,
+        -55.181940830659386,
+        103.14543669377885
+      ],
+      "displacement": [
+        0,
+        0,
+        0.8545633062211522
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        39.478042949680045,
+        -55.37008361622264,
+        88.5990188290646
+      ],
+      "displacement": [
+        0,
+        0,
+        8.400981170935395
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -39.46857277370382,
+        -55.30134092267581,
+        88.6535429750267
+      ],
+      "displacement": [
+        0,
+        0,
+        8.346457024973304
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        44.027480336605144,
+        -55.482894885912536,
+        80.30501352014994
+      ],
+      "displacement": [
+        0,
+        0,
+        6.6949864798500585
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -44.03818434311867,
+        -55.04823793746802,
+        80.44005452029278
+      ],
+      "displacement": [
+        0,
+        0,
+        6.559945479707224
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        49.042780244380886,
+        -55.56894742256326,
+        72.64856614164107
+      ],
+      "displacement": [
+        0,
+        0,
+        2.3514338583589307
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -49.04971216617532,
+        -55.05281015540061,
+        72.90499035533992
+      ],
+      "displacement": [
+        0,
+        0,
+        2.095009644660081
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        54.0892401215454,
+        -55.06543152011525,
+        63.64511939004253
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.645119390042531
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "malar_buccal_transverse_plane",
+      "source": [
+        -54.01799930778656,
+        -55.2811588007861,
+        63.6318880087106
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.6318880087105967
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        14.109966086389472,
+        7.341130845244094,
+        106.79050479408383
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -14.16336710952235,
+        7.1283786266321,
+        106.94130141635975
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        14.121116025715102,
+        -0.6933450283091706,
+        113.68179807462444
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -14.097509952416315,
+        -0.4160440074499652,
+        113.5615638508071
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        14.15032453980025,
+        -12.578971802319527,
+        117.59082249617788
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -14.079180466885145,
+        -12.580153103369522,
+        117.67789008067454
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        15.199483315153932,
+        -22.55750016245286,
+        125.29579009630253
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -15.164710190832432,
+        -22.55761763539246,
+        125.33630895269368
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        15.014845895903335,
+        -32.0323450858425,
+        120.44814247277651
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -15.022669365140295,
+        -32.03021412978943,
+        120.5858177785869
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        15.305551850052732,
+        -42.93160701239409,
+        118.35344814573186
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -15.26977490881022,
+        -42.94068498105837,
+        118.4021304569935
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        15.265623546251705,
+        -53.86006517260483,
+        119.85227864418347
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -15.317689145448734,
+        -53.85668530341099,
+        119.8321932485551
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        19.19058321836597,
+        -63.6141243616822,
+        112.06942161015134
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -19.24820051789913,
+        -63.60099545817816,
+        112.0267300584842
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        29.330562953400204,
+        -67.81673732669506,
+        102.57906162193892
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -29.070271476699965,
+        -68.63436070795589,
+        102.6473559110341
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        39.40064260203709,
+        -67.21195076222541,
+        85.52683907886762
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -39.40704235338539,
+        -67.13392350004796,
+        85.57018285690137
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        51.02111456805081,
+        -61.111050745464,
+        65.64431940184176
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -51.262586599288866,
+        -61.00716577270524,
+        65.1898788792158
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        65.02156762682176,
+        13.192909306517771,
+        48.31906599597641
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -65.10234965371497,
+        13.191417861942698,
+        47.86914483446366
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        58.06070207570557,
+        24.877328650960287,
+        76.84936352454302
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -58.00694085174379,
+        23.083311732301574,
+        77.26545264263268
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        48.293067120375945,
+        28.760402333039323,
+        100.86678182371529
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -48.290637273738895,
+        28.206579442205836,
+        101.13379911138732
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        36.182835440668626,
+        28.400422652077317,
+        110.32077358161551
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -36.37797063646028,
+        28.388083332754327,
+        110.28578206114973
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        24.09273717673266,
+        29.385361099228863,
+        111.84371080298367
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_region_return",
+      "source": [
+        -24.30562746470047,
+        29.40468219599773,
+        111.87015485925821
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    }
+  ],
+  "rms_landmark_displacement_error": 0.11271443561231385,
+  "max_landmark_displacement_error": 0.635852139045476,
+  "solve_states": [
+    0,
+    0,
+    0
+  ],
+  "units": "Approximate authored design units, not calibrated anatomy",
+  "minimum_changed_face_normal_cosine": 0.20959013526862252,
+  "changed_vertices": 140172,
+  "maximum_motion": 18.303983203705002
+}

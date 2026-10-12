@@ -1,0 +1,3 @@
+from pathlib import Path
+import argparse,json,hashlib,io,numpy as np
+p=argparse.ArgumentParser();p.add_argument('--baseline',required=True);p.add_argument('--output',required=True);a=p.parse_args();c=Path(__file__).parent;m=json.loads((c/'CHECKPOINT.json').read_text());raw=Path(a.baseline).read_bytes();assert hashlib.sha256(raw).hexdigest()==m['baseline_head_sha256'];z=np.load(io.BytesIO(raw));d=np.load(c/'exact_coordinate_delta.npz');v=z['vertices'].copy();v[d['vertex_ids']]=d['vertices'];b=io.BytesIO();np.savez_compressed(b,vertices=v,triangles=z['triangles'],object_ids=z['object_ids']);raw=b.getvalue();assert hashlib.sha256(raw).hexdigest()==m['candidate_head_sha256'];Path(a.output).write_bytes(raw);print(m['candidate_head_sha256'])

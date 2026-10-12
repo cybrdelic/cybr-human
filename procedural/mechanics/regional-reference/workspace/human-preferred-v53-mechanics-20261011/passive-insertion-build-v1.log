@@ -1,0 +1,44 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 3551.94921875, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "source_geometry_sha256": "5fe664216b7670dfecb37500828becbec29c37ea86e6aa59f1e229606fed976c",
+  "geometry_sha256": "9bc6a0def6a383e3eefd02a80966a7a0793549f5f3af06b6c3e29844f861c1ac",
+  "nodes": 1029,
+  "tetrahedra": 3113,
+  "new_passive_tetrahedra": 72,
+  "shared_terminal_nodes": 13,
+  "superficial_proxy_nodes": 25,
+  "fixed_truncation_rim_nodes": 12,
+  "preferred_skin_modified": false,
+  "all_sampled_nodes_inside": true,
+  "minimum_signed_six_volume": 8.635056776899455e-05,
+  "insertion_Dm_condition_quantiles": [
+    3.2544013320661365,
+    16.912024667633695,
+    43.814178227971425,
+    76.57571418689267
+  ],
+  "star_kernel_inradius": 0.7196561083377588,
+  "skin_proxy_Z_offset": 0.6,
+  "patch_center_xy": [
+    31.0,
+    -50.0
+  ],
+  "patch_radii_xy": [
+    3.5,
+    4.0
+  ],
+  "scope": "New passive shared-node insertion with a superficially placed coarse skin proxy; rim fixed as a regional truncation. Actual reciprocal constitutive loading must be verified by the coupled solve.",
+  "limits": [
+    "Rigid root/first collar retained; no resolved bone-interface traction.",
+    "Passive layer and materials authored, uncalibrated.",
+    "Full surrounding face, jaw and oral/lid mechanics absent.",
+    "No skin display pose until coupled checks and correspondence pass."
+  ]
+}
+Blender 4.3.2
+
+Blender quit
+new case human-preferred-v53-mechanics-20261011/cheek-loaded-case-v1 eba0ed5e194760166fdc5dc7e4c6cff2eb34ebed638e8804ff142ebf76ce8ee0
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 666.02, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 3551.94921875, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 3.59, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

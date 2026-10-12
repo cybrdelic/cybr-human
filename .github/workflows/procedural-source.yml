@@ -1,0 +1,22 @@
+name: Procedural source verification
+on:
+  push:
+    paths: ['procedural/**', '.github/workflows/procedural-source.yml']
+  pull_request:
+    paths: ['procedural/**', '.github/workflows/procedural-source.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: python -m pip install numpy==2.2.6
+      - run: python procedural/verify_integration.py

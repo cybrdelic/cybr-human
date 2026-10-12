@@ -1,0 +1,64 @@
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "binding_sha256": "2789c9a6853999116af8b9aaef87416f3a6389be3ec8f925f07eaf869fc12527",
+  "covered_vertices": 221,
+  "affected_faces": 516,
+  "regional_faces": 4236,
+  "baseline_crossings": {
+    "nonincident_candidates": 0,
+    "trimmed_incident_candidates": 44,
+    "nonincident": 0,
+    "trimmed_incident": 0
+  },
+  "states": {
+    "right-02-secanted": {
+      "state_sha256": "ff6ed0860767fb67c23c502e3dfb4dcc04879af293502e4223259bb7947a597d",
+      "crossings": {
+        "nonincident_candidates": 0,
+        "trimmed_incident_candidates": 54,
+        "nonincident": 0,
+        "trimmed_incident": 0
+      },
+      "introduced_nonincident_count": 0,
+      "introduced_nonincident_examples": [],
+      "introduced_trimmed_incident_count": 0,
+      "introduced_trimmed_incident_examples": [],
+      "continuous_tissue_skin_separation": {
+        "complete": true,
+        "lower_distance_bound": 0.00020711485055360026,
+        "levels": [
+          {
+            "depth": 0,
+            "tested": 1696,
+            "admitted": 1638
+          },
+          {
+            "depth": 1,
+            "tested": 232,
+            "admitted": 30
+          },
+          {
+            "depth": 2,
+            "tested": 808,
+            "admitted": 741
+          },
+          {
+            "depth": 3,
+            "tested": 268,
+            "admitted": 258
+          },
+          {
+            "depth": 4,
+            "tested": 40,
+            "admitted": 40
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Static state tests, not a skin-contact force model or between-state swept proof.",
+    "Shared triangle strips excluded by1e-6 centroid trim.",
+    "Baseline defects, if present, remain declared rather than silently repaired."
+  ]
+}

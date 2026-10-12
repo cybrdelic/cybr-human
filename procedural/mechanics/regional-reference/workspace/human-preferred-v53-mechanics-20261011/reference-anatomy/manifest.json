@@ -1,0 +1,101 @@
+{
+  "status": "Recovered original regional mechanics anatomy. This is not yet a preferred-v53 skin binding.",
+  "axes": "X lateral,Y up,Z front; authored design units",
+  "scale_solver_per_design_unit": 0.001,
+  "source_case": "human-mechanics-20261010/output/bilateral-distributed-mechanics-v1",
+  "source_domain_sha256": "20c6726c8cd18760502c57134adff38ce41188e66ab50c2361ff25539ff74411",
+  "source_arrays_sha256": "623ffa110a645fdef0fd4a1d34eacb6f3be52cb7daa31b5edd130fb98b1c701a",
+  "source_bones_sha256": "02d82a63c27fb25a586eaeef994de2405393ea4b56cbe8d5c4a4bde408e93d0c",
+  "anatomy_sha256": "7ba807d8f93644465a737748124bfb13777bb042875307d263a6767b708341e9",
+  "bone_scope": "Original bilateral mirrored regional zygomatic/maxillary support; central skull/cartilage incomplete",
+  "tissue_nodes": 10196,
+  "tetrahedra": 43961,
+  "families": [
+    {
+      "index": 0,
+      "id": "right-zygomatic-like",
+      "scope": "Authored approximate incoming cheek body; oral wedge passive; not measured muscle segmentation",
+      "tetrahedra": 963,
+      "surface_faces": 604,
+      "active_control": true,
+      "volume_fraction": 1
+    },
+    {
+      "index": 1,
+      "id": "left-zygomatic-like",
+      "scope": "Authored approximate incoming cheek body; oral wedge passive; not measured muscle segmentation",
+      "tetrahedra": 963,
+      "surface_faces": 604,
+      "active_control": true,
+      "volume_fraction": 1
+    },
+    {
+      "index": 2,
+      "id": "passive-circumoral-chart-family",
+      "scope": "Authored superficial/intermediate circumoral connective family; zero activation; not a complete orbicularis anatomy",
+      "tetrahedra": 5040,
+      "surface_faces": 2400,
+      "active_control": false,
+      "volume_fraction": "per-cell"
+    },
+    {
+      "index": 3,
+      "id": "passive-right-commissure-fan",
+      "scope": "Authored passive distributed insertion fan from actual incoming shared-face footprint toward the true native commissure; no new active continuation",
+      "tetrahedra": 318,
+      "surface_faces": 204,
+      "active_control": false,
+      "volume_fraction": "per-cell"
+    },
+    {
+      "index": 4,
+      "id": "passive-left-commissure-fan",
+      "scope": "Authored passive distributed insertion fan from actual incoming shared-face footprint toward the true native commissure; no new active continuation",
+      "tetrahedra": 318,
+      "surface_faces": 204,
+      "active_control": false,
+      "volume_fraction": "per-cell"
+    },
+    {
+      "index": 5,
+      "id": "right-passive-distributed-origin-continuation",
+      "scope": "Authored passive anisotropic origin continuation; not a calibrated tendon or newly activated muscle",
+      "tetrahedra": 1280,
+      "surface_faces": 474,
+      "active_control": false,
+      "volume_fraction": 1.0
+    },
+    {
+      "index": 6,
+      "id": "left-passive-distributed-origin-continuation",
+      "scope": "Authored passive anisotropic origin continuation; not a calibrated tendon or newly activated muscle",
+      "tetrahedra": 1275,
+      "surface_faces": 470,
+      "active_control": false,
+      "volume_fraction": 1.0
+    }
+  ],
+  "root_nodes": 352,
+  "root_faces": 602,
+  "root_position_error": 0.0,
+  "fixed_bones": true,
+  "missing": [
+    "Full skull and articulated jaw/dentition",
+    "Neck, scalp, forehead and eyelid muscle mechanics",
+    "Jaw opening, blink and neck pose controls",
+    "A preferred-v53 rendered-skin correspondence before the separate new binding audit"
+  ],
+  "limits": [
+    "No solved state or dynamic contact acceptance",
+    "Materials and muscle geometry authored, uncalibrated",
+    "Omitted lid, nostril and deep-cavity interfaces fixed with one-ring rest collar",
+    "Only incoming cheek volumes can activate; oral tissue stays passive",
+    "Central bone/cartilage and full-head mechanics remain incomplete",
+    "Cavity annulus is passive matrix; native row-24 remainder is still an omitted fixed interface",
+    "New passive fibre directions and stiffness are authored, uncalibrated; no extra activation",
+    "Exact-source bone root and first finite collar are rigid; connector bulk is passive and deformable",
+    "Attachment Dm condition reaches 2618; this is a warned numerical stability experiment, not a well-conditioned or calibrated anatomical model",
+    "Only exact immutable root nodes omit repulsive nodal contact; all deformable nodes retain it",
+    "Every unbonded boundary pair requires complete continuous static-bone clearance certification"
+  ]
+}

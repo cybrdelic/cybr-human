@@ -1,0 +1,11 @@
+{
+  "target_mesh": "human-reference-pipeline-20261009/output/coordinated-projection-v6c/head.npz",
+  "target_sha256": "f60e447413c791494a8856ee5571cda9574ecca600dfc05427f5c9f7182bfb27",
+  "source_semantics": "human-reference-pipeline-20261009/output/coordinated-gestalt-v5/anatomical_semantics/authored_lip_lid_semantics.npz",
+  "vertices": 932313,
+  "triangles": 1864618,
+  "vermilion_face_count": 23040,
+  "vertex_loops_retained": true,
+  "points_and_normals_refreshed": true,
+  "scope": "Same-order authored tissue mapping; not an anatomical, collision or optical transport certificate."
+}

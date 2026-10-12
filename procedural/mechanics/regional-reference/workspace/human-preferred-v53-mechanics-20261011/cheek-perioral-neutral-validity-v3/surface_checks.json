@@ -1,0 +1,50 @@
+{
+  "neutral-0-state": {
+    "state_sha256": "02ee39c25bde52f0cae8abfe0f0615ff93c10082d81ed1f3cc815f776f020e4b",
+    "self_surface": {
+      "nonincident_candidates": 5504,
+      "nonincident_crossings": 0,
+      "incident_candidates": 11778,
+      "trimmed_incident_crossings": 0,
+      "examples": [],
+      "incident_limit": "Shared strips excluded by1e-6 centroid trim; no exact crossing claim inside that strip."
+    },
+    "unchanged_v53_skin_boundary_clearance": {
+      "complete": true,
+      "lower_distance_bound": 1.9866088425613155e-06,
+      "levels": [
+        {
+          "depth": 0,
+          "tested": 1888,
+          "admitted": 1658
+        },
+        {
+          "depth": 1,
+          "tested": 920,
+          "admitted": 174
+        },
+        {
+          "depth": 2,
+          "tested": 2984,
+          "admitted": 1218
+        },
+        {
+          "depth": 3,
+          "tested": 7064,
+          "admitted": 4761
+        },
+        {
+          "depth": 4,
+          "tested": 9212,
+          "admitted": 8214
+        },
+        {
+          "depth": 5,
+          "tested": 3992,
+          "admitted": 3992
+        }
+      ],
+      "side": "Interior side follows the separately verified inside-node rest component; this clearance test itself is unsigned."
+    }
+  }
+}

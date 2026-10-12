@@ -1,0 +1,91 @@
+{
+  "right-02-initial-state": {
+    "state_sha256": "99c34deec208af79c200969e9bfc3fb1abc7c8b7021f33aaee89474e718c8547",
+    "self_surface": {
+      "nonincident_candidates": 5823,
+      "nonincident_crossings": 54,
+      "incident_candidates": 11778,
+      "trimmed_incident_crossings": 0,
+      "examples": [
+        [
+          1352,
+          1826
+        ],
+        [
+          1352,
+          1873
+        ],
+        [
+          1353,
+          1826
+        ],
+        [
+          1354,
+          1873
+        ],
+        [
+          1355,
+          1873
+        ],
+        [
+          1357,
+          1873
+        ],
+        [
+          1376,
+          1826
+        ],
+        [
+          1379,
+          1826
+        ],
+        [
+          1380,
+          1826
+        ],
+        [
+          1380,
+          1873
+        ]
+      ],
+      "incident_limit": "Shared strips excluded by1e-6 centroid trim; no exact crossing claim inside that strip."
+    },
+    "unchanged_v53_skin_boundary_clearance": {
+      "complete": true,
+      "lower_distance_bound": 9.875619793617856e-06,
+      "levels": [
+        {
+          "depth": 0,
+          "tested": 1888,
+          "admitted": 1653
+        },
+        {
+          "depth": 1,
+          "tested": 940,
+          "admitted": 155
+        },
+        {
+          "depth": 2,
+          "tested": 3140,
+          "admitted": 1330
+        },
+        {
+          "depth": 3,
+          "tested": 7240,
+          "admitted": 4953
+        },
+        {
+          "depth": 4,
+          "tested": 9148,
+          "admitted": 8156
+        },
+        {
+          "depth": 5,
+          "tested": 3968,
+          "admitted": 3968
+        }
+      ],
+      "side": "Interior side follows the separately verified inside-node rest component; this clearance test itself is unsigned."
+    }
+  }
+}

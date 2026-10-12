@@ -1,0 +1,129 @@
+{
+  "schema": "human-regional-bone-mechanics-interface-v1",
+  "mesh": "bone_support.npz",
+  "mesh_fields": {
+    "vertices": "Nx3 float64 native design units",
+    "triangles": "Mx3 int32 outward oriented",
+    "region_ids": {
+      "0": "zygomatic_body",
+      "1": "zygomatic_arch",
+      "2": "maxillary_facial_shell",
+      "3": "inferior_orbital_rim",
+      "4": "lateral_orbital_rim"
+    },
+    "component_ids": "0: single closed rigid support",
+    "bone_ids": {
+      "0": "zygomatic region",
+      "1": "maxillary region; artificial semantic boundary, no articulated suture"
+    },
+    "certified_clearance_lower_bound": "Per-triangle conservative native-skin clearance lower bound in design units"
+  },
+  "recommended_origin": {
+    "seed": [
+      51.5,
+      -5,
+      88.8
+    ],
+    "point": [
+      50.74322553358806,
+      -4.932331072784636,
+      88.10225565954342
+    ],
+    "triangle": 24027,
+    "region": "zygomatic_body",
+    "normal": [
+      0.7336152373676522,
+      -0.06559808543340993,
+      0.676391583839919
+    ],
+    "seed_projection_distance": 1.0315686314360006,
+    "status": "authored landmark, not measured anatomy",
+    "patch_radius_design_units": 4.0
+  },
+  "attachment_patch_record": "landmarks.json / zygomaticus_major_origin_patch_center / attachment_patch_triangles",
+  "legacy_v2_origin_projections": [
+    {
+      "fibre_bundle": 0,
+      "v2_origin_design_units": [
+        47.7,
+        -9.91,
+        91.253839242529
+      ],
+      "projected_bone_origin_design_units": [
+        48.05985933093059,
+        -9.853875269087487,
+        91.6361877877132
+      ],
+      "distance": 0.5280522071559669,
+      "support_triangle": 21746,
+      "region_id": 0
+    },
+    {
+      "fibre_bundle": 1,
+      "v2_origin_design_units": [
+        48.35,
+        -9.455,
+        90.96409185419088
+      ],
+      "projected_bone_origin_design_units": [
+        48.52033925845995,
+        -9.428849590193538,
+        91.14066516772604
+      ],
+      "distance": 0.24673354445335519,
+      "support_triangle": 21745,
+      "region_id": 0
+    },
+    {
+      "fibre_bundle": 2,
+      "v2_origin_design_units": [
+        49.0,
+        -9.000000000000002,
+        90.68959925048354
+      ],
+      "projected_bone_origin_design_units": [
+        48.96272783374955,
+        -9.005716138876828,
+        90.65100455630554
+      ],
+      "distance": 0.0539577523563953,
+      "support_triangle": 22714,
+      "region_id": 0
+    },
+    {
+      "fibre_bundle": 3,
+      "v2_origin_design_units": [
+        49.65,
+        -8.545,
+        90.36534644442611
+      ],
+      "projected_bone_origin_design_units": [
+        49.41722064687956,
+        -8.585001769916566,
+        90.13130516607572
+      ],
+      "distance": 0.33250817855733084,
+      "support_triangle": 22739,
+      "region_id": 0
+    },
+    {
+      "fibre_bundle": 4,
+      "v2_origin_design_units": [
+        50.3,
+        -8.09,
+        89.99374658422849
+      ],
+      "projected_bone_origin_design_units": [
+        49.88270358299158,
+        -8.162039020698153,
+        89.58741454130804
+      ],
+      "distance": 0.5868829945186007,
+      "support_triangle": 22734,
+      "region_id": 0
+    }
+  ],
+  "solver_unit_conversion": "Multiply native positions by 0.001 ONLY to agree with existing numerical scaling; this is not mm calibration. Scale collision tolerances consistently.",
+  "contact_requirement": "Rigid bone mesh ready for nearest-triangle/SDF contact construction. Native v2 has not been modified, rebound, or rerun with this support. Rest containment is not a contact-force or dynamic collision validation.",
+  "bounded_scope": "Positive-X regional support only. The arch is truncated posteriorly. Upper skull, full maxillary interior, jaw and dentition are absent."
+}

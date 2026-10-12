@@ -1,0 +1,19 @@
+{
+  "preferred_head_dependency": "Exact preferred-v53 baseline output",
+  "preferred_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "candidate_head_sha256": "06bb99a61472ca7751c3da1ca083c0ad4600310a8101f354946ffd41a6d1e9b6",
+  "vertices": 615136,
+  "triangles": 1230264,
+  "vertex_dtype": "float64",
+  "triangle_dtype": "int64",
+  "object_id_dtype": "uint8",
+  "new_vertex_count": 49294,
+  "modified_face_count": 99457,
+  "semantics_sha256": "2b73b4d16a332a890c0ea8e7e23e8d5e5c98eb655ddca5fa421847934c75739e",
+  "retained_maps_sha256": "07f8f329d0d164d1ebf12529f7673a3d372f6dcbc104fdc14dad70103df34d5f",
+  "status": "Unselected orbit-only visual-source diagnostic; exact preferred nose retained. Actual image gates and judgment packaged separately by appearance owner.",
+  "runtime": {
+    "numpy": "2.3.5"
+  },
+  "geometry_restore": "Numeric replay from exact original dependency, verified to byte-identical candidate NPZ. Source curves and interface inputs included separately."
+}

@@ -1,0 +1,41 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 3710.0625, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "source_geometry_sha256": "9bc6a0def6a383e3eefd02a80966a7a0793549f5f3af06b6c3e29844f861c1ac",
+  "geometry_sha256": "4ac08d308c86fe4644a43ebf0bb82d288d2d38bfe6a7b29d1b1e1a0af9287aa0",
+  "nodes": 1125,
+  "tetrahedra": 3401,
+  "new_passive_tetrahedra": 288,
+  "shared_inner_side_faces": 24,
+  "released_old_perimeter_nodes": 12,
+  "new_far_perimeter_nodes": 24,
+  "superficial_proxy_nodes": 73,
+  "top_boundary_triangles": 132,
+  "old_positions_exact": true,
+  "old_connectivity_exact": true,
+  "minimum_signed_six_volume": 8.635056776899455e-05,
+  "new_Dm_condition_quantiles": [
+    4.031990656626542,
+    21.205247634182083,
+    115.97403098840542,
+    402.31779395952225
+  ],
+  "node_outside_ids": [],
+  "cell_center_outside_ids": [],
+  "outer_ellipse_center_radii": [
+    36.1,
+    -49.5,
+    8.9,
+    12.5
+  ],
+  "superficial_depth": 0.6,
+  "outer_bottom_depth": 2.0,
+  "material_change": false,
+  "scope": "Conforming passive volume annulus around the exact earlier insertion. Same bundle/material; supported farther boundary replaces the tiny fixed rim. Original skin unchanged at rest.",
+  "admitted": true
+}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 640.1, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 3710.0625, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 3.13, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

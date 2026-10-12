@@ -1,0 +1,174 @@
+{
+  "VALIDATION.json": {
+    "sha256": "c889bbc811e9d3697f0db73371e11620eb4e4c7e768e168b88c9969ea8fdfc37",
+    "bytes": 2425
+  },
+  ".gitignore": {
+    "sha256": "1fe0c34e6f064769816e189262493a513d4ef697de6996e24b0c14a927a458f2",
+    "bytes": 55
+  },
+  "profiles.json": {
+    "sha256": "2255fd411b9607e58ae29487bd2ba53f0fe6a065911c26924f8dd154f1dd750d",
+    "bytes": 1204
+  },
+  "requirements.txt": {
+    "sha256": "df76b7f0a264ab4470266d99066e54f28ba436ff81b5da6f412aae25b98296a5",
+    "bytes": 29
+  },
+  "run.py": {
+    "sha256": "02185a94897689b56e163daebaa3db967b1168a7e45cb3e95fe4a9baae0a76fb",
+    "bytes": 3982
+  },
+  "README.md": {
+    "sha256": "1dbd6f56b041e722aa20108d8ad8e9d380dd89fb021e7bcd6886ad5f48583295",
+    "bytes": 5259
+  },
+  "runtime/render.py": {
+    "sha256": "ff425b803d0aa94e03f5a933e4529cb01447af51a9e8bbd32839164c28c4a4c6",
+    "bytes": 2047
+  },
+  "runtime/uniform_numerical_scale.py": {
+    "sha256": "40fc5d41fbeffe797a130451d0b0fa0928eac7df6ab4122d435c5223a15b2137",
+    "bytes": 2965
+  },
+  "geometry/author_sections.py": {
+    "sha256": "e9cfa654b2a44a36119d7f09c754816974012bc6f2e5f2842b067355b7ff8938",
+    "bytes": 1330
+  },
+  "geometry/replay.py": {
+    "sha256": "d7f045bcc924646ccdfe41a95dde259d555c684f969270b8c59e1485dba802a0",
+    "bytes": 2124
+  },
+  "tools/memory_guard.py": {
+    "sha256": "32ac96b6e646f5640b4f34e01344bddae2a36fff83a4daad6bf9b23cf6a7d36c",
+    "bytes": 4012
+  },
+  "inputs/reference_eye_frame.json": {
+    "sha256": "e76ec7bbf2c4a128460322f1451ea0d9e206f8886804243c0ff62d23d063cfaa",
+    "bytes": 3759
+  },
+  "evidence/optional_orbital_v2_front.png": {
+    "sha256": "7adc01d3116e1d6487864db5c08018b73bec9806bdaab3aa2ad904c21548b21c",
+    "bytes": 235250
+  },
+  "evidence/conditioned_preferred_front.png": {
+    "sha256": "d0ef5a2b8be65c402825a38895ea440d09957bcff1ec1ed96f39a9a022124bcc",
+    "bytes": 235473
+  },
+  "evidence/optional_margin_v3_clay.png": {
+    "sha256": "1d66e0c492698951ff3d271d32f85174c0fe1ab72bcd0d4a74de135a024ececd",
+    "bytes": 299315
+  },
+  "evidence/RESULTS.json": {
+    "sha256": "3c8335eeeaaa41493c787554a03979074136a1bb8bd7d1b2b041c061635d9fb7",
+    "bytes": 1082
+  },
+  "runtime/scene/eye_similarity.py": {
+    "sha256": "902cc361a7f7aff3354a093b7e84b7787209e2996fe2d218c247729ea9d39061",
+    "bytes": 2300
+  },
+  "runtime/scene/rooted_groom.py": {
+    "sha256": "eb1b9f27838b7634d9cef765c14c2224d76130a260090c2468fe3718b7d0a882",
+    "bytes": 12124
+  },
+  "runtime/scene/physical_interfaces.py": {
+    "sha256": "d66b925f94ebe10cb7c270c22eaa37af44025f5aa58a5f8e4d31a3e1eb76987c",
+    "bytes": 4344
+  },
+  "runtime/scene/rooted_short_groom.py": {
+    "sha256": "bb3d53593b7e7813b6d8e0f9652c1c502153f08a052df62fde08ca2883e2e34c",
+    "bytes": 4269
+  },
+  "runtime/scene/scene_mapped.py": {
+    "sha256": "d1b26917d1aa7c2b16cb2655447cb789cbc16a23ae628ba3a743b397d923dd9d",
+    "bytes": 31659
+  },
+  "runtime/scene/fixed_frontal_camera.json": {
+    "sha256": "22cd7d828c8efe9ef870d09243760f08253381b9b3b8a4f61255972a51866dec",
+    "bytes": 381
+  },
+  "runtime/scene/frozen_eye_camera.json": {
+    "sha256": "ac4bd4c5f2d654e25350000bd0f97c23337bd68ea2ade7fa47a0880d28f62dad",
+    "bytes": 903
+  },
+  "runtime/scene/iris_stroma.py": {
+    "sha256": "93e98326145f1a9d1a7ab05ca1d50a4bf9cb2c879d56098c082035831d105054",
+    "bytes": 2956
+  },
+  "runtime/scene/regional_skin_fields.py": {
+    "sha256": "3527ce84225d66542e8f05d4f5eb0fa834708d9c5bcfc4034fcefdd1cb942d24",
+    "bytes": 2414
+  },
+  "runtime/scene/coordinated_tissue.py": {
+    "sha256": "02a0fa1cf773dbaf78e3eab0b2a6305ffbfc604a677c9f45b093f21f9bd2ef6b",
+    "bytes": 3829
+  },
+  "runtime/scene/sclera_fields.py": {
+    "sha256": "6875dd5ec2a0923a8ca775ba0d0071d6744bec7c492425d1cf3dda401cb0fa4b",
+    "bytes": 2408
+  },
+  "runtime/scene/surface_response.py": {
+    "sha256": "684f065c77ddda34c5ad809f99c5936665da4128839a54315f610f67a07a4839",
+    "bytes": 3210
+  },
+  "geometry/orbital-v2/finite_margin_face_groups.npz": {
+    "sha256": "60b8904dab8bcb6275ef371a13fed5fc129eeaeb6dea75c78c7a3db838805c87",
+    "bytes": 197725
+  },
+  "geometry/orbital-v2/numerical_delta.npz": {
+    "sha256": "b3af055d494221a53b04920034b734bb65baf4a6fbaaed8d9e26fb2688fc71a1",
+    "bytes": 1622836
+  },
+  "geometry/orbital-v2/retained_source_maps.npz": {
+    "sha256": "07f8f329d0d164d1ebf12529f7673a3d372f6dcbc104fdc14dad70103df34d5f",
+    "bytes": 4446756
+  },
+  "geometry/orbital-v2/restore.py": {
+    "sha256": "d9e2eb281d83abfd58a232382e3204b4018ede34587393a74653d3b26562c83d",
+    "bytes": 1874
+  },
+  "geometry/orbital-v2/CHECKPOINT.json": {
+    "sha256": "0ff130558165240370bfa0471a937df2159a69a944c52c0fb8db473ad309fdf6",
+    "bytes": 1020
+  },
+  "geometry/margin-v3/exact_coordinate_delta.npz": {
+    "sha256": "8b89cb8758f69cb6f6f11e02fde957777335063318126d382f467db4e997fb17",
+    "bytes": 247757
+  },
+  "geometry/margin-v3/restore.py": {
+    "sha256": "9f02738ef50e2167febfe27d0cb2fc75dc47e84d90951e240888b1b87cbb3b38",
+    "bytes": 746
+  },
+  "geometry/margin-v3/CHECKPOINT.json": {
+    "sha256": "503c169ef1a80a109d24bfac41172f70d32ee5bb98f1566629fee0bc9ecbfa67",
+    "bytes": 573
+  },
+  "geometry/orbital-v2/interfaces/right_cut.npz": {
+    "sha256": "46529ec5177b52eea86dab7caa712ec5ac2d133e9b71efd1373b94fe58f0cd94",
+    "bytes": 151755
+  },
+  "geometry/orbital-v2/interfaces/left_cut.npz": {
+    "sha256": "6823da9a8d1e976550d867a3565ba3550cd463041870d8b9b9b85fc213836d9e",
+    "bytes": 152967
+  },
+  "geometry/orbital-v2/authoring/orbital_surface.py": {
+    "sha256": "183bd3f09df34d776f59d93c7433047ca963f91af75d46b780dddfd8a0145237",
+    "bytes": 7370
+  },
+  "geometry/orbital-v2/anatomical_semantics/authored_lip_lid_semantics.npz": {
+    "sha256": "2b73b4d16a332a890c0ea8e7e23e8d5e5c98eb655ddca5fa421847934c75739e",
+    "bytes": 640159
+  },
+  "geometry/margin-v3/authoring/orbital_surface.py": {
+    "sha256": "77a2a54e6b19eaa85b461190ef999ccf06d3fc8608b6cb03757308cf564d3896",
+    "bytes": 8688
+  },
+  "geometry/margin-v3/authoring/orbital_v2_source.py": {
+    "sha256": "183bd3f09df34d776f59d93c7433047ca963f91af75d46b780dddfd8a0145237",
+    "bytes": 7370
+  },
+  "geometry/margin-v3/anatomical_semantics/authored_lip_lid_semantics.npz": {
+    "sha256": "0bb3fe9eb70b0013f36aa26685097c550ae79d71c0b6d8cdeb6a5b6ae9974586",
+    "bytes": 640269
+  }
+}

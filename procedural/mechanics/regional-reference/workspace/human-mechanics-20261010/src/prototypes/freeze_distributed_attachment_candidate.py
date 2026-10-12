@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""Freeze audited distributed attachments; add semantics, do not change geometry."""
+import sys,json,hashlib,numpy as np
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'src/prototypes'))
+from design_finite_origin_attachments import boundary,determinants
+R=ROOT/'output';BASE=R/'distributed-origin-attachment-feasibility-v1/revised';OUT=BASE.parent/'frozen';OUT.mkdir(exist_ok=True)
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def winding_block(face,upper):
+ a,b,c=sorted(face);A,B,C=[upper[int(k)] for k in (a,b,c)];q=np.array([[a,b,c,A],[b,c,A,B],[c,B,C,A]])
+ parity=np.sign((int(face[1])-int(face[0]))*(int(face[2])-int(face[0]))*(int(face[2])-int(face[1])))
+ return q[:,[0,2,1,3]] if parity<0 else q
+oldpath=R/'bilateral-midface-bone-aware-v2/rest_geometry.npz';old=np.load(oldpath);faces,owners=boundary(old['tetrahedra']);bp=R/'authored-bone-support-v1/bone_support.npz';b=np.load(bp);domain=json.load(open(R/'bilateral-mechanics-v1/domain.json'));aud=json.load(open(BASE/'static_geometry_audit.json'));conditions=json.load(open(BASE/'reference_conditioning_audit.json'));records=[]
+for si,(side,name) in enumerate([(1,'right'),(-1,'left')]):
+ inp=BASE/(name+'_attachment_candidate.npz');a=np.load(inp);data={k:a[k].copy() for k in a.files};x=a['vertices'];t=a['tetrahedra'];nr=len(a['root_source_bone_vertex_ids']);sourcefaces=a['shared_tissue_source_face_ids'];shared=a['shared_tissue_local_node_ids'];source=a['shared_tissue_source_node_ids'];off=a['region_tet_offsets'];assert nr==176 and np.array_equal(a['fixed_local_nodes'],np.arange(352));assert np.array_equal(x[shared],old['vertices'][source]);assert np.array_equal(x[:nr],b['vertices'][a['root_source_bone_vertex_ids']]*[side,1,1]);assert np.isin(owners[sourcefaces],domain['muscles'][si]['tetrahedra']).all()
+ # Independent combinatorial orientation reconstruction. No determinant sign is used.
+ blocks=[]
+ for low,high in [(a['root_faces'],nr),(a['root_faces']+nr,nr)]:
+  for q in low:blocks.extend(winding_block(q,{int(k):int(k+high) for k in q}))
+ tipmap={int(g):int(l-len(shared)) for g,l in zip(source,shared)}
+ for q in faces[sourcefaces][:,::-1]:
+  q=np.array([tipmap[int(k)] for k in q]);blocks.extend(winding_block(q,{int(k):int(k+len(shared)) for k in q}))
+ assert np.array_equal(np.array(blocks),t[:off[3]]), 'Declared orientation differs from frozen stem topology'
+ assert determinants(x,t).min()>0
+ tags=np.ones(len(t),np.uint8);tags[:off[1]]=0;path=np.tile(a['axis'],(len(t),1));path[:off[1]]=[.6*side,0,.8];bridge=x[shared-len(shared)].mean(0)-x[2*nr:3*nr].mean(0);bridge/=np.linalg.norm(bridge);assert bridge@a['axis']>0;path[off[3]:]=bridge
+ data.update(root_local_node_ids=np.arange(nr),side=np.array(side,dtype=np.int8),coordinate_scale_solver_per_design_unit=np.array(.001),shared_tissue_source_face_nodes=faces[sourcefaces],shared_tissue_owner_tet_ids=owners[sourcefaces],shared_tissue_owner_is_active_body=np.ones(len(sourcefaces),np.uint8),root_combined_bone_vertex_ids=a['root_source_bone_vertex_ids']+(len(b['vertices']) if side<0 else 0),root_combined_bone_triangle_ids=a['root_source_bone_triangle_ids']+(len(b['triangles']) if side<0 else 0),static_root_touching_boundary_faces=a['boundary_faces'][np.any(a['boundary_faces']<nr,axis=1)],material_region_tags=tags,material_space_path_directions=path,activation=np.zeros(len(t)))
+ assert np.isin(data['static_root_touching_boundary_faces'],data['fixed_local_nodes']).all()
+ out=OUT/(name+'_attachment.npz');np.savez_compressed(out,**data);z=np.load(out);assert all(np.array_equal(z[k],a[k]) for k in a.files)
+ c=conditions[si];records.append(dict(side=side,array_file=out.name,sha256=sha(out),audited_geometry_file=str(inp.relative_to(ROOT)),audited_geometry_sha256=sha(inp),all_original_array_values_unchanged=True,stem_winding_verified_combinatorially=True,nodes=len(x),new_nodes=len(x)-len(source),tets=len(t),root_local_node_range=[0,nr-1],fixed_local_node_range=[0,2*nr-1],shared_tissue_local_node_ids=shared.tolist(),shared_tissue_source_node_ids=source.tolist(),shared_tissue_source_face_nodes=faces[sourcefaces].tolist(),shared_tissue_owner_tet_ids=owners[sourcefaces].tolist(),active_body_id=domain['muscles'][si]['id'],all_tip_faces_owned_by_intended_active_body=True,region_offsets=off.tolist(),region_names=['fixed_collar','root_projection','tissue_projection','bridge'],reference_Dm_condition=c['reference_Dm_condition'],minimum_positive_volume_design_units_cubed=c['minimum_positive_volume_design_units_cubed'],minimum_mean_ratio=c['minimum_mean_ratio']))
+manifest=dict(schema='frozen-distributed-finite-attachment-v1',status='Frozen geometry audited; conditioning warning retained; combined annulus and exact runner admission pending',coordinate_scale_solver_per_design_unit=.001,source_tissue_sha256=sha(oldpath),source_bone_sha256=sha(bp),combined_bone_binary_sha256=sha(R/'bilateral-mechanics-v1/bones.bin'),geometry_audit_path=str((BASE/'static_geometry_audit.json').relative_to(ROOT)),geometry_audit_sha256=sha(BASE/'static_geometry_audit.json'),root_footprint=dict(baseline_area=39.08797123963822,area=39.619797534546606,source_triangles=301,source_vertices=176),append_contract='Append every local node except shared_tissue_local_node_ids; map those exactly to shared_tissue_source_node_ids. Do not assume a base node count. Root prefix is local 0..175; fixed collar is local 0..351.',material_scope='0=fixed collar, 1=passive attachment transition. All activation values are zero. Unit material-space path directions are original authored orientations from the distributed support toward the incoming body, not measured tendon properties.',orientation_contract='Every stored stem tetrahedron independently matches boundary-winding parity construction. The bridge tetrahedra use the outward shell order. No orientation repair was performed during freeze.',condition_warning='Worst reference Dm conditions exceed existing tissue 501.39. No stability or quality acceptance is implied. Failed graded alternatives remain separate.',sides=records)
+(OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps(manifest));print('TOTAL_BYTES',sum(p.stat().st_size for p in BASE.parent.rglob('*') if p.is_file()))

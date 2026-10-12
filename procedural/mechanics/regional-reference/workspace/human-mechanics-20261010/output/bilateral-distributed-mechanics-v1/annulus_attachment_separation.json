@@ -1,0 +1,73 @@
+{
+  "schema": "exact-aabb-disjoint-additions-v1",
+  "cavity_sha256": "31724da83b42f0bd08f11a49743dd4e9cbd96bbf6705e5294c9f95dc63304c7c",
+  "sides": [
+    {
+      "side": "right",
+      "new_cavity_aabb": [
+        [
+          -25.111474235705987,
+          -70.1241415540344,
+          98.28012532870764
+        ],
+        [
+          24.57404482192458,
+          -42.01935152176899,
+          118.19659675757556
+        ]
+      ],
+      "whole_attachment_aabb": [
+        [
+          48.235277863176144,
+          -12.578039707124486,
+          84.89795844430022
+        ],
+        [
+          54.871318403591644,
+          0.4835066607522275,
+          95.94123373477487
+        ]
+      ],
+      "positive_separating_axis_gaps": [
+        23.661233041251563,
+        29.441311814644504,
+        2.3388915939327717
+      ],
+      "attachment_sha256": "b5a50be5f1db3ec29f52e9d3d4ac3a99f2de55a03a4df8b25e95223c9b9bf4c3"
+    },
+    {
+      "side": "left",
+      "new_cavity_aabb": [
+        [
+          -25.111474235705987,
+          -70.1241415540344,
+          98.28012532870764
+        ],
+        [
+          24.57404482192458,
+          -42.01935152176899,
+          118.19659675757556
+        ]
+      ],
+      "whole_attachment_aabb": [
+        [
+          -54.700242245991646,
+          -10.000568103856432,
+          84.89795844430022
+        ],
+        [
+          -48.06381030871664,
+          -1.1309382349077048,
+          95.3546016719238
+        ]
+      ],
+      "positive_separating_axis_gaps": [
+        22.952336073010652,
+        32.01878341791256,
+        2.925523656783838
+      ],
+      "attachment_sha256": "46de632d4cbfdd50abea091e475d6ae0d4d7d84869ac07a5318c0d5261c29047"
+    }
+  ],
+  "scope": "New cavity cells are AABB-disjoint from both complete attachments. All old tissue and individual attachments are unchanged from prior audits; not a dynamic self-contact proof."
+}

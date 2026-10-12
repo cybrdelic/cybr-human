@@ -1,0 +1,28 @@
+{
+  "tissue_nodes": {
+    "count": 10196,
+    "all_three_inside": 6424,
+    "all_three_outside": 3768,
+    "near_boundary": 0,
+    "outside_over_point1": 3498,
+    "outside_distance_quantiles": [
+      0.001194317126646638,
+      0.9241138100624084,
+      4.0118679761886575,
+      6.394639015197754
+    ],
+    "ambiguous": 4
+  },
+  "bone_samples": {
+    "count": 13690,
+    "all_three_inside": 13684,
+    "all_three_outside": 0,
+    "near_boundary": 0,
+    "outside_over_point1": 0,
+    "outside_distance_quantiles": [],
+    "ambiguous": 6
+  },
+  "status": "Sampled rest-fit audit; does not accept inverted or overlapping volume",
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "candidate_sha256": "df21770fce51d8b229c4b3b8a479e813c11ad32ced197cdd5383bfcd0631a6b6"
+}

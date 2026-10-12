@@ -1,0 +1,18 @@
+{
+  "domain_sha256": "936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf",
+  "arrays_sha256": "a2639e37de4e28c951ce5391c76e076f94b036b6fac0ebdbfad6940edff38de1",
+  "bones_sha256": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+  "geometry_sha256": "5fe664216b7670dfecb37500828becbec29c37ea86e6aa59f1e229606fed976c",
+  "surface_audit": {
+    "boundary_faces": 1648,
+    "open_or_nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "nonmanifold_vertex_links": [],
+    "nonmanifold_vertex_count": 0
+  },
+  "positive_cells": true,
+  "minimum_six_volume_design": 8.635056776902851e-05,
+  "all_sampled_tissue_nodes_inside": true,
+  "root_solver_coordinates_bit_exact_to_original": true,
+  "physics_admission": "PENDING"
+}

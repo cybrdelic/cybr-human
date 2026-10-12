@@ -1,0 +1,1029 @@
+{
+  "schema": "preferred-v53-read-only-attachment-reactions-audit-v1",
+  "created": "2026-10-11T17:36:43.883Z",
+  "sourceHashes": {
+    "human-preferred-v53-mechanics-20261011/cheek-case-v3/domain.json": "936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf",
+    "human-preferred-v53-mechanics-20261011/cheek-case-v3/arrays.bin": "a2639e37de4e28c951ce5391c76e076f94b036b6fac0ebdbfad6940edff38de1",
+    "human-preferred-v53-mechanics-20261011/cheek-case-v3/bones.bin": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/neutral-0-state.json": "279dde71c09f8919cba6402cf945c2ee8786763d7e01111ada7b3e1041898b7c",
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-02-state.json": "b78d30cda71e5d839f5ffcdeeb588d5998f60feb12f3c456d6efdebaa4d71734",
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-08-state.json": "b681f05f48bcfa66d97712d0ca79f8d71575fa531a80098042dd20dd1724a641",
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/right-16-state.json": "27fb92e91f669f7fde9f928bb760945d222efd1a032f456412c08084be7699d2",
+    "human-preferred-v53-mechanics-20261011/cheek-equilibrium-v3/released-0-state.json": "ecc6585015c0d174626dc25bc37acf5cda28e2b298cbe13fe013f819556a836a"
+  },
+  "inputsUnchanged": true,
+  "nodes": 1003,
+  "tetrahedra": 3041,
+  "fixedNodes": 352,
+  "rootNodes": 176,
+  "additionalFixedCollarNodes": 176,
+  "rootAdjacentTetrahedra": 903,
+  "allRootAdjacentTetrahedraEntirelyFixed": true,
+  "activeTetrahedraTouchingFixedNodes": 0,
+  "rootCentroid": [
+    0.05109420212941858,
+    -0.005572102382242043,
+    0.08777405966118527
+  ],
+  "method": "Evaluate saved positions and activation with exact original force law, first with the original fixed mask, then with only the in-memory projection mask cleared. No step, optimization or position update. Remove contacts only in a second diagnostic evaluation to decompose force sources. Inputs hashed before and after.",
+  "signConvention": "supportOnTissue = dE_total/dx at constrained nodes; tissueOnSupport is its negative. Contact bone reaction = dE_contact/dx at all nodal contacts. Constitutive tissue force = -dE_internal/dx. Torque is about declared root centroid.",
+  "units": "Uncalibrated solver force and torque units. Design length is scaled by 0.001, but this authored geometry/material has no anatomical scale/force calibration; do not label magnitudes measured human forces.",
+  "limitations": [
+    "Exact bone roots and an offset first collar are independently fixed in world coordinates. The collar is a rigid attachment approximation; its loads are not resolved stresses propagated through the all-fixed root-to-collar tissue.",
+    "These diagnostics expose reaction loads but do not feed them back to dynamic bones.",
+    "Contact is area-lumped finite nodal penalty. Continuous geometric admissibility is separately verified by the saved solver state; this audit does not rerun collision certification.",
+    "No skin-transfer, anatomical segmentation, physiological activation, tendon law, bilateral pose, skull or jaw-dynamics claim."
+  ],
+  "states": [
+    {
+      "phase": "neutral-0",
+      "activation": 0,
+      "sourceStateSha256": "279dde71c09f8919cba6402cf945c2ee8786763d7e01111ada7b3e1041898b7c",
+      "storedConverged": true,
+      "storedResidual": 1.0047560572785098e-17,
+      "recomputedResidual": 1.0047560572785098e-17,
+      "minJ": 1,
+      "exactFixedCoordinates": true,
+      "maxFixedCoordinateMotion": 0,
+      "projectionDifference": 0,
+      "energyMatches": true,
+      "energy": 2.8291744719275305e-36,
+      "muscleEnergy": 2.8291744719275305e-36,
+      "contactEnergy": 0,
+      "activeNodalContacts": 0,
+      "maximumPenaltyViolation": 0,
+      "rootSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "combinedSupportOnTissue": {
+        "nodes": 352,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "rootConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "nodalContactBoneReaction": {
+        "nodes": 1003,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "freeResidual": {
+        "nodes": 651,
+        "net": [
+          -2.8888949165808538e-34,
+          -7.703719777548943e-34,
+          4.81482486096809e-34
+        ],
+        "netNorm": 9.532866866365114e-34,
+        "torqueAboutRootCentroid": [
+          -9.027796614315168e-36,
+          -4.513898307157584e-36,
+          -1.9560225997682864e-35
+        ],
+        "torqueNorm": 2.2010879826059412e-35,
+        "nodalL2": 1.00475605727851e-17,
+        "sumNodalNorms": 3.6875968100033963e-17,
+        "maxNodalNorm": 6.3353223823906e-18,
+        "maxNode": 833
+      },
+      "muscleForcesAtFixed": {
+        "nodes": 352,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "muscleDiagnostics": [
+        {
+          "id": "right-zygomatic-like",
+          "activation": 0,
+          "targetStretch": 1,
+          "tetrahedronCount": 1764,
+          "activeTetrahedra": 36,
+          "restVolume": 1.4404542422814504e-7,
+          "currentVolume": 1.4404542422814504e-7,
+          "energy": 2.8291744719275305e-36,
+          "meanStretch": 0.9999999999999998,
+          "minStretch": 0.9999999999999997,
+          "maxStretch": 1.0000000000000002,
+          "minJ": 1,
+          "maxJ": 1,
+          "meanJ": 1
+        }
+      ]
+    },
+    {
+      "phase": "right-02",
+      "activation": 0.02,
+      "sourceStateSha256": "b78d30cda71e5d839f5ffcdeeb588d5998f60feb12f3c456d6efdebaa4d71734",
+      "storedConverged": true,
+      "storedResidual": 0.000019204972913425792,
+      "recomputedResidual": 0.000019204972913425792,
+      "minJ": 0.9742755508016137,
+      "exactFixedCoordinates": true,
+      "maxFixedCoordinateMotion": 0,
+      "projectionDifference": 0,
+      "energyMatches": true,
+      "energy": 8.254866539745115e-8,
+      "muscleEnergy": 1.1034772944058461e-8,
+      "contactEnergy": 0,
+      "activeNodalContacts": 0,
+      "maximumPenaltyViolation": 0,
+      "rootSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          3.427104750283391e-7,
+          3.4901790990624703e-7,
+          2.522651906563385e-7
+        ],
+        "netNorm": 5.503650584351753e-7,
+        "torqueAboutRootCentroid": [
+          -6.759369772375318e-9,
+          3.2689186060872845e-9,
+          4.343946144506387e-9
+        ],
+        "torqueNorm": 8.67437471402387e-9,
+        "nodalL2": 0.00000780632338254668,
+        "sumNodalNorms": 0.000055480583820381414,
+        "maxNodalNorm": 0.0000024746482480292774,
+        "maxNode": 265
+      },
+      "combinedSupportOnTissue": {
+        "nodes": 352,
+        "net": [
+          3.427104750283391e-7,
+          3.4901790990624703e-7,
+          2.522651906563385e-7
+        ],
+        "netNorm": 5.503650584351753e-7,
+        "torqueAboutRootCentroid": [
+          -6.759369772375318e-9,
+          3.2689186060872845e-9,
+          4.343946144506387e-9
+        ],
+        "torqueNorm": 8.67437471402387e-9,
+        "nodalL2": 0.00000780632338254668,
+        "sumNodalNorms": 0.000055480583820381414,
+        "maxNodalNorm": 0.0000024746482480292774,
+        "maxNode": 265
+      },
+      "rootConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          -3.427104750283391e-7,
+          -3.4901790990624703e-7,
+          -2.522651906563385e-7
+        ],
+        "netNorm": 5.503650584351753e-7,
+        "torqueAboutRootCentroid": [
+          6.759369772375318e-9,
+          -3.2689186060872845e-9,
+          -4.343946144506387e-9
+        ],
+        "torqueNorm": 8.67437471402387e-9,
+        "nodalL2": 0.00000780632338254668,
+        "sumNodalNorms": 0.000055480583820381414,
+        "maxNodalNorm": 0.0000024746482480292774,
+        "maxNode": 265
+      },
+      "nodalContactBoneReaction": {
+        "nodes": 1003,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "freeResidual": {
+        "nodes": 651,
+        "net": [
+          -3.427104750283516e-7,
+          -3.490179099060756e-7,
+          -2.5226519065637943e-7
+        ],
+        "netNorm": 5.50365058435093e-7,
+        "torqueAboutRootCentroid": [
+          6.759369772375325e-9,
+          -3.268918606087887e-9,
+          -4.343946144507681e-9
+        ],
+        "torqueNorm": 8.67437471402475e-9,
+        "nodalL2": 0.000019204972913425792,
+        "sumNodalNorms": 0.0003191761492375827,
+        "maxNodalNorm": 0.000005787458780209171,
+        "maxNode": 536
+      },
+      "muscleForcesAtFixed": {
+        "nodes": 352,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "muscleDiagnostics": [
+        {
+          "id": "right-zygomatic-like",
+          "activation": 0.02,
+          "targetStretch": 0.98,
+          "tetrahedronCount": 1764,
+          "activeTetrahedra": 1726,
+          "restVolume": 1.4404542422814504e-7,
+          "currentVolume": 1.4368139784419966e-7,
+          "energy": 1.1034772944058461e-8,
+          "meanStretch": 0.9825016224666735,
+          "minStretch": 0.9640227968173246,
+          "maxStretch": 0.9897929373800246,
+          "minJ": 0.9742755508016137,
+          "maxJ": 1.0008359893517862,
+          "meanJ": 0.9974728361841692
+        }
+      ]
+    },
+    {
+      "phase": "right-08",
+      "activation": 0.08,
+      "sourceStateSha256": "b681f05f48bcfa66d97712d0ca79f8d71575fa531a80098042dd20dd1724a641",
+      "storedConverged": true,
+      "storedResidual": 0.000014632668594668758,
+      "recomputedResidual": 0.000014632668594668758,
+      "minJ": 0.9065288090858714,
+      "exactFixedCoordinates": true,
+      "maxFixedCoordinateMotion": 0,
+      "projectionDifference": 0,
+      "energyMatches": true,
+      "energy": 0.0000013570295942142946,
+      "muscleEnergy": 1.754461669808223e-7,
+      "contactEnergy": 0,
+      "activeNodalContacts": 0,
+      "maximumPenaltyViolation": 0,
+      "rootSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          5.913474219667133e-8,
+          4.1862226560271676e-7,
+          5.378366321585316e-7
+        ],
+        "netNorm": 6.841123898049573e-7,
+        "torqueAboutRootCentroid": [
+          -2.1309187567559978e-8,
+          1.4281570414903982e-8,
+          1.0272230364740717e-8
+        ],
+        "torqueNorm": 2.763265179043833e-8,
+        "nodalL2": 0.000029578433100840765,
+        "sumNodalNorms": 0.0002011389036937833,
+        "maxNodalNorm": 0.000011801375132444496,
+        "maxNode": 265
+      },
+      "combinedSupportOnTissue": {
+        "nodes": 352,
+        "net": [
+          5.913474219667133e-8,
+          4.1862226560271676e-7,
+          5.378366321585316e-7
+        ],
+        "netNorm": 6.841123898049573e-7,
+        "torqueAboutRootCentroid": [
+          -2.1309187567559978e-8,
+          1.4281570414903982e-8,
+          1.0272230364740717e-8
+        ],
+        "torqueNorm": 2.763265179043833e-8,
+        "nodalL2": 0.000029578433100840765,
+        "sumNodalNorms": 0.0002011389036937833,
+        "maxNodalNorm": 0.000011801375132444496,
+        "maxNode": 265
+      },
+      "rootConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          -5.913474219667133e-8,
+          -4.1862226560271676e-7,
+          -5.378366321585316e-7
+        ],
+        "netNorm": 6.841123898049573e-7,
+        "torqueAboutRootCentroid": [
+          2.1309187567559978e-8,
+          -1.4281570414903982e-8,
+          -1.0272230364740717e-8
+        ],
+        "torqueNorm": 2.763265179043833e-8,
+        "nodalL2": 0.000029578433100840765,
+        "sumNodalNorms": 0.0002011389036937833,
+        "maxNodalNorm": 0.000011801375132444496,
+        "maxNode": 265
+      },
+      "nodalContactBoneReaction": {
+        "nodes": 1003,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "freeResidual": {
+        "nodes": 651,
+        "net": [
+          -5.9134742197040004e-8,
+          -4.1862226560312476e-7,
+          -5.378366321585269e-7
+        ],
+        "netNorm": 6.841123898052352e-7,
+        "torqueAboutRootCentroid": [
+          2.130918756756192e-8,
+          -1.4281570414906602e-8,
+          -1.027223036474613e-8
+        ],
+        "torqueNorm": 2.7632651790443193e-8,
+        "nodalL2": 0.000014632668594668761,
+        "sumNodalNorms": 0.0002827737141555677,
+        "maxNodalNorm": 0.0000026855741508068224,
+        "maxNode": 366
+      },
+      "muscleForcesAtFixed": {
+        "nodes": 352,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "muscleDiagnostics": [
+        {
+          "id": "right-zygomatic-like",
+          "activation": 0.08,
+          "targetStretch": 0.92,
+          "tetrahedronCount": 1764,
+          "activeTetrahedra": 1730,
+          "restVolume": 1.4404542422814504e-7,
+          "currentVolume": 1.4251898275601695e-7,
+          "energy": 1.754461669808223e-7,
+          "meanStretch": 0.9300129698291669,
+          "minStretch": 0.8787082744081006,
+          "maxStretch": 0.9552438414433226,
+          "minJ": 0.9065288090858714,
+          "maxJ": 0.9989112850751881,
+          "meanJ": 0.9894030547634026
+        }
+      ]
+    },
+    {
+      "phase": "right-16",
+      "activation": 0.16,
+      "sourceStateSha256": "27fb92e91f669f7fde9f928bb760945d222efd1a032f456412c08084be7699d2",
+      "storedConverged": true,
+      "storedResidual": 0.000014624537233416649,
+      "recomputedResidual": 0.000014624537233416649,
+      "minJ": 0.822825906469459,
+      "exactFixedCoordinates": true,
+      "maxFixedCoordinateMotion": 0,
+      "projectionDifference": 0,
+      "energyMatches": true,
+      "energy": 0.0000056536111936087785,
+      "muscleEnergy": 7.919907719822423e-7,
+      "contactEnergy": 0,
+      "activeNodalContacts": 0,
+      "maximumPenaltyViolation": 0,
+      "rootSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          3.505968737275425e-7,
+          -1.377810500051121e-7,
+          6.025145096744324e-7
+        ],
+        "netNorm": 7.105811142834147e-7,
+        "torqueAboutRootCentroid": [
+          -3.978276191831264e-8,
+          2.8904152486182136e-8,
+          1.5554944448435843e-8
+        ],
+        "torqueNorm": 5.157590981832061e-8,
+        "nodalL2": 0.00005887974416896515,
+        "sumNodalNorms": 0.0003905740002389483,
+        "maxNodalNorm": 0.000025631035793169907,
+        "maxNode": 265
+      },
+      "combinedSupportOnTissue": {
+        "nodes": 352,
+        "net": [
+          3.505968737275425e-7,
+          -1.377810500051121e-7,
+          6.025145096744324e-7
+        ],
+        "netNorm": 7.105811142834147e-7,
+        "torqueAboutRootCentroid": [
+          -3.978276191831264e-8,
+          2.8904152486182136e-8,
+          1.5554944448435843e-8
+        ],
+        "torqueNorm": 5.157590981832061e-8,
+        "nodalL2": 0.00005887974416896515,
+        "sumNodalNorms": 0.0003905740002389483,
+        "maxNodalNorm": 0.000025631035793169907,
+        "maxNode": 265
+      },
+      "rootConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          -3.505968737275425e-7,
+          1.377810500051121e-7,
+          -6.025145096744324e-7
+        ],
+        "netNorm": 7.105811142834147e-7,
+        "torqueAboutRootCentroid": [
+          3.978276191831264e-8,
+          -2.8904152486182136e-8,
+          -1.5554944448435843e-8
+        ],
+        "torqueNorm": 5.157590981832061e-8,
+        "nodalL2": 0.00005887974416896515,
+        "sumNodalNorms": 0.0003905740002389483,
+        "maxNodalNorm": 0.000025631035793169907,
+        "maxNode": 265
+      },
+      "nodalContactBoneReaction": {
+        "nodes": 1003,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "freeResidual": {
+        "nodes": 651,
+        "net": [
+          -3.505968737273438e-7,
+          1.377810500047068e-7,
+          -6.025145096745915e-7
+        ],
+        "netNorm": 7.105811142833731e-7,
+        "torqueAboutRootCentroid": [
+          3.978276191832427e-8,
+          -2.8904152486183165e-8,
+          -1.5554944448422976e-8
+        ],
+        "torqueNorm": 5.157590981832628e-8,
+        "nodalL2": 0.00001462453723341664,
+        "sumNodalNorms": 0.00028749509363343604,
+        "maxNodalNorm": 0.0000018390117005190272,
+        "maxNode": 948
+      },
+      "muscleForcesAtFixed": {
+        "nodes": 352,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "muscleDiagnostics": [
+        {
+          "id": "right-zygomatic-like",
+          "activation": 0.16,
+          "targetStretch": 0.84,
+          "tetrahedronCount": 1764,
+          "activeTetrahedra": 1740,
+          "restVolume": 1.4404542422814504e-7,
+          "currentVolume": 1.4078623902621071e-7,
+          "energy": 7.919907719822423e-7,
+          "meanStretch": 0.8613271012026439,
+          "minStretch": 0.780040340963057,
+          "maxStretch": 0.9080722709820136,
+          "minJ": 0.822825906469459,
+          "maxJ": 0.9952475105329591,
+          "meanJ": 0.9773739067422768
+        }
+      ],
+      "finiteDifferenceSpotCheck": [
+        {
+          "node": 265,
+          "axis": 0,
+          "h": 1e-8,
+          "analytic": -0.000009945380381206748,
+          "centralDifference": -0.000009945380387220665,
+          "absoluteError": 6.013916984846587e-15
+        },
+        {
+          "node": 265,
+          "axis": 1,
+          "h": 1e-8,
+          "analytic": 6.944481459490333e-7,
+          "centralDifference": 6.944481356743791e-7,
+          "absoluteError": 1.0274654175191288e-14
+        },
+        {
+          "node": 265,
+          "axis": 2,
+          "h": 1e-8,
+          "analytic": 0.00002361264802338892,
+          "centralDifference": 0.000023612647981577253,
+          "absoluteError": 4.181166724697219e-14
+        },
+        {
+          "node": 265,
+          "axis": 0,
+          "h": 1e-9,
+          "analytic": -0.000009945380381206748,
+          "centralDifference": -0.000009945380598978901,
+          "absoluteError": 2.1777215379842167e-13
+        },
+        {
+          "node": 265,
+          "axis": 1,
+          "h": 1e-9,
+          "analytic": 6.944481459490333e-7,
+          "centralDifference": 6.94448008619437e-7,
+          "absoluteError": 1.3732959626333634e-13
+        },
+        {
+          "node": 265,
+          "axis": 2,
+          "h": 1e-9,
+          "analytic": 0.00002361264802338892,
+          "centralDifference": 0.000023612648108632195,
+          "absoluteError": 8.524327484117286e-14
+        }
+      ]
+    },
+    {
+      "phase": "released-0",
+      "activation": 0,
+      "sourceStateSha256": "ecc6585015c0d174626dc25bc37acf5cda28e2b298cbe13fe013f819556a836a",
+      "storedConverged": true,
+      "storedResidual": 0.000015306805952564715,
+      "recomputedResidual": 0.000015306805952564715,
+      "minJ": 0.9883608046572676,
+      "exactFixedCoordinates": true,
+      "maxFixedCoordinateMotion": 0,
+      "projectionDifference": 0,
+      "energyMatches": true,
+      "energy": 1.9932096529806675e-9,
+      "muscleEnergy": 2.9085956289522564e-10,
+      "contactEnergy": 0,
+      "activeNodalContacts": 0,
+      "maximumPenaltyViolation": 0,
+      "rootSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarSupportOnTissue": {
+        "nodes": 176,
+        "net": [
+          2.2764225214019683e-7,
+          6.74419547887642e-8,
+          -6.190770722494414e-7
+        ],
+        "netNorm": 6.630428595574579e-7,
+        "torqueAboutRootCentroid": [
+          4.589798853871286e-9,
+          1.4075413863165979e-9,
+          -4.760449084575876e-9
+        ],
+        "torqueNorm": 6.760865459394347e-9,
+        "nodalL2": 0.000008096594825931867,
+        "sumNodalNorms": 0.00005170157157193458,
+        "maxNodalNorm": 0.000003866522005999375,
+        "maxNode": 183
+      },
+      "combinedSupportOnTissue": {
+        "nodes": 352,
+        "net": [
+          2.2764225214019683e-7,
+          6.74419547887642e-8,
+          -6.190770722494414e-7
+        ],
+        "netNorm": 6.630428595574579e-7,
+        "torqueAboutRootCentroid": [
+          4.589798853871286e-9,
+          1.4075413863165979e-9,
+          -4.760449084575876e-9
+        ],
+        "torqueNorm": 6.760865459394347e-9,
+        "nodalL2": 0.000008096594825931867,
+        "sumNodalNorms": 0.00005170157157193458,
+        "maxNodalNorm": 0.000003866522005999375,
+        "maxNode": 183
+      },
+      "rootConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "collarConstitutiveTissueOnSupport": {
+        "nodes": 176,
+        "net": [
+          -2.2764225214019683e-7,
+          -6.74419547887642e-8,
+          6.190770722494414e-7
+        ],
+        "netNorm": 6.630428595574579e-7,
+        "torqueAboutRootCentroid": [
+          -4.589798853871286e-9,
+          -1.4075413863165979e-9,
+          4.760449084575876e-9
+        ],
+        "torqueNorm": 6.760865459394347e-9,
+        "nodalL2": 0.000008096594825931867,
+        "sumNodalNorms": 0.00005170157157193458,
+        "maxNodalNorm": 0.000003866522005999375,
+        "maxNode": 183
+      },
+      "nodalContactBoneReaction": {
+        "nodes": 1003,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "freeResidual": {
+        "nodes": 651,
+        "net": [
+          -2.2764225214020477e-7,
+          -6.744195478874696e-8,
+          6.190770722494371e-7
+        ],
+        "netNorm": 6.630428595574547e-7,
+        "torqueAboutRootCentroid": [
+          -4.589798853871475e-9,
+          -1.4075413863165847e-9,
+          4.76044908457574e-9
+        ],
+        "torqueNorm": 6.760865459394376e-9,
+        "nodalL2": 0.000015306805952564705,
+        "sumNodalNorms": 0.0003072346830988039,
+        "maxNodalNorm": 0.0000023833597708819806,
+        "maxNode": 739
+      },
+      "muscleForcesAtFixed": {
+        "nodes": 352,
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "netNorm": 0,
+        "torqueAboutRootCentroid": [
+          0,
+          0,
+          0
+        ],
+        "torqueNorm": 0,
+        "nodalL2": 0,
+        "sumNodalNorms": 0,
+        "maxNodalNorm": 0,
+        "maxNode": null
+      },
+      "muscleDiagnostics": [
+        {
+          "id": "right-zygomatic-like",
+          "activation": 0,
+          "targetStretch": 1,
+          "tetrahedronCount": 1764,
+          "activeTetrahedra": 430,
+          "restVolume": 1.4404542422814504e-7,
+          "currentVolume": 1.4402371719072355e-7,
+          "energy": 2.9085956289522564e-10,
+          "meanStretch": 0.9989876173761565,
+          "minStretch": 0.9804452991242578,
+          "maxStretch": 1.0092096887878568,
+          "minJ": 0.9883608046572676,
+          "maxJ": 1.0143495065842465,
+          "meanJ": 0.9998493042209581
+        }
+      ]
+    }
+  ]
+}

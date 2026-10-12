@@ -1,0 +1,58 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 3746.19921875, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "scope": "Local one-way skin rendering transfer from actual new right-cheek FEM. No skin force/contact feedback.",
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "case_sha256": "936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf",
+  "binding_sha256": "e1a3a6aa631a67fd311eb1e6b42c2d93d762e7110b65ed33f56c7f079aa14392",
+  "preferred_skin_vertices": 544473,
+  "covered_vertices": 10070,
+  "uncovered_vertices": 534403,
+  "covered_XYZ_bounds": [
+    [
+      20.052106813592932,
+      -57.30527485013469,
+      79.99691275371792
+    ],
+    [
+      59.67508719970954,
+      1.9732368613797622,
+      112.2620522229283
+    ]
+  ],
+  "distance_quantiles": [
+    0.4835481643676758,
+    4.312173128128052,
+    7.6092774868011475,
+    7.998387813568115
+  ],
+  "signed_normal_offset_quantiles": [
+    0.0021350390798948737,
+    2.2836268309088252,
+    3.5597122395533756,
+    4.592545697944185
+  ],
+  "gain_quantiles": [
+    4.4182766418546147e-16,
+    0.8291010256278191,
+    1.0,
+    1.0
+  ],
+  "full_gain_vertices": 2965,
+  "mapping": "Exact closest triangle and nonnegative barycentric FEM supports; shared area-weighted C2 spatial skin-normal field (radius3.5); carrier orientation retained only as a diagnostic, avoiding radial angular gain stripes; neutral residual transported by volume-weighted nodal deformation gradients. C2 gain distance3..8, orientation measured but not used as a gain, positive exterior-normal offset0..0.75, X20..24 and Y2..minus2; finite oral geometry excluded with1..5 distance fade.",
+  "neutral_identity": "All selected skin points remain exact by construction; explicit zero-displacement path at exact neutral.",
+  "limits": [
+    "This is a regional cheek response, not smile, jaw, blink or neck animation.",
+    "All finite lips, inner oral return, globes, other cheek and uncovered skin remain fixed.",
+    "No anatomical or clinical calibration."
+  ]
+}
+Blender 4.3.2
+
+Blender quit
+neutral-0 {"sparse_state_sha256": "5e62d3f2346c988552069959cea7e54ab26521bc36cb575642f5b92491502f3a", "source_state_sha256": "279dde71c09f8919cba6402cf945c2ee8786763d7e01111ada7b3e1041898b7c", "converged": true, "minJ_recomputed": 0.9999999999999862, "maximum_fem_motion": 0.0, "maximum_skin_motion": 0.0, "skin_area_ratio_quantiles": [1.0, 1.0, 1.0, 1.0, 1.0], "minimum_skin_normal_cosine": 0.9999999999999998, "nonpositive_normal_count": 0, "zero_area_count": 0, "uncovered_coordinates_exact": true, "neutral_coordinate_identity": true, "rigid_collar_motion": 0.0, "force_residual": 1.0047560572785098e-17, "contact_certified": true}
+right-02 {"sparse_state_sha256": "696c92553c8b41bbced4e95d77a16d6951198e0334dcd242b107fb14aef55aff", "source_state_sha256": "b78d30cda71e5d839f5ffcdeeb588d5998f60feb12f3c456d6efdebaa4d71734", "converged": true, "minJ_recomputed": 0.9742755508017037, "maximum_fem_motion": 0.9136503053635902, "maximum_skin_motion": 0.9285170194892303, "skin_area_ratio_quantiles": [0.42112447537747105, 0.9197505300645701, 0.9913476354106393, 1.2054120534340995, 2.2974225116274964], "minimum_skin_normal_cosine": 0.9598487864037962, "nonpositive_normal_count": 0, "zero_area_count": 0, "uncovered_coordinates_exact": true, "neutral_coordinate_identity": null, "rigid_collar_motion": 0.0, "force_residual": 1.9204972913425792e-05, "contact_certified": true}
+right-08 {"sparse_state_sha256": "4c822d170e456cc0314bcfd7e383c1cd3935ec933b689fe2bfbbcbcbb21b6596", "source_state_sha256": "b681f05f48bcfa66d97712d0ca79f8d71575fa531a80098042dd20dd1724a641", "converged": true, "minJ_recomputed": 0.9065288090859049, "maximum_fem_motion": 3.645257238673455, "maximum_skin_motion": 3.6988678097126386, "skin_area_ratio_quantiles": [0.22952108608108718, 0.709978535560424, 0.9642977393447079, 1.8302833589845824, 6.2626766044331745], "minimum_skin_normal_cosine": -0.9051826194684571, "nonpositive_normal_count": 18, "zero_area_count": 0, "uncovered_coordinates_exact": true, "neutral_coordinate_identity": null, "rigid_collar_motion": 0.0, "force_residual": 1.4632668594668758e-05, "contact_certified": true}
+right-16 {"sparse_state_sha256": "14dd33e3a5ed763fe139676e8cd5f4993a713ae795fe84345f7f6e6855ed971b", "source_state_sha256": "27fb92e91f669f7fde9f928bb760945d222efd1a032f456412c08084be7699d2", "converged": true, "minJ_recomputed": 0.8228259064695074, "maximum_fem_motion": 7.1804011271379515, "maximum_skin_motion": 7.244739133902917, "skin_area_ratio_quantiles": [0.19017244088718283, 0.5326060644741585, 0.9328567663777276, 2.691846265895123, 11.533922679564812], "minimum_skin_normal_cosine": -0.8804701281931996, "nonpositive_normal_count": 45, "zero_area_count": 0, "uncovered_coordinates_exact": true, "neutral_coordinate_identity": null, "rigid_collar_motion": 0.0, "force_residual": 1.4624537233416649e-05, "contact_certified": true}
+released-0 {"sparse_state_sha256": "a70b4dcc4dd43c654669045eb87f5c2605eab84a4fe5eaf01bf749ef724ff82d", "source_state_sha256": "ecc6585015c0d174626dc25bc37acf5cda28e2b298cbe13fe013f819556a836a", "converged": true, "minJ_recomputed": 0.9883608046572959, "maximum_fem_motion": 0.35106789693919366, "maximum_skin_motion": 0.3545495113921452, "skin_area_ratio_quantiles": [0.8268987211154292, 0.9348263222226704, 1.0, 1.0851993795001715, 1.688986724884186], "minimum_skin_normal_cosine": 0.6068645957252601, "nonpositive_normal_count": 0, "zero_area_count": 0, "uncovered_coordinates_exact": true, "neutral_coordinate_identity": null, "rigid_collar_motion": 0.0, "force_residual": 1.5306805952564715e-05, "contact_certified": true}
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 521.03, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 3746.19921875, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 10.25, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

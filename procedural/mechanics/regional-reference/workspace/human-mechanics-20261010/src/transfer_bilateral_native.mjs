@@ -1,0 +1,13 @@
+/** Original native affine transfer on the exact connected FEM reference. */
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
+import {recoverSurfaceGradients,applyAffineTransfer} from './affine_surface_transfer.mjs';
+const [dir,stateFile]=process.argv.slice(2),d=JSON.parse(fs.readFileSync(path.join(dir,'domain.json'),'utf8')),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const raw=fs.readFileSync(path.join(dir,d.binary)),buffer=raw.buffer.slice(raw.byteOffset,raw.byteOffset+raw.byteLength),a={};for(const [name,q] of Object.entries(d.arrays)){const T=q.dtype==='<f8'?Float64Array:Uint32Array;a[name]=new T(buffer,q.byte_offset,q.shape.reduce((x,y)=>x*y,1));}
+let x=a.rest,record=null;if(stateFile){record=JSON.parse(fs.readFileSync(stateFile,'utf8'));if(!record.converged||record.sourceDomainSha256!==sha(path.join(dir,'domain.json')))throw Error('Unconverged or mismatched mechanical state');x=Float64Array.from(record.positions);}
+const input=fs.readFileSync(0),n=input.readUInt32LE(0),o=8,points=new Float64Array(input.buffer,input.byteOffset+o,n*3),indices=new Uint32Array(input.buffer,input.byteOffset+o+n*24,n*3),weights=new Float64Array(input.buffer.slice(input.byteOffset+o+n*36,input.byteOffset+o+n*60)),F=recoverSurfaceGradients(x,a.rest,a.nodes,a.gradients,a.material,d.model.nodes),fixed=new Set(d.fixed_nodes),cut=new Set(d.frozen_transfer_gradient_nodes);
+let maxCutGradientError=0,maxFixedMotion=0;for(const node of fixed)for(let k=0;k<3;k++)maxFixedMotion=Math.max(maxFixedMotion,Math.abs(x[node*3+k]-a.rest[node*3+k]));
+for(const node of cut)for(let j=0;j<9;j++){const identity=j===0||j===4||j===8?1:0;maxCutGradientError=Math.max(maxCutGradientError,Math.abs(F[node*9+j]-identity));}
+if(maxFixedMotion>1e-13||maxCutGradientError>1e-5)throw Error('Rest-frozen collar check failed; cannot force a strained gradient to identity');
+for(const node of cut){F.fill(0,node*9,node*9+9);F[node*9]=F[node*9+4]=F[node*9+8]=1;}
+const out=applyAffineTransfer(points,indices,weights,x,a.rest,F);let maxMotion=0;for(let i=0;i<n;i++)maxMotion=Math.max(maxMotion,Math.hypot(...[0,1,2].map(k=>(out[i*3+k]-points[i*3+k])*1000)));
+process.stderr.write(JSON.stringify({vertices:n,gradientRecoveryNodes:d.model.nodes,maximumNativeMotionDesignUnits:maxMotion,maximumFixedNodeMotionSolverUnits:maxFixedMotion,maximumRecoveredCutGradientError:maxCutGradientError,frozenCutGradientsCorrectedToExactIdentity:true,sourceDomainSha256:sha(path.join(dir,'domain.json')),sourceStateSha256:stateFile?sha(stateFile):null,scope:'One-way exact material-chart affine transfer; dense self-contact not established'})+'\n');process.stdout.write(Buffer.from(out.buffer,out.byteOffset,out.byteLength));

@@ -1,0 +1,286 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 5155.5546875, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "source_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "existing_regional_geometry_sha256": "30a8e5ca8e80f5432190f343d6a636acb87b34a9f2d6173935a67008ed381a1f",
+  "geometry_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+  "vertices": 17986,
+  "triangles": 35968,
+  "closed_oriented": true,
+  "signed_volume": 49144.22189827452,
+  "sampled_outside_vertices": 2,
+  "outside_examples": [
+    9236,
+    9432
+  ],
+  "minimum_sampled_skin_distance": 3.184573173522949,
+  "minimum_sampled_existing_support_distance": 2.796079635620117,
+  "existing_support_triangle_crossings": 0,
+  "crossing_examples": [],
+  "authorship": "Original continuous transported-section U body, ramal bearing, condylar estimates and anterior ramal crests. No imported geometry.",
+  "scope": "Contact/attachment layout candidate only. No TMJ/hinge dynamics, dental occlusion, anatomical calibration, cortical thickness or marrow model. No exact human mandible claim.",
+  "admitted_layout": false
+}
+Blender 4.3.2
+
+Blender quit
+{
+  "self_nonincident_candidates": 16633,
+  "self_nonincident_crossings": 0,
+  "trimmed_incident_candidates": 219200,
+  "trimmed_incident_crossings": 0,
+  "self_examples": [],
+  "trimmed_examples": [],
+  "skin_triangle_candidate_pairs": 0,
+  "skin_triangle_crossings": 0,
+  "skin_examples": [],
+  "limit": "Static triangle tests; incident strips exclude1e-6 centroid trim. No moving TMJ/contact dynamics."
+}
+Blender 4.3.2
+
+Blender quit
+{
+  "geometry_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+  "records": [
+    {
+      "vertex": 9236,
+      "position": [
+        4.660847562503926,
+        -89.63992829792024,
+        101.74711182398401
+      ],
+      "original_parity": [
+        1,
+        0,
+        1
+      ],
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_surface_distance": 9.284148216247559,
+      "nearest_outward_normal_signed_offset": -9.284147643949836
+    },
+    {
+      "vertex": 9432,
+      "position": [
+        7.660619534270575,
+        -92.32779949295966,
+        98.85924868178499
+      ],
+      "original_parity": [
+        1,
+        0,
+        1
+      ],
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_surface_distance": 8.766075134277344,
+      "nearest_outward_normal_signed_offset": -8.766075579449534
+    }
+  ],
+  "all_additional_rays_inside": true,
+  "connected_closed_surface_has_zero_triangle_crossings_with_skin": true,
+  "admitted_for_layout": true,
+  "interpretation": "Two original upward oblique rays disagreed with the other two directions; seven independent directions and nearest normal resolve them. Exact skin/mandible triangle bounding trees have no candidate surface intersection, and the closed connected component is interior. Original parity data and report are retained unchanged."
+}
+Blender 4.3.2
+
+Blender quit
+boolean cap faces 176
+zygomatic_reference {'description': 'Previously checked approximate active right-cheek bundle; its earlier equilibrium is separate from this new layout.', 'vertices': 1003, 'triangles': 1648, 'enclosed_signed_volume': 171.30940635883232, 'sampled_outside_vertices': 0, 'outside_examples': [], 'outside_bounds': None, 'minimum_sampled_skin_distance': 0.4672089219093323}
+junction {'description': 'Authored lateral fibromuscular junction volume; common geometry interface for layered routes, not a calibrated modiolus.', 'vertices': 2114, 'triangles': 4224, 'enclosed_signed_volume': 48.39321343865854, 'sampled_outside_vertices': 1, 'outside_examples': [1391], 'outside_bounds': [[29.207344571992298, -53.04314811964643, 103.58213984979938], [29.207344571992298, -53.04314811964643, 103.58213984979938]], 'minimum_sampled_skin_distance': 0.40969669818878174}
+superficial_oral {'description': 'Superficial route from the junction into upper outer labial tissue; a finite regional continuation, with medial cut unbound.', 'vertices': 2242, 'triangles': 4480, 'enclosed_signed_volume': 27.68363643882644, 'sampled_outside_vertices': 0, 'outside_examples': [], 'outside_bounds': None, 'minimum_sampled_skin_distance': 1.2396577596664429}
+deep_oral {'description': 'Deeper lower labial continuation, distinct from the superficial upper route; no universal point-insertion assumption.', 'vertices': 2242, 'triangles': 4480, 'enclosed_signed_volume': 21.47141926833132, 'sampled_outside_vertices': 0, 'outside_examples': [], 'outside_bounds': None, 'minimum_sampled_skin_distance': 0.8110718131065369}
+buccinator_deep {'description': 'Deep transverse/oblique cheek route into the inner perioral layer. Posterior cut is explicit; alveolar/raphe origins are not yet provided.', 'vertices': 2242, 'triangles': 4480, 'enclosed_signed_volume': 50.58420122338345, 'sampled_outside_vertices': 0, 'outside_examples': [], 'outside_bounds': None, 'minimum_sampled_skin_distance': 2.6981360912323}
+mandibular_depressor {'description': 'Original continuous DAO-like sheet with finite triangular origin cut directly against the new mandible. Every origin vertex has an exact barycentric bone-surface correspondence; no new dynamics.', 'vertices': 1942, 'triangles': 3880, 'enclosed_signed_volume': 183.88438640153694, 'sampled_outside_vertices': 0, 'outside_examples': [], 'outside_bounds': None, 'minimum_sampled_skin_distance': 0.3643990755081177}
+written fe173a50716975d12bfbf5e514d97ab8f3742c7f04828e97c2b829df79475d2e
+Blender 4.3.2
+
+Blender quit
+{
+  "edge_flips": [
+    {
+      "old_root_sliver_face": 3745,
+      "old_free_face": 94,
+      "split_vertex": 1900,
+      "old_area": 2.648067396560418e-05
+    }
+  ],
+  "nonbonded_near_root_nodes_lifted": 60,
+  "maximum_outward_lift": 0.004999189633041028,
+  "footprint_positions_and_weights_exact": true,
+  "scope": "Numerical geometry repair at the Boolean/barycentric contact perimeter. No bone coordinate, origin correspondence, route control, material or physical solve changes."
+}
+2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd
+Blender 4.3.2
+
+Blender quit
+{"source_sha256": "2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd", "weight_zero_threshold": 1e-05, "changed_root_vertices": 46, "max_root_correction": 1.2284810475387615e-05, "bone_vertices_unchanged": true, "barycentric_reconstruction_exact": true, "scope": "Roundoff-scale Boolean intersections snapped to their source bone edge; original unmodified v7 correspondence preserved separately."}
+f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1
+Blender 4.3.2
+
+Blender quit
+zygomatic_reference {"nonmanifold_edges": 0, "inconsistent_winding_edges": 0, "self_nonincident_crossings": 0, "self_trimmed_incident_crossings": 0, "self_examples": [], "self_trimmed_examples": [], "skin": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "mandible": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "maxillary_support": {"candidate_pairs": 186, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}}
+junction {"nonmanifold_edges": 0, "inconsistent_winding_edges": 0, "self_nonincident_crossings": 0, "self_trimmed_incident_crossings": 0, "self_examples": [], "self_trimmed_examples": [], "skin": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "mandible": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "maxillary_support": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}}
+superficial_oral {"nonmanifold_edges": 0, "inconsistent_winding_edges": 0, "self_nonincident_crossings": 0, "self_trimmed_incident_crossings": 0, "self_examples": [], "self_trimmed_examples": [], "skin": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "mandible": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "maxillary_support": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}}
+deep_oral {"nonmanifold_edges": 0, "inconsistent_winding_edges": 0, "self_nonincident_crossings": 0, "self_trimmed_incident_crossings": 0, "self_examples": [], "self_trimmed_examples": [], "skin": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "mandible": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "maxillary_support": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}}
+buccinator_deep {"nonmanifold_edges": 0, "inconsistent_winding_edges": 0, "self_nonincident_crossings": 0, "self_trimmed_incident_crossings": 0, "self_examples": [], "self_trimmed_examples": [], "skin": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "mandible": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "maxillary_support": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}}
+mandibular_depressor {"nonmanifold_edges": 0, "inconsistent_winding_edges": 0, "self_nonincident_crossings": 0, "self_trimmed_incident_crossings": 0, "self_examples": [], "self_trimmed_examples": [], "skin": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}, "mandible": {"candidate_pairs": 169, "crossings": 0, "excluded_declared_cap_pairs": 57, "examples": []}, "maxillary_support": {"candidate_pairs": 0, "crossings": 0, "excluded_declared_cap_pairs": 0, "examples": []}}
+Blender 4.3.2
+
+Blender quit
+{
+  "parts_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+  "admitted_for_geometry_layout": true,
+  "parity_resolution": [
+    {
+      "part": "junction",
+      "vertex": 1391,
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distance": 2.674966335296631,
+      "nearest_normal_offset": -2.479562411084771
+    }
+  ],
+  "mandibular_barycentric_reconstruction_exact": true,
+  "bone_edge_roundoff_repair": {
+    "source_sha256": "2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd",
+    "weight_zero_threshold": 1e-05,
+    "changed_root_vertices": 46,
+    "max_root_correction": 1.2284810475387615e-05,
+    "bone_vertices_unchanged": true,
+    "barycentric_reconstruction_exact": true,
+    "scope": "Roundoff-scale Boolean intersections snapped to their source bone edge; original unmodified v7 correspondence preserved separately."
+  },
+  "region_names": [
+    "zygomatic_reference",
+    "junction",
+    "superficial_oral",
+    "deep_oral",
+    "buccinator_deep",
+    "mandibular_depressor"
+  ],
+  "limitations": [
+    "Individual closed regions overlap intentionally at junction. No conforming common tissue mesh exists yet.",
+    "Only mandibular depressor and original zygomatic reference have explicit bone footprints. Other cut ends are unbound.",
+    "No new active/passive finite elements, dynamics, TMJ, teeth, calibrated fibre architecture or full oral ring.",
+    "Existing earlier cheek equilibrium is not transferred onto this new assembly.",
+    "All coordinates and thicknesses are authored estimates, guided by cited layer relations."
+  ]
+}
+Blender 4.3.2
+
+Blender quit
+{
+  "input_parts_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+  "geometry_sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+  "region_names": [
+    "junction",
+    "zygomatic_reference",
+    "superficial_oral",
+    "deep_oral",
+    "buccinator_deep",
+    "mandibular_depressor"
+  ],
+  "history": [
+    {
+      "added_region": "zygomatic_reference",
+      "vertices": 2768,
+      "polygons": 5267
+    },
+    {
+      "added_region": "superficial_oral",
+      "vertices": 4917,
+      "polygons": 9341
+    },
+    {
+      "added_region": "deep_oral",
+      "vertices": 7198,
+      "polygons": 13796
+    },
+    {
+      "added_region": "buccinator_deep",
+      "vertices": 9457,
+      "polygons": 18206
+    },
+    {
+      "added_region": "mandibular_depressor",
+      "vertices": 11238,
+      "polygons": 21258
+    }
+  ],
+  "vertices": 11238,
+  "triangles": 22472,
+  "components": 1,
+  "nonmanifold_edges": 0,
+  "inconsistent_winding_edges": 0,
+  "restored_source_vertices": 10463,
+  "new_boolean_intersection_vertices": 775,
+  "zygomatic_roots_exact": 176,
+  "mandibular_roots_exact": 154,
+  "limits": [
+    "Surface Boolean union only; no tetrahedral domain or coupled solve.",
+    "Region IDs retain exterior input-surface provenance, not complete internal fibre/material ownership.",
+    "The terminal oral and posterior buccinator cuts remain finite unbound boundaries."
+  ]
+}
+Blender 4.3.2
+
+Blender quit
+{
+  "geometry_sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+  "nonincident_crossings": 0,
+  "trimmed_incident_crossings": 0,
+  "nonincident_examples": [],
+  "trimmed_incident_examples": [],
+  "exact_root_face_counts": {
+    "maxillary_support": 301,
+    "mandible": 176
+  },
+  "obstacles": {
+    "skin": {
+      "pairs": 0,
+      "excluded_exact_contact_faces": 0,
+      "crossings": 0,
+      "examples": []
+    },
+    "mandible": {
+      "pairs": 169,
+      "excluded_exact_contact_faces": 57,
+      "crossings": 0,
+      "examples": []
+    },
+    "maxillary_support": {
+      "pairs": 186,
+      "excluded_exact_contact_faces": 171,
+      "crossings": 0,
+      "examples": []
+    }
+  },
+  "admitted_shared_surface": true,
+  "scope": "Connected closed surface only. No tetrahedral elements or new equilibrium. Tested attachment-adjacent faces use 1e-6 centroid trim; retained exact bone-contact faces are excluded explicitly."
+}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 714.2, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 5155.5546875, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 27.64, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}
