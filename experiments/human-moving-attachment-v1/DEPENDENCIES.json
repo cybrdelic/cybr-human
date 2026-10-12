@@ -1,0 +1,34 @@
+{
+  "scope": "Existing published procedural mechanics source dependencies only. No new runtime default or large assets.",
+  "files": {
+    "procedural/mechanics/regional-reference/workspace/human-preferred-v53-anatomical-assembly-20261011/resumed-source/parametric_triangle_contact.mjs": {
+      "sha256": "4dc676b7da587643f88fbce8b23e3bbc9a80a5f864aa439e288c093fdfa2ef28",
+      "bytes": 5227
+    },
+    "procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/src/prototypes/exact_triangle_contact_feature.mjs": {
+      "sha256": "47460ee9246ee55549c22f30032f233ab52dd1e45980828ca80b2cfe9a082ebc",
+      "bytes": 4942
+    },
+    "procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/src/prototypes/complete_boundary_contact.mjs": {
+      "sha256": "d0ab91d6d922dde7f084c4dec57d5ed9e32a49a56880a98e6eee539471c73448",
+      "bytes": 15200
+    },
+    "procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/reference-source/src/layered_fem.js": {
+      "sha256": "8618d5517de196dd3dae905d598a69eaf14555682895c80dcfc994e2501dbc71",
+      "bytes": 20090
+    },
+    "procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/reference-source/src/shell_bending.js": {
+      "sha256": "a2fa7c637bb8b32cac2811a993c024c99f89ca16166a5d4c1ff6e1335606a906",
+      "bytes": 1337
+    },
+    "procedural/mechanics/regional-reference/workspace/human-preferred-v53-anatomical-assembly-20261011/resumed-source/parameterized_bonded_patch.mjs": {
+      "sha256": "7aca51322b29cd51a083400735272c9535894cc70ed218cbb2564564ce0005eb",
+      "bytes": 5902
+    },
+    "procedural/mechanics/regional-reference/workspace/human-mechanics-20261010/src/active_fibre_fem.mjs": {
+      "sha256": "2d6443d28569f7480c33f150730163b99154a35dbd5b88c5d3b7be671270ac0b",
+      "bytes": 7083
+    }
+  },
+  "tested_node_version": "24.19.0"
+}
