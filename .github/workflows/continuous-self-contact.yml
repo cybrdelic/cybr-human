@@ -1,0 +1,24 @@
+name: Experimental continuous tissue self-contact
+on:
+  push:
+    paths: ["experiments/human-continuous-self-contact-v1/**", "experiments/human-moving-attachment-v1/**", "procedural/mechanics/regional-reference/**", ".github/workflows/continuous-self-contact.yml"]
+  pull_request:
+    paths: ["experiments/human-continuous-self-contact-v1/**", "experiments/human-moving-attachment-v1/**", "procedural/mechanics/regional-reference/**", ".github/workflows/continuous-self-contact.yml"]
+permissions:
+  contents: read
+jobs:
+  contact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: |
+          node experiments/human-continuous-self-contact-v1/tests/test_moving_triangle_pair.mjs
+          node experiments/human-continuous-self-contact-v1/tests/test_exact_corroboration.mjs
+          node experiments/human-continuous-self-contact-v1/tests/test_tissue_self_bvh.mjs
+          node experiments/human-continuous-self-contact-v1/tests/test_indexed_equivalence.mjs
+          node experiments/human-continuous-self-contact-v1/tests/test_actual_rejected_state.mjs
+          node experiments/human-continuous-self-contact-v1/tests/test_combined_boundary.mjs
