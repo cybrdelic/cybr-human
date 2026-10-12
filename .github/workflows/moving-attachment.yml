@@ -1,0 +1,21 @@
+name: Experimental moving attachment
+on:
+  push:
+    paths: ["experiments/human-moving-attachment-v1/**", "procedural/mechanics/regional-reference/**", ".github/workflows/moving-attachment.yml"]
+  pull_request:
+    paths: ["experiments/human-moving-attachment-v1/**", "procedural/mechanics/regional-reference/**", ".github/workflows/moving-attachment.yml"]
+permissions:
+  contents: read
+jobs:
+  contact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: |
+          node experiments/human-moving-attachment-v1/tests/test_moving_attachment.mjs
+          node experiments/human-moving-attachment-v1/tests/test_guarded_regression.mjs
+          node experiments/human-moving-attachment-v1/tests/test_parameterized_bonds.mjs
