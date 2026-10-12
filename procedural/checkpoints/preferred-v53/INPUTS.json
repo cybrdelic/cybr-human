@@ -1,0 +1,37 @@
+{
+  "archive_sha256": "353f000ce1bf4989155ac04c693837280a737dc11ee79a1692f3688a338a3a07",
+  "members": {
+    "vertices.npy": "4e8c68cd9dcb823787c61c9ff486a4c48be66bec39211a3ec53b5ff02f2c7992",
+    "triangles.npy": "0ebc2855c45eaf2f6cfd6978e40afc17717e25b050e3c7b8d19b62ddde359bb9",
+    "object_ids.npy": "2c38dc72585d8f0551891ed0ced9006130a631f42e5dc8e28103db8b4be40dab"
+  },
+  "decompressed_bytes": 68990846,
+  "parts": [
+    {
+      "name": "input-arrays.zip.part01",
+      "bytes": 6291456,
+      "sha256": "734c73ae103643813fc7ff774dd9d22f47088e396d609bac40940c4769ead0a4"
+    },
+    {
+      "name": "input-arrays.zip.part02",
+      "bytes": 6291456,
+      "sha256": "dd1f45076b499b63f7d8d1d8c6ddfa4929778bdcd4ea33f76816df76083dfb29"
+    },
+    {
+      "name": "input-arrays.zip.part03",
+      "bytes": 6291456,
+      "sha256": "9c30c75413bc59c908de57c6c1b550b1998a757c0ea92e91d16cd67bf45d410a"
+    },
+    {
+      "name": "input-arrays.zip.part04",
+      "bytes": 6291456,
+      "sha256": "7ed0c876e2daa03e416ac936ca39b9242bb8ad482eda633df008a25438d6b76a"
+    },
+    {
+      "name": "input-arrays.zip.part05",
+      "bytes": 2202784,
+      "sha256": "0267f7049495dc46d21534b52e6a4ede5e02f16f51ac40d7096515de5e13c209"
+    }
+  ],
+  "archive_bytes": 27368608
+}

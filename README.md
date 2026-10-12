@@ -76,3 +76,9 @@ Licenses are scoped by component: the inherited GPL-2.0 code notice, CC BY-SA 4.
 The public package contains curated project files and required runtime assets. Browser profiles, cookies/auth state, credentials, caches, iteration dumps, old captures and inactive experimental pipelines are excluded. `provenance/staged-source.json` retains path-free source-copy hashes. `provenance/public-source.json` records this public package's file hashes. Host paths and raw QA reports are omitted.
 
 Known limitations remain: approximate anatomical chart containment and fixed tangent contact, inactive muscles and jaw coupling, unfinished moving contact/sliding fascia/self-contact, one-way forehead detail, approximate RGB screen-space transport and unaccepted head/skin appearance. Positive cell volume or numerical verification does not establish anatomical fidelity or realtime performance.
+
+## Procedural head and appearance source
+
+The [procedural source addition](procedural/README.md) preserves the preferred v53 head, reproducible original construction inputs, conditioned Cycles eye/skin rendering, optional orbital geometry studies, and tested regional muscle/passive-tissue examples. Start with `cd procedural` and follow its commands. These offline sources complement the selected browser application above; they do not replace its runtime or claim a finished photorealistic, full-face muscle simulation.
+
+The addition includes exact reconstruction and relocation results in [integration validation](procedural/INTEGRATION_VALIDATION.json), with [appearance evidence and limits](procedural/appearance/README.md). Rejected nasal candidates and the unqualified larger mechanical experiment are excluded.

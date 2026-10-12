@@ -1,0 +1,280 @@
+{
+  "scope": "Shared-node passive insertion: same reciprocal energy and degrees of freedom as active volume. Read-only decomposition; no pose or material edited.",
+  "units": "Uncalibrated authored solver units; length design units scaled0.001.",
+  "sign_convention": "Reported gradients are dE/dx. Internal tissue force is their negative; support-on-tissue reaction at a fixed node equals the total gradient there. Opposite shared-cap contributions balance within the actual free residual.",
+  "limits": [
+    "Skin proxy is a small coarse shallow passive volume, with declared far cut supports, including a posterior medial support in place of the near-surface medial clamp truncating the surrounding face.",
+    "No whole-face/clinical calibration or jaw/lid/neck rig.",
+    "Root+first collar remain a rigid attachment approximation; no dynamic bone feedback.",
+    "Static skin/contact shape checks and render transfer are separate gates."
+  ],
+  "states": {
+    "neutral-0": {
+      "source_state_sha256": "02ee39c25bde52f0cae8abfe0f0615ff93c10082d81ed1f3cc815f776f020e4b",
+      "source_domain_sha256": "9b84658bffc6be4ed7fd485d46f9c820d5b7c4cfe7f35ccaf05467fc73be2894",
+      "activation": 0,
+      "converged": true,
+      "stored_residual": 1.0047560572785098e-17,
+      "recomputed_residual": 1.0047560572785098e-17,
+      "minJ": 1,
+      "exact_fixed_coordinates": true,
+      "total_energy": 2.8291744719275305e-36,
+      "contact_energy": 0,
+      "passive_insertion_energy": 0,
+      "old_body_plus_active_energy": 2.8291744719275305e-36,
+      "muscle_energy": 2.8291744719275305e-36,
+      "energy_decomposition_error": 0,
+      "insertion_side_cap_gradient": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "muscle_side_cap_gradient": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "cap_force_imbalance": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "cap_relative_L2_imbalance": 0,
+      "bone_root_reaction": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "rigid_collar_reaction": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "skin_proxy_perimeter_reaction": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "free_residual": {
+        "net": [
+          -2.8888949165808538e-34,
+          -7.703719777548943e-34,
+          4.81482486096809e-34
+        ],
+        "norm": 9.532866866365114e-34,
+        "nodalL2": 1.0047560572785102e-17,
+        "maxNodeNorm": 6.3353223823906e-18
+      },
+      "global_gradient_sum": {
+        "net": [
+          -2.8888949165808538e-34,
+          -7.703719777548943e-34,
+          4.81482486096809e-34
+        ],
+        "norm": 9.532866866365114e-34,
+        "nodalL2": 1.0047560572785102e-17,
+        "maxNodeNorm": 6.3353223823906e-18
+      },
+      "bone_contact_gradient": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "terminal_cap_motion_design_units": {
+        "maximum": 0,
+        "mean": 0
+      },
+      "skin_proxy_motion_design_units": {
+        "maximum": 0,
+        "mean": 0
+      },
+      "external_support_plus_contact_balance": {
+        "vector": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "relative_to_insertion_net_force": 0,
+        "equals_negative_free_gradient": [
+          -2.8888949165808538e-34,
+          -7.703719777548943e-34,
+          4.81482486096809e-34
+        ]
+      }
+    },
+    "right-02-initial": {
+      "source_state_sha256": "5fc992c324ed1f056147774a841a93ec4c26918a91a5e59667c95a0d31e75438",
+      "source_domain_sha256": "9b84658bffc6be4ed7fd485d46f9c820d5b7c4cfe7f35ccaf05467fc73be2894",
+      "activation": 0.02,
+      "converged": true,
+      "stored_residual": 6.540114601013327e-8,
+      "recomputed_residual": 6.540114601013327e-8,
+      "minJ": 0.7570700845718585,
+      "exact_fixed_coordinates": true,
+      "total_energy": 1.598446241260912e-7,
+      "contact_energy": 8.375874329847482e-14,
+      "passive_insertion_energy": 2.248878199815707e-9,
+      "old_body_plus_active_energy": 1.575956621675322e-7,
+      "muscle_energy": 6.85240761117037e-8,
+      "energy_decomposition_error": 0,
+      "insertion_side_cap_gradient": {
+        "net": [
+          0.00009105923180513471,
+          0.0001654036704832388,
+          -0.00005892735089514249
+        ],
+        "norm": 0.00019779431384594543,
+        "nodalL2": 0.00014299176007258904,
+        "maxNodeNorm": 0.00007049161068466737
+      },
+      "muscle_side_cap_gradient": {
+        "net": [
+          -0.00009105971703345896,
+          -0.00016540268556143465,
+          0.00005892792237092205
+        ],
+        "norm": 0.00019779388385918778,
+        "nodalL2": 0.00014299388074365835,
+        "maxNodeNorm": 0.00007049288606248065
+      },
+      "cap_force_imbalance": {
+        "net": [
+          -4.85228324226251e-10,
+          9.849218041939551e-10,
+          5.714757795621638e-10
+        ],
+        "norm": 1.2377811008551854e-9,
+        "nodalL2": 3.785398516421173e-9,
+        "maxNodeNorm": 1.6365217451485582e-9
+      },
+      "cap_relative_L2_imbalance": 0.00002647245110584253,
+      "bone_root_reaction": {
+        "net": [
+          0,
+          0,
+          0
+        ],
+        "norm": 0,
+        "nodalL2": 0,
+        "maxNodeNorm": 0
+      },
+      "rigid_collar_reaction": {
+        "net": [
+          0.0000881414189156786,
+          0.00016584187460351164,
+          -0.00006241728124011004
+        ],
+        "norm": 0.00019790996462503606,
+        "nodalL2": 0.00025524957803854534,
+        "maxNodeNorm": 0.00009761846832823738
+      },
+      "skin_proxy_perimeter_reaction": {
+        "net": [
+          -0.00009105491622639637,
+          -0.00016540435707048897,
+          0.00005892549691622469
+        ],
+        "norm": 0.00019779234892614497,
+        "nodalL2": 0.00020055973619290533,
+        "maxNodeNorm": 0.00013713568029133336
+      },
+      "free_residual": {
+        "net": [
+          -2.758880163270103e-9,
+          -4.284521947306018e-10,
+          2.985610667488534e-9
+        ],
+        "norm": 4.087647501470261e-9,
+        "nodalL2": 6.540114601013334e-8,
+        "maxNodeNorm": 7.0088245350897125e-9
+      },
+      "global_gradient_sum": {
+        "net": [
+          -0.000002916256190880905,
+          4.370890808282756e-7,
+          -0.000003488798713217992
+        ],
+        "norm": 0.000004568075469689837,
+        "nodalL2": 0.0003246175582865675,
+        "maxNodeNorm": 0.00013713568029133336
+      },
+      "bone_contact_gradient": {
+        "net": [
+          -0.0000029162561908810185,
+          4.3708908082822014e-7,
+          -0.0000034887987132178525
+        ],
+        "norm": 0.000004568075469689798,
+        "nodalL2": 0.0000032539456806290795,
+        "maxNodeNorm": 0.0000025526753618616066
+      },
+      "terminal_cap_motion_design_units": {
+        "maximum": 0.020906703601216988,
+        "mean": 0.01778527251223379
+      },
+      "skin_proxy_motion_design_units": {
+        "maximum": 0.021497869804122056,
+        "mean": 0.009156313061381576
+      },
+      "passive_gradient_finite_difference": {
+        "dof": 2967,
+        "h": 1e-9,
+        "analytic": 0.0000112782409521978,
+        "numeric": 0.000011278240969819227,
+        "absolute_error": 1.762142779512376e-14
+      },
+      "external_support_plus_contact_balance": {
+        "vector": [
+          2.7588801632479385e-9,
+          4.2845219445198464e-10,
+          -2.985610667497868e-9
+        ],
+        "norm": 4.087647501432915e-9,
+        "relative_to_insertion_net_force": 0.000020666152741967246,
+        "equals_negative_free_gradient": [
+          -2.2164304513358377e-20,
+          -2.7861717777470493e-19,
+          -9.333906032048364e-21
+        ]
+      }
+    }
+  },
+  "length_conversion": "solver_length = 0.001 * authored_design_length. This is numerical scaling, not a calibrated mm-to-m claim. Material coefficients and hence solver force/energy remain uncalibrated.",
+  "energy_note": "Quasistatic equilibrium; energy decomposition and parameter-dependent stored energy are reported, not a dynamic work/heat conservation test."
+}

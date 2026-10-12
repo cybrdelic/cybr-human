@@ -1,0 +1,10 @@
+{
+  "baseline_head_sha256": "06bb99a61472ca7751c3da1ca083c0ad4600310a8101f354946ffd41a6d1e9b6",
+  "candidate_head_sha256": "aebd6fbc8d3067e2dccfd6cdedcc126b4934e151aed17dac33125542f7e8d274",
+  "semantics_sha256": "0bb3fe9eb70b0013f36aa26685097c550ae79d71c0b6d8cdeb6a5b6ae9974586",
+  "changed_vertices": 10240,
+  "topology_identical": true,
+  "restore_verified_in_memory": true,
+  "status": "Separate visible-margin component; local constant-clay gate useful, no whole-head selection.",
+  "baseline_dependency": "Optional orbital-v2 exact replay in the sibling directory"
+}

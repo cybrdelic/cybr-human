@@ -1,0 +1,215 @@
+{
+  "schema": "human-preferred-v53-cheek-checkpoint-selection-v1",
+  "created_utc": "2026-10-11T17:43:38.590046+00:00",
+  "scope": "Limited original one-sided right-cheek numerical proof, not a full face rig or calibrated anatomical model.",
+  "selected_head": {
+    "workspace_relative_path": "user-human-preferred/recovery/restored-project/output/coordinated-orbital-scale-v53/head.npz",
+    "sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+    "external_dense_dependency": true,
+    "source_archive": {
+      "version": 0,
+      "sha256": "fa7c086ba26917fe8e52426e249cbda0b10c533079aa7f4cac4812a7553d15c0"
+    },
+    "positions_archive": {
+      "version": 0,
+      "sha256": "9c2e38405d4a0a4f53d87af4b7409a98e9a64ccfbba654caf80a34e535d36726"
+    }
+  },
+  "selected_geometry": "human-preferred-v53-mechanics-20261011/cheek-remesh-v9/geometry.npz",
+  "selected_case": "human-preferred-v53-mechanics-20261011/cheek-case-v3",
+  "selected_solver": "human-preferred-v53-mechanics-20261011/src/solve_regional_cheek_pcg500.mjs",
+  "solver_provenance": "Accepted runner identity confirmed by authoring parent; logs show 500 CG iteration cap per nonlinear step. The similarly named 100-CG equilibrium runner is not selected.",
+  "selected_binding": "human-preferred-v53-mechanics-20261011/cheek-skin-binding-v5/binding.npz",
+  "selected_internal_fem_states": [
+    "neutral-0",
+    "right-02",
+    "right-08",
+    "right-16",
+    "released-0"
+  ],
+  "selected_sparse_skin_states": [
+    "neutral-0",
+    "right-02",
+    "released-0"
+  ],
+  "rejected_sparse_skin_states": {
+    "right-08": {
+      "archive_payload_included": false,
+      "reason": "18 affected faces have nonpositive normal comparison to neutral",
+      "sha256": "4c822d170e456cc0314bcfd7e383c1cd3935ec933b689fe2bfbbcbcbb21b6596"
+    },
+    "right-16": {
+      "archive_payload_included": false,
+      "reason": "45 affected faces have nonpositive normal comparison to neutral",
+      "sha256": "14dd33e3a5ed763fe139676e8cd5f4993a713ae795fe84345f7f6e6855ed971b"
+    }
+  },
+  "rest_fit_v4_policy": {
+    "path": "human-preferred-v53-mechanics-20261011/rest-fit-v4/candidate_geometry.npz",
+    "only_selected_array_keys": [
+      "bone_vertices",
+      "bone_triangles"
+    ],
+    "tissue_selected": false,
+    "reason": "Old tissue rest fit failed: 15 nonpositive cells and thousands of outside nodes. Its tissue vertices/tetrahedra/boundary/displacement are not used by selected cheek builder. Original NPZ preserved unchanged for exact source fidelity."
+  },
+  "mechanical_receipt": {
+    "nodes": 1003,
+    "tetrahedra": 3041,
+    "exact_bone_footprint_nodes": 176,
+    "additional_rigid_collar_nodes": 176,
+    "root_adjacent_tetrahedra": 903,
+    "all_root_adjacent_tetrahedra_entirely_fixed": true,
+    "active_tetrahedra_touching_fixed_nodes": 0,
+    "all_fixed_coordinates_bit_exact_in_five_states": true,
+    "root_reactions": "Zero in all five states because the entire root prism is fixed and undeformed.",
+    "load_location": "Nonzero local reactions occur at the additional fixed collar; root prism does not simulate transmitted stress.",
+    "bone_motion": "Static rigid regional supports only, no reciprocal bone dynamics.",
+    "distal_insertion": "Free distal muscle; no separately force-bearing distal insertion or surrounding face/skin load.",
+    "skin_coupling": "One-way render-surface affine residual/offset transfer only; no reciprocal skin load, skin mass, skin contact force, or skin FEM.",
+    "release": "Finite residual motion remains: maximum FEM motion 0.35106789693918644 design units at convergence tolerance. No exact recovery-to-rest claim.",
+    "units": "Authored, uncalibrated design units. Solver coordinate scale is 0.001. Not validated anatomical millimetres or measured human forces."
+  },
+  "per_state_original_transfer_metrics": {
+    "neutral-0": {
+      "sparse_state_sha256": "5e62d3f2346c988552069959cea7e54ab26521bc36cb575642f5b92491502f3a",
+      "source_state_sha256": "279dde71c09f8919cba6402cf945c2ee8786763d7e01111ada7b3e1041898b7c",
+      "converged": true,
+      "minJ_recomputed": 0.9999999999999862,
+      "maximum_fem_motion": 0.0,
+      "maximum_skin_motion": 0.0,
+      "skin_area_ratio_quantiles": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "minimum_skin_normal_cosine": 0.9999999999999998,
+      "nonpositive_normal_count": 0,
+      "zero_area_count": 0,
+      "uncovered_coordinates_exact": true,
+      "neutral_coordinate_identity": true,
+      "rigid_collar_motion": 0.0,
+      "force_residual": 1.0047560572785098e-17,
+      "contact_certified": true
+    },
+    "right-02": {
+      "sparse_state_sha256": "696c92553c8b41bbced4e95d77a16d6951198e0334dcd242b107fb14aef55aff",
+      "source_state_sha256": "b78d30cda71e5d839f5ffcdeeb588d5998f60feb12f3c456d6efdebaa4d71734",
+      "converged": true,
+      "minJ_recomputed": 0.9742755508017037,
+      "maximum_fem_motion": 0.9136503053635902,
+      "maximum_skin_motion": 0.9285170194892303,
+      "skin_area_ratio_quantiles": [
+        0.42112447537747105,
+        0.9197505300645701,
+        0.9913476354106393,
+        1.2054120534340995,
+        2.2974225116274964
+      ],
+      "minimum_skin_normal_cosine": 0.9598487864037962,
+      "nonpositive_normal_count": 0,
+      "zero_area_count": 0,
+      "uncovered_coordinates_exact": true,
+      "neutral_coordinate_identity": null,
+      "rigid_collar_motion": 0.0,
+      "force_residual": 1.9204972913425792e-05,
+      "contact_certified": true
+    },
+    "right-08": {
+      "sparse_state_sha256": "4c822d170e456cc0314bcfd7e383c1cd3935ec933b689fe2bfbbcbcbb21b6596",
+      "source_state_sha256": "b681f05f48bcfa66d97712d0ca79f8d71575fa531a80098042dd20dd1724a641",
+      "converged": true,
+      "minJ_recomputed": 0.9065288090859049,
+      "maximum_fem_motion": 3.645257238673455,
+      "maximum_skin_motion": 3.6988678097126386,
+      "skin_area_ratio_quantiles": [
+        0.22952108608108718,
+        0.709978535560424,
+        0.9642977393447079,
+        1.8302833589845824,
+        6.2626766044331745
+      ],
+      "minimum_skin_normal_cosine": -0.9051826194684571,
+      "nonpositive_normal_count": 18,
+      "zero_area_count": 0,
+      "uncovered_coordinates_exact": true,
+      "neutral_coordinate_identity": null,
+      "rigid_collar_motion": 0.0,
+      "force_residual": 1.4632668594668758e-05,
+      "contact_certified": true
+    },
+    "right-16": {
+      "sparse_state_sha256": "14dd33e3a5ed763fe139676e8cd5f4993a713ae795fe84345f7f6e6855ed971b",
+      "source_state_sha256": "27fb92e91f669f7fde9f928bb760945d222efd1a032f456412c08084be7699d2",
+      "converged": true,
+      "minJ_recomputed": 0.8228259064695074,
+      "maximum_fem_motion": 7.1804011271379515,
+      "maximum_skin_motion": 7.244739133902917,
+      "skin_area_ratio_quantiles": [
+        0.19017244088718283,
+        0.5326060644741585,
+        0.9328567663777276,
+        2.691846265895123,
+        11.533922679564812
+      ],
+      "minimum_skin_normal_cosine": -0.8804701281931996,
+      "nonpositive_normal_count": 45,
+      "zero_area_count": 0,
+      "uncovered_coordinates_exact": true,
+      "neutral_coordinate_identity": null,
+      "rigid_collar_motion": 0.0,
+      "force_residual": 1.4624537233416649e-05,
+      "contact_certified": true
+    },
+    "released-0": {
+      "sparse_state_sha256": "a70b4dcc4dd43c654669045eb87f5c2605eab84a4fe5eaf01bf749ef724ff82d",
+      "source_state_sha256": "ecc6585015c0d174626dc25bc37acf5cda28e2b298cbe13fe013f819556a836a",
+      "converged": true,
+      "minJ_recomputed": 0.9883608046572959,
+      "maximum_fem_motion": 0.35106789693919366,
+      "maximum_skin_motion": 0.3545495113921452,
+      "skin_area_ratio_quantiles": [
+        0.8268987211154292,
+        0.9348263222226704,
+        1.0,
+        1.0851993795001715,
+        1.688986724884186
+      ],
+      "minimum_skin_normal_cosine": 0.6068645957252601,
+      "nonpositive_normal_count": 0,
+      "zero_area_count": 0,
+      "uncovered_coordinates_exact": true,
+      "neutral_coordinate_identity": null,
+      "rigid_collar_motion": 0.0,
+      "force_residual": 1.5306805952564715e-05,
+      "contact_certified": true
+    }
+  },
+  "current_validation_limits": [
+    "Positive FEM determinants and static-bone path admission are separate from rendered-skin validity.",
+    "Skin acceptance is for supplied neutral, right-02, and released-0 snapshots only; not arbitrary interpolation, larger activation, or between-state swept skin-contact proof.",
+    "Local nonincident crossings and 1e-6-trimmed incident crossings have no new hits in tested two moving skin states; shared strips remain excluded.",
+    "No full skull, mandible, dentition, jaw, eyelid, neck, bilateral pose, surrounding solved facial tissue, physiological tendon, or calibrated activation model."
+  ],
+  "provisional_text_notice": "Original geometry/case reports include earlier PENDING or unbuilt-skin text. They remain byte-exact records; this selection receipt records the later narrow outcome and rejection decisions.",
+  "historical_bone_generator_gap": {
+    "current_cheek_replay_blocked": false,
+    "fresh_historical_bone_rebuild_blocked": true,
+    "missing_source": {
+      "path": "human-mechanics-20261010/src/zygomatic_support_distance.cpp",
+      "sha256": "4c9cfe7cc342609ce238e991967d8f17bd1bb738814560ea5107c5fe0bce2cd8"
+    },
+    "missing_native_v16_head": {
+      "original_expected_path": "human-reference-pipeline-20261009/output/native-connected-head-study/shared-head-v16/head.npz",
+      "sha256": "f4fa73042fab1534b45c0982b47ae668b16eb990c2029e6a06cfc9b94b01df14"
+    },
+    "optional_missing_preview_source": {
+      "path": "human-mechanics-20261010/src/zygomatic_support_preview.py",
+      "sha256": "6d596eede561a714dbb0a890572ab361ff11fa5d4faeff1180cbb45067eead2b"
+    },
+    "resolution": "Current replay starts from exact pinned original regional bone/case assets. Editable numeric field source and exact recovered parameters are included, but no fresh historical bone build/audit is claimed."
+  },
+  "licensing_and_source_origin": "Retain original GPL-2.0 license and reference-source licensing/provenance. Historical reference-source ASSET-LICENSES.md/README atlas statements describe a broader legacy project, not the numeric bones used here. Current regional bones are original authored fields from zygomatic_support_build.py and the pinned parameters; no atlas mesh was used in this current case."
+}

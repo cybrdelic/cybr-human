@@ -1,0 +1,313 @@
+{
+  "domain_sha256": "76a74ced2006d3477ee034e0223fedde065da72390f41966888c01db0556ccbf",
+  "admitted": false,
+  "bond": {
+    "rootNodes": 330,
+    "rootFaces": 477,
+    "rigidFaces": 744,
+    "stationaryNodes": 418,
+    "parameterizedFeaturePairs": 7017,
+    "strictRigidPairs": 1682,
+    "stationarySubMarginPairs": 12,
+    "stationaryGapPairs": [
+      {
+        "tissueFace": 36,
+        "boneId": "combined",
+        "boneFace": 92854,
+        "certifiedPositiveGap": 0.0000017044651004392247,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 231,
+        "boneId": "combined",
+        "boneFace": 93239,
+        "certifiedPositiveGap": 0.000002038128130055705,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 261,
+        "boneId": "combined",
+        "boneFace": 94019,
+        "certifiedPositiveGap": 0.000003931457930567762,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 273,
+        "boneId": "combined",
+        "boneFace": 94144,
+        "certifiedPositiveGap": 0.0000027226083752859905,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 295,
+        "boneId": "combined",
+        "boneFace": 93494,
+        "certifiedPositiveGap": 0.0000026511569908994865,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 501,
+        "boneId": "combined",
+        "boneFace": 93494,
+        "certifiedPositiveGap": 0.0000033324117253772305,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 6033,
+        "boneId": "combined",
+        "boneFace": 93889,
+        "certifiedPositiveGap": 0.0000013328749435604394,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 6074,
+        "boneId": "combined",
+        "boneFace": 93888,
+        "certifiedPositiveGap": 0.000001976907582331828,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 6075,
+        "boneId": "combined",
+        "boneFace": 93888,
+        "certifiedPositiveGap": 0.000001976907582331828,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 6148,
+        "boneId": "combined",
+        "boneFace": 92984,
+        "certifiedPositiveGap": 0.000002756035163012123,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 6181,
+        "boneId": "combined",
+        "boneFace": 92854,
+        "certifiedPositiveGap": 0.0000017044651004392247,
+        "exactDisjoint": true
+      },
+      {
+        "tissueFace": 6249,
+        "boneId": "combined",
+        "boneFace": 93758,
+        "certifiedPositiveGap": 0.0000028170957008812304,
+        "exactDisjoint": true
+      }
+    ],
+    "maxNumericalRootErrorSolverUnits": 3.122502256758253e-17,
+    "minimumDistanceMoving": 0.00001,
+    "allPairsChecked": 8711,
+    "failures": [],
+    "fullUniformMarginClaim": false,
+    "movingPairsExempted": 0
+  },
+  "full_boundary_faces": 20048,
+  "enumerated_pairs": 9415,
+  "strict_margin_pairs": 2382,
+  "rigid_pair_exceptions": 7029,
+  "moving_margin_failures": [
+    {
+      "pair": {
+        "tissueFace": 96,
+        "boneIndex": 0,
+        "boneId": "combined",
+        "boneFace": 93111
+      },
+      "nodes": [
+        93,
+        45,
+        91
+      ],
+      "positions": [
+        [
+          0.021680641174316406,
+          -0.07255474853515625,
+          0.10172283172607421
+        ],
+        [
+          0.022297828975878096,
+          -0.0732316490872864,
+          0.10075877175412525
+        ],
+        [
+          0.02247343361792152,
+          -0.07282027034295974,
+          0.10092943162064907
+        ]
+      ],
+      "minimumFeatureDistance": 0.0000094998875277583,
+      "allFixed": false
+    },
+    {
+      "pair": {
+        "tissueFace": 97,
+        "boneIndex": 0,
+        "boneId": "combined",
+        "boneFace": 93111
+      },
+      "nodes": [
+        93,
+        45,
+        47
+      ],
+      "positions": [
+        [
+          0.021680641174316406,
+          -0.07255474853515625,
+          0.10172283172607421
+        ],
+        [
+          0.022297828975878096,
+          -0.0732316490872864,
+          0.10075877175412525
+        ],
+        [
+          0.021491486602560308,
+          -0.0729705756515417,
+          0.10156098111215936
+        ]
+      ],
+      "minimumFeatureDistance": 0.0000094998875277583,
+      "allFixed": false
+    },
+    {
+      "pair": {
+        "tissueFace": 6252,
+        "boneIndex": 0,
+        "boneId": "combined",
+        "boneFace": 93888
+      },
+      "nodes": [
+        75,
+        77,
+        123
+      ],
+      "positions": [
+        [
+          0.027280814082955632,
+          -0.07486293229771714,
+          0.09709461563639495
+        ],
+        [
+          0.028198931987758205,
+          -0.07516345857086441,
+          0.09600204040632371
+        ],
+        [
+          0.0282875175307885,
+          -0.0747686068923675,
+          0.09625554917069817
+        ]
+      ],
+      "minimumFeatureDistance": 0.000008006960165674088,
+      "allFixed": false
+    },
+    {
+      "pair": {
+        "tissueFace": 6252,
+        "boneIndex": 0,
+        "boneId": "combined",
+        "boneFace": 93761
+      },
+      "nodes": [
+        75,
+        77,
+        123
+      ],
+      "positions": [
+        [
+          0.027280814082955632,
+          -0.07486293229771714,
+          0.09709461563639495
+        ],
+        [
+          0.028198931987758205,
+          -0.07516345857086441,
+          0.09600204040632371
+        ],
+        [
+          0.0282875175307885,
+          -0.0747686068923675,
+          0.09625554917069817
+        ]
+      ],
+      "minimumFeatureDistance": 0.000008006960165674088,
+      "allFixed": false
+    }
+  ],
+  "neutral": {
+    "energy": 7.281847290818603e-36,
+    "minJ": 1,
+    "maxJ": 1,
+    "residual": 9.634900124632736e-18,
+    "contactViolation": 0,
+    "fibreEnergy": 0,
+    "passiveAndExternalEnergy": 0,
+    "activeTensionFibres": 0,
+    "maximumFibreTension": 0,
+    "energyWithoutSurfaceContacts": 0,
+    "surfaceContactEnergy": 0,
+    "surfaceContactViolation": 0,
+    "surfaceContactCount": 0,
+    "activeSurfaceContacts": 0,
+    "surfaceBoneReaction": [
+      0,
+      0,
+      0
+    ],
+    "surfaceBoneReactionTorque": [
+      0,
+      0,
+      0
+    ],
+    "surfaceTissueContactForce": [
+      0,
+      0,
+      0
+    ],
+    "surfaceTissueContactTorque": [
+      0,
+      0,
+      0
+    ],
+    "energyWithoutMuscles": 0,
+    "muscleEnergy": 7.281847290818603e-36,
+    "muscleRestVolume": 4.1616912440586076e-7,
+    "muscleVolume": 4.1616912440586076e-7,
+    "muscleMeanJ": 1,
+    "muscleRegionCount": 5,
+    "muscleTetrahedronCount": 32682,
+    "activeMuscleTetrahedra": 1081,
+    "muscleFamilyElementCount": 32682,
+    "muscleUniqueTetrahedronCount": 31836,
+    "muscleUnionRestVolume": 4.1700047241319724e-7,
+    "muscleUnionCurrentVolume": 4.1700047241319724e-7,
+    "maximumFibreMixtureFraction": 1,
+    "mixtureConvention": "Active energies/rest-volume diagnostics weighted by family fraction; unique geometric union volume reported separately. Passive solid counted once.",
+    "contactEnergy": 0,
+    "signedGradientSums": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "collar": [
+        0,
+        0,
+        0
+      ],
+      "far": [
+        0,
+        0,
+        0
+      ],
+      "free": [
+        1.3586028408938e-19,
+        4.162035451795212e-19,
+        2.1985003482720703e-19
+      ]
+    },
+    "positionsExact": true
+  }
+}

@@ -1,0 +1,24 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 7849.83984375, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "case_sha256": "eba0ed5e194760166fdc5dc7e4c6cff2eb34ebed638e8804ff142ebf76ce8ee0",
+  "binding_sha256": "2789c9a6853999116af8b9aaef87416f3a6389be3ec8f925f07eaf869fc12527",
+  "covered_vertices": 221,
+  "uncovered_skin_vertices": 544252,
+  "rest_offset_quantiles": [
+    0.6020330117749353,
+    0.6148726405769764,
+    0.6434434456360947,
+    0.6573635079701035
+  ],
+  "method": "Barycentric translations of the actual reciprocal passive superficial triangles in a common XY chart; zero gain/amplitude manipulation. Exact original dense neutral positions retained as residuals. The outer12 fixed proxy nodes make boundary displacement zero.",
+  "scope": "Dense visual refinement of a small force-bearing passive skin proxy. The coarse passive volume participates reciprocally in the muscle equilibrium; fine displayed vertices have no separate forces or masses.",
+  "limits": [
+    "Fixed truncated perimeter, rigid origin collar and uncalibrated material remain.",
+    "No full-face skin dynamics or expressions."
+  ]
+}
+neutral-0 {'sparse_state_sha256': '9a02123543e2436c1349622aa94075c488cf4671d04805daab9c52a7ec32879d', 'source_state_sha256': '18d9acb5765e6d2ca706f486920a2cc1fc2dc921acd6ab11f089ee44e305c399', 'maximum_skin_motion': 0.0, 'area_ratio_quantiles': [1.0, 1.0, 1.0], 'min_normal_cosine': 0.9999999999999998, 'neutral_exact': True, 'uncovered_exact': True, 'nonpositive_normal_count': 0, 'zero_area_count': 0}
+right-02-secanted {'sparse_state_sha256': 'ff6ed0860767fb67c23c502e3dfb4dcc04879af293502e4223259bb7947a597d', 'source_state_sha256': '4649267d9cdafdb0595c454c95a376b5fec840730df6dfa453f80a232407935e', 'maximum_skin_motion': 0.016101379299124755, 'area_ratio_quantiles': [0.9916669247925657, 1.0006557353109917, 1.0087872468669983], 'min_normal_cosine': 0.9999906081832003, 'neutral_exact': None, 'uncovered_exact': True, 'nonpositive_normal_count': 0, 'zero_area_count': 0}
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 142.39, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 7849.83984375, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 0.51, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

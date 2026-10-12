@@ -1,0 +1,338 @@
+{
+  "schema": "original-native-v16-bilateral-oral24-material-chart-binding-v1",
+  "status": "PASS exact correspondence/rest transfer and synthetic frozen-cut continuity; mechanics/contact not established by binding",
+  "source_geometry": "human-mechanics-20261010/output/bilateral-cavity-annulus-v1/rest_geometry.npz",
+  "source_geometry_sha256": "31724da83b42f0bd08f11a49743dd4e9cbd96bbf6705e5294c9f95dc63304c7c",
+  "required_geometry_sha256": "31724da83b42f0bd08f11a49743dd4e9cbd96bbf6705e5294c9f95dc63304c7c",
+  "source_head_sha256": "f4fa73042fab1534b45c0982b47ae668b16eb990c2029e6a06cfc9b94b01df14",
+  "source_patch_sha256": "e16382724aff84a952c14c4f6bcc79abf0a3ec2bba6e2506e3f40505002df2fa",
+  "source_oral_charts_sha256": "ef348176e1402a0afb3bd57b178323eb1e48b1a74919212d70ba85364c346e02",
+  "builder_sha256": "9e2caffb66797b48c15a1517cb0b822577ff7a18d19ddd09f1ae67f87f62efdd",
+  "source_original_oral_charts_sha256": "6b086c1991decc22631be3ba4b0d54bfed7ad8fc549ad85e83331c545b76d836",
+  "original_transfer_module_sha256": "84bc14e1e14a1adb777726f669f7e665fd212883b2346f258fae9f61dff73f0a",
+  "original_gradient_recovery_module_sha256": "9c62b7ff3c36b7d2686d409c0016704b0b63054a9daee4c6262a1ffcae1644b1",
+  "output_file": "native_surface_binding.npz",
+  "output_sha256": "07a84ba216a9a1f41ef3d1a6dd806ba0041bd01c734a10ba997500b30e4cfd0a",
+  "output_bytes": 4208424,
+  "bound_native_vertices": 91284,
+  "unique_native_vertices": 91284,
+  "additional_native_vertices_from_mucosal_extension": 3840,
+  "base_oral_rows_mapping": [
+    [
+      0,
+      0
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      12,
+      12
+    ],
+    [
+      16,
+      16
+    ]
+  ],
+  "explicit_mucosal_boundary_facets": 960,
+  "mucosal_architecture": "preserved oral16 wedge plus appended native cavity annulus",
+  "native_support_corner_maximum_coordinate_error_design_units": {
+    "external": 0.0,
+    "mucosal": 2.040267246774743e-24,
+    "explicit_mucosa": 2.040267246774743e-24
+  },
+  "native_support_coordinate_roundoff_gate_design_units": 1e-10,
+  "remaining_cap_interior_native_vertices": 1681,
+  "row24_is_exact_native_cap_boundary": true,
+  "region_assignment_counts": {
+    "0": 72084,
+    "1": 7680,
+    "2": 11520
+  },
+  "region_names": {
+    "0": "midface exterior, including shared vermilion border",
+    "1": "oral exterior, excluding prior shared IDs",
+    "2": "oral mucosa, excluding shared wetline IDs"
+  },
+  "duplicate_chart_records_consistency_checked": 23586,
+  "cross_region_duplicate_records_consistency_checked": 960,
+  "shared_oral_interface_nodes": 600,
+  "minimum_weight": 0.0,
+  "maximum_weight": 1.0,
+  "maximum_partition_error": 0.0,
+  "maximum_rest_offset_design_units": 1.8543681739185691,
+  "rest_offset_quantiles_design_units": [
+    0.0,
+    0.11924266973899761,
+    0.4996521981657108,
+    0.7947235336526126,
+    1.8543681739185691
+  ],
+  "all_support_triangles_actual_volume_boundary": true,
+  "nearest_world_fit_used": false,
+  "rest_transfer_verification": {
+    "verifiedVertices": 91284,
+    "recoveryNodeCount": 9125,
+    "identityGradientMaxCoordinateErrorDesignUnits": 2.7755575615628914e-14,
+    "originalFloat32RecoveredMaxCoordinateErrorDesignUnits": 9.037208897888505e-07,
+    "originalFloat32RecoveredMaxGradientError": 3.5762786865234375e-07,
+    "identityGateDesignUnits": 1e-10,
+    "originalFloat32GateDesignUnits": 1e-05,
+    "identityExactAlgebraically": true,
+    "originalRecoveredOutputByteExact": false,
+    "syntheticCollarProbe": {
+      "notAMechanicalState": true,
+      "perturbedNoncollarNodes": 7982,
+      "frozenIncidentStarNodes": 1143,
+      "maximumCutGradientErrorBeforeNumericalCorrection": 1.7881393432617188e-07,
+      "maximumNativeCutCoordinateErrorDesignUnits": 1.3877787807814457e-14,
+      "coordinateGateDesignUnits": 1e-10,
+      "unchangedOriginalAffineFormula": true,
+      "positionTaperApplied": false
+    }
+  },
+  "unmatched_cut_native_vertices": 2096,
+  "unmatched_cut_support_nodes": 322,
+  "cut_effective_support_rule": "Strictly positive barycentric weights only, after 1e-12 exact-edge roundoff snapping; zero-weight triangle corners are excluded.",
+  "zero_weight_cut_support_slots_excluded": 2418,
+  "unmatched_cut_incident_tetrahedra": 1652,
+  "unmatched_cut_incident_nodes": 1143,
+  "deep_mucosal_cut_native_vertices": 480,
+  "deep_mucosal_cut_support_nodes": 120,
+  "deep_mucosal_cut_incident_tetrahedra": 540,
+  "deep_mucosal_cut_incident_nodes": 360,
+  "compatibility": {
+    "applyAffineTransfer": "Flatten points, indices and weights in C order; x/rest must use solver units (.001*design coordinates); nodesPerVertex=3.",
+    "recoverSurfaceGradients": "Use count=9125 with ORIGINAL global node ordering. Mucosal support is not a prefix of exterior nodes. Supply actual volume gradients and material volumes from this exact geometry.",
+    "rest_residual": "The original formula transports q-X_i separately per support, not one untransformed additive offset. rest_offsets is diagnostic.",
+    "parent_uv": "Local parent-quad UV unless parent_uv_is_global_mucosal is true. Explicit mucosal facets store global [angle/480,row/24]; native IDs and boundary owner tetrahedra remain authoritative.",
+    "parent_faces": "Nonnegative IDs reference all_surface_quads. For cavity-annulus facets, -1-index references the exact source cavity_extension_mucosal_support_triangles index.",
+    "storage": "NPZ numeric arrays plus this JSON manifest. No full head is copied."
+  },
+  "cut_semantics": {
+    "outer_cut": "Beyond the shared head rectangle is omitted.",
+    "eye_cuts": "Inner lids and sockets remain unbound.",
+    "nostril_cuts": "Native vestibular walls/caps remain unbound.",
+    "deep_mucosal_cut": "Native mucosal row24 is bound; the 1681 remaining native cap interior vertices remain unbound at rest.",
+    "necessary_runtime_constraint": "All nodes in cut_recovery_incident_node_ids must stay at rest. Recompute ORIGINAL recovered gradients over all actual incident tetrahedra. Verify support gradients are identity within the original numerical tolerance before correcting only roundoff to exact identity. Preserve the original affine residual formula. Stored incident stars are required support provenance, not applied mechanics constraints; a consuming case must enforce and audit them."
+  },
+  "limitations": [
+    "Binding does not establish a nonintersecting volume, support clearance or valid active motion.",
+    "No full-head motion acceptance until omitted-boundary displacement and tangent/clearance gates pass.",
+    "Original recovered Float32 gradient accumulation is not byte-exact identity; its measured error is separately reported.",
+    "Anatomical and material parameters remain authored approximations, not validated biology."
+  ],
+  "arrays": {
+    "vertex_ids": {
+      "shape": [
+        91284
+      ],
+      "dtype": "int32"
+    },
+    "points": {
+      "shape": [
+        91284,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "indices": {
+      "shape": [
+        91284,
+        3
+      ],
+      "dtype": "uint32"
+    },
+    "weights": {
+      "shape": [
+        91284,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "rest_offsets": {
+      "shape": [
+        91284,
+        3
+      ],
+      "dtype": "float64"
+    },
+    "regions": {
+      "shape": [
+        91284
+      ],
+      "dtype": "uint8"
+    },
+    "parent_faces": {
+      "shape": [
+        91284
+      ],
+      "dtype": "int32"
+    },
+    "parent_uv": {
+      "shape": [
+        91284,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "parent_uv_is_global_mucosal": {
+      "shape": [
+        91284
+      ],
+      "dtype": "bool"
+    },
+    "boundary_owner_tetrahedra": {
+      "shape": [
+        91284
+      ],
+      "dtype": "int32"
+    },
+    "nodes_per_vertex": {
+      "shape": [],
+      "dtype": "int32"
+    },
+    "required_gradient_recovery_count": {
+      "shape": [],
+      "dtype": "int32"
+    },
+    "solver_units_per_design_unit": {
+      "shape": [],
+      "dtype": "float64"
+    },
+    "source_geometry_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "source_head_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "source_patch_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "source_oral_charts_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "source_original_oral_charts_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "oral_external_rows": {
+      "shape": [
+        5
+      ],
+      "dtype": "int32"
+    },
+    "oral_mucosal_rows": {
+      "shape": [
+        5
+      ],
+      "dtype": "int32"
+    },
+    "deep_mucosal_cut_native_ids": {
+      "shape": [
+        480
+      ],
+      "dtype": "int32"
+    },
+    "remaining_cap_interior_native_ids": {
+      "shape": [
+        1681
+      ],
+      "dtype": "int32"
+    },
+    "outer_cut_binding_rows": {
+      "shape": [
+        880
+      ],
+      "dtype": "int32"
+    },
+    "right_eye_cut_binding_rows": {
+      "shape": [
+        256
+      ],
+      "dtype": "int32"
+    },
+    "left_eye_cut_binding_rows": {
+      "shape": [
+        256
+      ],
+      "dtype": "int32"
+    },
+    "right_nostril_cut_binding_rows": {
+      "shape": [
+        112
+      ],
+      "dtype": "int32"
+    },
+    "left_nostril_cut_binding_rows": {
+      "shape": [
+        112
+      ],
+      "dtype": "int32"
+    },
+    "deep_mucosal_cut_binding_rows": {
+      "shape": [
+        480
+      ],
+      "dtype": "int32"
+    },
+    "unmatched_cut_binding_rows": {
+      "shape": [
+        2096
+      ],
+      "dtype": "int32"
+    },
+    "unmatched_cut_support_node_ids": {
+      "shape": [
+        322
+      ],
+      "dtype": "uint32"
+    },
+    "cut_recovery_incident_tetrahedra": {
+      "shape": [
+        1652
+      ],
+      "dtype": "int32"
+    },
+    "cut_recovery_incident_node_ids": {
+      "shape": [
+        1143
+      ],
+      "dtype": "uint32"
+    },
+    "deep_mucosal_cut_support_node_ids": {
+      "shape": [
+        120
+      ],
+      "dtype": "uint32"
+    },
+    "deep_mucosal_cut_recovery_incident_tetrahedra": {
+      "shape": [
+        540
+      ],
+      "dtype": "int32"
+    },
+    "deep_mucosal_cut_recovery_incident_node_ids": {
+      "shape": [
+        360
+      ],
+      "dtype": "uint32"
+    },
+    "oral_shared_interface_node_ids": {
+      "shape": [
+        120,
+        5
+      ],
+      "dtype": "uint32"
+    }
+  }
+}

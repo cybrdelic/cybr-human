@@ -1,0 +1,131 @@
+{
+  "shared_material": {
+    "young": 3200.0,
+    "poisson": 0.43,
+    "active_fibre_stiffness": 24000.0,
+    "calibrated": false
+  },
+  "source_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "length_conversion": "solver_length = .001 * authored_design_length; numerical scale only",
+  "cases": [
+    {
+      "name": "small fixed insertion",
+      "geometry_sha256": "9bc6a0def6a383e3eefd02a80966a7a0793549f5f3af06b6c3e29844f861c1ac",
+      "reaction_report_sha256": "cd873d4d7b28a12b319ab907361ba8f596909eb374599668f148602d12aee6e0",
+      "node_count": 1029,
+      "tetrahedra": 3113,
+      "fixed_cut_nodes": 12,
+      "proxy_nodes": 25,
+      "activation": 0.02,
+      "minJ": 0.7657711574947621,
+      "residual": 6.7852289496032e-08,
+      "max_cap_motion": 0.04845743027743013,
+      "max_proxy_motion": 0.017429182348197823,
+      "net_insertion_force": [
+        8.686504363964664e-05,
+        0.0001582054774256988,
+        -5.677184299052505e-05
+      ],
+      "net_insertion_force_norm": 0.0001892024076235602,
+      "cap_relative_imbalance": 1.3216908282203765e-05,
+      "external_balance": {
+        "vector": [
+          -4.852236123365335e-08,
+          7.983768415947552e-09,
+          -5.8384279040693986e-08
+        ],
+        "norm": 7.633403000569437e-08,
+        "relative_to_insertion_net_force": 0.0004034516841750219,
+        "equals_negative_free_gradient": [
+          -8.308863816972652e-20,
+          1.0225110424012996e-19,
+          -3.312692917152365e-20
+        ]
+      },
+      "passive_energy": 4.6578960881895245e-09,
+      "total_energy": 1.5669937929971572e-07
+    },
+    {
+      "name": "wider superficial cut diagnostic",
+      "geometry_sha256": "4ac08d308c86fe4644a43ebf0bb82d288d2d38bfe6a7b29d1b1e1a0af9287aa0",
+      "reaction_report_sha256": "d809cfc2214c5f10553760c1c4d300a499888a480d7bbad09f4381de501a5c99",
+      "node_count": 1125,
+      "tetrahedra": 3401,
+      "fixed_cut_nodes": 24,
+      "proxy_nodes": 73,
+      "activation": 0.02,
+      "minJ": 0.7543660698515103,
+      "residual": 9.683086562817709e-08,
+      "max_cap_motion": 0.012276071454027393,
+      "max_proxy_motion": 0.00547912441249567,
+      "net_insertion_force": [
+        9.226181624335922e-05,
+        0.00016756276667174698,
+        -5.975415764873996e-05
+      ],
+      "net_insertion_force_norm": 0.00020039980755361063,
+      "cap_relative_imbalance": 3.4388610656094366e-05,
+      "external_balance": {
+        "vector": [
+          1.4667904079289568e-08,
+          -2.477603537608152e-09,
+          1.671011481336745e-08
+        ],
+        "norm": 2.2372167227265452e-08,
+        "relative_to_insertion_net_force": 0.00011163766822121567,
+        "equals_negative_free_gradient": [
+          3.417579418824089e-20,
+          -1.2942895044617224e-19,
+          -2.2445711357748917e-19
+        ]
+      },
+      "passive_energy": 1.4874065246788406e-09,
+      "total_energy": 1.6063519200330085e-07
+    },
+    {
+      "name": "posterior perioral continuation",
+      "geometry_sha256": "30a8e5ca8e80f5432190f343d6a636acb87b34a9f2d6173935a67008ed381a1f",
+      "reaction_report_sha256": "940577e8fc29f37111da6e3cf2224e6b5cff4d220db4a789cb65877d9f75c81b",
+      "node_count": 1125,
+      "tetrahedra": 3401,
+      "fixed_cut_nodes": 20,
+      "proxy_nodes": 73,
+      "activation": 0.02,
+      "minJ": 0.7570700845718585,
+      "residual": 6.540114601013327e-08,
+      "max_cap_motion": 0.020906703601216988,
+      "max_proxy_motion": 0.021497869804122056,
+      "net_insertion_force": [
+        9.105923180513471e-05,
+        0.0001654036704832388,
+        -5.892735089514249e-05
+      ],
+      "net_insertion_force_norm": 0.00019779431384594543,
+      "cap_relative_imbalance": 2.647245110584253e-05,
+      "external_balance": {
+        "vector": [
+          2.7588801632479385e-09,
+          4.2845219445198464e-10,
+          -2.985610667497868e-09
+        ],
+        "norm": 4.087647501432915e-09,
+        "relative_to_insertion_net_force": 2.0666152741967246e-05,
+        "equals_negative_free_gradient": [
+          -2.2164304513358377e-20,
+          -2.7861717777470493e-19,
+          -9.333906032048364e-21
+        ]
+      },
+      "passive_energy": 2.248878199815707e-09,
+      "total_energy": 1.598446241260912e-07
+    }
+  ],
+  "finding": "The laterally widened front sheet retained a short stiff medial support. Posterior continuation removes that near-surface clamp and transfers loads through a finite deep layer. This tests actual domain geometry and boundary placement, not stiffness or command changes.",
+  "limits": [
+    "Posterior and other cut supports approximate omitted deep buccal/perioral tissue; no new jaw or anatomical attachment is inferred.",
+    "Muscle remains one authored approximate cheek bundle, not a resolved multi-muscle modiolus.",
+    "Fine whole-head skin has no new independent degrees of freedom or force feedback.",
+    "Rigid original bone/first collar remains; direct root reaction is zero.",
+    "Static no-crossing tests do not add tissue self-contact forces."
+  ]
+}

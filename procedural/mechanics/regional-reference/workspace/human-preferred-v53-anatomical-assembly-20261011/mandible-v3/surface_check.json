@@ -1,0 +1,12 @@
+{
+  "self_nonincident_candidates": 16633,
+  "self_nonincident_crossings": 0,
+  "trimmed_incident_candidates": 219200,
+  "trimmed_incident_crossings": 0,
+  "self_examples": [],
+  "trimmed_examples": [],
+  "skin_triangle_candidate_pairs": 0,
+  "skin_triangle_crossings": 0,
+  "skin_examples": [],
+  "limit": "Static triangle tests; incident strips exclude1e-6 centroid trim. No moving TMJ/contact dynamics."
+}

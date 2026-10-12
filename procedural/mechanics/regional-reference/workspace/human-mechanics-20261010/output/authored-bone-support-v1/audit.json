@@ -1,0 +1,52 @@
+{
+  "schema": "human-original-regional-bone-audit-v1",
+  "source_head_sha256": "f4fa73042fab1534b45c0982b47ae668b16eb990c2029e6a06cfc9b94b01df14",
+  "parameters_sha256": "09cf47bca64ac3072b0e99e10c9114f8803d140f2a8fc64196f017baf0d46f9c",
+  "vertices": 18254,
+  "triangles": 36504,
+  "components": 1,
+  "open_edges": 0,
+  "nonmanifold_edges": 0,
+  "inconsistent_winding_edges": 0,
+  "signed_volume_design_units_cubed": 10759.85425101286,
+  "minimum_triangle_area": 1.5597246962353128e-09,
+  "bbox": [
+    [
+      11.423096502661265,
+      -43.67857142857143,
+      20.347908968735723
+    ],
+    [
+      64.6998160333824,
+      27.723884412676938,
+      112.27096622164518
+    ]
+  ],
+  "skin_audit": {
+    "tested_triangle_centroids": 36504,
+    "three_ray_parity_outside_or_ambiguous": 0,
+    "centroid_min_exact_surface_distance": 1.334577641079947,
+    "triangles_wholly_contained_by_distance_ball": 36504,
+    "uncertified_triangles": 0,
+    "minimum_whole_triangle_clearance_lower_bound": 0.7395371674809156,
+    "method": "Exact nearest native-skin triangle distance with BVH; three oblique parity rays per centroid; Lipschitz distance bound d(centroid)-max(vertex radius) certifies entire triangle. Floating-point, source mesh assumed closed."
+  },
+  "globe_audit": {
+    "minimum_exact_triangle_clearance": 7.471851363079493,
+    "native_globe_center": [
+      31.3,
+      12,
+      94.6
+    ],
+    "native_globe_radius": 13.161
+  },
+  "regions": {
+    "zygomatic_body": 10087,
+    "zygomatic_arch": 6898,
+    "maxillary_facial_shell": 13672,
+    "inferior_orbital_rim": 2569,
+    "lateral_orbital_rim": 3278
+  },
+  "anatomical_status": "Original anatomically organized regional approximation. No measurements, scans, segmented or atlas geometry imported; no calibrated biological dimensions or mechanical material claim.",
+  "mechanics_status": "Rigid support surface and attachment landmarks prepared; no solver integration or contact forces claimed."
+}

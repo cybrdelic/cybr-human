@@ -1,0 +1,24 @@
+{
+  "renderer": "Blender4.3.2 Cycles CPU",
+  "full_face_controls": {
+    "size": 560,
+    "samples": 256,
+    "seed": 47,
+    "threads": 2,
+    "denoised": false
+  },
+  "conditioning": {
+    "uniform_scene_factor": 1000,
+    "camera_geometry_strand_SSS_bump_lengths": "factor",
+    "light_area_dimensions": "factor",
+    "area_light_power": "factor squared",
+    "IOR_color_roughness_exposure": "unchanged"
+  },
+  "transport_result": "Actual iris illumination recovered with layered refraction after uniform scene conditioning. No shadow-ray passthrough or iris repaint. No calibrated physiological validation.",
+  "margin_result": "Local clay shows a restrained anterior rim; upper/canthal shape remains stylized. No full appearance acceptance.",
+  "images": {
+    "optional_orbital_v2_front.png": "7adc01d3116e1d6487864db5c08018b73bec9806bdaab3aa2ad904c21548b21c",
+    "conditioned_preferred_front.png": "d0ef5a2b8be65c402825a38895ea440d09957bcff1ec1ed96f39a9a022124bcc",
+    "optional_margin_v3_clay.png": "1d66e0c492698951ff3d271d32f85174c0fe1ab72bcd0d4a74de135a024ececd"
+  }
+}

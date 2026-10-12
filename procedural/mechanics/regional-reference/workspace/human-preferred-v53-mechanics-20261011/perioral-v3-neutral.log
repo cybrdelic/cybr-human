@@ -1,0 +1,80 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 5831.7109375, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "source_geometry_sha256": "9bc6a0def6a383e3eefd02a80966a7a0793549f5f3af06b6c3e29844f861c1ac",
+  "geometry_sha256": "30a8e5ca8e80f5432190f343d6a636acb87b34a9f2d6173935a67008ed381a1f",
+  "nodes": 1125,
+  "tetrahedra": 3401,
+  "new_passive_tetrahedra": 288,
+  "shared_inner_side_faces": 24,
+  "released_old_perimeter_nodes": 12,
+  "new_far_perimeter_nodes": 20,
+  "superficial_proxy_nodes": 73,
+  "top_boundary_triangles": 132,
+  "old_positions_exact": true,
+  "old_connectivity_exact": true,
+  "minimum_signed_six_volume": 8.635056776899455e-05,
+  "new_Dm_condition_quantiles": [
+    3.5549283280446593,
+    20.095412720835434,
+    146.53681576474156,
+    540.4573546703334
+  ],
+  "node_outside_ids": [],
+  "cell_center_outside_ids": [],
+  "outer_ellipse_center_radii": [
+    36.1,
+    -49.5,
+    8.9,
+    12.5
+  ],
+  "superficial_depth": 0.6,
+  "outer_bottom_depth_by_angle": [
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.274798523974612,
+    10.156243081726881,
+    13.196209453977072,
+    4.314118940283985,
+    2.0,
+    2.0
+  ],
+  "medial_weight": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.02289987699788431,
+    0.6796869234772401,
+    0.9330174544980894,
+    0.19284324502366543,
+    0.0,
+    0.0
+  ],
+  "far_support_note": "The medial superficial edge is carried by a finite deep perioral volume. Its remote posterior cut approximates omitted deep buccal/perioral tissue; it is not a mandibular attachment. Upper/lower/lateral supported cuts remain explicit.",
+  "material_change": false,
+  "scope": "Perioral passive continuation around the lateral oral wall, with a posterior medial support instead of the close superficial clamp. Same bundle/material and exact original skin rest.",
+  "admitted": true
+}
+Blender 4.3.2
+
+Blender quit
+new case human-preferred-v53-mechanics-20261011/cheek-perioral-case-v3 9b84658bffc6be4ed7fd485d46f9c820d5b7c4cfe7f35ccaf05467fc73be2894
+{"phase":"loading","utc":"2026-10-11T18:17:20.207Z"}
+{"phase":"building-static-bone-bvh","seconds":1.7192356500000001,"rssMiB":418.546875}
+{"phase":"verified-distributed-bond","summary":{"rootVertices":176,"originalRootFaces":301,"staticFaces":399,"stationaryNodes":352,"admittedPairs":5464,"featureCounts":{"vertex":4162,"edge":1001,"face":301},"adjacentBonePairsOutsidePatch":938,"strictStaticPairs":1204,"boxTests":34615,"candidatePairs":6668,"intervals":1204,"minimumDistance":0.00001,"exactSourceVertexIdentity":true,"exactIntersectionFeatures":true,"movingFacesExempted":0,"regionExclusions":0,"solidContainmentChecked":false}}
+{"phase":"admitted-rest-or-resume","seconds":2.3604887079999997,"guard":{"phase":"initial-state","complete":true,"reason":"complete-swept-bvh-traversal","tissueTriangles":1888,"boneTriangles":73008,"boxTests":59101,"candidatePairs":6719,"intervals":1255,"certified":true,"distributedBondedPairs":5464,"distributedBondedContact":true,"forceModelComplete":false,"solidContainmentChecked":false},"rssMiB":458.421875}
+{"batch":0,"seconds":2.484449485,"residual":1.0047560572785098e-17,"minJ":1,"energy":2.8291744719275305e-36,"accepted":0,"totalCG":0,"converged":true,"boundaryFeasibility":{"certified":true,"phase":"step","initialAdmission":{"complete":true,"reason":"complete-swept-bvh-traversal","tissueTriangles":1888,"boneTriangles":73008,"boxTests":59101,"candidatePairs":6719,"intervals":1255,"certified":true,"distributedBondedPairs":5464,"distributedBondedContact":true,"forceModelComplete":false,"solidContainmentChecked":false},"trialChecks":0,"rejectedTrials":0,"acceptedSegments":0,"boxTests":59101,"candidatePairs":6719,"intervals":1255,"lastRejected":null,"forceModelComplete":false,"energyAndGradientUnchanged":true,"solidContainmentChecked":false,"termination":"converged"},"rssMiB":460.171875}
+{"phase":"terminal","converged":true,"residual":1.0047560572785098e-17,"minJ":1,"maximumFEMMotionDesignUnits":0,"seconds":2.519484044,"error":null}
+neutral-0-state {"state_sha256": "02ee39c25bde52f0cae8abfe0f0615ff93c10082d81ed1f3cc815f776f020e4b", "self_surface": {"nonincident_candidates": 5504, "nonincident_crossings": 0, "incident_candidates": 11778, "trimmed_incident_crossings": 0, "examples": [], "incident_limit": "Shared strips excluded by1e-6 centroid trim; no exact crossing claim inside that strip."}, "unchanged_v53_skin_boundary_clearance": {"complete": true, "lower_distance_bound": 1.9866088425613155e-06, "levels": [{"depth": 0, "tested": 1888, "admitted": 1658}, {"depth": 1, "tested": 920, "admitted": 174}, {"depth": 2, "tested": 2984, "admitted": 1218}, {"depth": 3, "tested": 7064, "admitted": 4761}, {"depth": 4, "tested": 9212, "admitted": 8214}, {"depth": 5, "tested": 3992, "admitted": 3992}], "side": "Interior side follows the separately verified inside-node rest component; this clearance test itself is unsigned."}}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 689.72, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 5831.7109375, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 8.18, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

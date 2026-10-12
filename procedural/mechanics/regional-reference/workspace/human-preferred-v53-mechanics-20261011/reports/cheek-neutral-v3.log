@@ -1,0 +1,40 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 3771.83984375, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "status": "New regional cheek rest construction, unaccepted until validity/contact checks",
+  "preferred_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "nodes": 1003,
+  "tetrahedra": 3041,
+  "rings": 50,
+  "active_body_tetrahedra": 1764,
+  "passive_root_adapter_tetrahedra": 1277,
+  "root_nodes": 176,
+  "root_triangles": 301,
+  "bone_footprint_exact": true,
+  "minimum_signed_six_volume": 8.635056776899455e-05,
+  "nonpositive_tets": 0,
+  "Dm_condition_quantiles": [
+    1.6984954649244166,
+    8.654299022896545,
+    120.09641371602163,
+    261.2507963030795,
+    640.6243539543452
+  ],
+  "sampled_outside_skin_nodes": 0,
+  "outside_distance_quantiles": [],
+  "ambiguous_nodes": 0,
+  "path_length": 53.35801280445925,
+  "selected_skin_modified": false,
+  "scope": "New right-cheek approximate active bundle and passive root transition. Oral, eyelid, jaw and neck mechanics are absent."
+}
+Blender 4.3.2
+
+Blender quit
+new case human-preferred-v53-mechanics-20261011/cheek-case-v3 936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf
+{"phase":"loading","utc":"2026-10-11T17:23:11.687Z"}
+{"phase":"building-static-bone-bvh","seconds":2.038962307,"rssMiB":416.91015625}
+{"phase":"verified-distributed-bond","summary":{"rootVertices":176,"originalRootFaces":301,"staticFaces":399,"stationaryNodes":352,"admittedPairs":5464,"featureCounts":{"vertex":4162,"edge":1001,"face":301},"adjacentBonePairsOutsidePatch":938,"strictStaticPairs":1204,"boxTests":34615,"candidatePairs":6668,"intervals":1204,"minimumDistance":0.00001,"exactSourceVertexIdentity":true,"exactIntersectionFeatures":true,"movingFacesExempted":0,"regionExclusions":0,"solidContainmentChecked":false}}
+{"phase":"admitted-rest-or-resume","seconds":2.863526949,"guard":{"phase":"initial-state","complete":true,"reason":"complete-swept-bvh-traversal","tissueTriangles":1648,"boneTriangles":73008,"boxTests":58311,"candidatePairs":6691,"intervals":1227,"certified":true,"distributedBondedPairs":5464,"distributedBondedContact":true,"forceModelComplete":false,"solidContainmentChecked":false},"rssMiB":457.6484375}
+{"batch":0,"seconds":3.001569364,"residual":1.0047560572785098e-17,"minJ":1,"energy":2.8291744719275305e-36,"accepted":0,"totalCG":0,"converged":true,"boundaryFeasibility":{"certified":true,"phase":"step","initialAdmission":{"complete":true,"reason":"complete-swept-bvh-traversal","tissueTriangles":1648,"boneTriangles":73008,"boxTests":58311,"candidatePairs":6691,"intervals":1227,"certified":true,"distributedBondedPairs":5464,"distributedBondedContact":true,"forceModelComplete":false,"solidContainmentChecked":false},"trialChecks":0,"rejectedTrials":0,"acceptedSegments":0,"boxTests":58311,"candidatePairs":6691,"intervals":1227,"lastRejected":null,"forceModelComplete":false,"energyAndGradientUnchanged":true,"solidContainmentChecked":false,"termination":"converged"},"rssMiB":459.1484375}
+{"phase":"terminal","converged":true,"residual":1.0047560572785098e-17,"minJ":1,"maximumFEMMotionDesignUnits":0,"seconds":3.027683667,"error":null}
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 718.82, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 3771.83984375, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 6.49, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

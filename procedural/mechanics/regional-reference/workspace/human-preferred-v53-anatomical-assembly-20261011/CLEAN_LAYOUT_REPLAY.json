@@ -1,0 +1,41 @@
+{
+  "scope": "Fresh non-overwriting rebuild from authored mandible and route controls through union and exact attachments. Inputs read only, no historical output copied.",
+  "outputs": [
+    {
+      "path": "mandible-v3/geometry.npz",
+      "original_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+      "replay_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "route-layout-v6/parts.npz",
+      "original_sha256": "fe173a50716975d12bfbf5e514d97ab8f3742c7f04828e97c2b829df79475d2e",
+      "replay_sha256": "fe173a50716975d12bfbf5e514d97ab8f3742c7f04828e97c2b829df79475d2e",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "route-layout-v7/parts.npz",
+      "original_sha256": "2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd",
+      "replay_sha256": "2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "route-layout-v8/parts.npz",
+      "original_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+      "replay_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "shared-junction-v1/geometry.npz",
+      "original_sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+      "replay_sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "shared-junction-v1/attachment_face_ids.npz",
+      "original_sha256": "fa3d416cf685a38bdd7ab4833a331777c9881110a9f5b3626256007ae3779f51",
+      "replay_sha256": "fa3d416cf685a38bdd7ab4833a331777c9881110a9f5b3626256007ae3779f51",
+      "all_arrays_exact": true
+    }
+  ]
+}

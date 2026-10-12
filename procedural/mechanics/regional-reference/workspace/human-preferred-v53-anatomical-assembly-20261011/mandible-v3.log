@@ -1,0 +1,42 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 4555.28515625, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "source_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "existing_regional_geometry_sha256": "30a8e5ca8e80f5432190f343d6a636acb87b34a9f2d6173935a67008ed381a1f",
+  "geometry_sha256": "1b50e2a3c293e8f49f510377e1acc413dd0d6f42097c8d2b4075b949e6673b5a",
+  "vertices": 17986,
+  "triangles": 35968,
+  "closed_oriented": true,
+  "signed_volume": 49144.22189827452,
+  "sampled_outside_vertices": 2,
+  "outside_examples": [
+    9236,
+    9432
+  ],
+  "minimum_sampled_skin_distance": 3.184573173522949,
+  "minimum_sampled_existing_support_distance": 2.796079635620117,
+  "existing_support_triangle_crossings": 0,
+  "crossing_examples": [],
+  "authorship": "Original continuous transported-section U body, ramal bearing, condylar estimates and anterior ramal crests. No imported geometry.",
+  "scope": "Contact/attachment layout candidate only. No TMJ/hinge dynamics, dental occlusion, anatomical calibration, cortical thickness or marrow model. No exact human mandible claim.",
+  "admitted_layout": false
+}
+Blender 4.3.2
+
+Blender quit
+{
+  "self_nonincident_candidates": 16633,
+  "self_nonincident_crossings": 0,
+  "trimmed_incident_candidates": 219200,
+  "trimmed_incident_crossings": 0,
+  "self_examples": [],
+  "trimmed_examples": [],
+  "skin_triangle_candidate_pairs": 0,
+  "skin_triangle_crossings": 0,
+  "skin_examples": [],
+  "limit": "Static triangle tests; incident strips exclude1e-6 centroid trim. No moving TMJ/contact dynamics."
+}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 685.1, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 4555.28515625, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 7.31, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

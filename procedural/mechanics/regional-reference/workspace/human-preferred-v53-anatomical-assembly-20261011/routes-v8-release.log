@@ -1,0 +1,52 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 6213.80859375, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "parts_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+  "admitted_for_geometry_layout": true,
+  "parity_resolution": [
+    {
+      "part": "junction",
+      "vertex": 1391,
+      "seven_additional_parities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "distance": 2.674966335296631,
+      "nearest_normal_offset": -2.479562411084771
+    }
+  ],
+  "mandibular_barycentric_reconstruction_exact": true,
+  "bone_edge_roundoff_repair": {
+    "source_sha256": "2fd0d73d42564131ce3dadf8136e9f4615c21240d70e58f625363baa60d022cd",
+    "weight_zero_threshold": 1e-05,
+    "changed_root_vertices": 46,
+    "max_root_correction": 1.2284810475387615e-05,
+    "bone_vertices_unchanged": true,
+    "barycentric_reconstruction_exact": true,
+    "scope": "Roundoff-scale Boolean intersections snapped to their source bone edge; original unmodified v7 correspondence preserved separately."
+  },
+  "region_names": [
+    "zygomatic_reference",
+    "junction",
+    "superficial_oral",
+    "deep_oral",
+    "buccinator_deep",
+    "mandibular_depressor"
+  ],
+  "limitations": [
+    "Individual closed regions overlap intentionally at junction. No conforming common tissue mesh exists yet.",
+    "Only mandibular depressor and original zygomatic reference have explicit bone footprints. Other cut ends are unbound.",
+    "No new active/passive finite elements, dynamics, TMJ, teeth, calibrated fibre architecture or full oral ring.",
+    "Existing earlier cheek equilibrium is not transferred onto this new assembly.",
+    "All coordinates and thicknesses are authored estimates, guided by cited layer relations."
+  ]
+}
+Blender 4.3.2
+
+Blender quit
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 639.09, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 6213.80859375, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 2.03, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

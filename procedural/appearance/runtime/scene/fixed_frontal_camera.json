@@ -1,0 +1,15 @@
+{
+  "location": [
+    0,
+    -0.656,
+    -0.038
+  ],
+  "target": [
+    0,
+    -0.036,
+    -0.038
+  ],
+  "ortho_scale": 0.325,
+  "orientation": "True frontal, horizontal view toward source -Z; Blender +Y. No eye-following, tilt, roll or shape-dependent reframing.",
+  "scope": "Fixed baseline for current and future appearance comparisons. Existing 3/4 camera remains unchanged."
+}

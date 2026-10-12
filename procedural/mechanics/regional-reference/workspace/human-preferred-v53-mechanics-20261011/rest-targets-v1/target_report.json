@@ -1,0 +1,60 @@
+{
+  "status": "Authored rest-fit target only; not an accepted volume or pose",
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "skin_closure": {
+    "skin_faces": 1088946,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding": 0
+  },
+  "source_case": "human-mechanics-20261010/output/bilateral-distributed-mechanics-v1",
+  "source_domain_sha256": "20c6726c8cd18760502c57134adff38ce41188e66ab50c2361ff25539ff74411",
+  "surface_nodes": 2737,
+  "rigid_root_collar_nodes": 704,
+  "coordinate_frame": "X lateral,Y up,Z front; authored units, common with original FEM after solver scaling0.001",
+  "target_regions": {
+    "0": {
+      "count": 1177,
+      "motion_quantiles": [
+        0.018924038460414728,
+        2.44918847439046,
+        6.213225125557142,
+        7.723864165936858
+      ]
+    },
+    "1": {
+      "count": 480,
+      "motion_quantiles": [
+        3.8566315442539594,
+        5.599551748999305,
+        7.8198192782173015,
+        8.199737557078413
+      ]
+    },
+    "2": {
+      "count": 1080,
+      "motion_quantiles": [
+        0.4236487924995393,
+        5.454263911911273,
+        7.8349320862263125,
+        8.787190301855698
+      ]
+    }
+  },
+  "oral_mapping": "Monotone normalized outer-border angle correspondence; original preferred exact triangle barycentric samples. Native outer row0..16 maps preferred vermilion row30..0. Native mucosa row0..24 maps preferred finite inner return row0..12. Explicit authored correspondence, not same material IDs.",
+  "midface_mapping": "Nearest exact preferred skin triangle, independently stored face/barycentric coordinates. Subject to fold/containment review.",
+  "bone_target": {
+    "changed_vertices": 6768,
+    "maximum_motion": 3.671358091212964,
+    "root_motion_exact": 0.0,
+    "minimum_face_normal_cosine": -0.9722701657500544,
+    "minimum_triangle_area": 1.5597246963000616e-09,
+    "nonpositive_normal_count": 286,
+    "method": "C2 signed-nearest-skin inward target with3-unit near-surface range and C2 three-unit spatial holdout at actual root vertices; retained exact bone-origin footprint"
+  },
+  "limits": [
+    "No old equilibrium state can be reused after a reference change.",
+    "Bone target geometry and full tissue reference require independent overlap/contact/quality admission.",
+    "No selected skin coordinate has been modified."
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "status": "Checked authored reference-fibre mapping; no new equilibrium accepted",
+  "created_utc": "2026-10-11T19:10:26.513130+00:00",
+  "geometry_sha256": "c5e9978825b4073a17a29a91c867fd6fe13260aa64b96128c3236b9f026e31d9",
+  "parts_sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+  "artifacts": {
+    "reference-tet-v7/mapping.npz": "764983979ea0dfa04bf667670b392cdaa289c5a11438a9291a53de067799c629",
+    "reference-tet-v7/families.json": "49b8912b442450aaf8dbd0de5728c4d0557e47c9c9074877ef6b1f2d82e8adbb",
+    "reference-tet-v7/report.json": "039c23aa2893856c0e6d02bbf4b98a188420e50690f12df4796a2f36e849c4f7",
+    "reference-tet-v7/audit.json": "fd13fcc57ded6b847c1bbe204ca919157c80deda671de136f1c7dc598bb83dc2",
+    "map_layered_fibres_v1.py": "c371b4ff42fc276ec9d541cc5535c822cf617f1e889325efa3f254ad9939be94",
+    "audit_mapping_v1.py": "0b8075e42ea01ceef3fc51342cd8c68ccc75ef5ccb46e409475f525d849026f5",
+    "test_mapping.py": "f7eeff23f2682e6c845fc59f85083f48cc93fc8509fa8c575ea19777fb45e00f",
+    "README.md": "cb4c6cacbe17e3e86b272a522b79baa3e03676c65992fb74027fbaf30f8c1421"
+  },
+  "tetrahedra": 41027,
+  "missing_or_ambiguous_cells": 0,
+  "mixed_membership_cells": 2534,
+  "genuine_overlap_cells": 822,
+  "families": {
+    "zygomatic_reference": {
+      "tetrahedra": 1721,
+      "weighted_volume_design_units_cubed": 142.1773809114687,
+      "curve_method": "C1 cubic Hermite through original ring centres with original normalized ring tangents",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        0.0009693535805089711,
+        0.999960457729367
+      ]
+    },
+    "superficial_oral": {
+      "tetrahedra": 8214,
+      "weighted_volume_design_units_cubed": 25.0863343756906,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 3.3306690738754696e-16,
+      "parameter_range": [
+        5.16653794653295e-10,
+        0.999999999561195
+      ]
+    },
+    "deep_oral": {
+      "tetrahedra": 8763,
+      "weighted_volume_design_units_cubed": 21.002233311149755,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        5.120910879643883e-10,
+        0.99999999955406
+      ]
+    },
+    "buccinator_deep": {
+      "tetrahedra": 6988,
+      "weighted_volume_design_units_cubed": 50.42630170363959,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        4.796020075032548e-10,
+        0.999999999601822
+      ]
+    },
+    "mandibular_depressor": {
+      "tetrahedra": 6996,
+      "weighted_volume_design_units_cubed": 177.47687410391205,
+      "curve_method": "C1 componentwise PCHIP through authored centreline samples, chord-length parameter",
+      "direction_norm_error": 2.220446049250313e-16,
+      "parameter_range": [
+        0.09395541383299844,
+        0.9999999995990444
+      ]
+    }
+  },
+  "inherited_mesh_quality": {
+    "quality_quantiles": [
+      0.0017539261519359303,
+      0.007043297542132525,
+      0.04073866443212663,
+      0.34187883198926683,
+      0.688845242364204,
+      0.9982764533382245
+    ],
+    "condition_quantiles": [
+      1.1366056145981902,
+      4.442204017365874,
+      10.762367140244075,
+      141.86923832503112,
+      1792.7533713330465,
+      21964.840609480783
+    ],
+    "quality_below_001": 0
+  },
+  "solve_ready": false,
+  "scope": "Reference geometry and authored fibre directions/occupancy only. Explicit quadrature mixtures, zero independent activation channels, passive junction and preserved passive original zygomatic adapter. No physiological or unit calibration."
+}

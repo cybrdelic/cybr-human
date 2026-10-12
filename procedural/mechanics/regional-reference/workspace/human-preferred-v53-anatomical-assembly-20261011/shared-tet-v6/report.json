@@ -1,0 +1,37 @@
+{
+  "source_sha256": "48ca653c5c638bb5816c4565a6dc7fdf80057fe728a93348044ae44df1e85a2d",
+  "geometry_sha256": "9454932854a7e2691bb5f790c36318b08e436208bcc52be213f037f3bbd15ccc",
+  "exact_original_vertices": true,
+  "exact_boundary_faces": true,
+  "exact_bone_footprints": true,
+  "old_zero_volume_tet": 1264,
+  "old_volume": 3.3774707117180653e-16,
+  "crossing_internal_edges": [
+    [
+      400,
+      494
+    ],
+    [
+      370,
+      527
+    ]
+  ],
+  "edge_intersection_parameters": [
+    0.5000000000000092,
+    0.4999999999999963
+  ],
+  "edge_intersection_residual": 7.105427357601002e-15,
+  "new_interior_node": [
+    43.080017373366616,
+    -48.05197815747205,
+    86.76418686845233
+  ],
+  "old_real_tets_subdivided": 8,
+  "new_real_tets": 16,
+  "nodes": 12023,
+  "tetrahedra": 41027,
+  "min_determinant": 7.623162992713255e-07,
+  "total_volume": 491.59701427601686,
+  "volume_error": 0.0,
+  "scope": "Exactly located numerical internal diagonal degeneracy resolved by common Steiner vertex and conforming subdivision of all incident cells. No exterior remesh, artificial material change, motion, load or rejected cell deletion."
+}

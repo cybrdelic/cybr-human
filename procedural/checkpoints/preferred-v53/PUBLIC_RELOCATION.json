@@ -1,0 +1,12 @@
+{
+  "numeric_code_and_arrays_unchanged": true,
+  "changes": [
+    {
+      "file": "source/project/output/coordinated-projection-v6c/anatomical_semantics/semantics.json",
+      "reason": "Relocate provenance-only absolute path strings",
+      "original_sha256": "eeffcc3f46c286d3bec2e77fe254eb6d4961050cb36c1c38a9239908f99b3f50",
+      "public_sha256": "8d889b11970d19914f1e32bc63f442a6eaa0f644562fccf0641ed4667ef032a7"
+    }
+  ],
+  "omitted": "Historical delivery catalogues and private selection conversation; no numerical dependency removed."
+}

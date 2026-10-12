@@ -1,0 +1,152 @@
+{
+  "repository": "cybrdelic/cybr-human",
+  "commit": "c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9",
+  "commit_verified_via": "https://api.github.com/repos/cybrdelic/cybr-human/commits/main",
+  "license_notice": "Original source: inherited GPL-2.0 notice. Upstream atlas-derived assets are separately licensed; no anatomy geometry assets were downloaded or incorporated in this recovery.",
+  "files": [
+    {
+      "path": "src/layered_fem.js",
+      "git_blob_sha": "9cd8131ff056c1e94df644d134a55506dcd79922",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/src/layered_fem.js",
+      "sha256": "8618d5517de196dd3dae905d598a69eaf14555682895c80dcfc994e2501dbc71",
+      "verified_git_blob_sha": "9cd8131ff056c1e94df644d134a55506dcd79922",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "src/model.js",
+      "git_blob_sha": "f35220a8769401bcdc0042526bac666cf27e7606",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/src/model.js",
+      "sha256": "a7071a805e31453f64bd65e263066f3b4b6f1bfcb4cee6071f88a72bfb49c031",
+      "verified_git_blob_sha": "f35220a8769401bcdc0042526bac666cf27e7606",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "src/tissue_cpu_backend.js",
+      "git_blob_sha": "63a0418e30b30d62abead4a441e9998325848f59",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/src/tissue_cpu_backend.js",
+      "sha256": "4c625aee2d7ea5417846dccd40375f8af40d2893250c589a3562f3ec8e1cc3ed",
+      "verified_git_blob_sha": "63a0418e30b30d62abead4a441e9998325848f59",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "src/tissue_cpu_worker.js",
+      "git_blob_sha": "8951f3f98d2eb65e03084bd0d6aa4555f8d1e7d0",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/src/tissue_cpu_worker.js",
+      "sha256": "d6521878a0598d4c440fee1bc32ce4746493af27cfac1efa1e28ea97d9f07e82",
+      "verified_git_blob_sha": "8951f3f98d2eb65e03084bd0d6aa4555f8d1e7d0",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "tools/build_volume.py",
+      "git_blob_sha": "7a72df0e155c1a749268a0507195848e6cd7eb41",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/tools/build_volume.py",
+      "sha256": "55a8c4a63a732b310240cf096904784180b616a70ec6d0ae319de1f93ee8f67b",
+      "verified_git_blob_sha": "7a72df0e155c1a749268a0507195848e6cd7eb41",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "tools/build_tissue_runtime.py",
+      "git_blob_sha": "e45e185091f07fa4c4fe83280c39a202f533da04",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/tools/build_tissue_runtime.py",
+      "sha256": "8db369cac3503da22f09d1c6c40e8844a40e3652653f3b8e3d1856156f3716fa",
+      "verified_git_blob_sha": "e45e185091f07fa4c4fe83280c39a202f533da04",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "tools/build_tissue_transfer.py",
+      "git_blob_sha": "6b815322504413dac5073895c2e51a1a56a944d5",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/tools/build_tissue_transfer.py",
+      "sha256": "5ca8709d8ea3f0f5ae285b0a7c80077d6fcbd401d0c73e0be665869681d0c623",
+      "verified_git_blob_sha": "6b815322504413dac5073895c2e51a1a56a944d5",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "src/shell_bending.js",
+      "git_blob_sha": "27a40542d9b2aa0f028e63e6fd988052245b9032",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/src/shell_bending.js",
+      "sha256": "a2fa7c637bb8b32cac2811a993c024c99f89ca16166a5d4c1ff6e1335606a906",
+      "verified_git_blob_sha": "27a40542d9b2aa0f028e63e6fd988052245b9032",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "src/layered_fem_transfer_math.js",
+      "git_blob_sha": "70b6c264a7950b13eb0272d8cc88d5b4d05797ba",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/src/layered_fem_transfer_math.js",
+      "sha256": "9c62b7ff3c36b7d2686d409c0016704b0b63054a9daee4c6262a1ffcae1644b1",
+      "verified_git_blob_sha": "70b6c264a7950b13eb0272d8cc88d5b4d05797ba",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "src/layered_fem_surface.js",
+      "git_blob_sha": "eee61747e875a986464e4f5c633bbde4a731e04d",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/src/layered_fem_surface.js",
+      "sha256": "2686c61711af966fb8ca2fc7359f6362b6a0db14b6bb0b496c3f9af93df2b294",
+      "verified_git_blob_sha": "eee61747e875a986464e4f5c633bbde4a731e04d",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "tests/mechanics.mjs",
+      "git_blob_sha": "d92358e55ff4341318777a26c0b79ac6b4dbe157",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/tests/mechanics.mjs",
+      "sha256": "83ced6153b7580ec39e8678e1269b19529f2cc29441fbbdaa27ae594521b666d",
+      "verified_git_blob_sha": "d92358e55ff4341318777a26c0b79ac6b4dbe157",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "tests/compression-barrier.mjs",
+      "git_blob_sha": "c03fff8ad3ad0d03d3822e1cb524b13649440cdd",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/tests/compression-barrier.mjs",
+      "sha256": "13506c0910f8dc2a23f7bbff616a5bb3d18ada9d9fd3e35c5992f886828451cf",
+      "verified_git_blob_sha": "c03fff8ad3ad0d03d3822e1cb524b13649440cdd",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "LICENSING.md",
+      "git_blob_sha": "8b14aabedc83d70d6c254146a9da64b1f8a8850f",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/LICENSING.md",
+      "sha256": "b635c58a7ae93bf509d57ff2c681e7902b6bbb76fd08549e278fb98f9738a5d3",
+      "verified_git_blob_sha": "8b14aabedc83d70d6c254146a9da64b1f8a8850f",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "ASSET-LICENSES.md",
+      "git_blob_sha": "66add9261dbc7936a00656fdccf177bdab143e49",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/ASSET-LICENSES.md",
+      "sha256": "5f86aee850a7cee5ba07c8282055443e0c3241bf22544dfce12b8025ce264cfe",
+      "verified_git_blob_sha": "66add9261dbc7936a00656fdccf177bdab143e49",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "674677b9b2bb020f0ab0b1b20b74c4a74a922aa7",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/README.md",
+      "sha256": "96277e2170658226f6b0e8ea8d787c5c1d5e6c93ac20ec9750d6c6dc5219d382",
+      "verified_git_blob_sha": "674677b9b2bb020f0ab0b1b20b74c4a74a922aa7",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "LICENSES/GPL-2.0.txt",
+      "git_blob_sha": "89e08fb002e48e22363b7b3789a5470ffe71fea1",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/LICENSES/GPL-2.0.txt",
+      "sha256": "189b1af95d661151e054cea10c91b3d754e4de4d3fecfb074c1fb29476f7167b",
+      "verified_git_blob_sha": "89e08fb002e48e22363b7b3789a5470ffe71fea1",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "tools/build_neutral_tissue_assets.py",
+      "git_blob_sha": "b11442ac727a09fddfcdbac9e79ff5b2e5f775eb",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/tools/build_neutral_tissue_assets.py",
+      "sha256": "3c37e04e3dc19f6731d19eadda97572d7f9bd1053ddeef4040abf60d2704bb2f",
+      "verified_git_blob_sha": "b11442ac727a09fddfcdbac9e79ff5b2e5f775eb",
+      "exact_upstream_bytes": true
+    },
+    {
+      "path": "tools/tissue_calibration.py",
+      "git_blob_sha": "9b0185da9b62266d82c9d30a6c1bd0f68ac6d0a9",
+      "source_url": "https://github.com/cybrdelic/cybr-human/blob/c0e6d626dfa48c0b05657bd87b880cb7a6bc92a9/tools/tissue_calibration.py",
+      "sha256": "defe7bdce1e83f6403c5915bfa3c73940f8eba613f5a3fe75a9419b2944817a0",
+      "verified_git_blob_sha": "9b0185da9b62266d82c9d30a6c1bd0f68ac6d0a9",
+      "exact_upstream_bytes": true
+    }
+  ]
+}

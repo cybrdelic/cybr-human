@@ -1,0 +1,38 @@
+{
+  "geometry_byte_exact": true,
+  "case_byte_exact": {
+    "domain.json": true,
+    "arrays.bin": true,
+    "bones.bin": true
+  },
+  "states": {
+    "neutral-0": {
+      "source_sha256": "02ee39c25bde52f0cae8abfe0f0615ff93c10082d81ed1f3cc815f776f020e4b",
+      "replay_sha256": "3c542bd0976a4169c7849c6112d08ea3e05e17ae9c7fc2fda576754e3fb6e605",
+      "positions_exact": true,
+      "energy_exact": true,
+      "residual_exact": true,
+      "minJ_exact": true,
+      "runtime_metadata_expected_different": true
+    },
+    "right-02-initial": {
+      "source_sha256": "5fc992c324ed1f056147774a841a93ec4c26918a91a5e59667c95a0d31e75438",
+      "replay_sha256": "54ba4a152f154c85d891d39b80f223701aabeb0d2c4c6a28f89c0f4a88aa96d1",
+      "positions_exact": true,
+      "energy_exact": true,
+      "residual_exact": true,
+      "minJ_exact": true,
+      "runtime_metadata_expected_different": true
+    },
+    "released-0": {
+      "source_sha256": "753579ae7e4b357af0a9c62c909464b4c32821d9cbf61e3ff5bd5a2427fb2a6b",
+      "replay_sha256": "1832b06b55a1e56ddc2d128f15086fe031cf91e699cd7561fe78c686468e290f",
+      "positions_exact": true,
+      "energy_exact": true,
+      "residual_exact": true,
+      "minJ_exact": true,
+      "runtime_metadata_expected_different": true
+    }
+  },
+  "scope": "Full fresh perioral geometry/case, exact neutral, from-rest2% solve and actual release replay. Underlying original cheek/insertion and optical head dependencies are pinned recovered inputs."
+}

@@ -1,0 +1,812 @@
+{
+  "method": "3D cubic B-spline control cage with anatomical landmark curves, second-difference regularization and fixed outer layers",
+  "origin": [
+    -91.0,
+    -56.0,
+    35.0
+  ],
+  "spacing": 8.0,
+  "shape": [
+    24,
+    18,
+    15
+  ],
+  "controls": [
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        19.608728119528458,
+        27.801730342813784,
+        113.60270768340055
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        -19.267471828170343,
+        27.75427918708658,
+        113.60807653548164
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        29.436540444813584,
+        28.860986628251656,
+        113.27355200810813
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        -29.178463354870374,
+        28.84699864299789,
+        113.29690157818757
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        41.204252687261686,
+        26.84140743723917,
+        109.31920033957135
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        -41.2409353563505,
+        26.260091545969864,
+        109.28877156569025
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        49.1094986469517,
+        24.170506264778616,
+        100.94946817713068
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        -49.12895528329077,
+        23.918781558291396,
+        100.83610990395177
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        54.12928928634946,
+        20.30764154966327,
+        90.58976875938289
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "relieved_brow_plane",
+      "source": [
+        -54.115245657870275,
+        20.154772139902207,
+        90.59709014811622
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        22.31218351335147,
+        -10.735244907878188,
+        111.72958305708019
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.9
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        -22.202223538609708,
+        -10.758286267718058,
+        111.72961811448363
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.9
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        31.774130710288382,
+        -12.175275852043644,
+        111.75638593005489
+      ],
+      "displacement": [
+        0,
+        0,
+        -4.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        -31.855016506326432,
+        -12.168014701176633,
+        111.75162583697724
+      ],
+      "displacement": [
+        0,
+        0,
+        -4.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        38.76755825091667,
+        -13.157709026166131,
+        111.83701253592308
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        -38.24491032488678,
+        -13.229550784710712,
+        111.78707556279453
+      ],
+      "displacement": [
+        0,
+        0,
+        -3.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        46.16036407458322,
+        -14.398593405886622,
+        109.4936947991102
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        -46.18139755129996,
+        -14.19880931099155,
+        109.42494265436667
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        53.20498677847226,
+        -13.373890256107922,
+        105.32891096117007
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "posterior_medial_malar_body",
+      "source": [
+        -53.181385271465714,
+        -13.251002460937169,
+        105.30636529874981
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        24.106139693154493,
+        -22.136061450416296,
+        111.71492241709647
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.1
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        -24.17041127575155,
+        -22.41988696424805,
+        111.89339394269511
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.1
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        32.187490291821184,
+        -23.358600972769334,
+        109.25943512981515
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        -32.108848119362705,
+        -23.3288074992822,
+        109.31748626451851
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        40.203683000021506,
+        -24.43036435012902,
+        105.39126808776174
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.9
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        -40.16048494366122,
+        -24.24207323705738,
+        105.55447902399982
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.9
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        48.2481189947027,
+        -26.18468835153818,
+        97.24731272834993
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "inferior_cheek_fade",
+      "source": [
+        -48.32198977063856,
+        -26.120124377182258,
+        97.27114464143258
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        15.483437926889088,
+        30.21594506285126,
+        114.04746545920703
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -15.810187441898329,
+        30.241468405885012,
+        113.98887419074805
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        13.118097570943206,
+        13.828649733689408,
+        105.20209131477836
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -13.11594763429854,
+        13.582655910617376,
+        105.11567472010115
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        13.167385906564137,
+        -0.8588898710068276,
+        114.82261331287116
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -13.150325513006692,
+        -0.7968874209572764,
+        114.85721181523444
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        15.105119767702739,
+        -18.66077542761435,
+        120.50877739507828
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -15.348409155862326,
+        -18.65786915145547,
+        120.25394725414935
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        19.154404503247687,
+        -31.183300221816587,
+        115.71978858149767
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -19.164996411788557,
+        -31.153506115653336,
+        115.85704874989094
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        29.258962752663688,
+        -36.319608895037334,
+        105.89272117971842
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -29.41166324405809,
+        -36.16784784182376,
+        105.8089114014113
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        41.24442762595121,
+        -36.174384975971115,
+        92.83436562906827
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -41.114537809966876,
+        -36.39066770198748,
+        92.79878142174695
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        54.18461515112803,
+        -32.18443860662418,
+        83.85636647720348
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -54.415926213375116,
+        -32.110099605218444,
+        83.72387152710303
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        62.15807328376379,
+        -16.567026934194168,
+        88.94115387374833
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -62.1606612054324,
+        -16.163076335789846,
+        89.2627670478262
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        61.205002175148636,
+        7.2833201185155545,
+        77.46658023942983
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -61.332498964172004,
+        7.212153361184541,
+        77.00320286317654
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        55.19245825723498,
+        38.75713139309259,
+        86.34053481027581
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -55.171199405432176,
+        38.66908896895899,
+        86.45355216351669
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        43.23862878063042,
+        44.199893888447065,
+        101.91144928621688
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -43.13100768549536,
+        44.744882195188694,
+        101.86378585040605
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        29.270142790165167,
+        48.70016620990275,
+        110.0786468557098
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -29.1526504859051,
+        48.704251035057034,
+        110.12750308733472
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        16.35100317671145,
+        48.481453307831636,
+        113.98311056308
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "adjacent_support",
+      "source": [
+        -16.247846683004912,
+        48.54901676963218,
+        113.99023786462186
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    }
+  ],
+  "rms_landmark_displacement_error": 0.05521600058854575,
+  "max_landmark_displacement_error": 0.44706812407992924,
+  "solve_states": [
+    0,
+    0,
+    0
+  ],
+  "units": "Approximate authored design units, not calibrated anatomy",
+  "selected": false,
+  "independent_globes_unchanged": true,
+  "minimum_changed_face_normal_cosine": 0.5693710536521223,
+  "changed_vertices": 126147
+}

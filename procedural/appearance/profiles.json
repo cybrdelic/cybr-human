@@ -1,0 +1,20 @@
+{
+  "preferred": {
+    "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+    "semantics_sha256": "d2587be48722543d557a329870f78b29125d1bfa0f0d0aa54d0fc8adc2dce811",
+    "geometry_scope": "Exact selected preferred-v53 rest geometry; no pose. Conditioned skin/groom appearance is an authored diagnostic profile.",
+    "mechanical_rest_default": true
+  },
+  "orbital-v2": {
+    "head_sha256": "06bb99a61472ca7751c3da1ca083c0ad4600310a8101f354946ffd41a6d1e9b6",
+    "semantics_sha256": "2b73b4d16a332a890c0ea8e7e23e8d5e5c98eb655ddca5fa421847934c75739e",
+    "geometry_scope": "Optional unselected finite orbital-v2 visual geometry; exact preferred nose and globes retained. Not the default mechanical rest.",
+    "mechanical_rest_default": false
+  },
+  "margin-v3": {
+    "head_sha256": "aebd6fbc8d3067e2dccfd6cdedcc126b4934e151aed17dac33125542f7e8d274",
+    "semantics_sha256": "0bb3fe9eb70b0013f36aa26685097c550ae79d71c0b6d8cdeb6a5b6ae9974586",
+    "geometry_scope": "Optional unselected anterior finite-margin component on orbital-v2; local clay checked, full-face shaded acceptance pending. Not a mechanical rest replacement.",
+    "mechanical_rest_default": false
+  }
+}

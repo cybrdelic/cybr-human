@@ -1,0 +1,63 @@
+{
+  "fresh_relocated_copy": true,
+  "profiles": [
+    {
+      "profile": "preferred",
+      "input_head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+      "input_semantics_sha256": "d2587be48722543d557a329870f78b29125d1bfa0f0d0aa54d0fc8adc2dce811",
+      "relocated_prepare_only": "passed",
+      "compiled_entrypoints": "passed"
+    },
+    {
+      "profile": "orbital-v2",
+      "input_head_sha256": "06bb99a61472ca7751c3da1ca083c0ad4600310a8101f354946ffd41a6d1e9b6",
+      "input_semantics_sha256": "2b73b4d16a332a890c0ea8e7e23e8d5e5c98eb655ddca5fa421847934c75739e",
+      "relocated_prepare_only": "passed",
+      "compiled_entrypoints": "passed"
+    },
+    {
+      "profile": "margin-v3",
+      "input_head_sha256": "aebd6fbc8d3067e2dccfd6cdedcc126b4934e151aed17dac33125542f7e8d274",
+      "input_semantics_sha256": "0bb3fe9eb70b0013f36aa26685097c550ae79d71c0b6d8cdeb6a5b6ae9974586",
+      "relocated_prepare_only": "passed",
+      "compiled_entrypoints": "passed"
+    }
+  ],
+  "default_profile": "preferred",
+  "baseline_build_root_discovery": "passed",
+  "private_cloud_ids_or_workspace_paths_in_published_text": false,
+  "all_python_ast_parses": true,
+  "new_render_during_portability_test": false,
+  "scope": "Input hashes, paths, preparation and syntax verified after relocation; saved actual-render evidence predates this path-only packaging. No new realism or optional-anatomy acceptance claim.",
+  "portable_optional_geometry_replay": {
+    "orbital_v2_head_sha256": "06bb99a61472ca7751c3da1ca083c0ad4600310a8101f354946ffd41a6d1e9b6",
+    "margin_v3_head_sha256": "aebd6fbc8d3067e2dccfd6cdedcc126b4934e151aed17dac33125542f7e8d274",
+    "byte_exact": true
+  },
+  "editable_section_evaluation": {
+    "orbital-v2": {
+      "right": {
+        "exact_global_coordinate_match": true,
+        "maximum_absolute_error": 0.0,
+        "topology_correspondence_exact": true
+      },
+      "left": {
+        "exact_global_coordinate_match": true,
+        "maximum_absolute_error": 0.0,
+        "topology_correspondence_exact": true
+      }
+    },
+    "margin-v3": {
+      "right": {
+        "exact_global_coordinate_match": true,
+        "maximum_absolute_error": 0.0,
+        "topology_correspondence_exact": true
+      },
+      "left": {
+        "exact_global_coordinate_match": true,
+        "maximum_absolute_error": 0.0,
+        "topology_correspondence_exact": true
+      }
+    }
+  }
+}

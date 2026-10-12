@@ -1,0 +1,3079 @@
+{
+  "method": "3D cubic B-spline control cage with anatomical landmark curves, second-difference regularization and fixed outer layers",
+  "origin": [
+    -84.0,
+    -140.0,
+    -28.0
+  ],
+  "spacing": 7.0,
+  "shape": [
+    25,
+    19,
+    25
+  ],
+  "controls": [
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -23.04294906908031,
+        -56.03169371328861,
+        112.64828741748735
+      ],
+      "displacement": [
+        0.383959954499015,
+        0,
+        -1.388869417231836
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -18.777117649199838,
+        -57.616909346107605,
+        115.03260803224052
+      ],
+      "displacement": [
+        0.19621842610509635,
+        0,
+        -1.6277944456983588
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -13.321756158811528,
+        -58.71865926368131,
+        117.6974106369895
+      ],
+      "displacement": [
+        0.022384206318717015,
+        0,
+        -1.8623180529176346
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -6.648743694656221,
+        -59.72287109067111,
+        119.12223207524407
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.040795813325137
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        0.666517365442947,
+        -60.301125588923234,
+        119.3722092600469
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.0994050284842363
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        7.922962168013753,
+        -59.52926000215942,
+        118.94371768925774
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.01592857654137
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        14.39817406257236,
+        -58.55646869493581,
+        117.28998721591515
+      ],
+      "displacement": [
+        -0.04223020090335145,
+        0,
+        -1.8223561388355383
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        19.638380896943936,
+        -57.35842751484769,
+        114.53370460148888
+      ],
+      "displacement": [
+        -0.2357542498922726,
+        0,
+        -1.5834830300176976
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        23.653155985155013,
+        -55.71659666741619,
+        112.49540376824777
+      ],
+      "displacement": [
+        -0.40545379374136087,
+        0,
+        -1.350707426707936
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        26.181445314762968,
+        -53.888128195132005,
+        112.14543613577386
+      ],
+      "displacement": [
+        -0.4708525053596794,
+        0,
+        -1.1819623945045665
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        27.00397710312883,
+        -51.967954372757,
+        111.86690299471068
+      ],
+      "displacement": [
+        -0.4860715878563189,
+        0,
+        -1.390842840303319
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.79139519538272,
+        -50.90794215962487,
+        112.76712981785236
+      ],
+      "displacement": [
+        -0.4629775097376846,
+        0,
+        -1.4969963189263598
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        22.93570943328651,
+        -48.68086948369784,
+        114.14581939144546
+      ],
+      "displacement": [
+        -0.37996033042301663,
+        0,
+        -1.7277285747824078
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        18.651530940361393,
+        -46.188895603832265,
+        116.83359616480678
+      ],
+      "displacement": [
+        -0.19056939063594103,
+        0,
+        -2.023158815886434
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        13.279704672613443,
+        -43.875452124722024,
+        119.49959627505935
+      ],
+      "displacement": [
+        -0.021759586604073095,
+        0,
+        -2.307581985906402
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        6.6070025110071064,
+        -43.28718283986537,
+        121.33202452595434
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.5276170576089405
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -0.6604974598025073,
+        -44.43148326942285,
+        122.17424358947308
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.5992766148434603
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -7.882748094100528,
+        -43.20795136977405,
+        121.08043088048096
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.4969655194265825
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -14.34408464337401,
+        -44.26218624075673,
+        119.11246360680492
+      ],
+      "displacement": [
+        0.04105138016085659,
+        0,
+        -2.258828324575049
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -19.503360927127858,
+        -46.62132303939098,
+        116.37549121896654
+      ],
+      "displacement": [
+        0.22949227287132212,
+        0,
+        -1.9692660539668843
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -23.564113527340773,
+        -49.12639603233643,
+        113.7997357324222
+      ],
+      "displacement": [
+        0.40245565287303375,
+        0,
+        -1.6792759180762429
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -26.141779406844712,
+        -51.23011598706523,
+        112.5312323986443
+      ],
+      "displacement": [
+        0.470077789781115,
+        0,
+        -1.4668234442309065
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -26.99770664211485,
+        -52.199625289144,
+        111.84006739833113
+      ],
+      "displacement": [
+        0.4859587195480181,
+        0,
+        -1.1238265661602338
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.830294135130696,
+        -54.22829202968701,
+        112.26458017596815
+      ],
+      "displacement": [
+        0.46379053672671205,
+        0,
+        -1.206423086909776
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -22.840863625613956,
+        -54.586030618995714,
+        113.41121052929645
+      ],
+      "displacement": [
+        0.3763702389361189,
+        0,
+        -1.7698027222813435
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -18.60733562889145,
+        -55.600523358695156,
+        116.36526923972224
+      ],
+      "displacement": [
+        0.18859096475561013,
+        0,
+        -2.066612930313617
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -13.239724628405915,
+        -56.29289193719329,
+        119.80634001800246
+      ],
+      "displacement": [
+        0.02117586724698721,
+        0,
+        -2.3557615436960337
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -6.589442319662269,
+        -57.0294815441702,
+        121.6884357894276
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.578818247986557
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        0.6599149367320597,
+        -57.53563707166466,
+        122.05138196155973
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.651527606306694
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        7.86006469972075,
+        -56.85721753849195,
+        121.46256244346102
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.547762623917233
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        14.29987371719368,
+        -56.193694278557984,
+        119.26218854881995
+      ],
+      "displacement": [
+        -0.04010234301975545,
+        0,
+        -2.306376518867559
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        19.452285585877377,
+        -55.43202772125886,
+        115.7290248523987
+      ],
+      "displacement": [
+        -0.2271275167807302,
+        0,
+        -2.0122170286528163
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        23.454875188390258,
+        -54.388114328343384,
+        113.12979527545171
+      ],
+      "displacement": [
+        -0.3987118287868211,
+        0,
+        -1.7217200829278585
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        26.027406988026755,
+        -53.24563114721699,
+        112.11258405455348
+      ],
+      "displacement": [
+        -0.46781287210941935,
+        0,
+        -1.5064016534040763
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        26.880058257086525,
+        -51.974979603623076,
+        111.63162642249665
+      ],
+      "displacement": [
+        -0.4838396313814506,
+        0,
+        -1.5805826691578406
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.660186126501596,
+        -51.16567882980351,
+        112.61267118210695
+      ],
+      "displacement": [
+        -0.46018489595624723,
+        0,
+        -1.7004026595783268
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        22.794786018334168,
+        -49.499941984452256,
+        114.24602186174158
+      ],
+      "displacement": [
+        -0.37460857771881134,
+        0,
+        -1.9599678821378566
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        18.51223808544586,
+        -47.63780708652818,
+        117.13316220789754
+      ],
+      "displacement": [
+        -0.1843517955011622,
+        0,
+        -2.290679173546742
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        13.180614374720992,
+        -45.8499352550524,
+        120.27514592271923
+      ],
+      "displacement": [
+        -0.02033083361764246,
+        0,
+        -2.6065748646924463
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        6.562801981483026,
+        -45.408838036283264,
+        122.10901888319994
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.8508389621745334
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -0.6561360090630299,
+        -46.38907266941969,
+        123.16513570859458
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.9305536969870056
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -7.828779755403046,
+        -45.31721758688119,
+        121.93192791673312
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.816777954493132
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -14.233977377160231,
+        -46.145473160266974,
+        119.78819226041445
+      ],
+      "displacement": [
+        0.0387119617370334,
+        0,
+        -2.5525886688379846
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -19.365437472601265,
+        -47.962765358943905,
+        116.61686506677545
+      ],
+      "displacement": [
+        0.22311269679670212,
+        0,
+        -2.230262510129765
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -23.421359560951295,
+        -49.83219008098421,
+        113.85831178625162
+      ],
+      "displacement": [
+        0.3975487974021567,
+        0,
+        -1.9058315712194691
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -26.013007650822313,
+        -51.40880158373588,
+        112.34291903863983
+      ],
+      "displacement": [
+        0.4675242912060477,
+        0,
+        -1.666319232267491
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -26.87153903787506,
+        -52.13515698647836,
+        111.61137129760598
+      ],
+      "displacement": [
+        0.4836859632786662,
+        0,
+        -1.4308701482821582
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.66612383568457,
+        -53.4589179178429,
+        112.32663454757002
+      ],
+      "displacement": [
+        0.4603129933330455,
+        0,
+        -1.5379920178740885
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -22.67235625583046,
+        -53.01177633029304,
+        113.71144550224913
+      ],
+      "displacement": [
+        0.3698732028092805,
+        0,
+        -2.0763860890792825
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -18.467256478409514,
+        -53.38128168739998,
+        117.12143395900185
+      ],
+      "displacement": [
+        0.1823555308817747,
+        0,
+        -2.4172011119953662
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -13.161959297756521,
+        -53.61870077413432,
+        121.27514071691475
+      ],
+      "displacement": [
+        0.02006857708281663,
+        0,
+        -2.7477839974384843
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -6.536705238795269,
+        -54.05721543701456,
+        123.57531708265863
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -3.0048955239730804
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        0.6524156113847134,
+        -54.45179127777368,
+        124.04630502560751
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -3.0882352465988263
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        7.802295423094404,
+        -53.93006959262574,
+        123.30123500567376
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.969144028874887
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        14.215248890994696,
+        -53.58766953845182,
+        120.58535088668914
+      ],
+      "displacement": [
+        -0.03832206915908931,
+        0,
+        -2.6909747315056367
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        19.301090472912552,
+        -53.315896718773885,
+        116.40184237483774
+      ],
+      "displacement": [
+        -0.2201437607028718,
+        0,
+        -2.355158539109044
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        23.2830565034598,
+        -52.94454298793023,
+        113.28134001178879
+      ],
+      "displacement": [
+        -0.39267893619057487,
+        0,
+        -2.0210960377682397
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.8956231016894,
+        -52.55987893632106,
+        111.53973113491156
+      ],
+      "displacement": [
+        -0.46514131279150045,
+        0,
+        -1.767976038826136
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        26.783349444579923,
+        -51.99811104179785,
+        110.89665386787007
+      ],
+      "displacement": [
+        -0.4820920348470845,
+        0,
+        -1.732468353756454
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.53622433350624,
+        -51.459140128374145,
+        111.95592808302096
+      ],
+      "displacement": [
+        -0.4574718336407238,
+        0,
+        -1.865356886354802
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        22.663870027705652,
+        -50.41337428708469,
+        114.01713963174618
+      ],
+      "displacement": [
+        -0.36954207332140426,
+        0,
+        -2.147324469777708
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        18.40977834207161,
+        -49.29593242525137,
+        117.09542192349001
+      ],
+      "displacement": [
+        -0.1798133342540141,
+        0,
+        -2.503187941324623
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        13.114782347178775,
+        -48.216188237374155,
+        120.73910895181754
+      ],
+      "displacement": [
+        -0.01941479711900908,
+        0,
+        -2.8431480533537057
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        6.525872440581151,
+        -48.0074758530653,
+        122.49511815196897
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -3.1067100665445975
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -0.6510139290855792,
+        -48.6885767354711,
+        123.53734892753161
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -3.1925811151721373
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -7.78635179372945,
+        -47.9214795880732,
+        122.435458039701
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -3.069968628308632
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -14.162876171006765,
+        -48.39319897389475,
+        120.15290024902104
+      ],
+      "displacement": [
+        0.03724412610110298,
+        0,
+        -2.7849215735705033
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -19.262240644694398,
+        -49.48872870654093,
+        116.51855459106474
+      ],
+      "displacement": [
+        0.21835385835498278,
+        0,
+        -2.4377834814191996
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -23.287688219082472,
+        -50.617922212202494,
+        113.56399684707377
+      ],
+      "displacement": [
+        0.39284385079767736,
+        0,
+        -2.088943465305023
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.89779396757893,
+        -51.61681470043709,
+        111.64914404465087
+      ],
+      "displacement": [
+        0.46518588979936953,
+        0,
+        -1.8274816205518642
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -26.77152438470571,
+        -52.080583385666436,
+        110.8828556540999
+      ],
+      "displacement": [
+        0.48187777080734906,
+        0,
+        -1.6770941833206905
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.52623290710387,
+        -52.63435935165663,
+        111.81844093695794
+      ],
+      "displacement": [
+        0.45724987101648307,
+        0,
+        -1.8053970343143038
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -22.584563241741638,
+        -51.83920925128102,
+        113.04382581275459
+      ],
+      "displacement": [
+        0.3664297267842878,
+        0,
+        -1.6499854429418581
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -18.385287625682462,
+        -51.68545214026849,
+        115.9183179918957
+      ],
+      "displacement": [
+        0.17873316474733633,
+        0,
+        -1.91830903735988
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -13.086654720867303,
+        -51.502153333473814,
+        119.33441880174834
+      ],
+      "displacement": [
+        0.019031416414755004,
+        0,
+        -2.1783893502341036
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -6.509521495225868,
+        -51.69905325930755,
+        121.38091655057984
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.3794041690988625
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        0.6482756172990293,
+        -52.02469103275516,
+        121.86242437227963
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.444836052953227
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        7.766481306420104,
+        -51.60476270081761,
+        121.12123786119491
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.351417699537982
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        14.13573053247345,
+        -51.53510038228702,
+        118.75701336444716
+      ],
+      "displacement": [
+        -0.0366925663472475,
+        0,
+        -2.133849049059742
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        19.233162664448045,
+        -51.70927663936376,
+        115.3798971354099
+      ],
+      "displacement": [
+        -0.21701554098133086,
+        0,
+        -1.8685636461809287
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        23.183916505634997,
+        -51.87366341450338,
+        112.58408462575764
+      ],
+      "displacement": [
+        -0.3891190406942944,
+        0,
+        -1.6072026176045922
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.84649801338611,
+        -52.066112161216644,
+        110.62259647506856
+      ],
+      "displacement": [
+        -0.4641272725522556,
+        0,
+        -1.4035975532776999
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        26.758530288330665,
+        -52.03463024050759,
+        109.96654165389025
+      ],
+      "displacement": [
+        -0.48164214991294424,
+        0,
+        -1.5253584675464393
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.4752480895047,
+        -51.69990821322316,
+        110.93617746741837
+      ],
+      "displacement": [
+        -0.45610939891689994,
+        0,
+        -1.64536795767462
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        22.579581955946114,
+        -51.121088870709485,
+        113.09866317926029
+      ],
+      "displacement": [
+        -0.36623317331942534,
+        0,
+        -1.8944988084162575
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        18.376380451247204,
+        -50.57422874386791,
+        115.85082541549276
+      ],
+      "displacement": [
+        -0.1783407684321305,
+        0,
+        -2.2027035566428435
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        13.074586609692203,
+        -50.02793479942641,
+        119.06149768167101
+      ],
+      "displacement": [
+        -0.01886839045647155,
+        0,
+        -2.5012410064963935
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        6.505015681735104,
+        -50.03644692748591,
+        120.91010078210128
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.731535127012441
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -0.646055503868447,
+        -50.412112659144164,
+        121.56775172879819
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.806547624645577
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -7.766471344548864,
+        -49.95203463165113,
+        120.74801409766184
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.699303428185785
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -14.117454845532587,
+        -50.121413162375255,
+        118.54087883901828
+      ],
+      "displacement": [
+        0.03632397913611533,
+        0,
+        -2.450470297060064
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -19.223763619784783,
+        -50.66563940675062,
+        115.35336481530223
+      ],
+      "displacement": [
+        0.2165832096991373,
+        0,
+        -2.1456593793473573
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -23.206159702771934,
+        -51.22847186801135,
+        112.64374255372978
+      ],
+      "displacement": [
+        0.38992270450565447,
+        0,
+        -1.8431361848890457
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.85043184162945,
+        -51.793433615101264,
+        110.64455175378006
+      ],
+      "displacement": [
+        0.4642088518715634,
+        0,
+        -1.6108916528174817
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -26.74360745230475,
+        -52.05892957789678,
+        109.9570658722139
+      ],
+      "displacement": [
+        0.4813713176420616,
+        0,
+        -1.33001589558151
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.472596935589944,
+        -52.036906270489816,
+        110.89742362247469
+      ],
+      "displacement": [
+        0.4560497346540129,
+        0,
+        -1.4335240448582642
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -22.573274904545507,
+        -51.527610278708615,
+        112.48929702105556
+      ],
+      "displacement": [
+        0.3659841280427012,
+        0,
+        -1.417563294755111
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -18.375990904960016,
+        -51.22132564524956,
+        115.04050544404048
+      ],
+      "displacement": [
+        0.17832361297492288,
+        0,
+        -1.6477539619564645
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -13.061573201595966,
+        -50.89429782131114,
+        117.98690314418008
+      ],
+      "displacement": [
+        0.018693576570721487,
+        0,
+        -1.8715115698652012
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -6.503744122887559,
+        -51.00337837625558,
+        119.86158351831577
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.0433499719428645
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        0.647732876563842,
+        -51.31136750065278,
+        120.32843008545112
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.099438092125828
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        7.756810792438629,
+        -50.92002963004446,
+        119.61647191353785
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.0194177049066617
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        14.114070215948045,
+        -50.95109109611013,
+        117.48178464541131
+      ],
+      "displacement": [
+        -0.03625595986820155,
+        0,
+        -1.8332049400972612
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        19.233704213369997,
+        -51.27241248871107,
+        114.60967773590805
+      ],
+      "displacement": [
+        -0.2170404547386142,
+        0,
+        -1.6045508333472231
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        23.167187265723364,
+        -51.591266155468844,
+        112.03444493108724
+      ],
+      "displacement": [
+        -0.3885127215789596,
+        0,
+        -1.3811804922253197
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.866449505324976,
+        -51.945533059795494,
+        110.07230905556922
+      ],
+      "displacement": [
+        -0.46454034239215664,
+        0,
+        -1.2039198080202766
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        26.79161842640809,
+        -52.059166061555764,
+        109.4329749142678
+      ],
+      "displacement": [
+        -0.4822417787596199,
+        0,
+        -1.4097856335738208
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        25.48527244183618,
+        -51.779683903860544,
+        110.34886848447134
+      ],
+      "displacement": [
+        -0.45633467291892027,
+        0,
+        -1.523024432570154
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        22.559590105984526,
+        -51.32410836807862,
+        112.49100942548264
+      ],
+      "displacement": [
+        -0.3654430719485691,
+        0,
+        -1.7561025032206052
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        18.382336367664216,
+        -50.93055074136259,
+        115.03980993147233
+      ],
+      "displacement": [
+        -0.178603122996056,
+        0,
+        -2.039689569599317
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        13.064092347483388,
+        -50.52949649038951,
+        117.94407345834372
+      ],
+      "displacement": [
+        -0.018727337733949533,
+        0,
+        -2.317000431731319
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        6.500928418028817,
+        -50.598361641036824,
+        119.83515120113294
+      ],
+      "displacement": [
+        -0.0,
+        0,
+        -2.5299225875188327
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -0.6445530769210938,
+        -50.88714781813196,
+        120.31980582005379
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.5993111182784965
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -7.76356628717715,
+        -50.5160548136497,
+        119.61204011861815
+      ],
+      "displacement": [
+        0.0,
+        0,
+        -2.500057589357128
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -14.103412595640572,
+        -50.60154690398134,
+        117.46654557494946
+      ],
+      "displacement": [
+        0.036042273657253966,
+        0,
+        -2.270180968245236
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -19.224408077997573,
+        -50.99453597316391,
+        114.59827675862437
+      ],
+      "displacement": [
+        0.21661284893754332,
+        0,
+        -1.9871795590125105
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -23.192660346461974,
+        -51.40568407483671,
+        112.04556342662757
+      ],
+      "displacement": [
+        0.3894353030172762,
+        0,
+        -1.70807481871141
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.86848256982728,
+        -51.85608224079261,
+        110.06944248012017
+      ],
+      "displacement": [
+        0.4645823393071661,
+        0,
+        -1.4903929749935014
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -26.774377552650172,
+        -52.067693219362255,
+        109.42362824947789
+      ],
+      "displacement": [
+        0.48192948230174365,
+        0,
+        -1.1399098750019767
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "coherent_labial_body_and_return",
+      "source": [
+        -25.48890145574091,
+        -51.88796926822114,
+        110.33646995080944
+      ],
+      "displacement": [
+        0.45641610039305636,
+        0,
+        -1.229887369526155
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        0,
+        -51,
+        112
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.4
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        15,
+        -51,
+        108
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        -15,
+        -51,
+        108
+      ],
+      "displacement": [
+        0,
+        0,
+        -2.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        23,
+        -51,
+        101
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        -23,
+        -51,
+        101
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        0,
+        -51,
+        100
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.6
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        16,
+        -53,
+        101
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "finite_oral_internal_support",
+      "source": [
+        -16,
+        -53,
+        101
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -1.077986724511448,
+        -35.91770950600781,
+        122.00665193077515
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        8.031975280617631,
+        -40.096330837482284,
+        121.09582660272086
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -7.945700869729476,
+        -39.48236072086664,
+        121.22105872292457
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        17.97195568609759,
+        -41.928216960987314,
+        115.40906545349054
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -17.925520799411387,
+        -41.928330598900885,
+        115.41998933502448
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        28.086272553520644,
+        -45.40197906360599,
+        110.31285505811152
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -27.99569379782302,
+        -45.39170012213699,
+        110.38918773369122
+      ],
+      "displacement": [
+        0,
+        0,
+        -1.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        32.943403830817324,
+        -49.50041511790834,
+        105.98883667863043
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -32.90353011070183,
+        -49.17904478105113,
+        106.06172086940633
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        29.85344290836021,
+        -58.06148706383317,
+        107.28798306057394
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -28.90151989119078,
+        -58.063473716824035,
+        108.01446011033734
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        17.0811429329904,
+        -64.55449411459763,
+        113.35129920487887
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -17.132798239835015,
+        -64.53827460827414,
+        113.31960607288765
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -0.7023609083453166,
+        -63.99329257921575,
+        117.90938878535154
+      ],
+      "displacement": [
+        0,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        37.28450202715249,
+        -47.089717006807916,
+        99.36749660288694
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -37.2789391979508,
+        -47.03326544554454,
+        99.30458170738545
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        38.95582845825788,
+        -54.10201781191907,
+        95.80651923641524
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_muzzle_transition",
+      "source": [
+        -38.94632985415453,
+        -54.036401736732046,
+        95.82740491506352
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        1.0473486534526788,
+        -72.71676724897617,
+        117.7268616230778
+      ],
+      "displacement": [
+        0,
+        0.3,
+        -1.2
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        0.7460839023224904,
+        -80.92372995089075,
+        119.77399155417078
+      ],
+      "displacement": [
+        0,
+        1.6,
+        -2.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        0.18083806862175025,
+        -86.3803195995784,
+        119.94925691266016
+      ],
+      "displacement": [
+        0,
+        2.0,
+        -3.3
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        0.17479607132567992,
+        -93.69439464521963,
+        116.60548769014153
+      ],
+      "displacement": [
+        0,
+        1.5,
+        -3.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        0.14991408904027215,
+        -101.73992649252764,
+        102.88723393596581
+      ],
+      "displacement": [
+        0,
+        0.6,
+        -1.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        0.12597479421822108,
+        -111.24160510650958,
+        89.65996888612867
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        8.945055341605213,
+        -73.06201666338428,
+        117.17589212771567
+      ],
+      "displacement": [
+        0,
+        0.255,
+        -1.02
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -8.999283412872236,
+        -73.05842860660772,
+        117.14225252242126
+      ],
+      "displacement": [
+        0,
+        0.255,
+        -1.02
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        9.047128774994517,
+        -80.90097215776471,
+        118.52987057653664
+      ],
+      "displacement": [
+        0,
+        1.36,
+        -2.125
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -8.976513393248009,
+        -80.7466678934553,
+        118.53216728992155
+      ],
+      "displacement": [
+        0,
+        1.36,
+        -2.125
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        9.85506233538235,
+        -86.09587848429383,
+        118.3047698861572
+      ],
+      "displacement": [
+        0,
+        1.7,
+        -2.8049999999999997
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -9.50987979582561,
+        -86.11090669867737,
+        118.45241462845878
+      ],
+      "displacement": [
+        0,
+        1.7,
+        -2.8049999999999997
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        9.609506724684984,
+        -93.40609892295669,
+        115.86170874235708
+      ],
+      "displacement": [
+        0,
+        1.275,
+        -2.55
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -9.265683967763088,
+        -93.42510785925896,
+        115.93140729751705
+      ],
+      "displacement": [
+        0,
+        1.275,
+        -2.55
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        10.371989827239233,
+        -101.37452214344505,
+        102.87565285080477
+      ],
+      "displacement": [
+        0,
+        0.51,
+        -1.275
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -10.07025428428592,
+        -101.39469112475544,
+        102.89535703637932
+      ],
+      "displacement": [
+        0,
+        0.51,
+        -1.275
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        10.44899542863277,
+        -111.13209254998492,
+        89.55084321557854
+      ],
+      "displacement": [
+        0,
+        0.0,
+        0.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -10.195175485168457,
+        -111.13699851782923,
+        89.57428815035912
+      ],
+      "displacement": [
+        0,
+        0.0,
+        0.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        19.038595647785225,
+        -71.16997548877416,
+        111.63895624815534
+      ],
+      "displacement": [
+        0,
+        0.165,
+        -0.66
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -19.105663536781883,
+        -71.1680356494558,
+        111.58816489141356
+      ],
+      "displacement": [
+        0,
+        0.165,
+        -0.66
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        19.050546571043625,
+        -80.0185319285292,
+        112.13997596149636
+      ],
+      "displacement": [
+        0,
+        0.8800000000000001,
+        -1.375
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -18.938384559106353,
+        -79.77914761547814,
+        112.23396592195995
+      ],
+      "displacement": [
+        0,
+        0.8800000000000001,
+        -1.375
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        20.59296291717919,
+        -87.49931101838884,
+        111.20030483098814
+      ],
+      "displacement": [
+        0,
+        1.1,
+        -1.815
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -20.310273857324248,
+        -87.52776066133869,
+        111.46616387871212
+      ],
+      "displacement": [
+        0,
+        1.1,
+        -1.815
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        20.488638462180553,
+        -93.37807682657466,
+        110.65074272547746
+      ],
+      "displacement": [
+        0,
+        0.8250000000000001,
+        -1.6500000000000001
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -20.19240069415334,
+        -93.41492339777398,
+        110.85329032168121
+      ],
+      "displacement": [
+        0,
+        0.8250000000000001,
+        -1.6500000000000001
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        19.835933925224424,
+        -101.41404449287398,
+        98.59355308413093
+      ],
+      "displacement": [
+        0,
+        0.33,
+        -0.8250000000000001
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -19.571153262182875,
+        -101.44664454869282,
+        98.74365990115275
+      ],
+      "displacement": [
+        0,
+        0.33,
+        -0.8250000000000001
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        19.974674222856365,
+        -112.28097386296265,
+        85.40150473553764
+      ],
+      "displacement": [
+        0,
+        0.0,
+        0.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -19.75618747314113,
+        -112.28521341295246,
+        85.53386057739795
+      ],
+      "displacement": [
+        0,
+        0.0,
+        0.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        29.33096925026235,
+        -71.05287234315576,
+        101.91520438907253
+      ],
+      "displacement": [
+        0,
+        0.06,
+        -0.24
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -28.95390024380166,
+        -71.83370157102487,
+        102.28566404376814
+      ],
+      "displacement": [
+        0,
+        0.06,
+        -0.24
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        28.929718998890344,
+        -79.96988157572163,
+        101.4373154268024
+      ],
+      "displacement": [
+        0,
+        0.32000000000000006,
+        -0.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -28.970003359965848,
+        -80.05931301493494,
+        101.37367775125425
+      ],
+      "displacement": [
+        0,
+        0.32000000000000006,
+        -0.5
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        29.275758472693443,
+        -87.32956770864998,
+        101.56031625124452
+      ],
+      "displacement": [
+        0,
+        0.4,
+        -0.66
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -29.053959407763003,
+        -87.36855915023729,
+        101.87020221276829
+      ],
+      "displacement": [
+        0,
+        0.4,
+        -0.66
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        30.08152118991819,
+        -93.36080531494336,
+        97.64969717489191
+      ],
+      "displacement": [
+        0,
+        0.30000000000000004,
+        -0.6000000000000001
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -29.893992166439617,
+        -93.41118058117011,
+        98.00220200091397
+      ],
+      "displacement": [
+        0,
+        0.30000000000000004,
+        -0.6000000000000001
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        29.795660425977026,
+        -101.7294954617518,
+        82.69686611254141
+      ],
+      "displacement": [
+        0,
+        0.12,
+        -0.30000000000000004
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -29.65973314055968,
+        -101.76581780850229,
+        82.9974272540009
+      ],
+      "displacement": [
+        0,
+        0.12,
+        -0.30000000000000004
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        29.61734818282927,
+        -111.99632710609812,
+        75.1508217072344
+      ],
+      "displacement": [
+        0,
+        0.0,
+        0.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "rounded_mental_pad_and_submental_flow",
+      "source": [
+        -29.48123123836745,
+        -112.00242208271492,
+        75.37603114716526
+      ],
+      "displacement": [
+        0,
+        0.0,
+        0.0
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        51.03256624660104,
+        -65.7270540703971,
+        48.053952356923084
+      ],
+      "displacement": [
+        -1.1,
+        0,
+        -1.4
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        -50.794184883756515,
+        -66.23108773850133,
+        48.06358610247925
+      ],
+      "displacement": [
+        1.1,
+        0,
+        -1.4
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        53.62354227015069,
+        -73.15118979534932,
+        26.55424888317814
+      ],
+      "displacement": [
+        -1.2,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        -53.595769247067466,
+        -73.17775852301068,
+        26.750229983972044
+      ],
+      "displacement": [
+        1.2,
+        0,
+        -0.8
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        49.534890836514506,
+        -80.75765313074929,
+        31.042879729049687
+      ],
+      "displacement": [
+        0.3,
+        0,
+        1.2
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        -49.86629616646648,
+        -80.65194158897293,
+        30.028117141285367
+      ],
+      "displacement": [
+        -0.3,
+        0,
+        1.2
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        44.01171651538851,
+        -88.93052986813939,
+        36.88889980911043
+      ],
+      "displacement": [
+        0.6,
+        0,
+        1.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        -43.939583844248766,
+        -88.95186041275907,
+        37.04309814360227
+      ],
+      "displacement": [
+        -0.6,
+        0,
+        1.7
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        39.29792883268143,
+        -98.42525533486607,
+        44.77385178537013
+      ],
+      "displacement": [
+        0.5,
+        0,
+        1.2
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        -39.23827908735748,
+        -98.4480379348375,
+        44.93283802016455
+      ],
+      "displacement": [
+        -0.5,
+        0,
+        1.2
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        44.996319108365526,
+        -108.1805416762535,
+        26.58823984722987
+      ],
+      "displacement": [
+        0.3,
+        0,
+        0.6
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "broad_submandibular_soft_tissue",
+      "source": [
+        -44.98014052497766,
+        -108.17947229640431,
+        26.75187736982494
+      ],
+      "displacement": [
+        -0.3,
+        0,
+        0.6
+      ],
+      "weight": 3.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        0.5708621100876122,
+        -28.945296927128485,
+        134.23007591988048
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        10.91054942905275,
+        -31.166451354324014,
+        125.99430284169799
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -10.916835707586282,
+        -31.1902946194963,
+        126.09222828863003
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        23.94487774333608,
+        -30.95898463710832,
+        111.68333668604267
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -24.00746578412204,
+        -31.187789602388158,
+        111.66927185967914
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        38.07506268120664,
+        -32.979538870074556,
+        100.09149276149793
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -37.90111983046835,
+        -33.39672126676485,
+        100.04025639479032
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        43.905284983682,
+        -42.605952229908944,
+        88.07975410809989
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -43.90252426328418,
+        -41.03311127508184,
+        88.16803481230386
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        47.02404373914456,
+        -53.93265784783217,
+        79.95322066107389
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -47.09510133916662,
+        -54.018485287484275,
+        79.36072927558327
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        41.038562409174624,
+        -65.12391377506346,
+        83.23472287548358
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -41.03907809034423,
+        -65.0422421513077,
+        83.25159659481233
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        35.950103123669365,
+        -109.56685672737613,
+        59.349381046814294
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -36.28728272480056,
+        -109.50097880444791,
+        58.06100229013654
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        26.999811325745494,
+        -117.00268839095129,
+        76.80970849126437
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        -27.945904572073974,
+        -117.04451125549885,
+        75.75812154351401
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    },
+    {
+      "region": "wide_region_return",
+      "source": [
+        0.11674129400855351,
+        -119.02611016783777,
+        84.5509051823442
+      ],
+      "displacement": [
+        0,
+        0,
+        0
+      ],
+      "weight": 4.0
+    }
+  ],
+  "rms_landmark_displacement_error": 0.08139717138737733,
+  "max_landmark_displacement_error": 0.4388070677444942,
+  "solve_states": [
+    0,
+    0,
+    0
+  ],
+  "units": "Approximate authored design units, not calibrated anatomy",
+  "minimum_changed_face_normal_cosine": 0.9505546254645729,
+  "changed_vertices": 137413,
+  "maximum_motion": 3.78782447186117
+}

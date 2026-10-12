@@ -1,0 +1,42 @@
+{
+  "outputs": [
+    {
+      "path": "route-layout-v9/parts.npz",
+      "original_sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+      "replay_sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "shared-junction-v2/geometry.npz",
+      "original_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+      "replay_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "shared-tet-v4/geometry.npz",
+      "original_sha256": "48ca653c5c638bb5816c4565a6dc7fdf80057fe728a93348044ae44df1e85a2d",
+      "replay_sha256": "48ca653c5c638bb5816c4565a6dc7fdf80057fe728a93348044ae44df1e85a2d",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "shared-tet-v6/geometry.npz",
+      "original_sha256": "9454932854a7e2691bb5f790c36318b08e436208bcc52be213f037f3bbd15ccc",
+      "replay_sha256": "9454932854a7e2691bb5f790c36318b08e436208bcc52be213f037f3bbd15ccc",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "shared-reference-v7/geometry.npz",
+      "original_sha256": "c5e9978825b4073a17a29a91c867fd6fe13260aa64b96128c3236b9f026e31d9",
+      "replay_sha256": "c5e9978825b4073a17a29a91c867fd6fe13260aa64b96128c3236b9f026e31d9",
+      "all_arrays_exact": true
+    },
+    {
+      "path": "shared-reference-v7/attachment_face_ids.npz",
+      "original_sha256": "9544d9c0ea2dd535764dd0b2c2581cefba8cab88e9c40f02e1bce0ec51bc2d61",
+      "replay_sha256": "9544d9c0ea2dd535764dd0b2c2581cefba8cab88e9c40f02e1bce0ec51bc2d61",
+      "all_arrays_exact": true
+    }
+  ],
+  "all_expected_outputs_present": true,
+  "all_arrays_exact": true
+}

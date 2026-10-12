@@ -1,0 +1,60 @@
+{
+  "status": "PASS: original regional support, rest containment and topology only",
+  "source_head_sha256": "f4fa73042fab1534b45c0982b47ae668b16eb990c2029e6a06cfc9b94b01df14",
+  "source_files": {
+    "src/zygomatic_support_build.py": "e9c7b3285f2da7dc046099b0668ac4edc9d7b961f0655d720af1d8e740c6401d",
+    "src/zygomatic_support_distance.cpp": "4c9cfe7cc342609ce238e991967d8f17bd1bb738814560ea5107c5fe0bce2cd8",
+    "src/zygomatic_support_parameters.json": "09cf47bca64ac3072b0e99e10c9114f8803d140f2a8fc64196f017baf0d46f9c",
+    "src/zygomatic_support_preview.py": "6d596eede561a714dbb0a890572ab361ff11fa5d4faeff1180cbb45067eead2b"
+  },
+  "output_files": {
+    "README.md": {
+      "sha256": "cf1c451206effcc292214cdaa92f4a53caaa4255e8fd0a660715e235deb0d44e",
+      "bytes": 4286
+    },
+    "audit.json": {
+      "sha256": "e6031a21b9997de0f5e99a8cc1b8f961d029251817db5c9c1c5482048f16b697",
+      "bytes": 1962
+    },
+    "authored_support_cutaway.png": {
+      "sha256": "138fdc48e9ea74a41bf730c272d10b477a992ae7b08750ff0b469e354106b181",
+      "bytes": 143695
+    },
+    "bone_support.npz": {
+      "sha256": "a156c9b7cc342dec93688b096457633b681caddf3a150da6411b021f28819250",
+      "bytes": 684565
+    },
+    "bone_support.obj": {
+      "sha256": "816e20af21beb57da8aecd673098ab260dece47eb9739fed43e7db7721ce0588",
+      "bytes": 1316160
+    },
+    "landmarks.json": {
+      "sha256": "e704a1cb0b2d0586dc87433b8f2ff6eaf99b87c83c0c8abb16d281db45321762",
+      "bytes": 8508
+    },
+    "mechanics_interface.json": {
+      "sha256": "6aa5f834c6e899d0d39bbb90049f9496a8a77b8c3dc2588d9265ab97d6a09755",
+      "bytes": 3771
+    },
+    "parameters.json": {
+      "sha256": "09cf47bca64ac3072b0e99e10c9114f8803d140f2a8fc64196f017baf0d46f9c",
+      "bytes": 3484
+    }
+  },
+  "tests": [
+    "Python compile PASS",
+    "Closed sphere marching-tetrahedra test PASS",
+    "Exact point-to-triangle primitive test PASS",
+    "Native skin whole-triangle containment PASS",
+    "Positive-volume and coherent-winding test PASS",
+    "Native eye sphere clearance PASS",
+    "Actual mesh preview visually inspected"
+  ],
+  "unchanged_scope": "Native v16 source and native-cheek-v2 were read only.",
+  "not_tested": [
+    "Mechanics contact integration",
+    "Deformed soft-tissue collision",
+    "Physiological anatomy/scale/material calibration",
+    "Independent expert anatomical validation"
+  ]
+}

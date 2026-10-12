@@ -1,0 +1,7 @@
+{"phase":"neutral-0","rootNet":0,"rootMax":0,"collarNet":0,"collarMax":0,"collarL2":0,"contacts":0,"residual":1.0047560572785098e-17}
+{"phase":"right-02","rootNet":0,"rootMax":0,"collarNet":5.503650584351753e-7,"collarMax":0.0000024746482480292774,"collarL2":0.00000780632338254668,"contacts":0,"residual":0.000019204972913425792}
+{"phase":"right-08","rootNet":0,"rootMax":0,"collarNet":6.841123898049573e-7,"collarMax":0.000011801375132444496,"collarL2":0.000029578433100840765,"contacts":0,"residual":0.000014632668594668758}
+{"phase":"right-16","rootNet":0,"rootMax":0,"collarNet":7.105811142834147e-7,"collarMax":0.000025631035793169907,"collarL2":0.00005887974416896515,"contacts":0,"residual":0.000014624537233416649}
+{"phase":"released-0","rootNet":0,"rootMax":0,"collarNet":6.630428595574579e-7,"collarMax":0.000003866522005999375,"collarL2":0.000008096594825931867,"contacts":0,"residual":0.000015306805952564715}
+{"inputsUnchanged":true,"rootAdjacent":903,"allFixedRootAdjacent":true,"activeTouchesFixed":0,"report":"human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/reactions.json"}
+OWNED_COMMAND_GUARD {"seconds": 3.022, "peak_sampled_rss_mib": 403.7, "limit_mib": 900.0, "stop_reason": null}

@@ -1,0 +1,716 @@
+CYBR_HUMAN_AFFINITY {"allowed_cpus": [0, 1, 2, 3, 4, 5, 6, 7, 8], "selected_cpus": [2, 3], "threads": 2, "reason": "Coordinate with the heavy lane on CPUs0,1; no speed benchmark claim", "lock_and_memory_guard": "Retained by the wrapped command"}
+CYBR_CONCURRENT_ADMISSION {"available_mib": 6599.546875, "required_mib": 2048.0, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "concurrent_load": "Other authorized CPU jobs may be active; no speed benchmark claim"}
+{
+  "parts_sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+  "source_parts_sha256": "f0ea78291195af50c9755e0b08115c0e7c12cd85a7393cf2455f3f67c83d6ee1",
+  "junction_vertices": 642,
+  "junction_triangles": 1280,
+  "same_analytic_ellipsoid": true,
+  "all_other_part_coordinates_connectivity_and_attachments_exact": true,
+  "scope": "Replace the polar sampling singularity with uniform geodesic triangulation on the same authored ellipsoid. No anatomy control, root footprint or preferred head change."
+}
+Blender 4.3.2
+
+Blender quit
+{
+  "input_parts_sha256": "769bb88d5123dfc441edb3a6b032d93d4b28fa5e2befe42c756637046152c7a8",
+  "geometry_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+  "region_names": [
+    "junction",
+    "zygomatic_reference",
+    "superficial_oral",
+    "deep_oral",
+    "buccinator_deep",
+    "mandibular_depressor"
+  ],
+  "history": [
+    {
+      "added_region": "zygomatic_reference",
+      "vertices": 1495,
+      "polygons": 2868
+    },
+    {
+      "added_region": "superficial_oral",
+      "vertices": 3649,
+      "polygons": 6976
+    },
+    {
+      "added_region": "deep_oral",
+      "vertices": 5923,
+      "polygons": 11443
+    },
+    {
+      "added_region": "buccinator_deep",
+      "vertices": 8182,
+      "polygons": 15852
+    },
+    {
+      "added_region": "mandibular_depressor",
+      "vertices": 10090,
+      "polygons": 19243
+    }
+  ],
+  "vertices": 10026,
+  "triangles": 20048,
+  "components": 1,
+  "nonattachment_vertices_merged_below_001": 64,
+  "nonmanifold_edges": 0,
+  "inconsistent_winding_edges": 0,
+  "restored_source_vertices": 9496,
+  "new_boolean_intersection_vertices": 530,
+  "zygomatic_roots_exact": 176,
+  "mandibular_roots_exact": 154,
+  "limits": [
+    "Surface Boolean union only; no tetrahedral domain or coupled solve.",
+    "Region IDs retain exterior input-surface provenance, not complete internal fibre/material ownership.",
+    "The terminal oral and posterior buccinator cuts remain finite unbound boundaries."
+  ]
+}
+Blender 4.3.2
+
+Blender quit
+{
+  "geometry_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+  "nonincident_crossings": 0,
+  "trimmed_incident_crossings": 0,
+  "nonincident_examples": [],
+  "trimmed_incident_examples": [],
+  "exact_root_face_counts": {
+    "maxillary_support": 301,
+    "mandible": 176
+  },
+  "obstacles": {
+    "skin": {
+      "pairs": 0,
+      "excluded_exact_contact_faces": 0,
+      "crossings": 0,
+      "examples": []
+    },
+    "mandible": {
+      "pairs": 169,
+      "excluded_exact_contact_faces": 57,
+      "crossings": 0,
+      "examples": []
+    },
+    "maxillary_support": {
+      "pairs": 186,
+      "excluded_exact_contact_faces": 171,
+      "crossings": 0,
+      "examples": []
+    }
+  },
+  "admitted_shared_surface": true,
+  "scope": "Connected closed surface only. No tetrahedral elements or new equilibrium. Tested attachment-adjacent faces use 1e-6 centroid trim; retained exact bone-contact faces are excluded explicitly."
+}
+Blender 4.3.2
+
+Blender quit
+Info    : Reading 'HUMAN-anatomical-layout-replay-20261011/human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/domain.geo'...
+Info    : Reading 'HUMAN-anatomical-layout-replay-20261011/human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/boundary.msh'...
+Info    : 10026 nodes
+Info    : 20048 elements
+Info    : Done reading 'HUMAN-anatomical-layout-replay-20261011/human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/boundary.msh'
+Info    : Done reading 'HUMAN-anatomical-layout-replay-20261011/human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/domain.geo'
+Info    : Meshing 1D...
+Info    : Done meshing 1D (Wall 0.000146891s, CPU 0.000137s)
+Info    : Meshing 2D...
+Info    : Done meshing 2D (Wall 3.1999e-05s, CPU 2.9e-05s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Input mesh hash 56931c3daf96759e
+Info    : Creating an empty mesh with 10026 vertices
+Info    : Initialization of tet. mesh
+Info    : Delaunay of      10022 points on   2 threads - mesh.nvert: 4         
+Info    : Recovering 7659 missing facet(s)
+Info    : Recover Delaunay
+Info    : All volumes of the BRep were found and colorized accordingly
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : new point is not in the circumsphere of the tet that spawned it
+Info    : Computing interpolated mesh sizes...
+Info    : Done computing interpolated mesh sizes
+Info    : Delaunay of       8252 points on   2 threads - mesh.nvert: 10026     
+Info    :           -       7355 points filtered
+Info    :           =        897 points added
+Info    : Computing interpolated mesh sizes...
+Info    : Done computing interpolated mesh sizes
+Info    : Delaunay of       2504 points on   1 threads - mesh.nvert: 10923     
+Info    :           -       1786 points filtered
+Info    :           =        718 points added
+Info    : Computing interpolated mesh sizes...
+Info    : Done computing interpolated mesh sizes
+Info    : Delaunay of        911 points on   1 threads - mesh.nvert: 11641     
+Info    :           -        595 points filtered
+Info    :           =        316 points added
+Info    : Computing interpolated mesh sizes...
+Info    : Done computing interpolated mesh sizes
+Info    : Delaunay of        102 points on   1 threads - mesh.nvert: 11957     
+Info    :           -         42 points filtered
+Info    :           =         60 points added
+Info    : Computing interpolated mesh sizes...
+Info    : Done computing interpolated mesh sizes
+Info    : Delaunay of          4 points on   1 threads - mesh.nvert: 12017     
+Info    : Computing interpolated mesh sizes...
+Info    : Done computing interpolated mesh sizes
+Info    : Delaunay of          1 points on   1 threads - mesh.nvert: 12021     
+Info    : Computing interpolated mesh sizes...
+Info    : Done computing interpolated mesh sizes
+Info    : Improving      10767 tet. on   2 thrd (S & ER)
+Info    : Improving       6804 tet. on   2 thrd (S & ER)
+Info    : Improving       6050 tet. on   2 thrd (S & ER)
+Info    : Improving       5843 tet. on   2 thrd (S & ER)
+Info    : Improving       5765 tet. on   2 thrd (S & ER)
+Info    : Improving       5736 tet. on   2 thrd (S & ER)
+Info    : Improving       5725 tet. on   2 thrd (S & ER)
+Info    : Improving       5709 tet. on   2 thrd (S & ER)
+Info    : Improving       5705 tet. on   2 thrd (GSC)
+Info    : Improving       5921 tet. on   2 thrd (S & ER)
+Info    : Improving       5776 tet. on   2 thrd (S & ER)
+Info    : Improving       5688 tet. on   2 thrd (S & ER)
+Info    : Improving       5663 tet. on   2 thrd (S & ER)
+Info    : Improving       5653 tet. on   2 thrd (S & ER)
+Info    : Improving       5648 tet. on   2 thrd (S & ER)
+Info    : Improving       5647 tet. on   2 thrd (GSC)
+Info    : Improving       5627 tet. on   2 thrd (S & ER)
+Info    : Improving       5561 tet. on   2 thrd (S & ER)
+Info    : Improving       5530 tet. on   2 thrd (S & ER)
+Info    : Improving       5528 tet. on   2 thrd (S & ER)
+Info    : Improving       5520 tet. on   2 thrd (S & ER)
+Info    : Improving       5520 tet. on   2 thrd (GSC)
+Info    : Improving       5614 tet. on   2 thrd (S & ER)
+Info    : Improving       5590 tet. on   2 thrd (S & ER)
+Info    : Improving       5536 tet. on   2 thrd (S & ER)
+Info    : Improving       5526 tet. on   2 thrd (S & ER)
+Info    : Improving       5523 tet. on   2 thrd (S & ER)
+Info    : Improving       5527 tet. on   2 thrd (S & ER)
+Info    : Improving       5527 tet. on   2 thrd (GSC)
+Info    : Improving       5533 tet. on   2 thrd (S & ER)
+Info    : Improving       5491 tet. on   2 thrd (S & ER)
+Info    : Improving       5473 tet. on   2 thrd (S & ER)
+Info    : Improving       5480 tet. on   2 thrd (S & ER)
+Info    : Improving       5488 tet. on   2 thrd (S & ER)
+Info    : Improving       5488 tet. on   2 thrd (GSC)
+Info    : Improving       5498 tet. on   2 thrd (S & ER)
+Info    : Improving       5473 tet. on   2 thrd (S & ER)
+Info    : Improving       5448 tet. on   2 thrd (S & ER)
+Info    : Improving       5457 tet. on   2 thrd (S & ER)
+Info    : Improving       5451 tet. on   2 thrd (S & ER)
+Info    : Improving       5449 tet. on   2 thrd (S & ER)
+Info    : Improving       5445 tet. on   2 thrd (S & ER)
+Info    : Improving       5444 tet. on   2 thrd (GSC)
+Info    : Improving       5425 tet. on   2 thrd (S & ER)
+Info    : Improving       5412 tet. on   2 thrd (S & ER)
+Info    : Improving       5418 tet. on   2 thrd (S & ER)
+Info    : Improving       5415 tet. on   2 thrd (S & ER)
+Info    : Improving       5415 tet. on   2 thrd (S & ER)
+Info    : Improving       5414 tet. on   2 thrd (GSC)
+Info    : Improving       5434 tet. on   2 thrd (S & ER)
+Info    : Improving       5423 tet. on   2 thrd (S & ER)
+Info    : Improving       5417 tet. on   2 thrd (S & ER)
+Info    : Improving       5420 tet. on   2 thrd (S & ER)
+Info    : Improving       5417 tet. on   2 thrd (S & ER)
+Info    : Improving       5417 tet. on   2 thrd (GSC)
+Info    : Improving       5381 tet. on   2 thrd (S & ER)
+Info    : Improving       5375 tet. on   2 thrd (S & ER)
+Info    : Improving       5367 tet. on   2 thrd (S & ER)
+Info    : Improving       5367 tet. on   2 thrd (S & ER)
+Info    : Improving       5364 tet. on   2 thrd (S & ER)
+Info    : Improving       5364 tet. on   2 thrd (GSC)
+Info    : Improving       5365 tet. on   2 thrd (S & ER)
+Info    : Improving       5367 tet. on   2 thrd (S & ER)
+Info    : Improving       5358 tet. on   2 thrd (S & ER)
+Info    : Improving       5347 tet. on   2 thrd (S & ER)
+Info    : Improving       5336 tet. on   2 thrd (S & ER)
+Info    : Improving       5332 tet. on   2 thrd (S & ER)
+Info    : Improving       5332 tet. on   2 thrd (GSC)
+Info    : Improving       5356 tet. on   2 thrd (S & ER)
+Info    : Improving       5332 tet. on   2 thrd (S & ER)
+Info    : Improving       5325 tet. on   2 thrd (S & ER)
+Info    : Improving       5321 tet. on   2 thrd (S & ER)
+Info    : Improving       5319 tet. on   2 thrd (GSC)
+Info    : Improving       5303 tet. on   2 thrd (S & ER)
+Info    : Improving       5301 tet. on   2 thrd (S & ER)
+Info    : Improving       5303 tet. on   2 thrd (GSC)
+Info    : Improving       5321 tet. on   2 thrd (S & ER)
+Info    : Improving       5324 tet. on   2 thrd (S & ER)
+Info    : Improving       5320 tet. on   2 thrd (S & ER)
+Info    : Improving       5320 tet. on   2 thrd (GSC)
+Info    : Improving       5326 tet. on   2 thrd (S & ER)
+Info    : Improving       5324 tet. on   2 thrd (S & ER)
+Info    : Improving       5315 tet. on   2 thrd (S & ER)
+Info    : Improving       5311 tet. on   2 thrd (S & ER)
+Info    : Improving       5313 tet. on   2 thrd (S & ER)
+Info    : Improving       5308 tet. on   2 thrd (S & ER)
+Info    : Improving       5308 tet. on   2 thrd (GSC)
+Info    : Improving       5299 tet. on   2 thrd (S & ER)
+Info    : Improving       5292 tet. on   2 thrd (S & ER)
+Info    : Improving       5291 tet. on   2 thrd (S & ER)
+Info    : Improving       5291 tet. on   2 thrd (GSC)
+Info    :  	Final tet. mesh contains 81852 tetrahedra
+Info    :  	Final tet. mesh contains 12022 vertices
+Info    : tEmptyMesh  	 = 	    0.032
+Info    : tVerifyBnd  	 = 	    0.016
+Info    : tBndRecovery	 = 	    0.102
+Info    : tConvertMesh	 = 	    0.016
+Info    : tRefine     	 = 	    0.049
+Info    : tOptimize   	 = 	   21.546
+Info    : Done meshing 3D (Wall 21.8341s, CPU 34.9966s)
+Info    : 12022 nodes 61068 elements
+Info    : Writing 'HUMAN-anatomical-layout-replay-20261011/human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/tetrahedra.msh'...
+Info    : Done writing 'HUMAN-anatomical-layout-replay-20261011/human-preferred-v53-anatomical-assembly-20261011/shared-tet-v4/tetrahedra.msh'
+{
+  "source_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+  "geometry_sha256": "48ca653c5c638bb5816c4565a6dc7fdf80057fe728a93348044ae44df1e85a2d",
+  "mesher": "Preinstalled Gmsh4.13 system shared library; C API, preserved discrete boundary",
+  "nodes": 12022,
+  "tetrahedra": 41020,
+  "min_determinant_design_units_cubed": 2.0264824270308393e-15,
+  "nonpositive_tets": 0,
+  "source_vertices_max_error": 5.739584601870544e-14,
+  "boundary_faces_exact": true,
+  "missing_original_boundary_faces": 0,
+  "new_boundary_faces": 0,
+  "total_volume": 491.59701427601686,
+  "scope": "Conforming geometry candidate only, pending tissue-quality/region/contact gates; no solve."
+}
+{
+  "source_sha256": "48ca653c5c638bb5816c4565a6dc7fdf80057fe728a93348044ae44df1e85a2d",
+  "geometry_sha256": "9454932854a7e2691bb5f790c36318b08e436208bcc52be213f037f3bbd15ccc",
+  "exact_original_vertices": true,
+  "exact_boundary_faces": true,
+  "exact_bone_footprints": true,
+  "old_zero_volume_tet": 1264,
+  "old_volume": 3.3774707117180653e-16,
+  "crossing_internal_edges": [
+    [
+      400,
+      494
+    ],
+    [
+      370,
+      527
+    ]
+  ],
+  "edge_intersection_parameters": [
+    0.5000000000000092,
+    0.4999999999999963
+  ],
+  "edge_intersection_residual": 7.105427357601002e-15,
+  "new_interior_node": [
+    43.080017373366616,
+    -48.05197815747205,
+    86.76418686845233
+  ],
+  "old_real_tets_subdivided": 8,
+  "new_real_tets": 16,
+  "nodes": 12023,
+  "tetrahedra": 41027,
+  "min_determinant": 7.623162992713255e-07,
+  "total_volume": 491.59701427601686,
+  "volume_error": 0.0,
+  "scope": "Exactly located numerical internal diagonal degeneracy resolved by common Steiner vertex and conforming subdivision of all incident cells. No exterior remesh, artificial material change, motion, load or rejected cell deletion."
+}
+{
+  "quality_quantiles": [
+    0.0017539261519359303,
+    0.007043297542132525,
+    0.04073866443212663,
+    0.34187883198926683,
+    0.688845242364204,
+    0.9982764533382245
+  ],
+  "condition_quantiles": [
+    1.1366056145981902,
+    4.442204017365874,
+    10.762367140244075,
+    141.86923832503112,
+    1792.7533713330465,
+    21964.840609480783
+  ],
+  "quality_below_001": 0,
+  "worst": [
+    {
+      "tet": 2706,
+      "quality": 0.0017539261519359303,
+      "condition": 12279.234805863363,
+      "center": [
+        42.30533450351552,
+        -48.8772385965983,
+        87.6079435703099
+      ],
+      "indices": [
+        1009,
+        865,
+        1268,
+        989
+      ]
+    },
+    {
+      "tet": 6432,
+      "quality": 0.0018401473468564898,
+      "condition": 21964.840609480783,
+      "center": [
+        40.53273484486934,
+        -49.89684638148178,
+        89.80611246146029
+      ],
+      "indices": [
+        2139,
+        2266,
+        2144,
+        2262
+      ]
+    },
+    {
+      "tet": 19840,
+      "quality": 0.0022425743709203593,
+      "condition": 17811.421373572353,
+      "center": [
+        19.47916827398967,
+        -47.3963814245551,
+        111.47041044813906
+      ],
+      "indices": [
+        8836,
+        8869,
+        8837,
+        8868
+      ]
+    },
+    {
+      "tet": 19799,
+      "quality": 0.002537148695293067,
+      "condition": 7665.754191370021,
+      "center": [
+        19.793561696257107,
+        -47.46021701482171,
+        111.27751279075947
+      ],
+      "indices": [
+        8837,
+        8743,
+        8802,
+        8800
+      ]
+    },
+    {
+      "tet": 2692,
+      "quality": 0.002693501501357986,
+      "condition": 6605.126588112101,
+      "center": [
+        42.50818342468965,
+        -48.792545720097266,
+        87.33972502388393
+      ],
+      "indices": [
+        743,
+        1268,
+        762,
+        865
+      ]
+    },
+    {
+      "tet": 19790,
+      "quality": 0.002712723240960325,
+      "condition": 5318.53631971674,
+      "center": [
+        19.847020287083044,
+        -47.46546023908324,
+        111.26714892454214
+      ],
+      "indices": [
+        8744,
+        8837,
+        8743,
+        8802
+      ]
+    },
+    {
+      "tet": 10777,
+      "quality": 0.003443557775418383,
+      "condition": 1968.5904677659046,
+      "center": [
+        37.92598698525164,
+        -50.84823483559263,
+        92.9154080792224
+      ],
+      "indices": [
+        3510,
+        3512,
+        3781,
+        3717
+      ]
+    },
+    {
+      "tet": 20280,
+      "quality": 0.0034718181745590528,
+      "condition": 8506.126205048262,
+      "center": [
+        16.334706176383587,
+        -46.893109824920145,
+        113.48344028383573
+      ],
+      "indices": [
+        9316,
+        9317,
+        9348,
+        9349
+      ]
+    },
+    {
+      "tet": 38464,
+      "quality": 0.003852318165674667,
+      "condition": 1135.5654856288256,
+      "center": [
+        37.86977503287005,
+        -50.85472190247032,
+        92.9602942766636
+      ],
+      "indices": [
+        3781,
+        3636,
+        3510,
+        3717
+      ]
+    },
+    {
+      "tet": 14183,
+      "quality": 0.003904559722768945,
+      "condition": 300.1182362462406,
+      "center": [
+        52.553787568683305,
+        -3.5288848406890128,
+        86.43615343431253
+      ],
+      "indices": [
+        5343,
+        3528,
+        5339,
+        2661
+      ]
+    },
+    {
+      "tet": 11042,
+      "quality": 0.0039735121972114765,
+      "condition": 2820.966361026498,
+      "center": [
+        38.030413220213205,
+        -50.814604808442766,
+        92.78899470847864
+      ],
+      "indices": [
+        3717,
+        3512,
+        3641,
+        3510
+      ]
+    },
+    {
+      "tet": 41017,
+      "quality": 0.0041007454341590545,
+      "condition": 5316.02756273254,
+      "center": [
+        42.95415115412774,
+        -48.10656103086736,
+        87.02512114396418
+      ],
+      "indices": [
+        494,
+        12022,
+        641,
+        527
+      ]
+    },
+    {
+      "tet": 41019,
+      "quality": 0.004336753293957498,
+      "condition": 4647.685521916804,
+      "center": [
+        42.9037631295744,
+        -48.12829836211232,
+        86.91628478466345
+      ],
+      "indices": [
+        12022,
+        641,
+        608,
+        494
+      ]
+    },
+    {
+      "tet": 29740,
+      "quality": 0.0043790782583277696,
+      "condition": 1793.9472376039544,
+      "center": [
+        27.269778972378795,
+        -50.57943809549556,
+        106.21668182517968
+      ],
+      "indices": [
+        3460,
+        1189,
+        1518,
+        1169
+      ]
+    },
+    {
+      "tet": 6813,
+      "quality": 0.004704854297878558,
+      "condition": 5527.755677874161,
+      "center": [
+        40.67703136899411,
+        -49.81527205673379,
+        89.58477804301174
+      ],
+      "indices": [
+        2258,
+        2017,
+        2027,
+        2144
+      ]
+    },
+    {
+      "tet": 2709,
+      "quality": 0.004984856334583703,
+      "condition": 6134.99871046119,
+      "center": [
+        42.25533537011655,
+        -48.764255815316005,
+        87.75014521267364
+      ],
+      "indices": [
+        767,
+        989,
+        1270,
+        1119
+      ]
+    },
+    {
+      "tet": 41020,
+      "quality": 0.005204039272076208,
+      "condition": 4810.207582797135,
+      "center": [
+        42.95408192603142,
+        -48.106401334012105,
+        87.02332441871499
+      ],
+      "indices": [
+        400,
+        641,
+        608,
+        12022
+      ]
+    },
+    {
+      "tet": 5434,
+      "quality": 0.005320613850574353,
+      "condition": 1576.637449813907,
+      "center": [
+        27.148491569383012,
+        -50.48098064414642,
+        106.35964752824897
+      ],
+      "indices": [
+        3460,
+        1518,
+        1861,
+        1505
+      ]
+    },
+    {
+      "tet": 10925,
+      "quality": 0.005529313935730993,
+      "condition": 2040.1769397015871,
+      "center": [
+        37.92698931015355,
+        -50.84879546420663,
+        92.96323448698047
+      ],
+      "indices": [
+        3512,
+        3719,
+        3717,
+        3641
+      ]
+    },
+    {
+      "tet": 9582,
+      "quality": 0.005655484132983959,
+      "condition": 3970.0848782267058,
+      "center": [
+        38.48580301590859,
+        -50.64866684351745,
+        92.31188852699708
+      ],
+      "indices": [
+        3293,
+        3399,
+        3297,
+        3394
+      ]
+    }
+  ]
+}
+{
+  "source_surface_sha256": "473540e65bab097e483ec0f3e41d7f4999ef988c907a5f8c0906bf7c3a44d902",
+  "source_tets_sha256": "9454932854a7e2691bb5f790c36318b08e436208bcc52be213f037f3bbd15ccc",
+  "geometry_sha256": "c5e9978825b4073a17a29a91c867fd6fe13260aa64b96128c3236b9f026e31d9",
+  "attachment_faces_sha256": "9544d9c0ea2dd535764dd0b2c2581cefba8cab88e9c40f02e1bce0ec51bc2d61",
+  "nodes": 12023,
+  "tetrahedra": 41027,
+  "boundary_faces": 20048,
+  "minimum_determinant": 7.623162994716958e-07,
+  "positive_cells": true,
+  "internal_oriented_faces_cancel": true,
+  "connected_components": 1,
+  "volume_complex_euler": 1,
+  "surface_coordinates_byte_exact": true,
+  "boundary_roundtrip_restore_maximum": 5.739584601870544e-14,
+  "two_bone_footprints_byte_exact": true,
+  "exact_footprint_face_counts": {
+    "mandibular_origin_face_ids": 176,
+    "zygomatic_origin_face_ids": 301
+  },
+  "quality": {
+    "quality_quantiles": [
+      0.0017539261519359303,
+      0.007043297542132525,
+      0.04073866443212663,
+      0.34187883198926683,
+      0.688845242364204,
+      0.9982764533382245
+    ],
+    "condition_quantiles": [
+      1.1366056145981902,
+      4.442204017365874,
+      10.762367140244075,
+      141.86923832503112,
+      1792.7533713330465,
+      21964.840609480783
+    ],
+    "quality_below_001": 0
+  },
+  "admitted_reference_geometry": true,
+  "solve_ready": false,
+  "limits": [
+    "Thin-sheet quality tail remains: minimum mean-ratio0.00175, maximum local matrix condition about21965. New finite equilibrium/contact/reaction gates are required, no certified model claim.",
+    "Static external surface/contact checks are inherited exactly from pinned shared-junction-v2.",
+    "No new activation/material assignment is implied by boundary display IDs.",
+    "Regional unbound cut ends still require declared support/continuation conditions.",
+    "Exact preferred head is not deformed or mechanically coupled by this reference geometry alone."
+  ]
+}
+CYBR_RSS_GUARD {"peak_sampled_aggregate_rss_mib": 699.16, "sampled_stop_margin_mib": 900.0, "nominal_maximum_mib": 1024.0, "kernel_hard_cap": false, "admission_available_mib": 6599.546875, "concurrent_load_possible": true, "interval_seconds": 0.05, "stopped_for_rss": false, "stopped_for_time": false, "timeout_seconds": 90.0, "guard_measurement_valid": true, "elapsed_seconds": 29.99, "scope": "Owned Blender tree, including optional OIDN child; user-space sampled guard, not kernel hard limit"}

@@ -1,0 +1,81 @@
+{
+  "eyes": [
+    {
+      "object_id": 1,
+      "center_input_units": [
+        -31.3,
+        12.0,
+        94.6
+      ],
+      "radius_input_units": 12.3,
+      "iris_radius": 5.5,
+      "pupil_radius": 2.08,
+      "maximum_cornea_extension": 0.395,
+      "corneal_radius": 5.56,
+      "original_globe_cap": "shader transparent where radial distance <5.54 and anterior offset>5; unchanged mesh",
+      "corneal_model": "Explicit air-cornea-aqueous boundaries with relative IORs, no overlapping volumes; shadow rays bypass refraction/occlusion in the practical preview",
+      "front_center_z_relative": 12.695,
+      "iris_z_range_relative": [
+        10.262936112783663,
+        10.690765104729863
+      ],
+      "iris_triangles_front_facing": true,
+      "interface_construction": {
+        "shadow_ray_passthrough": true,
+        "construction": "Single, noncoincident surface per medium boundary; explicit index ratios; no participating-volume absorption. Shared posterior interface is represented only once.",
+        "cornea_ior": 1.376,
+        "aqueous_ior": 1.3374,
+        "posterior_relative_ior": 1.0288619709884852,
+        "corneal_thickness_design_units": [
+          0.25,
+          0.45
+        ],
+        "rear_plane_z_relative": 9.8,
+        "posterior_min_z_relative": 10.756617929913528,
+        "roughness": 0,
+        "source_for_index_values": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-16-8-1881",
+        "limits": "Published scalar index examples only. Authored curvature, thickness and eye pose are not calibrated. No lens, retina, dispersion, accommodation or measured tear film."
+      },
+      "surfaces": "Front, posterior, rear and rim boundaries; each shared medium interface appears once. Individual boundaries are intentionally open, with no overlapping glass volumes."
+    },
+    {
+      "object_id": 2,
+      "center_input_units": [
+        31.3,
+        12.0,
+        94.6
+      ],
+      "radius_input_units": 12.3,
+      "iris_radius": 5.5,
+      "pupil_radius": 2.08,
+      "maximum_cornea_extension": 0.395,
+      "corneal_radius": 5.56,
+      "original_globe_cap": "shader transparent where radial distance <5.54 and anterior offset>5; unchanged mesh",
+      "corneal_model": "Explicit air-cornea-aqueous boundaries with relative IORs, no overlapping volumes; shadow rays bypass refraction/occlusion in the practical preview",
+      "front_center_z_relative": 12.695,
+      "iris_z_range_relative": [
+        10.262936112783663,
+        10.690765104729863
+      ],
+      "iris_triangles_front_facing": true,
+      "interface_construction": {
+        "shadow_ray_passthrough": true,
+        "construction": "Single, noncoincident surface per medium boundary; explicit index ratios; no participating-volume absorption. Shared posterior interface is represented only once.",
+        "cornea_ior": 1.376,
+        "aqueous_ior": 1.3374,
+        "posterior_relative_ior": 1.0288619709884852,
+        "corneal_thickness_design_units": [
+          0.25,
+          0.45
+        ],
+        "rear_plane_z_relative": 9.8,
+        "posterior_min_z_relative": 10.756617929913528,
+        "roughness": 0,
+        "source_for_index_values": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-16-8-1881",
+        "limits": "Published scalar index examples only. Authored curvature, thickness and eye pose are not calibrated. No lens, retina, dispersion, accommodation or measured tear film."
+      },
+      "surfaces": "Front, posterior, rear and rim boundaries; each shared medium interface appears once. Individual boundaries are intentionally open, with no overlapping glass volumes."
+    }
+  ],
+  "scope": "Original authored eye similarity frame. Scalar dimensions are design units without physical calibration."
+}

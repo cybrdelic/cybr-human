@@ -1,0 +1,15 @@
+{
+  "schema": "preferred-original-v53-selection-v1",
+  "namespace": "original-coordinated-20261010-v53",
+  "status": "Selected rough rest baseline; incomplete anatomy",
+  "head_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "semantics_sha256": "d2587be48722543d557a329870f78b29125d1bfa0f0d0aa54d0fc8adc2dce811",
+  "selection_rule": "This baseline is unchanged by optional visual candidates or regional mechanics examples. A later version number does not select a successor.",
+  "preserved_relations": [
+    "orbital depth",
+    "cheek-to-mouth flow",
+    "oral/mental/chin volume",
+    "oblique neck and jaw"
+  ],
+  "source_scope": "Exact original v5 input through authored v6c/v8/v46/v53. Earlier r20 generation is outside this checkpoint."
+}

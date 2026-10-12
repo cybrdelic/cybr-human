@@ -1,0 +1,116 @@
+{
+  "scope": "Fresh source replay of selected original regional cheek, neutral and right02. No later loaded insertion.",
+  "arrays": {
+    "cheek-remesh-v9/geometry.npz": {
+      "vertices": true,
+      "tetrahedra": true,
+      "boundary_faces": true,
+      "bone_vertices": true,
+      "bone_triangles": true,
+      "root_node_ids": true,
+      "root_bone_vertex_ids": true,
+      "root_faces": true,
+      "root_bone_face_ids": true,
+      "fixed_nodes": true,
+      "path_controls": true,
+      "ring_parameters": true,
+      "ring_centers": true,
+      "ring_tangents": true,
+      "ring_scale": true,
+      "active_tetrahedra": true,
+      "body_ring_node_ids": true,
+      "parity": true,
+      "skin_distance": true,
+      "original_root_node_ids": true
+    },
+    "cheek-skin-binding-v5/binding.npz": {
+      "vertex_ids": true,
+      "points": true,
+      "indices": true,
+      "weights": true,
+      "gain": true,
+      "carrier_face_ids": true,
+      "closest_points": true,
+      "offset": true,
+      "normal_alignment": true,
+      "distance": true,
+      "source_head_sha256": true,
+      "source_case_sha256": true,
+      "source_geometry_sha256": true
+    },
+    "cheek-skin-states-v4/neutral-0.npz": {
+      "vertex_ids": true,
+      "displacement": true,
+      "fem_vertices": true,
+      "head_sha256": true,
+      "case_sha256": true,
+      "binding_sha256": true
+    },
+    "cheek-skin-states-v4/right-02.npz": {
+      "vertex_ids": true,
+      "displacement": true,
+      "fem_vertices": true,
+      "head_sha256": true,
+      "case_sha256": true,
+      "binding_sha256": true
+    }
+  },
+  "files": {
+    "cheek-case-v3/domain.json": {
+      "original_sha256": "936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf",
+      "replay_sha256": "936c230b883abca093058a76feac92fe572d8b5d2f851c006a94acb0230c15cf",
+      "exact": true
+    },
+    "cheek-case-v3/arrays.bin": {
+      "original_sha256": "a2639e37de4e28c951ce5391c76e076f94b036b6fac0ebdbfad6940edff38de1",
+      "replay_sha256": "a2639e37de4e28c951ce5391c76e076f94b036b6fac0ebdbfad6940edff38de1",
+      "exact": true
+    },
+    "cheek-case-v3/bones.bin": {
+      "original_sha256": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+      "replay_sha256": "f711957a43158b53fc5831675a54a2661d209717233c1f4f3ce9a25a255289da",
+      "exact": true
+    },
+    "cheek-remesh-v9/geometry.npz": {
+      "original_sha256": "5fe664216b7670dfecb37500828becbec29c37ea86e6aa59f1e229606fed976c",
+      "replay_sha256": "5fe664216b7670dfecb37500828becbec29c37ea86e6aa59f1e229606fed976c",
+      "exact": true
+    },
+    "cheek-skin-binding-v5/binding.npz": {
+      "original_sha256": "e1a3a6aa631a67fd311eb1e6b42c2d93d762e7110b65ed33f56c7f079aa14392",
+      "replay_sha256": "e1a3a6aa631a67fd311eb1e6b42c2d93d762e7110b65ed33f56c7f079aa14392",
+      "exact": true
+    }
+  },
+  "states": {
+    "neutral-0": {
+      "positions_exact": true,
+      "residual_exact": true,
+      "energy_exact": true,
+      "minJ_exact": true,
+      "source_domain_exact": true,
+      "converged": true
+    },
+    "right-02": {
+      "positions_exact": true,
+      "residual_exact": true,
+      "energy_exact": true,
+      "minJ_exact": true,
+      "source_domain_exact": true,
+      "converged": true
+    }
+  },
+  "notes": [
+    "FEM JSON file hashes differ because measured time/RSS metadata are actual new run values. Sparse NPZ source-state hashes consequently differ, while every numerical pose/displacement array is exact."
+  ],
+  "guard": {
+    "seconds": 21.23,
+    "peak_sampled_MiB": 710.88,
+    "threads": 2,
+    "cpus": [
+      2,
+      3
+    ],
+    "stopped": false
+  }
+}

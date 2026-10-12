@@ -1,0 +1,246 @@
+{
+  "schema": "human-original-regional-bone-parameters-v1",
+  "coordinate_system": "Native v16, X lateral / Y up / Z anterior. Uncalibrated authored design units.",
+  "side": "positive X only",
+  "scope": "Bounded zygomatic/maxillary support. No full cranium, mandible, dentition, sinus interior, orbital roof or detailed sutures.",
+  "grid_spacing": 1.25,
+  "grid_bounds": [
+    [
+      10,
+      -49,
+      14
+    ],
+    [
+      69,
+      30,
+      117
+    ]
+  ],
+  "zygomatic_body": {
+    "center": [
+      46,
+      -10,
+      87.5
+    ],
+    "radii": [
+      12.2,
+      17,
+      6.0
+    ],
+    "z_shear_x": -0.85,
+    "z_shear_y": -0.14
+  },
+  "zygomatic_arch": {
+    "points": [
+      [
+        53.5,
+        -7,
+        82
+      ],
+      [
+        58.5,
+        -5.5,
+        74
+      ],
+      [
+        62,
+        -3,
+        59
+      ],
+      [
+        62,
+        0,
+        40
+      ],
+      [
+        58,
+        1,
+        23
+      ]
+    ],
+    "radii": [
+      2.7,
+      3.5,
+      2.7
+    ],
+    "interpolation_samples": 31
+  },
+  "inferior_orbital_rim": {
+    "points": [
+      [
+        14,
+        -3,
+        98
+      ],
+      [
+        20,
+        -8,
+        101
+      ],
+      [
+        28,
+        -10,
+        102
+      ],
+      [
+        37,
+        -8,
+        98
+      ],
+      [
+        46,
+        -3,
+        90
+      ]
+    ],
+    "radii": [
+      2.6,
+      2.5,
+      3.0
+    ],
+    "interpolation_samples": 29
+  },
+  "lateral_orbital_rim": {
+    "points": [
+      [
+        46,
+        -3,
+        90
+      ],
+      [
+        51,
+        4,
+        87
+      ],
+      [
+        53,
+        13,
+        85
+      ],
+      [
+        50.5,
+        25,
+        86
+      ]
+    ],
+    "radii": [
+      2.9,
+      2.8,
+      3.4
+    ],
+    "interpolation_samples": 25
+  },
+  "maxillary_face": {
+    "outline_xy": [
+      [
+        15,
+        -38
+      ],
+      [
+        23,
+        -44
+      ],
+      [
+        30,
+        -41
+      ],
+      [
+        36,
+        -31
+      ],
+      [
+        40,
+        -21
+      ],
+      [
+        37,
+        -12
+      ],
+      [
+        31,
+        -7
+      ],
+      [
+        21,
+        -6
+      ],
+      [
+        15,
+        -13
+      ],
+      [
+        13,
+        -27
+      ]
+    ],
+    "thickness": 4.8,
+    "base_z": 113,
+    "x_quadratic": -0.035,
+    "y_linear": 0.09,
+    "upper_recess_depth": 11,
+    "canine_fossa_depth": 1.2
+  },
+  "union_blend": 1.6,
+  "globe": {
+    "center": [
+      31.3,
+      12,
+      94.6
+    ],
+    "radius": 13.161,
+    "reserved_clearance": 7.5,
+    "clearance_note": "Expanded authoring exclusion is an orbit-space design constraint. The actual native skin cavity is checked independently."
+  },
+  "landmark_seeds": {
+    "zygomaticus_major_origin_patch_center": [
+      51.5,
+      -5,
+      88.8
+    ],
+    "legacy_fibre_origin_comparison": [
+      49,
+      -9,
+      91.0
+    ],
+    "malar_prominence": [
+      47,
+      -11,
+      94
+    ],
+    "zygomatic_arch_anterior": [
+      56,
+      -5,
+      79
+    ],
+    "zygomatic_arch_posterior_cut": [
+      58,
+      1,
+      23
+    ],
+    "inferior_orbital_rim_lowpoint": [
+      28,
+      -12,
+      103
+    ],
+    "zygomaticomaxillary_junction": [
+      36,
+      -13,
+      101
+    ],
+    "maxillary_canine_fossa": [
+      23,
+      -23,
+      108
+    ],
+    "lateral_orbital_rim_superior_cut": [
+      50.5,
+      25,
+      86
+    ],
+    "masseter_origin_arch_inferior": [
+      62,
+      -3.5,
+      47
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {StaticBoneSweptBVH} from './static_bone_swept_bvh.mjs';
+import {createVerifiedDistributedBondedPatch,verifyDistributedBondedState,verifyDistributedBondedTrajectory} from './parameterized_bonded_patch.mjs';
+const x=Float64Array.from([.2,.2,0,.5,.2,0,.2,.5,0,.25,.25,1]),faces=[[0,2,1],[0,1,3],[1,2,3],[2,0,3]],fixed=Uint8Array.from([1,1,1,1]);
+const roots=[{node:0,boneId:'b',boneFace:0,weights:[.6,.2,.2]},{node:1,boneId:'b',boneFace:0,weights:[.3,.5,.2]},{node:2,boneId:'b',boneFace:0,weights:[.3,.2,.5]}];
+const make=(height)=>new StaticBoneSweptBVH({bones:[{id:'b',vertices:[[0,0,0],[1,0,0],[0,1,0],[0,0,height],[1,0,height],[0,1,height]],triangles:[[0,1,2],[3,4,5]]}]});
+const bvh=make(1+.000001),opts={collider:bvh,positions:x,boundaryFaces:faces,fixed,targets:x,rootRecords:roots,rootPatchFaces:[{nodes:[0,1,2],boneId:'b',boneFace:0}],minimumDistance:.00001},token=createVerifiedDistributedBondedPatch(opts);
+assert.equal(token.summary.rootNodes,3);assert.ok(token.summary.stationarySubMarginPairs>0);assert.ok(token.summary.stationaryGapPairs.every(p=>p.certifiedPositiveGap>0));
+assert.equal(verifyDistributedBondedState(token,{positions:x,fixed,targets:x}).valid,true);
+const shifted=x.slice();shifted[11]+=.0000001;assert.equal(verifyDistributedBondedState(token,{positions:shifted,fixed,targets:x}).valid,false);
+assert.equal(verifyDistributedBondedTrajectory(token,{collider:make(1+.000002),start:x,end:x,faces,minimumDistance:.00001}).valid,false);
+assert.equal(verifyDistributedBondedTrajectory(token,{collider:bvh,start:x,end:shifted,faces,minimumDistance:.00001}).valid,false);
+assert.throws(()=>createVerifiedDistributedBondedPatch({...opts,collider:make(.99999)}));
+assert.throws(()=>createVerifiedDistributedBondedPatch({...opts,fixed:Uint8Array.from([1,1,1,0])}));
+console.log(JSON.stringify({sourceParametricCap:true,rigidSubmarginPositiveGap:true,changedTargetRejected:true,changedBoneRejected:true,movingRigidPointRejected:true,actualIntersectionRejected:true,unfixedRootSeamRejected:true}));

@@ -1,0 +1,68 @@
+[
+  {
+    "path": "SELECTION_AND_STATUS.json",
+    "original_sha256": "90ce6d2eae3a2698fe339b2368070e2929e7c2a63ca4a715928dc280f2cd1a95",
+    "public_sha256": "cc66e6493c9d7402a8036aebaed90439debf1ce62e53667a297560167db7c0f3",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-anatomical-assembly-20261011/replay-extended.log",
+    "original_sha256": "82deb497470a8fdb3ec8637c28dde4f50facb8e2c063bdf5d867c969d2d2fe39",
+    "public_sha256": "f18f8010a2ea09b4acbd7c34974670542993cecf6abffb417b2fc644210d9757",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-mechanics-20261011/compliant-v2-neutral.log",
+    "original_sha256": "f6f7201bf2992b47387c6e09b59af049efab1a57e5007e8f704d1625eb777d0b",
+    "public_sha256": "9e45a81ea055aa2ebaf4076bc3bf6937a887c82811daf9f58a631f79decabddb",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-mechanics-20261011/perioral-v3-fresh-replay.log",
+    "original_sha256": "90a36ec98b5049be980379ee1c76d89a6c806450d43350821fda288009dca6f5",
+    "public_sha256": "0f0088d64001409ceb9865da1705454c6d612e904790e0eadd374ae1bcaf7234",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-mechanics-20261011/passive-insertion-build-v1.log",
+    "original_sha256": "7c5380fd8fc6b1a17b515532149b313f24dd7fdf547b2c88241e73d444d5a3c1",
+    "public_sha256": "c368ba6583e6bb7c4e76887543ec979a617fb428cc5ccedc7682364c202bc903",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-mechanics-20261011/perioral-v3-neutral.log",
+    "original_sha256": "f8c725c618779044d84bb4dc76f89f0ecc267275424ea8077a0cbcb9e3aabee9",
+    "public_sha256": "461c0911cf1f716cefb44d08f430662344b8cd1e4df3fee2d4184072a75d71e5",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/run.log",
+    "original_sha256": "7c9c4519ad1540a17572231088aa8405dcbf7e85dadf7bcfd8e2381f097e486d",
+    "public_sha256": "214e9e544889dbee8573fb060d3ddf5e59e53b1a5a2de9842122214643871664",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-mechanics-20261011/audit-attachment-reactions-v1/reactions.json",
+    "original_sha256": "2db9e19718464170a79ba439fe2d1ecc3975f77d50d9eb10fd503ca17bcd86dc",
+    "public_sha256": "206d4e9669c8f1baaada25295cf625b4a9fb6b3668c0b4d98d82612a232066a2",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-preferred-v53-mechanics-20261011/reports/cheek-neutral-v3.log",
+    "original_sha256": "11f8628a51eb53e35c28c557aeb93139995d9f9b01ad89c35dc4e34a95068eef",
+    "public_sha256": "0807547678d9c231c8253cef034e325e2bdb2eacbb8077608482f30d7ab44ac5",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/human-mechanics-20261010/output/bilateral-cavity-annulus-v1/native-binding-v1/binding_report.json",
+    "original_sha256": "cf9088d950e12d5f0c2edb50b566c75272cf0db318ee933725d0956f0ef3893e",
+    "public_sha256": "5c24e9dbebb743766ec3bbc6b3eb92bada41e4f24c0f46c1963eba90b18a377f",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  },
+  {
+    "path": "workspace/user-human-preferred/recovery/restored-project/output/coordinated-orbital-scale-v53/anatomical_semantics/semantics.json",
+    "original_sha256": "96e512c24f6737ffb6c7673ede52eab4313745a9b8f5bc59e0502807d45dbef5",
+    "public_sha256": "c51166c3769a9e8aee5ecc1bc5f66a0d644586398b2e7659be55ac08483e43ea",
+    "change": "Remove workspace-specific provenance path or private delivery identity; numerical arrays and code unchanged"
+  }
+]

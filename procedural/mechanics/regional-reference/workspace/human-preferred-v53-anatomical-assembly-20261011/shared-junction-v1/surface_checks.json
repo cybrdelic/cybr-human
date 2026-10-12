@@ -1,0 +1,33 @@
+{
+  "geometry_sha256": "319e5016568d8f9de6bb20316bd0c299a4f201c88b983fa0a6c83a97ba8e6774",
+  "nonincident_crossings": 0,
+  "trimmed_incident_crossings": 0,
+  "nonincident_examples": [],
+  "trimmed_incident_examples": [],
+  "exact_root_face_counts": {
+    "maxillary_support": 301,
+    "mandible": 176
+  },
+  "obstacles": {
+    "skin": {
+      "pairs": 0,
+      "excluded_exact_contact_faces": 0,
+      "crossings": 0,
+      "examples": []
+    },
+    "mandible": {
+      "pairs": 169,
+      "excluded_exact_contact_faces": 57,
+      "crossings": 0,
+      "examples": []
+    },
+    "maxillary_support": {
+      "pairs": 186,
+      "excluded_exact_contact_faces": 171,
+      "crossings": 0,
+      "examples": []
+    }
+  },
+  "admitted_shared_surface": true,
+  "scope": "Connected closed surface only. No tetrahedral elements or new equilibrium. Tested attachment-adjacent faces use 1e-6 centroid trim; retained exact bone-contact faces are excluded explicitly."
+}

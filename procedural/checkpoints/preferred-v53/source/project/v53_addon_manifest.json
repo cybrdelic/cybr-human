@@ -1,0 +1,32 @@
+{
+  "checkpoint": "coordinated-orbital-scale-v53",
+  "input_mesh_sha256": "e568bf8763102e8d9479fc75a295e4d6cdf709c1046d2fd33d0e716e2474ddf6",
+  "output_mesh_sha256": "545b8ea2b292107dc2da9f1e90379989eb620c6ee5c2c50b3f9b5316cc77420e",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3235,
+      "sha256": "840334251d7d4e05b971f94452309a0dd82b2c6b69ab73a6521b571c0fbcf5b3"
+    },
+    {
+      "path": "src/coherent_orbital_scale_v53.py",
+      "bytes": 1874,
+      "sha256": "46b44df365c39fb6bb4672da6ff52d251428c9d3c644585eb4ce279099c6956e"
+    },
+    {
+      "path": "src/freeze_orbital_scale_v53.py",
+      "bytes": 2411,
+      "sha256": "58d8d26725d1a7eac6661a70f08ed2855618a6f915b9e35dbea10b799fc795a8"
+    },
+    {
+      "path": "src/refresh_anatomical_semantics.py",
+      "bytes": 1911,
+      "sha256": "f31a5d31f45c5dadc4a50a1230cb8088d84ee8667ef8a6db2db9d602261250aa"
+    },
+    {
+      "path": "verify_v53_addon.py",
+      "bytes": 567,
+      "sha256": "ba3b2c9b740eac7fcaab3234adb6deae033f3b4e77caca46b9214d1951468f4a"
+    }
+  ]
+}
