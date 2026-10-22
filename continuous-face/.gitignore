@@ -46,3 +46,6 @@ venv/
 # Restored source-data tree and runtime provenance are local, including JSON companions
 /src/supported-candidate/full-face-coverage-plan/restored/
 /src/supported-candidate/whole-face-continuum-staging/mechanics/coarse-physical-site-v1/supports/
+
+# Generated portable native build cache
+.build/

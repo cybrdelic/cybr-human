@@ -1,0 +1,62 @@
+name: Continuous face portability
+on:
+  push:
+    paths: ['continuous-face/**', '.github/workflows/continuous-face-portability.yml']
+  pull_request:
+    paths: ['continuous-face/**', '.github/workflows/continuous-face-portability.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-native:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: continuous-face
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: continuous-face
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: continuous-face/requirements-observed.txt
+      - name: Install observed Python dependencies and portable build driver
+        run: python -m pip install --no-compile -r requirements-observed.txt "cmake>=3.20"
+      - name: Verify frozen source and mechanics fixtures
+        run: python -B tests/smoke.py
+      - name: Test platform contracts
+        run: python -B -m unittest discover -s tests -p test_portable_runtime.py
+      - name: Compile native rasterizer and test actual pixels
+        run: python -B tests/native_render_smoke.py
+      - name: Locate or install FFmpeg on Linux
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+      - name: Locate or install FFmpeg on macOS
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            brew install ffmpeg
+          fi
+      - name: Locate or install FFmpeg on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          if (-not (Get-Command ffmpeg -ErrorAction SilentlyContinue) -or -not (Get-Command ffprobe -ErrorAction SilentlyContinue)) {
+            choco install ffmpeg --yes --no-progress
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+      - name: Verify real media encode and decoded frame count
+        run: python -B tests/media_tools_smoke.py

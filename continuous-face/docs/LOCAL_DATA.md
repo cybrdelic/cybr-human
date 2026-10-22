@@ -17,7 +17,7 @@ For a new machine, use a locally authorized data location. `data/`, `runs/`, `re
 ## Minimum portability work still required
 
 1. Make data/project roots explicit instead of deriving them through `__file__.parents[...]`; preserve each source byte until deliberately creating a new version.
-2. Make contact/reconstruction import paths and tool paths explicit. The supplied smoke establishes the necessary PYTHONPATH without rewriting imports. Renderer code expects `/usr/bin/c++`, `/usr/bin/ffmpeg` and `/usr/bin/ffprobe` and writes native build products next to its module.
+2. Make contact/reconstruction import paths and tool paths explicit. The supplied smoke establishes the necessary PYTHONPATH without rewriting imports. The frozen renderer code expects `/usr/bin/c++`, `/usr/bin/ffmpeg` and `/usr/bin/ffprobe`. New platform runs use the separately derived [portable renderer](PORTABILITY.md), which discovers tools and builds in a temporary cache; historical sources and proof hashes stay unchanged.
 3. Provide a verified external-path mapping for accepted-history proofs and immutable report snapshots. Reports contain original absolute provenance paths. Do not edit historical proofs to force them to pass, remove hash checks, or assume relative source relocation also relocates historical evidence.
 4. Capture a tested, platform-specific environment/lockfile and run actual data-dependent validation on a clean authorized copy. Observed package versions alone are not that proof.
 

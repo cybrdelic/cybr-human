@@ -8,6 +8,7 @@ Source-only handoff of a coarse anatomy-driven whole-face mechanics engineering 
 - The exact parent constitutive/tangent and inherited contact modules needed by those imports.
 - Geometry construction sources and archived helpers, with their provenance limitations disclosed.
 - Separate frozen renderer 0005 and 0006 source readers. **Use 0006 for v14 receipts**; 0005 recognizes older controller identities.
+- A separately identified portable derivative of renderer 0006, with CMake builds and discovered FFmpeg tools for new platform runs.
 - A separate three-file v15 source delta. It is not applied to the v14 tree.
 - Hash manifests, local-data requirements, and small repository smoke tests.
 
@@ -23,13 +24,13 @@ python3 -B tests/smoke.py
 
 This checks source hashes/parsing and runs 14 tiny synthetic mechanics/history tests. It does not load anatomy, run a face solve, resume a history, or establish scientific validity.
 
-Optional native renderer smoke additionally requires Pillow and `/usr/bin/c++`:
+The derived portable renderer additionally requires Pillow, CMake and a C++17 compiler (Visual Studio Build Tools, Xcode command-line tools, or GCC/Clang). See [portable setup and OS coverage](docs/PORTABILITY.md):
 
 ```sh
 python3 -B tests/native_render_smoke.py
 ```
 
-It builds in a temporary directory and tests only synthetic pixel/math fixtures.
+It builds a platform-native library in a short temporary cache and tests only synthetic pixel/math fixtures. Frozen source snapshots are preserved; the new portable derivative does not certify a full face solve or movie.
 
 ## Reproduction boundary
 
