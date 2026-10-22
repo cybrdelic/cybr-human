@@ -1,0 +1,18 @@
+# Architecture and entry points
+
+The staged source root is `src/supported-candidate/`. Its `whole-face-continuum-staging/` child is abbreviated W here. Files remain in layout-compatible directories; tests colocated with frozen sources were not moved or rewritten.
+
+1. **Geometry:** W/geometry/build_domain.py constructs a voxel-selected homogenized material domain from registered anatomy. build_muscle_phases.py, finalize_carrier.py, normalize_final_roundoff.py and audit_geometry.py complete the documented construction sequence. These are not startup commands for a cheap check. The authoritative finalized carrier is an external NPZ, not regenerated in this handoff.
+2. **Material and source mapping:** parent mechanics.py and current_tangent.py provide finite-strain active material energy/gradient and tangent. W/mechanics/continuum.py implements the shared affine carrier/cut-volume mixture; source_transfer.py maps verified source fibres and source-origin information. Generic material/length assumptions are not patient measurements.
+3. **Dynamics and constraints:** force_state_dynamics.py / implicit_dynamics.py, barrier_reconstruction_continuation.py, exterior_epigraph.py, factored_seam_kkt.py and linear_equilibration.py implement implicit solves, source-origin constraints, contact search and stationarity checks.
+4. **Coarse contact:** W/contact/coarse_physical_site_contact*.py query occupied material sites against finite native rigid owners. coarse_rigid_query.py, rolling_exterior_bounds.py and interior-feature-tangent-v1/ supply finite queries, conservative screens and numerical tangents. Inherited root, unified-contact-staging and deformable-contact-staging modules are separate from the v14 source manifest.
+5. **Accepted history:** W/mechanics/paired_reconstruction_020_curvature_sequence.py is the paired controller. It calls coarse_reconstruction_020_curvature_driver.py and the external W/contact/reconstruction-020-v1/audit_reconstruction_020_intervals.py. Both cases and their own immutable interval audits must qualify before a paired cursor advances. Failed candidates and NONPHYSICAL seeds are not frames.
+6. **Rendering:** W/visualization/fixed-barrier-renderer-source-snapshot-0006/ contains accepted_frames.py, fixed_policy_reader.py and report/proof bindings, then literal_renderer.py plus rasterizer.cpp. measure_latest_pair.py compares matched passive/active states; render_mobile_actual.py renders an actual admitted single-case history. Rendering does not solve or certify mechanics.
+
+## Runtime entry-point arguments
+
+The paired controller requires `--resume-directory`, two `--prior-interval-audits`, a new `--output`, `--target-time-s`, `--dt`, `--minimum-retry-dt`, and `--audit-tag-prefix`. Fixed policy uses `--barrier-policy fixed_mu_0p04_empirical_promotion_v1`. Do not construct a resume command from just q, a single NPZ, or a wall-clock estimate. Recover and verify the complete admitted pair, cursor, own-case immutable audit chains, report snapshots and any authenticated gzip companions first.
+
+The direct driver requires `--guard-module`, `--output`, audited resume inputs and an external audit tag. It is an implementation entry point, not permission to bypass paired admission. This handoff intentionally supplies no automatically executable full-run command.
+
+Renderer measurement uses `--geometry`, `--paired-cursor`, and a new `--output`. A cumulative movie additionally uses exact `--frames`, `--report`, `--closed-path-audit`, `--case`, `--movie`, and one `--slow-motion-factor`. Never interpolate or invent frames to make a short history appear finished.

@@ -1,0 +1,48 @@
+# Local datasets, simulation states, recovery, and rendered outputs
+/data/
+/runs/
+/recovery/
+/outputs/
+*.npz
+*.npy
+*.obj
+*.ply
+*.stl
+*.blend
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.zip
+*.tar
+*.tar.gz
+*.prof
+*.pstats
+*.log
+# Python, native build products, and local environments
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+*.dll
+*.o
+*.a
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Credentials and editor/OS files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+# Generated rasterizer build records, not source configuration
+/src/supported-candidate/whole-face-continuum-staging/visualization/*/build.json
+# Restored source-data tree and runtime provenance are local, including JSON companions
+/src/supported-candidate/full-face-coverage-plan/restored/
+/src/supported-candidate/whole-face-continuum-staging/mechanics/coarse-physical-site-v1/supports/

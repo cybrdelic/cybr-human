@@ -1,0 +1,4 @@
+# Observed environment only; not validated on a fresh machine and not a transitive lockfile.
+numpy==2.3.5
+scipy==1.17.0
+Pillow==12.3.0

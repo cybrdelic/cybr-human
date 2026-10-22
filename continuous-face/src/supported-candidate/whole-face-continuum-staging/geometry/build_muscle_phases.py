@@ -1,0 +1,11 @@
+from pathlib import Path
+import json,numpy as np,time
+import build_domain as b
+G=Path(__file__).parent;t=time.time();a=np.load(G/'whole-face-continuum.npz');r=json.loads((G/'whole-face-geometry-report.json').read_text());src=np.load(b.SOURCE/'exact-rest/anatomy-registered-rest.npz');V=src['vertices'];F=src['triangles'];PID=src['part_ids'];origin=a['grid_origin'];spacing=float(a['grid_spacing']);ijk=a['quadrature_cell_ijk'];shape=np.max(ijk,axis=0)+1;lookup=np.full(tuple(shape),-1,np.int32);lookup[tuple(ijk.T)]=np.arange(len(ijk));qi=[];pi=[];reports=[]
+for rr in r['source_records']:
+ if rr['kind']!='muscle':continue
+ pid=rr['part_id'];ff=F[PID==pid];used,inv=np.unique(ff,return_inverse=True);cells,rep=b.raster_solid(V[used],inv.reshape(-1,3),origin,spacing,shape);valid=np.all((cells>=0)&(cells<shape),axis=1);q=lookup[tuple(cells[valid].T)];q=q[q>=0];q=q[a['quadrature_material_fraction'][q,1]>0];qi.append(q);pi.append(np.full(len(q),pid,np.int16));rep.update(part_id=pid,selected_integration_cells=len(q));reports.append(rep)
+ print(pid,rr['name'],len(q),flush=True)
+q=np.concatenate(qi);p=np.concatenate(pi);cnt=np.bincount(q,minlength=len(ijk));fraction=a['quadrature_material_fraction'][q,1]/cnt[q];total=np.bincount(q,weights=fraction,minlength=len(ijk));error=float(abs(total-a['quadrature_material_fraction'][:,1]).max());assert error<1e-7,error
+np.savez_compressed(G/'whole-face-muscle-phases.npz',muscle_quadrature_index=q.astype(np.int32),muscle_source_part=p,muscle_fraction=fraction.astype(np.float32),source_sha256=a['source_sha256'])
+r['muscle_phases']={'file':'whole-face-muscle-phases.npz','rows':len(q),'unique_sources':len(np.unique(p)),'normalized_mixture_max_error':error,'native_overlap_policy':'Each source membership contributes equal share of absolute muscle fraction at point; source fraction sums to column1 exactly. These shares are a homogenization assumption, not competing stacked volumes.','fibre':'Not inferred here. Mechanics must transfer only verified body-packet fibre directions for each corresponding source; remaining source muscles passive.','source_raster_records':reports,'seconds':time.time()-t};(G/'whole-face-geometry-report.json').write_text(json.dumps(r,indent=2));print('DONE',len(q),error)

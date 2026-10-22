@@ -1,0 +1,112 @@
+{
+  "schema": "cybr-human-local-data-contract-v1",
+  "root": "src/supported-candidate",
+  "note": "Inventory only. Data must remain local and out of Git. Relocation of historical proofs is not certified.",
+  "files": [
+    {
+      "project_relative_path": "full-face-coverage-plan/restored/exact-rest/anatomy-registered-rest.npz",
+      "sha256": "2555740759e8dd2f50a504914d02f582ba13725c8c77da1fbbb67c55f4c9978d",
+      "size_bytes": 16674971,
+      "purpose": "registered anatomy",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "full-face-coverage-plan/restored/anatomy-reference/prior-body-handoff/anatomy-metadata.json",
+      "sha256": "da2af95f3e68be8d5f7aef851555ea7e30175da53dc5c7f2a199a36176777fc9",
+      "size_bytes": 91692,
+      "purpose": "anatomy ownership/provenance and rigid-source metadata",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/geometry/whole-face-continuum-final.npz",
+      "sha256": "52be768af2970a48404aaec97a6588a84b370b2c944f336ca3da5b2fa36040d8",
+      "size_bytes": 9463699,
+      "purpose": "mechanics/contact geometry",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/geometry/whole-face-muscle-phases-final.npz",
+      "sha256": "e6edb5c63a4be210e82c5a091947eaf91f9cbee6f0dce01d45e3e6822816ab3d",
+      "size_bytes": 402163,
+      "purpose": "mechanics/contact geometry",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/geometry/whole-face-integration-cells.npz",
+      "sha256": "2f7aecb38167034d6ac46c9d76939378f0c67abcf727148d8e4675b54b4c20a4",
+      "size_bytes": 2890901,
+      "purpose": "mechanics/contact geometry",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/geometry/source-membership.npz",
+      "sha256": "bd48cf4165feb416710eab93ad7b7666158b2ba4250d955b97a90bf776df4b8e",
+      "size_bytes": 505575,
+      "purpose": "mechanics/contact geometry",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/mechanics/coarse-physical-site-v1/supports/clipped-origin-support.json",
+      "sha256": "70b7dc13ab166ebc6c63e0ea25119c8fd03c2995f5e6187789ed138cee83234d",
+      "size_bytes": 17885,
+      "purpose": "finite source-origin support bundle",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/mechanics/coarse-physical-site-v1/supports/clipped-origin-support.npz",
+      "sha256": "7ecd97e1dd7f45ff92c93c3de0361aa212ba125c8f41b2590656d8386e7f2b1c",
+      "size_bytes": 1000410,
+      "purpose": "finite source-origin support bundle",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/mechanics/coarse-physical-site-v1/supports/constraint-matrix.npz",
+      "sha256": "fdfc40f2197abaedb3fed4fa3930f695ff15c2c5e49bbd50d83e84f6811b4ef7",
+      "size_bytes": 7923,
+      "purpose": "finite source-origin support bundle",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "full-face-coverage-plan/restored/source-body/body-frontalis.npz",
+      "sha256": "c8c5722563cc43293dc01c45f08638450c282bc9e4618b5d9cd5c8d634fbe87f",
+      "size_bytes": 1210475,
+      "purpose": "source fibre and attachment rest packet",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "full-face-coverage-plan/restored/source-body/body-corrugator.npz",
+      "sha256": "dd6d118cb8dc16f04ffbc3fca80f4b620572312c833f8cd562b747b95790773f",
+      "size_bytes": 161728,
+      "purpose": "source fibre and attachment rest packet",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "full-face-coverage-plan/restored/source-body/body-depressor.npz",
+      "sha256": "82851ee9f105421f364229de630f5f30f132cfbda59886cc4fda3f9aab0223b7",
+      "size_bytes": 305277,
+      "purpose": "source fibre and attachment rest packet",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "full-face-coverage-plan/restored/source-body/body-zygomaticus.npz",
+      "sha256": "049ecb84eaafe68405bc7310bb44baf31e16048bd70c6f8a61d32f0258444bce",
+      "size_bytes": 480918,
+      "purpose": "source fibre and attachment rest packet",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "full-face-coverage-plan/restored/source-body/body-orbicularis.npz",
+      "sha256": "844213de17c1114efe45610650e413a8dfdd0113a1b728d26b4d962d5b96508d",
+      "size_bytes": 1767539,
+      "purpose": "source fibre and attachment rest packet",
+      "included_in_git": false
+    },
+    {
+      "project_relative_path": "whole-face-continuum-staging/contact/coarse-site-reference-band-v1.npz",
+      "sha256": "92a93b71cfe514a180487b3f4a4d1179e8155d95eb731062e1b849ca30038d1d",
+      "size_bytes": 2843871,
+      "purpose": "derived reference bound cache; regenerable but provenance-bound in histories",
+      "included_in_git": false
+    }
+  ]
+}

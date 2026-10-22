@@ -1,0 +1,4 @@
+# Direct Python runtime imports; not a proven lockfile. No packages installed by this handoff.
+numpy
+scipy
+Pillow

@@ -1,0 +1,17 @@
+from pathlib import Path
+import json,numpy as np,time
+from scipy.sparse import coo_matrix
+from scipy.sparse.csgraph import connected_components
+import build_domain as b
+G=Path(__file__).parent;t=time.time();a=np.load(G/'whole-face-continuum-final.npz');cells=np.load(G/'whole-face-integration-cells.npz');r=json.loads((G/'whole-face-geometry-report.json').read_text());ijk=cells['cell_ijk'];shape=ijk.max(0)+1;occ=np.zeros(tuple(shape),bool);occ[tuple(ijk.T)]=True;origin=cells['grid_origin'];spacing=float(cells['grid_spacing']);q=a['quadrature_points'];qw=a['quadrature_weights'];frac=a['quadrature_material_fraction'];v=a['vertices'];f=a['triangles'];bc=a['boundary_class'];edges=np.sort(np.concatenate([f[:,[0,1]],f[:,[1,2]],f[:,[2,0]]]),axis=1);ue,cnt=np.unique(edges,axis=0,return_counts=True)
+report={'boundary_topology':{'triangles':len(f),'unique_edges':len(ue),'open_edges':int((cnt==1).sum()),'nonmanifold_edges':int((cnt>2).sum()),'max_incident_faces':int(cnt.max()),'interpretation':'Voxel-domain boundary can have edge/corner contacts; these are reported rather than called a smooth manifold.'},'partition':{'integrated_volume':float(qw.sum()),'fine_voxel_volume':float(len(ijk)*spacing**3),'material_volume_sum':float((qw[:,None]*frac).sum()),'phase_sum_error':float(abs(frac.sum(1)-1).max())},'coordinate_provenance':{'source_sha256':str(a['source_sha256']),'registration_reapplied':False,'outer_target_coordinates_used':False,'blendshape_or_silhouette_fit':False,'hardcoded_canthus_or_globe_used':False,'atlas_vertices_copied_to_output':False},'opening_boundary_triangle_counts':{str(k):int((bc==k).sum()) for k in range(1,6)}}
+# Volume convergence is not asserted. This is a finite sample leakage audit, not a certificate.
+raw=np.load(b.SOURCE/'exact-rest/anatomy-registered-rest.npz');V=raw['vertices'];F=raw['triangles'];PID=raw['part_ids'];halfshape=shape*2;hits=[];records=[]
+for sr in r['source_records']:
+ if sr['kind']=='muscle':continue
+ pid=sr['part_id'];ff=F[PID==pid];used,inv=np.unique(ff,return_inverse=True);inside,rep=b.raster_solid(V[used],inv.reshape(-1,3),origin,.5,halfshape);coarse=inside//2;valid=np.all(coarse<shape,axis=1);inside=inside[valid];coarse=coarse[valid];hit=occ[tuple(coarse.T)];inside=inside[hit];rep.update(part_id=pid,name=sr['name'],overlap_halfcell_samples=len(inside),estimated_overlap_volume=len(inside)*.125)
+ if len(inside):hits.append(np.ravel_multi_index(tuple(inside.T),tuple(halfshape)))
+ records.append(rep);print('rigid overlap',pid,sr['name'],len(inside),flush=True)
+union=np.unique(np.concatenate(hits)) if hits else np.empty(0,int)
+report['rigid_overlap_halfcell_sampling']={'sample_spacing':.5,'sample_volume':.125,'union_overlap_samples':len(union),'estimated_union_overlap_volume':len(union)*.125,'fraction_of_selected_voxel_volume':len(union)*.125/(len(ijk)*spacing**3),'method':'Native rigid mesh z-ray center membership at8 quarter-offset points per retained1-L0 voxel; finite native bounds only. Closed owners have solid membership; nonclosed owners remain uncertified.','limits':'Diagnostic point sampling, not full finite-boundary exclusion, unsigned-sheet orientation proof, or dynamic contact certificate. Original center exclusion creates expected near-boundary leakage.','source_records':records}
+report['seconds']=time.time()-t;(G/'whole-face-geometry-audit.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items() if k!='rigid_overlap_halfcell_sampling'},indent=2));print('OVERLAP',len(union)*.125,'seconds',time.time()-t)

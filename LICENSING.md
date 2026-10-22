@@ -16,3 +16,8 @@ Modifications to anatomical material include selection/cropping, shared-frame re
 Consolidation and public packaging changes dated 2026-10-07 concern portable test URLs/suites, verification output paths, runtime-publisher file-copy fallback retention, documentation and privacy-safe provenance. Selected immutable runtime code, shaders and required asset bytes are preserved. Installed npm/Python dependencies are not vendored here; their pinned packages carry their own licenses.
 
 No claim is made that one license grants rights to every component or to an excluded upstream asset. Preserve the component notices when redistributing.
+
+
+## Separate continuous-face source snapshot
+
+`continuous-face/` is a separately inventoried 2026-10-22 source-only snapshot. It is not automatically covered by the inherited original-application GPL notice above, and this packaging does not grant a new license or claim that its archived helpers have an independently established ownership chain. See [its provenance and license status](continuous-face/docs/PROVENANCE.md). No anatomy data or anatomy-derived media from that snapshot are included. Existing component notices and their scope are unchanged.

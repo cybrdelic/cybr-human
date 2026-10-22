@@ -1,0 +1,1904 @@
+{
+  "schema": "cybr-human-source-subset-v1",
+  "files": [
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/area_quadrature_probe.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/area_quadrature_probe.py",
+      "sha256": "1513f4010c39abdc9881ef62b97baa1290a552f5dd5a36ef5bb83cd378a02257",
+      "size_bytes": 4192,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/audit_accepted_site_chords.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/audit_accepted_site_chords.py",
+      "sha256": "a3d439e6e99dbb1ba4b079593f8483f27d2e8f4b3373a76bdb40fb7532477f45",
+      "size_bytes": 8931,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/audit_new_accepted_intervals.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/audit_new_accepted_intervals.py",
+      "sha256": "74f24440e35b7e4586c46a1346ebd08721bc8660ac8c3447c5dc403d1728ef43",
+      "size_bytes": 13048,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/audit_reconstruction_intervals.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/audit_reconstruction_intervals.py",
+      "sha256": "c58cf601ceb8c1dc9f36c1ed0b71649d69299dd0dd13db1f0c7baa1f8dbfd3ff",
+      "size_bytes": 14743,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/canonicalize_boundary_map.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/canonicalize_boundary_map.py",
+      "sha256": "f8c4f917d13117f51086b73ea3a57fb31d89050a342a9c59736177bb0d797372",
+      "size_bytes": 5477,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/carrier_partition.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/carrier_partition.py",
+      "sha256": "0681494e9105916a5794e38c333f3d90a45b1af5d400a191e6c5448c8ffc1e0b",
+      "size_bytes": 9453,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/classify_failed_reconstruction_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/classify_failed_reconstruction_chord.py",
+      "sha256": "7d402f4b62ac56ab82d7b9674de527c8d130c1700b4b39c0af8b62da0901106e",
+      "size_bytes": 11779,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/classify_failed_site_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/classify_failed_site_chord.py",
+      "sha256": "ade6c6c6a3086ddbe8f26423c04ba333b43d3c45ae671f64e6c6dbbcacebfdc1",
+      "size_bytes": 14400,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/coarse_physical_site_contact.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/coarse_physical_site_contact.py",
+      "sha256": "7f092febeca2d363f7da7f6c4b0384f57a77237dcc1dfab238a7988e4035e8e8",
+      "size_bytes": 19651,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/coarse_physical_site_contact_epigraph.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/coarse_physical_site_contact_epigraph.py",
+      "sha256": "b0bee9a0be7458299d39cc69b14c42ccf4ed3359b47ba5768c7b988957e9cc1e",
+      "size_bytes": 1379,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/coarse_physical_site_contact_rolling.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/coarse_physical_site_contact_rolling.py",
+      "sha256": "70a4ca35ab9a63351570d73f32c386e1dbc9af29974a9d7d8cd3dd68fa56d150",
+      "size_bytes": 3892,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/coarse_rigid_query.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/coarse_rigid_query.py",
+      "sha256": "4bbb175f0ca908649702b79eaf48a7d9207885d702132a31662996e14f9f12a0",
+      "size_bytes": 29017,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/compact_penetration_barrier.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/compact_penetration_barrier.py",
+      "sha256": "abc01a8561501d4a3427431843b6ecc9f5629be389233e3201ebd0084eea3ccf",
+      "size_bytes": 1320,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/compare_initial_self_force_scales.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/compare_initial_self_force_scales.py",
+      "sha256": "ae88ee60a410191ed908ac4ddc15d05d283bc5e4f67f79c2413a34f9166591ad",
+      "size_bytes": 20905,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/continuous_closed_site_path.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/continuous_closed_site_path.py",
+      "sha256": "af19be3131711d1c539bfb836c86e4969d15acf450c6521eccc651b105cd283a",
+      "size_bytes": 8196,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/continuous_closed_site_reconstruction.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/continuous_closed_site_reconstruction.py",
+      "sha256": "5fdfb5b8098eee1f54efdefd96a0352ad601658bb9286a2ffe238c115da5e15f",
+      "size_bytes": 8241,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/continuum_contact.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/continuum_contact.py",
+      "sha256": "1082c93d485bfdd838cc1deb1c4a8126b41805235d56dbf600fafd960caa1fb8",
+      "size_bytes": 21632,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/diagnose_coarse_first_direction.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/diagnose_coarse_first_direction.py",
+      "sha256": "9caa5a66fa92d83fef4d1786a518dcf188cff986b28a6ad58536c2ecde76218a",
+      "size_bytes": 2275,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/diagnose_coarse_hotspot.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/diagnose_coarse_hotspot.py",
+      "sha256": "d544fbde9fb841d49b9b167e7387312903b473434661a7aa2ac150f74e163916",
+      "size_bytes": 2611,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/diagnose_initial_self_contact.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/diagnose_initial_self_contact.py",
+      "sha256": "d15533c84175569709c0b42c3c8075788587f328a3f9031d0934af0f469dd734",
+      "size_bytes": 8037,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/exterior_feature_bundles.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/exterior_feature_bundles.py",
+      "sha256": "438378de68a4487d121267b090e5af499abc2c0273e9945e36144b2d5737d042",
+      "size_bytes": 8783,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/grid_injectivity.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/grid_injectivity.py",
+      "sha256": "e0a9284573506e0be270e81049ddb4ed7cd0d9012a7846cec4752b5c09a06d2d",
+      "size_bytes": 6685,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/inspect_failed_frame_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/inspect_failed_frame_chord.py",
+      "sha256": "176ae4ccb8ddf58f4109e396c6230e2d1f2cca08357bdbab07ee57f5c88aa7ba",
+      "size_bytes": 3986,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/inspect_saved_contact_direction.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/inspect_saved_contact_direction.py",
+      "sha256": "dc892b8e66572b05a8df9f760872fc5f137ed1f2e3d7deb5008e5db9411d1e77",
+      "size_bytes": 4339,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/inspect_second_interval_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/inspect_second_interval_chord.py",
+      "sha256": "cc1d1f72b784b12dcce42524efef7788f122dda53be406e36fc559c7b5f04463",
+      "size_bytes": 4780,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/interior-feature-tangent-v1/coarse_physical_site_contact_curvature.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/interior-feature-tangent-v1/coarse_physical_site_contact_curvature.py",
+      "sha256": "0b7f1375726a6d6bdab2ade476ec9a0bacc32fdeb1750af19023d17688a24a71",
+      "size_bytes": 2394,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/interior-feature-tangent-v1/interior_feature_curvature.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/interior-feature-tangent-v1/interior_feature_curvature.py",
+      "sha256": "2383ac35c939260e85d3e39654f92331be15db3477812b21d2bc84b31f8372e1",
+      "size_bytes": 8950,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/interior-feature-tangent-v1/qualify_saved_hotspot.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/interior-feature-tangent-v1/qualify_saved_hotspot.py",
+      "sha256": "2d4ba995f24e587cc0e0815e0b58a05ad5f7c6db49b76b386b02d3502c829f04",
+      "size_bytes": 6237,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/interior-feature-tangent-v1/test_interior_feature_curvature.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/interior-feature-tangent-v1/test_interior_feature_curvature.py",
+      "sha256": "da1fb3d05540830baaede05ccc9e334b3cbd916fcc5dcfb44d81a43f61cda08e",
+      "size_bytes": 7520,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/profile_frozen_broadphase.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/profile_frozen_broadphase.py",
+      "sha256": "2ad8b35ec8fd6a2427692f82f9edc6207c25e11ebbd5c6c7deebe260139cc89a",
+      "size_bytes": 4645,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/qualify_coarse_band_repair.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/qualify_coarse_band_repair.py",
+      "sha256": "61b84c62d86e964608a474f983a53699ad345d4378fc56c44af092396784fe9e",
+      "size_bytes": 1773,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/qualify_coarse_owner_sum.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/qualify_coarse_owner_sum.py",
+      "sha256": "298f966549f836d01dad04b4303e83957d45a29c0114b6004ae8a39da5833d06",
+      "size_bytes": 3714,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/qualify_compact_barrier.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/qualify_compact_barrier.py",
+      "sha256": "73125768aeea3c3a56f51e1f2e7da4563a885cbeafb8e6e6b7828e6a30e1c625",
+      "size_bytes": 2872,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/qualify_continuous_closed_site_path.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/qualify_continuous_closed_site_path.py",
+      "sha256": "61a41c746d31194b59250c673da8dfbbc2adb349a9923282a79a6eb56285cfd6",
+      "size_bytes": 1916,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/qualify_exterior_feature_bundles.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/qualify_exterior_feature_bundles.py",
+      "sha256": "01a0a1019e260b554050d4364fe1d883f07e170f73542000a9482d19ef14d22e",
+      "size_bytes": 3972,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/qualify_rolling_exterior_bounds.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/qualify_rolling_exterior_bounds.py",
+      "sha256": "b04f40ff0631db8b8e0b38b1ac374a6ad44a840f7113f21806742acc6e37ecdd",
+      "size_bytes": 4621,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/ragged_group_pairs.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/ragged_group_pairs.py",
+      "sha256": "a09d3d5c7d897b8431a6fa281bee8a9105a024ab3429724a1e72f623c0f1a02a",
+      "size_bytes": 3774,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction-020-v1/audit_reconstruction_020_intervals.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction-020-v1/audit_reconstruction_020_intervals.py",
+      "sha256": "3d5169ddc75bd456c024826f97a82bb66c703c45eccb703e7686d9ba0fb66990",
+      "size_bytes": 17443,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction-020-v1/classify_failed_reconstruction_020_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction-020-v1/classify_failed_reconstruction_020_chord.py",
+      "sha256": "d3fccc4e7510446350b013c409092b40727d78ffc0f1c10f8896c25378d486f2",
+      "size_bytes": 12842,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction-020-v1/continuous_closed_site_reconstruction_020.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction-020-v1/continuous_closed_site_reconstruction_020.py",
+      "sha256": "3b3ba0cee5f4f0882fcb1e0d313df171931f610acfe594ce19c1d02106e829bb",
+      "size_bytes": 8590,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction-020-v1/reconstruction_020_frame_path.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction-020-v1/reconstruction_020_frame_path.py",
+      "sha256": "f82dee93de4af0239539265733670f3cbb4f240fda55c7eb7aa98be32a5647f7",
+      "size_bytes": 3356,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction-020-v1/test_classify_reconstruction_020_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction-020-v1/test_classify_reconstruction_020_chord.py",
+      "sha256": "dc5551c266cf286d01604cdc41aee44b5b7f0d904f7bb35d58956ea3ab8cb811",
+      "size_bytes": 3286,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction-020-v1/test_reconstruction_020_allowance.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction-020-v1/test_reconstruction_020_allowance.py",
+      "sha256": "5b32c6fde8d4093acc5182fea3ac72dd4f58817ee1fb776b32bdc374dd61ca72",
+      "size_bytes": 8475,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction-020-v1/test_reconstruction_020_frame_path.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction-020-v1/test_reconstruction_020_frame_path.py",
+      "sha256": "ab5c5e91a7d8c810794c1a22d631bc9ab260076262708809a2f6bbc399d48033",
+      "size_bytes": 2210,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/reconstruction_frame_path.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/reconstruction_frame_path.py",
+      "sha256": "0aa5787d45f688d89b1abec5ecb83848e5d925f24998ecb8b85b45023f0589be",
+      "size_bytes": 3169,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/rolling_exterior_bounds.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/rolling_exterior_bounds.py",
+      "sha256": "87e6cda62a1f1a030103d982a40e058e47061f407c76ce2c65fede0a47b04a55",
+      "size_bytes": 4671,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_area_quadrature_probe.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_area_quadrature_probe.py",
+      "sha256": "aa15036774514cd437c3f10e3cfc12e64826236163e5a8bd852e6d23687ac263",
+      "size_bytes": 14038,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_audit_new_accepted_intervals.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_audit_new_accepted_intervals.py",
+      "sha256": "1cd818f2adf6b9aa884241e5acdd51c04f10c51dcaf946b5983bbab4b846a40d",
+      "size_bytes": 3119,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_classify_failed_site_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_classify_failed_site_chord.py",
+      "sha256": "6cb0be1a5810976797e80ba1565b44f23b46dbf90581f9cc68f34ec16879cdb3",
+      "size_bytes": 1917,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_classify_reconstruction_chord.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_classify_reconstruction_chord.py",
+      "sha256": "f230efd83bba2e94a33713e2a5189328768c28ab6150c1dc9b843ead137ca630",
+      "size_bytes": 1654,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_coarse_physical_site_contact.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_coarse_physical_site_contact.py",
+      "sha256": "c47c61bb5454444325eb8017576a4342f603419251c29999271f01ae3f206598",
+      "size_bytes": 2341,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_coarse_physical_site_contact_rolling.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_coarse_physical_site_contact_rolling.py",
+      "sha256": "d3fb0eaebd0198dcf4aec5a7156a60307b6936d191a8678c41b1d0cc1d63ee29",
+      "size_bytes": 2307,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_compact_penetration_barrier.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_compact_penetration_barrier.py",
+      "sha256": "ea667585ff79283d5257aecfc1a849fffa96b2f5065d105bdf774407d13c354a",
+      "size_bytes": 5442,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_continuous_closed_site_path.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_continuous_closed_site_path.py",
+      "sha256": "02ee95d5cc3f361e554b3429e680a38d6b00f01a260895489048e6246e21f84f",
+      "size_bytes": 3614,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_continuum_contact.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_continuum_contact.py",
+      "sha256": "97a0914017987e31cdc8f07eb6f9a591d8ee6ef365fa147990c8c32d70d97cd8",
+      "size_bytes": 19588,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_exterior_feature_bundles.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_exterior_feature_bundles.py",
+      "sha256": "8adfb774bcc928fc689b1fa267bb5e00d3f69963a36d0a8463b39add8d546600",
+      "size_bytes": 3746,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_reconstruction_allowance.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_reconstruction_allowance.py",
+      "sha256": "3dea1e13ed2b542841a18c4b0865bfff93d0bf777f9ebd613dcb9c3a098f911a",
+      "size_bytes": 4344,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_reconstruction_frame_path.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_reconstruction_frame_path.py",
+      "sha256": "2b410722254968e29b0c98c31e5c0e419e9b56884fdbcc50bc3f737cdca4a206",
+      "size_bytes": 2204,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_rolling_exterior_bounds.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_rolling_exterior_bounds.py",
+      "sha256": "6b350bc7674c422fda9fe0f6cfc1652ab610869320ebe5d788b6a98d288d8b66",
+      "size_bytes": 4983,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/test_saved_area_quadrature.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/test_saved_area_quadrature.py",
+      "sha256": "00bf7936c4615bae1ab4a8cb6cfb1697d1572997d8a7da4ee3628a6700659c3b",
+      "size_bytes": 5289,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/contact/volume_guard.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/contact/volume_guard.py",
+      "sha256": "c8a8cbd0c092e40942173ec9a64aca5074a978fed665861571ca32fa8ccd8018",
+      "size_bytes": 4709,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/accepted_history.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/accepted_history.py",
+      "sha256": "14ce67ba2b7179a029f0b8b141b2a64716f36d32ddf07fbff2a720b548164f9e",
+      "size_bytes": 6282,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/assemble_reconstruction_pair.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/assemble_reconstruction_pair.py",
+      "sha256": "52e560d774c7fcdfeffb956ec7ceaa962feafaab2555615cdadee701817a5dd9",
+      "size_bytes": 3037,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/audit_cached_contact_direction.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/audit_cached_contact_direction.py",
+      "sha256": "9e5b939502450d484dc1485cdcd416dd6c4affc5ee343d14cd888c509c47929e",
+      "size_bytes": 6100,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/audit_cut_material.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/audit_cut_material.py",
+      "sha256": "42deea71fdbdd0d3de5f5470e42d8ed8d512fae4e7ee37892f7fea8b4e83ce6c",
+      "size_bytes": 3111,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/audit_linear_direction.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/audit_linear_direction.py",
+      "sha256": "9a840a717dac5ab3d6ee9e771b1d27d57730e22a0eb40b7f9fbb8b26ad1098ca",
+      "size_bytes": 3981,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/audit_origin_occupancy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/audit_origin_occupancy.py",
+      "sha256": "d28091d9ecded8e1f34041563f55085d3bc1a4c48df210916339757e94f80bfb",
+      "size_bytes": 14522,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/audit_saved_compact_rank.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/audit_saved_compact_rank.py",
+      "sha256": "fb23f183d1846028bd081b16f28fe57f75f6f549a82bf08a9ce3846839fa95dc",
+      "size_bytes": 2991,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/barrier_continuation.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/barrier_continuation.py",
+      "sha256": "03d08f0a093af1ea141df188ddd5d4a0ea6556b73904e721a57ae432a0624467",
+      "size_bytes": 8099,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/barrier_reconstruction_continuation.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/barrier_reconstruction_continuation.py",
+      "sha256": "7d0da93db207442edb521cba269cf84dd6c5cb6c4d1664fbc97becac4a8ee5f7",
+      "size_bytes": 16075,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/barrier_slack_search.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/barrier_slack_search.py",
+      "sha256": "64d6258dca7a19822fb534f01df8ec167a962806bfb911d5dac148f96d40e9c0",
+      "size_bytes": 7333,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/candidate_interval_audit.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/candidate_interval_audit.py",
+      "sha256": "cd06024db8ddf6278292064b64d41b6b401fe0145606ffb110e0459dd221d8fa",
+      "size_bytes": 1818,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/classify_origin_constraints.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/classify_origin_constraints.py",
+      "sha256": "95e5f78ed0e7a05e6d324ced9e8b900766cc379190a292d10a5364e0bcfbbb3a",
+      "size_bytes": 4429,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/clipped_origin_support.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/clipped_origin_support.py",
+      "sha256": "a12c31d400154c5962c4fbcc19d422d4b3fdcec64e4fc67848282f36737a4b6a",
+      "size_bytes": 15485,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/coarse_barrier_audited_driver.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/coarse_barrier_audited_driver.py",
+      "sha256": "9db258a79f954104ff027271ee67997cb00f6e60cf33f27584c6ceb1c74a5335",
+      "size_bytes": 23258,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/coarse_barrier_driver.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/coarse_barrier_driver.py",
+      "sha256": "cdd95a3e34c2e37181835191c07eb9f6ced9fb43e2935a69d950f4f86ea29e53",
+      "size_bytes": 21553,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/coarse_reconstruction_020_curvature_driver.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/coarse_reconstruction_020_curvature_driver.py",
+      "sha256": "60d90718424d1e5e3acdd8e1238a8b0e6d88ad7b4ba7e432843e743ab6c5427a",
+      "size_bytes": 40099,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/coarse_reconstruction_020_driver.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/coarse_reconstruction_020_driver.py",
+      "sha256": "3634642943fb60b3ec91f135216dbedd8125e75acfb4698a4145ab7cf5f0507d",
+      "size_bytes": 26789,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/coarse_reconstruction_accuracy_driver.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/coarse_reconstruction_accuracy_driver.py",
+      "sha256": "377a122a10d78a633275307acf42adbae36279f295cf7593c607901ebe3d91a8",
+      "size_bytes": 26703,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/coarse_reconstruction_driver.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/coarse_reconstruction_driver.py",
+      "sha256": "f6aaa9b87dac84a5f297ed1e53397a0439acb878760820333ed435893b10d332",
+      "size_bytes": 24264,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/coarse_site_driver.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/coarse_site_driver.py",
+      "sha256": "06a1987182f8b15d1d4357de04b8300f741cb7178126ef27e4c5e3c2b6baaefd",
+      "size_bytes": 8953,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/compact_seam_rank.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/compact_seam_rank.py",
+      "sha256": "4b27ee1cf33c7bf23b840f1339660b46ec005ed8f639e12a96b30b3a4dbdbe45",
+      "size_bytes": 1380,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/compare_saved_temporal_branches.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/compare_saved_temporal_branches.py",
+      "sha256": "2bcc9509e00289b72faf14044a3906cd456a1a08ae9cd708138844433fe7e0b1",
+      "size_bytes": 3709,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/continuum.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/continuum.py",
+      "sha256": "d15f3f8780fd433c3989be94274367536d026a7ca5844e3601bd8e9b5864daff",
+      "size_bytes": 13202,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/curvature_transition.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/curvature_transition.py",
+      "sha256": "99b7585edef63f3fb03aaf40ba85b4c00b2e99a4ee92caacc3d7a924d34993b9",
+      "size_bytes": 3390,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/diagnose_barrier_direction.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/diagnose_barrier_direction.py",
+      "sha256": "b4fabd356ffd479027772821f31806644b96ee557835f4c16647f05a26d2a2a0",
+      "size_bytes": 3403,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/epigraph_search_policy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/epigraph_search_policy.py",
+      "sha256": "f445bb5684505a796c73b3390cc808dd1e177160e5ca8484fe070c30e54b3ebc",
+      "size_bytes": 385,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/experiment_single_aggregation.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/experiment_single_aggregation.py",
+      "sha256": "a1012041b48b117b8ebba56b2d4bb8ed285819168f5b7cd2efe853f2ed3cad23",
+      "size_bytes": 9506,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/exterior_epigraph.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/exterior_epigraph.py",
+      "sha256": "49644778776396d87c4e9e62608b42449eaeb9e28b46050adc733293320c4bd5",
+      "size_bytes": 20275,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/factored_seam_kkt.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/factored_seam_kkt.py",
+      "sha256": "e6deb9cde8a4b37abfd815f0017889dbc8e56372fbfb5e82a0ea448a9a431b06",
+      "size_bytes": 6204,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/first_step.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/first_step.py",
+      "sha256": "215d5b729ee7fdfbb381b14409a884b4486269fea44e11a81e5ada0132302e51",
+      "size_bytes": 6077,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/fixed_barrier_policy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/fixed_barrier_policy.py",
+      "sha256": "c0b904d7b0f32649cfd80fd2b82859a26dc3068c1823482de4531d1191fd52a0",
+      "size_bytes": 12215,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/force_state_accuracy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/force_state_accuracy.py",
+      "sha256": "4bef25912bf08a9d0188b92239e862ab2aae42dbce18dcb497dea17352dfed46",
+      "size_bytes": 3621,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/force_state_dynamics.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/force_state_dynamics.py",
+      "sha256": "8a29d841cfe9521bd44ac8f99fc8fc90f389ef8ee9799aecbb2c65c885cc3f4c",
+      "size_bytes": 36769,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/implicit_dynamics.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/implicit_dynamics.py",
+      "sha256": "618842214b1bb260e1ca400ba8582809caddbd08e8a10908654d0eb29cb7bc61",
+      "size_bytes": 35715,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/inspect_reconstruction_accuracy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/inspect_reconstruction_accuracy.py",
+      "sha256": "63a0450b0b712882fa5fe710f93f89d69afdeeb7afd1a8f906d1f61e7d0e100c",
+      "size_bytes": 3319,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/linear_equilibration.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/linear_equilibration.py",
+      "sha256": "859bbf8b5da02f7e9115f7dd747d8899f799cf36667182aa0b72f47aa503eebe",
+      "size_bytes": 3800,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/modified_newton_search.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/modified_newton_search.py",
+      "sha256": "c35683e038c253f7481c7be64551552a7c8bd0459089019861100bf2a1ed0293",
+      "size_bytes": 3161,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/paired_reconstruction_020_curvature_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/paired_reconstruction_020_curvature_sequence.py",
+      "sha256": "728fc856b3b61ab22b3209440a9ec04919fcb636dd3fa26991c9bf1cb55d7b28",
+      "size_bytes": 21143,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/paired_reconstruction_020_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/paired_reconstruction_020_sequence.py",
+      "sha256": "5dacdba74438822ff9afa70a28faf09b3a011cbba55a221c67dc747b3f6d1f62",
+      "size_bytes": 16319,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/paired_reconstruction_accuracy_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/paired_reconstruction_accuracy_sequence.py",
+      "sha256": "dec103a99f5f515ba5693016a094d10e646761e23c548749abfd461c08d25ed9",
+      "size_bytes": 16165,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/paired_reconstruction_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/paired_reconstruction_sequence.py",
+      "sha256": "9a3249a33c3a2f2f4f17b78c98843d3493d518a622336beeaf0c35b96aeda1cf",
+      "size_bytes": 16075,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/paired_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/paired_sequence.py",
+      "sha256": "8b98aeea57647d4a15053b4ba123cc883f8bd3d6de73596be026bd6ba63e5795",
+      "size_bytes": 15672,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/passive_stage_seed.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/passive_stage_seed.py",
+      "sha256": "be7cdb9cc9f49a8de4d23939685e26feecf96128cd167b90057a187911577235",
+      "size_bytes": 11989,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/prepare_mechanics.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/prepare_mechanics.py",
+      "sha256": "58a5b0bdc14dc5fbd683e2ca5ad5afecdb46f4c1408bb660f21fd9e9121fa18d",
+      "size_bytes": 4676,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/raw_predictor_geometry.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/raw_predictor_geometry.py",
+      "sha256": "55ef445f5d9982f69dfc8ac621b9a7a3b841134a974b79d4f906c1652831d66d",
+      "size_bytes": 9495,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/reconstruction_020_seed.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/reconstruction_020_seed.py",
+      "sha256": "27f33bc36a3c89d0d86c1c2dae3b5607e7def3b86c32ea6ad66ce201633403a3",
+      "size_bytes": 508,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/reconstruction_seed.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/reconstruction_seed.py",
+      "sha256": "3ff504dc19952ecfdf861869eff72ab467d7dd9feb01662d56822c1a2f226e74",
+      "size_bytes": 3071,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/report_storage.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/report_storage.py",
+      "sha256": "530fcaaa21d2f1e8d72abe586d5b6713c1bdba38e57e751fcd1c750692af02f0",
+      "size_bytes": 9274,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/requalify_020_stationary_endpoint.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/requalify_020_stationary_endpoint.py",
+      "sha256": "ddc0ea876483cf5bc9d0aa181d56bb3cf73500f60e4788730a409ae5ae9e98ff",
+      "size_bytes": 8717,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/second_order_gap_search.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/second_order_gap_search.py",
+      "sha256": "a11f1989ed62492740be70d225fa273e525a936c0ed907454385dc2e2d8cdd5a",
+      "size_bytes": 6238,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/source_transfer.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/source_transfer.py",
+      "sha256": "0b5293d38eb4a9ad7967aea56e5358cb3d7a788ecd18ecb8466dd781529cd8dc",
+      "size_bytes": 12320,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_accepted_history.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_accepted_history.py",
+      "sha256": "eede7eaa6479b9559baa18b0a7361b74b2bb274a6caee3867a0d08699fc17c7f",
+      "size_bytes": 2816,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_barrier_continuation.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_barrier_continuation.py",
+      "sha256": "64e7eac386b955d12c44a51f88579a3dfe35801575ea6d35a71161f2dacd99b2",
+      "size_bytes": 7180,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_barrier_slack_search.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_barrier_slack_search.py",
+      "sha256": "784735d018c8ff846bbe3ce832f22098ff094fa1765438a187ecbd8974276b0f",
+      "size_bytes": 3402,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_candidate_interval_audit.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_candidate_interval_audit.py",
+      "sha256": "cc13973352b1eabcac207b29641879cb3cf98e3af95a2885e2c23adaf3bbae5d",
+      "size_bytes": 1869,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_coarse_scope.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_coarse_scope.py",
+      "sha256": "ec9cd8e8f0f0f1af086af5a0e66707838a8937b65c1a9f30606ff28cd1ac7e72",
+      "size_bytes": 1683,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_curvature_transition.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_curvature_transition.py",
+      "sha256": "8bc3213fa071bcd2237d5ed58147a7a4963f07f99a27a27123793417805bc461",
+      "size_bytes": 3700,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_epigraph_search_policy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_epigraph_search_policy.py",
+      "sha256": "29fd3386464027cafeaecb5652ab2153280c55d9bf9f6751a725f4797ca7b8a9",
+      "size_bytes": 793,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_exterior_epigraph.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_exterior_epigraph.py",
+      "sha256": "06b27a5524eba558c7ef5b1c75d739b751205e18f3ab5347e543b27f128f3222",
+      "size_bytes": 8350,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_factored_seam_kkt.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_factored_seam_kkt.py",
+      "sha256": "48354b9a78bb1c1d58d8d1d8144d3fb25107d4e9c3a39ed34f53d246909e4987",
+      "size_bytes": 2512,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_fixed_barrier_policy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_fixed_barrier_policy.py",
+      "sha256": "c0f448e2d3332cb6bffe9a0929311b99e6c8038c184fb0e8adb37b772eae6a4b",
+      "size_bytes": 13865,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_force_state_accuracy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_force_state_accuracy.py",
+      "sha256": "f529ed982acb2919f594062466559dd0b421d7a929e58d68b47201fbaa71d8ba",
+      "size_bytes": 2442,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_frame_provenance.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_frame_provenance.py",
+      "sha256": "4502ced9543eab612478b096a6842ae3638f526a41afacec3d2b8d60d3848487",
+      "size_bytes": 926,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_lifted_epigraph_search.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_lifted_epigraph_search.py",
+      "sha256": "32cb1c3978362648e804de0bcb3056296f6d8f99bd7726d22d1d7ca0fc660cae",
+      "size_bytes": 2149,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_linear_equilibration.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_linear_equilibration.py",
+      "sha256": "b6d0e36cfc30e43036a874a4a6bc56a3314c3cca74ed6f9c39a97edf10c017b4",
+      "size_bytes": 2835,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_mechanics.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_mechanics.py",
+      "sha256": "53fd43386104be72e9b7ffdbd7b3a80c5c7c0bf748eac3147fae97fca049ddc2",
+      "size_bytes": 7746,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_origin_audit.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_origin_audit.py",
+      "sha256": "8daabf348e9b1465a26c06f503dabf22db82b4f3df4d8d0b822a54db614afa15",
+      "size_bytes": 3236,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_paired_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_paired_sequence.py",
+      "sha256": "24a835b4be114162754a0014a128dec71d499577ae2c1323eaaa3dc6420a0d6c",
+      "size_bytes": 4840,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_passive_numerical_guess.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_passive_numerical_guess.py",
+      "sha256": "7d24415a43d80976b0d47a670a5e6ccbf854210ce91892d194a0f4e17a514a28",
+      "size_bytes": 2422,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_raw_predictor_geometry.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_raw_predictor_geometry.py",
+      "sha256": "fc4ccd09f6259e588464f1e6604f98bb99eb3251506f0ce1065bebcb19d60e20",
+      "size_bytes": 11514,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_reconstruction_020_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_reconstruction_020_sequence.py",
+      "sha256": "59811796e0fba631676957ba6ad49c871a60027215a8dbb9af621434a1aef46c",
+      "size_bytes": 3147,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_reconstruction_integration.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_reconstruction_integration.py",
+      "sha256": "508e4a4952232dfa3a6b7798647cf430609838fb80519af95f691fb09e61caa6",
+      "size_bytes": 2158,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_reconstruction_sequence.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_reconstruction_sequence.py",
+      "sha256": "bddd14d6a8de81f685b5d22b8d5c28e77550d7e8701ea3caea8b1c05c51c2ff6",
+      "size_bytes": 3140,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_requalify_020_endpoint.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_requalify_020_endpoint.py",
+      "sha256": "03bda2977b6adc2914ec04145b5e5eedc97c85e97e8f34427a4b358846fb8fdb",
+      "size_bytes": 2640,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/test_second_order_gap_search.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/test_second_order_gap_search.py",
+      "sha256": "9c69923dd9f806464be05c6bee844cb4ff23cc5540e549f1bd25964eae2f936b",
+      "size_bytes": 6152,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v14/mechanics/voxel_origin_support.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/mechanics/voxel_origin_support.py",
+      "sha256": "cd3c0fda76feeba927478aa25b0568baf643c020792eb18cd4e2a66b9ad3e277",
+      "size_bytes": 4146,
+      "group": "mechanics-v14",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/rasterizer.cpp",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/rasterizer.cpp",
+      "sha256": "a9daf1c234167d4a61ea1577f86cb70f4f6864275d0fe3a5bd04c09de8f39d1a",
+      "size_bytes": 3904,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/fixed_policy_reader.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/fixed_policy_reader.py",
+      "sha256": "33304c70055103bc18786c595e96212ea813426f8537372d2f0dfd2b0141b66f",
+      "size_bytes": 13234,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/benchmark_reference.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/benchmark_reference.py",
+      "sha256": "2896fa4651598cf0664ec111cd198b531e25ff4e5e9eb529d30cbc52c5730805",
+      "size_bytes": 2307,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/test_fixed_reader.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/test_fixed_reader.py",
+      "sha256": "8553c5c300a6824f1597175cb27081e4601a930a41a228f4283d5f202ff5a93b",
+      "size_bytes": 24284,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/compare_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/compare_actual.py",
+      "sha256": "f4fff1016b2fa9ff55d0c5a53dae776586fbe1d631718bdd3e87fb92dc7ad329",
+      "size_bytes": 13754,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/external_path_audit.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/external_path_audit.py",
+      "sha256": "2bb3a02e5c070a072952a3c8617975516ed4b35cb9fa31e12c2f43945a6bcb42",
+      "size_bytes": 15959,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/report_storage.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/report_storage.py",
+      "sha256": "530fcaaa21d2f1e8d72abe586d5b6713c1bdba38e57e751fcd1c750692af02f0",
+      "size_bytes": 9274,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/literal_renderer.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/literal_renderer.py",
+      "sha256": "9b8c42d969589abc892794134e23d26befe23d8f3064c9e82517d705c321d465",
+      "size_bytes": 12738,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/fixed_barrier_policy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/fixed_barrier_policy.py",
+      "sha256": "c0b904d7b0f32649cfd80fd2b82859a26dc3068c1823482de4531d1191fd52a0",
+      "size_bytes": 12215,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/test_renderer_report_storage.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/test_renderer_report_storage.py",
+      "sha256": "72c77e6c2cc6fec241b765715c286c2fa4030dad1bc6ba2d39d3f71ddf0475de",
+      "size_bytes": 7695,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/render_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/render_actual.py",
+      "sha256": "963153f35ff80fff12ad1a5e34297fee1b0d414d43ba87409ccc01f0c5906dc4",
+      "size_bytes": 6222,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/paired_cursor_binding.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/paired_cursor_binding.py",
+      "sha256": "d61801048b6529e309601a08a8d58a84b62da0735dcf4aeda7677a021cef816c",
+      "size_bytes": 3766,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/test_renderer.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/test_renderer.py",
+      "sha256": "237f41bbd251299e46003bede649739a9f3be85d65eebd542192a35fd38a9f42",
+      "size_bytes": 52453,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/accepted_frames.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/accepted_frames.py",
+      "sha256": "2b67cdcf64c041a3704df0b7295b29d31406d0cbbe2162564fc4b3f8376e1f58",
+      "size_bytes": 22768,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/render_mobile_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/render_mobile_actual.py",
+      "sha256": "5d8b3fd9ce991937859ef4d08659f7a8883d8cd55a89db09519243bbfa81ca22",
+      "size_bytes": 10463,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/tangent_source_identity.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/tangent_source_identity.py",
+      "sha256": "3bbafa7000f95c73e8b43ec752273016c19dedefce13d95a45890fd2a5706d65",
+      "size_bytes": 3455,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/stationarity_accuracy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/stationarity_accuracy.py",
+      "sha256": "9e47ce95dff22790974a9f78cb9bb57f675925635c666417f14b91648e0ab3dd",
+      "size_bytes": 5359,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/renderer_report_binding.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/renderer_report_binding.py",
+      "sha256": "14eb2c92114040a926d6be68882956903c7e26f829f8ce69a6c38b0ff24d0851",
+      "size_bytes": 2494,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/measure_latest_pair.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/measure_latest_pair.py",
+      "sha256": "f230ea1651cf512d2ca7f1422470dcc4e26426bc84dd90a7d9196b0ae7c2ec2b",
+      "size_bytes": 10601,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/variable_movie.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/variable_movie.py",
+      "sha256": "fb78294fc2d88f250cfff6f8dd39de2c7abe511946018d9a8b8a774cdc73c51e",
+      "size_bytes": 7318,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/snapshot_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0005/snapshot_actual.py",
+      "sha256": "91da594fef92e4a85ab99cc0139a3b0449ca20c51f2d8e7ef7136a31ac0efe1e",
+      "size_bytes": 2564,
+      "group": "renderer-0005",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/rasterizer.cpp",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/rasterizer.cpp",
+      "sha256": "a9daf1c234167d4a61ea1577f86cb70f4f6864275d0fe3a5bd04c09de8f39d1a",
+      "size_bytes": 3904,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/fixed_policy_reader.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/fixed_policy_reader.py",
+      "sha256": "90b7597330e5e81acf80eaeca99bcd56db1773bd5f811b57f137ce1f450a4710",
+      "size_bytes": 13781,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/benchmark_reference.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/benchmark_reference.py",
+      "sha256": "2896fa4651598cf0664ec111cd198b531e25ff4e5e9eb529d30cbc52c5730805",
+      "size_bytes": 2307,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/test_fixed_reader.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/test_fixed_reader.py",
+      "sha256": "9d9b667571a03b17e393a4591e2d00b7570e51dff857244ef612bae3412d7993",
+      "size_bytes": 25124,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/compare_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/compare_actual.py",
+      "sha256": "f4fff1016b2fa9ff55d0c5a53dae776586fbe1d631718bdd3e87fb92dc7ad329",
+      "size_bytes": 13754,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/external_path_audit.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/external_path_audit.py",
+      "sha256": "2bb3a02e5c070a072952a3c8617975516ed4b35cb9fa31e12c2f43945a6bcb42",
+      "size_bytes": 15959,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/report_storage.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/report_storage.py",
+      "sha256": "530fcaaa21d2f1e8d72abe586d5b6713c1bdba38e57e751fcd1c750692af02f0",
+      "size_bytes": 9274,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/literal_renderer.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/literal_renderer.py",
+      "sha256": "9b8c42d969589abc892794134e23d26befe23d8f3064c9e82517d705c321d465",
+      "size_bytes": 12738,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/fixed_barrier_policy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/fixed_barrier_policy.py",
+      "sha256": "c0b904d7b0f32649cfd80fd2b82859a26dc3068c1823482de4531d1191fd52a0",
+      "size_bytes": 12215,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/test_renderer_report_storage.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/test_renderer_report_storage.py",
+      "sha256": "72c77e6c2cc6fec241b765715c286c2fa4030dad1bc6ba2d39d3f71ddf0475de",
+      "size_bytes": 7695,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/render_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/render_actual.py",
+      "sha256": "963153f35ff80fff12ad1a5e34297fee1b0d414d43ba87409ccc01f0c5906dc4",
+      "size_bytes": 6222,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/paired_cursor_binding.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/paired_cursor_binding.py",
+      "sha256": "d61801048b6529e309601a08a8d58a84b62da0735dcf4aeda7677a021cef816c",
+      "size_bytes": 3766,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/test_renderer.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/test_renderer.py",
+      "sha256": "237f41bbd251299e46003bede649739a9f3be85d65eebd542192a35fd38a9f42",
+      "size_bytes": 52453,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/accepted_frames.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/accepted_frames.py",
+      "sha256": "2b67cdcf64c041a3704df0b7295b29d31406d0cbbe2162564fc4b3f8376e1f58",
+      "size_bytes": 22768,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/render_mobile_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/render_mobile_actual.py",
+      "sha256": "5d8b3fd9ce991937859ef4d08659f7a8883d8cd55a89db09519243bbfa81ca22",
+      "size_bytes": 10463,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/tangent_source_identity.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/tangent_source_identity.py",
+      "sha256": "3bbafa7000f95c73e8b43ec752273016c19dedefce13d95a45890fd2a5706d65",
+      "size_bytes": 3455,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/stationarity_accuracy.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/stationarity_accuracy.py",
+      "sha256": "9e47ce95dff22790974a9f78cb9bb57f675925635c666417f14b91648e0ab3dd",
+      "size_bytes": 5359,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/renderer_report_binding.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/renderer_report_binding.py",
+      "sha256": "14eb2c92114040a926d6be68882956903c7e26f829f8ce69a6c38b0ff24d0851",
+      "size_bytes": 2494,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/measure_latest_pair.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/measure_latest_pair.py",
+      "sha256": "f230ea1651cf512d2ca7f1422470dcc4e26426bc84dd90a7d9196b0ae7c2ec2b",
+      "size_bytes": 10601,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/variable_movie.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/variable_movie.py",
+      "sha256": "fb78294fc2d88f250cfff6f8dd39de2c7abe511946018d9a8b8a774cdc73c51e",
+      "size_bytes": 7318,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/snapshot_actual.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/visualization/fixed-barrier-renderer-source-snapshot-0006/snapshot_actual.py",
+      "sha256": "91da594fef92e4a85ab99cc0139a3b0449ca20c51f2d8e7ef7136a31ac0efe1e",
+      "size_bytes": 2564,
+      "group": "renderer-0006",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "current_tangent.py",
+      "target_path": "src/supported-candidate/current_tangent.py",
+      "sha256": "692308feca3c5d01af2fced5ca0431b13e0077757f1bad7bfa7834e4d479f878",
+      "size_bytes": 1090,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "deformable-contact-staging/adaptive_triangle_contact.py",
+      "target_path": "src/supported-candidate/deformable-contact-staging/adaptive_triangle_contact.py",
+      "sha256": "1940488cfb880885d9e73f69b68517cedc476856f085908144414db181c230db",
+      "size_bytes": 3999,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "deformable-contact-staging/cached_adaptive_triangle_contact.py",
+      "target_path": "src/supported-candidate/deformable-contact-staging/cached_adaptive_triangle_contact.py",
+      "sha256": "311611902d5a3f230e8e15dc0f31a2314c4ff0208f2bcf2b9211df03748fd872",
+      "size_bytes": 2082,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "deformable-contact-staging/moving_triangle_contact.py",
+      "target_path": "src/supported-candidate/deformable-contact-staging/moving_triangle_contact.py",
+      "sha256": "5fc28680caf01501fe2c619d14cbdc5e05c7087aa7621d9363459346c4c4026e",
+      "size_bytes": 20897,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "deformable-contact-staging/robust_separating_plane.py",
+      "target_path": "src/supported-candidate/deformable-contact-staging/robust_separating_plane.py",
+      "sha256": "616062c4a525a8645194266ae4fa16b202e46cb0c6a54b5841f8eb503a843ea4",
+      "size_bytes": 3973,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "deformable-contact-staging/triangle_interface_contact.py",
+      "target_path": "src/supported-candidate/deformable-contact-staging/triangle_interface_contact.py",
+      "sha256": "b839c098425bd372220d50292ddb0b42af7b0598d506eb620e9a8aba15186672",
+      "size_bytes": 10209,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "finite_closed_contact.py",
+      "target_path": "src/supported-candidate/finite_closed_contact.py",
+      "sha256": "aec4fca58a0122fe9fba9b57777b6aa4b8ce7c53e02b97f4831325c37dcef9e1",
+      "size_bytes": 18480,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "mechanics.py",
+      "target_path": "src/supported-candidate/mechanics.py",
+      "sha256": "643fb51a4942c842bb07c5876244264667248e9365cca4abf4212da923458d3c",
+      "size_bytes": 7695,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/accelerated_triangle_contact.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/accelerated_triangle_contact.py",
+      "sha256": "4c32c7264522c487386250013c72cbba3905476c743d5cfc2bd9931f0a24d2bb",
+      "size_bytes": 1784,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/adaptive_shared_feature_geometry.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/adaptive_shared_feature_geometry.py",
+      "sha256": "636a5efcc3a54c03afb8266025ef4ff6f6a067e68c9bf9fe93580f5f76f08e2a",
+      "size_bytes": 5663,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/conservative_broadphase.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/conservative_broadphase.py",
+      "sha256": "adf0e8871fc2e9d6ba92b17c6287fda39ad6cda5853bfb12cc4260f5d0c32f70",
+      "size_bytes": 2633,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/contained_pair_cache.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/contained_pair_cache.py",
+      "sha256": "62973d83a0a3c1275f71c3fd0e7f0df2cc9de6bf45899c058d2b2c939e87c759",
+      "size_bytes": 3515,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/exact_shared_feature_geometry.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/exact_shared_feature_geometry.py",
+      "sha256": "bbc23920ff9b04f50b514f1f4d7161edffa21b9cee4ebaa1b7a1d092f7a413d4",
+      "size_bytes": 6027,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/fixed_geometry_contact.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/fixed_geometry_contact.py",
+      "sha256": "0b0dd233dafaa71f5a7b523189bb5b3ea91b1fe123a3ac5ea901c097af0f4540",
+      "size_bytes": 2325,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/robust_feature_plane.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/robust_feature_plane.py",
+      "sha256": "5d29706492ae9ebb39cc87e4c20247203dd4e271fa64e482f1c8603dfe8ea0c8",
+      "size_bytes": 3178,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/shared_feature_contact.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/shared_feature_contact.py",
+      "sha256": "6419660aaba0f2292d1c07a1c4dee73a60224e7266a92df2aa0635c593758ff9",
+      "size_bytes": 12743,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "unified-contact-staging/unified_moving_surface_contact.py",
+      "target_path": "src/supported-candidate/unified-contact-staging/unified_moving_surface_contact.py",
+      "sha256": "205aeb11ca7e3d27735f7a3735c5b97dd8917a533a7ac441e1a8a605089641d3",
+      "size_bytes": 7040,
+      "group": "inherited-runtime",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/audit_geometry.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/audit_geometry.py",
+      "sha256": "584bc998db1cc6ce093c365735166a73f344a579d46282600b9ef7666243f389",
+      "size_bytes": 3546,
+      "group": "geometry-build",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/build_domain.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/build_domain.py",
+      "sha256": "c4e1ac578b523414b4008ab54255e9f4b77635cab1b3e13054fd1a8e7a417c78",
+      "size_bytes": 20739,
+      "group": "geometry-build",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/build_muscle_phases.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/build_muscle_phases.py",
+      "sha256": "8c8762e28f3212a1b025cac4f832a17c999a19292d889231ce625206ecda1bf2",
+      "size_bytes": 2251,
+      "group": "geometry-build",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/finalize_carrier.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/finalize_carrier.py",
+      "sha256": "dc323f72f9265f5cba66c224491e6057cc8cd7be41fe2c3a0eac615d69334696",
+      "size_bytes": 7934,
+      "group": "geometry-build",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/helpers/build_reference.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/helpers/build_reference.py",
+      "sha256": "bb47beecf896ed1c460b400071b431dfa4a1dc7a5938ccb2d7c9af274b6f8f57",
+      "size_bytes": 3993,
+      "group": "geometry-build",
+      "provenance_class": "imported archived helper; upstream author/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/helpers/exterior_support.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/helpers/exterior_support.py",
+      "sha256": "08e9907f0dbb9dd8b649974f434b00a9cd255c3b14935c80e9e8ee3626354aa1",
+      "size_bytes": 16110,
+      "group": "geometry-build",
+      "provenance_class": "imported archived helper; upstream author/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/helpers/free_skin.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/helpers/free_skin.py",
+      "sha256": "2c16312a62a40ff0f70fcd314133154f822806bc9a1a73a79fac8294d37ed319",
+      "size_bytes": 2314,
+      "group": "geometry-build",
+      "provenance_class": "imported archived helper; upstream author/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/helpers/mesh_queries.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/helpers/mesh_queries.py",
+      "sha256": "1fa59b2c8eb0566745ca004b0671b40c86e1d4bfd1c0fefe2e30f9b7017ae634",
+      "size_bytes": 2713,
+      "group": "geometry-build",
+      "provenance_class": "imported archived helper; upstream author/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/helpers/surface_envelope_sampling.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/helpers/surface_envelope_sampling.py",
+      "sha256": "f46f6b2232b7f53ee1816244fdafc8fceddd6fbde5a94470dcb6cc688852e8e5",
+      "size_bytes": 7125,
+      "group": "geometry-build",
+      "provenance_class": "imported archived helper; upstream author/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/helpers/voxel_support.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/helpers/voxel_support.py",
+      "sha256": "081a45e8473c2a7963c219f19248a6017d91adf6141aa6d1b34fe197ff84abbb",
+      "size_bytes": 12391,
+      "group": "geometry-build",
+      "provenance_class": "imported archived helper; upstream author/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/normalize_final_roundoff.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/normalize_final_roundoff.py",
+      "sha256": "0889b33cda53356ba58ab4957702375d678eb41dc5c747a28f8afbe20a24ec49",
+      "size_bytes": 1942,
+      "group": "geometry-build",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/geometry/render_preview.py",
+      "target_path": "src/supported-candidate/whole-face-continuum-staging/geometry/render_preview.py",
+      "sha256": "51e1060331f1697d18177149ca81890bb91eddc4ebc1580ed71f4f5007181b0b",
+      "size_bytes": 1805,
+      "group": "geometry-build",
+      "provenance_class": "inherited project-local source; upstream origin/license unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v15/mechanics/coarse_reconstruction_020_curvature_driver.py",
+      "target_path": "variants/mechanics-v15/mechanics/coarse_reconstruction_020_curvature_driver.py",
+      "sha256": "792a5b1a0c7714660fe2878526172ae416151c54018128b6b3e035a2819d28ad",
+      "size_bytes": 41204,
+      "group": "optional-v15-delta",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v15/mechanics/contact_query_bound_hint.py",
+      "target_path": "variants/mechanics-v15/mechanics/contact_query_bound_hint.py",
+      "sha256": "278e691a5f68fc5287e2953c29d2df6d8e2f6b9501442f821b270b54fb3afdce",
+      "size_bytes": 13316,
+      "group": "optional-v15-delta",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    },
+    {
+      "source_project_relative_path": "whole-face-continuum-staging/mechanics/coarse-barrier-v1/interior-curvature-v1-source-snapshot-v15/mechanics/paired_reconstruction_020_curvature_sequence.py",
+      "target_path": "variants/mechanics-v15/mechanics/paired_reconstruction_020_curvature_sequence.py",
+      "sha256": "ec651f3ff9a8a2aea914ac7c25aed43f631d56f1c6bc18c40cb6678c6697bfff",
+      "size_bytes": 21417,
+      "group": "optional-v15-delta",
+      "provenance_class": "project-local authored/adapted source; ownership unverified",
+      "license_status": "not independently verified; no license granted by this handoff"
+    }
+  ]
+}
