@@ -38,11 +38,23 @@ jobs:
       - name: Locate or install FFmpeg on Linux
         if: runner.os == 'Linux'
         shell: bash
+        timeout-minutes: 8
         run: |
           if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
-            sudo apt-get update
-            sudo apt-get install -y ffmpeg
+            apt_options=(
+              -o Acquire::http::Timeout=20
+              -o Acquire::https::Timeout=20
+              -o Acquire::Retries=2
+              -o DPkg::Lock::Timeout=30
+            )
+            sudo env DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a \
+              timeout --kill-after=15s 120s apt-get "${apt_options[@]}" update
+            sudo env DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a \
+              timeout --kill-after=15s 300s apt-get "${apt_options[@]}" \
+              install -y --no-install-recommends ffmpeg
           fi
+          ffmpeg -version
+          ffprobe -version
       - name: Locate or install FFmpeg on macOS
         if: runner.os == 'macOS'
         shell: bash
