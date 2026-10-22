@@ -1,6 +1,10 @@
 # Runtime, build and test requirements
 
-## Observed, not locked
+## Current portable entry point
+
+For new Windows, Linux and macOS runs, use the derived renderer and checks in [PORTABILITY.md](PORTABILITY.md). Frozen renderer files retain their original paths for provenance. Full data-dependent execution remains outside this source-only checkout.
+
+## Frozen snapshot observations, not locked
 
 This handoff was checked on Linux with Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0 and Pillow 12.3.0. `requirements.in` records direct third-party imports; `requirements-observed.txt` records observed versions only. No clean environment installation or dependency resolution was performed. There was no project pyproject/packaging build file or proven transitive lockfile in the selected sources. NumPy/SciPy supply compiled numerical dependencies through their installed distributions.
 
